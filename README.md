@@ -2,7 +2,7 @@
 
 # Insurance Skills
 
-### 面向保险场景的开源 Skill 基础设施平台
+### 全球首个面向保险场景的开源 Skill 基础设施平台
 
 <p>
   <a href="LICENSE">
