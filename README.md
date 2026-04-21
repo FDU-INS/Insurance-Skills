@@ -1,4 +1,10 @@
 <div align="center">
+  <img src="team-logo.png" alt="Team Logo" width="140">
+
+# Insurance Skills
+
+### 面向保险场景的开源 Skill 基础设施平台
+</div>
 
 # Insurance Skills
 
