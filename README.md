@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="team-logo.png" alt="Team Logo" width="220">
+  <img src="ins-skill-logo.png" alt="Team Logo" width="220">
 
 ### 面向保险场景的开源 Skill 基础设施平台
 
