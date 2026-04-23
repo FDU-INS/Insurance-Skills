@@ -1,4 +1,4 @@
-> 📖 English version: [README.md](README_EN.md)
+> 📖 English version: [README_English.md](README_EN.md)
 <div align="center">
   <img src="ins-skill-logo.png" alt="Insurance-Skills Logo" width="500">
 
@@ -25,23 +25,6 @@
 </p>
 </div>
 
-
----
-
-## 📑 目录
-
-- [项目概述](#项目概述)
-- [研究背景与问题提出](#研究背景与问题提出)
-- [项目愿景](#项目愿景)
-- [平台定位](#平台定位)
-- [典型应用场景](#典型应用场景)
-- [核心能力体系](#核心能力体系)
-- [Skill 评测框架](#skill-评测框架)
-- [评分规则来源](#评分规则来源)
-- [未来展望](#未来展望)
-- [路线图](#路线图)
-- [团队愿景](#团队愿景)
-- [联系我们](#联系我们)
 
 
 
