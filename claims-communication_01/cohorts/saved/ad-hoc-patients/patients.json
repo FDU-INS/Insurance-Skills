@@ -1,0 +1,41 @@
+[
+  {
+    "id": "f6806a28-8019-4391-9c72-a1c091d47b0a",
+    "mrn": "PAT000001",
+    "given_name": "Patient",
+    "family_name": "One",
+    "birth_date": "1980-01-01",
+    "gender": "male",
+    "language": "en",
+    "country": "US",
+    "deceased": false,
+    "created_at": "2025-12-30T09:36:04.549835",
+    "scenario_id": "f265ba09-fdd8-4f0a-b48b-b72caeef4944"
+  },
+  {
+    "id": "c444d48c-8913-44a0-af5b-76064c79d1e6",
+    "mrn": "PAT000002",
+    "given_name": "Patient",
+    "family_name": "Two",
+    "birth_date": "1985-06-15",
+    "gender": "female",
+    "language": "en",
+    "country": "US",
+    "deceased": false,
+    "created_at": "2025-12-30T09:36:53.483856",
+    "scenario_id": "f265ba09-fdd8-4f0a-b48b-b72caeef4944"
+  },
+  {
+    "id": "1eb3c5dc-d1ca-42fb-ada7-27db21bd5f25",
+    "mrn": "PAT000003",
+    "given_name": "Patient",
+    "family_name": "Three",
+    "birth_date": "1990-03-20",
+    "gender": "male",
+    "language": "en",
+    "country": "US",
+    "deceased": false,
+    "created_at": "2025-12-30T09:40:40.900081",
+    "scenario_id": "f265ba09-fdd8-4f0a-b48b-b72caeef4944"
+  }
+]

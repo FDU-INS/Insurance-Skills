@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 5,
+    "_query": "insurance",
+    "author": "mariourquia",
+    "description": "Validates certificates of insurance against lease and contract requirements. Compares coverage types, limits, endorsements, and expiration dates field-by-field, flags deficiencies, and generates cure notices.",
+    "githubUrl": "https://github.com/mariourquia/cre-skills-plugin/tree/main/src/skills/coi-compliance-checker",
+    "id": "mariourquia-cre-skills-plugin-src-skills-coi-compliance-checker-skill-md",
+    "name": "coi-compliance-checker",
+    "skillUrl": "https://skillsmp.com/skills/mariourquia-cre-skills-plugin-src-skills-coi-compliance-checker-skill-md",
+    "stars": 9,
+    "updatedAt": 1775173314,
+    "owner": "mariourquia",
+    "repo": "cre-skills-plugin",
+    "branch": "main",
+    "subpath": "src/skills/coi-compliance-checker",
+    "mode": "tree",
+    "repoKey": "mariourquia/cre-skills-plugin"
+  },
+  "resolved": {
+    "owner": "mariourquia",
+    "repo": "cre-skills-plugin",
+    "branch": "main",
+    "subpath": "src/skills/coi-compliance-checker"
+  }
+}

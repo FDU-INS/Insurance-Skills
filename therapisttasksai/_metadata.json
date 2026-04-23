@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 10,
+    "_query": "insurance",
+    "author": "laudoluxDev",
+    "description": "Access 155+ AI-powered skills for therapists, counselors, and mental health professionals. Use when: user asks about client intake, treatment plans, progress notes, HIPAA compliance, insurance billing, crisis safety planning, telehealth administration, or any therapy practice administration task.",
+    "githubUrl": "https://github.com/laudoluxDev/lawtasksai-api/tree/main/loader/therapist",
+    "id": "laudoluxdev-lawtasksai-api-loader-therapist-skill-md",
+    "name": "therapisttasksai",
+    "skillUrl": "https://skillsmp.com/skills/laudoluxdev-lawtasksai-api-loader-therapist-skill-md",
+    "stars": 0,
+    "updatedAt": 1775102562,
+    "owner": "laudoluxDev",
+    "repo": "lawtasksai-api",
+    "branch": "main",
+    "subpath": "loader/therapist",
+    "mode": "tree",
+    "repoKey": "laudoluxDev/lawtasksai-api"
+  },
+  "resolved": {
+    "owner": "laudoluxDev",
+    "repo": "lawtasksai-api",
+    "branch": "main",
+    "subpath": "loader/therapist"
+  }
+}

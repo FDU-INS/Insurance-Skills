@@ -1,0 +1,50 @@
+tools:
+  - name: pdf_extract
+    description: "Extract all text content from a PDF file. Returns text with page breaks marked. Will return empty for scanned/image-based PDFs."
+    input_schema:
+      type: object
+      required:
+        - file
+      properties:
+        file:
+          type: string
+          description: "Absolute path to the PDF file"
+    command_template: "node scripts/pdf-extract.js {file}"
+    timeout_seconds: 30
+
+  - name: pdf_coords
+    description: "Extract text positions and coordinates from a PDF. Returns each text element with x, y, height, and content. Useful for determining where to place overlay text. Coordinate system: top-left origin (y=0 at top)."
+    input_schema:
+      type: object
+      required:
+        - file
+      properties:
+        file:
+          type: string
+          description: "Absolute path to the PDF file"
+        page:
+          type: string
+          description: "Optional: specific page number to extract (default: all pages)"
+    command_template: "node scripts/pdf-coords.js {file} {page}"
+    timeout_seconds: 30
+
+  - name: pdf_fill
+    description: "Write text onto a PDF at specified coordinates. Creates a filled version of the PDF with text overlaid at precise positions. Coordinate system: top-left origin in config (auto-converted to PDF coords internally)."
+    input_schema:
+      type: object
+      required:
+        - source_pdf
+        - output_pdf
+        - config
+      properties:
+        source_pdf:
+          type: string
+          description: "Absolute path to the source PDF file"
+        output_pdf:
+          type: string
+          description: "Absolute path for the output PDF file"
+        config:
+          type: string
+          description: 'JSON string with fill configuration. Format: {"pageWidth": 612, "pageHeight": 792, "totalPages": N, "pages": [{"page": 1, "fields": [{"x": 200, "y": 150, "text": "Hello", "fontSize": 10, "bold": false, "italic": false, "color": "black"}]}]}. Use pdf_coords tool first to determine correct x/y positions.'
+    command_template: "python3 scripts/pdf-fill-tool.py {source_pdf} {output_pdf} {config}"
+    timeout_seconds: 60

@@ -1,0 +1,241 @@
+# ==============================================================================
+# GEO-INFER-RISK Example Configuration
+# ==============================================================================
+#
+# This is a comprehensive example configuration for the GEO-INFER-RISK module.
+# It demonstrates all available options and provides reasonable defaults for
+# various risk analysis scenarios.
+#
+# Configuration Sections:
+# 1. General Settings - Logging, output, caching, and processing options
+# 2. Risk Model - Core risk assessment parameters and methodology
+# 3. Hazards - Natural and man-made hazard model configurations
+# 4. Vulnerability - Asset and population vulnerability model settings
+# 5. Exposure - Asset inventory and population data configurations
+# 6. Insurance - Pricing, claims, and policy configuration
+# 7. Catastrophe - Event generation and correlation modeling
+# 8. Output - Results format and metrics specification
+# 9. Integrations - Connections with other GEO-INFER modules
+#
+# Usage:
+#   python -c "from geo_infer_risk.utils.config_loader import load_config; config = load_config('config/example.yaml')"
+#
+# ==============================================================================
+
+# General settings - Control logging, output directories, and processing options
+general:
+  log_level: INFO                    # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  output_directory: "./outputs"      # Directory for analysis results
+  cache_directory: "./cache"        # Directory for cached data and models
+  enable_caching: true              # Enable caching of intermediate results
+  parallel_processing: true         # Enable parallel processing where applicable
+  num_workers: 4                    # Number of parallel workers (max: CPU cores)
+  random_seed: 42                   # Random seed for reproducible results
+
+# Core risk model parameters - Define the fundamental risk assessment approach
+risk_model:
+  confidence_level: 0.95            # Confidence level for risk estimates (0.5-0.99)
+  time_horizon: 50                  # Analysis time horizon in years (1-500)
+  spatial_resolution: 1.0           # Spatial resolution in kilometers (0.001-100.0)
+  monte_carlo_iterations: 1000      # Number of Monte Carlo simulations (100-100000)
+  random_seed: 42                   # Random seed for Monte Carlo simulations
+  include_secondary_perils: true    # Include secondary perils (e.g., liquefaction)
+  correlation_model: "spatial"      # Correlation model: independent, spatial, temporal, copula
+
+# Hazard models configuration - Define which hazards to model and their parameters
+hazards:
+  # Flood hazard model - Riverine, pluvial, coastal, or combined flooding
+  flood:
+    enabled: true
+    type: "riverine"                # riverine, pluvial, coastal, combined
+    return_periods: [10, 25, 50, 100, 500]  # Return periods in years
+    data_source: "noaa_nws"         # Data source: noaa_nws, fema, custom
+    dem_resolution: 30              # Digital elevation model resolution in meters
+    include_climate_change: true    # Include climate change projections
+    climate_scenario: "rcp8.5"      # RCP or SSP climate scenario
+
+  # Earthquake hazard model - Ground shaking and secondary perils
+  earthquake:
+    enabled: true
+    type: "probabilistic"           # deterministic, probabilistic
+    return_periods: [475, 975, 2475]  # Return periods in years
+    include_secondary_perils: true  # Include secondary perils
+    secondary_perils: ["liquefaction", "landslide", "tsunami"]
+    data_source: "usgs"             # Data source: usgs, custom
+
+  # Hurricane/cyclone hazard model - Wind, surge, and rainfall components
+  hurricane:
+    enabled: true
+    include_components: ["wind", "storm_surge", "rainfall"]
+    track_data_source: "hurdat2"    # Historical track data source
+    return_periods: [10, 25, 50, 100]
+    data_source: "noaa_hurricane"
+
+  # Wildfire hazard model - Fire spread and intensity modeling
+  wildfire:
+    enabled: false
+    fuel_model: "standard"          # standard, custom
+    include_climate_factors: true   # Include climate effects on fire behavior
+    climate_scenario: "rcp4.5"
+    data_source: "usfs"
+
+  # Tornado hazard model - Severe convective storms
+  tornado:
+    enabled: false
+    intensity_model: "fujita"       # fujita, enhanced_fujita
+    return_periods: [10, 50, 100]
+    data_source: "noaa_spc"
+
+# Vulnerability models - Define how assets respond to hazard intensities
+vulnerability:
+  # Building vulnerability - Physical damage to structures
+  building:
+    enabled: true
+    classification_scheme: "hazus"  # hazus, european, custom, gem, fema
+    include_factors: ["construction_type", "year_built", "stories", "foundation_type"]
+    uncertainty_method: "monte_carlo"  # none, monte_carlo, simple, bootstrap
+    data_source: "hazus"
+
+  # Infrastructure vulnerability - Damage to critical infrastructure systems
+  infrastructure:
+    enabled: true
+    classification_scheme: "custom"
+    types: ["roads", "bridges", "power_lines", "water_supply", "communications"]
+    uncertainty_method: "none"
+    data_source: "custom"
+
+  # Population vulnerability - Social and demographic factors affecting resilience
+  population:
+    enabled: true
+    demographic_factors: ["age", "income", "mobility", "housing_quality", "education"]
+    social_vulnerability_index: true  # Use CDC/ATSDR Social Vulnerability Index
+    uncertainty_method: "none"
+    data_source: "census"
+
+# Exposure models - Define what is at risk and its value
+exposure:
+  # Property exposure - Buildings and their contents
+  property:
+    enabled: true
+    data_sources: ["openstreetmap", "custom_property_db", "county_assessor"]
+    value_type: "replacement_cost"  # replacement_cost, market_value, depreciated_value
+    include_contents: true          # Include building contents in valuation
+    aggregation_level: "building"   # building, block, census_tract, county, state
+
+  # Population exposure - People and their distribution
+  population:
+    enabled: true
+    data_sources: ["census", "worldpop", "landscan"]
+    time_of_day_scenarios: ["day", "night", "commute"]  # Population distribution scenarios
+    aggregation_level: "census_block"
+
+  # Infrastructure exposure - Critical infrastructure systems
+  infrastructure:
+    enabled: true
+    data_sources: ["openstreetmap", "custom_lifeline_db", "national_bridge_inventory"]
+    types: ["transportation", "utilities", "communications", "healthcare"]
+    valuation_method: "replacement_cost"
+
+# Insurance models - Pricing, claims, and policy configuration
+insurance:
+  # Pricing models - Premium calculation methodologies
+  pricing:
+    enabled: true
+    methods: ["technical_price", "risk_loaded", "market_adjusted", "experience_rated"]
+    include_expenses: true          # Include acquisition and administrative expenses
+    expense_ratio: 0.25             # Expense ratio (0.0-1.0)
+    profit_loading: 0.15            # Profit loading (0.0-1.0)
+
+  # Claims models - Loss development and settlement
+  claims:
+    enabled: true
+    frequency_severity_method: true  # Use frequency-severity modeling
+    claims_inflation: 0.03          # Annual claims inflation rate
+    claims_development: true        # Include claims development patterns
+    development_years: 10           # Number of development years
+
+  # Policy conditions - Deductibles, limits, and coverage terms
+  policy:
+    deductible_types: ["flat", "percentage", "franchise"]
+    default_deductible: 0.02        # Default deductible (0.0-1.0 for percentage)
+    limit_types: ["flat", "percentage", "blanket"]
+    default_limit: 1000000          # Default policy limit
+    apply_sublimits: true           # Apply sublimits to specific perils
+
+# Catastrophe modeling - Event generation and portfolio analysis
+catastrophe:
+  # Event generation - Stochastic event set creation
+  event_generation:
+    enabled: true
+    method: "monte_carlo"           # monte_carlo, historical, hybrid, parametric
+    catalog_size: 10000             # Number of events in catalog (100-100000)
+    years_simulated: 50000          # Years of simulation (100-1000000)
+    historical_catalog: true        # Include historical events
+
+  # Correlation modeling - Dependencies between perils and regions
+  correlation:
+    spatial_correlation: true       # Include spatial correlation
+    temporal_correlation: true       # Include temporal correlation
+    peril_correlation: true         # Include inter-peril correlation
+    correlation_method: "copula"    # copula, factor_model, empirical, vine
+
+  # Financial modeling - Insurance and reinsurance structures
+  financial:
+    apply_policy_terms: true        # Apply insurance policy terms
+    apply_reinsurance: true         # Apply reinsurance structures
+    reinsurance_structures: ["quota_share", "excess_of_loss", "cat_xl", "aggregate_xl"]
+    aggregation_levels: ["location", "county", "state", "portfolio", "global"]
+
+# Output configuration - Results format and metrics
+output:
+  formats: ["geojson", "csv", "shapefile", "netcdf", "parquet"]
+  metrics: ["aal", "oep", "ep_curve", "return_period_losses", "pml", "tvar", "var"]
+  exceedance_probabilities: [0.5, 0.2, 0.1, 0.04, 0.02, 0.01, 0.004, 0.002]
+  include_uncertainty: true
+  uncertainty_metrics: ["mean", "median", "stdev", "percentile_5", "percentile_95", "confidence_interval"]
+  spatial_aggregation: "none"     # none, grid, administrative, watershed, custom
+  temporal_aggregation: "none"    # none, annual, monthly, daily, event
+
+# Integration with other GEO-INFER modules
+integrations:
+  # GEO-INFER-SPACE integration - Spatial analysis and indexing
+  geo_infer_space:
+    enabled: true
+    spatial_indexing: "h3"          # h3, geohash, quadtree, s2
+    resolution: 9                   # Spatial resolution level (0-15 for H3)
+    analytics_backend: "srai"       # srai, spatial, geopandas, custom
+
+  # GEO-INFER-TIME integration - Temporal analysis and trends
+  geo_infer_time:
+    enabled: true
+    temporal_resolution: "daily"    # hourly, daily, weekly, monthly, yearly, event
+    include_seasonality: true       # Include seasonal patterns
+    time_series_analysis: false     # Enable time series analysis
+
+  # GEO-INFER-AI integration - Machine learning and prediction
+  geo_infer_ai:
+    enabled: false
+    models: ["damage_classification", "claims_prediction", "risk_scoring"]
+    training_data: "./data/training"
+    inference_backend: "scikit_learn"  # tensorflow, pytorch, scikit_learn, xgboost
+
+  # GEO-INFER-MATH integration - Statistical and mathematical methods
+  geo_infer_math:
+    enabled: true
+    statistical_methods: ["extreme_value_theory", "copulas", "monte_carlo", "bootstrap"]
+    numerical_precision: "double"   # single, double, extended
+    optimization_method: "gradient_descent"  # gradient_descent, newton_raphson, etc.
+
+  # GEO-INFER-BAYES integration - Bayesian inference and uncertainty
+  geo_infer_bayes:
+    enabled: false
+    inference_method: "variational"  # variational, mcmc, exact
+    prior_specifications: "weakly_informative"
+    uncertainty_quantification: true
+
+  # GEO-INFER-ECON integration - Economic impact analysis
+  geo_infer_econ:
+    enabled: false
+    economic_model: "input_output"   # input_output, cge, econometric
+    impact_metrics: ["direct", "indirect", "induced"]
+    recovery_model: "linear"         # linear, exponential, custom 

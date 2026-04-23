@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "policy",
+    "author": "macho715",
+    "description": "policy/spec 문서 검토/업데이트 작업.",
+    "githubUrl": "https://github.com/jewdore/openclaw-finclaw-test/tree/main/skills/policy-liability-qa",
+    "id": "macho715-llm-cursor-skills-policy-pack-skill-md",
+    "name": "policy-pack",
+    "skillUrl": "https://skillsmp.com/skills/macho715-llm-cursor-skills-policy-pack-skill-md",
+    "stars": 0,
+    "updatedAt": 1775332463,
+    "is_insurance_related": "是",
+    "owner": "jewdore",
+    "repo": "openclaw-finclaw-test",
+    "branch": "main",
+    "subpath": "skills/policy-liability-qa",
+    "mode": "tree",
+    "repoKey": "jewdore/openclaw-finclaw-test"
+  },
+  "resolved": {
+    "owner": "jewdore",
+    "repo": "openclaw-finclaw-test",
+    "branch": "main",
+    "subpath": "skills/policy-liability-qa"
+  }
+}

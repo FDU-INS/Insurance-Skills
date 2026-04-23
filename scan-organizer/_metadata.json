@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 9,
+    "_query": "insurance",
+    "author": "markuskreitzer",
+    "description": "OCR, classify, and organize scanned PDFs into category subfolders using AI vision and language models. Processes medical, financial, insurance, tax, legal, personal, and household documents.",
+    "githubUrl": "https://github.com/markuskreitzer/scan-organizer",
+    "id": "markuskreitzer-scan-organizer-skill-md",
+    "name": "scan-organizer",
+    "skillUrl": "https://skillsmp.com/skills/markuskreitzer-scan-organizer-skill-md",
+    "stars": 0,
+    "updatedAt": 1773021302,
+    "owner": "markuskreitzer",
+    "repo": "scan-organizer",
+    "branch": null,
+    "subpath": "",
+    "mode": "repo_root",
+    "repoKey": "markuskreitzer/scan-organizer"
+  },
+  "resolved": {
+    "owner": "markuskreitzer",
+    "repo": "scan-organizer",
+    "branch": "master",
+    "subpath": ""
+  }
+}

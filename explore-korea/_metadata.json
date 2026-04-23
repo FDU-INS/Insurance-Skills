@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 10,
+    "_query": "insurance",
+    "author": "dingtom336-gif",
+    "description": "Plan your Korea experience — Seoul's palaces and K-pop culture, Busan's beaches, Jeju Island's nature, Korean BBQ crawls, and K-beauty shopping. Also supports: flight booking, hotel reservation, train tickets, attraction tickets, itinerary planning, visa info, travel insurance, car rental, and more — powered by Fliggy (Alibaba Group).",
+    "githubUrl": "https://github.com/dingtom336-gif/explore-korea",
+    "id": "dingtom336-gif-explore-korea-skill-md",
+    "name": "explore-korea",
+    "skillUrl": "https://skillsmp.com/skills/dingtom336-gif-explore-korea-skill-md",
+    "stars": 0,
+    "updatedAt": 1775653530,
+    "owner": "dingtom336-gif",
+    "repo": "explore-korea",
+    "branch": null,
+    "subpath": "",
+    "mode": "repo_root",
+    "repoKey": "dingtom336-gif/explore-korea"
+  },
+  "resolved": {
+    "owner": "dingtom336-gif",
+    "repo": "explore-korea",
+    "branch": "main",
+    "subpath": ""
+  }
+}

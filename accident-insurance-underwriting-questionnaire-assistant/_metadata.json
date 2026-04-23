@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 3,
+    "_query": "insurance",
+    "author": "aifinlab",
+    "description": "当用户需要对意外险投保问卷进行专业、结构化的核保审查，提取职业类别、工作环境、作业内容、危险活动参与情况、交通出行习惯、特殊工作暴露及其他可能影响意外险承保判断的高风险信息，并生成适合意外险核保、补问流转和风险分层处理的结构化分析结果时使用本 skill。",
+    "githubUrl": "https://github.com/aifinlab/FinClaw/tree/main/skills/accident-insurance-underwriting-questionnaire-assistant",
+    "id": "aifinlab-finclaw-skills-accident-insurance-underwriting-questionnaire-assistant-skill-md",
+    "name": "accident-insurance-underwriting-questionnaire-assistant",
+    "skillUrl": "https://skillsmp.com/skills/aifinlab-finclaw-skills-accident-insurance-underwriting-questionnaire-assistant-skill-md",
+    "stars": 125,
+    "updatedAt": 1774512801,
+    "owner": "aifinlab",
+    "repo": "FinClaw",
+    "branch": "main",
+    "subpath": "skills/accident-insurance-underwriting-questionnaire-assistant",
+    "mode": "tree",
+    "repoKey": "aifinlab/FinClaw"
+  },
+  "resolved": {
+    "owner": "aifinlab",
+    "repo": "FinClaw",
+    "branch": "main",
+    "subpath": "skills/accident-insurance-underwriting-questionnaire-assistant"
+  }
+}

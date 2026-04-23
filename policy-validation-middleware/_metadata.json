@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "policy",
+    "author": "jross32",
+    "description": "Use when implementing or improving policy-validation-middleware workflows in mini-codex.",
+    "githubUrl": "https://github.com/dvcrn/openclaw-skills-marketplace/tree/main/plugins/52yuanchangxing--policy-application-checker/skills/policy-application-checker",
+    "id": "jross32-mini-codex-mini-codex-github-skills-policy-validation-middleware-skill-md",
+    "name": "policy-validation-middleware",
+    "skillUrl": "https://skillsmp.com/skills/jross32-mini-codex-mini-codex-github-skills-policy-validation-middleware-skill-md",
+    "stars": 0,
+    "updatedAt": 1774886348,
+    "is_insurance_related": "是",
+    "owner": "dvcrn",
+    "repo": "openclaw-skills-marketplace",
+    "branch": "main",
+    "subpath": "plugins/52yuanchangxing--policy-application-checker/skills/policy-application-checker",
+    "mode": "tree",
+    "repoKey": "dvcrn/openclaw-skills-marketplace"
+  },
+  "resolved": {
+    "owner": "dvcrn",
+    "repo": "openclaw-skills-marketplace",
+    "branch": "main",
+    "subpath": "plugins/52yuanchangxing--policy-application-checker/skills/policy-application-checker"
+  }
+}

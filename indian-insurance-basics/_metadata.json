@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 3,
+    "_query": "insurance",
+    "author": "Harrrdik18",
+    "description": "Load this skill when the user asks specific insurance education questions in the Indian context, such as term vs endowment vs ULIP, riders, claim settlement process, nominee concepts, or policy jargon; do not load for generic budgeting or emergency fund queries.",
+    "githubUrl": "https://github.com/Harrrdik18/ai-submission/tree/main/prompts/skills/indian-insurance-basics",
+    "id": "harrrdik18-ai-submission-prompts-skills-indian-insurance-basics-skill-md",
+    "name": "indian-insurance-basics",
+    "skillUrl": "https://skillsmp.com/skills/harrrdik18-ai-submission-prompts-skills-indian-insurance-basics-skill-md",
+    "stars": 0,
+    "updatedAt": 1775232044,
+    "owner": "Harrrdik18",
+    "repo": "ai-submission",
+    "branch": "main",
+    "subpath": "prompts/skills/indian-insurance-basics",
+    "mode": "tree",
+    "repoKey": "Harrrdik18/ai-submission"
+  },
+  "resolved": {
+    "owner": "Harrrdik18",
+    "repo": "ai-submission",
+    "branch": "main",
+    "subpath": "prompts/skills/indian-insurance-basics"
+  }
+}

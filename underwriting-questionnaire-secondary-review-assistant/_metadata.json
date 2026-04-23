@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "underwriting",
+    "author": "aifinlab",
+    "description": "当用户需要对已经完成首轮审查的保险投保问卷进行二次复核，检查初审意见是否充分、风险判断是否一致、补问与补件是否到位、是否仍存在遗漏项或高风险未核实问题，并生成适合复核留痕、质量控制和后续核保流转的结构化复核结果时使用本 skill。",
+    "githubUrl": "https://github.com/majiayu000/claude-skill-registry-data/tree/main/data/financial-product-blueprint",
+    "id": "aifinlab-finclaw-skills-underwriting-questionnaire-secondary-review-assistant-skill-md",
+    "name": "underwriting-questionnaire-secondary-review-assistant",
+    "skillUrl": "https://skillsmp.com/skills/aifinlab-finclaw-skills-underwriting-questionnaire-secondary-review-assistant-skill-md",
+    "stars": 119,
+    "updatedAt": 1774512801,
+    "is_insurance_related": "是",
+    "owner": "majiayu000",
+    "repo": "claude-skill-registry-data",
+    "branch": "main",
+    "subpath": "data/financial-product-blueprint",
+    "mode": "tree",
+    "repoKey": "majiayu000/claude-skill-registry-data"
+  },
+  "resolved": {
+    "owner": "majiayu000",
+    "repo": "claude-skill-registry-data",
+    "branch": "main",
+    "subpath": "data/financial-product-blueprint"
+  }
+}

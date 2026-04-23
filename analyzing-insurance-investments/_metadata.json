@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 3,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Evaluates insurance company investment portfolios with ALM considerations and regulatory constraints. Use when analyzing insurer investments, managing ALM, or evaluating portfolio compliance.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/finance/analyzing-insurance-investments",
+    "id": "casemark-skills-skills-finance-analyzing-insurance-investments-skill-md",
+    "name": "analyzing-insurance-investments",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-finance-analyzing-insurance-investments-skill-md",
+    "stars": 12,
+    "updatedAt": 1772680350,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/analyzing-insurance-investments",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/analyzing-insurance-investments"
+  }
+}

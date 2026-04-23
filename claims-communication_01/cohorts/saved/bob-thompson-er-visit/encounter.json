@@ -1,0 +1,74 @@
+{
+  "facility": {
+    "facility_id": "FAC-UW-001",
+    "npi": "1234567890",
+    "name": "UW Health University Hospital",
+    "facility_type": "hospital",
+    "address_line1": "600 Highland Avenue",
+    "city": "Madison",
+    "state": "WI",
+    "postal_code": "53792"
+  },
+  "provider": {
+    "provider_id": "PRV-CHEN-001",
+    "npi": "1122334455",
+    "name": "Dr. Sarah Chen",
+    "specialty": "Emergency Medicine",
+    "provider_type": "physician"
+  },
+  "encounter": {
+    "encounter_id": "ENC-20241226-ER-001",
+    "patient_id": "PAT-20251226-001",
+    "facility_id": "FAC-UW-001",
+    "encounter_type": "emergency",
+    "encounter_class": "EMER",
+    "status": "finished",
+    "start_datetime": "2024-12-26T14:32:00",
+    "end_datetime": "2024-12-26T18:15:00",
+    "reason_for_visit": "Fall on ice, left wrist pain and swelling",
+    "chief_complaint": "Left wrist pain after fall",
+    "attending_provider_id": "PRV-CHEN-001",
+    "discharge_disposition_code": "01",
+    "discharge_disposition_desc": "Discharged to home"
+  },
+  "diagnoses": [
+    {
+      "diagnosis_id": "DX-20241226-001",
+      "encounter_id": "ENC-20241226-ER-001",
+      "sequence_number": 1,
+      "code": "S62.102A",
+      "code_system": "ICD-10-CM",
+      "description": "Fracture of unspecified carpal bone, left wrist, initial encounter",
+      "diagnosis_type": "principal"
+    },
+    {
+      "diagnosis_id": "DX-20241226-002",
+      "encounter_id": "ENC-20241226-ER-001",
+      "sequence_number": 2,
+      "code": "W00.0XXA",
+      "code_system": "ICD-10-CM",
+      "description": "Fall on same level due to ice and snow, initial encounter",
+      "diagnosis_type": "external_cause"
+    }
+  ],
+  "procedures": [
+    {
+      "procedure_id": "PX-20241226-001",
+      "encounter_id": "ENC-20241226-ER-001",
+      "code": "73110",
+      "code_system": "CPT",
+      "description": "X-ray wrist, complete, minimum 3 views",
+      "performed_datetime": "2024-12-26T15:10:00",
+      "performing_provider_id": "PRV-CHEN-001"
+    },
+    {
+      "procedure_id": "PX-20241226-002",
+      "encounter_id": "ENC-20241226-ER-001",
+      "code": "29125",
+      "code_system": "CPT",
+      "description": "Application of short arm splint (forearm to hand)",
+      "performed_datetime": "2024-12-26T16:45:00",
+      "performing_provider_id": "PRV-CHEN-001"
+    }
+  ]
+}

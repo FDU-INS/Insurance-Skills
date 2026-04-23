@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 10,
+    "_query": "insurance",
+    "author": "cubexch",
+    "description": "Trade like Paul Tudor Jones — macro trend following, risk management obsessed, ride big moves. Use this skill whenever the user asks about: Paul Tudor Jones, PTJ, macro trend following, trend following crypto, ride the big move, 200-day moving average strategy, risk-first trading, Tudor Investment, great inflation trade, BTC inflation hedge, portfolio insurance, PTJ approach, institutional trend following, managed futures crypto, CTA strategy crypto, trend following system, macro trend rider, catch the big one, risk-reward obsessed, capital preservation first, Tudor style, never average down, respect the trend.",
+    "githubUrl": "https://github.com/cubexch/ai-fund/tree/main/skills/paul-tudor-jones",
+    "id": "cubexch-ai-fund-skills-paul-tudor-jones-skill-md",
+    "name": "paul-tudor-jones",
+    "skillUrl": "https://skillsmp.com/skills/cubexch-ai-fund-skills-paul-tudor-jones-skill-md",
+    "stars": 4,
+    "updatedAt": 1774925559,
+    "owner": "cubexch",
+    "repo": "ai-fund",
+    "branch": "main",
+    "subpath": "skills/paul-tudor-jones",
+    "mode": "tree",
+    "repoKey": "cubexch/ai-fund"
+  },
+  "resolved": {
+    "owner": "cubexch",
+    "repo": "ai-fund",
+    "branch": "main",
+    "subpath": "skills/paul-tudor-jones"
+  }
+}

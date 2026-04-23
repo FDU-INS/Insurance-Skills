@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 10,
+    "_query": "insurance",
+    "author": "GACLove",
+    "description": "Answer employee questions about company policies, benefits, and procedures. Use when users ask about PTO, vacation, sick leave, parental leave, health insurance, 401k, remote work policy, expense reimbursement, code of conduct, professional development, or any company-specific rules and perks.",
+    "githubUrl": "https://github.com/GACLove/feishu-aily-skills/tree/main/skills/employee-handbook",
+    "id": "gaclove-feishu-aily-skills-skills-employee-handbook-skill-md",
+    "name": "employee-handbook",
+    "skillUrl": "https://skillsmp.com/skills/gaclove-feishu-aily-skills-skills-employee-handbook-skill-md",
+    "stars": 1,
+    "updatedAt": 1775236338,
+    "owner": "GACLove",
+    "repo": "feishu-aily-skills",
+    "branch": "main",
+    "subpath": "skills/employee-handbook",
+    "mode": "tree",
+    "repoKey": "GACLove/feishu-aily-skills"
+  },
+  "resolved": {
+    "owner": "GACLove",
+    "repo": "feishu-aily-skills",
+    "branch": "main",
+    "subpath": "skills/employee-handbook"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 6,
+    "_query": "insurance",
+    "author": "alongor666",
+    "description": "Process vehicle insurance Excel data using Pandas - file handling, data cleaning, merging, validation. Use when processing Excel/CSV files, handling data imports, implementing business rules (negative premiums, zero commissions), debugging data pipelines, or optimizing Pandas performance. Keywords: data_processor.py, Excel, CSV, Pandas, merge, deduplication, date normalization.",
+    "githubUrl": "https://github.com/alongor666/daylyreport/tree/main/.claude/skills/backend-data-processor",
+    "id": "alongor666-daylyreport-claude-skills-backend-data-processor-skill-md",
+    "name": "backend-data-processor",
+    "skillUrl": "https://skillsmp.com/skills/alongor666-daylyreport-claude-skills-backend-data-processor-skill-md",
+    "stars": 0,
+    "updatedAt": 1762677552,
+    "owner": "alongor666",
+    "repo": "daylyreport",
+    "branch": "main",
+    "subpath": ".claude/skills/backend-data-processor",
+    "mode": "tree",
+    "repoKey": "alongor666/daylyreport"
+  },
+  "resolved": {
+    "owner": "alongor666",
+    "repo": "daylyreport",
+    "branch": "main",
+    "subpath": ".claude/skills/backend-data-processor"
+  }
+}

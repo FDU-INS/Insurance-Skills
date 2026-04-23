@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "underwriting",
+    "author": "aifinlab",
+    "description": "当用户需要基于投保问卷、健康告知、体检资料、病史资料、职业资料、核保初审或复核意见等材料，识别当前核保判断中的信息缺口、关键疑点和风险未明事项，并生成结构化补件清单、补件说明、沟通要点和后续跟进建议时使用本 skill。",
+    "githubUrl": "https://github.com/muhammadilham1998-crypto/actuary-skills/tree/main/skills/risk-management-actuary",
+    "id": "aifinlab-finclaw-skills-underwriting-supplement-request-assistant-skill-md",
+    "name": "underwriting-supplement-request-assistant",
+    "skillUrl": "https://skillsmp.com/skills/aifinlab-finclaw-skills-underwriting-supplement-request-assistant-skill-md",
+    "stars": 119,
+    "updatedAt": 1773793812,
+    "is_insurance_related": "是",
+    "owner": "muhammadilham1998-crypto",
+    "repo": "actuary-skills",
+    "branch": "main",
+    "subpath": "skills/risk-management-actuary",
+    "mode": "tree",
+    "repoKey": "muhammadilham1998-crypto/actuary-skills"
+  },
+  "resolved": {
+    "owner": "muhammadilham1998-crypto",
+    "repo": "actuary-skills",
+    "branch": "main",
+    "subpath": "skills/risk-management-actuary"
+  }
+}

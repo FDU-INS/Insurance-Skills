@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 7,
+    "_query": "insurance",
+    "author": "intent-solutions-io",
+    "description": "This skill enables Claude to automatically check for HIPAA (Health Insurance Portability and Accountability Act) compliance issues in codebases, infrastructure configurations, and documentation. It leverages the hipaa-compliance-checker plugin to identify potential violations related to data privacy, security, and access controls. Use this skill when the user explicitly requests to \"check HIPAA compliance\", \"scan for HIPAA violations\", \"assess HIPAA readiness\", or similar phrases related to HIPAA audits and security best practices. It is useful for projects handling protected health information (PHI) and requiring adherence to HIPAA regulations.",
+    "githubUrl": "https://github.com/intent-solutions-io/plugins-nixtla/tree/main/010-archive/backups-20251108/plugin-enhancements/plugin-backups/hipaa-compliance-checker_20251019_142636/skills/skill-adapter",
+    "id": "intent-solutions-io-plugins-nixtla-010-archive-backups-20251108-plugin-enhancements-plugin-backups-hipaa-compliance-checker-20251019-142636-skills-skill-adapter-skill-md",
+    "name": "checking-hipaa-compliance",
+    "skillUrl": "https://skillsmp.com/skills/intent-solutions-io-plugins-nixtla-010-archive-backups-20251108-plugin-enhancements-plugin-backups-hipaa-compliance-checker-20251019-142636-skills-skill-adapter-skill-md",
+    "stars": 6,
+    "updatedAt": 1765238157,
+    "owner": "intent-solutions-io",
+    "repo": "plugins-nixtla",
+    "branch": "main",
+    "subpath": "010-archive/backups-20251108/plugin-enhancements/plugin-backups/hipaa-compliance-checker_20251019_142636/skills/skill-adapter",
+    "mode": "tree",
+    "repoKey": "intent-solutions-io/plugins-nixtla"
+  },
+  "resolved": {
+    "owner": "intent-solutions-io",
+    "repo": "plugins-nixtla",
+    "branch": "main",
+    "subpath": "010-archive/backups-20251108/plugin-enhancements/plugin-backups/hipaa-compliance-checker_20251019_142636/skills/skill-adapter"
+  }
+}

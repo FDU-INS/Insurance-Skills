@@ -1,0 +1,10 @@
+[project]
+name = "healthsim-workspace"
+version = "1.0.0"
+description = "HealthSim Workspace - Skills-first synthetic healthcare data generation"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.11"
+
+[tool.uv.workspace]
+members = ["packages/*"]

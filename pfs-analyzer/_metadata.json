@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 7,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Extracts and reconciles medical provider, wage-loss, and insurance/lien data from personal injury plaintiff fact sheets and initial disclosures against builder draft responses. Use when the user mentions PFS analysis, medical provider reconciliation, wage loss audit, insurance lien tracking, PI discovery reconciliation, builder response validation, MDL plaintiff data extraction, FRCP 26(a)(1) disclosures, treatment chronologies, or specials spreadsheets.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/legal/pfs-analyzer",
+    "id": "casemark-skills-skills-legal-pfs-analyzer-skill-md",
+    "name": "pfs-analyzer",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-legal-pfs-analyzer-skill-md",
+    "stars": 12,
+    "updatedAt": 1772500417,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/pfs-analyzer",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/pfs-analyzer"
+  }
+}

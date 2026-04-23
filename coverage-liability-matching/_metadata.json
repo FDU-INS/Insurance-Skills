@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 2,
+    "_query": "coverage",
+    "author": "aifinlab",
+    "description": "当用户需要评估保额与保险责任是否匹配时使用此 skill。适用于保额充足性分析、责任覆盖范围检查、家庭保障需求测算等场景。",
+    "githubUrl": "https://github.com/aifinlab/FinClaw/tree/main/skills/coverage-scope-judgment",
+    "id": "aifinlab-finclaw-skills-coverage-liability-matching-skill-md",
+    "name": "coverage-liability-matching",
+    "skillUrl": "https://skillsmp.com/skills/aifinlab-finclaw-skills-coverage-liability-matching-skill-md",
+    "stars": 125,
+    "updatedAt": 1773714707,
+    "is_insurance_related": "是",
+    "owner": "aifinlab",
+    "repo": "FinClaw",
+    "branch": "main",
+    "subpath": "skills/coverage-scope-judgment",
+    "mode": "tree",
+    "repoKey": "aifinlab/FinClaw"
+  },
+  "resolved": {
+    "owner": "aifinlab",
+    "repo": "FinClaw",
+    "branch": "main",
+    "subpath": "skills/coverage-scope-judgment"
+  }
+}

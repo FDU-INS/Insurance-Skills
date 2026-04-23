@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 5,
+    "_query": "insurance",
+    "author": "alvinhenrick",
+    "description": "Generate Coverage and insurance resources with payer diversity including Medicare, Medicaid, commercial, Tricare, VA, and self-pay. Use when user mentions coverage, insurance, payer, Medicare, Medicaid, benefits, or coordination of benefits. For claims and EOB see the claims-eob skill.",
+    "githubUrl": "https://github.com/alvinhenrick/fhir-synth/tree/main/src/fhir_synth/skills/builtin/coverage",
+    "id": "alvinhenrick-fhir-synth-src-fhir-synth-skills-builtin-coverage-skill-md",
+    "name": "coverage",
+    "skillUrl": "https://skillsmp.com/skills/alvinhenrick-fhir-synth-src-fhir-synth-skills-builtin-coverage-skill-md",
+    "stars": 0,
+    "updatedAt": 1773594332,
+    "owner": "alvinhenrick",
+    "repo": "fhir-synth",
+    "branch": "main",
+    "subpath": "src/fhir_synth/skills/builtin/coverage",
+    "mode": "tree",
+    "repoKey": "alvinhenrick/fhir-synth"
+  },
+  "resolved": {
+    "owner": "alvinhenrick",
+    "repo": "fhir-synth",
+    "branch": "main",
+    "subpath": "src/fhir_synth/skills/builtin/coverage"
+  }
+}

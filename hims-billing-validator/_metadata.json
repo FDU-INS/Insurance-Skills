@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 7,
+    "_query": "insurance",
+    "author": "CJCreator-New",
+    "description": "Ensures correct tariff, package, insurance, co-pay, discount, tax & claim logic in HIMS billing module.",
+    "githubUrl": "https://github.com/CJCreator-New/care-harmony-hub/tree/main/.agents/skills/hims-billing-validator",
+    "id": "cjcreator-new-care-harmony-hub-agents-skills-hims-billing-validator-skill-md",
+    "name": "hims-billing-validator",
+    "skillUrl": "https://skillsmp.com/skills/cjcreator-new-care-harmony-hub-agents-skills-hims-billing-validator-skill-md",
+    "stars": 0,
+    "updatedAt": 1773386002,
+    "owner": "CJCreator-New",
+    "repo": "care-harmony-hub",
+    "branch": "main",
+    "subpath": ".agents/skills/hims-billing-validator",
+    "mode": "tree",
+    "repoKey": "CJCreator-New/care-harmony-hub"
+  },
+  "resolved": {
+    "owner": "CJCreator-New",
+    "repo": "care-harmony-hub",
+    "branch": "main",
+    "subpath": ".agents/skills/hims-billing-validator"
+  }
+}

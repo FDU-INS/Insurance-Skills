@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 8,
+    "_query": "insurance",
+    "author": "jkraemer",
+    "description": "Query Lore, the librarian agent, to search the owner's personal knowledge base. Use when looking up stored documents, personal records, insurance, manuals, notes, vehicles, or any \"do I have a document about X?\" type question.",
+    "githubUrl": "https://github.com/jkraemer/fera/tree/master/docs/librarian/ask-lore",
+    "id": "jkraemer-fera-docs-librarian-ask-lore-skill-md",
+    "name": "ask-lore",
+    "skillUrl": "https://skillsmp.com/skills/jkraemer-fera-docs-librarian-ask-lore-skill-md",
+    "stars": 0,
+    "updatedAt": 1773996978,
+    "owner": "jkraemer",
+    "repo": "fera",
+    "branch": "master",
+    "subpath": "docs/librarian/ask-lore",
+    "mode": "tree",
+    "repoKey": "jkraemer/fera"
+  },
+  "resolved": {
+    "owner": "jkraemer",
+    "repo": "fera",
+    "branch": "master",
+    "subpath": "docs/librarian/ask-lore"
+  }
+}

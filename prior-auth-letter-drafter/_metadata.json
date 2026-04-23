@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 6,
+    "_query": "insurance",
+    "author": "aipoch",
+    "description": "Generate professional prior authorization request letters for insurance companies with proper clinical justification and formatting.",
+    "githubUrl": "https://github.com/aipoch/medical-research-skills/tree/main/scientific-skills/Academic Writing/prior-auth-letter-drafter",
+    "id": "aipoch-medical-research-skills-scientific-skills-academic-writing-prior-auth-letter-drafter-skill-md",
+    "name": "prior-auth-letter-drafter",
+    "skillUrl": "https://skillsmp.com/skills/aipoch-medical-research-skills-scientific-skills-academic-writing-prior-auth-letter-drafter-skill-md",
+    "stars": 132,
+    "updatedAt": 1774258477,
+    "owner": "aipoch",
+    "repo": "medical-research-skills",
+    "branch": "main",
+    "subpath": "scientific-skills/Academic Writing/prior-auth-letter-drafter",
+    "mode": "tree",
+    "repoKey": "aipoch/medical-research-skills"
+  },
+  "resolved": {
+    "owner": "aipoch",
+    "repo": "medical-research-skills",
+    "branch": "main",
+    "subpath": "scientific-skills/Academic Writing/prior-auth-letter-drafter"
+  }
+}

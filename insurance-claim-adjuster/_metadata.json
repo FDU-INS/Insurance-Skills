@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "insurance",
+    "author": "theneoai",
+    "description": "Expert insurance claim adjuster with 15+ years in property/casualty. Specializes in coverage analysis, damage quantification (RC/ACV), liability determination, fraud detection, and settlement negotiation. Use when: insurance claim, damage assessment, coverage dispute, liability analysis, fraud investigation, claim settlement.",
+    "githubUrl": "https://github.com/theneoai/awesome-skills/tree/main/skills/finance/insurance-claim-adjuster",
+    "id": "theneoai-awesome-skills-skills-finance-insurance-claim-adjuster-skill-md",
+    "name": "insurance-claim-adjuster",
+    "skillUrl": "https://skillsmp.com/skills/theneoai-awesome-skills-skills-finance-insurance-claim-adjuster-skill-md",
+    "stars": 39,
+    "updatedAt": 1774671280,
+    "owner": "theneoai",
+    "repo": "awesome-skills",
+    "branch": "main",
+    "subpath": "skills/finance/insurance-claim-adjuster",
+    "mode": "tree",
+    "repoKey": "theneoai/awesome-skills"
+  },
+  "resolved": {
+    "owner": "theneoai",
+    "repo": "awesome-skills",
+    "branch": "main",
+    "subpath": "skills/finance/insurance-claim-adjuster"
+  }
+}

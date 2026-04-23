@@ -1,0 +1,53 @@
+panel_name,panel_loinc,test_name,test_loinc,units,domain
+Basic Metabolic Panel,24323-8,Glucose,2345-7,mg/dL,general
+Basic Metabolic Panel,24323-8,BUN,3094-0,mg/dL,general
+Basic Metabolic Panel,24323-8,Creatinine,2160-0,mg/dL,ckd
+Basic Metabolic Panel,24323-8,Sodium,2951-2,mmol/L,general
+Basic Metabolic Panel,24323-8,Potassium,2823-3,mmol/L,general
+Basic Metabolic Panel,24323-8,Chloride,2075-0,mmol/L,general
+Basic Metabolic Panel,24323-8,CO2,2028-9,mmol/L,general
+Basic Metabolic Panel,24323-8,Calcium,17861-6,mg/dL,general
+Comprehensive Metabolic Panel,24322-0,Albumin,1751-7,g/dL,general
+Comprehensive Metabolic Panel,24322-0,Total Protein,2885-2,g/dL,general
+Comprehensive Metabolic Panel,24322-0,ALT,1742-6,U/L,general
+Comprehensive Metabolic Panel,24322-0,AST,1920-8,U/L,general
+Comprehensive Metabolic Panel,24322-0,Alkaline Phosphatase,6768-6,U/L,general
+Comprehensive Metabolic Panel,24322-0,Total Bilirubin,1975-2,mg/dL,general
+Lipid Panel,24331-1,Total Cholesterol,2093-3,mg/dL,cardiovascular
+Lipid Panel,24331-1,HDL Cholesterol,2085-9,mg/dL,cardiovascular
+Lipid Panel,24331-1,LDL Cholesterol Calculated,13457-7,mg/dL,cardiovascular
+Lipid Panel,24331-1,Triglycerides,2571-8,mg/dL,cardiovascular
+Hemoglobin A1c,N/A,Hemoglobin A1c,4548-4,%,diabetes
+Fasting Glucose,N/A,Glucose Fasting,1558-6,mg/dL,diabetes
+eGFR CKD-EPI,N/A,eGFR CKD-EPI,48642-3,mL/min/1.73m2,ckd
+eGFR CKD-EPI 2021,N/A,eGFR CKD-EPI 2021,88293-6,mL/min/1.73m2,ckd
+BNP,N/A,BNP,30934-4,pg/mL,heart-failure
+NT-proBNP,N/A,NT-proBNP,33762-6,pg/mL,heart-failure
+Troponin I,N/A,Troponin I High Sensitivity,10839-9,ng/mL,cardiovascular
+Troponin T,N/A,Troponin T High Sensitivity,6598-7,ng/mL,cardiovascular
+CBC,58410-2,WBC,6690-2,10*3/uL,general
+CBC,58410-2,RBC,789-8,10*6/uL,general
+CBC,58410-2,Hemoglobin,718-7,g/dL,general
+CBC,58410-2,Hematocrit,4544-3,%,general
+CBC,58410-2,Platelets,777-3,10*3/uL,general
+CBC,58410-2,MCV,787-2,fL,general
+CBC,58410-2,MCH,785-6,pg,general
+CBC,58410-2,MCHC,786-4,g/dL,general
+Tumor Markers,N/A,CEA,2039-6,ng/mL,oncology
+Tumor Markers,N/A,CA 19-9,24108-3,U/mL,oncology
+Tumor Markers,N/A,CA-125,10334-1,U/mL,oncology
+Tumor Markers,N/A,CA 15-3,6875-9,U/mL,oncology
+Tumor Markers,N/A,PSA,2857-1,ng/mL,oncology
+Tumor Markers,N/A,AFP,1834-1,ng/mL,oncology
+Urinalysis,24356-8,Urine Protein,2888-6,mg/dL,ckd
+Urinalysis,24356-8,Urine Glucose,5792-7,mg/dL,diabetes
+Urine Albumin,N/A,Urine Albumin,1754-1,mg/L,ckd
+UACR,N/A,Urine Albumin/Creatinine Ratio,9318-7,mg/g,ckd
+PTH,N/A,Parathyroid Hormone,2731-8,pg/mL,ckd
+Phosphorus,N/A,Phosphorus,2777-1,mg/dL,ckd
+LDH,N/A,Lactate Dehydrogenase,2532-0,U/L,oncology
+Uric Acid,N/A,Uric Acid,3084-1,mg/dL,general
+Magnesium,N/A,Magnesium,2601-3,mg/dL,general
+Iron Studies,N/A,Iron,2498-4,mcg/dL,general
+Iron Studies,N/A,TIBC,2500-7,mcg/dL,general
+Iron Studies,N/A,Ferritin,2276-4,ng/mL,general

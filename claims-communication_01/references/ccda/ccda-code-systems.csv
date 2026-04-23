@@ -1,0 +1,14 @@
+code_system_name,oid,version,usage
+SNOMED CT,2.16.840.1.113883.6.96,US Edition,Problems; procedures; clinical findings; body sites
+RxNorm,2.16.840.1.113883.6.88,Current,Medications; drug ingredients; clinical drugs
+LOINC,2.16.840.1.113883.6.1,2.74,Labs; vitals; section codes; document types
+ICD-10-CM,2.16.840.1.113883.6.90,2024,Diagnosis codes supplemental to SNOMED
+CPT,2.16.840.1.113883.6.12,2024,Professional procedure codes
+HCPCS,2.16.840.1.113883.6.285,2024,Healthcare procedures and supplies
+NDC,2.16.840.1.113883.6.69,Current,Drug product identifiers
+CVX,2.16.840.1.113883.12.292,Current,Vaccine administered codes
+NullFlavor,2.16.840.1.113883.5.1008,HL7 v3,Unknown; not applicable; masked; other null values
+AdministrativeGender,2.16.840.1.113883.5.1,HL7 v3,M male; F female; UN undifferentiated
+ActStatus,2.16.840.1.113883.5.14,HL7 v3,active; completed; aborted; suspended
+Confidentiality,2.16.840.1.113883.5.25,HL7 v3,N normal; R restricted; V very restricted
+RouteOfAdministration,2.16.840.1.113883.5.112,HL7 v3,PO oral; IV intravenous; IM intramuscular; SC subcutaneous

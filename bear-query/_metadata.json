@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 8,
+    "_query": "insurance",
+    "author": "andres",
+    "description": "Query the Bear EHR database using the semantic layer. Use when asked about clients, billing, appointments, insurance, clinical data, procedures, scheduling, programs, staff, vitals, diagnoses, revenue, claims, or any data question about the Bear application.",
+    "githubUrl": "https://github.com/andres/claude/tree/master/.claude/skills/bear-query",
+    "id": "andres-claude-claude-skills-bear-query-skill-md",
+    "name": "bear-query",
+    "skillUrl": "https://skillsmp.com/skills/andres-claude-claude-skills-bear-query-skill-md",
+    "stars": 0,
+    "updatedAt": 1775180701,
+    "owner": "andres",
+    "repo": "claude",
+    "branch": "master",
+    "subpath": ".claude/skills/bear-query",
+    "mode": "tree",
+    "repoKey": "andres/claude"
+  },
+  "resolved": {
+    "owner": "andres",
+    "repo": "claude",
+    "branch": "master",
+    "subpath": ".claude/skills/bear-query"
+  }
+}

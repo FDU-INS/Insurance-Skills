@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 5,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Reviews CRE insurance certificates (ACORD 25) and endorsements against Access Agreement insurance requirements, producing a pass/fail compliance determination with broker-ready deficiency instructions. Verifies coverage limits, Additional Insured status, primary/non-contributory language, waiver of subrogation, umbrella alignment, and carrier qualifications. Use when reviewing COIs, ACORD forms, vendor or contractor insurance, site access insurance, or Additional Insured endorsements in commercial real estate transactions.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/legal/coi-compliance-review",
+    "id": "casemark-skills-skills-legal-coi-compliance-review-skill-md",
+    "name": "coi-compliance-review",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-legal-coi-compliance-review-skill-md",
+    "stars": 12,
+    "updatedAt": 1772500417,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/coi-compliance-review",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/coi-compliance-review"
+  }
+}

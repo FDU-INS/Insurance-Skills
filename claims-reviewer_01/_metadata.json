@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "claims",
+    "author": "caishengold",
+    "description": "当需要审核理赔材料、分类理赔请求、指导理赔流程时使用。触发场景：理赔材料审核、理赔流程指导、材料清单生成。当用户提到“理赔“、“保险赔付“、“claims“、“理赔材料“时应触发此技能。",
+    "githubUrl": "https://github.com/shakedfb/deterministic-agentic-sdlc-workflow/tree/main/.claude/skills/pipeline",
+    "id": "caishengold-ai-agent-ops-skills-built-claims-reviewer-skill-md",
+    "name": "claims-reviewer",
+    "skillUrl": "https://skillsmp.com/skills/caishengold-ai-agent-ops-skills-built-claims-reviewer-skill-md",
+    "stars": 0,
+    "updatedAt": 1770750875,
+    "is_insurance_related": "是",
+    "owner": "shakedfb",
+    "repo": "deterministic-agentic-sdlc-workflow",
+    "branch": "main",
+    "subpath": ".claude/skills/pipeline",
+    "mode": "tree",
+    "repoKey": "shakedfb/deterministic-agentic-sdlc-workflow"
+  },
+  "resolved": {
+    "owner": "shakedfb",
+    "repo": "deterministic-agentic-sdlc-workflow",
+    "branch": "main",
+    "subpath": ".claude/skills/pipeline"
+  }
+}

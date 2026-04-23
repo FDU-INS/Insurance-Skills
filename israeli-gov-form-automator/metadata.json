@@ -1,0 +1,49 @@
+{
+  "author": "skills-il",
+  "version": "1.0.4",
+  "category": "government-services",
+  "tags": {
+    "he": [
+      "ממשלה",
+      "טפסים",
+      "אוטומציה",
+      "gov.il",
+      "מס-הכנסה",
+      "ישראל",
+      "מילוי-טפסים",
+      "ביטוח-לאומי",
+      "בירוקרטיה",
+      "טפסי-pdf"
+    ],
+    "en": [
+      "government",
+      "forms",
+      "automation",
+      "gov-il",
+      "tax-authority",
+      "israel",
+      "form-filling",
+      "bituach-leumi",
+      "bureaucracy",
+      "pdf-forms"
+    ]
+  },
+  "display_name": {
+    "he": "אוטומציית טפסים ממשלתיים",
+    "en": "Israeli Gov Form Automator"
+  },
+  "display_description": {
+    "he": "אוטומציה למילוי טפסים ממשלתיים ישראליים באמצעות Playwright ו-PDF. חוסך שעות של מילוי ידני ומונע שגיאות בהגשת טפסים. תומך בפורטלים של gov.il, רשות המסים, ביטוח לאומי ורשם החברות. מתאים למילוי טפסים מקוונים, הגשת טפסים אונליין, הורדה ומילוי טפסי PDF ממשלתיים, ואימות שדות ישראליים (תעודת זהות, טלפון, כתובת). לא מיועד למערכות ממשלתיות מסווגות.",
+    "en": "Automate Israeli government form filling via Playwright browser automation and PDF population. Prevents hours of manual form filling and data entry errors on government portals. Use when user asks about filling government forms, \"tofes\" (form), \"gov.il\" portal submissions, Rashut HaMisim (Tax Authority) filings, Bituach Leumi (National Insurance) claims, Rasham HaChevarot (Companies Registrar) documents, online form submission, or PDF form population. Validates Teudat Zehut IDs, Israeli phones, and Hebrew addresses. Do NOT use for classified or security-clearance government systems."
+  },
+  "supported_agents": [
+    "claude-code",
+    "cursor",
+    "github-copilot",
+    "windsurf",
+    "opencode",
+    "codex",
+    "antigravity",
+    "gemini-cli"
+  ]
+}

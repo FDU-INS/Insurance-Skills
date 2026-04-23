@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 6,
+    "_query": "insurance",
+    "author": "scanady",
+    "description": "Regulatory compliance guidelines for life insurance policy administration transactions. Use when processing address changes (state-change impacts), beneficiary changes (community property, ERISA, minors), or any transaction that may trigger compliance review. Covers NAIC model regulations, state-specific rules, OFAC screening, and suitability requirements.",
+    "githubUrl": "https://github.com/scanady/forge-work/tree/master/plugins/policy-administration/skills/compliance",
+    "id": "scanady-forge-work-plugins-policy-administration-skills-compliance-skill-md",
+    "name": "compliance",
+    "skillUrl": "https://skillsmp.com/skills/scanady-forge-work-plugins-policy-administration-skills-compliance-skill-md",
+    "stars": 0,
+    "updatedAt": 1772473180,
+    "owner": "scanady",
+    "repo": "forge-work",
+    "branch": "master",
+    "subpath": "plugins/policy-administration/skills/compliance",
+    "mode": "tree",
+    "repoKey": "scanady/forge-work"
+  },
+  "resolved": {
+    "owner": "scanady",
+    "repo": "forge-work",
+    "branch": "master",
+    "subpath": "plugins/policy-administration/skills/compliance"
+  }
+}

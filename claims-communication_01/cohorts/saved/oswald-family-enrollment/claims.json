@@ -1,0 +1,511 @@
+{
+  "scenarioId": "oswald-family-enrollment",
+  "planYear": 2025,
+  "generatedDate": "2025-01-06",
+  "claims": [
+    {
+      "claimId": "CLM-2025-001",
+      "encounterId": "ENC-2025-001",
+      "memberId": "AET847291001",
+      "memberName": "Mark Oswald",
+      "claimType": "PROFESSIONAL",
+      "serviceDate": "2025-01-15",
+      "receivedDate": "2025-01-18",
+      "processedDate": "2025-01-22",
+      "status": "PAID",
+      "provider": {
+        "npi": "1234567890",
+        "name": "Dr. Nasrin Arbabi",
+        "taxId": "94-1234567"
+      },
+      "diagnoses": [
+        { "sequence": 1, "code": "Z00.00" },
+        { "sequence": 2, "code": "E78.5" },
+        { "sequence": 3, "code": "I10" }
+      ],
+      "serviceLines": [
+        {
+          "lineNumber": 1,
+          "cpt": "99395",
+          "description": "Preventive visit, 40-64 years",
+          "placeOfService": "11",
+          "units": 1,
+          "chargedAmount": 275.00,
+          "allowedAmount": 275.00,
+          "deductibleApplied": 0.00,
+          "copayAmount": 0.00,
+          "coinsuranceAmount": 0.00,
+          "planPaid": 275.00,
+          "memberResponsibility": 0.00,
+          "remarkCode": "PREVENTIVE_100_COVERED"
+        },
+        {
+          "lineNumber": 2,
+          "cpt": "36415",
+          "description": "Venipuncture",
+          "placeOfService": "11",
+          "units": 1,
+          "chargedAmount": 25.00,
+          "allowedAmount": 20.00,
+          "deductibleApplied": 0.00,
+          "copayAmount": 0.00,
+          "coinsuranceAmount": 0.00,
+          "planPaid": 20.00,
+          "memberResponsibility": 0.00,
+          "remarkCode": "PREVENTIVE_RELATED"
+        },
+        {
+          "lineNumber": 3,
+          "cpt": "80061",
+          "description": "Lipid panel",
+          "placeOfService": "11",
+          "units": 1,
+          "chargedAmount": 85.00,
+          "allowedAmount": 65.00,
+          "deductibleApplied": 0.00,
+          "copayAmount": 0.00,
+          "coinsuranceAmount": 0.00,
+          "planPaid": 65.00,
+          "memberResponsibility": 0.00,
+          "remarkCode": "PREVENTIVE_SCREENING"
+        },
+        {
+          "lineNumber": 4,
+          "cpt": "80053",
+          "description": "Comprehensive metabolic panel",
+          "placeOfService": "11",
+          "units": 1,
+          "chargedAmount": 95.00,
+          "allowedAmount": 72.00,
+          "deductibleApplied": 0.00,
+          "copayAmount": 0.00,
+          "coinsuranceAmount": 0.00,
+          "planPaid": 72.00,
+          "memberResponsibility": 0.00,
+          "remarkCode": "PREVENTIVE_SCREENING"
+        }
+      ],
+      "totals": {
+        "chargedAmount": 480.00,
+        "allowedAmount": 432.00,
+        "deductibleApplied": 0.00,
+        "copayAmount": 0.00,
+        "coinsuranceAmount": 0.00,
+        "planPaid": 432.00,
+        "memberResponsibility": 0.00
+      },
+      "adjudicationNotes": "Preventive care - 100% covered per ACA guidelines. No cost sharing applied."
+    },
+    {
+      "claimId": "CLM-2025-002",
+      "encounterId": "ENC-2025-002",
+      "memberId": "AET847291002",
+      "memberName": "Karen Oswald",
+      "claimType": "PROFESSIONAL",
+      "serviceDate": "2025-01-22",
+      "receivedDate": "2025-01-25",
+      "processedDate": "2025-01-29",
+      "status": "PAID",
+      "provider": {
+        "npi": "1234567890",
+        "name": "Dr. Nasrin Arbabi",
+        "taxId": "94-1234567"
+      },
+      "diagnoses": [
+        { "sequence": 1, "code": "Z00.00" },
+        { "sequence": 2, "code": "Z12.31" }
+      ],
+      "serviceLines": [
+        {
+          "lineNumber": 1,
+          "cpt": "99395",
+          "description": "Preventive visit, 40-64 years",
+          "placeOfService": "11",
+          "units": 1,
+          "chargedAmount": 275.00,
+          "allowedAmount": 275.00,
+          "deductibleApplied": 0.00,
+          "copayAmount": 0.00,
+          "coinsuranceAmount": 0.00,
+          "planPaid": 275.00,
+          "memberResponsibility": 0.00,
+          "remarkCode": "PREVENTIVE_100_COVERED"
+        },
+        {
+          "lineNumber": 2,
+          "cpt": "77067",
+          "description": "Screening mammography, bilateral",
+          "placeOfService": "11",
+          "units": 1,
+          "chargedAmount": 325.00,
+          "allowedAmount": 285.00,
+          "deductibleApplied": 0.00,
+          "copayAmount": 0.00,
+          "coinsuranceAmount": 0.00,
+          "planPaid": 285.00,
+          "memberResponsibility": 0.00,
+          "remarkCode": "PREVENTIVE_SCREENING_WOMENS_HEALTH"
+        }
+      ],
+      "totals": {
+        "chargedAmount": 600.00,
+        "allowedAmount": 560.00,
+        "deductibleApplied": 0.00,
+        "copayAmount": 0.00,
+        "coinsuranceAmount": 0.00,
+        "planPaid": 560.00,
+        "memberResponsibility": 0.00
+      },
+      "adjudicationNotes": "Preventive care and breast cancer screening - 100% covered per ACA guidelines."
+    },
+    {
+      "claimId": "CLM-2025-003",
+      "encounterId": "ENC-2025-003",
+      "memberId": "AET847291003",
+      "memberName": "Gracie Oswald",
+      "claimType": "PROFESSIONAL",
+      "serviceDate": "2025-02-05",
+      "receivedDate": "2025-02-08",
+      "processedDate": "2025-02-12",
+      "status": "PAID",
+      "provider": {
+        "npi": "1987654321",
+        "name": "Dr. Michael Torres",
+        "taxId": "94-7654321"
+      },
+      "diagnoses": [
+        { "sequence": 1, "code": "Z00.129" }
+      ],
+      "serviceLines": [
+        {
+          "lineNumber": 1,
+          "cpt": "99394",
+          "description": "Preventive visit, 12-17 years",
+          "placeOfService": "11",
+          "units": 1,
+          "chargedAmount": 250.00,
+          "allowedAmount": 250.00,
+          "deductibleApplied": 0.00,
+          "copayAmount": 0.00,
+          "coinsuranceAmount": 0.00,
+          "planPaid": 250.00,
+          "memberResponsibility": 0.00,
+          "remarkCode": "PREVENTIVE_100_COVERED"
+        },
+        {
+          "lineNumber": 2,
+          "cpt": "90715",
+          "description": "Tdap vaccine",
+          "placeOfService": "11",
+          "units": 1,
+          "chargedAmount": 65.00,
+          "allowedAmount": 55.00,
+          "deductibleApplied": 0.00,
+          "copayAmount": 0.00,
+          "coinsuranceAmount": 0.00,
+          "planPaid": 55.00,
+          "memberResponsibility": 0.00,
+          "remarkCode": "IMMUNIZATION_COVERED"
+        },
+        {
+          "lineNumber": 3,
+          "cpt": "90471",
+          "description": "Immunization administration",
+          "placeOfService": "11",
+          "units": 1,
+          "chargedAmount": 25.00,
+          "allowedAmount": 20.00,
+          "deductibleApplied": 0.00,
+          "copayAmount": 0.00,
+          "coinsuranceAmount": 0.00,
+          "planPaid": 20.00,
+          "memberResponsibility": 0.00,
+          "remarkCode": "IMMUNIZATION_ADMIN_COVERED"
+        }
+      ],
+      "totals": {
+        "chargedAmount": 340.00,
+        "allowedAmount": 325.00,
+        "deductibleApplied": 0.00,
+        "copayAmount": 0.00,
+        "coinsuranceAmount": 0.00,
+        "planPaid": 325.00,
+        "memberResponsibility": 0.00
+      },
+      "adjudicationNotes": "Well-child visit and immunizations - 100% covered per ACA/ACIP guidelines."
+    },
+    {
+      "claimId": "CLM-2025-004",
+      "encounterId": "ENC-2025-004",
+      "memberId": "AET847291004",
+      "memberName": "Emmy Oswald",
+      "claimType": "PROFESSIONAL",
+      "serviceDate": "2025-02-12",
+      "receivedDate": "2025-02-15",
+      "processedDate": "2025-02-19",
+      "status": "PAID",
+      "provider": {
+        "npi": "1654321098",
+        "name": "Dr. Jennifer Walsh",
+        "taxId": "94-6543210"
+      },
+      "diagnoses": [
+        { "sequence": 1, "code": "J06.9" },
+        { "sequence": 2, "code": "R05.9" },
+        { "sequence": 3, "code": "R50.9" }
+      ],
+      "serviceLines": [
+        {
+          "lineNumber": 1,
+          "cpt": "99213",
+          "description": "Office visit, established patient, low complexity",
+          "placeOfService": "20",
+          "units": 1,
+          "chargedAmount": 150.00,
+          "allowedAmount": 125.00,
+          "deductibleApplied": 0.00,
+          "copayAmount": 50.00,
+          "coinsuranceAmount": 7.50,
+          "planPaid": 67.50,
+          "memberResponsibility": 57.50,
+          "remarkCode": "URGENT_CARE_COPAY_APPLIED"
+        },
+        {
+          "lineNumber": 2,
+          "cpt": "87880",
+          "description": "Strep test, rapid",
+          "placeOfService": "20",
+          "units": 1,
+          "chargedAmount": 45.00,
+          "allowedAmount": 35.00,
+          "deductibleApplied": 0.00,
+          "copayAmount": 0.00,
+          "coinsuranceAmount": 3.50,
+          "planPaid": 31.50,
+          "memberResponsibility": 3.50,
+          "remarkCode": "DIAGNOSTIC_COINSURANCE"
+        }
+      ],
+      "totals": {
+        "chargedAmount": 195.00,
+        "allowedAmount": 160.00,
+        "deductibleApplied": 0.00,
+        "copayAmount": 50.00,
+        "coinsuranceAmount": 11.00,
+        "planPaid": 99.00,
+        "memberResponsibility": 61.00
+      },
+      "adjudicationNotes": "Urgent care visit - $50 copay applied per plan benefits. 10% coinsurance on diagnostic testing."
+    },
+    {
+      "claimId": "CLM-2025-005",
+      "encounterId": "ENC-2025-005",
+      "memberId": "AET847291005",
+      "memberName": "Miles Oswald",
+      "claimType": "PROFESSIONAL",
+      "serviceDate": "2025-02-20",
+      "receivedDate": "2025-02-23",
+      "processedDate": "2025-02-27",
+      "status": "PAID",
+      "provider": {
+        "npi": "1987654321",
+        "name": "Dr. Michael Torres",
+        "taxId": "94-7654321"
+      },
+      "diagnoses": [
+        { "sequence": 1, "code": "Z00.129" }
+      ],
+      "serviceLines": [
+        {
+          "lineNumber": 1,
+          "cpt": "99392",
+          "description": "Preventive visit, 1-4 years",
+          "placeOfService": "11",
+          "units": 1,
+          "chargedAmount": 225.00,
+          "allowedAmount": 225.00,
+          "deductibleApplied": 0.00,
+          "copayAmount": 0.00,
+          "coinsuranceAmount": 0.00,
+          "planPaid": 225.00,
+          "memberResponsibility": 0.00,
+          "remarkCode": "PREVENTIVE_100_COVERED"
+        },
+        {
+          "lineNumber": 2,
+          "cpt": "90460",
+          "description": "Immunization admin, first component",
+          "placeOfService": "11",
+          "units": 1,
+          "chargedAmount": 25.00,
+          "allowedAmount": 22.00,
+          "deductibleApplied": 0.00,
+          "copayAmount": 0.00,
+          "coinsuranceAmount": 0.00,
+          "planPaid": 22.00,
+          "memberResponsibility": 0.00,
+          "remarkCode": "IMMUNIZATION_ADMIN_COVERED"
+        },
+        {
+          "lineNumber": 3,
+          "cpt": "90461",
+          "description": "Immunization admin, each additional",
+          "placeOfService": "11",
+          "units": 1,
+          "chargedAmount": 15.00,
+          "allowedAmount": 12.00,
+          "deductibleApplied": 0.00,
+          "copayAmount": 0.00,
+          "coinsuranceAmount": 0.00,
+          "planPaid": 12.00,
+          "memberResponsibility": 0.00,
+          "remarkCode": "IMMUNIZATION_ADMIN_COVERED"
+        },
+        {
+          "lineNumber": 4,
+          "cpt": "90696",
+          "description": "DTaP-IPV vaccine",
+          "placeOfService": "11",
+          "units": 1,
+          "chargedAmount": 85.00,
+          "allowedAmount": 75.00,
+          "deductibleApplied": 0.00,
+          "copayAmount": 0.00,
+          "coinsuranceAmount": 0.00,
+          "planPaid": 75.00,
+          "memberResponsibility": 0.00,
+          "remarkCode": "IMMUNIZATION_COVERED"
+        }
+      ],
+      "totals": {
+        "chargedAmount": 350.00,
+        "allowedAmount": 334.00,
+        "deductibleApplied": 0.00,
+        "copayAmount": 0.00,
+        "coinsuranceAmount": 0.00,
+        "planPaid": 334.00,
+        "memberResponsibility": 0.00
+      },
+      "adjudicationNotes": "Well-child visit and immunizations - 100% covered per ACA/ACIP guidelines."
+    },
+    {
+      "claimId": "CLM-2025-006",
+      "encounterId": "ENC-2025-006",
+      "memberId": "AET847291001",
+      "memberName": "Mark Oswald",
+      "claimType": "PROFESSIONAL",
+      "serviceDate": "2025-03-01",
+      "receivedDate": "2025-03-04",
+      "processedDate": "2025-03-08",
+      "status": "PAID",
+      "provider": {
+        "npi": "1432109876",
+        "name": "Dr. Robert Kim",
+        "taxId": "94-4321098"
+      },
+      "diagnoses": [
+        { "sequence": 1, "code": "I10" },
+        { "sequence": 2, "code": "R00.0" }
+      ],
+      "serviceLines": [
+        {
+          "lineNumber": 1,
+          "cpt": "99214",
+          "description": "Office visit, established patient, moderate complexity",
+          "placeOfService": "11",
+          "units": 1,
+          "chargedAmount": 225.00,
+          "allowedAmount": 185.00,
+          "deductibleApplied": 0.00,
+          "copayAmount": 40.00,
+          "coinsuranceAmount": 14.50,
+          "planPaid": 130.50,
+          "memberResponsibility": 54.50,
+          "remarkCode": "SPECIALIST_COPAY_APPLIED"
+        },
+        {
+          "lineNumber": 2,
+          "cpt": "93000",
+          "description": "Electrocardiogram, 12-lead",
+          "placeOfService": "11",
+          "units": 1,
+          "chargedAmount": 75.00,
+          "allowedAmount": 58.00,
+          "deductibleApplied": 0.00,
+          "copayAmount": 0.00,
+          "coinsuranceAmount": 5.80,
+          "planPaid": 52.20,
+          "memberResponsibility": 5.80,
+          "remarkCode": "DIAGNOSTIC_COINSURANCE"
+        }
+      ],
+      "totals": {
+        "chargedAmount": 300.00,
+        "allowedAmount": 243.00,
+        "deductibleApplied": 0.00,
+        "copayAmount": 40.00,
+        "coinsuranceAmount": 20.30,
+        "planPaid": 182.70,
+        "memberResponsibility": 60.30
+      },
+      "adjudicationNotes": "Specialist visit - $40 copay applied per plan benefits. 10% coinsurance on diagnostic testing."
+    }
+  ],
+  "accumulatorSummary": {
+    "asOfDate": "2025-03-08",
+    "family": {
+      "deductible": { "limit": 500, "applied": 0, "remaining": 500 },
+      "outOfPocketMax": { "limit": 5000, "applied": 121.30, "remaining": 4878.70 }
+    },
+    "byMember": [
+      {
+        "memberId": "AET847291001",
+        "name": "Mark Oswald",
+        "deductible": { "limit": 250, "applied": 0, "remaining": 250 },
+        "outOfPocketMax": { "limit": 2500, "applied": 60.30, "remaining": 2439.70 },
+        "claimCount": 2,
+        "totalPlanPaid": 614.70
+      },
+      {
+        "memberId": "AET847291002",
+        "name": "Karen Oswald",
+        "deductible": { "limit": 250, "applied": 0, "remaining": 250 },
+        "outOfPocketMax": { "limit": 2500, "applied": 0, "remaining": 2500 },
+        "claimCount": 1,
+        "totalPlanPaid": 560.00
+      },
+      {
+        "memberId": "AET847291003",
+        "name": "Gracie Oswald",
+        "deductible": { "limit": 250, "applied": 0, "remaining": 250 },
+        "outOfPocketMax": { "limit": 2500, "applied": 0, "remaining": 2500 },
+        "claimCount": 1,
+        "totalPlanPaid": 325.00
+      },
+      {
+        "memberId": "AET847291004",
+        "name": "Emmy Oswald",
+        "deductible": { "limit": 250, "applied": 0, "remaining": 250 },
+        "outOfPocketMax": { "limit": 2500, "applied": 61.00, "remaining": 2439.00 },
+        "claimCount": 1,
+        "totalPlanPaid": 99.00
+      },
+      {
+        "memberId": "AET847291005",
+        "name": "Miles Oswald",
+        "deductible": { "limit": 250, "applied": 0, "remaining": 250 },
+        "outOfPocketMax": { "limit": 2500, "applied": 0, "remaining": 2500 },
+        "claimCount": 1,
+        "totalPlanPaid": 334.00
+      }
+    ]
+  },
+  "summaryStatistics": {
+    "totalClaims": 6,
+    "totalChargedAmount": 2265.00,
+    "totalAllowedAmount": 2054.00,
+    "totalPlanPaid": 1932.70,
+    "totalMemberResponsibility": 121.30,
+    "averageDiscount": "9.3%"
+  }
+}

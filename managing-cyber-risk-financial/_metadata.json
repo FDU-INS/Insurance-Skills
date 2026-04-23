@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 7,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Structures financial sector cyber risk assessment with scenario quantification and insurance evaluation. Use when assessing cyber risk, quantifying cyber exposure, or evaluating cyber insurance.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/finance/managing-cyber-risk-financial",
+    "id": "casemark-skills-skills-finance-managing-cyber-risk-financial-skill-md",
+    "name": "managing-cyber-risk-financial",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-finance-managing-cyber-risk-financial-skill-md",
+    "stars": 12,
+    "updatedAt": 1772680350,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/managing-cyber-risk-financial",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/managing-cyber-risk-financial"
+  }
+}

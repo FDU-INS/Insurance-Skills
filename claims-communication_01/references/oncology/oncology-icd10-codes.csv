@@ -1,0 +1,116 @@
+code,description,cancer_type,category,common_sites
+C50.011,Malignant neoplasm of nipple and areola right female breast,breast,primary,breast
+C50.012,Malignant neoplasm of nipple and areola left female breast,breast,primary,breast
+C50.111,Malignant neoplasm of central portion of right female breast,breast,primary,breast
+C50.112,Malignant neoplasm of central portion of left female breast,breast,primary,breast
+C50.211,Malignant neoplasm of upper-inner quadrant of right female breast,breast,primary,breast
+C50.212,Malignant neoplasm of upper-inner quadrant of left female breast,breast,primary,breast
+C50.311,Malignant neoplasm of lower-inner quadrant of right female breast,breast,primary,breast
+C50.312,Malignant neoplasm of lower-inner quadrant of left female breast,breast,primary,breast
+C50.411,Malignant neoplasm of upper-outer quadrant of right female breast,breast,primary,breast
+C50.412,Malignant neoplasm of upper-outer quadrant of left female breast,breast,primary,breast
+C50.511,Malignant neoplasm of lower-outer quadrant of right female breast,breast,primary,breast
+C50.512,Malignant neoplasm of lower-outer quadrant of left female breast,breast,primary,breast
+C50.811,Malignant neoplasm of overlapping sites of right female breast,breast,primary,breast
+C50.812,Malignant neoplasm of overlapping sites of left female breast,breast,primary,breast
+C50.911,Malignant neoplasm of unspecified site of right female breast,breast,primary,breast
+C50.912,Malignant neoplasm of unspecified site of left female breast,breast,primary,breast
+C50.919,Malignant neoplasm of unspecified site of unspecified female breast,breast,primary,breast
+C34.00,Malignant neoplasm of unspecified main bronchus,lung,primary,lung
+C34.01,Malignant neoplasm of right main bronchus,lung,primary,lung
+C34.02,Malignant neoplasm of left main bronchus,lung,primary,lung
+C34.10,Malignant neoplasm of upper lobe unspecified bronchus or lung,lung,primary,lung
+C34.11,Malignant neoplasm of upper lobe right bronchus or lung,lung,primary,lung
+C34.12,Malignant neoplasm of upper lobe left bronchus or lung,lung,primary,lung
+C34.2,Malignant neoplasm of middle lobe bronchus or lung,lung,primary,lung
+C34.30,Malignant neoplasm of lower lobe unspecified bronchus or lung,lung,primary,lung
+C34.31,Malignant neoplasm of lower lobe right bronchus or lung,lung,primary,lung
+C34.32,Malignant neoplasm of lower lobe left bronchus or lung,lung,primary,lung
+C34.80,Malignant neoplasm of overlapping sites of unspecified bronchus and lung,lung,primary,lung
+C34.81,Malignant neoplasm of overlapping sites of right bronchus and lung,lung,primary,lung
+C34.82,Malignant neoplasm of overlapping sites of left bronchus and lung,lung,primary,lung
+C34.90,Malignant neoplasm of unspecified part of unspecified bronchus or lung,lung,primary,lung
+C34.91,Malignant neoplasm of unspecified part of right bronchus or lung,lung,primary,lung
+C34.92,Malignant neoplasm of unspecified part of left bronchus or lung,lung,primary,lung
+C18.0,Malignant neoplasm of cecum,colorectal,primary,colon
+C18.1,Malignant neoplasm of appendix,colorectal,primary,colon
+C18.2,Malignant neoplasm of ascending colon,colorectal,primary,colon
+C18.3,Malignant neoplasm of hepatic flexure,colorectal,primary,colon
+C18.4,Malignant neoplasm of transverse colon,colorectal,primary,colon
+C18.5,Malignant neoplasm of splenic flexure,colorectal,primary,colon
+C18.6,Malignant neoplasm of descending colon,colorectal,primary,colon
+C18.7,Malignant neoplasm of sigmoid colon,colorectal,primary,colon
+C18.8,Malignant neoplasm of overlapping sites of colon,colorectal,primary,colon
+C18.9,Malignant neoplasm of colon unspecified,colorectal,primary,colon
+C19,Malignant neoplasm of rectosigmoid junction,colorectal,primary,rectum
+C20,Malignant neoplasm of rectum,colorectal,primary,rectum
+C61,Malignant neoplasm of prostate,prostate,primary,prostate
+C56.1,Malignant neoplasm of right ovary,ovarian,primary,ovary
+C56.2,Malignant neoplasm of left ovary,ovarian,primary,ovary
+C56.9,Malignant neoplasm of unspecified ovary,ovarian,primary,ovary
+C25.0,Malignant neoplasm of head of pancreas,pancreatic,primary,pancreas
+C25.1,Malignant neoplasm of body of pancreas,pancreatic,primary,pancreas
+C25.2,Malignant neoplasm of tail of pancreas,pancreatic,primary,pancreas
+C25.9,Malignant neoplasm of pancreas unspecified,pancreatic,primary,pancreas
+C81.90,Hodgkin lymphoma unspecified unspecified site,lymphoma,primary,lymph_nodes
+C81.91,Hodgkin lymphoma unspecified lymph nodes of head face and neck,lymphoma,primary,lymph_nodes
+C81.92,Hodgkin lymphoma unspecified intrathoracic lymph nodes,lymphoma,primary,lymph_nodes
+C81.93,Hodgkin lymphoma unspecified intra-abdominal lymph nodes,lymphoma,primary,lymph_nodes
+C83.30,Diffuse large B-cell lymphoma unspecified site,lymphoma,primary,lymph_nodes
+C83.31,Diffuse large B-cell lymphoma lymph nodes of head face and neck,lymphoma,primary,lymph_nodes
+C83.32,Diffuse large B-cell lymphoma intrathoracic lymph nodes,lymphoma,primary,lymph_nodes
+C83.33,Diffuse large B-cell lymphoma intra-abdominal lymph nodes,lymphoma,primary,lymph_nodes
+C83.38,Diffuse large B-cell lymphoma lymph nodes of multiple sites,lymphoma,primary,lymph_nodes
+C85.10,Unspecified B-cell lymphoma unspecified site,lymphoma,primary,lymph_nodes
+C85.90,Non-Hodgkin lymphoma unspecified unspecified site,lymphoma,primary,lymph_nodes
+C91.00,Acute lymphoblastic leukemia not having achieved remission,leukemia,primary,bone_marrow
+C91.01,Acute lymphoblastic leukemia in remission,leukemia,primary,bone_marrow
+C91.10,Chronic lymphocytic leukemia of B-cell type not having achieved remission,leukemia,primary,bone_marrow
+C91.11,Chronic lymphocytic leukemia of B-cell type in remission,leukemia,primary,bone_marrow
+C92.00,Acute myeloblastic leukemia not having achieved remission,leukemia,primary,bone_marrow
+C92.01,Acute myeloblastic leukemia in remission,leukemia,primary,bone_marrow
+C92.10,Chronic myeloid leukemia BCR/ABL-positive not having achieved remission,leukemia,primary,bone_marrow
+C92.11,Chronic myeloid leukemia BCR/ABL-positive in remission,leukemia,primary,bone_marrow
+C90.00,Multiple myeloma not having achieved remission,myeloma,primary,bone_marrow
+C90.01,Multiple myeloma in remission,myeloma,primary,bone_marrow
+C77.0,Secondary and unspecified malignant neoplasm of lymph nodes of head face and neck,metastatic,secondary,lymph_nodes
+C77.1,Secondary and unspecified malignant neoplasm of intrathoracic lymph nodes,metastatic,secondary,lymph_nodes
+C77.2,Secondary and unspecified malignant neoplasm of intra-abdominal lymph nodes,metastatic,secondary,lymph_nodes
+C77.3,Secondary and unspecified malignant neoplasm of axillary and upper limb lymph nodes,metastatic,secondary,lymph_nodes
+C77.4,Secondary and unspecified malignant neoplasm of inguinal and lower limb lymph nodes,metastatic,secondary,lymph_nodes
+C77.5,Secondary and unspecified malignant neoplasm of intrapelvic lymph nodes,metastatic,secondary,lymph_nodes
+C77.9,Secondary and unspecified malignant neoplasm of lymph node unspecified,metastatic,secondary,lymph_nodes
+C78.00,Secondary malignant neoplasm of unspecified lung,metastatic,secondary,lung
+C78.01,Secondary malignant neoplasm of right lung,metastatic,secondary,lung
+C78.02,Secondary malignant neoplasm of left lung,metastatic,secondary,lung
+C78.7,Secondary malignant neoplasm of liver and intrahepatic bile duct,metastatic,secondary,liver
+C78.6,Secondary malignant neoplasm of retroperitoneum and peritoneum,metastatic,secondary,peritoneum
+C79.00,Secondary malignant neoplasm of unspecified kidney and renal pelvis,metastatic,secondary,kidney
+C79.31,Secondary malignant neoplasm of brain,metastatic,secondary,brain
+C79.32,Secondary malignant neoplasm of cerebral meninges,metastatic,secondary,brain
+C79.49,Secondary malignant neoplasm of other parts of nervous system,metastatic,secondary,nervous_system
+C79.51,Secondary malignant neoplasm of bone,metastatic,secondary,bone
+C79.52,Secondary malignant neoplasm of bone marrow,metastatic,secondary,bone_marrow
+C79.81,Secondary malignant neoplasm of breast,metastatic,secondary,breast
+C79.89,Secondary malignant neoplasm of other specified sites,metastatic,secondary,other
+Z51.0,Encounter for antineoplastic radiation therapy,encounter,administrative,na
+Z51.11,Encounter for antineoplastic chemotherapy,encounter,administrative,na
+Z51.12,Encounter for antineoplastic immunotherapy,encounter,administrative,na
+Z08,Encounter for follow-up examination after completed treatment for malignant neoplasm,encounter,administrative,na
+Z85.3,Personal history of malignant neoplasm of breast,history,administrative,breast
+Z85.41,Personal history of malignant neoplasm of cervix uteri,history,administrative,cervix
+Z85.43,Personal history of malignant neoplasm of ovary,history,administrative,ovary
+Z85.46,Personal history of malignant neoplasm of prostate,history,administrative,prostate
+Z85.118,Personal history of malignant neoplasm of bronchus and lung,history,administrative,lung
+Z85.038,Personal history of malignant neoplasm of large intestine,history,administrative,colon
+Z85.71,Personal history of Hodgkin lymphoma,history,administrative,lymph_nodes
+Z85.72,Personal history of non-Hodgkin lymphomas,history,administrative,lymph_nodes
+Z85.6,Personal history of leukemia,history,administrative,bone_marrow
+D70.1,Agranulocytosis secondary to cancer chemotherapy,adverse_effect,toxicity,bone_marrow
+D61.1,Drug-induced aplastic anemia,adverse_effect,toxicity,bone_marrow
+D64.81,Anemia due to antineoplastic chemotherapy,adverse_effect,toxicity,bone_marrow
+D69.59,Other secondary thrombocytopenia,adverse_effect,toxicity,bone_marrow
+G62.0,Drug-induced polyneuropathy,adverse_effect,toxicity,nervous_system
+R11.0,Nausea,adverse_effect,toxicity,gastrointestinal
+R11.2,Nausea with vomiting unspecified,adverse_effect,toxicity,gastrointestinal
+T45.1X5A,Adverse effect of antineoplastic and immunosuppressive drugs initial encounter,adverse_effect,toxicity,systemic

@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 4,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Evaluates life insurance product structures with cash value analysis, cost comparisons, and suitability assessment. Use when analyzing life products, comparing insurance costs, or assessing product suitability.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/finance/analyzing-life-insurance-products",
+    "id": "casemark-skills-skills-finance-analyzing-life-insurance-products-skill-md",
+    "name": "analyzing-life-insurance-products",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-finance-analyzing-life-insurance-products-skill-md",
+    "stars": 12,
+    "updatedAt": 1772680350,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/analyzing-life-insurance-products",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/analyzing-life-insurance-products"
+  }
+}

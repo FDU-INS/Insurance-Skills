@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 2,
+    "_query": "insurance",
+    "author": "ToshiyaTsubonishi",
+    "description": "ウェアラブルやドライブレコーダーのデータから個人のリスクを瞬時に算定し、保険料の決定と支払いを自動化するスキル。",
+    "githubUrl": "https://github.com/ToshiyaTsubonishi/ai-config/tree/main/skills/custom/industry_sector/insurance-underwriting-claims",
+    "id": "toshiyatsubonishi-ai-config-skills-custom-industry-sector-insurance-underwriting-claims-skill-md",
+    "name": "insurance-underwriting-claims",
+    "skillUrl": "https://skillsmp.com/skills/toshiyatsubonishi-ai-config-skills-custom-industry-sector-insurance-underwriting-claims-skill-md",
+    "stars": 0,
+    "updatedAt": 1772441310,
+    "owner": "ToshiyaTsubonishi",
+    "repo": "ai-config",
+    "branch": "main",
+    "subpath": "skills/custom/industry_sector/insurance-underwriting-claims",
+    "mode": "tree",
+    "repoKey": "ToshiyaTsubonishi/ai-config"
+  },
+  "resolved": {
+    "owner": "ToshiyaTsubonishi",
+    "repo": "ai-config",
+    "branch": "main",
+    "subpath": "skills/custom/industry_sector/insurance-underwriting-claims"
+  }
+}

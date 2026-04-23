@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 11,
+    "_query": "insurance",
+    "author": "officechbusinessservices-creator",
+    "description": "Manage CompliCore external app integrations: PMS providers (Guesty, Hostaway, Lodgify, Beds24, Hostfully), OTA channels (Airbnb, VRBO, Booking.com), payment processors (Stripe, PayPal), smart locks (August, Schlage, Yale), accounting (QuickBooks, Xero), and insurance (Superhog). Actions: list, connect, disconnect, sync, check env vars, diagnose errors. Uses the connect-apps-plugin MCP server.",
+    "githubUrl": "https://github.com/officechbusinessservices-creator/CompliCore/tree/main/.agent/skills/connect-apps",
+    "id": "officechbusinessservices-creator-complicore-agent-skills-connect-apps-skill-md",
+    "name": "connect-apps",
+    "skillUrl": "https://skillsmp.com/skills/officechbusinessservices-creator-complicore-agent-skills-connect-apps-skill-md",
+    "stars": 0,
+    "updatedAt": 1772443583,
+    "owner": "officechbusinessservices-creator",
+    "repo": "CompliCore",
+    "branch": "main",
+    "subpath": ".agent/skills/connect-apps",
+    "mode": "tree",
+    "repoKey": "officechbusinessservices-creator/CompliCore"
+  },
+  "resolved": {
+    "owner": "officechbusinessservices-creator",
+    "repo": "CompliCore",
+    "branch": "main",
+    "subpath": ".agent/skills/connect-apps"
+  }
+}

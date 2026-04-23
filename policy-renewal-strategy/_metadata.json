@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 5,
+    "_query": "insurance",
+    "author": "Winbda",
+    "description": "Design insurance policy renewal strategies.\nTRIGGERS - Use when user needs help with policy-renewal-strategy related tasks.",
+    "githubUrl": "https://github.com/Winbda/claude-skills-collection/tree/master/skills/policy-renewal-strategy",
+    "id": "winbda-claude-skills-collection-skills-policy-renewal-strategy-skill-md",
+    "name": "policy-renewal-strategy",
+    "skillUrl": "https://skillsmp.com/skills/winbda-claude-skills-collection-skills-policy-renewal-strategy-skill-md",
+    "stars": 2,
+    "updatedAt": 1775416616,
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/policy-renewal-strategy",
+    "mode": "tree",
+    "repoKey": "Winbda/claude-skills-collection"
+  },
+  "resolved": {
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/policy-renewal-strategy"
+  }
+}

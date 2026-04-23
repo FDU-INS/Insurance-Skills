@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 9,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Drafts U.S. commercial real estate access and indemnity (right-of-entry) agreements for pre-closing due diligence. Covers license grants, non-invasive vs invasive testing gates, insurance/endorsement requirements, indemnity with discovery carve-outs, restoration and lien remedies, confidentiality, and anti-indemnity guardrails. Trigger: access agreement, right of entry, due diligence access, Phase I/II, invasive testing, pre-PSA site inspection.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/legal/access-indemnity-agreement",
+    "id": "casemark-skills-skills-legal-access-indemnity-agreement-skill-md",
+    "name": "access-indemnity-agreement",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-legal-access-indemnity-agreement-skill-md",
+    "stars": 12,
+    "updatedAt": 1772500417,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/access-indemnity-agreement",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/access-indemnity-agreement"
+  }
+}

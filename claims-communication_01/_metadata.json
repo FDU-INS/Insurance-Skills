@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "claims",
+    "author": "jewdore",
+    "description": "当用户需要协助理赔沟通时使用此 skill。适用于理赔申请指导、与保险公司沟通话术、理赔异议处理等场景。",
+    "githubUrl": "https://github.com/mark64oswald/healthsim-workspace",
+    "id": "jewdore-openclaw-finclaw-test-skills-claims-communication-skill-md",
+    "name": "claims-communication",
+    "skillUrl": "https://skillsmp.com/skills/jewdore-openclaw-finclaw-test-skills-claims-communication-skill-md",
+    "stars": 0,
+    "updatedAt": 1773656985,
+    "is_insurance_related": "是",
+    "owner": "mark64oswald",
+    "repo": "healthsim-workspace",
+    "branch": null,
+    "subpath": "",
+    "mode": "repo_root",
+    "repoKey": "mark64oswald/healthsim-workspace"
+  },
+  "resolved": {
+    "owner": "mark64oswald",
+    "repo": "healthsim-workspace",
+    "branch": "main",
+    "subpath": ""
+  }
+}

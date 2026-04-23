@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "insurance",
+    "author": "Winbda",
+    "description": "Write insurance blog content for SEO and education.\nTRIGGERS - Use when user needs help with insurance-blog-writer related tasks.",
+    "githubUrl": "https://github.com/Winbda/claude-skills-collection/tree/master/skills/insurance-blog-writer",
+    "id": "winbda-claude-skills-collection-skills-insurance-blog-writer-skill-md",
+    "name": "insurance-blog-writer",
+    "skillUrl": "https://skillsmp.com/skills/winbda-claude-skills-collection-skills-insurance-blog-writer-skill-md",
+    "stars": 2,
+    "updatedAt": 1775416616,
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/insurance-blog-writer",
+    "mode": "tree",
+    "repoKey": "Winbda/claude-skills-collection"
+  },
+  "resolved": {
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/insurance-blog-writer"
+  }
+}

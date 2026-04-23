@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 11,
+    "_query": "insurance",
+    "author": "openclaw",
+    "description": "Senior-level roofing, estimating, and operations guidance for contractors, adjusters, inspectors, and sales teams. Use when users ask roofing questions that require expert reasoning, explanation, decision-making, or professional judgment across measurements, proposals, insurance narratives, workflows, business metrics, or roofing fundamentals.",
+    "githubUrl": "https://github.com/openclaw/skills/tree/main/skills/abrahamventura/roofing-knowledge-mentor",
+    "id": "openclaw-skills-skills-abrahamventura-roofing-knowledge-mentor-skill-md",
+    "name": "roofing-knowledge-mentor",
+    "skillUrl": "https://skillsmp.com/skills/openclaw-skills-skills-abrahamventura-roofing-knowledge-mentor-skill-md",
+    "stars": 4094,
+    "updatedAt": 1770080555,
+    "owner": "openclaw",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/abrahamventura/roofing-knowledge-mentor",
+    "mode": "tree",
+    "repoKey": "openclaw/skills"
+  },
+  "resolved": {
+    "owner": "openclaw",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/abrahamventura/roofing-knowledge-mentor"
+  }
+}

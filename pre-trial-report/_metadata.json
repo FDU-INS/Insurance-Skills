@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 6,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Drafts objective pre-trial reports for insurance carriers in personal injury defense litigation. Covers liability analysis, damages evaluation, venue/jury analysis, cost projections, expert testimony, settlement recommendations, and trial outcome predictions (~60 days before trial). Use when preparing carrier pre-trial reports, defense trial assessments, or settlement recommendation memos.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/legal/pre-trial-report",
+    "id": "casemark-skills-skills-legal-pre-trial-report-skill-md",
+    "name": "pre-trial-report",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-legal-pre-trial-report-skill-md",
+    "stars": 12,
+    "updatedAt": 1772500417,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/pre-trial-report",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/pre-trial-report"
+  }
+}

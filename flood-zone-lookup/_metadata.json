@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 11,
+    "_query": "insurance",
+    "author": "kwoody20",
+    "description": "Use when the user mentions flood zone, flood risk, FEMA, SFHA, floodplain, property due diligence, natural hazard disclosure, flood insurance, base flood elevation, or asks whether a property is in a flood zone.",
+    "githubUrl": "https://github.com/kwoody20/fema-flood-mcp/tree/main/skills/flood-zone-lookup",
+    "id": "kwoody20-fema-flood-mcp-skills-flood-zone-lookup-skill-md",
+    "name": "flood-zone-lookup",
+    "skillUrl": "https://skillsmp.com/skills/kwoody20-fema-flood-mcp-skills-flood-zone-lookup-skill-md",
+    "stars": 0,
+    "updatedAt": 1772131838,
+    "owner": "kwoody20",
+    "repo": "fema-flood-mcp",
+    "branch": "main",
+    "subpath": "skills/flood-zone-lookup",
+    "mode": "tree",
+    "repoKey": "kwoody20/fema-flood-mcp"
+  },
+  "resolved": {
+    "owner": "kwoody20",
+    "repo": "fema-flood-mcp",
+    "branch": "main",
+    "subpath": "skills/flood-zone-lookup"
+  }
+}

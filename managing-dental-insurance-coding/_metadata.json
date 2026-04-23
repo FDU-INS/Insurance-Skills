@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 4,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Assigns CDT codes with procedure-specific documentation and insurance submission requirements. Use when coding dental procedures, submitting dental claims, or managing CDT code selection.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/med/managing-dental-insurance-coding",
+    "id": "casemark-skills-skills-med-managing-dental-insurance-coding-skill-md",
+    "name": "managing-dental-insurance-coding",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-med-managing-dental-insurance-coding-skill-md",
+    "stars": 12,
+    "updatedAt": 1772679741,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/med/managing-dental-insurance-coding",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/med/managing-dental-insurance-coding"
+  }
+}

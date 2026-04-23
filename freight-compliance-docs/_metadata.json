@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 9,
+    "_query": "insurance",
+    "author": "wasay1200",
+    "description": "Generate freight documents (Bill of Lading, Rate Confirmation) and check carrier/broker compliance via FMCSA. Track insurance expiries and authority status. Use when a broker needs to generate a BOL or Rate Con, wants to verify carrier compliance, needs to check upcoming document expiries, or when booking a load. Triggered by phrases like \"generate BOL\", \"generate rate con\", \"compliance check MC#\", \"upcoming expiries\", or \"document for load\".",
+    "githubUrl": "https://github.com/wasay1200/freight-broker-ai/tree/main/skills/freight-compliance-docs",
+    "id": "wasay1200-freight-broker-ai-skills-freight-compliance-docs-skill-md",
+    "name": "freight-compliance-docs",
+    "skillUrl": "https://skillsmp.com/skills/wasay1200-freight-broker-ai-skills-freight-compliance-docs-skill-md",
+    "stars": 0,
+    "updatedAt": 1772759401,
+    "owner": "wasay1200",
+    "repo": "freight-broker-ai",
+    "branch": "main",
+    "subpath": "skills/freight-compliance-docs",
+    "mode": "tree",
+    "repoKey": "wasay1200/freight-broker-ai"
+  },
+  "resolved": {
+    "owner": "wasay1200",
+    "repo": "freight-broker-ai",
+    "branch": "main",
+    "subpath": "skills/freight-compliance-docs"
+  }
+}

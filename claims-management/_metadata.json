@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "claims",
+    "author": "Winbda",
+    "description": "Design claims management systems with workflows.\nTRIGGERS - Use when user needs help with claims-management related tasks.",
+    "githubUrl": "https://github.com/RunnerQuan/SAFE-Agent/tree/master/backend/skillpecker/malicious-skill-library/productivity-tools__guidewire-core-workflow-b",
+    "id": "winbda-claude-skills-collection-skills-claims-management-skill-md",
+    "name": "claims-management",
+    "skillUrl": "https://skillsmp.com/skills/winbda-claude-skills-collection-skills-claims-management-skill-md",
+    "stars": 2,
+    "updatedAt": 1775416616,
+    "is_insurance_related": "是",
+    "owner": "RunnerQuan",
+    "repo": "SAFE-Agent",
+    "branch": "master",
+    "subpath": "backend/skillpecker/malicious-skill-library/productivity-tools__guidewire-core-workflow-b",
+    "mode": "tree",
+    "repoKey": "RunnerQuan/SAFE-Agent"
+  },
+  "resolved": {
+    "owner": "RunnerQuan",
+    "repo": "SAFE-Agent",
+    "branch": "master",
+    "subpath": "backend/skillpecker/malicious-skill-library/productivity-tools__guidewire-core-workflow-b"
+  }
+}

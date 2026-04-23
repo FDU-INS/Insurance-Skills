@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 2,
+    "_query": "insurance",
+    "author": "scholarly360",
+    "description": "Analyze, draft, and review Insurance clauses for Construction contracts. Use when the user mentions insurance clause, coverage requirements, construction insurance, or asks to review, redline, or generate this clause type. Returns structured risk assessment, plain-language summary, and suggested alternative language.",
+    "githubUrl": "https://github.com/scholarly360/contract-intelligence/tree/main/skills/insurance-construction",
+    "id": "scholarly360-contract-intelligence-skills-insurance-construction-skill-md",
+    "name": "insurance-construction",
+    "skillUrl": "https://skillsmp.com/skills/scholarly360-contract-intelligence-skills-insurance-construction-skill-md",
+    "stars": 0,
+    "updatedAt": 1771673581,
+    "owner": "scholarly360",
+    "repo": "contract-intelligence",
+    "branch": "main",
+    "subpath": "skills/insurance-construction",
+    "mode": "tree",
+    "repoKey": "scholarly360/contract-intelligence"
+  },
+  "resolved": {
+    "owner": "scholarly360",
+    "repo": "contract-intelligence",
+    "branch": "main",
+    "subpath": "skills/insurance-construction"
+  }
+}

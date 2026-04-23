@@ -1,0 +1,256 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://healthsim.io/schemas/profile-spec-v1.json",
+  "title": "HealthSim Profile Specification",
+  "description": "Schema for Profile Builder output specifications",
+  "type": "object",
+  "required": ["profile"],
+  "properties": {
+    "template": {
+      "type": "object",
+      "description": "Optional template metadata",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "version": { "type": "string" },
+        "category": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "profile": {
+      "type": "object",
+      "required": ["generation", "demographics"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "name": { "type": "string" },
+        "version": { "type": "string", "default": "1.0" },
+        
+        "generation": {
+          "type": "object",
+          "required": ["count", "products"],
+          "properties": {
+            "count": { "type": "integer", "minimum": 1, "maximum": 100000 },
+            "products": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["patientsim", "membersim", "rxmembersim", "trialsim"]
+              },
+              "minItems": 1
+            },
+            "validation": {
+              "type": "string",
+              "enum": ["strict", "lenient"],
+              "default": "strict"
+            }
+          }
+        },
+        
+        "demographics": {
+          "type": "object",
+          "required": ["age", "gender"],
+          "properties": {
+            "age": { "$ref": "#/definitions/distribution" },
+            "gender": { "$ref": "#/definitions/distribution" },
+            "geography": {
+              "oneOf": [
+                { "$ref": "#/definitions/distribution" },
+                { "$ref": "#/definitions/geographySpec" }
+              ]
+            }
+          }
+        },
+        
+        "clinical": {
+          "type": "object",
+          "properties": {
+            "primary_condition": { "$ref": "#/definitions/conditionSpec" },
+            "comorbidities": {
+              "type": "array",
+              "items": { "$ref": "#/definitions/conditionSpec" }
+            },
+            "labs": {
+              "type": "object",
+              "additionalProperties": { "$ref": "#/definitions/distribution" }
+            }
+          }
+        },
+        
+        "coverage": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["Medicare", "Medicare Advantage", "Medicaid", "Commercial", "Exchange", "Uninsured"]
+            },
+            "plan_distribution": {
+              "type": "object",
+              "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 }
+            }
+          }
+        },
+        
+        "medications": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": { "$ref": "#/definitions/medicationSpec" }
+          }
+        },
+        
+        "utilization": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/definitions/distribution" }
+        },
+        
+        "journey": {
+          "type": "object",
+          "properties": {
+            "template": { "type": "string" },
+            "customizations": { "type": "object" }
+          }
+        }
+      }
+    }
+  },
+  
+  "definitions": {
+    "distribution": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["categorical", "normal", "log_normal", "uniform", "explicit", "conditional", "fixed"]
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "categorical" } } },
+          "then": {
+            "required": ["weights"],
+            "properties": {
+              "weights": {
+                "type": "object",
+                "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 }
+              }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "type": { "const": "normal" } } },
+          "then": {
+            "required": ["mean", "std_dev"],
+            "properties": {
+              "mean": { "type": "number" },
+              "std_dev": { "type": "number", "minimum": 0 },
+              "min": { "type": "number" },
+              "max": { "type": "number" }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "type": { "const": "log_normal" } } },
+          "then": {
+            "required": ["mean", "std_dev"],
+            "properties": {
+              "mean": { "type": "number", "minimum": 0 },
+              "std_dev": { "type": "number", "minimum": 0 },
+              "min": { "type": "number", "minimum": 0 },
+              "max": { "type": "number" }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "type": { "const": "uniform" } } },
+          "then": {
+            "required": ["min", "max"],
+            "properties": {
+              "min": { "type": "number" },
+              "max": { "type": "number" }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "type": { "const": "explicit" } } },
+          "then": {
+            "required": ["values"],
+            "properties": {
+              "values": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["value", "weight"],
+                  "properties": {
+                    "value": {},
+                    "weight": { "type": "number", "minimum": 0, "maximum": 1 }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "type": { "const": "conditional" } } },
+          "then": {
+            "required": ["rules"],
+            "properties": {
+              "rules": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "if": { "type": "string" },
+                    "else": { "type": "boolean" },
+                    "distribution": { "$ref": "#/definitions/distribution" }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "type": { "const": "fixed" } } },
+          "then": {
+            "required": ["value"],
+            "properties": {
+              "value": {}
+            }
+          }
+        }
+      ]
+    },
+    
+    "geographySpec": {
+      "type": "object",
+      "properties": {
+        "type": { "type": "string", "enum": ["national", "state", "county", "msa", "zip"] },
+        "values": { "type": "array", "items": { "type": "string" } },
+        "source": { "type": "string", "enum": ["populationsim", "explicit"] },
+        "distribution": { "type": "string", "enum": ["population_weighted", "uniform", "custom"] },
+        "filter": { "type": "object" }
+      }
+    },
+    
+    "conditionSpec": {
+      "type": "object",
+      "required": ["code"],
+      "properties": {
+        "code": { "type": "string", "pattern": "^[A-Z][0-9]{2}(\\.[0-9A-Z]{1,4})?$" },
+        "description": { "type": "string" },
+        "prevalence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "severity": { "$ref": "#/definitions/distribution" }
+      }
+    },
+    
+    "medicationSpec": {
+      "type": "object",
+      "properties": {
+        "class": { "type": "string" },
+        "drug": { "type": "string" },
+        "ndc": { "type": "string" },
+        "prevalence": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    }
+  }
+}

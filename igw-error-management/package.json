@@ -1,0 +1,46 @@
+{
+  "name": "igw-error-management-mcp",
+  "version": "2.0.0",
+  "description": "MCP server for InsurGateway Error Management — track, analyze, and report errors",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "igw-error-management-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "axios": "^1.7.9",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.9.3"
+  },
+  "keywords": [
+    "mcp",
+    "insurgateway",
+    "igw",
+    "error-management",
+    "insurance",
+    "model-context-protocol"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yusufaltunbicak/igw-error-management-mcp.git"
+  }
+}

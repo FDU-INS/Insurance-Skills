@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 2,
+    "_query": "policy",
+    "author": "bytesagain",
+    "description": "Reference tool for business — covers intro, quickstart, patterns and more. Quick lookup for Policy Reader concepts, best practices, and implementation patterns.",
+    "githubUrl": "https://github.com/karimwadjih/skillforge/tree/main/skills/docs/policy-clarifier",
+    "id": "bytesagain-ai-skills-policy-reader-skill-md",
+    "name": "policy-reader",
+    "skillUrl": "https://skillsmp.com/skills/bytesagain-ai-skills-policy-reader-skill-md",
+    "stars": 2,
+    "updatedAt": 1774542489,
+    "is_insurance_related": "是",
+    "owner": "karimwadjih",
+    "repo": "skillforge",
+    "branch": "main",
+    "subpath": "skills/docs/policy-clarifier",
+    "mode": "tree",
+    "repoKey": "karimwadjih/skillforge"
+  },
+  "resolved": {
+    "owner": "karimwadjih",
+    "repo": "skillforge",
+    "branch": "main",
+    "subpath": "skills/docs/policy-clarifier"
+  }
+}

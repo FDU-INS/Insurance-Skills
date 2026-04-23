@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 3,
+    "_query": "insurance",
+    "author": "Winbda",
+    "description": "Plan fleet insurance programs with vehicle management.\nTRIGGERS - Use when user needs help with fleet-insurance-plan related tasks.",
+    "githubUrl": "https://github.com/Winbda/claude-skills-collection/tree/master/skills/fleet-insurance-plan",
+    "id": "winbda-claude-skills-collection-skills-fleet-insurance-plan-skill-md",
+    "name": "fleet-insurance-plan",
+    "skillUrl": "https://skillsmp.com/skills/winbda-claude-skills-collection-skills-fleet-insurance-plan-skill-md",
+    "stars": 2,
+    "updatedAt": 1775416616,
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/fleet-insurance-plan",
+    "mode": "tree",
+    "repoKey": "Winbda/claude-skills-collection"
+  },
+  "resolved": {
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/fleet-insurance-plan"
+  }
+}

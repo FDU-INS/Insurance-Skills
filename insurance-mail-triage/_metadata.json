@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 2,
+    "_query": "insurance",
+    "author": "DobricLilujun",
+    "description": "Triage long email threads for an insurance context, identify the most recent actionable message, extract key context, infer intent (e.g., missing documents, follow-up/reminder, payment, status), and decide whether to reply or take further action.",
+    "githubUrl": "https://github.com/DobricLilujun/LabAgentSkill/tree/main/skillsHub/skills_insurBench/insurance-mail-triage",
+    "id": "dobriclilujun-labagentskill-skillshub-skills-insurbench-insurance-mail-triage-skill-md",
+    "name": "insurance-mail-triage",
+    "skillUrl": "https://skillsmp.com/skills/dobriclilujun-labagentskill-skillshub-skills-insurbench-insurance-mail-triage-skill-md",
+    "stars": 0,
+    "updatedAt": 1770916579,
+    "owner": "DobricLilujun",
+    "repo": "LabAgentSkill",
+    "branch": "main",
+    "subpath": "skillsHub/skills_insurBench/insurance-mail-triage",
+    "mode": "tree",
+    "repoKey": "DobricLilujun/LabAgentSkill"
+  },
+  "resolved": {
+    "owner": "DobricLilujun",
+    "repo": "LabAgentSkill",
+    "branch": "main",
+    "subpath": "skillsHub/skills_insurBench/insurance-mail-triage"
+  }
+}

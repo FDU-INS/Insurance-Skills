@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 2,
+    "_query": "insurance",
+    "author": "jewdore",
+    "description": "当用户需要对比不同保险产品时使用此 skill。适用于产品责任对比、费率对比、公司服务对比、性价比分析等场景。",
+    "githubUrl": "https://github.com/jewdore/openclaw-finclaw-test/tree/main/skills/insurance-product-comparison",
+    "id": "jewdore-openclaw-finclaw-test-skills-insurance-product-comparison-skill-md",
+    "name": "insurance-product-comparison",
+    "skillUrl": "https://skillsmp.com/skills/jewdore-openclaw-finclaw-test-skills-insurance-product-comparison-skill-md",
+    "stars": 0,
+    "updatedAt": 1773656985,
+    "owner": "jewdore",
+    "repo": "openclaw-finclaw-test",
+    "branch": "main",
+    "subpath": "skills/insurance-product-comparison",
+    "mode": "tree",
+    "repoKey": "jewdore/openclaw-finclaw-test"
+  },
+  "resolved": {
+    "owner": "jewdore",
+    "repo": "openclaw-finclaw-test",
+    "branch": "main",
+    "subpath": "skills/insurance-product-comparison"
+  }
+}

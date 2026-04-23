@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 3,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Evaluates insurance needs with gap analysis, product comparison, and coverage adequacy assessment. Use when analyzing insurance needs, comparing insurance products, or identifying coverage gaps.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/finance/managing-insurance-planning",
+    "id": "casemark-skills-skills-finance-managing-insurance-planning-skill-md",
+    "name": "managing-insurance-planning",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-finance-managing-insurance-planning-skill-md",
+    "stars": 12,
+    "updatedAt": 1772680350,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/managing-insurance-planning",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/managing-insurance-planning"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 8,
+    "_query": "insurance",
+    "author": "sahithisarvepalli",
+    "description": "Instructions for managing the PostgreSQL schema, writing SQL queries, and maintaining data integrity for the insurance analytics project.",
+    "githubUrl": "https://github.com/sahithisarvepalli/insurance-analytics-project/tree/main/.claude/skills/postgres-schema-expert",
+    "id": "sahithisarvepalli-insurance-analytics-project-claude-skills-postgres-schema-expert-skill-md",
+    "name": "postgres-schema-expert",
+    "skillUrl": "https://skillsmp.com/skills/sahithisarvepalli-insurance-analytics-project-claude-skills-postgres-schema-expert-skill-md",
+    "stars": 0,
+    "updatedAt": 1775560666,
+    "owner": "sahithisarvepalli",
+    "repo": "insurance-analytics-project",
+    "branch": "main",
+    "subpath": ".claude/skills/postgres-schema-expert",
+    "mode": "tree",
+    "repoKey": "sahithisarvepalli/insurance-analytics-project"
+  },
+  "resolved": {
+    "owner": "sahithisarvepalli",
+    "repo": "insurance-analytics-project",
+    "branch": "main",
+    "subpath": ".claude/skills/postgres-schema-expert"
+  }
+}

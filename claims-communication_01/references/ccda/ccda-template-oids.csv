@@ -1,0 +1,31 @@
+template_name,template_oid,extension,template_type,parent_template
+US Realm Header,2.16.840.1.113883.10.20.22.1.1,2015-08-01,document,
+CCD,2.16.840.1.113883.10.20.22.1.2,2015-08-01,document,2.16.840.1.113883.10.20.22.1.1
+Discharge Summary,2.16.840.1.113883.10.20.22.1.8,2015-08-01,document,2.16.840.1.113883.10.20.22.1.1
+Referral Note,2.16.840.1.113883.10.20.22.1.14,2015-08-01,document,2.16.840.1.113883.10.20.22.1.1
+Transfer Summary,2.16.840.1.113883.10.20.22.1.13,2015-08-01,document,2.16.840.1.113883.10.20.22.1.1
+Problems Section,2.16.840.1.113883.10.20.22.2.5.1,2015-08-01,section,
+Medications Section,2.16.840.1.113883.10.20.22.2.1.1,2015-08-01,section,
+Allergies Section,2.16.840.1.113883.10.20.22.2.6.1,2015-08-01,section,
+Results Section,2.16.840.1.113883.10.20.22.2.3.1,2015-08-01,section,
+Vital Signs Section,2.16.840.1.113883.10.20.22.2.4.1,2015-08-01,section,
+Procedures Section,2.16.840.1.113883.10.20.22.2.7.1,2015-08-01,section,
+Immunizations Section,2.16.840.1.113883.10.20.22.2.2.1,2015-08-01,section,
+Plan of Treatment Section,2.16.840.1.113883.10.20.22.2.10,2014-06-09,section,
+Encounters Section,2.16.840.1.113883.10.20.22.2.22.1,2015-08-01,section,
+Social History Section,2.16.840.1.113883.10.20.22.2.17,2015-08-01,section,
+Hospital Course Section,2.16.840.1.113883.10.20.22.2.16,2015-08-01,section,
+Discharge Instructions Section,2.16.840.1.113883.10.20.22.2.41,2015-08-01,section,
+Reason for Referral Section,1.3.6.1.4.1.19376.1.5.3.1.3.1,2014-06-09,section,
+Problem Concern Act,2.16.840.1.113883.10.20.22.4.3,2015-08-01,entry,
+Problem Observation,2.16.840.1.113883.10.20.22.4.4,2015-08-01,entry,
+Medication Activity,2.16.840.1.113883.10.20.22.4.16,2014-06-09,entry,
+Allergy Concern Act,2.16.840.1.113883.10.20.22.4.30,2015-08-01,entry,
+Allergy Observation,2.16.840.1.113883.10.20.22.4.7,2014-06-09,entry,
+Result Organizer,2.16.840.1.113883.10.20.22.4.1,2015-08-01,entry,
+Result Observation,2.16.840.1.113883.10.20.22.4.2,2015-08-01,entry,
+Vital Signs Organizer,2.16.840.1.113883.10.20.22.4.26,2015-08-01,entry,
+Procedure Activity Procedure,2.16.840.1.113883.10.20.22.4.14,2014-06-09,entry,
+Immunization Activity,2.16.840.1.113883.10.20.22.4.52,2015-08-01,entry,
+Encounter Activity,2.16.840.1.113883.10.20.22.4.49,2015-08-01,entry,
+Planned Procedure,2.16.840.1.113883.10.20.22.4.41,2014-06-09,entry,

@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 4,
+    "_query": "insurance",
+    "author": "MatthewLones",
+    "description": "Core concepts for property insurance coverage analysis including policy types, coverage limits, and common exclusions",
+    "githubUrl": "https://github.com/MatthewLones/forgeflow/tree/main/examples/insurance-claim/skills/property-insurance-basics",
+    "id": "matthewlones-forgeflow-examples-insurance-claim-skills-property-insurance-basics-skill-md",
+    "name": "property-insurance-basics",
+    "skillUrl": "https://skillsmp.com/skills/matthewlones-forgeflow-examples-insurance-claim-skills-property-insurance-basics-skill-md",
+    "stars": 6,
+    "updatedAt": 1771898604,
+    "owner": "MatthewLones",
+    "repo": "forgeflow",
+    "branch": "main",
+    "subpath": "examples/insurance-claim/skills/property-insurance-basics",
+    "mode": "tree",
+    "repoKey": "MatthewLones/forgeflow"
+  },
+  "resolved": {
+    "owner": "MatthewLones",
+    "repo": "forgeflow",
+    "branch": "main",
+    "subpath": "examples/insurance-claim/skills/property-insurance-basics"
+  }
+}

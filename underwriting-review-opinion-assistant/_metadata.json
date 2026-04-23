@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "underwriting",
+    "author": "aifinlab",
+    "description": "当用户需要基于核保摘要、问题清单、补件情况、规则口径、初审意见和相关风险资料，对案件进行复核性判断整理，输出结构化复核意见、关注点、支持与限制因素、边界提示和后续处理建议时使用本 skill。",
+    "githubUrl": "https://github.com/mleathem91/AI-Actuarial-Exams/tree/main/.skills/r-coding",
+    "id": "aifinlab-finclaw-skills-underwriting-review-opinion-assistant-skill-md",
+    "name": "underwriting-review-opinion-assistant",
+    "skillUrl": "https://skillsmp.com/skills/aifinlab-finclaw-skills-underwriting-review-opinion-assistant-skill-md",
+    "stars": 119,
+    "updatedAt": 1773793812,
+    "is_insurance_related": "是",
+    "owner": "mleathem91",
+    "repo": "AI-Actuarial-Exams",
+    "branch": "main",
+    "subpath": ".skills/r-coding",
+    "mode": "tree",
+    "repoKey": "mleathem91/AI-Actuarial-Exams"
+  },
+  "resolved": {
+    "owner": "mleathem91",
+    "repo": "AI-Actuarial-Exams",
+    "branch": "main",
+    "subpath": ".skills/r-coding"
+  }
+}

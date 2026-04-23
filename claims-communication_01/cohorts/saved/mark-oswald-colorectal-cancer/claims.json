@@ -1,0 +1,204 @@
+{
+  "claims": [
+    {
+      "claim_id": "CLM20241015000001",
+      "claim_type": "PROFESSIONAL",
+      "claim_status": "paid",
+      "service_date": "2024-10-15",
+      "encounter_id": "ENC20241015000001",
+      "facility": {
+        "name": "Springfield Gastroenterology Center",
+        "npi": "1234567891",
+        "place_of_service": "24",
+        "place_of_service_description": "Ambulatory Surgical Center"
+      },
+      "provider": {
+        "name": "Dr. Michael Torres",
+        "npi": "1122334455",
+        "specialty": "Gastroenterology",
+        "taxonomy": "207RG0100X"
+      },
+      "patient": {
+        "mrn": "MRN00000058",
+        "name": "Mark Oswald",
+        "member_id": "XYZ123456789"
+      },
+      "diagnoses": [
+        {"sequence": 1, "code": "Z12.11", "description": "Encounter for screening for malignant neoplasm of colon", "type": "principal"},
+        {"sequence": 2, "code": "Z80.42", "description": "Family history of malignant neoplasm of colon"},
+        {"sequence": 3, "code": "D12.2", "description": "Benign neoplasm of ascending colon"},
+        {"sequence": 4, "code": "D12.5", "description": "Benign neoplasm of sigmoid colon"}
+      ],
+      "service_lines": [
+        {
+          "line_number": 1,
+          "procedure_code": "45385",
+          "modifier": null,
+          "description": "Colonoscopy with removal of polyp by snare technique",
+          "charge_amount": 1250.00,
+          "units": 1,
+          "diagnosis_pointers": ["1", "2", "3"]
+        },
+        {
+          "line_number": 2,
+          "procedure_code": "45380",
+          "modifier": null,
+          "description": "Colonoscopy with biopsy",
+          "charge_amount": 350.00,
+          "units": 1,
+          "diagnosis_pointers": ["3"]
+        },
+        {
+          "line_number": 3,
+          "procedure_code": "99152",
+          "modifier": null,
+          "description": "Moderate sedation, initial 15 minutes",
+          "charge_amount": 150.00,
+          "units": 1,
+          "diagnosis_pointers": ["1"]
+        },
+        {
+          "line_number": 4,
+          "procedure_code": "99153",
+          "modifier": null,
+          "description": "Moderate sedation, additional 15 minutes",
+          "charge_amount": 100.00,
+          "units": 2,
+          "diagnosis_pointers": ["1"]
+        }
+      ],
+      "totals": {
+        "total_charges": 1850.00
+      },
+      "adjudication": {
+        "status": "paid",
+        "allowed_amount": 1425.00,
+        "deductible_applied": 425.00,
+        "coinsurance": 200.00,
+        "copay": 0.00,
+        "patient_responsibility": 625.00,
+        "paid_amount": 800.00
+      }
+    },
+    {
+      "claim_id": "CLM20241025000001",
+      "claim_type": "PROFESSIONAL",
+      "claim_status": "paid",
+      "service_date": "2024-10-25",
+      "encounter_id": "ENC20241025000001",
+      "facility": {
+        "name": "Springfield Surgical Associates",
+        "npi": "3344556677",
+        "place_of_service": "11",
+        "place_of_service_description": "Office"
+      },
+      "provider": {
+        "name": "Dr. James Richardson",
+        "npi": "4455667788",
+        "specialty": "Colorectal Surgery"
+      },
+      "diagnoses": [
+        {"sequence": 1, "code": "D12.2", "description": "Benign neoplasm of ascending colon", "type": "principal"},
+        {"sequence": 2, "code": "K63.5", "description": "Polyp of colon"}
+      ],
+      "service_lines": [
+        {
+          "line_number": 1,
+          "procedure_code": "99244",
+          "description": "Office consultation, moderate complexity",
+          "charge_amount": 350.00,
+          "units": 1,
+          "diagnosis_pointers": ["1", "2"]
+        }
+      ],
+      "totals": {
+        "total_charges": 350.00
+      },
+      "adjudication": {
+        "status": "paid",
+        "allowed_amount": 275.00,
+        "deductible_applied": 275.00,
+        "coinsurance": 0.00,
+        "patient_responsibility": 275.00,
+        "paid_amount": 0.00
+      }
+    },
+    {
+      "claim_id": "CLM20241108000001",
+      "claim_type": "INSTITUTIONAL",
+      "claim_status": "paid",
+      "service_dates": {
+        "admission": "2024-11-05",
+        "discharge": "2024-11-08"
+      },
+      "encounter_id": "ENC20241105000001",
+      "facility": {
+        "name": "Springfield Memorial Hospital",
+        "npi": "1234567890",
+        "place_of_service": "21",
+        "place_of_service_description": "Inpatient Hospital"
+      },
+      "attending_provider": {
+        "name": "Dr. James Richardson",
+        "npi": "4455667788"
+      },
+      "diagnoses": [
+        {"sequence": 1, "code": "C18.2", "description": "Malignant neoplasm of ascending colon", "type": "principal"},
+        {"sequence": 2, "code": "I10", "description": "Essential hypertension"},
+        {"sequence": 3, "code": "E78.5", "description": "Hyperlipidemia"}
+      ],
+      "admitting_diagnosis": {
+        "code": "D12.2",
+        "description": "Benign neoplasm of ascending colon"
+      },
+      "procedures": [
+        {"code": "0DBK4ZZ", "code_system": "ICD-10-PCS", "description": "Excision of ascending colon, percutaneous endoscopic approach", "date": "2024-11-05"}
+      ],
+      "drg": {
+        "code": "329",
+        "description": "Major small & large bowel procedures w/o CC/MCC",
+        "weight": 1.6842,
+        "type": "MS-DRG"
+      },
+      "service_lines": [
+        {"line": 1, "revenue_code": "0120", "cpt": "99223", "description": "Initial hospital care", "units": 1, "charge": 2400.00},
+        {"line": 2, "revenue_code": "0120", "cpt": "99232", "description": "Subsequent hospital care", "units": 2, "charge": 1600.00},
+        {"line": 3, "revenue_code": "0120", "cpt": "99238", "description": "Hospital discharge day", "units": 1, "charge": 600.00},
+        {"line": 4, "revenue_code": "0360", "cpt": "44204", "description": "Laparoscopic right hemicolectomy", "units": 1, "charge": 28000.00},
+        {"line": 5, "revenue_code": "0370", "cpt": "00840", "description": "Anesthesia for intra-abdominal procedures", "units": 1, "charge": 3500.00},
+        {"line": 6, "revenue_code": "0250", "cpt": null, "description": "Pharmacy", "units": 3, "charge": 4200.00},
+        {"line": 7, "revenue_code": "0300", "cpt": null, "description": "Laboratory", "units": 1, "charge": 2800.00},
+        {"line": 8, "revenue_code": "0710", "cpt": null, "description": "Recovery room", "units": 1, "charge": 3200.00},
+        {"line": 9, "revenue_code": "0730", "cpt": null, "description": "EKG/ECG", "units": 1, "charge": 1500.00},
+        {"line": 10, "revenue_code": "0001", "cpt": null, "description": "Room & board, semi-private", "units": 3, "charge": 4500.00}
+      ],
+      "totals": {
+        "total_charges": 52300.00
+      },
+      "adjudication": {
+        "status": "paid",
+        "allowed_amount": 38500.00,
+        "deductible_applied": 800.00,
+        "coinsurance": 7540.00,
+        "copay": 0.00,
+        "patient_responsibility": 8340.00,
+        "paid_amount": 30160.00
+      }
+    }
+  ],
+  "financial_summary": {
+    "episode_of_care": "Colorectal Cancer Screening & Treatment",
+    "date_range": "2024-10-15 to 2024-11-20",
+    "total_charges": 54500.00,
+    "total_allowed": 40200.00,
+    "total_deductible": 1500.00,
+    "total_coinsurance": 7740.00,
+    "total_patient_responsibility": 9240.00,
+    "total_plan_paid": 30960.00,
+    "accumulator_impact": {
+      "deductible_satisfied": true,
+      "oop_applied": 9240.00,
+      "oop_remaining": 1750.00
+    }
+  }
+}

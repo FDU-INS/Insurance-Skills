@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 4,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Structures cyber insurance evaluation with coverage assessment, limit adequacy, and claims scenario analysis. Use when evaluating cyber coverage, analyzing policy terms, or assessing cyber insurance adequacy.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/finance/analyzing-cyber-insurance",
+    "id": "casemark-skills-skills-finance-analyzing-cyber-insurance-skill-md",
+    "name": "analyzing-cyber-insurance",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-finance-analyzing-cyber-insurance-skill-md",
+    "stars": 12,
+    "updatedAt": 1772680350,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/analyzing-cyber-insurance",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/analyzing-cyber-insurance"
+  }
+}

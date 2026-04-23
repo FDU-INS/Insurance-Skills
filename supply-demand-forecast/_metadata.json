@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 8,
+    "_query": "insurance",
+    "author": "mariourquia",
+    "description": "Produces a forward-looking supply/demand analysis for a specific submarket and property type. Combines quantitative pipeline tracking with disruption overlays (PropTech, ESG/climate, insurance hardening, AI impact). Delivers a 3-year quarterly forecast with scenario branching, replacement cost analysis, and development feasibility signal.",
+    "githubUrl": "https://github.com/mariourquia/cre-skills-plugin/tree/main/src/skills/supply-demand-forecast",
+    "id": "mariourquia-cre-skills-plugin-src-skills-supply-demand-forecast-skill-md",
+    "name": "supply-demand-forecast",
+    "skillUrl": "https://skillsmp.com/skills/mariourquia-cre-skills-plugin-src-skills-supply-demand-forecast-skill-md",
+    "stars": 9,
+    "updatedAt": 1775173314,
+    "owner": "mariourquia",
+    "repo": "cre-skills-plugin",
+    "branch": "main",
+    "subpath": "src/skills/supply-demand-forecast",
+    "mode": "tree",
+    "repoKey": "mariourquia/cre-skills-plugin"
+  },
+  "resolved": {
+    "owner": "mariourquia",
+    "repo": "cre-skills-plugin",
+    "branch": "main",
+    "subpath": "src/skills/supply-demand-forecast"
+  }
+}

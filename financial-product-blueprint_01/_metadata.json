@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 2,
+    "_query": "underwriting",
+    "author": "gtmagents",
+    "description": "Template for packaging financial products with pricing, underwriting, and compliance details.",
+    "githubUrl": "https://github.com/alvinhenrick/fhir-synth/tree/main/src/fhir_synth/skills/builtin/claims-eob",
+    "id": "gtmagents-gtm-agents-plugins-financial-services-skills-financial-product-blueprint-skill-md",
+    "name": "financial-product-blueprint",
+    "skillUrl": "https://skillsmp.com/skills/gtmagents-gtm-agents-plugins-financial-services-skills-financial-product-blueprint-skill-md",
+    "stars": 143,
+    "updatedAt": 1763562749,
+    "is_insurance_related": "是",
+    "owner": "alvinhenrick",
+    "repo": "fhir-synth",
+    "branch": "main",
+    "subpath": "src/fhir_synth/skills/builtin/claims-eob",
+    "mode": "tree",
+    "repoKey": "alvinhenrick/fhir-synth"
+  },
+  "resolved": {
+    "owner": "alvinhenrick",
+    "repo": "fhir-synth",
+    "branch": "main",
+    "subpath": "src/fhir_synth/skills/builtin/claims-eob"
+  }
+}

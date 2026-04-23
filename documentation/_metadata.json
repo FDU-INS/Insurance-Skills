@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 9,
+    "_query": "insurance",
+    "author": "rhavekost",
+    "description": "Use when writing clinical notes, documenting sessions, creating treatment plans for insurance/authorization, ensuring HIPAA compliance, or need structured documentation templates. Provides SOAP notes, progress notes (DAP format), and treatment plan templates. HIPAA-compliant guidance included.",
+    "githubUrl": "https://github.com/rhavekost/clinical-toolkit/tree/main/skills/documentation",
+    "id": "rhavekost-clinical-toolkit-skills-documentation-skill-md",
+    "name": "documentation",
+    "skillUrl": "https://skillsmp.com/skills/rhavekost-clinical-toolkit-skills-documentation-skill-md",
+    "stars": 0,
+    "updatedAt": 1770152280,
+    "owner": "rhavekost",
+    "repo": "clinical-toolkit",
+    "branch": "main",
+    "subpath": "skills/documentation",
+    "mode": "tree",
+    "repoKey": "rhavekost/clinical-toolkit"
+  },
+  "resolved": {
+    "owner": "rhavekost",
+    "repo": "clinical-toolkit",
+    "branch": "main",
+    "subpath": "skills/documentation"
+  }
+}

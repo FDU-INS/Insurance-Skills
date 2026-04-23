@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "sourceFile": "SKILL_UPDATES_1000.md",
+  "skillId": 270,
+  "skillName": "u0270-collab-privacy-preserving-data-broker",
+  "title": "Collab Privacy Preserving Data Broker",
+  "domain": "Collaboration and Negotiation",
+  "domainSlug": "collaboration-and-negotiation",
+  "reason": "We need this skill because multi-agent systems underperform without explicit conflict resolution. This specific skill enables collaboration while minimizing raw data exposure.",
+  "implementationGuide": [
+    "Define the scope and success metrics for `Collab Privacy Preserving Data Broker`, including at least three measurable KPIs tied to deadlocks and degraded trust.",
+    "Design and version the input/output contract for proposals, contention signals, and negotiated outcomes, then add schema validation and failure-mode handling.",
+    "Implement the core capability using policy-scoped data mediation, and produce privacy-scoped exchanges with deterministic scoring.",
+    "Integrate the skill into swarm orchestration: task routing, approval gates, retry strategy, and rollback controls.",
+    "Add unit, integration, and simulation tests that explicitly cover deadlocks and degraded trust, then run regression baselines.",
+    "Deploy behind a feature flag, monitor telemetry/alerts for two release cycles, and iterate thresholds based on observed outcomes."
+  ],
+  "runtimeProfile": {
+    "archetype": "collaboration-mediator",
+    "coreMethod": "policy-scoped data mediation",
+    "primaryArtifact": "privacy-scoped exchanges",
+    "requiredSignals": [
+      "proposals",
+      "contention signals",
+      "negotiated outcomes",
+      "claims",
+      "evidence",
+      "confidence traces"
+    ],
+    "kpiFocus": [
+      "deadlocks",
+      "degraded trust",
+      "decision drift"
+    ],
+    "scoringWeights": {
+      "truth": 0.2107,
+      "execution": 0.2453,
+      "safety": 0.2625,
+      "impact": 0.2815
+    },
+    "postureThresholds": {
+      "readyMin": 77,
+      "reviewMin": 49,
+      "reviewRisk": 44,
+      "criticalRisk": 60
+    },
+    "orchestration": {
+      "routingTag": "collaboration-and-negotiation:collaboration-mediator",
+      "approvalGates": [
+        "policy-constraint-check",
+        "human-approval-router"
+      ],
+      "retryPolicy": {
+        "maxAttempts": 3,
+        "baseDelayMs": 600,
+        "backoff": "exponential"
+      },
+      "rollbackStrategy": "rollback-to-last-stable-baseline",
+      "components": [
+        "task routing",
+        "approval gates",
+        "retry strategy",
+        "rollback controls"
+      ]
+    },
+    "validation": {
+      "suites": [
+        "unit",
+        "integration",
+        "simulation",
+        "regression-baseline"
+      ],
+      "baselineRequired": true
+    },
+    "rollout": {
+      "featureFlag": "skill_0270_collab-privacy-preserving-data-b",
+      "releaseCycles": 2,
+      "telemetryAlerts": true
+    },
+    "scoringSeed": "u0270-collab-privacy-preserving-data-broker:270:collaboration-mediator"
+  },
+  "traceability": {
+    "scopeStep": "Define the scope and success metrics for `Collab Privacy Preserving Data Broker`, including at least three measurable KPIs tied to deadlocks and degraded trust.",
+    "contractStep": "Design and version the input/output contract for proposals, contention signals, and negotiated outcomes, then add schema validation and failure-mode handling.",
+    "coreStep": "Implement the core capability using policy-scoped data mediation, and produce privacy-scoped exchanges with deterministic scoring.",
+    "orchestrationStep": "Integrate the skill into swarm orchestration: task routing, approval gates, retry strategy, and rollback controls.",
+    "validationStep": "Add unit, integration, and simulation tests that explicitly cover deadlocks and degraded trust, then run regression baselines.",
+    "rolloutStep": "Deploy behind a feature flag, monitor telemetry/alerts for two release cycles, and iterate thresholds based on observed outcomes."
+  }
+}

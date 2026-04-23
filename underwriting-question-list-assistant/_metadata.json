@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "underwriting",
+    "author": "aifinlab",
+    "description": "当用户需要基于投保问卷、健康告知、体检资料、病史资料、职业资料、核保初审或复核意见等材料，识别当前核保判断中的疑点、缺口、不一致和高风险线索，并生成结构化问题清单、追问重点、分类结果和后续核查建议时使用本 skill。",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/finance/analyzing-premium-pricing",
+    "id": "aifinlab-finclaw-skills-underwriting-question-list-assistant-skill-md",
+    "name": "underwriting-question-list-assistant",
+    "skillUrl": "https://skillsmp.com/skills/aifinlab-finclaw-skills-underwriting-question-list-assistant-skill-md",
+    "stars": 119,
+    "updatedAt": 1773793812,
+    "is_insurance_related": "是",
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/analyzing-premium-pricing",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/analyzing-premium-pricing"
+  }
+}

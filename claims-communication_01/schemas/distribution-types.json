@@ -1,0 +1,245 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://healthsim.dev/schemas/distribution-types.json",
+  "title": "HealthSim Distribution Types",
+  "description": "JSON Schema for statistical distribution types used in HealthSim generation",
+  "version": "1.0",
+
+  "definitions": {
+    "categoricalDistribution": {
+      "type": "object",
+      "title": "Categorical Distribution",
+      "description": "Discrete probability distribution over named categories",
+      "required": ["type", "weights"],
+      "properties": {
+        "type": {
+          "const": "categorical"
+        },
+        "weights": {
+          "type": "object",
+          "description": "Category names mapped to probability weights (should sum to 1.0)",
+          "additionalProperties": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "minProperties": 1
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "normalDistribution": {
+      "type": "object",
+      "title": "Normal (Gaussian) Distribution",
+      "description": "Bell curve distribution with mean and standard deviation",
+      "required": ["type", "mean", "std_dev"],
+      "properties": {
+        "type": {
+          "const": "normal"
+        },
+        "mean": {
+          "type": "number",
+          "description": "Center of the distribution"
+        },
+        "std_dev": {
+          "type": "number",
+          "description": "Standard deviation (spread)",
+          "minimum": 0
+        },
+        "min": {
+          "type": "number",
+          "description": "Optional minimum value (truncation)"
+        },
+        "max": {
+          "type": "number",
+          "description": "Optional maximum value (truncation)"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "logNormalDistribution": {
+      "type": "object",
+      "title": "Log-Normal Distribution",
+      "description": "Right-skewed distribution, ideal for costs and utilization",
+      "required": ["type", "mean", "std_dev"],
+      "properties": {
+        "type": {
+          "const": "log_normal"
+        },
+        "mean": {
+          "type": "number",
+          "description": "Mean of the underlying normal distribution",
+          "minimum": 0
+        },
+        "std_dev": {
+          "type": "number",
+          "description": "Standard deviation of the underlying normal distribution",
+          "minimum": 0
+        },
+        "min": {
+          "type": "number",
+          "description": "Optional minimum value",
+          "minimum": 0
+        },
+        "max": {
+          "type": "number",
+          "description": "Optional maximum value"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "uniformDistribution": {
+      "type": "object",
+      "title": "Uniform Distribution",
+      "description": "Equal probability across a range",
+      "required": ["type", "min", "max"],
+      "properties": {
+        "type": {
+          "const": "uniform"
+        },
+        "min": {
+          "type": "number",
+          "description": "Minimum value (inclusive)"
+        },
+        "max": {
+          "type": "number",
+          "description": "Maximum value (inclusive)"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "explicitDistribution": {
+      "type": "object",
+      "title": "Explicit Distribution",
+      "description": "Specific values with optional weights",
+      "required": ["type", "values"],
+      "properties": {
+        "type": {
+          "const": "explicit"
+        },
+        "values": {
+          "type": "array",
+          "description": "List of explicit values to sample from",
+          "items": {
+            "oneOf": [
+              { "type": "string" },
+              { "type": "number" },
+              {
+                "type": "object",
+                "properties": {
+                  "value": {},
+                  "weight": { "type": "number", "minimum": 0 }
+                },
+                "required": ["value"]
+              }
+            ]
+          },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "conditionalDistribution": {
+      "type": "object",
+      "title": "Conditional Distribution",
+      "description": "Distribution that varies based on other attribute values",
+      "required": ["type", "rules"],
+      "properties": {
+        "type": {
+          "const": "conditional"
+        },
+        "rules": {
+          "type": "array",
+          "description": "Ordered rules evaluated top-to-bottom",
+          "items": {
+            "type": "object",
+            "required": ["if", "distribution"],
+            "properties": {
+              "if": {
+                "type": "string",
+                "description": "Condition expression (e.g., 'severity == controlled')"
+              },
+              "distribution": {
+                "$ref": "#/definitions/anyDistribution"
+              }
+            }
+          },
+          "minItems": 1
+        },
+        "default": {
+          "$ref": "#/definitions/anyDistribution",
+          "description": "Default distribution if no rules match"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "anyDistribution": {
+      "oneOf": [
+        { "$ref": "#/definitions/categoricalDistribution" },
+        { "$ref": "#/definitions/normalDistribution" },
+        { "$ref": "#/definitions/logNormalDistribution" },
+        { "$ref": "#/definitions/uniformDistribution" },
+        { "$ref": "#/definitions/explicitDistribution" },
+        { "$ref": "#/definitions/conditionalDistribution" }
+      ]
+    }
+  },
+
+  "oneOf": [
+    { "$ref": "#/definitions/categoricalDistribution" },
+    { "$ref": "#/definitions/normalDistribution" },
+    { "$ref": "#/definitions/logNormalDistribution" },
+    { "$ref": "#/definitions/uniformDistribution" },
+    { "$ref": "#/definitions/explicitDistribution" },
+    { "$ref": "#/definitions/conditionalDistribution" }
+  ],
+
+  "examples": [
+    {
+      "type": "categorical",
+      "weights": { "M": 0.48, "F": 0.52 }
+    },
+    {
+      "type": "normal",
+      "mean": 72,
+      "std_dev": 8,
+      "min": 65,
+      "max": 95
+    },
+    {
+      "type": "log_normal",
+      "mean": 150,
+      "std_dev": 75,
+      "min": 50
+    },
+    {
+      "type": "uniform",
+      "min": 1,
+      "max": 28
+    },
+    {
+      "type": "explicit",
+      "values": ["48453", "48201", "48113"]
+    },
+    {
+      "type": "conditional",
+      "rules": [
+        {
+          "if": "severity == 'controlled'",
+          "distribution": { "type": "normal", "mean": 6.5, "std_dev": 0.3 }
+        },
+        {
+          "if": "severity == 'uncontrolled'",
+          "distribution": { "type": "normal", "mean": 9.0, "std_dev": 1.0 }
+        }
+      ],
+      "default": { "type": "normal", "mean": 7.5, "std_dev": 0.8 }
+    }
+  ]
+}

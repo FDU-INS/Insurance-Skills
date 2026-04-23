@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 2,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Generates structured summaries of U.S. insurance claim files covering identification, incident narrative, party positions, coverage analysis, and resolution status. Use when synthesizing claim files for adjusters, legal counsel, or claims managers during pre-filing review, discovery, or settlement preparation. Trigger keywords: claim summary, insurance claim, coverage summary, adjuster summary, coverage denial, reservation of rights.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/legal/insurance-claim-summaries",
+    "id": "casemark-skills-skills-legal-insurance-claim-summaries-skill-md",
+    "name": "insurance-claim-summaries",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-legal-insurance-claim-summaries-skill-md",
+    "stars": 12,
+    "updatedAt": 1772500417,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/insurance-claim-summaries",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/insurance-claim-summaries"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 10,
+    "_query": "insurance",
+    "author": "m62ai",
+    "description": "Search and retrieve information from the Altitude wealth management platform. Query individuals, households, accounts, trusts, valuations, holdings, liabilities, insurance policies, tangible assets, and entity relationships via the Altitude REST API. Use this skill whenever the user asks about client data, account balances, portfolio holdings, net worth, insurance coverage, debts, or any wealth management information stored in Altitude.",
+    "githubUrl": "https://github.com/m62ai/altitude-plugin-marketplace/tree/main/plugins/m62-altitude-search/skills/m62-altitude-search",
+    "id": "m62ai-altitude-plugin-marketplace-plugins-m62-altitude-search-skills-m62-altitude-search-skill-md",
+    "name": "m62-altitude-search",
+    "skillUrl": "https://skillsmp.com/skills/m62ai-altitude-plugin-marketplace-plugins-m62-altitude-search-skills-m62-altitude-search-skill-md",
+    "stars": 0,
+    "updatedAt": 1774973881,
+    "owner": "m62ai",
+    "repo": "altitude-plugin-marketplace",
+    "branch": "main",
+    "subpath": "plugins/m62-altitude-search/skills/m62-altitude-search",
+    "mode": "tree",
+    "repoKey": "m62ai/altitude-plugin-marketplace"
+  },
+  "resolved": {
+    "owner": "m62ai",
+    "repo": "altitude-plugin-marketplace",
+    "branch": "main",
+    "subpath": "plugins/m62-altitude-search/skills/m62-altitude-search"
+  }
+}

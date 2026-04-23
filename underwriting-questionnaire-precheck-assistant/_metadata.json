@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "underwriting",
+    "author": "aifinlab",
+    "description": "当用户需要对保险投保问卷做首轮审查、识别缺失项与矛盾项、筛查高风险告知、整理补问问题、生成核保初审结果或判断是否需要进入人工复核时使用本 skill。适用于寿险、重疾险、医疗险、意外险等投保问卷、OCR 文本、截图转写文本或结构化问卷记录的通用初审与分流场景。",
+    "githubUrl": "https://github.com/YakRoboticsGarage/yakrover-marketplace/tree/main/.claude/skills/bond-verification",
+    "id": "aifinlab-finclaw-skills-underwriting-questionnaire-precheck-assistant-skill-md",
+    "name": "underwriting-questionnaire-precheck-assistant",
+    "skillUrl": "https://skillsmp.com/skills/aifinlab-finclaw-skills-underwriting-questionnaire-precheck-assistant-skill-md",
+    "stars": 119,
+    "updatedAt": 1774512801,
+    "is_insurance_related": "是",
+    "owner": "YakRoboticsGarage",
+    "repo": "yakrover-marketplace",
+    "branch": "main",
+    "subpath": ".claude/skills/bond-verification",
+    "mode": "tree",
+    "repoKey": "YakRoboticsGarage/yakrover-marketplace"
+  },
+  "resolved": {
+    "owner": "YakRoboticsGarage",
+    "repo": "yakrover-marketplace",
+    "branch": "main",
+    "subpath": ".claude/skills/bond-verification"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 10,
+    "_query": "insurance",
+    "author": "navikt",
+    "description": "Expert knowledge of Behandlingsresultat (treatment result) domain in melosys-api.\nUse when: (1) Understanding result types and their meaning (FASTSATT_LOVVALGSLAND, MEDLEM_I_FOLKETRYGDEN, etc.),\n(2) Working with periods - Lovvalgsperiode, Medlemskapsperiode, Anmodningsperiode, Utpekingsperiode,\n(3) Debugging vedtak/decision metadata, criteria evaluation, or social insurance charges,\n(4) Understanding EU/EEA coordination logic and Article 16 exception handling,\n(5) Working with trygdeavgift (social insurance charge) calculations.",
+    "githubUrl": "https://github.com/navikt/melosys-api/tree/master/.agent/skills/behandlingsresultat",
+    "id": "navikt-melosys-api-agent-skills-behandlingsresultat-skill-md",
+    "name": "behandlingsresultat",
+    "skillUrl": "https://skillsmp.com/skills/navikt-melosys-api-agent-skills-behandlingsresultat-skill-md",
+    "stars": 1,
+    "updatedAt": 1774011002,
+    "owner": "navikt",
+    "repo": "melosys-api",
+    "branch": "master",
+    "subpath": ".agent/skills/behandlingsresultat",
+    "mode": "tree",
+    "repoKey": "navikt/melosys-api"
+  },
+  "resolved": {
+    "owner": "navikt",
+    "repo": "melosys-api",
+    "branch": "master",
+    "subpath": ".agent/skills/behandlingsresultat"
+  }
+}

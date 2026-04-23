@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 2,
+    "_query": "compliance",
+    "author": "RajdeepKushwaha5",
+    "description": "Validate an approved policy against regulatory framework checklists and produce a structured compliance scorecard",
+    "githubUrl": "https://github.com/AeyeOps/aeo-basis-plugin-marketplace/tree/main/plugins/firm-operations/skills/quality-compliance",
+    "id": "rajdeepkushwaha5-redline-skills-compliance-check-skill-md",
+    "name": "compliance-check",
+    "skillUrl": "https://skillsmp.com/skills/rajdeepkushwaha5-redline-skills-compliance-check-skill-md",
+    "stars": 0,
+    "updatedAt": 1775040620,
+    "is_insurance_related": "是",
+    "owner": "AeyeOps",
+    "repo": "aeo-basis-plugin-marketplace",
+    "branch": "main",
+    "subpath": "plugins/firm-operations/skills/quality-compliance",
+    "mode": "tree",
+    "repoKey": "AeyeOps/aeo-basis-plugin-marketplace"
+  },
+  "resolved": {
+    "owner": "AeyeOps",
+    "repo": "aeo-basis-plugin-marketplace",
+    "branch": "main",
+    "subpath": "plugins/firm-operations/skills/quality-compliance"
+  }
+}

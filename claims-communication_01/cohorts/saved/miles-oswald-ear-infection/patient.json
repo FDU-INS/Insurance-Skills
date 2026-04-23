@@ -1,0 +1,219 @@
+{
+  "patient": {
+    "mrn": "MRN00000003",
+    "name": {
+      "given_name": "Miles",
+      "family_name": "Oswald"
+    },
+    "birth_date": "2020-04-12",
+    "age": {
+      "years": 4,
+      "months": 8
+    },
+    "gender": "M",
+    "address": {
+      "street_address": "742 Evergreen Terrace",
+      "city": "Springfield",
+      "state": "IL",
+      "postal_code": "62704"
+    },
+    "phone": "217-555-0147",
+    "emergency_contact": {
+      "name": "Mark Oswald",
+      "relationship": "Father",
+      "phone": "217-555-0148"
+    },
+    "insurance": {
+      "payer_id": "BCBSIL",
+      "payer_name": "Blue Cross Blue Shield of Illinois",
+      "member_id": "XYZ123456789",
+      "group_number": "GRP00987",
+      "plan_type": "PPO",
+      "subscriber": {
+        "name": "Mark Oswald",
+        "relationship": "Parent",
+        "dob": "1966-09-15"
+      }
+    }
+  },
+  "encounter": {
+    "encounter_id": "ENC20241218000001",
+    "encounter_type": "emergency",
+    "facility": {
+      "name": "Springfield Memorial Hospital",
+      "npi": "1234567890",
+      "tax_id": "36-1234567",
+      "address": {
+        "street_address": "1500 Medical Center Drive",
+        "city": "Springfield",
+        "state": "IL",
+        "postal_code": "62701"
+      }
+    },
+    "admission_datetime": "2024-12-18T14:35:00",
+    "discharge_datetime": "2024-12-18T15:52:00",
+    "chief_complaint": "Right ear pain x 2 days, fever",
+    "triage_level": "4",
+    "triage_description": "ESI Level 4 - Less Urgent",
+    "arrival_mode": "ambulatory",
+    "accompanying_person": "Father (Mark Oswald)",
+    "discharge_disposition": "01",
+    "discharge_disposition_description": "Discharged to home"
+  },
+  "history_of_present_illness": {
+    "narrative": "4-year-old male presents with 2-day history of right ear pain. Father reports patient has been pulling at his right ear and has been increasingly fussy. Fever noted at home (101.2°F). Associated symptoms include decreased appetite and difficulty sleeping. Recent URI symptoms 5 days ago (runny nose, mild cough) now resolving. No vomiting, diarrhea, or rash. No history of ear infections. Immunizations up to date.",
+    "symptom_onset": "2024-12-16",
+    "duration_days": 2,
+    "associated_symptoms": [
+      "Fever",
+      "Decreased appetite",
+      "Irritability",
+      "Sleep disturbance"
+    ],
+    "recent_illness": "Upper respiratory infection (5 days prior, resolving)"
+  },
+  "vital_signs": {
+    "recorded_datetime": "2024-12-18T14:42:00",
+    "temperature": {
+      "value": 101.4,
+      "unit": "°F",
+      "method": "temporal"
+    },
+    "heart_rate": {
+      "value": 112,
+      "unit": "bpm",
+      "interpretation": "mildly elevated for age (normal 80-120)"
+    },
+    "respiratory_rate": {
+      "value": 24,
+      "unit": "breaths/min",
+      "interpretation": "normal for age"
+    },
+    "blood_pressure": {
+      "systolic": 95,
+      "diastolic": 58,
+      "unit": "mmHg",
+      "interpretation": "normal for age"
+    },
+    "oxygen_saturation": {
+      "value": 98,
+      "unit": "%",
+      "interpretation": "normal"
+    },
+    "weight": {
+      "value": 18.2,
+      "unit": "kg",
+      "percentile": "55th"
+    },
+    "height": {
+      "value": 104,
+      "unit": "cm",
+      "percentile": "50th"
+    },
+    "pain_score": {
+      "value": 6,
+      "scale": "Wong-Baker FACES",
+      "interpretation": "moderate pain"
+    }
+  },
+  "physical_exam": {
+    "general": "Alert, active, mildly fussy but consolable. Well-nourished, well-developed male in no acute distress.",
+    "heent": {
+      "head": "Normocephalic, atraumatic",
+      "eyes": "PERRL, conjunctivae clear, no discharge",
+      "ears": {
+        "right": "TM erythematous and bulging with decreased mobility on pneumatic otoscopy. Purulent effusion visible behind TM. External canal normal.",
+        "left": "TM pearly gray with normal light reflex and mobility. No effusion."
+      },
+      "nose": "Mild clear rhinorrhea, no erythema",
+      "throat": "Oropharynx mildly erythematous, no exudate, tonsils 2+ bilaterally"
+    },
+    "neck": "Supple, no lymphadenopathy, no meningeal signs",
+    "lungs": "Clear to auscultation bilaterally, no wheezes/rales/rhonchi",
+    "cardiovascular": "Regular rate and rhythm, no murmurs, capillary refill <2 seconds",
+    "abdomen": "Soft, non-tender, non-distended, normal bowel sounds",
+    "neurological": "Alert and oriented, moves all extremities, no focal deficits"
+  },
+  "diagnoses": [
+    {
+      "sequence": 1,
+      "code": "H66.91",
+      "code_system": "ICD-10-CM",
+      "description": "Otitis media, unspecified, right ear",
+      "type": "principal"
+    },
+    {
+      "sequence": 2,
+      "code": "R50.9",
+      "code_system": "ICD-10-CM",
+      "description": "Fever, unspecified",
+      "type": "secondary"
+    },
+    {
+      "sequence": 3,
+      "code": "H92.01",
+      "code_system": "ICD-10-CM",
+      "description": "Otalgia, right ear",
+      "type": "secondary"
+    }
+  ],
+  "orders": [
+    {
+      "order_id": "ORD20241218000001",
+      "order_type": "medication",
+      "medication": {
+        "name": "Amoxicillin",
+        "ndc": "00093415701",
+        "rxnorm": "308182",
+        "dose": "400 mg",
+        "route": "oral",
+        "frequency": "twice daily",
+        "duration": "10 days",
+        "form": "oral suspension 400mg/5mL",
+        "quantity": "150 mL",
+        "refills": 0
+      },
+      "indication": "Acute otitis media",
+      "prescriber_npi": "9876543210",
+      "prescriber_name": "Dr. Sarah Chen"
+    },
+    {
+      "order_id": "ORD20241218000002",
+      "order_type": "medication",
+      "medication": {
+        "name": "Acetaminophen (Children's Tylenol)",
+        "ndc": "50580014801",
+        "rxnorm": "313782",
+        "dose": "240 mg",
+        "route": "oral",
+        "frequency": "every 4-6 hours as needed",
+        "form": "oral suspension 160mg/5mL",
+        "instructions": "7.5 mL every 4-6 hours as needed for pain or fever. Do not exceed 5 doses in 24 hours."
+      },
+      "indication": "Pain and fever management"
+    }
+  ],
+  "discharge": {
+    "discharge_datetime": "2024-12-18T15:52:00",
+    "disposition": "home",
+    "discharge_diagnosis": "Acute otitis media, right ear",
+    "length_of_stay_minutes": 77,
+    "discharge_instructions": [
+      "Give Amoxicillin 400mg (5mL) by mouth twice daily for 10 days. Complete entire course even if feeling better.",
+      "Give Tylenol (acetaminophen) 240mg (7.5mL) every 4-6 hours as needed for pain or fever.",
+      "Keep ear dry - no swimming until cleared by doctor.",
+      "Follow up with pediatrician in 10-14 days or sooner if symptoms worsen.",
+      "Return to ER if: fever above 104°F, severe headache, stiff neck, persistent vomiting, ear drainage, or symptoms worsen despite antibiotics after 48-72 hours."
+    ],
+    "follow_up": {
+      "provider_type": "Pediatrician",
+      "timeframe": "10-14 days",
+      "reason": "Recheck ears, ensure resolution"
+    }
+  },
+  "attending_provider": {
+    "npi": "9876543210",
+    "name": "Dr. Sarah Chen",
+    "specialty": "Pediatric Emergency Medicine"
+  }
+}

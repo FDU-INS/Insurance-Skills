@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "insurance",
+    "author": "gururafiki",
+    "description": "Valuation criteria for emerging market insurance stocks. P/B 0.5-1.0x with 30-50% EM discount, combined ratio targets, and China vs India market comparisons.",
+    "githubUrl": "https://github.com/gururafiki/muffin-agent/tree/main/src/muffin_agent/skills/valuation/insurance-emerging-value",
+    "id": "gururafiki-muffin-agent-src-muffin-agent-skills-valuation-insurance-emerging-value-skill-md",
+    "name": "insurance-emerging-value",
+    "skillUrl": "https://skillsmp.com/skills/gururafiki-muffin-agent-src-muffin-agent-skills-valuation-insurance-emerging-value-skill-md",
+    "stars": 0,
+    "updatedAt": 1775301961,
+    "owner": "gururafiki",
+    "repo": "muffin-agent",
+    "branch": "main",
+    "subpath": "src/muffin_agent/skills/valuation/insurance-emerging-value",
+    "mode": "tree",
+    "repoKey": "gururafiki/muffin-agent"
+  },
+  "resolved": {
+    "owner": "gururafiki",
+    "repo": "muffin-agent",
+    "branch": "main",
+    "subpath": "src/muffin_agent/skills/valuation/insurance-emerging-value"
+  }
+}

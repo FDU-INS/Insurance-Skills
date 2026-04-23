@@ -1,0 +1,37 @@
+.venv/
+venv/
+.git/
+.gitignore
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+*.egg-info/
+
+# Database files — not needed in container (uses MotherDuck)
+*.duckdb
+*.duckdb-wal
+*.duckdb-tmp
+
+# Data directories
+skills/
+cohorts/
+docs/
+demos/
+references/
+schemas/
+formats/
+build-prompts/
+
+# IDE and OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
+
+# Environment
+.env
+.env.local

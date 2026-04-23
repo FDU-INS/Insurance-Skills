@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 3,
+    "_query": "insurance",
+    "author": "personamanagmentlayer",
+    "description": "Expert-level insurance systems, underwriting, claims processing, actuarial analysis, risk assessment, and insurtech solutions",
+    "githubUrl": "https://github.com/personamanagmentlayer/pcl/tree/main/stdlib/domains/insurance-expert",
+    "id": "personamanagmentlayer-pcl-stdlib-domains-insurance-expert-skill-md",
+    "name": "insurance-expert",
+    "skillUrl": "https://skillsmp.com/skills/personamanagmentlayer-pcl-stdlib-domains-insurance-expert-skill-md",
+    "stars": 16,
+    "updatedAt": 1768860297,
+    "owner": "personamanagmentlayer",
+    "repo": "pcl",
+    "branch": "main",
+    "subpath": "stdlib/domains/insurance-expert",
+    "mode": "tree",
+    "repoKey": "personamanagmentlayer/pcl"
+  },
+  "resolved": {
+    "owner": "personamanagmentlayer",
+    "repo": "pcl",
+    "branch": "main",
+    "subpath": "stdlib/domains/insurance-expert"
+  }
+}

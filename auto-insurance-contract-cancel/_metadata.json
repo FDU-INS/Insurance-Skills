@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 3,
+    "_query": "insurance",
+    "author": "matayuuu",
+    "description": "既存の自動車保険契約を解約し、contracts.csv を更新する。",
+    "githubUrl": "https://github.com/matayuuu/MAF-Studio/tree/main/data/skills/auto_insurance_contract_cancel",
+    "id": "matayuuu-maf-studio-data-skills-auto-insurance-contract-cancel-skill-md",
+    "name": "auto-insurance-contract-cancel",
+    "skillUrl": "https://skillsmp.com/skills/matayuuu-maf-studio-data-skills-auto-insurance-contract-cancel-skill-md",
+    "stars": 3,
+    "updatedAt": 1775402078,
+    "owner": "matayuuu",
+    "repo": "MAF-Studio",
+    "branch": "main",
+    "subpath": "data/skills/auto_insurance_contract_cancel",
+    "mode": "tree",
+    "repoKey": "matayuuu/MAF-Studio"
+  },
+  "resolved": {
+    "owner": "matayuuu",
+    "repo": "MAF-Studio",
+    "branch": "main",
+    "subpath": "data/skills/auto_insurance_contract_cancel"
+  }
+}

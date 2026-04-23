@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "actuarial",
+    "author": "mleathem91",
+    "description": "Attempt an IFoA actuarial exam paper, producing structured answers with full working",
+    "githubUrl": "https://github.com/fpddmw/https---github.com-fpddmw-eco-concil-runtime/tree/main/skills/eco-link-claims-to-observations",
+    "id": "mleathem91-ai-actuarial-exams-skills-exam-taker-skill-md",
+    "name": "exam-taker",
+    "skillUrl": "https://skillsmp.com/skills/mleathem91-ai-actuarial-exams-skills-exam-taker-skill-md",
+    "stars": 0,
+    "updatedAt": 1773655979,
+    "is_insurance_related": "是",
+    "owner": "fpddmw",
+    "repo": "https---github.com-fpddmw-eco-concil-runtime",
+    "branch": "main",
+    "subpath": "skills/eco-link-claims-to-observations",
+    "mode": "tree",
+    "repoKey": "fpddmw/https---github.com-fpddmw-eco-concil-runtime"
+  },
+  "resolved": {
+    "owner": "fpddmw",
+    "repo": "https---github.com-fpddmw-eco-concil-runtime",
+    "branch": "main",
+    "subpath": "skills/eco-link-claims-to-observations"
+  }
+}

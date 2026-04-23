@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 7,
+    "_query": "insurance",
+    "author": "tuanductran",
+    "description": "Vietnam-specific HR guidance covering the Labor Code, Social Insurance Law, personal income tax registration, work permits for foreign workers, trade union obligations, and cultural norms for managing teams in Vietnam. Use when you need to navigate Vietnam employment law, onboard foreign staff, handle disciplinary procedures under Vietnamese law, or adapt global HR practices for the Vietnam market.",
+    "githubUrl": "https://github.com/tuanductran/hr-skills/tree/main/skills/hr-vietnam-context",
+    "id": "tuanductran-hr-skills-skills-hr-vietnam-context-skill-md",
+    "name": "hr-vietnam-context",
+    "skillUrl": "https://skillsmp.com/skills/tuanductran-hr-skills-skills-hr-vietnam-context-skill-md",
+    "stars": 6,
+    "updatedAt": 1772222546,
+    "owner": "tuanductran",
+    "repo": "hr-skills",
+    "branch": "main",
+    "subpath": "skills/hr-vietnam-context",
+    "mode": "tree",
+    "repoKey": "tuanductran/hr-skills"
+  },
+  "resolved": {
+    "owner": "tuanductran",
+    "repo": "hr-skills",
+    "branch": "main",
+    "subpath": "skills/hr-vietnam-context"
+  }
+}

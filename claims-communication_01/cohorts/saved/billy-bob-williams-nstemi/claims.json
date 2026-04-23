@@ -1,0 +1,98 @@
+{
+  "claims": [
+    {
+      "claim_id": "CLM20241213000001",
+      "claim_type": "INSTITUTIONAL",
+      "claim_status": "paid",
+      "service_dates": {
+        "admission": "2024-12-10",
+        "discharge": "2024-12-13"
+      },
+      "encounter_id": "ENC20241210000001",
+      "facility": {
+        "name": "Springfield Memorial Hospital",
+        "npi": "1234567890",
+        "place_of_service": "21",
+        "place_of_service_description": "Inpatient Hospital"
+      },
+      "attending_provider": {
+        "name": "Dr. Angela Patel",
+        "npi": "2233445577",
+        "specialty": "Interventional Cardiology"
+      },
+      "diagnoses": [
+        {"sequence": 1, "code": "I21.4", "description": "Non-ST elevation myocardial infarction", "type": "principal"},
+        {"sequence": 2, "code": "I25.10", "description": "Atherosclerotic heart disease of native coronary artery"},
+        {"sequence": 3, "code": "I50.9", "description": "Heart failure, unspecified"},
+        {"sequence": 4, "code": "I10", "description": "Essential hypertension"},
+        {"sequence": 5, "code": "E11.9", "description": "Type 2 diabetes mellitus"},
+        {"sequence": 6, "code": "E78.5", "description": "Hyperlipidemia"},
+        {"sequence": 7, "code": "N18.3", "description": "Chronic kidney disease, stage 3"},
+        {"sequence": 8, "code": "F17.210", "description": "Nicotine dependence, cigarettes"},
+        {"sequence": 9, "code": "E66.9", "description": "Obesity"}
+      ],
+      "admitting_diagnosis": {
+        "code": "I21.4",
+        "description": "Non-ST elevation myocardial infarction"
+      },
+      "procedures": [
+        {"code": "92928", "code_system": "CPT", "description": "PCI with stent, single vessel", "date": "2024-12-10"},
+        {"code": "93458", "code_system": "CPT", "description": "Left heart catheterization", "date": "2024-12-10"},
+        {"code": "02703ZZ", "code_system": "ICD-10-PCS", "description": "Dilation of coronary artery, one site with intraluminal device", "date": "2024-12-10"}
+      ],
+      "drg": {
+        "code": "247",
+        "description": "Percutaneous cardiovascular procedure with drug-eluting stent without MCC",
+        "weight": 2.1893,
+        "type": "MS-DRG"
+      },
+      "service_lines": [
+        {"line": 1, "revenue_code": "0121", "cpt": "99291", "description": "Critical care, first hour", "units": 2, "charge": 3200.00},
+        {"line": 2, "revenue_code": "0121", "cpt": "99292", "description": "Critical care, addl 30 min", "units": 2, "charge": 800.00},
+        {"line": 3, "revenue_code": "0120", "cpt": "99232", "description": "Subsequent hospital care", "units": 2, "charge": 800.00},
+        {"line": 4, "revenue_code": "0120", "cpt": "99238", "description": "Hospital discharge", "units": 1, "charge": 600.00},
+        {"line": 5, "revenue_code": "0481", "cpt": "92928", "description": "PCI with DES", "units": 1, "charge": 32000.00},
+        {"line": 6, "revenue_code": "0481", "cpt": "93458", "description": "Left heart cath", "units": 1, "charge": 8500.00},
+        {"line": 7, "revenue_code": "0370", "cpt": "00567", "description": "Anesthesia for cardiac cath", "units": 1, "charge": 4200.00},
+        {"line": 8, "revenue_code": "0272", "description": "Sterile supplies - cath lab", "units": 1, "charge": 2800.00},
+        {"line": 9, "revenue_code": "0250", "description": "Pharmacy", "units": 3, "charge": 4800.00},
+        {"line": 10, "revenue_code": "0300", "description": "Laboratory", "units": 1, "charge": 3500.00},
+        {"line": 11, "revenue_code": "0320", "description": "Radiology - diagnostic", "units": 1, "charge": 1800.00},
+        {"line": 12, "revenue_code": "0730", "description": "EKG/ECG", "units": 2, "charge": 1200.00},
+        {"line": 13, "revenue_code": "0200", "description": "ICU/CCU", "units": 1, "charge": 4500.00},
+        {"line": 14, "revenue_code": "0762", "description": "Observation room", "units": 1, "charge": 1500.00},
+        {"line": 15, "revenue_code": "0001", "description": "Room & board", "units": 3, "charge": 8300.00}
+      ],
+      "totals": {
+        "total_charges": 78500.00
+      },
+      "adjudication": {
+        "payer": "Medicare Part A",
+        "drg_payment": 15245.00,
+        "outlier_payment": 0.00,
+        "total_medicare_payment": 15245.00,
+        "deductible": 1632.00,
+        "coinsurance_days": 0,
+        "patient_responsibility_primary": 1632.00,
+        "medigap_payment": 1632.00,
+        "patient_responsibility_final": 0.00
+      }
+    }
+  ],
+  "financial_summary": {
+    "episode_of_care": "NSTEMI with PCI",
+    "date_range": "2024-12-10 to 2024-12-13",
+    "hospital_charges": 78500.00,
+    "medicare_drg_payment": 15245.00,
+    "patient_deductible": 1632.00,
+    "medigap_secondary_payment": 1632.00,
+    "patient_out_of_pocket": 0.00,
+    "pharmacy_costs": {
+      "total_ingredient_cost": 506.00,
+      "patient_copays": 55.00,
+      "plan_paid": 463.50
+    },
+    "total_episode_patient_cost": 55.00,
+    "notes": "Medicare Part A covers inpatient with DRG-based payment. Medigap Plan F covers the Part A deductible. Patient responsible only for Part D pharmacy copays."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "insurer",
+    "author": "Adsy42",
+    "description": "Drafts correspondence for a matter using templates and matter data. Use when Mandy says 'draft letter', 'write to', 'letter to insurer', 'notice of involvement', 'treatment dispute', 'client update', or any request to create correspondence. Supports all letter types: insurer, doctor, IME, employer, WIC, client, settlement.",
+    "githubUrl": "https://github.com/aifinlab/FinClaw/tree/main/skills/critical-illness-underwriting-questionnaire-assistant",
+    "id": "adsy42-karlos-legal-assistant-claude-skills-draft-letter-skill-md",
+    "name": "draft-letter",
+    "skillUrl": "https://skillsmp.com/skills/adsy42-karlos-legal-assistant-claude-skills-draft-letter-skill-md",
+    "stars": 0,
+    "updatedAt": 1774766801,
+    "is_insurance_related": "是",
+    "owner": "aifinlab",
+    "repo": "FinClaw",
+    "branch": "main",
+    "subpath": "skills/critical-illness-underwriting-questionnaire-assistant",
+    "mode": "tree",
+    "repoKey": "aifinlab/FinClaw"
+  },
+  "resolved": {
+    "owner": "aifinlab",
+    "repo": "FinClaw",
+    "branch": "main",
+    "subpath": "skills/critical-illness-underwriting-questionnaire-assistant"
+  }
+}

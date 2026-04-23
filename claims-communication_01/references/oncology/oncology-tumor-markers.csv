@@ -1,0 +1,32 @@
+marker_name,loinc_code,cancer_association,normal_range_low,normal_range_high,unit,monitoring_frequency,specimen_type,clinical_utility
+CEA,2039-6,colorectal breast lung gastric pancreatic,0,5,ng/mL,every_3_months,serum,monitoring_response_recurrence
+CA-125,10334-1,ovarian endometrial peritoneal,0,35,U/mL,each_cycle,serum,monitoring_response_recurrence
+CA 19-9,24108-3,pancreatic biliary colorectal gastric,0,37,U/mL,every_3_months,serum,monitoring_response_prognosis
+PSA,2857-1,prostate,0,4,ng/mL,every_3-6_months,serum,screening_monitoring_response
+Free PSA,10886-0,prostate,na,na,percent,as_needed,serum,screening_adjunct
+PSA Density,na,prostate,0,0.15,ng/mL/cc,as_needed,calculated,screening_adjunct
+AFP,1834-1,hepatocellular testicular_nonseminoma,0,10,ng/mL,every_1-2_months,serum,diagnosis_monitoring_response
+beta-hCG,21198-7,testicular gestational_trophoblastic,0,5,mIU/mL,weekly_to_monthly,serum,diagnosis_monitoring_response
+CA 15-3,6875-9,breast,0,30,U/mL,every_3_months,serum,monitoring_response
+CA 27-29,17842-6,breast,0,38,U/mL,every_3_months,serum,monitoring_response
+HE4,59041-2,ovarian,0,150,pmol/L,every_3_months,serum,diagnosis_monitoring
+ROMA,na,ovarian,na,na,percent,as_needed,calculated,risk_stratification
+LDH,14804-9,lymphoma melanoma testicular sarcoma,140,280,U/L,each_cycle,serum,prognosis_monitoring
+Lactate Dehydrogenase Isoenzymes,14814-8,various,na,na,na,as_needed,serum,tissue_specificity
+Chromogranin A,34436-0,neuroendocrine carcinoid,0,100,ng/mL,every_3_months,serum,diagnosis_monitoring
+5-HIAA,15009-4,carcinoid neuroendocrine,0,6,mg/24hr,every_3_months,urine_24hr,diagnosis_monitoring
+Thyroglobulin,3013-0,thyroid_differentiated,0,55,ng/mL,every_6-12_months,serum,monitoring_recurrence
+Thyroglobulin Antibody,8098-6,thyroid,0,4,IU/mL,with_thyroglobulin,serum,assay_interference
+Calcitonin,1992-7,medullary_thyroid,0,10,pg/mL,every_3-6_months,serum,diagnosis_monitoring
+beta-2 Microglobulin,1952-1,myeloma lymphoma cll,0,2.5,mg/L,at_diagnosis_prognosis,serum,prognosis_staging
+M-Protein SPEP,2540-3,myeloma,0,0,g/dL,each_cycle,serum,diagnosis_monitoring_response
+Free Light Chains Kappa,33944-4,myeloma amyloidosis,3.3,19.4,mg/L,each_cycle,serum,diagnosis_monitoring
+Free Light Chains Lambda,33943-6,myeloma amyloidosis,5.7,26.3,mg/L,each_cycle,serum,diagnosis_monitoring
+Kappa/Lambda Ratio,11050-2,myeloma amyloidosis,0.26,1.65,ratio,each_cycle,serum,diagnosis_monitoring
+Urine Protein Electrophoresis,13983-2,myeloma,na,na,na,each_cycle,urine_24hr,monitoring_response
+Immunofixation Serum,na,myeloma lymphoma,na,na,na,as_needed,serum,diagnosis_confirmation
+Immunofixation Urine,na,myeloma,na,na,na,as_needed,urine,diagnosis_confirmation
+Neuron Specific Enolase,15065-6,small_cell_lung neuroblastoma,0,16.3,ng/mL,every_3_months,serum,diagnosis_monitoring
+CYFRA 21-1,na,lung_nsclc bladder,0,3.3,ng/mL,every_3_months,serum,monitoring_prognosis
+SCC Antigen,na,squamous_cell_carcinoma cervical lung,0,1.5,ng/mL,every_3_months,serum,monitoring
+ProGRP,na,small_cell_lung,0,63,pg/mL,every_3_months,serum,diagnosis_monitoring

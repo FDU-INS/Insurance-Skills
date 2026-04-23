@@ -1,0 +1,17 @@
+{
+  "owner": "agenticio",
+  "slug": "insurance",
+  "displayName": "Insurance",
+  "latest": {
+    "version": "2.2.0",
+    "publishedAt": 1773246338923,
+    "commit": "https://github.com/openclaw/skills/commit/3632699da0c2f074a00e88b13389da59d61ccada"
+  },
+  "history": [
+    {
+      "version": "2.1.0",
+      "publishedAt": 1773065745466,
+      "commit": "https://github.com/openclaw/skills/commit/6742a2e8501f0a711ade8a8e8b0624a1c38eced3"
+    }
+  ]
+}

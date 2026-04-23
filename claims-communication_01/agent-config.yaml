@@ -1,0 +1,65 @@
+# HealthSim Managed Agent Configuration
+# Source of truth — deploy scripts read this file
+# Created: April 2026
+
+name: healthsim
+model: claude-sonnet-4-6
+description: Synthetic healthcare data generation platform with CDISC-compliant output formats
+
+system_prompt_source: ./deploy/system-prompt.md
+
+skills:
+  - path: ./skills/patientsim/SKILL.md
+    skill_id: skill_healthsim_patientsim_v1
+  - path: ./skills/membersim/SKILL.md
+    skill_id: skill_healthsim_membersim_v1
+  - path: ./skills/rxmembersim/SKILL.md
+    skill_id: skill_healthsim_rxmembersim_v1
+  - path: ./skills/trialsim/SKILL.md
+    skill_id: skill_healthsim_trialsim_v1
+  - path: ./skills/populationsim/SKILL.md
+    skill_id: skill_healthsim_populationsim_v1
+  - path: ./skills/networksim/SKILL.md
+    skill_id: skill_healthsim_networksim_v1
+  - path: ./skills/common/SKILL.md
+    skill_id: skill_healthsim_common_v1
+  - path: ./skills/generation/SKILL.md
+    skill_id: skill_healthsim_generation_v1
+  - path: ./formats/
+    skill_id: skill_healthsim_formats_v1
+
+mcp_servers:
+  - name: healthsim-mcp
+    local: ./packages/mcp-server/healthsim_mcp.py
+    remote: https://healthsim-mcp.up.railway.app
+    auth_env: HEALTHSIM_MCP_TOKEN
+
+environment:
+  packages:
+    pip: [duckdb, pandas, faker, scipy, pydantic]
+  networking:
+    type: limited
+    allow_mcp_servers: true
+    allow_package_managers: true
+
+storage:
+  analytical:
+    type: motherduck
+    database: healthsim_ref
+    token_env: MOTHERDUCK_TOKEN
+  operational:
+    type: supabase
+    url_env: SUPABASE_URL
+    key_env: SUPABASE_ANON_KEY
+
+# Rewire UI config (used when building the web frontend in Phase 4-5)
+rewire:
+  agent_id_env: HEALTHSIM_AGENT_ID
+  theme: health-blue
+  visualizations:
+    - type: sdtm-domain-inspector
+      trigger: sdtm_domain_result
+    - type: population-config-panel
+      trigger: population_config
+    - type: cdisc-validator
+      trigger: validation_result

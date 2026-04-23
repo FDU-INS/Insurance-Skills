@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "policy",
+    "author": "Winbda",
+    "description": "Write policy summary documents for client understanding.\r\nTRIGGERS - Use when user needs help with policy-summary-writer related tasks.",
+    "githubUrl": "https://github.com/jewdore/openclaw-finclaw-test/tree/main/skills/policy-service-process",
+    "id": "winbda-claude-skills-collection-skills-policy-summary-writer-skill-md",
+    "name": "policy-summary-writer",
+    "skillUrl": "https://skillsmp.com/skills/winbda-claude-skills-collection-skills-policy-summary-writer-skill-md",
+    "stars": 2,
+    "updatedAt": 1775416616,
+    "is_insurance_related": "是",
+    "owner": "jewdore",
+    "repo": "openclaw-finclaw-test",
+    "branch": "main",
+    "subpath": "skills/policy-service-process",
+    "mode": "tree",
+    "repoKey": "jewdore/openclaw-finclaw-test"
+  },
+  "resolved": {
+    "owner": "jewdore",
+    "repo": "openclaw-finclaw-test",
+    "branch": "main",
+    "subpath": "skills/policy-service-process"
+  }
+}

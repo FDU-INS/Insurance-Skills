@@ -1,0 +1,14 @@
+vital_sign,loinc_code,display_name,units,ucum_unit
+Blood Pressure Systolic,8480-6,Systolic blood pressure,mmHg,mm[Hg]
+Blood Pressure Diastolic,8462-4,Diastolic blood pressure,mmHg,mm[Hg]
+Heart Rate,8867-4,Heart rate,beats/min,/min
+Respiratory Rate,9279-1,Respiratory rate,breaths/min,/min
+Body Temperature F,8310-5,Body temperature,degF,[degF]
+Body Temperature C,8310-5,Body temperature,Cel,Cel
+Oxygen Saturation,2708-6,Oxygen saturation in Arterial blood by Pulse oximetry,%,%
+Height in,8302-2,Body height,in,[in_i]
+Height cm,8302-2,Body height,cm,cm
+Weight lb,29463-7,Body weight,lb,[lb_av]
+Weight kg,29463-7,Body weight,kg,kg
+BMI,39156-5,Body mass index,kg/m2,kg/m2
+Head Circumference,9843-4,Head Occipital-frontal circumference,cm,cm

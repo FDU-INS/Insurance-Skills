@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 8,
+    "_query": "insurance",
+    "author": "bytesagain",
+    "description": "Generate dispute letters for consumer, landlord, labor, and insurance cases. Use when filing complaints, disputing charges, drafting grievances.",
+    "githubUrl": "https://github.com/bytesagain/ai-skills/tree/main/dispute-letter",
+    "id": "bytesagain-ai-skills-dispute-letter-skill-md",
+    "name": "dispute-letter",
+    "skillUrl": "https://skillsmp.com/skills/bytesagain-ai-skills-dispute-letter-skill-md",
+    "stars": 2,
+    "updatedAt": 1774543222,
+    "owner": "bytesagain",
+    "repo": "ai-skills",
+    "branch": "main",
+    "subpath": "dispute-letter",
+    "mode": "tree",
+    "repoKey": "bytesagain/ai-skills"
+  },
+  "resolved": {
+    "owner": "bytesagain",
+    "repo": "ai-skills",
+    "branch": "main",
+    "subpath": "dispute-letter"
+  }
+}

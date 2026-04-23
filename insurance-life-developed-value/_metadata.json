@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "insurance",
+    "author": "gururafiki",
+    "description": "Valuation criteria for developed market life insurance using Embedded Value (EV) methodology. EV Multiple 0.6-1.0x, PVFP + ANAV calculation, and why P/E is unreliable for life insurers.",
+    "githubUrl": "https://github.com/gururafiki/muffin-agent/tree/main/src/muffin_agent/skills/valuation/insurance-life-developed-value",
+    "id": "gururafiki-muffin-agent-src-muffin-agent-skills-valuation-insurance-life-developed-value-skill-md",
+    "name": "insurance-life-developed-value",
+    "skillUrl": "https://skillsmp.com/skills/gururafiki-muffin-agent-src-muffin-agent-skills-valuation-insurance-life-developed-value-skill-md",
+    "stars": 0,
+    "updatedAt": 1775301961,
+    "owner": "gururafiki",
+    "repo": "muffin-agent",
+    "branch": "main",
+    "subpath": "src/muffin_agent/skills/valuation/insurance-life-developed-value",
+    "mode": "tree",
+    "repoKey": "gururafiki/muffin-agent"
+  },
+  "resolved": {
+    "owner": "gururafiki",
+    "repo": "muffin-agent",
+    "branch": "main",
+    "subpath": "src/muffin_agent/skills/valuation/insurance-life-developed-value"
+  }
+}

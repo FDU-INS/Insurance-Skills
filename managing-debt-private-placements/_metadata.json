@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 9,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Coordinates private placement execution with investor targeting, NAIC designation analysis, and shelf registration requirements. Use when managing PP offerings, targeting insurance company investors, or structuring private notes.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/capital/managing-debt-private-placements",
+    "id": "casemark-skills-skills-capital-managing-debt-private-placements-skill-md",
+    "name": "managing-debt-private-placements",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-capital-managing-debt-private-placements-skill-md",
+    "stars": 12,
+    "updatedAt": 1772680350,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/capital/managing-debt-private-placements",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/capital/managing-debt-private-placements"
+  }
+}

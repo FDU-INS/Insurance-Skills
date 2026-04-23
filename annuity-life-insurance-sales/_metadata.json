@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 4,
+    "_query": "insurance",
+    "author": "accolver",
+    "description": "Guide annuity and life-insurance sales workflows—discovery, suitability, product selection, objections, closing, and servicing—when supporting licensed insurance sales conversations or deliverables.",
+    "githubUrl": "https://github.com/accolver/skill-maker/tree/main/annuity-life-insurance-sales",
+    "id": "accolver-skill-maker-annuity-life-insurance-sales-skill-md",
+    "name": "annuity-life-insurance-sales",
+    "skillUrl": "https://skillsmp.com/skills/accolver-skill-maker-annuity-life-insurance-sales-skill-md",
+    "stars": 4,
+    "updatedAt": 1774977779,
+    "owner": "accolver",
+    "repo": "skill-maker",
+    "branch": "main",
+    "subpath": "annuity-life-insurance-sales",
+    "mode": "tree",
+    "repoKey": "accolver/skill-maker"
+  },
+  "resolved": {
+    "owner": "accolver",
+    "repo": "skill-maker",
+    "branch": "main",
+    "subpath": "annuity-life-insurance-sales"
+  }
+}

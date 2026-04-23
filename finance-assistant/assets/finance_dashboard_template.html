@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finance Dashboard</title>
+<style>
+  :root {
+    --bg: #0f172a; --surface: #1e293b; --border: #334155;
+    --text: #e2e8f0; --muted: #94a3b8; --accent: #3b82f6;
+    --green: #22c55e; --red: #ef4444; --yellow: #eab308;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'SF Pro', system-ui, sans-serif; background: var(--bg); color: var(--text); padding: 24px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; max-width: 1400px; margin: 0 auto; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
+  .card h2 { font-size: 14px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 16px; }
+  .big-number { font-size: 36px; font-weight: 700; }
+  .positive { color: var(--green); }
+  .negative { color: var(--red); }
+  .neutral { color: var(--text); }
+  .score-ring { width: 120px; height: 120px; position: relative; margin: 0 auto 16px; }
+  .score-ring svg { transform: rotate(-90deg); }
+  .score-ring .value { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 28px; font-weight: 700; }
+  .bar-chart { display: flex; flex-direction: column; gap: 8px; }
+  .bar-row { display: flex; align-items: center; gap: 12px; }
+  .bar-label { width: 100px; font-size: 13px; color: var(--muted); text-align: right; }
+  .bar-track { flex: 1; height: 24px; background: var(--bg); border-radius: 4px; overflow: hidden; position: relative; }
+  .bar-fill { height: 100%; border-radius: 4px; transition: width 0.5s; }
+  .bar-value { position: absolute; right: 8px; top: 3px; font-size: 12px; color: var(--text); }
+  .goal-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--border); }
+  .goal-row:last-child { border: none; }
+  .goal-name { font-weight: 500; }
+  .goal-bar { width: 100px; height: 8px; background: var(--bg); border-radius: 4px; overflow: hidden; }
+  .goal-fill { height: 100%; background: var(--accent); border-radius: 4px; }
+  .insight-item { padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; gap: 10px; }
+  .insight-item:last-child { border: none; }
+  .insight-icon { width: 8px; height: 8px; border-radius: 50%; margin-top: 6px; flex-shrink: 0; }
+  .insight-icon.ready { background: var(--green); }
+  .insight-icon.action { background: var(--yellow); }
+  .insight-icon.info { background: var(--accent); }
+  .domain-scores { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .domain-score { text-align: center; padding: 12px; background: var(--bg); border-radius: 8px; }
+  .domain-score .score { font-size: 24px; font-weight: 700; }
+  .domain-score .label { font-size: 12px; color: var(--muted); margin-top: 4px; }
+  .header { text-align: center; margin-bottom: 32px; }
+  .header h1 { font-size: 24px; margin-bottom: 4px; }
+  .header .subtitle { color: var(--muted); font-size: 14px; }
+  .stat-row { display: flex; justify-content: space-between; padding: 6px 0; }
+  .stat-label { color: var(--muted); font-size: 14px; }
+  .stat-value { font-weight: 600; font-size: 14px; }
+  .actions { list-style: none; }
+  .actions li { padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
+  .actions li:before { content: "→ "; color: var(--accent); }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Finance Dashboard</h1>
+  <p class="subtitle" id="date"></p>
+</div>
+
+<div class="grid">
+
+  <!-- Health Score -->
+  <div class="card">
+    <h2>Financial Health</h2>
+    <div class="score-ring">
+      <svg width="120" height="120" viewBox="0 0 120 120">
+        <circle cx="60" cy="60" r="52" fill="none" stroke="#1e293b" stroke-width="8"/>
+        <circle cx="60" cy="60" r="52" fill="none" stroke="#3b82f6" stroke-width="8"
+          stroke-dasharray="327" stroke-dashoffset="82" stroke-linecap="round" id="health-ring"/>
+      </svg>
+      <div class="value" id="health-score">75%</div>
+    </div>
+    <div class="domain-scores" id="domain-scores"></div>
+  </div>
+
+  <!-- Net Worth -->
+  <div class="card">
+    <h2>Net Worth</h2>
+    <div class="big-number neutral" id="net-worth">€0</div>
+    <div style="margin-top: 16px">
+      <div class="stat-row"><span class="stat-label">Assets</span><span class="stat-value positive" id="assets">€0</span></div>
+      <div class="stat-row"><span class="stat-label">Liabilities</span><span class="stat-value negative" id="liabilities">€0</span></div>
+      <div class="stat-row"><span class="stat-label">Trend</span><span class="stat-value" id="trend">—</span></div>
+    </div>
+  </div>
+
+  <!-- Budget -->
+  <div class="card">
+    <h2>Budget This Month</h2>
+    <div class="bar-chart" id="budget-bars"></div>
+  </div>
+
+  <!-- Goals -->
+  <div class="card">
+    <h2>Savings Goals</h2>
+    <div id="goals-list"></div>
+  </div>
+
+  <!-- Portfolio -->
+  <div class="card">
+    <h2>Investments</h2>
+    <div class="big-number neutral" id="portfolio-value">€0</div>
+    <div style="margin-top: 8px">
+      <span class="stat-value" id="portfolio-return">+0.0%</span>
+      <span class="stat-label">total return</span>
+    </div>
+    <div class="bar-chart" style="margin-top: 16px" id="allocation-bars"></div>
+  </div>
+
+  <!-- Insights & Actions -->
+  <div class="card">
+    <h2>Top Actions</h2>
+    <ul class="actions" id="actions-list"></ul>
+  </div>
+
+</div>
+
+<script>
+// This template is populated by workspace_builder data.
+// Replace the sample data below with actual workspace JSON.
+const data = {
+  financial_health_pct: 75,
+  net_worth: 45000,
+  total_assets: 62000,
+  total_liabilities: 17000,
+  scores: { budget: 80, savings: 60, investments: 70, debt: 85, insurance: 50 },
+  portfolio_value: 28000,
+  portfolio_return_pct: 12.3,
+  open_tasks: [
+    "Set up an emergency fund goal",
+    "Review insurance coverage gaps",
+    "Import last month's bank statement",
+  ],
+};
+
+document.getElementById("date").textContent = new Date().toLocaleDateString("en-DE", { dateStyle: "long" });
+document.getElementById("health-score").textContent = data.financial_health_pct + "%";
+const offset = 327 - (327 * data.financial_health_pct / 100);
+document.getElementById("health-ring").setAttribute("stroke-dashoffset", offset);
+
+const fmt = n => "€" + n.toLocaleString("de-DE");
+document.getElementById("net-worth").textContent = fmt(data.net_worth);
+document.getElementById("net-worth").className = "big-number " + (data.net_worth >= 0 ? "positive" : "negative");
+document.getElementById("assets").textContent = fmt(data.total_assets);
+document.getElementById("liabilities").textContent = fmt(data.total_liabilities);
+document.getElementById("portfolio-value").textContent = fmt(data.portfolio_value);
+document.getElementById("portfolio-return").textContent = (data.portfolio_return_pct >= 0 ? "+" : "") + data.portfolio_return_pct.toFixed(1) + "%";
+document.getElementById("portfolio-return").className = "stat-value " + (data.portfolio_return_pct >= 0 ? "positive" : "negative");
+
+const scoresEl = document.getElementById("domain-scores");
+for (const [k, v] of Object.entries(data.scores)) {
+  const color = v >= 70 ? "var(--green)" : v >= 40 ? "var(--yellow)" : "var(--red)";
+  scoresEl.innerHTML += `<div class="domain-score"><div class="score" style="color:${color}">${v}%</div><div class="label">${k}</div></div>`;
+}
+
+const actionsEl = document.getElementById("actions-list");
+data.open_tasks.forEach(t => { actionsEl.innerHTML += `<li>${t}</li>`; });
+</script>
+</body>
+</html>

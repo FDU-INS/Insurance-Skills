@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 7,
+    "_query": "insurance",
+    "author": "GraysonCAdams",
+    "description": "This skill should be used when the user asks to appeal a MetLife pet insurance claim, dispute a denial, challenge an underpayment, draft an appeal letter, review an EOB for appeal grounds, or fight a pet insurance claim decision.",
+    "githubUrl": "https://github.com/GraysonCAdams/claude-metlife/tree/main/skills/appeal-claim",
+    "id": "graysoncadams-claude-metlife-skills-appeal-claim-skill-md",
+    "name": "appeal-claim",
+    "skillUrl": "https://skillsmp.com/skills/graysoncadams-claude-metlife-skills-appeal-claim-skill-md",
+    "stars": 0,
+    "updatedAt": 1774678203,
+    "owner": "GraysonCAdams",
+    "repo": "claude-metlife",
+    "branch": "main",
+    "subpath": "skills/appeal-claim",
+    "mode": "tree",
+    "repoKey": "GraysonCAdams/claude-metlife"
+  },
+  "resolved": {
+    "owner": "GraysonCAdams",
+    "repo": "claude-metlife",
+    "branch": "main",
+    "subpath": "skills/appeal-claim"
+  }
+}

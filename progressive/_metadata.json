@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 5,
+    "_query": "insurance",
+    "author": "dvcrn",
+    "description": "Progressive insurance skill. Compare coverage, get quotes, file claims, and explore savings tools from the #2 auto insurer in the U.S. — known for Snapshot telematics, Name Your Price, and broad multi-product bundling.",
+    "githubUrl": "https://github.com/dvcrn/openclaw-skills-marketplace/tree/main/plugins/codejika--progressive/skills/progressive",
+    "id": "dvcrn-openclaw-skills-marketplace-plugins-codejika-progressive-skills-progressive-skill-md",
+    "name": "progressive",
+    "skillUrl": "https://skillsmp.com/skills/dvcrn-openclaw-skills-marketplace-plugins-codejika-progressive-skills-progressive-skill-md",
+    "stars": 2,
+    "updatedAt": 1773565995,
+    "owner": "dvcrn",
+    "repo": "openclaw-skills-marketplace",
+    "branch": "main",
+    "subpath": "plugins/codejika--progressive/skills/progressive",
+    "mode": "tree",
+    "repoKey": "dvcrn/openclaw-skills-marketplace"
+  },
+  "resolved": {
+    "owner": "dvcrn",
+    "repo": "openclaw-skills-marketplace",
+    "branch": "main",
+    "subpath": "plugins/codejika--progressive/skills/progressive"
+  }
+}

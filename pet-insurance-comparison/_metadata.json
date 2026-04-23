@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 3,
+    "_query": "insurance",
+    "author": "Winbda",
+    "description": "Compare pet insurance options with coverage.\nTRIGGERS - Use when user needs help with pet-insurance-comparison related tasks.",
+    "githubUrl": "https://github.com/Winbda/claude-skills-collection/tree/master/skills/pet-insurance-comparison",
+    "id": "winbda-claude-skills-collection-skills-pet-insurance-comparison-skill-md",
+    "name": "pet-insurance-comparison",
+    "skillUrl": "https://skillsmp.com/skills/winbda-claude-skills-collection-skills-pet-insurance-comparison-skill-md",
+    "stars": 2,
+    "updatedAt": 1775416616,
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/pet-insurance-comparison",
+    "mode": "tree",
+    "repoKey": "Winbda/claude-skills-collection"
+  },
+  "resolved": {
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/pet-insurance-comparison"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 11,
+    "_query": "insurance",
+    "author": "m62ai",
+    "description": "Extract entity data from household document folders (PDFs, Word docs, images, spreadsheets) and update the Altitude (Altcore) platform via API. Queries Altitude first to find existing households and their universe of entities (Individuals, LegalEntities, AccountFinancials, Contacts, TangibleAssets, Households), extracts data from documents, matches and merges against existing records (filling empty fields, flagging conflicts), creates relationships, and uploads documents to the correct entity. Use this skill whenever the user mentions Altitude, Altcore, onboarding families, extracting entity data from documents, updating households, processing client folders, or uploading documents. Also trigger when the user has a folder of family documents (trusts, LLCs, tax returns, IDs, insurance, estate plans, bank statements) and wants to populate a wealth management platform.",
+    "githubUrl": "https://github.com/m62ai/altitude-plugin-marketplace/tree/main/plugins/m62-altitude-onboarding/skills/m62-altitude-onboarding",
+    "id": "m62ai-altitude-plugin-marketplace-plugins-m62-altitude-onboarding-skills-m62-altitude-onboarding-skill-md",
+    "name": "m62-altitude-onboarding",
+    "skillUrl": "https://skillsmp.com/skills/m62ai-altitude-plugin-marketplace-plugins-m62-altitude-onboarding-skills-m62-altitude-onboarding-skill-md",
+    "stars": 0,
+    "updatedAt": 1775509255,
+    "owner": "m62ai",
+    "repo": "altitude-plugin-marketplace",
+    "branch": "main",
+    "subpath": "plugins/m62-altitude-onboarding/skills/m62-altitude-onboarding",
+    "mode": "tree",
+    "repoKey": "m62ai/altitude-plugin-marketplace"
+  },
+  "resolved": {
+    "owner": "m62ai",
+    "repo": "altitude-plugin-marketplace",
+    "branch": "main",
+    "subpath": "plugins/m62-altitude-onboarding/skills/m62-altitude-onboarding"
+  }
+}

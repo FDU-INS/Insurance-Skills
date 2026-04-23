@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 8,
+    "_query": "insurance",
+    "author": "muhammadilham1998-crypto",
+    "description": "Expert pricing actuary skill for calculating gross premiums, risk premiums, and expense loadings for life and general insurance products.",
+    "githubUrl": "https://github.com/muhammadilham1998-crypto/actuary-skills/tree/main/skills/pricing-actuary",
+    "id": "muhammadilham1998-crypto-actuary-skills-skills-pricing-actuary-skill-md",
+    "name": "pricing-actuary",
+    "skillUrl": "https://skillsmp.com/skills/muhammadilham1998-crypto-actuary-skills-skills-pricing-actuary-skill-md",
+    "stars": 0,
+    "updatedAt": 1774595681,
+    "owner": "muhammadilham1998-crypto",
+    "repo": "actuary-skills",
+    "branch": "main",
+    "subpath": "skills/pricing-actuary",
+    "mode": "tree",
+    "repoKey": "muhammadilham1998-crypto/actuary-skills"
+  },
+  "resolved": {
+    "owner": "muhammadilham1998-crypto",
+    "repo": "actuary-skills",
+    "branch": "main",
+    "subpath": "skills/pricing-actuary"
+  }
+}

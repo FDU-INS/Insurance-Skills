@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 4,
+    "_query": "policy",
+    "author": "okwinds",
+    "description": "合规示例：读取 policy references（skill_ref_read）。",
+    "githubUrl": "https://github.com/Winbda/claude-skills-collection/tree/master/skills/loss-run-report",
+    "id": "okwinds-skills-runtime-sdk-examples-apps-policy-compliance-redactor-pro-skills-policy-reader-skill-md",
+    "name": "policy-reader",
+    "skillUrl": "https://skillsmp.com/skills/okwinds-skills-runtime-sdk-examples-apps-policy-compliance-redactor-pro-skills-policy-reader-skill-md",
+    "stars": 32,
+    "updatedAt": 1772015035,
+    "is_insurance_related": "是",
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/loss-run-report",
+    "mode": "tree",
+    "repoKey": "Winbda/claude-skills-collection"
+  },
+  "resolved": {
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/loss-run-report"
+  }
+}

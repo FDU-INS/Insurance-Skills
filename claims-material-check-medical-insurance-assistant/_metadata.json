@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 4,
+    "_query": "insurance",
+    "author": "aifinlab",
+    "description": "当用户需要对医疗险理赔申请资料进行结构化受理检查时使用本 skill。它用于识别理赔申请书、身份证明、银行卡信息、病历、出院记录、费用清单、发票、结算单、检查报告、诊断证明等材料是否齐全、清晰、有效、相互一致，并输出补件清单、受理前检查结果和跟进建议。",
+    "githubUrl": "https://github.com/aifinlab/FinClaw/tree/main/skills/claims-material-check-medical-insurance-assistant",
+    "id": "aifinlab-finclaw-skills-claims-material-check-medical-insurance-assistant-skill-md",
+    "name": "claims-material-check-medical-insurance-assistant",
+    "skillUrl": "https://skillsmp.com/skills/aifinlab-finclaw-skills-claims-material-check-medical-insurance-assistant-skill-md",
+    "stars": 125,
+    "updatedAt": 1773793812,
+    "owner": "aifinlab",
+    "repo": "FinClaw",
+    "branch": "main",
+    "subpath": "skills/claims-material-check-medical-insurance-assistant",
+    "mode": "tree",
+    "repoKey": "aifinlab/FinClaw"
+  },
+  "resolved": {
+    "owner": "aifinlab",
+    "repo": "FinClaw",
+    "branch": "main",
+    "subpath": "skills/claims-material-check-medical-insurance-assistant"
+  }
+}

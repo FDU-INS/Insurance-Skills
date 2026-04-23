@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 4,
+    "_query": "insurance",
+    "author": "scanady",
+    "description": "Performs deep multi-platform research on direct-to-consumer (DTC) life insurance — covering product launches, carrier changes, insurtech funding, regulatory moves, consumer sentiment, and market trends. Designed for weekly, monthly, or quarterly cadences — not daily trending feeds. Synthesizes findings into strategic intelligence briefings with time-bucketed analysis (This Period / Emerging / Horizon), impact assessment, and distribution guidance. Use when asked for 'life insurance landscape', 'DTC insurance brief', 'insurance industry update', 'insurtech trends', or any request for a comprehensive view of recent DTC life insurance developments.",
+    "githubUrl": "https://github.com/scanady/forge-agents/tree/main/skills/research-dtc-insurance-landscape-brief",
+    "id": "scanady-forge-agents-skills-research-dtc-insurance-landscape-brief-skill-md",
+    "name": "research-dtc-insurance-landscape-brief",
+    "skillUrl": "https://skillsmp.com/skills/scanady-forge-agents-skills-research-dtc-insurance-landscape-brief-skill-md",
+    "stars": 0,
+    "updatedAt": 1774868726,
+    "owner": "scanady",
+    "repo": "forge-agents",
+    "branch": "main",
+    "subpath": "skills/research-dtc-insurance-landscape-brief",
+    "mode": "tree",
+    "repoKey": "scanady/forge-agents"
+  },
+  "resolved": {
+    "owner": "scanady",
+    "repo": "forge-agents",
+    "branch": "main",
+    "subpath": "skills/research-dtc-insurance-landscape-brief"
+  }
+}

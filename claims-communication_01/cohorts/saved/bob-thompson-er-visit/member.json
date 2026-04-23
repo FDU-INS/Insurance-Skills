@@ -1,0 +1,24 @@
+{
+  "member": {
+    "member_id": "MBR-WI-78042201",
+    "person_id": "PER-20251226-001",
+    "subscriber_id": "SUB-78042201",
+    "relationship_to_subscriber": "self",
+    "payer_id": "ANTHEM-WI",
+    "payer_name": "Anthem Blue Cross Wisconsin",
+    "group_id": "GRP-ACME-2024",
+    "group_name": "Acme Manufacturing",
+    "plan_id": "GOLD-PPO-500",
+    "plan_name": "Gold PPO",
+    "plan_type": "PPO",
+    "coverage_effective_date": "2024-01-01",
+    "coverage_termination_date": null,
+    "coverage_status": "active",
+    "individual_deductible": 500.00,
+    "family_deductible": 1500.00,
+    "individual_oop_max": 4000.00,
+    "family_oop_max": 8000.00,
+    "er_copay": 250.00,
+    "coinsurance_in_network": 0.20
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "insurance",
+    "author": "Winbda",
+    "description": "Write insurance proposals for commercial accounts.\nTRIGGERS - Use when user needs help with insurance-proposal-writer related tasks.",
+    "githubUrl": "https://github.com/Winbda/claude-skills-collection/tree/master/skills/insurance-proposal-writer",
+    "id": "winbda-claude-skills-collection-skills-insurance-proposal-writer-skill-md",
+    "name": "insurance-proposal-writer",
+    "skillUrl": "https://skillsmp.com/skills/winbda-claude-skills-collection-skills-insurance-proposal-writer-skill-md",
+    "stars": 2,
+    "updatedAt": 1775416616,
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/insurance-proposal-writer",
+    "mode": "tree",
+    "repoKey": "Winbda/claude-skills-collection"
+  },
+  "resolved": {
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/insurance-proposal-writer"
+  }
+}

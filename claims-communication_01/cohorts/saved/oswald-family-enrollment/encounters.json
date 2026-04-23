@@ -1,0 +1,168 @@
+{
+  "scenarioId": "oswald-family-enrollment",
+  "planYear": 2025,
+  "generatedDate": "2025-01-06",
+  "encounters": [
+    {
+      "encounterId": "ENC-2025-001",
+      "memberId": "AET847291001",
+      "memberName": "Mark Oswald",
+      "encounterType": "OFFICE_VISIT",
+      "serviceDate": "2025-01-15",
+      "facility": {
+        "name": "Bay Area Family Health",
+        "npi": "1234567890",
+        "address": "500 Medical Center Drive, Suite 210, San Francisco, CA 94103"
+      },
+      "provider": {
+        "npi": "1234567890",
+        "name": "Dr. Nasrin Arbabi",
+        "specialty": "Family Medicine"
+      },
+      "diagnoses": [
+        { "code": "Z00.00", "description": "Encounter for general adult medical examination without abnormal findings", "type": "principal" },
+        { "code": "E78.5", "description": "Hyperlipidemia, unspecified", "type": "secondary" },
+        { "code": "I10", "description": "Essential (primary) hypertension", "type": "secondary" }
+      ],
+      "procedures": [
+        { "code": "99395", "description": "Preventive visit, 40-64 years", "charge": 275.00 },
+        { "code": "36415", "description": "Venipuncture", "charge": 25.00 },
+        { "code": "80061", "description": "Lipid panel", "charge": 85.00 },
+        { "code": "80053", "description": "Comprehensive metabolic panel", "charge": 95.00 }
+      ],
+      "clinicalNotes": "Annual wellness visit. BP 138/88, weight stable. Continued atorvastatin 20mg. Lab work ordered for lipid panel and CMP."
+    },
+    {
+      "encounterId": "ENC-2025-002",
+      "memberId": "AET847291002",
+      "memberName": "Karen Oswald",
+      "encounterType": "OFFICE_VISIT",
+      "serviceDate": "2025-01-22",
+      "facility": {
+        "name": "Bay Area Family Health",
+        "npi": "1234567890",
+        "address": "500 Medical Center Drive, Suite 210, San Francisco, CA 94103"
+      },
+      "provider": {
+        "npi": "1234567890",
+        "name": "Dr. Nasrin Arbabi",
+        "specialty": "Family Medicine"
+      },
+      "diagnoses": [
+        { "code": "Z00.00", "description": "Encounter for general adult medical examination without abnormal findings", "type": "principal" },
+        { "code": "Z12.31", "description": "Encounter for screening mammogram for malignant neoplasm of breast", "type": "secondary" }
+      ],
+      "procedures": [
+        { "code": "99395", "description": "Preventive visit, 40-64 years", "charge": 275.00 },
+        { "code": "77067", "description": "Screening mammography, bilateral", "charge": 325.00 }
+      ],
+      "clinicalNotes": "Annual wellness visit. All findings normal. Screening mammogram ordered - patient is 47."
+    },
+    {
+      "encounterId": "ENC-2025-003",
+      "memberId": "AET847291003",
+      "memberName": "Gracie Oswald",
+      "encounterType": "OFFICE_VISIT",
+      "serviceDate": "2025-02-05",
+      "facility": {
+        "name": "Bay Area Pediatrics",
+        "npi": "1876543210",
+        "address": "600 Pediatric Way, Suite 100, San Francisco, CA 94103"
+      },
+      "provider": {
+        "npi": "1987654321",
+        "name": "Dr. Michael Torres",
+        "specialty": "Pediatrics"
+      },
+      "diagnoses": [
+        { "code": "Z00.129", "description": "Encounter for routine child health examination without abnormal findings", "type": "principal" }
+      ],
+      "procedures": [
+        { "code": "99394", "description": "Preventive visit, 12-17 years", "charge": 250.00 },
+        { "code": "90715", "description": "Tdap vaccine", "charge": 65.00 },
+        { "code": "90471", "description": "Immunization administration", "charge": 25.00 }
+      ],
+      "clinicalNotes": "Well-child check, age 14. Growth and development normal. Tdap booster administered."
+    },
+    {
+      "encounterId": "ENC-2025-004",
+      "memberId": "AET847291004",
+      "memberName": "Emmy Oswald",
+      "encounterType": "URGENT_CARE",
+      "serviceDate": "2025-02-12",
+      "facility": {
+        "name": "CityMD Urgent Care - Union Square",
+        "npi": "1765432109",
+        "address": "123 Powell Street, San Francisco, CA 94102"
+      },
+      "provider": {
+        "npi": "1654321098",
+        "name": "Dr. Jennifer Walsh",
+        "specialty": "Family Medicine"
+      },
+      "diagnoses": [
+        { "code": "J06.9", "description": "Acute upper respiratory infection, unspecified", "type": "principal" },
+        { "code": "R05.9", "description": "Cough, unspecified", "type": "secondary" },
+        { "code": "R50.9", "description": "Fever, unspecified", "type": "secondary" }
+      ],
+      "procedures": [
+        { "code": "99213", "description": "Office visit, established patient, low complexity", "charge": 150.00 },
+        { "code": "87880", "description": "Strep test, rapid", "charge": 45.00 }
+      ],
+      "clinicalNotes": "10-year-old with 2-day history of sore throat, cough, and low-grade fever. Rapid strep negative. Supportive care recommended."
+    },
+    {
+      "encounterId": "ENC-2025-005",
+      "memberId": "AET847291005",
+      "memberName": "Miles Oswald",
+      "encounterType": "OFFICE_VISIT",
+      "serviceDate": "2025-02-20",
+      "facility": {
+        "name": "Bay Area Pediatrics",
+        "npi": "1876543210",
+        "address": "600 Pediatric Way, Suite 100, San Francisco, CA 94103"
+      },
+      "provider": {
+        "npi": "1987654321",
+        "name": "Dr. Michael Torres",
+        "specialty": "Pediatrics"
+      },
+      "diagnoses": [
+        { "code": "Z00.129", "description": "Encounter for routine child health examination without abnormal findings", "type": "principal" }
+      ],
+      "procedures": [
+        { "code": "99392", "description": "Preventive visit, 1-4 years", "charge": 225.00 },
+        { "code": "90460", "description": "Immunization admin, first component", "charge": 25.00 },
+        { "code": "90461", "description": "Immunization admin, each additional", "charge": 15.00 },
+        { "code": "90696", "description": "DTaP-IPV vaccine", "charge": 85.00 }
+      ],
+      "clinicalNotes": "4-year well-child visit. Growth on track (50th percentile). DTaP-IPV booster given. Ready for kindergarten next fall."
+    },
+    {
+      "encounterId": "ENC-2025-006",
+      "memberId": "AET847291001",
+      "memberName": "Mark Oswald",
+      "encounterType": "SPECIALIST",
+      "serviceDate": "2025-03-01",
+      "facility": {
+        "name": "Bay Area Cardiology Associates",
+        "npi": "1543210987",
+        "address": "800 Heart Center Blvd, San Francisco, CA 94103"
+      },
+      "provider": {
+        "npi": "1432109876",
+        "name": "Dr. Robert Kim",
+        "specialty": "Cardiology"
+      },
+      "diagnoses": [
+        { "code": "I10", "description": "Essential (primary) hypertension", "type": "principal" },
+        { "code": "R00.0", "description": "Tachycardia, unspecified", "type": "secondary" }
+      ],
+      "procedures": [
+        { "code": "99214", "description": "Office visit, established patient, moderate complexity", "charge": 225.00 },
+        { "code": "93000", "description": "Electrocardiogram, 12-lead", "charge": 75.00 }
+      ],
+      "clinicalNotes": "Cardiology consult for hypertension management. EKG shows normal sinus rhythm. Recommend increasing lisinopril to 20mg daily."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+icd10_code,icd10_display,snomed_code,snomed_display,domain
+E11.9,Type 2 diabetes mellitus without complications,44054006,Type 2 diabetes mellitus,diabetes
+E11.65,Type 2 diabetes mellitus with hyperglycemia,44054006,Type 2 diabetes mellitus,diabetes
+E11.21,Type 2 diabetes mellitus with diabetic nephropathy,127013003,Diabetic nephropathy,diabetes
+E11.22,Type 2 diabetes mellitus with diabetic chronic kidney disease,127013003,Diabetic nephropathy,diabetes
+E11.40,Type 2 diabetes mellitus with diabetic neuropathy unspecified,230572002,Diabetic neuropathy,diabetes
+E11.41,Type 2 diabetes mellitus with diabetic mononeuropathy,230572002,Diabetic neuropathy,diabetes
+E11.42,Type 2 diabetes mellitus with diabetic polyneuropathy,230572002,Diabetic neuropathy,diabetes
+E11.311,Type 2 diabetes with unspecified diabetic retinopathy with macular edema,4855003,Diabetic retinopathy,diabetes
+E11.319,Type 2 diabetes with unspecified diabetic retinopathy without macular edema,4855003,Diabetic retinopathy,diabetes
+R73.03,Prediabetes,714628002,Prediabetes,diabetes
+I50.9,Heart failure unspecified,84114007,Heart failure,heart-failure
+I50.20,Unspecified systolic heart failure,417996009,Systolic heart failure,heart-failure
+I50.21,Acute systolic heart failure,443253003,Acute systolic heart failure,heart-failure
+I50.22,Chronic systolic heart failure,441530006,Chronic systolic heart failure,heart-failure
+I50.23,Acute on chronic systolic heart failure,443343001,Acute on chronic systolic heart failure,heart-failure
+I50.30,Unspecified diastolic heart failure,418304008,Diastolic heart failure,heart-failure
+I50.31,Acute diastolic heart failure,443254009,Acute diastolic heart failure,heart-failure
+I50.32,Chronic diastolic heart failure,441481004,Chronic diastolic heart failure,heart-failure
+I50.33,Acute on chronic diastolic heart failure,443344007,Acute on chronic diastolic heart failure,heart-failure
+I50.40,Unspecified combined systolic and diastolic heart failure,42343007,Congestive heart failure,heart-failure
+I50.41,Acute combined systolic and diastolic heart failure,42343007,Congestive heart failure,heart-failure
+I50.42,Chronic combined systolic and diastolic heart failure,42343007,Congestive heart failure,heart-failure
+I50.43,Acute on chronic combined systolic and diastolic heart failure,42343007,Congestive heart failure,heart-failure
+N18.1,Chronic kidney disease stage 1,431855005,Chronic kidney disease stage 1,ckd
+N18.2,Chronic kidney disease stage 2,431856006,Chronic kidney disease stage 2,ckd
+N18.3,Chronic kidney disease stage 3 unspecified,433144002,Chronic kidney disease stage 3,ckd
+N18.31,Chronic kidney disease stage 3a,700378005,Chronic kidney disease stage 3a,ckd
+N18.32,Chronic kidney disease stage 3b,700379002,Chronic kidney disease stage 3b,ckd
+N18.4,Chronic kidney disease stage 4,431857002,Chronic kidney disease stage 4,ckd
+N18.5,Chronic kidney disease stage 5,433146000,Chronic kidney disease stage 5,ckd
+N18.6,End stage renal disease,46177005,End-stage renal disease,ckd
+N18.9,Chronic kidney disease unspecified,709044004,Chronic kidney disease,ckd
+I10,Essential primary hypertension,59621000,Essential hypertension,cardiovascular
+I25.10,Atherosclerotic heart disease of native coronary artery,53741008,Coronary arteriosclerosis,cardiovascular
+I48.91,Unspecified atrial fibrillation,49436004,Atrial fibrillation,cardiovascular
+I48.0,Paroxysmal atrial fibrillation,282825002,Paroxysmal atrial fibrillation,cardiovascular
+I48.1,Persistent atrial fibrillation,440028005,Persistent atrial fibrillation,cardiovascular
+E78.5,Hyperlipidemia unspecified,55822004,Hyperlipidemia,cardiovascular
+E66.9,Obesity unspecified,414916001,Obesity,general
+J44.9,Chronic obstructive pulmonary disease unspecified,13645005,Chronic obstructive lung disease,pulmonary
+C50.911,Malignant neoplasm of unspecified site of right female breast,254837009,Malignant tumor of breast,oncology-breast
+C50.912,Malignant neoplasm of unspecified site of left female breast,254837009,Malignant tumor of breast,oncology-breast
+C50.919,Malignant neoplasm of unspecified site of unspecified female breast,254837009,Malignant tumor of breast,oncology-breast
+C34.90,Malignant neoplasm of unspecified part of bronchus or lung,254637007,Non-small cell lung cancer,oncology-lung
+C34.91,Malignant neoplasm of unspecified part of right bronchus or lung,254637007,Non-small cell lung cancer,oncology-lung
+C34.92,Malignant neoplasm of unspecified part of left bronchus or lung,254637007,Non-small cell lung cancer,oncology-lung
+C34.11,Malignant neoplasm of upper lobe right bronchus or lung,254637007,Non-small cell lung cancer,oncology-lung
+C34.12,Malignant neoplasm of upper lobe left bronchus or lung,254637007,Non-small cell lung cancer,oncology-lung
+C18.9,Malignant neoplasm of colon unspecified,93761005,Malignant tumor of colon,oncology-colorectal
+C18.0,Malignant neoplasm of cecum,93761005,Malignant tumor of colon,oncology-colorectal
+C18.2,Malignant neoplasm of ascending colon,93761005,Malignant tumor of colon,oncology-colorectal
+C18.4,Malignant neoplasm of transverse colon,93761005,Malignant tumor of colon,oncology-colorectal
+C18.6,Malignant neoplasm of descending colon,93761005,Malignant tumor of colon,oncology-colorectal
+C18.7,Malignant neoplasm of sigmoid colon,93761005,Malignant tumor of colon,oncology-colorectal
+C20,Malignant neoplasm of rectum,93984006,Malignant tumor of rectum,oncology-colorectal
+C78.00,Secondary malignant neoplasm of unspecified lung,94391008,Secondary malignant neoplasm of lung,oncology-metastatic
+C78.7,Secondary malignant neoplasm of liver and intrahepatic bile duct,94381002,Secondary malignant neoplasm of liver,oncology-metastatic
+C79.31,Secondary malignant neoplasm of brain,94225005,Secondary malignant neoplasm of brain,oncology-metastatic
+C79.51,Secondary malignant neoplasm of bone,94222008,Secondary malignant neoplasm of bone,oncology-metastatic
+Z85.3,Personal history of malignant neoplasm of breast,429098002,History of malignant neoplasm of breast,oncology-history
+Z85.038,Personal history of other malignant neoplasm of large intestine,429699009,History of colorectal cancer,oncology-history
+Z85.118,Personal history of other malignant neoplasm of bronchus and lung,429510007,History of malignant neoplasm of lung,oncology-history
+D70.1,Agranulocytosis secondary to cancer chemotherapy,417181009,Drug-induced neutropenia,oncology-adverse
+D63.1,Anemia in chronic kidney disease,691421000119108,Anemia in chronic kidney disease,ckd

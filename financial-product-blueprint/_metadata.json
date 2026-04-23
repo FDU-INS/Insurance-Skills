@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 2,
+    "_query": "underwriting",
+    "author": "majiayu000",
+    "description": "Template for packaging financial products with pricing, underwriting, and compliance details.",
+    "githubUrl": "https://github.com/jewdore/openclaw-finclaw-test/tree/main/skills/claims-material-check",
+    "id": "majiayu000-claude-skill-registry-data-data-financial-product-blueprint-skill-md",
+    "name": "financial-product-blueprint",
+    "skillUrl": "https://skillsmp.com/skills/majiayu000-claude-skill-registry-data-data-financial-product-blueprint-skill-md",
+    "stars": 3,
+    "updatedAt": 1770280794,
+    "is_insurance_related": "是",
+    "owner": "jewdore",
+    "repo": "openclaw-finclaw-test",
+    "branch": "main",
+    "subpath": "skills/claims-material-check",
+    "mode": "tree",
+    "repoKey": "jewdore/openclaw-finclaw-test"
+  },
+  "resolved": {
+    "owner": "jewdore",
+    "repo": "openclaw-finclaw-test",
+    "branch": "main",
+    "subpath": "skills/claims-material-check"
+  }
+}

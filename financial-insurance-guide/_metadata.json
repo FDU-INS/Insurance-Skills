@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 4,
+    "_query": "insurance",
+    "author": "khw1031",
+    "description": "가족 재무 상담을 위한 보험 상품 분석 및 보장설계 가이드. 보험, 실손, 종신, 정기, 암보험, 보장분석, 보험료, 보험 리밸런싱 요청 시 활성화.",
+    "githubUrl": "https://github.com/khw1031/ai-library/tree/main/skills/financial-insurance-guide",
+    "id": "khw1031-ai-library-skills-financial-insurance-guide-skill-md",
+    "name": "financial-insurance-guide",
+    "skillUrl": "https://skillsmp.com/skills/khw1031-ai-library-skills-financial-insurance-guide-skill-md",
+    "stars": 2,
+    "updatedAt": 1771048648,
+    "owner": "khw1031",
+    "repo": "ai-library",
+    "branch": "main",
+    "subpath": "skills/financial-insurance-guide",
+    "mode": "tree",
+    "repoKey": "khw1031/ai-library"
+  },
+  "resolved": {
+    "owner": "khw1031",
+    "repo": "ai-library",
+    "branch": "main",
+    "subpath": "skills/financial-insurance-guide"
+  }
+}

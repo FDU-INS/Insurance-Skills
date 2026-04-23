@@ -1,0 +1,362 @@
+{
+  "patient": {
+    "mrn": "MRN00000072",
+    "name": {
+      "given_name": "Billy Bob",
+      "family_name": "Williams"
+    },
+    "birth_date": "1959-03-22",
+    "age": {
+      "years": 65
+    },
+    "gender": "M",
+    "address": {
+      "street_address": "1847 Rural Route 5",
+      "city": "Shelbyville",
+      "state": "IL",
+      "postal_code": "62565"
+    },
+    "phone": "217-555-8823",
+    "emergency_contact": {
+      "name": "Betty Sue Williams",
+      "relationship": "Spouse",
+      "phone": "217-555-8824"
+    },
+    "insurance": {
+      "primary": {
+        "payer_id": "MEDICARE",
+        "payer_name": "Medicare Part A/B",
+        "member_id": "1EG4TE5MK72",
+        "plan_type": "Medicare FFS"
+      },
+      "secondary": {
+        "payer_id": "AARP_MEDIGAP",
+        "payer_name": "AARP Medicare Supplement Plan F",
+        "member_id": "MGF98765432",
+        "group_number": "AARP001"
+      }
+    },
+    "medical_history": {
+      "conditions": [
+        {
+          "code": "I10",
+          "description": "Essential hypertension",
+          "onset_date": "2010-05-12",
+          "status": "active"
+        },
+        {
+          "code": "E11.9",
+          "description": "Type 2 diabetes mellitus without complications",
+          "onset_date": "2015-08-20",
+          "status": "active"
+        },
+        {
+          "code": "E78.5",
+          "description": "Hyperlipidemia, unspecified",
+          "onset_date": "2012-03-15",
+          "status": "active"
+        },
+        {
+          "code": "F17.210",
+          "description": "Nicotine dependence, cigarettes, uncomplicated",
+          "onset_date": "1980-01-01",
+          "status": "active"
+        },
+        {
+          "code": "E66.9",
+          "description": "Obesity, unspecified",
+          "onset_date": "2018-01-01",
+          "status": "active"
+        }
+      ],
+      "surgical_history": [
+        {
+          "procedure": "Cholecystectomy",
+          "date": "2008-11-15"
+        }
+      ],
+      "family_history": [
+        {
+          "condition": "Myocardial infarction",
+          "relative": "Father",
+          "age_at_diagnosis": 58,
+          "outcome": "Fatal"
+        },
+        {
+          "condition": "Coronary artery disease",
+          "relative": "Brother",
+          "age_at_diagnosis": 52
+        }
+      ],
+      "social_history": {
+        "smoking_status": "current",
+        "pack_years": 45,
+        "alcohol_use": "moderate",
+        "occupation": "Retired factory worker"
+      }
+    },
+    "current_medications": [
+      {"name": "Metformin", "dose": "1000 mg", "frequency": "twice daily", "indication": "Type 2 diabetes"},
+      {"name": "Lisinopril", "dose": "20 mg", "frequency": "once daily", "indication": "Hypertension"},
+      {"name": "Atorvastatin", "dose": "40 mg", "frequency": "once daily at bedtime", "indication": "Hyperlipidemia"},
+      {"name": "Aspirin", "dose": "81 mg", "frequency": "once daily", "indication": "Primary prevention"},
+      {"name": "Metoprolol succinate", "dose": "50 mg", "frequency": "once daily", "indication": "Hypertension"}
+    ],
+    "allergies": [
+      {"allergen": "Penicillin", "reaction": "Rash", "severity": "moderate"}
+    ]
+  },
+  "ed_encounter": {
+    "encounter_id": "ENC20241210000001",
+    "encounter_type": "emergency",
+    "arrival_datetime": "2024-12-10T02:15:00",
+    "arrival_mode": "EMS",
+    "facility": {
+      "name": "Springfield Memorial Hospital",
+      "npi": "1234567890",
+      "tax_id": "36-1234567"
+    },
+    "chief_complaint": "Chest pain and shortness of breath",
+    "triage_level": "2",
+    "triage_description": "ESI Level 2 - Emergent",
+    "history_of_present_illness": {
+      "narrative": "65-year-old male with history of HTN, DM2, HLD, and active smoking presents via EMS with substernal chest pressure that began approximately 2 hours prior to arrival. Patient describes pressure as 8/10, radiating to left arm and jaw. Associated with diaphoresis, nausea, and dyspnea. Symptoms began at rest while watching television. Patient took 3 aspirin 325mg at home prior to calling 911. EMS administered sublingual nitroglycerin x2 with minimal relief. 12-lead EKG in field showed ST depressions in V3-V6 and leads I, aVL.",
+      "symptom_onset": "2024-12-10T00:15:00",
+      "symptom_quality": "Pressure, squeezing",
+      "symptom_severity": "8/10",
+      "radiation": ["Left arm", "Jaw"],
+      "associated_symptoms": ["Diaphoresis", "Nausea", "Dyspnea"],
+      "aggravating_factors": ["None identified - occurred at rest"],
+      "relieving_factors": ["Minimal relief with nitroglycerin"]
+    }
+  },
+  "initial_vitals": {
+    "recorded_datetime": "2024-12-10T02:22:00",
+    "temperature": {"value": 98.4, "unit": "°F"},
+    "heart_rate": {"value": 92, "unit": "bpm", "rhythm": "sinus"},
+    "respiratory_rate": {"value": 22, "unit": "breaths/min"},
+    "blood_pressure": {"systolic": 168, "diastolic": 95, "unit": "mmHg"},
+    "oxygen_saturation": {"value": 94, "unit": "%", "supplemental_o2": "2L NC"},
+    "weight": {"value": 102, "unit": "kg"},
+    "height": {"value": 175, "unit": "cm"},
+    "bmi": {"value": 33.3, "interpretation": "Obese Class I"},
+    "pain_score": {"value": 8, "scale": "numeric 0-10"}
+  },
+  "physical_exam": {
+    "general": "Alert, oriented, anxious-appearing male in moderate distress, diaphoretic",
+    "heent": "Normocephalic, atraumatic. Pupils equal and reactive. Mucous membranes moist.",
+    "neck": "JVP estimated at 10 cm H2O. No carotid bruits.",
+    "cardiovascular": "Regular rate and rhythm. S1, S2 present. S4 gallop noted. No murmurs or rubs. PMI non-displaced.",
+    "lungs": "Bibasilar crackles, no wheezes. Decreased breath sounds at bases.",
+    "abdomen": "Obese, soft, non-tender, non-distended. Normal bowel sounds.",
+    "extremities": "No edema. Peripheral pulses 2+ and symmetric. No cyanosis.",
+    "neurological": "Alert and oriented x3. No focal deficits."
+  },
+  "initial_ekg": {
+    "performed_datetime": "2024-12-10T02:25:00",
+    "findings": {
+      "rate": 92,
+      "rhythm": "Normal sinus rhythm",
+      "axis": "Normal",
+      "intervals": {"pr": 168, "qrs": 88, "qtc": 442},
+      "st_changes": "ST depression 1.5-2mm in V3-V6, leads I, aVL",
+      "t_wave_changes": "T-wave inversions in V3-V6",
+      "other": "No Q waves. No evidence of STEMI."
+    },
+    "interpretation": "Sinus rhythm with lateral and anterolateral ST-T wave changes consistent with NSTEMI",
+    "interpreter": {
+      "name": "Dr. Robert Martinez",
+      "npi": "1122334466"
+    }
+  },
+  "labs": {
+    "collection_datetime": "2024-12-10T02:30:00",
+    "troponin_series": [
+      {"time": "02:30", "value": 0.89, "unit": "ng/mL", "reference": "<0.04", "flag": "Critical High"},
+      {"time": "06:30", "value": 4.52, "unit": "ng/mL", "reference": "<0.04", "flag": "Critical High"},
+      {"time": "14:30", "value": 8.21, "unit": "ng/mL", "reference": "<0.04", "flag": "Critical High (Peak)"}
+    ],
+    "initial_labs": [
+      {"test": "BNP", "value": 892, "unit": "pg/mL", "reference": "<100", "flag": "H"},
+      {"test": "Sodium", "value": 139, "unit": "mEq/L", "reference": "136-145"},
+      {"test": "Potassium", "value": 4.2, "unit": "mEq/L", "reference": "3.5-5.0"},
+      {"test": "Chloride", "value": 102, "unit": "mEq/L", "reference": "98-106"},
+      {"test": "CO2", "value": 24, "unit": "mEq/L", "reference": "22-29"},
+      {"test": "BUN", "value": 28, "unit": "mg/dL", "reference": "7-20", "flag": "H"},
+      {"test": "Creatinine", "value": 1.4, "unit": "mg/dL", "reference": "0.7-1.3", "flag": "H"},
+      {"test": "eGFR", "value": 52, "unit": "mL/min/1.73m2", "interpretation": "CKD Stage 3a"},
+      {"test": "Glucose", "value": 224, "unit": "mg/dL", "reference": "70-100", "flag": "H"},
+      {"test": "HbA1c", "value": 8.2, "unit": "%", "reference": "<5.7", "flag": "H"},
+      {"test": "WBC", "value": 11.8, "unit": "K/uL", "reference": "4.5-11.0", "flag": "H"},
+      {"test": "Hemoglobin", "value": 13.2, "unit": "g/dL", "reference": "13.5-17.5", "flag": "L"},
+      {"test": "Platelet", "value": 198, "unit": "K/uL", "reference": "150-400"},
+      {"test": "PT", "value": 12.5, "unit": "sec", "reference": "11.0-13.5"},
+      {"test": "INR", "value": 1.0, "unit": "ratio", "reference": "0.8-1.2"},
+      {"test": "Total Cholesterol", "value": 228, "unit": "mg/dL", "reference": "<200", "flag": "H"},
+      {"test": "LDL", "value": 148, "unit": "mg/dL", "reference": "<100", "flag": "H"},
+      {"test": "HDL", "value": 34, "unit": "mg/dL", "reference": ">40", "flag": "L"},
+      {"test": "Triglycerides", "value": 230, "unit": "mg/dL", "reference": "<150", "flag": "H"}
+    ]
+  },
+  "ed_treatment": {
+    "medications_administered": [
+      {"name": "Aspirin", "dose": "325 mg", "route": "PO", "time": "02:28", "indication": "ACS"},
+      {"name": "Ticagrelor", "dose": "180 mg", "route": "PO", "time": "02:30", "indication": "ACS loading dose"},
+      {"name": "Heparin", "dose": "60 units/kg bolus, then 12 units/kg/hr", "route": "IV", "time": "02:35", "indication": "Anticoagulation"},
+      {"name": "Nitroglycerin", "dose": "0.4 mg", "route": "SL", "time": "02:25", "indication": "Chest pain"},
+      {"name": "Morphine", "dose": "4 mg", "route": "IV", "time": "02:40", "indication": "Pain/anxiety"},
+      {"name": "Metoprolol", "dose": "5 mg", "route": "IV", "time": "02:45", "indication": "Rate control/demand reduction"}
+    ],
+    "procedures": [
+      {"name": "12-lead EKG", "time": "02:25"},
+      {"name": "Chest X-ray portable", "time": "02:35"},
+      {"name": "Echocardiogram (limited bedside)", "time": "03:00"}
+    ]
+  },
+  "chest_xray": {
+    "performed_datetime": "2024-12-10T02:35:00",
+    "findings": "Cardiomegaly. Mild pulmonary vascular congestion. Small bilateral pleural effusions. No focal infiltrate or pneumothorax.",
+    "impression": "Cardiomegaly with mild pulmonary edema consistent with heart failure."
+  },
+  "bedside_echo": {
+    "performed_datetime": "2024-12-10T03:00:00",
+    "findings": {
+      "lv_ef": "35-40%",
+      "wall_motion": "Hypokinesis of lateral and anterolateral walls",
+      "rv_function": "Normal",
+      "valves": "Mild mitral regurgitation",
+      "pericardium": "No effusion"
+    },
+    "interpretation": "Reduced LV systolic function with regional wall motion abnormalities consistent with LAD/LCx territory ischemia"
+  },
+  "cardiology_consult": {
+    "consult_datetime": "2024-12-10T03:15:00",
+    "consultant": {
+      "name": "Dr. Angela Patel",
+      "npi": "2233445577",
+      "specialty": "Interventional Cardiology"
+    },
+    "assessment": "65-year-old male with multiple cardiac risk factors presenting with NSTEMI. High TIMI risk score (6/7). Recommend urgent cardiac catheterization.",
+    "timi_risk_score": {
+      "score": 6,
+      "factors": [
+        "Age >= 65 (+1)",
+        "3+ CAD risk factors (+1)",
+        "Known CAD (+0)",
+        "Aspirin use in past 7 days (+1)",
+        "Severe angina (+1)",
+        "ST deviation (+1)",
+        "Elevated cardiac markers (+1)"
+      ],
+      "interpretation": "High risk - 26% risk of death/MI/urgent revascularization at 14 days"
+    },
+    "plan": "Proceed with cardiac catheterization in AM. Continue anticoagulation. Transfer to CCU."
+  },
+  "cath_lab": {
+    "procedure_datetime": "2024-12-10T08:30:00",
+    "procedure": {
+      "code": "93458",
+      "description": "Left heart catheterization with coronary angiography"
+    },
+    "operator": {
+      "name": "Dr. Angela Patel",
+      "npi": "2233445577"
+    },
+    "access": "Right radial artery",
+    "contrast_used_ml": 120,
+    "fluoroscopy_time_min": 12,
+    "findings": {
+      "left_main": "20% stenosis",
+      "lad": "70% stenosis in mid-LAD",
+      "lcx": "95% stenosis (culprit lesion) in proximal circumflex",
+      "rca": "40% stenosis in mid-RCA",
+      "lvef_by_ventriculogram": "38%",
+      "lvedp_mmhg": 22
+    },
+    "intervention": {
+      "target_vessel": "Left Circumflex (LCx)",
+      "lesion_location": "Proximal",
+      "pre_intervention_stenosis": "95%",
+      "procedure": "PCI with drug-eluting stent",
+      "stent": {
+        "type": "Xience Sierra",
+        "drug": "Everolimus",
+        "diameter_mm": 3.0,
+        "length_mm": 18
+      },
+      "post_intervention_stenosis": "0%",
+      "timi_flow_pre": 2,
+      "timi_flow_post": 3,
+      "complications": "None"
+    },
+    "post_procedure_diagnosis": "NSTEMI due to culprit lesion in proximal LCx, successfully treated with DES. Two-vessel CAD (mid-LAD 70%, to be managed medically)."
+  },
+  "hospital_course": {
+    "admission_datetime": "2024-12-10T04:00:00",
+    "discharge_datetime": "2024-12-13T11:00:00",
+    "length_of_stay_days": 3,
+    "unit_progression": [
+      {"unit": "CCU", "from": "2024-12-10T04:00:00", "to": "2024-12-11T14:00:00"},
+      {"unit": "Cardiac Step-down", "from": "2024-12-11T14:00:00", "to": "2024-12-13T11:00:00"}
+    ],
+    "events": [
+      "Post-PCI: Sheath removed 4 hours post-procedure, TR Band hemostasis successful",
+      "POD1: Chest pain-free, ambulating, tolerating diet",
+      "POD1: Cardiac rehab consult placed",
+      "POD2: Telemetry shows NSR, no arrhythmias",
+      "POD2: Lipid panel reviewed - increased statin to high-intensity",
+      "POD3: Discharge teaching completed, prescriptions provided"
+    ],
+    "complications": []
+  },
+  "discharge": {
+    "discharge_datetime": "2024-12-13T11:00:00",
+    "discharge_disposition": "01",
+    "discharge_disposition_description": "Home",
+    "discharge_diagnoses": [
+      {"sequence": 1, "code": "I21.4", "description": "Non-ST elevation myocardial infarction", "type": "principal"},
+      {"sequence": 2, "code": "I25.10", "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris"},
+      {"sequence": 3, "code": "I50.9", "description": "Heart failure, unspecified"},
+      {"sequence": 4, "code": "I10", "description": "Essential hypertension"},
+      {"sequence": 5, "code": "E11.9", "description": "Type 2 diabetes mellitus without complications"},
+      {"sequence": 6, "code": "E78.5", "description": "Hyperlipidemia, unspecified"},
+      {"sequence": 7, "code": "N18.3", "description": "Chronic kidney disease, stage 3"},
+      {"sequence": 8, "code": "F17.210", "description": "Nicotine dependence, cigarettes, uncomplicated"},
+      {"sequence": 9, "code": "E66.9", "description": "Obesity, unspecified"}
+    ],
+    "procedures_performed": [
+      {"code": "92928", "description": "Percutaneous coronary intervention with stent, single vessel"},
+      {"code": "93458", "description": "Left heart catheterization with coronary angiography"}
+    ],
+    "discharge_medications": [
+      {"name": "Aspirin", "dose": "81 mg", "frequency": "once daily", "duration": "indefinitely", "indication": "Post-PCI antiplatelet"},
+      {"name": "Ticagrelor", "dose": "90 mg", "frequency": "twice daily", "duration": "12 months", "indication": "DAPT post-DES"},
+      {"name": "Atorvastatin", "dose": "80 mg", "frequency": "once daily at bedtime", "indication": "High-intensity statin post-ACS"},
+      {"name": "Metoprolol succinate", "dose": "100 mg", "frequency": "once daily", "indication": "Post-MI beta-blocker"},
+      {"name": "Lisinopril", "dose": "20 mg", "frequency": "once daily", "indication": "Post-MI ACE inhibitor"},
+      {"name": "Metformin", "dose": "1000 mg", "frequency": "twice daily", "indication": "Type 2 diabetes"},
+      {"name": "Nitroglycerin SL", "dose": "0.4 mg", "frequency": "PRN chest pain", "instructions": "Take up to 3 tablets 5 minutes apart. Call 911 if pain persists.", "indication": "Rescue angina"},
+      {"name": "Pantoprazole", "dose": "40 mg", "frequency": "once daily", "indication": "GI protection with DAPT"}
+    ],
+    "discharge_instructions": [
+      "Take all medications as prescribed. Do not stop aspirin or ticagrelor without talking to your cardiologist.",
+      "Cardiac rehabilitation: You have been referred to the Springfield Cardiac Rehab program. They will call you to schedule.",
+      "Follow up with Dr. Patel (Cardiology) in 2 weeks.",
+      "Follow up with your primary care doctor in 1 week.",
+      "Activity: Light activity only for 1 week. Avoid lifting more than 10 lbs for 2 weeks.",
+      "Diet: Heart-healthy, low sodium (<2g/day), diabetic diet.",
+      "Smoking cessation: You MUST stop smoking. This is critical for your heart health. Nicotine replacement therapy prescribed.",
+      "Call 911 or go to ER immediately if: Chest pain not relieved by nitroglycerin, shortness of breath at rest, passing out, new or worsening leg swelling."
+    ],
+    "follow_up": [
+      {"provider": "Dr. Angela Patel, Cardiology", "timeframe": "2 weeks", "reason": "Post-PCI follow-up"},
+      {"provider": "Primary Care", "timeframe": "1 week", "reason": "Medication review, diabetes management"},
+      {"provider": "Cardiac Rehabilitation", "timeframe": "1-2 weeks", "reason": "Phase 2 cardiac rehab enrollment"}
+    ]
+  },
+  "attending_provider": {
+    "npi": "2233445577",
+    "name": "Dr. Angela Patel",
+    "specialty": "Interventional Cardiology"
+  }
+}

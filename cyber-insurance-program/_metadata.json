@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 3,
+    "_query": "insurance",
+    "author": "Winbda",
+    "description": "Design cyber insurance programs.\nTRIGGERS - Use when user needs help with cyber-insurance-program related tasks.",
+    "githubUrl": "https://github.com/Winbda/claude-skills-collection/tree/master/skills/cyber-insurance-program",
+    "id": "winbda-claude-skills-collection-skills-cyber-insurance-program-skill-md",
+    "name": "cyber-insurance-program",
+    "skillUrl": "https://skillsmp.com/skills/winbda-claude-skills-collection-skills-cyber-insurance-program-skill-md",
+    "stars": 2,
+    "updatedAt": 1775416616,
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/cyber-insurance-program",
+    "mode": "tree",
+    "repoKey": "Winbda/claude-skills-collection"
+  },
+  "resolved": {
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/cyber-insurance-program"
+  }
+}

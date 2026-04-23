@@ -1,0 +1,20 @@
+[project]
+name = "scan-organizer"
+version = "0.1.0"
+description = "OCR, classify, and organize scanned PDFs using local models"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "docling>=2.73",
+    "requests>=2.31",
+    "click>=8.0",
+    "pdf2image>=1.17",
+    "pillow>=10.0",
+]
+
+[project.scripts]
+scan-organizer = "scan_organizer.cli:cli"
+
+[build-system]
+requires = ["uv_build>=0.10.0,<0.11.0"]
+build-backend = "uv_build"

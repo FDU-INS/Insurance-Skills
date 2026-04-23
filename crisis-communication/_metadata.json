@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 10,
+    "_query": "insurance",
+    "author": "revfactory",
+    "description": "crisis situation occurrence when situationidentify, messagestrategy, press release, Q&A, monitoringto agent team to integration crisis package Korean creation Full pipeline. 'crisis response', 'crisis communication', 'press release writing', 'crisismanagement', 'crisis management', 'grade response', ' response', 'basisspecialist preparation', 'official document', 'crisis strategy', 'companydocument writing', ' response', 'data response', 'companycase company response' etc. crisis situation communication before skill usage. crisis type degree also crisis response framework provide. However, actual rate specialistdocument, insurance , company/company versus, actualtime SNS monitoring API annual is outside this skill's scope.",
+    "githubUrl": "https://github.com/revfactory/harness-100/tree/main/en/87-crisis-communication/.claude/skills/crisis-communication",
+    "id": "revfactory-harness-100-en-87-crisis-communication-claude-skills-crisis-communication-skill-md",
+    "name": "crisis-communication",
+    "skillUrl": "https://skillsmp.com/skills/revfactory-harness-100-en-87-crisis-communication-claude-skills-crisis-communication-skill-md",
+    "stars": 556,
+    "updatedAt": 1774219315,
+    "owner": "revfactory",
+    "repo": "harness-100",
+    "branch": "main",
+    "subpath": "en/87-crisis-communication/.claude/skills/crisis-communication",
+    "mode": "tree",
+    "repoKey": "revfactory/harness-100"
+  },
+  "resolved": {
+    "owner": "revfactory",
+    "repo": "harness-100",
+    "branch": "main",
+    "subpath": "en/87-crisis-communication/.claude/skills/crisis-communication"
+  }
+}

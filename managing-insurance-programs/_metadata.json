@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 3,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Structures corporate insurance program analysis with coverage adequacy and renewal documentation. Use when managing insurance programs, analyzing coverage, or documenting insurance renewals.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/finance/managing-insurance-programs",
+    "id": "casemark-skills-skills-finance-managing-insurance-programs-skill-md",
+    "name": "managing-insurance-programs",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-finance-managing-insurance-programs-skill-md",
+    "stars": 12,
+    "updatedAt": 1772680350,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/managing-insurance-programs",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/managing-insurance-programs"
+  }
+}

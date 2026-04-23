@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 7,
+    "_query": "policy",
+    "author": "RajdeepKushwaha5",
+    "description": "Review policy drafts for clarity, completeness, cross-policy consistency, and regulatory accuracy before approval",
+    "githubUrl": "https://github.com/panaversity/agentfactory-business-plugins/tree/main/islamic-finance/skills/islamic-finance-router",
+    "id": "rajdeepkushwaha5-redline-skills-review-policy-skill-md",
+    "name": "review-policy",
+    "skillUrl": "https://skillsmp.com/skills/rajdeepkushwaha5-redline-skills-review-policy-skill-md",
+    "stars": 0,
+    "updatedAt": 1775040620,
+    "is_insurance_related": "是",
+    "owner": "panaversity",
+    "repo": "agentfactory-business-plugins",
+    "branch": "main",
+    "subpath": "islamic-finance/skills/islamic-finance-router",
+    "mode": "tree",
+    "repoKey": "panaversity/agentfactory-business-plugins"
+  },
+  "resolved": {
+    "owner": "panaversity",
+    "repo": "agentfactory-business-plugins",
+    "branch": "main",
+    "subpath": "islamic-finance/skills/islamic-finance-router"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "claims",
+    "author": "aifinlab",
+    "description": "当用户需要查找与理赔案件相关的保险条款、定位责任定义和免责条文、根据案件事实匹配相关保险条款、提取影响理赔判断的关键条文或输出适合理赔审核、复核、客服支持和调查使用的理赔条款定位结果时使用本 skill。适用于分析理赔系统案件记录、报案信息、门诊或住院病历、诊断证明、重疾身故事故相关资料、费用清单与发票、调查记录、客服或审核备注、OCR 文本、PDF 文档、截图转写内容以及产品条款全文、特别约定、责任免除条款、等待期约定、多次赔付规则、医院范围和条款版本信息，并形成结构化条款索引与摘要。",
+    "githubUrl": "https://github.com/majiayu000/claude-skill-registry-data/tree/main/data/gate",
+    "id": "aifinlab-finclaw-skills-claims-clause-locator-assistant-skill-md",
+    "name": "claims-clause-locator-assistant",
+    "skillUrl": "https://skillsmp.com/skills/aifinlab-finclaw-skills-claims-clause-locator-assistant-skill-md",
+    "stars": 119,
+    "updatedAt": 1773793812,
+    "is_insurance_related": "是",
+    "owner": "majiayu000",
+    "repo": "claude-skill-registry-data",
+    "branch": "main",
+    "subpath": "data/gate",
+    "mode": "tree",
+    "repoKey": "majiayu000/claude-skill-registry-data"
+  },
+  "resolved": {
+    "owner": "majiayu000",
+    "repo": "claude-skill-registry-data",
+    "branch": "main",
+    "subpath": "data/gate"
+  }
+}

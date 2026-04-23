@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 4,
+    "_query": "insurance",
+    "author": "openclaw",
+    "description": "内蒙古养老保险补缴计算工具。用于计算内蒙古地区养老保险补缴金额，包括本金、利息（按月复利计息）、滞纳金等明细。\n\n**触发关键词**：社保补缴、社保补费、补缴、补费、养老保险补缴、社保欠费计算\n\n**使用场景**：\n1. 计算历史欠缴养老保险的补缴金额\n2. 估算补缴本金、利息、滞纳金明细\n3. 对比不同缴费档次（60%/80%/100%/150%/200%/300%）的补缴金额\n4. 计算无滞纳金情况下的补缴金额\n\n**输入参数**：\n- 补缴起止年月（必填）\n- 缴费档次比例（可选，默认60%，支持--all计算全部档次）\n- 补缴时间（可选，默认当前时间）\n- 自定义月缴费基数（可选，设置后忽略档次比例和社平工资）\n\n**输出结果**：\n- 个人本金、单位本金\n- 个人利息、单位利息（按月复利计算）\n- 个人滞纳金、单位滞纳金\n- 有滞纳金和无滞纳金分别汇总\n- 支持六档对比：60%、80%、100%、150%、200%、300%",
+    "githubUrl": "https://github.com/openclaw/skills/tree/main/skills/binbin/im-social-insurance-backpay",
+    "id": "openclaw-skills-skills-binbin-im-social-insurance-backpay-skill-md",
+    "name": "im-social-insurance-backpay",
+    "skillUrl": "https://skillsmp.com/skills/openclaw-skills-skills-binbin-im-social-insurance-backpay-skill-md",
+    "stars": 4094,
+    "updatedAt": 1773220225,
+    "owner": "openclaw",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/binbin/im-social-insurance-backpay",
+    "mode": "tree",
+    "repoKey": "openclaw/skills"
+  },
+  "resolved": {
+    "owner": "openclaw",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/binbin/im-social-insurance-backpay"
+  }
+}

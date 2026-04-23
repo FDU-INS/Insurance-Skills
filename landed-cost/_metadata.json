@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 10,
+    "_query": "insurance",
+    "author": "cefuentes82",
+    "description": "Calculate the complete landed cost of importing a product — from factory to warehouse door. Covers duty, taxes, fees, freight, insurance, brokerage, and entry type selection. Use when someone asks about import costs, duty rates, tariffs, \"how much will it cost to import\", landed cost, entry types, or total cost of ownership for imported goods.",
+    "githubUrl": "https://github.com/cefuentes82/onemarket-commerce-intelligence/tree/main/skills/landed-cost",
+    "id": "cefuentes82-onemarket-commerce-intelligence-skills-landed-cost-skill-md",
+    "name": "landed-cost",
+    "skillUrl": "https://skillsmp.com/skills/cefuentes82-onemarket-commerce-intelligence-skills-landed-cost-skill-md",
+    "stars": 2,
+    "updatedAt": 1769963238,
+    "owner": "cefuentes82",
+    "repo": "onemarket-commerce-intelligence",
+    "branch": "main",
+    "subpath": "skills/landed-cost",
+    "mode": "tree",
+    "repoKey": "cefuentes82/onemarket-commerce-intelligence"
+  },
+  "resolved": {
+    "owner": "cefuentes82",
+    "repo": "onemarket-commerce-intelligence",
+    "branch": "main",
+    "subpath": "skills/landed-cost"
+  }
+}

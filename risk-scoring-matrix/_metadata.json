@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 10,
+    "_query": "insurance",
+    "author": "revfactory",
+    "description": "risk assessment matrix and analysis tool. assessment-analyst agent risk probability and impact systematicas assessmentto do when reference. 'risk matrix', 'probability impact analysis', 'risk score' request when usage. However, insurance total risk model scope outside.",
+    "githubUrl": "https://github.com/revfactory/harness-100/tree/main/en/88-risk-register/.claude/skills/risk-scoring-matrix",
+    "id": "revfactory-harness-100-en-88-risk-register-claude-skills-risk-scoring-matrix-skill-md",
+    "name": "risk-scoring-matrix",
+    "skillUrl": "https://skillsmp.com/skills/revfactory-harness-100-en-88-risk-register-claude-skills-risk-scoring-matrix-skill-md",
+    "stars": 556,
+    "updatedAt": 1774219315,
+    "owner": "revfactory",
+    "repo": "harness-100",
+    "branch": "main",
+    "subpath": "en/88-risk-register/.claude/skills/risk-scoring-matrix",
+    "mode": "tree",
+    "repoKey": "revfactory/harness-100"
+  },
+  "resolved": {
+    "owner": "revfactory",
+    "repo": "harness-100",
+    "branch": "main",
+    "subpath": "en/88-risk-register/.claude/skills/risk-scoring-matrix"
+  }
+}

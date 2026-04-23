@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 11,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Drafts U.S. commercial triple-net (NNN) lease agreements from deal materials. Triggers on term sheets, LOIs, or due-diligence packets where rent, taxes, insurance, and maintenance allocate to the tenant. Produces an execution-ready lease covering expense pass-throughs, use controls, default/remedy architecture, transfer gates, indemnity/insurance, SNDA, and exhibits.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/legal/triple-net-lease-agreement",
+    "id": "casemark-skills-skills-legal-triple-net-lease-agreement-skill-md",
+    "name": "triple-net-lease-agreement",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-legal-triple-net-lease-agreement-skill-md",
+    "stars": 12,
+    "updatedAt": 1772500417,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/triple-net-lease-agreement",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/triple-net-lease-agreement"
+  }
+}

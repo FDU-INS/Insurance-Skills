@@ -1,0 +1,20 @@
+{
+  "name": "healthcare-health_insurance",
+  "description": "专业的医保申请(Health Insurance)顾问助手，帮助您申请省级医疗保险。当用户询问以下问题时使用：(1) 医疗服务查找 (2) 就医流程指导 (3) 保险申请和使用 (4) 健康咨询 (5) 常见问题解答",
+  "keywords": [
+    "health_insurance",
+    "healthcare",
+    "advisor",
+    "顾问",
+    "医保申请",
+    "health",
+    "insurance"
+  ],
+  "is_public": true,
+  "is_official": false,
+  "domain_code": "health_insurance",
+  "category_code": "healthcare",
+  "created_at": "2026-01-15T15:13:31.063508",
+  "repo": "custom",
+  "platform": "rehui-advisor"
+}

@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 9,
+    "_query": "insurance",
+    "author": "mukul975",
+    "description": "Coordinates credit monitoring and identity theft protection services for individuals affected by a data breach. Covers vendor selection criteria, enrollment logistics, coverage duration (12-24 months), identity theft insurance options, communication to affected individuals, and enrollment rate tracking. Keywords: credit monitoring, identity protection, breach response, Experian, enrollment, identity theft insurance.",
+    "githubUrl": "https://github.com/mukul975/Privacy-Data-Protection-Skills/tree/main/skills/privacy/breach-credit-monitor",
+    "id": "mukul975-privacy-data-protection-skills-skills-privacy-breach-credit-monitor-skill-md",
+    "name": "breach-credit-monitor",
+    "skillUrl": "https://skillsmp.com/skills/mukul975-privacy-data-protection-skills-skills-privacy-breach-credit-monitor-skill-md",
+    "stars": 50,
+    "updatedAt": 1773516780,
+    "owner": "mukul975",
+    "repo": "Privacy-Data-Protection-Skills",
+    "branch": "main",
+    "subpath": "skills/privacy/breach-credit-monitor",
+    "mode": "tree",
+    "repoKey": "mukul975/Privacy-Data-Protection-Skills"
+  },
+  "resolved": {
+    "owner": "mukul975",
+    "repo": "Privacy-Data-Protection-Skills",
+    "branch": "main",
+    "subpath": "skills/privacy/breach-credit-monitor"
+  }
+}

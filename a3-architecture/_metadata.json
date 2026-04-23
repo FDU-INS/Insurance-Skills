@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 6,
+    "_query": "insurance",
+    "author": "trusted-american",
+    "description": "Complete architecture reference for the A3 insurance platform — file locations, data flow, conventions, microservice map, and fullstack patterns",
+    "githubUrl": "https://github.com/trusted-american/marketplace/tree/main/plugins/a3-plugin/skills/a3-architecture",
+    "id": "trusted-american-marketplace-plugins-a3-plugin-skills-a3-architecture-skill-md",
+    "name": "a3-architecture",
+    "skillUrl": "https://skillsmp.com/skills/trusted-american-marketplace-plugins-a3-plugin-skills-a3-architecture-skill-md",
+    "stars": 0,
+    "updatedAt": 1774556874,
+    "owner": "trusted-american",
+    "repo": "marketplace",
+    "branch": "main",
+    "subpath": "plugins/a3-plugin/skills/a3-architecture",
+    "mode": "tree",
+    "repoKey": "trusted-american/marketplace"
+  },
+  "resolved": {
+    "owner": "trusted-american",
+    "repo": "marketplace",
+    "branch": "main",
+    "subpath": "plugins/a3-plugin/skills/a3-architecture"
+  }
+}

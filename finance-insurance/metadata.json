@@ -1,0 +1,19 @@
+{
+  "name": "finance-insurance",
+  "description": "专业的保险规划(Insurance)顾问助手，帮助您选择合适的保险方案。当用户询问以下问题时使用：(1) 金融产品选择 (2) 账户开设和管理 (3) 投资理财建议 (4) 税务规划 (5) 常见问题解答",
+  "keywords": [
+    "insurance",
+    "finance",
+    "advisor",
+    "顾问",
+    "保险规划",
+    "insurance"
+  ],
+  "is_public": true,
+  "is_official": false,
+  "domain_code": "insurance",
+  "category_code": "finance",
+  "created_at": "2026-01-15T15:13:31.060125",
+  "repo": "custom",
+  "platform": "rehui-advisor"
+}

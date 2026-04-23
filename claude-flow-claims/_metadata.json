@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "claims",
+    "author": "ricable",
+    "description": "Claims-based authorization with role management, policy enforcement, and permission control for agent workflows. Use when managing permissions, checking authorization, granting or revoking claims, or configuring role-based access control.",
+    "githubUrl": "https://github.com/agenticnotetaking/arscontexta/tree/main/skill-sources/pipeline",
+    "id": "ricable-cli-skills-builder-claude-skills-claude-flow-claims-skill-md",
+    "name": "claude-flow-claims",
+    "skillUrl": "https://skillsmp.com/skills/ricable-cli-skills-builder-claude-skills-claude-flow-claims-skill-md",
+    "stars": 1,
+    "updatedAt": 1770577579,
+    "is_insurance_related": "是",
+    "owner": "agenticnotetaking",
+    "repo": "arscontexta",
+    "branch": "main",
+    "subpath": "skill-sources/pipeline",
+    "mode": "tree",
+    "repoKey": "agenticnotetaking/arscontexta"
+  },
+  "resolved": {
+    "owner": "agenticnotetaking",
+    "repo": "arscontexta",
+    "branch": "main",
+    "subpath": "skill-sources/pipeline"
+  }
+}

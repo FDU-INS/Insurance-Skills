@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 8,
+    "_query": "insurance",
+    "author": "MarketcheckHub",
+    "description": "Claim value trending and replacement cost tracking. Triggers: \"claim value trending\", \"replacement cost tracking\", \"vehicle depreciation for claims\", \"residual value for insurance\", \"how fast is the insured vehicle losing value\", \"pre-loss value trajectory\", \"depreciation rate for settlement\", \"value retention for claims\", \"depreciation curve for total loss\", \"diminished value over time\", \"claim reserve adjustment\", \"portfolio depreciation exposure\", \"fleet depreciation risk\", tracking vehicle depreciation for insurance claims valuation, replacement cost estimation, settlement trending, or reserve adequacy assessment.",
+    "githubUrl": "https://github.com/MarketcheckHub/marketcheck-cowork-plugin/tree/main/plugins/insurer/skills/depreciation-tracker",
+    "id": "marketcheckhub-marketcheck-cowork-plugin-plugins-insurer-skills-depreciation-tracker-skill-md",
+    "name": "depreciation-tracker",
+    "skillUrl": "https://skillsmp.com/skills/marketcheckhub-marketcheck-cowork-plugin-plugins-insurer-skills-depreciation-tracker-skill-md",
+    "stars": 2,
+    "updatedAt": 1776149148,
+    "owner": "MarketcheckHub",
+    "repo": "marketcheck-cowork-plugin",
+    "branch": "main",
+    "subpath": "plugins/insurer/skills/depreciation-tracker",
+    "mode": "tree",
+    "repoKey": "MarketcheckHub/marketcheck-cowork-plugin"
+  },
+  "resolved": {
+    "owner": "MarketcheckHub",
+    "repo": "marketcheck-cowork-plugin",
+    "branch": "main",
+    "subpath": "plugins/insurer/skills/depreciation-tracker"
+  }
+}

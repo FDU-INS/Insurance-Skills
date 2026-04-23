@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 9,
+    "_query": "policy",
+    "author": "ClawMobile",
+    "description": "Deterministic-first mobile policy for tool selection, verification, and escalation.",
+    "githubUrl": "https://github.com/jewdore/openclaw-finclaw-test/tree/main/skills/anti-fraud-screening",
+    "id": "clawmobile-clawmobile-installer-workspace-seed-skills-clawmobile-policy-skill-md",
+    "name": "clawmobile-policy",
+    "skillUrl": "https://skillsmp.com/skills/clawmobile-clawmobile-installer-workspace-seed-skills-clawmobile-policy-skill-md",
+    "stars": 112,
+    "updatedAt": 1774181159,
+    "is_insurance_related": "是",
+    "owner": "jewdore",
+    "repo": "openclaw-finclaw-test",
+    "branch": "main",
+    "subpath": "skills/anti-fraud-screening",
+    "mode": "tree",
+    "repoKey": "jewdore/openclaw-finclaw-test"
+  },
+  "resolved": {
+    "owner": "jewdore",
+    "repo": "openclaw-finclaw-test",
+    "branch": "main",
+    "subpath": "skills/anti-fraud-screening"
+  }
+}

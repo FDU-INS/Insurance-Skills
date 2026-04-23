@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthSim DuckDB Data Architecture</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #7c3aed;
+            --success: #059669;
+            --warning: #d97706;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-600: #4b5563;
+            --gray-800: #1f2937;
+            --gray-900: #111827;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--gray-800);
+            background: var(--gray-50);
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            padding: 3rem;
+        }
+        
+        h1 {
+            font-size: 2.25rem;
+            color: var(--gray-900);
+            margin-bottom: 0.5rem;
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 0.75rem;
+        }
+        
+        .subtitle { font-size: 1.1rem; color: var(--gray-600); margin-bottom: 1rem; }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 0.35rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            background: var(--success);
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+        
+        .version-info {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: var(--gray-100);
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            color: var(--primary-dark);
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--gray-200);
+        }
+        
+        h3 { font-size: 1.2rem; color: var(--gray-800); margin: 1.5rem 0 0.75rem; }
+        h4 { font-size: 1rem; color: var(--gray-600); margin: 1rem 0 0.5rem; }
+        
+        p { margin-bottom: 1rem; }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--gray-200);
+        }
+        
+        th { background: var(--gray-100); font-weight: 600; }
+        tr:hover { background: var(--gray-50); }
+        
+        code {
+            background: var(--gray-100);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Consolas', monospace;
+            font-size: 0.85em;
+        }
+        
+        pre {
+            background: var(--gray-900);
+            color: #e5e7eb;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1rem 0;
+            font-size: 0.85rem;
+        }
+        
+        pre code { background: none; padding: 0; color: inherit; }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .product-card {
+            border: 1px solid var(--gray-200);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+        
+        .product-card h4 {
+            margin: 0 0 0.5rem 0;
+            color: var(--primary);
+        }
+        
+        .product-card ul {
+            list-style: none;
+            font-size: 0.85rem;
+        }
+        
+        .product-card li {
+            padding: 0.25rem 0;
+            color: var(--gray-600);
+        }
+        
+        .note {
+            background: #eff6ff;
+            border-left: 4px solid var(--primary);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .diagram {
+            background: var(--gray-100);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            font-family: monospace;
+            font-size: 0.8rem;
+            white-space: pre;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🦆 HealthSim DuckDB Data Architecture</h1>
+        <p class="subtitle">Unified canonical data storage for cross-product analytics</p>
+        
+        <span class="status-badge">✓ ACTIVE</span>
+        
+        <div class="version-info">
+            <span>Version: <strong>1.0</strong></span>
+            <span>Schema Version: <strong>1.0</strong></span>
+            <span>Last Updated: <strong>December 26, 2024</strong></span>
+            <span>Tables: <strong>41</strong></span>
+        </div>
+        
+        <h2>1. Overview</h2>
+        
+        <p>The HealthSim DuckDB architecture provides a unified analytical database that stores canonical entities from all six HealthSim products. This enables:</p>
+        
+        <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+            <li><strong>Cross-product queries</strong> - Join patient, member, and claims data</li>
+            <li><strong>Scenario persistence</strong> - Save and reload generated scenarios</li>
+            <li><strong>Analytics foundation</strong> - Base for dimensional analytics (future)</li>
+            <li><strong>Identity correlation</strong> - Track entities across products via Person/SSN</li>
+        </ul>
+        
+        <h2>2. Architecture Layers</h2>
+        
+        <div class="diagram">
+┌─────────────────────────────────────────────────────────────────┐
+│                    CONVERSATION LAYER                            │
+│         Claude + Skills generate JSON entities                   │
+└─────────────────────────────────────┬───────────────────────────┘
+                                      │
+                                      ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                    CANONICAL LAYER (DuckDB)                      │
+│  ┌──────────┐ ┌───────────┐ ┌────────────┐ ┌──────────────────┐ │
+│  │   Core   │ │ PatientSim│ │ MemberSim  │ │   RxMemberSim    │ │
+│  │ persons  │ │ patients  │ │  members   │ │   rx_members     │ │
+│  │providers │ │encounters │ │  claims    │ │pharmacy_claims   │ │
+│  │facilities│ │diagnoses  │ │claim_lines │ │  prescriptions   │ │
+│  └──────────┘ └───────────┘ └────────────┘ └──────────────────┘ │
+│  ┌──────────┐ ┌───────────┐ ┌────────────┐                      │
+│  │ TrialSim │ │Population │ │ NetworkSim │                      │
+│  │ studies  │ │  Sim      │ │  networks  │                      │
+│  │ subjects │ │geo_entities││net_providers│                     │
+│  │adv_events│ │health_ind │ │net_facilities│                    │
+│  └──────────┘ └───────────┘ └────────────┘                      │
+└─────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                   STATE MANAGEMENT LAYER                         │
+│         scenarios │ scenario_entities │ scenario_tags            │
+└─────────────────────────────────────────────────────────────────┘
+        </div>
+        
+        <h2>3. Schema Summary</h2>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <h4>🏥 Core (3 tables)</h4>
+                <ul>
+                    <li><code>persons</code> - Base demographic entity</li>
+                    <li><code>providers</code> - Healthcare providers</li>
+                    <li><code>facilities</code> - Hospitals, clinics</li>
+                </ul>
+            </div>
+            
+            <div class="product-card">
+                <h4>🏥 PatientSim (8 tables)</h4>
+                <ul>
+                    <li><code>patients</code> - Patient records</li>
+                    <li><code>encounters</code> - Clinical visits</li>
+                    <li><code>diagnoses</code> - ICD-10 diagnoses</li>
+                    <li><code>procedures</code> - CPT procedures</li>
+                    <li><code>lab_results</code> - LOINC labs</li>
+                    <li><code>medications</code> - Med orders</li>
+                    <li><code>allergies</code> - Patient allergies</li>
+                    <li><code>vitals</code> - Vital signs</li>
+                </ul>
+            </div>
+            
+            <div class="product-card">
+                <h4>💳 MemberSim (5 tables)</h4>
+                <ul>
+                    <li><code>members</code> - Health plan members</li>
+                    <li><code>accumulators</code> - Deductible/OOP</li>
+                    <li><code>claims</code> - Professional/institutional</li>
+                    <li><code>claim_lines</code> - Line details</li>
+                    <li><code>authorizations</code> - Prior auths</li>
+                </ul>
+            </div>
+            
+            <div class="product-card">
+                <h4>💊 RxMemberSim (5 tables)</h4>
+                <ul>
+                    <li><code>rx_members</code> - Pharmacy members</li>
+                    <li><code>prescriptions</code> - Rx orders</li>
+                    <li><code>pharmacy_claims</code> - NCPDP claims</li>
+                    <li><code>dur_alerts</code> - DUR alerts</li>
+                    <li><code>pharmacies</code> - Pharmacy locations</li>
+                </ul>
+            </div>
+            
+            <div class="product-card">
+                <h4>🔬 TrialSim (8 tables)</h4>
+                <ul>
+                    <li><code>studies</code> - Trial protocols</li>
+                    <li><code>sites</code> - Trial sites</li>
+                    <li><code>treatment_arms</code> - Treatment arms</li>
+                    <li><code>subjects</code> - Trial subjects</li>
+                    <li><code>adverse_events</code> - AEs (CDISC)</li>
+                    <li><code>visit_schedule</code> - Planned visits</li>
+                    <li><code>actual_visits</code> - Completed visits</li>
+                    <li><code>disposition_events</code> - Disposition</li>
+                </ul>
+            </div>
+            
+            <div class="product-card">
+                <h4>📊 PopulationSim (5 tables)</h4>
+                <ul>
+                    <li><code>geographic_entities</code> - FIPS, tracts</li>
+                    <li><code>population_profiles</code> - Demographics</li>
+                    <li><code>health_indicators</code> - CDC PLACES</li>
+                    <li><code>sdoh_indices</code> - SVI, ADI</li>
+                    <li><code>cohort_specifications</code> - Cohort specs</li>
+                </ul>
+            </div>
+            
+            <div class="product-card">
+                <h4>🏢 NetworkSim (4 tables)</h4>
+                <ul>
+                    <li><code>networks</code> - Network definitions</li>
+                    <li><code>network_providers</code> - Provider assignments</li>
+                    <li><code>network_facilities</code> - Facility assignments</li>
+                    <li><code>provider_specialties</code> - Taxonomy</li>
+                </ul>
+            </div>
+            
+            <div class="product-card">
+                <h4>📁 State Management (3 tables)</h4>
+                <ul>
+                    <li><code>scenarios</code> - Named scenarios</li>
+                    <li><code>scenario_entities</code> - Entity linkage</li>
+                    <li><code>scenario_tags</code> - Tag filtering</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h2>4. Identity Correlation</h2>
+        
+        <p>The <code>persons</code> table serves as the universal identity anchor. The <code>ssn</code> field correlates entities across products:</p>
+        
+        <div class="diagram">
+                              ┌─────────────┐
+                              │   persons   │
+                              │  person_id  │◄────────────────────────────┐
+                              │     ssn     │←── Universal Correlator     │
+                              └──────┬──────┘                             │
+                                     │                                    │
+          ┌──────────────────────────┼──────────────────────────┐        │
+          │                          │                          │        │
+          ▼                          ▼                          ▼        │
+    ┌───────────┐             ┌───────────┐             ┌───────────┐   │
+    │  patients │             │  members  │             │rx_members │   │
+    │person_id FK│             │person_id FK│             │person_id FK│  │
+    │    mrn    │             │ member_id │             │rx_member_id│  │
+    └───────────┘             └───────────┘             └───────────┘   │
+          │                          │                          │        │
+          │                          │                          │        │
+          ▼                          ▼                          ▼        │
+    ┌───────────┐             ┌───────────┐             ┌───────────┐   │
+    │encounters │             │  claims   │             │pharm_claims│  │
+    └───────────┘             └───────────┘             └───────────┘   │
+                                                                        │
+    ┌───────────┐                                                       │
+    │  subjects │───────────────────────────────────────────────────────┘
+    │person_id FK│ (TrialSim extends Person for trial participants)
+    │  usubjid  │
+    └───────────┘
+        </div>
+        
+        <h2>5. Key Tables Reference</h2>
+        
+        <h3>5.1 Core: persons</h3>
+        <table>
+            <tr><th>Column</th><th>Type</th><th>Description</th></tr>
+            <tr><td><code>person_id</code></td><td>VARCHAR PK</td><td>Unique identifier</td></tr>
+            <tr><td><code>ssn</code></td><td>VARCHAR</td><td>Universal correlator across products</td></tr>
+            <tr><td><code>given_name</code></td><td>VARCHAR</td><td>First name</td></tr>
+            <tr><td><code>family_name</code></td><td>VARCHAR</td><td>Last name</td></tr>
+            <tr><td><code>date_of_birth</code></td><td>DATE</td><td>Birth date</td></tr>
+            <tr><td><code>gender</code></td><td>VARCHAR</td><td>M, F, O, U</td></tr>
+            <tr><td><code>address_line1</code></td><td>VARCHAR</td><td>Street address</td></tr>
+            <tr><td><code>city, state, postal_code</code></td><td>VARCHAR</td><td>Location</td></tr>
+            <tr><td><code>census_tract</code></td><td>VARCHAR</td><td>For PopulationSim joins</td></tr>
+        </table>
+        
+        <h3>5.2 PatientSim: encounters</h3>
+        <table>
+            <tr><th>Column</th><th>Type</th><th>Description</th></tr>
+            <tr><td><code>encounter_id</code></td><td>VARCHAR PK</td><td>Unique identifier</td></tr>
+            <tr><td><code>patient_id</code></td><td>VARCHAR FK</td><td>References patients</td></tr>
+            <tr><td><code>facility_id</code></td><td>VARCHAR</td><td>Where visit occurred</td></tr>
+            <tr><td><code>encounter_type</code></td><td>VARCHAR</td><td>inpatient, outpatient, emergency</td></tr>
+            <tr><td><code>start_datetime</code></td><td>TIMESTAMP</td><td>Visit start</td></tr>
+            <tr><td><code>drg_code</code></td><td>VARCHAR</td><td>DRG if inpatient</td></tr>
+            <tr><td><code>discharge_disposition_code</code></td><td>VARCHAR</td><td>Outcome</td></tr>
+        </table>
+        
+        <h3>5.3 MemberSim: claims</h3>
+        <table>
+            <tr><th>Column</th><th>Type</th><th>Description</th></tr>
+            <tr><td><code>claim_id</code></td><td>VARCHAR PK</td><td>Unique identifier</td></tr>
+            <tr><td><code>member_id</code></td><td>VARCHAR FK</td><td>References members</td></tr>
+            <tr><td><code>encounter_id</code></td><td>VARCHAR</td><td>Link to PatientSim</td></tr>
+            <tr><td><code>claim_type</code></td><td>VARCHAR</td><td>professional, institutional</td></tr>
+            <tr><td><code>total_billed</code></td><td>DECIMAL</td><td>Submitted amount</td></tr>
+            <tr><td><code>total_allowed</code></td><td>DECIMAL</td><td>Allowed amount</td></tr>
+            <tr><td><code>total_paid</code></td><td>DECIMAL</td><td>Plan payment</td></tr>
+            <tr><td><code>total_patient_resp</code></td><td>DECIMAL</td><td>Patient responsibility</td></tr>
+        </table>
+        
+        <h3>5.4 TrialSim: subjects</h3>
+        <table>
+            <tr><th>Column</th><th>Type</th><th>Description</th></tr>
+            <tr><td><code>subject_id</code></td><td>VARCHAR PK</td><td>Internal ID</td></tr>
+            <tr><td><code>person_id</code></td><td>VARCHAR FK</td><td>References persons</td></tr>
+            <tr><td><code>patient_id</code></td><td>VARCHAR</td><td>Link to PatientSim</td></tr>
+            <tr><td><code>study_id</code></td><td>VARCHAR FK</td><td>References studies</td></tr>
+            <tr><td><code>usubjid</code></td><td>VARCHAR UNIQUE</td><td>CDISC unique subject ID</td></tr>
+            <tr><td><code>arm_code</code></td><td>VARCHAR</td><td>Treatment assignment</td></tr>
+            <tr><td><code>subject_status</code></td><td>VARCHAR</td><td>screening, randomized, completed, etc.</td></tr>
+        </table>
+        
+        <h2>6. Loader/Saver Utilities</h2>
+        
+        <h3>6.1 Loading Scenarios</h3>
+        <pre><code># Load a scenario from JSON files
+python tools/scenario_loader.py scenarios/saved/bob-thompson-er-visit
+
+# With custom database
+python tools/scenario_loader.py my-scenario --db /path/to/healthsim.duckdb</code></pre>
+        
+        <h3>6.2 Exporting Scenarios</h3>
+        <pre><code># List scenarios
+python tools/scenario_saver.py --list
+
+# Export to JSON
+python tools/scenario_saver.py "Bob Thompson ER Visit" -o /tmp/export</code></pre>
+        
+        <h2>7. Example Queries</h2>
+        
+        <h3>7.1 Cross-Product Join</h3>
+        <pre><code>-- Patient demographics + claim totals
+SELECT 
+    p.given_name,
+    p.family_name,
+    m.plan_name,
+    c.claim_type,
+    c.total_billed,
+    c.total_patient_resp
+FROM persons p
+JOIN members m ON p.person_id = m.person_id
+JOIN claims c ON m.member_id = c.member_id;</code></pre>
+        
+        <h3>7.2 Clinical + Financial</h3>
+        <pre><code>-- Encounter details with claim info
+SELECT 
+    e.encounter_type,
+    d.code AS diagnosis,
+    d.description,
+    cl.procedure_code,
+    cl.billed_amount,
+    cl.paid_amount
+FROM encounters e
+JOIN diagnoses d ON e.encounter_id = d.encounter_id
+JOIN claims c ON e.encounter_id = c.encounter_id
+JOIN claim_lines cl ON c.claim_id = cl.claim_id;</code></pre>
+        
+        <h3>7.3 Trial Subject Journey</h3>
+        <pre><code>-- Subject with adverse events
+SELECT 
+    s.usubjid,
+    st.protocol_title,
+    ae.aeterm,
+    ae.aesev,
+    ae.aerel
+FROM subjects s
+JOIN studies st ON s.study_id = st.study_id
+LEFT JOIN adverse_events ae ON s.subject_id = ae.subject_id
+WHERE s.subject_status = 'Active';</code></pre>
+        
+        <h2>8. Database Location</h2>
+        
+        <div class="note">
+            <strong>Default Path:</strong> <code>healthsim-workspace/healthsim.duckdb</code><br><br>
+            The database is created automatically when first accessed via the healthsim-duckdb MCP server.
+        </div>
+        
+        <h2>9. Future: Analytics Layer</h2>
+        
+        <p>The analytics layer (dimensional model) is planned for future implementation. It will include:</p>
+        
+        <ul style="margin-left: 2rem;">
+            <li><code>dim_patient</code> - Patient dimension (SCD Type 2)</li>
+            <li><code>dim_provider</code> - Provider dimension</li>
+            <li><code>dim_facility</code> - Facility dimension</li>
+            <li><code>dim_date</code> - Date dimension</li>
+            <li><code>fact_encounters</code> - Encounter facts</li>
+            <li><code>fact_claims</code> - Claim facts</li>
+            <li><code>fact_pharmacy</code> - Pharmacy claim facts</li>
+        </ul>
+        
+        <hr style="margin: 3rem 0; border: none; border-top: 1px solid var(--gray-200);">
+        
+        <p style="color: var(--gray-600); font-size: 0.9rem;">
+            <em>HealthSim Workspace - DuckDB Architecture v1.0</em><br>
+            <em>Last updated: December 26, 2024</em>
+        </p>
+    </div>
+</body>
+</html>

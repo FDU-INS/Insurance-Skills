@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 6,
+    "_query": "insurance",
+    "author": "Namtanmk",
+    "description": "Writes employee benefits guides explaining health insurance, retirement plans, PTO, and perks in plain language. Use when onboarding new hires or updating benefits documentation.",
+    "githubUrl": "https://github.com/Namtanmk/Claude-Skills-Ultimate-Bundle/tree/main/HR & Team/benefits-guide",
+    "id": "namtanmk-claude-skills-ultimate-bundle-hr-team-benefits-guide-skill-md",
+    "name": "benefits-guide",
+    "skillUrl": "https://skillsmp.com/skills/namtanmk-claude-skills-ultimate-bundle-hr-team-benefits-guide-skill-md",
+    "stars": 0,
+    "updatedAt": 1775448237,
+    "owner": "Namtanmk",
+    "repo": "Claude-Skills-Ultimate-Bundle",
+    "branch": "main",
+    "subpath": "HR & Team/benefits-guide",
+    "mode": "tree",
+    "repoKey": "Namtanmk/Claude-Skills-Ultimate-Bundle"
+  },
+  "resolved": {
+    "owner": "Namtanmk",
+    "repo": "Claude-Skills-Ultimate-Bundle",
+    "branch": "main",
+    "subpath": "HR & Team/benefits-guide"
+  }
+}

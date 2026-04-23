@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "sourceFile": "SKILL_UPDATES_1000.md",
+  "skillId": 150,
+  "skillName": "u0150-tooling-privacy-preserving-data-broker",
+  "title": "Tooling Privacy Preserving Data Broker",
+  "domain": "Tool Reliability and Execution Quality",
+  "domainSlug": "tool-reliability-and-execution-quality",
+  "reason": "We need this skill because automation collapses when tools are flaky and failure modes are opaque. This specific skill enables collaboration while minimizing raw data exposure.",
+  "implementationGuide": [
+    "Define the scope and success metrics for `Tooling Privacy Preserving Data Broker`, including at least three measurable KPIs tied to silent failures and cascading retries.",
+    "Design and version the input/output contract for tool runs, error signatures, and retry outcomes, then add schema validation and failure-mode handling.",
+    "Implement the core capability using policy-scoped data mediation, and produce privacy-scoped exchanges with deterministic scoring.",
+    "Integrate the skill into swarm orchestration: task routing, approval gates, retry strategy, and rollback controls.",
+    "Add unit, integration, and simulation tests that explicitly cover silent failures and cascading retries, then run regression baselines.",
+    "Deploy behind a feature flag, monitor telemetry/alerts for two release cycles, and iterate thresholds based on observed outcomes."
+  ],
+  "runtimeProfile": {
+    "archetype": "collaboration-mediator",
+    "coreMethod": "policy-scoped data mediation",
+    "primaryArtifact": "privacy-scoped exchanges",
+    "requiredSignals": [
+      "tool runs",
+      "error signatures",
+      "retry outcomes",
+      "claims",
+      "evidence",
+      "confidence traces"
+    ],
+    "kpiFocus": [
+      "silent failures",
+      "cascading retries",
+      "decision drift"
+    ],
+    "scoringWeights": {
+      "truth": 0.2501,
+      "execution": 0.2653,
+      "safety": 0.3375,
+      "impact": 0.1471
+    },
+    "postureThresholds": {
+      "readyMin": 73,
+      "reviewMin": 44,
+      "reviewRisk": 33,
+      "criticalRisk": 72
+    },
+    "orchestration": {
+      "routingTag": "tool-reliability-and-execution-quality:collaboration-mediator",
+      "approvalGates": [
+        "policy-constraint-check",
+        "human-approval-router"
+      ],
+      "retryPolicy": {
+        "maxAttempts": 3,
+        "baseDelayMs": 600,
+        "backoff": "exponential"
+      },
+      "rollbackStrategy": "rollback-to-last-stable-baseline",
+      "components": [
+        "task routing",
+        "approval gates",
+        "retry strategy",
+        "rollback controls"
+      ]
+    },
+    "validation": {
+      "suites": [
+        "unit",
+        "integration",
+        "simulation",
+        "regression-baseline"
+      ],
+      "baselineRequired": true
+    },
+    "rollout": {
+      "featureFlag": "skill_0150_tooling-privacy-preserving-data-",
+      "releaseCycles": 2,
+      "telemetryAlerts": true
+    },
+    "scoringSeed": "u0150-tooling-privacy-preserving-data-broker:150:collaboration-mediator"
+  },
+  "traceability": {
+    "scopeStep": "Define the scope and success metrics for `Tooling Privacy Preserving Data Broker`, including at least three measurable KPIs tied to silent failures and cascading retries.",
+    "contractStep": "Design and version the input/output contract for tool runs, error signatures, and retry outcomes, then add schema validation and failure-mode handling.",
+    "coreStep": "Implement the core capability using policy-scoped data mediation, and produce privacy-scoped exchanges with deterministic scoring.",
+    "orchestrationStep": "Integrate the skill into swarm orchestration: task routing, approval gates, retry strategy, and rollback controls.",
+    "validationStep": "Add unit, integration, and simulation tests that explicitly cover silent failures and cascading retries, then run regression baselines.",
+    "rolloutStep": "Deploy behind a feature flag, monitor telemetry/alerts for two release cycles, and iterate thresholds based on observed outcomes."
+  }
+}

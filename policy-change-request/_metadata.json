@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "policy",
+    "author": "Winbda",
+    "description": "Process policy change requests with documentation.\r\nTRIGGERS - Use when user needs help with policy-change-request related tasks.",
+    "githubUrl": "https://github.com/aifinlab/FinClaw/tree/main/skills/policy-service-process",
+    "id": "winbda-claude-skills-collection-skills-policy-change-request-skill-md",
+    "name": "policy-change-request",
+    "skillUrl": "https://skillsmp.com/skills/winbda-claude-skills-collection-skills-policy-change-request-skill-md",
+    "stars": 2,
+    "updatedAt": 1775416616,
+    "is_insurance_related": "是",
+    "owner": "aifinlab",
+    "repo": "FinClaw",
+    "branch": "main",
+    "subpath": "skills/policy-service-process",
+    "mode": "tree",
+    "repoKey": "aifinlab/FinClaw"
+  },
+  "resolved": {
+    "owner": "aifinlab",
+    "repo": "FinClaw",
+    "branch": "main",
+    "subpath": "skills/policy-service-process"
+  }
+}

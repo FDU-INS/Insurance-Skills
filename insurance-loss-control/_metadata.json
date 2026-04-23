@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "insurance",
+    "author": "Winbda",
+    "description": "Design loss control programs.\nTRIGGERS - Use when user needs help with insurance-loss-control related tasks.",
+    "githubUrl": "https://github.com/Winbda/claude-skills-collection/tree/master/skills/insurance-loss-control",
+    "id": "winbda-claude-skills-collection-skills-insurance-loss-control-skill-md",
+    "name": "insurance-loss-control",
+    "skillUrl": "https://skillsmp.com/skills/winbda-claude-skills-collection-skills-insurance-loss-control-skill-md",
+    "stars": 2,
+    "updatedAt": 1775416616,
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/insurance-loss-control",
+    "mode": "tree",
+    "repoKey": "Winbda/claude-skills-collection"
+  },
+  "resolved": {
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/insurance-loss-control"
+  }
+}

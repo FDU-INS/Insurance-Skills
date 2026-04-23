@@ -1,0 +1,58 @@
+{
+  "skill_name": "annuity-life-insurance-sales",
+  "evals": [
+    {
+      "id": 1,
+      "name": "complex-client-fact-find-and-product-selection",
+      "prompt": "I'm a licensed insurance agent preparing for a meeting tomorrow with a new prospect. Here's what I know so far: The client is a 62-year-old married man named Robert. His wife Carol is 59. He just retired from a corporate job with no pension. Carol still works part-time earning $25K/year and plans to stop at 62. They have $780,000 in his 401(k), $120,000 in her IRA, $85,000 in a joint brokerage account, and $45,000 in savings. Their home is worth $450K with $110K remaining on the mortgage. Monthly expenses are about $6,800. Robert can claim $2,400/month from Social Security at 66 or $1,900 now. Carol's SS benefit would be $1,100 at her full retirement age. He mentioned on the phone that he's 'nervous about the market' after losing 30% in 2008 and 'doesn't want to go through that again.' He also said his mother needed nursing home care for 4 years and it 'wiped out everything.' Help me prepare for this meeting — what questions should I ask, what's my initial analysis of their situation, and what products might be appropriate? I want a full game plan.",
+      "expected_output": "A comprehensive meeting preparation plan using the Paychecks and Playchecks framework, with structured fact-finding questions, income gap analysis, product recommendations mapped through the decision tree, and a two-meeting strategy emphasizing discovery before product discussion.",
+      "files": [],
+      "assertions": [
+        "Output explicitly uses the 'Paychecks and Playchecks' framework or concept — distinguishing between guaranteed income (paychecks) for essential expenses and growth assets (playchecks) for discretionary spending",
+        "Output references the concept of 'mortality credits' when explaining why annuities can provide higher payout rates than self-managed withdrawal strategies",
+        "Output uses a specific product decision tree or matching framework that maps each client need to a specific product type (e.g., income gap → FIA with income rider, safe growth → MYGA, LTC concern → hybrid life/LTC) rather than listing products generically",
+        "Output explicitly warns to keep annuity allocation below 50-60% of liquid assets and identifies the $45K savings as an untouchable emergency/liquidity reserve",
+        "Output structures the meeting plan as a two-meeting process: first meeting for discovery/fact-finding only, second meeting for presentation — and explicitly warns against presenting products in the first meeting",
+        "Output uses the A-E-R (Acknowledge-Empathize-Redirect) framework or references it by name when coaching how to address Robert's 2008 market fear during the meeting",
+        "Output mentions 'Retirement Alpha' — the concept that using annuities optimally generates additional return beyond what a portfolio alone can achieve",
+        "Output references the 'Happy Factor' — research showing retirees with guaranteed income are measurably happier and more confident in retirement",
+        "Output includes specific dollar amounts in the income gap calculation: identifies the monthly gap between $6,800 expenses and combined SS benefits (e.g., $3,300-$4,900 gap depending on claiming scenario), and recommends the FIA income rider amount needed to fill it",
+        "Output mentions the QLAC (Qualified Longevity Annuity Contract) option for Robert's 401(k) as a way to defer RMDs on a portion of qualified money while providing longevity insurance"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "objection-handling-annuity-skeptic",
+      "prompt": "I'm an insurance agent and I just had a really tough second meeting with a client couple. I presented a Fixed Indexed Annuity with an income rider to solve their retirement income gap, and they hit me with every objection in the book. Here's what happened: The husband said 'my buddy at work told me annuities are a scam and the insurance company keeps your money when you die.' The wife said 'I saw Suze Orman say never buy an annuity.' Then the husband followed up with 'why would I lock my money up for 10 years when I can just keep it in my brokerage account and withdraw 4% per year?' The wife ended by saying 'we need to think about it and talk to our daughter who works in finance.' I didn't know how to respond to all of these at once and I think I lost them. Help me understand what went wrong and give me specific word-for-word responses I can use if I get them back for a follow-up. Also tell me what I should have done differently in the meeting.",
+      "expected_output": "Detailed objection-by-objection response scripts using the A-E-R framework, root cause diagnosis of meeting failure, and coaching on prevention techniques specific to the skill's methodology.",
+      "files": [],
+      "assertions": [
+        "Output explicitly names and uses the A-E-R (Acknowledge-Empathize-Redirect) framework by name for structuring each objection response, not just a generic 'empathize then respond' approach",
+        "Output responds to the 'keeps your money when you die' objection by specifically naming period-certain options (10-year certain, 20-year certain), cash refund options, and installment refund options as death benefit protections — not just saying 'there are death benefits'",
+        "Output counters the Suze Orman objection by specifically distinguishing variable annuities (which have 2-3% annual fees) from fixed indexed annuities (which have zero base fees) and noting that media critics typically reference variable annuity problems",
+        "Output challenges the 4% withdrawal rule by referencing the concept of 'sequence of returns risk' by name and provides a specific numerical example showing how a 30-40% market drop in year 1 of retirement devastates a 4% withdrawal strategy even if markets recover",
+        "Output coaches on using 'trial closes' or 'check-in questions' during the presentation to build incremental agreement and prevent objection avalanches — testing for buy-in after each concept before moving to the next",
+        "Output diagnoses the root cause as insufficient discovery — the agent likely didn't uncover who influences the couple's financial decisions (the daughter, media personalities, friends) during fact-finding, which would have allowed pre-emptive inoculation",
+        "Output provides a specific recovery strategy: recommends a handwritten note or personal follow-up within 48 hours, offers to include the daughter in finance in the next meeting, and provides a specific call script or email template",
+        "Output references the concept that 'objections are buying signals' — meaning the couple is engaged and interested, not disinterested, and this is actually a recoverable situation"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "replacement-suitability-compliance-scenario",
+      "prompt": "I'm an insurance agent and a 71-year-old client named Margaret came to me wanting to move her money out of an existing annuity. She has a Fixed Indexed Annuity she bought 4 years ago with a 10-year surrender period. The current account value is $215,000 and the surrender value is about $198,000 (she'd lose roughly $17,000 in surrender charges). She says the annuity 'isn't performing well' and her neighbor told her about a new product with a higher cap rate. She also mentioned she has $340,000 in an IRA that she's taking RMDs from, a $50,000 savings account, and Social Security of $2,100/month. Her monthly expenses are about $4,200. She's single (widowed). She wants me to move everything into a new annuity. What should I do? Is this a suitable replacement? What are my compliance obligations? Walk me through the entire process and tell me what red flags I should watch for.",
+      "expected_output": "A thorough compliance-focused analysis using the skill's suitability framework, replacement regulation knowledge, and client-first principles that likely recommends AGAINST the replacement.",
+      "files": [],
+      "assertions": [
+        "Output explicitly frames the analysis using the NAIC suitability requirements — listing specific factors that must be documented (age, income, financial situation, time horizon, liquidity needs, risk tolerance, existing products) rather than generic 'do a suitability analysis'",
+        "Output identifies the FIA 'not performing well' complaint as likely a client misunderstanding of index crediting methods — specifically explains that the 0% floor means she never lost principal, and that point-to-point crediting with caps means gains are limited but losses are zero, which may be confused with 'not performing'",
+        "Output explicitly recommends AGAINST the replacement as the primary recommendation, citing the $17,000 surrender charge, Margaret's age (71 entering a new 7-10 year surrender period means locked until age 78-81), and the fact that her current product may actually be adequate",
+        "Output lists specific replacement regulation requirements by name: state replacement forms, notice to existing carrier, side-by-side comparison documentation, written explanation of why replacement is in client's best interest, and agent attestation",
+        "Output calculates or frames Margaret's income adequacy: $2,100 SS + estimated RMD income from $340K IRA (roughly $13,500/year at age 71 RMD factor) = approximately $3,225/month total vs. $4,200 expenses, identifying a ~$975/month gap that should be solved with proper income planning rather than chasing higher cap rates",
+        "Output warns about churning — specifically using the word 'churning' or 'twisting' and explaining that replacing an annuity primarily to generate a new commission is illegal and a career-ending offense",
+        "Output recommends a specific alternative path: wait 6 more years for the existing surrender period to expire, use the 10% annual free withdrawal if she needs liquidity, and potentially use her IRA assets for a separate income solution (SPIA or FIA with income rider) rather than replacing the existing product",
+        "Output addresses the $50,000 savings as a mandatory untouchable liquid reserve and warns against putting ALL of Margaret's assets ($215K annuity + $340K IRA + $50K savings = $605K) into a single new annuity product"
+      ]
+    }
+  ]
+}

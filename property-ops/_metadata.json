@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 10,
+    "_query": "insurance",
+    "author": "dabrewskie",
+    "description": "Real Estate & Property Management for the Owens household. Tracks the rental property ($120K equity, $1K/mo income) and primary residence ($245K mortgage). Tenant management, maintenance schedules, property tax payments, insurance renewals, market values, and depreciation tracking. Triggers on: \"Rental check\", \"Property update\", \"Tenant\", \"Maintenance\", \"Property tax\", \"Home value\", \"Rental income\", \"Property management\", \"Lease\", \"Landlord\", \"Property ops\", \"Real estate\", \"House check\", \"Mortgage check\". Real estate is a business — run it like one.",
+    "githubUrl": "https://github.com/dabrewskie/owens-lifeos/tree/main/skills/_archive/property-ops",
+    "id": "dabrewskie-owens-lifeos-skills-archive-property-ops-skill-md",
+    "name": "property-ops",
+    "skillUrl": "https://skillsmp.com/skills/dabrewskie-owens-lifeos-skills-archive-property-ops-skill-md",
+    "stars": 0,
+    "updatedAt": 1774009271,
+    "owner": "dabrewskie",
+    "repo": "owens-lifeos",
+    "branch": "main",
+    "subpath": "skills/_archive/property-ops",
+    "mode": "tree",
+    "repoKey": "dabrewskie/owens-lifeos"
+  },
+  "resolved": {
+    "owner": "dabrewskie",
+    "repo": "owens-lifeos",
+    "branch": "main",
+    "subpath": "skills/_archive/property-ops"
+  }
+}

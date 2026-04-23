@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 6,
+    "_query": "insurance",
+    "author": "Winbda",
+    "description": "Identify coverage gaps in existing insurance portfolios.\nTRIGGERS - Use when user needs help with coverage-gap-finder related tasks.",
+    "githubUrl": "https://github.com/Winbda/claude-skills-collection/tree/master/skills/coverage-gap-finder",
+    "id": "winbda-claude-skills-collection-skills-coverage-gap-finder-skill-md",
+    "name": "coverage-gap-finder",
+    "skillUrl": "https://skillsmp.com/skills/winbda-claude-skills-collection-skills-coverage-gap-finder-skill-md",
+    "stars": 2,
+    "updatedAt": 1775416616,
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/coverage-gap-finder",
+    "mode": "tree",
+    "repoKey": "Winbda/claude-skills-collection"
+  },
+  "resolved": {
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/coverage-gap-finder"
+  }
+}

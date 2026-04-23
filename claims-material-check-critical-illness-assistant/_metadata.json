@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "claims",
+    "author": "aifinlab",
+    "description": "当用户需要对重疾险理赔申请资料进行结构化受理检查时使用本 skill。它用于识别理赔申请书、身份证明、银行卡信息、诊断证明、出院记录、住院病历、病理报告、手术记录、影像报告、专项检查报告等与重大疾病责任认定相关的关键材料是否齐全、清晰、有效、相互一致，并输出补件清单、受理前检查结果和跟进建议。",
+    "githubUrl": "https://github.com/Winbda/claude-skills-collection/tree/master/skills/workers-comp-guide",
+    "id": "aifinlab-finclaw-skills-claims-material-check-critical-illness-assistant-skill-md",
+    "name": "claims-material-check-critical-illness-assistant",
+    "skillUrl": "https://skillsmp.com/skills/aifinlab-finclaw-skills-claims-material-check-critical-illness-assistant-skill-md",
+    "stars": 119,
+    "updatedAt": 1773793812,
+    "is_insurance_related": "是",
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/workers-comp-guide",
+    "mode": "tree",
+    "repoKey": "Winbda/claude-skills-collection"
+  },
+  "resolved": {
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/workers-comp-guide"
+  }
+}

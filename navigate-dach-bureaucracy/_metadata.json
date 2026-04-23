@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 9,
+    "_query": "insurance",
+    "author": "pjt222",
+    "description": "Step-by-step guidance for DACH-specific governmental procedures including Anmeldung, Finanzamt registration, health insurance enrollment, and social security coordination. Use after arriving in a DACH country and needing to complete mandatory registrations, before a specific appointment to understand what to expect, when an initial registration attempt was rejected, when transitioning between DACH countries, or when handling registrations for dependents alongside your own.",
+    "githubUrl": "https://github.com/pjt222/agent-almanac/tree/main/skills/navigate-dach-bureaucracy",
+    "id": "pjt222-agent-almanac-skills-navigate-dach-bureaucracy-skill-md",
+    "name": "navigate-dach-bureaucracy",
+    "skillUrl": "https://skillsmp.com/skills/pjt222-agent-almanac-skills-navigate-dach-bureaucracy-skill-md",
+    "stars": 9,
+    "updatedAt": 1771519918,
+    "owner": "pjt222",
+    "repo": "agent-almanac",
+    "branch": "main",
+    "subpath": "skills/navigate-dach-bureaucracy",
+    "mode": "tree",
+    "repoKey": "pjt222/agent-almanac"
+  },
+  "resolved": {
+    "owner": "pjt222",
+    "repo": "agent-almanac",
+    "branch": "main",
+    "subpath": "skills/navigate-dach-bureaucracy"
+  }
+}

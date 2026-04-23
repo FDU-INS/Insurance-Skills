@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 8,
+    "_query": "coverage",
+    "author": "ossarg",
+    "description": "Emite dictamen de cobertura/no cobertura con análisis de exposición económica bajo Ley 17.418",
+    "githubUrl": "https://github.com/armoriq/elevance-armorclaw/tree/main/agents/member_experience/skills/member_exp_cli",
+    "id": "ossarg-ali-skills-triage-coverage-opinion-ar-skill-md",
+    "name": "triage-coverage-opinion-ar",
+    "skillUrl": "https://skillsmp.com/skills/ossarg-ali-skills-triage-coverage-opinion-ar-skill-md",
+    "stars": 0,
+    "updatedAt": 1772853882,
+    "is_insurance_related": "是",
+    "owner": "armoriq",
+    "repo": "elevance-armorclaw",
+    "branch": "main",
+    "subpath": "agents/member_experience/skills/member_exp_cli",
+    "mode": "tree",
+    "repoKey": "armoriq/elevance-armorclaw"
+  },
+  "resolved": {
+    "owner": "armoriq",
+    "repo": "elevance-armorclaw",
+    "branch": "main",
+    "subpath": "agents/member_experience/skills/member_exp_cli"
+  }
+}

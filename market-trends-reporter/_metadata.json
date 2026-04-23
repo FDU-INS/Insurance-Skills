@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 4,
+    "_query": "insurance",
+    "author": "MarketcheckHub",
+    "description": "Insurance risk assessment market intelligence. Triggers: \"claims market trends\", \"risk assessment trends\", \"total loss frequency trends\", \"replacement cost trends\", \"which vehicles are losing value fastest for claims\", \"EV vs gas claims exposure\", \"regional claims cost differences\", \"market report for underwriting\", \"depreciation rankings for insurance\", \"settlement trend analysis\", \"what's happening in the auto market for insurers\", \"claims cost forecast\", \"which segments have the highest total-loss risk\", \"fleet insurance risk\", data-driven market intelligence for insurance risk assessment, underwriting decisions, claims cost forecasting, or portfolio exposure analysis.",
+    "githubUrl": "https://github.com/MarketcheckHub/marketcheck-cowork-plugin/tree/main/plugins/insurer/skills/market-trends-reporter",
+    "id": "marketcheckhub-marketcheck-cowork-plugin-plugins-insurer-skills-market-trends-reporter-skill-md",
+    "name": "market-trends-reporter",
+    "skillUrl": "https://skillsmp.com/skills/marketcheckhub-marketcheck-cowork-plugin-plugins-insurer-skills-market-trends-reporter-skill-md",
+    "stars": 2,
+    "updatedAt": 1776149148,
+    "owner": "MarketcheckHub",
+    "repo": "marketcheck-cowork-plugin",
+    "branch": "main",
+    "subpath": "plugins/insurer/skills/market-trends-reporter",
+    "mode": "tree",
+    "repoKey": "MarketcheckHub/marketcheck-cowork-plugin"
+  },
+  "resolved": {
+    "owner": "MarketcheckHub",
+    "repo": "marketcheck-cowork-plugin",
+    "branch": "main",
+    "subpath": "plugins/insurer/skills/market-trends-reporter"
+  }
+}

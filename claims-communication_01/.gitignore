@@ -1,0 +1,100 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# mypy
+.mypy_cache/
+
+# ruff
+.ruff_cache/
+
+# Environment variables
+.env
+.env.local
+
+# Deploy artifacts (contain IDs and URLs, not secrets, but env-specific)
+deploy/skill-ids.json
+deploy/agent-ids.json
+deploy/railway-url.txt
+deploy/spike-results.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# PopulationSim data files (large, already loaded into DuckDB)
+# These are CDC/Census source files used for initial data load
+skills/populationsim/data/**/*.csv
+
+# Keep documentation in PopulationSim data directories
+!skills/populationsim/data/**/*.md
+!skills/populationsim/data/**/.gitkeep
+
+# Cohort data files (large, re-downloadable)
+# Raw data: NPPES, CMS, Census, AHRF — multi-GB CSV/ZIP files
+cohorts/*/data/raw/**/*.csv
+cohorts/*/data/raw/**/*.zip
+cohorts/*/data/raw/**/*.txt
+cohorts/*/data/processed/**/*.csv
+
+# Archived and cohort-specific databases
+cohorts/*/archive/**/*.duckdb
+cohorts/*/*.duckdb
+
+# Keep documentation and directory structure
+!cohorts/*/data/**/*.md
+!cohorts/*/data/**/.gitkeep
+
+# DuckDB databases (large, regenerable)
+# Keep healthsim.duckdb as the primary dev database
+*.duckdb
+!healthsim.duckdb
+healthsim_current*.duckdb
+*.duckdb-wal
+*.duckdb-tmp
+
+# Autoresearch L3 response caches
+.autoresearch/*/l3_cache.json
+
+# Session handoff documents
+*-HANDOFF-*.md
+SESSION-SUMMARY.md

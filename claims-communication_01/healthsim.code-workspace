@@ -1,0 +1,50 @@
+{
+  "folders": [
+    { "name": "healthsim-workspace", "path": "." },
+    { "name": "skills/patientsim", "path": "skills/patientsim" },
+    { "name": "skills/membersim", "path": "skills/membersim" },
+    { "name": "skills/rxmembersim", "path": "skills/rxmembersim" },
+    { "name": "skills/trialsim", "path": "skills/trialsim" },
+    { "name": "skills/populationsim", "path": "skills/populationsim" },
+    { "name": "skills/networksim", "path": "skills/networksim" },
+    { "name": "packages/core", "path": "packages/core" },
+    { "name": "packages/patientsim", "path": "packages/patientsim" },
+    { "name": "packages/membersim", "path": "packages/membersim" },
+    { "name": "packages/rxmembersim", "path": "packages/rxmembersim" }
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "${workspaceFolder}/packages/core/.venv/bin/python",
+    "python.analysis.extraPaths": [
+      "${workspaceFolder}/packages/core/src",
+      "${workspaceFolder}/packages/patientsim/src",
+      "${workspaceFolder}/packages/membersim/src",
+      "${workspaceFolder}/packages/rxmembersim/src"
+    ],
+    "python.testing.pytestEnabled": true,
+    "editor.formatOnSave": true,
+    "editor.rulers": [100],
+    "files.exclude": {
+      "**/__pycache__": true,
+      "**/.pytest_cache": true,
+      "**/*.egg-info": true,
+      "**/.mypy_cache": true,
+      "**/.ruff_cache": true,
+      "**/.venv": true,
+      "**/.DS_Store": true
+    },
+    "search.exclude": {
+      "**/.venv": true,
+      "**/__pycache__": true,
+      "**/node_modules": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-python.python",
+      "ms-python.vscode-pylance",
+      "ms-python.black-formatter",
+      "charliermarsh.ruff",
+      "yzhang.markdown-all-in-one"
+    ]
+  }
+}

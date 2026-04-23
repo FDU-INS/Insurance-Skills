@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "policy",
+    "author": "Snowflake-Labs",
+    "description": "Interactive demo: Build a policy-conditioned support ticket routing AI function using hand-curated gold-labeled data, then evaluate and optimize cheaper models via prompt optimization.",
+    "githubUrl": "https://github.com/openclaw/skills/tree/main/skills/bytesagain3/policy-reader",
+    "id": "snowflake-labs-cortex-ai-function-studio-skill-demos-policy-conditioned-routing-skill-md",
+    "name": "policy-conditioned-routing-demo",
+    "skillUrl": "https://skillsmp.com/skills/snowflake-labs-cortex-ai-function-studio-skill-demos-policy-conditioned-routing-skill-md",
+    "stars": 2,
+    "updatedAt": 1775679491,
+    "is_insurance_related": "是",
+    "owner": "openclaw",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/bytesagain3/policy-reader",
+    "mode": "tree",
+    "repoKey": "openclaw/skills"
+  },
+  "resolved": {
+    "owner": "openclaw",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/bytesagain3/policy-reader"
+  }
+}

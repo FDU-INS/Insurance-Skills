@@ -1,0 +1,180 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://wellallyhealth.com/schemas/travel-health-tracker.json",
+  "title": "TravelHealthTracker",
+  "description": "旅行健康追踪的数据结构定义",
+  "type": "object",
+  "properties": {
+    "trips": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "trip_id": { "type": "string" },
+          "destination": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "start_date": { "type": "string", "format": "date" },
+          "end_date": { "type": "string", "format": "date" },
+          "duration_days": { "type": "integer" },
+          "travel_type": {
+            "type": "string",
+            "enum": ["business", "tourism", "volunteer", "education", "family_visit", "other"]
+          },
+          "risk_assessment": {
+            "type": "object",
+            "properties": {
+              "overall_risk": {
+                "type": "string",
+                "enum": ["low", "medium", "high", "very_high"]
+              },
+              "vaccinations_needed": { "type": "array", "items": { "type": "string" } },
+              "medications_recommended": { "type": "array", "items": { "type": "string" } },
+              "health_advisories": { "type": "array", "items": { "type": "string" } },
+              "current_alerts": { "type": "array", "items": { "type": "string" } }
+            }
+          },
+          "status": {
+            "type": "string",
+            "enum": ["planning", "in_progress", "completed", "cancelled"]
+          },
+          "preparedness_score": { "type": "integer", "minimum": 0, "maximum": 100 },
+          "created_at": { "type": "string", "format": "date-time" }
+        }
+      }
+    },
+    "vaccinations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "vaccine_id": { "type": "string" },
+          "vaccine_type": {
+            "type": "string",
+            "enum": ["hepatitis_a", "hepatitis_b", "typhoid", "yellow_fever", "japanese_encephalitis", "rabies", "meningococcal", "cholera", "other"]
+          },
+          "date_administered": { "type": "string", "format": "date" },
+          "status": {
+            "type": "string",
+            "enum": ["scheduled", "completed", "missed"]
+          },
+          "next_dose_date": { "type": "string", "format": "date" },
+          "trip_id": { "type": "string" }
+        }
+      }
+    },
+    "travel_kit": {
+      "type": "object",
+      "properties": {
+        "medications": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "category": { "type": "string" },
+              "quantity": { "type": "integer" },
+              "packed": { "type": "boolean" },
+              "expiry_date": { "type": "string", "format": "date" }
+            }
+          }
+        },
+        "medical_supplies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "quantity": { "type": "integer" },
+              "packed": { "type": "boolean" }
+            }
+          }
+        },
+        "protection_items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "quantity": { "type": "integer" },
+              "packed": { "type": "boolean" }
+            }
+          }
+        }
+      }
+    },
+    "medications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "medication_id": { "type": "string" },
+          "name": { "type": "string" },
+          "dosage": { "type": "string" },
+          "frequency": { "type": "string" },
+          "start_date": { "type": "string", "format": "date" },
+          "end_date": { "type": "string", "format": "date" },
+          "purpose": { "type": "string" },
+          "trip_id": { "type": "string" }
+        }
+      }
+    },
+    "insurance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "policy_id": { "type": "string" },
+          "company": { "type": "string" },
+          "policy_number": { "type": "string" },
+          "coverage_amount": { "type": "number" },
+          "covers_medical_evacuation": { "type": "boolean" },
+          "emergency_contact": { "type": "string" },
+          "valid_from": { "type": "string", "format": "date" },
+          "valid_until": { "type": "string", "format": "date" }
+        }
+      }
+    },
+    "emergency_contacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "relationship": { "type": "string" },
+          "phone": { "type": "string" },
+          "email": { "type": "string" }
+        }
+      }
+    },
+    "emergency_card": {
+      "type": "object",
+      "properties": {
+        "languages": { "type": "array", "items": { "type": "string" } },
+        "medical_conditions": { "type": "array", "items": { "type": "string" } },
+        "allergies": { "type": "array", "items": { "type": "string" } },
+        "medications": { "type": "array", "items": { "type": "string" },
+        "blood_type": { "type": "string" },
+        "emergency_contacts": { "type": "array", "items": { "type": "object" } }
+      }
+    },
+    "health_checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "check_type": {
+            "type": "string",
+            "enum": ["pre_trip", "post_trip", "follow_up"]
+          },
+          "date": { "type": "string", "format": "date" },
+          "findings": { "type": "string" },
+          "recommendations": { "type": "array", "items": { "type": "string" } },
+          "trip_id": { "type": "string" }
+        }
+      }
+    }
+  }
+}

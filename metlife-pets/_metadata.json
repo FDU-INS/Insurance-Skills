@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 7,
+    "_query": "insurance",
+    "author": "GraysonCAdams",
+    "description": "This skill should be used when the user asks to query MetLife Pet Insurance, check pet insurance claims, list claims, get claim details, download EOBs, download policy documents, or interact with the mypets.metlife.com API.",
+    "githubUrl": "https://github.com/GraysonCAdams/claude-metlife/tree/main/skills/metlife-pets",
+    "id": "graysoncadams-claude-metlife-skills-metlife-pets-skill-md",
+    "name": "metlife-pets",
+    "skillUrl": "https://skillsmp.com/skills/graysoncadams-claude-metlife-skills-metlife-pets-skill-md",
+    "stars": 0,
+    "updatedAt": 1774678203,
+    "owner": "GraysonCAdams",
+    "repo": "claude-metlife",
+    "branch": "main",
+    "subpath": "skills/metlife-pets",
+    "mode": "tree",
+    "repoKey": "GraysonCAdams/claude-metlife"
+  },
+  "resolved": {
+    "owner": "GraysonCAdams",
+    "repo": "claude-metlife",
+    "branch": "main",
+    "subpath": "skills/metlife-pets"
+  }
+}

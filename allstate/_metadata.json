@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 5,
+    "_query": "insurance",
+    "author": "majiayu000",
+    "description": "Manage Allstate insurance with Drivewise and Milewise programs.",
+    "githubUrl": "https://github.com/majiayu000/claude-skill-registry-data/tree/main/data/allstate",
+    "id": "majiayu000-claude-skill-registry-data-data-allstate-skill-md",
+    "name": "allstate",
+    "skillUrl": "https://skillsmp.com/skills/majiayu000-claude-skill-registry-data-data-allstate-skill-md",
+    "stars": 4,
+    "updatedAt": 1770280794,
+    "owner": "majiayu000",
+    "repo": "claude-skill-registry-data",
+    "branch": "main",
+    "subpath": "data/allstate",
+    "mode": "tree",
+    "repoKey": "majiayu000/claude-skill-registry-data"
+  },
+  "resolved": {
+    "owner": "majiayu000",
+    "repo": "claude-skill-registry-data",
+    "branch": "main",
+    "subpath": "data/allstate"
+  }
+}

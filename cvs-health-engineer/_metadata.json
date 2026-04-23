@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 7,
+    "_query": "insurance",
+    "author": "theneoai",
+    "description": "CVS Health engineering with integrated healthcare delivery across pharmacy, insurance (Aetna), and retail clinics. Triggers: 'CVS style', 'healthcare integration', 'pharmacy systems', 'Aetna', 'MinuteClinic'.",
+    "githubUrl": "https://github.com/theneoai/awesome-skills/tree/main/skills/healthcare/cvs-health/cvs-health-engineer",
+    "id": "theneoai-awesome-skills-skills-healthcare-cvs-health-cvs-health-engineer-skill-md",
+    "name": "cvs-health-engineer",
+    "skillUrl": "https://skillsmp.com/skills/theneoai-awesome-skills-skills-healthcare-cvs-health-cvs-health-engineer-skill-md",
+    "stars": 39,
+    "updatedAt": 1774671280,
+    "owner": "theneoai",
+    "repo": "awesome-skills",
+    "branch": "main",
+    "subpath": "skills/healthcare/cvs-health/cvs-health-engineer",
+    "mode": "tree",
+    "repoKey": "theneoai/awesome-skills"
+  },
+  "resolved": {
+    "owner": "theneoai",
+    "repo": "awesome-skills",
+    "branch": "main",
+    "subpath": "skills/healthcare/cvs-health/cvs-health-engineer"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 11,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Drafts due diligence checklists for U.S. corporate transactions (M&A, asset purchases, investments, JVs, restructurings). Covers corporate structure, financials, tax, contracts, IP, litigation, employment, benefits, insurance, and environmental compliance. Surfaces change-of-control triggers, consent requirements, and red flags. Use when preparing for deal closing, board presentations, or investor disclosure.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/legal/due-diligence-checklist",
+    "id": "casemark-skills-skills-legal-due-diligence-checklist-skill-md",
+    "name": "due-diligence-checklist",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-legal-due-diligence-checklist-skill-md",
+    "stars": 12,
+    "updatedAt": 1772500417,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/due-diligence-checklist",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/due-diligence-checklist"
+  }
+}

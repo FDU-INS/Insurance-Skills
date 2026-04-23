@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "actuarial",
+    "author": "Winbda",
+    "description": "Guide basic actuarial analysis for rate setting.\nTRIGGERS - Use when user needs help with actuarial-analysis-guide related tasks.",
+    "githubUrl": "https://github.com/caishengold/ai-agent-ops/tree/master/skills/_built/claims-reviewer",
+    "id": "winbda-claude-skills-collection-skills-actuarial-analysis-guide-skill-md",
+    "name": "actuarial-analysis-guide",
+    "skillUrl": "https://skillsmp.com/skills/winbda-claude-skills-collection-skills-actuarial-analysis-guide-skill-md",
+    "stars": 2,
+    "updatedAt": 1775416616,
+    "is_insurance_related": "是",
+    "owner": "caishengold",
+    "repo": "ai-agent-ops",
+    "branch": "master",
+    "subpath": "skills/_built/claims-reviewer",
+    "mode": "tree",
+    "repoKey": "caishengold/ai-agent-ops"
+  },
+  "resolved": {
+    "owner": "caishengold",
+    "repo": "ai-agent-ops",
+    "branch": "master",
+    "subpath": "skills/_built/claims-reviewer"
+  }
+}

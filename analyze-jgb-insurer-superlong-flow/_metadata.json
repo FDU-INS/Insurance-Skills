@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "insurer",
+    "author": "majiayu000",
+    "description": "從日本保險公司對超長期（10年以上）JGB 的淨買賣時間序列，自動產出「本月是否創紀錄淨賣出、連續淨賣出月數、期間累積淨賣出」等結論。",
+    "githubUrl": "https://github.com/aifinlab/FinClaw/tree/main/skills/underwriting-conclusion-explanation",
+    "id": "majiayu000-claude-skill-registry-data-data-analyze-jgb-insurer-superlong-flow-skill-md",
+    "name": "analyze-jgb-insurer-superlong-flow",
+    "skillUrl": "https://skillsmp.com/skills/majiayu000-claude-skill-registry-data-data-analyze-jgb-insurer-superlong-flow-skill-md",
+    "stars": 3,
+    "updatedAt": 1770280794,
+    "is_insurance_related": "是",
+    "owner": "aifinlab",
+    "repo": "FinClaw",
+    "branch": "main",
+    "subpath": "skills/underwriting-conclusion-explanation",
+    "mode": "tree",
+    "repoKey": "aifinlab/FinClaw"
+  },
+  "resolved": {
+    "owner": "aifinlab",
+    "repo": "FinClaw",
+    "branch": "main",
+    "subpath": "skills/underwriting-conclusion-explanation"
+  }
+}

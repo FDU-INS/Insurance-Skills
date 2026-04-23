@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "claims",
+    "author": "aifinlab",
+    "description": "当用户需要识别保险理赔案件是否可能触发除外责任条款、分析案件中有哪些免责条款风险、结合保单和条款判断案件是否存在责任免除、梳理案件事实与免责条款的匹配关系或输出适合理赔审核与复核使用的除外责任识别意见时使用本 skill。适用于分析理赔系统案件记录、报案信息、门诊或住院病历、诊断证明、手术记录、出院小结、医疗发票与费用清单、身故证明、事故认定书、公安证明、调查记录、客服或审核备注、录音转写、OCR 文本、PDF 文档和截图转写内容，并结合产品责任、责任免除条款、等待期、既往症、自杀自伤、违法犯罪、酒驾毒驾、高风险行为、医疗必要性和其他特别约定形成结构化初步识别。",
+    "githubUrl": "https://github.com/RICHAAARC/CEG-WM/tree/main/.github/skills/paper-claim-traceability-auditor",
+    "id": "aifinlab-finclaw-skills-claims-exclusion-identification-assistant-skill-md",
+    "name": "claims-exclusion-identification-assistant",
+    "skillUrl": "https://skillsmp.com/skills/aifinlab-finclaw-skills-claims-exclusion-identification-assistant-skill-md",
+    "stars": 119,
+    "updatedAt": 1773793812,
+    "is_insurance_related": "是",
+    "owner": "RICHAAARC",
+    "repo": "CEG-WM",
+    "branch": "main",
+    "subpath": ".github/skills/paper-claim-traceability-auditor",
+    "mode": "tree",
+    "repoKey": "RICHAAARC/CEG-WM"
+  },
+  "resolved": {
+    "owner": "RICHAAARC",
+    "repo": "CEG-WM",
+    "branch": "main",
+    "subpath": ".github/skills/paper-claim-traceability-auditor"
+  }
+}

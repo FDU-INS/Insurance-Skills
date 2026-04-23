@@ -1,0 +1,28 @@
+{
+  "name": "ai-domain-insurance-claims-automation-skill-2026",
+  "title": "Ai Domain Insurance Claims Automation Skill 2026",
+  "description": "Despliega soluciones de IA para insurance claims automation con arquitectura modular, metricas auditables y decisiones alineadas al contexto del dominio.",
+  "version": "1.0.0",
+  "domain": "domain-ai",
+  "quality_tier": "expert",
+  "tags": [
+    "domain-ai",
+    "industry-ai",
+    "automation",
+    "decision-systems",
+    "2026"
+  ],
+  "foundation_skills": [
+    "optimization-foundations",
+    "probability-foundations",
+    "statistics-inference-foundations",
+    "testing-verification-foundations",
+    "security-threat-modeling-foundations",
+    "debugging-causal-reasoning-foundations"
+  ],
+  "compatibility": [
+    "claude-code",
+    "codex"
+  ],
+  "entrypoint": "SKILL.md"
+}

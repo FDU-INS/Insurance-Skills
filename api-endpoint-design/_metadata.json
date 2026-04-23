@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 7,
+    "_query": "insurance",
+    "author": "alongor666",
+    "description": "API endpoint design and testing for vehicle insurance data platform. Use when designing new API endpoints, testing existing ones, validating response formats, or debugging API issues. Covers 11 core endpoints including 3 new pie chart distribution endpoints, parameter validation, error handling, and integration patterns.",
+    "githubUrl": "https://github.com/alongor666/daylyreport/tree/main/.claude/skills/api-endpoint-design",
+    "id": "alongor666-daylyreport-claude-skills-api-endpoint-design-skill-md",
+    "name": "api-endpoint-design",
+    "skillUrl": "https://skillsmp.com/skills/alongor666-daylyreport-claude-skills-api-endpoint-design-skill-md",
+    "stars": 0,
+    "updatedAt": 1762677552,
+    "owner": "alongor666",
+    "repo": "daylyreport",
+    "branch": "main",
+    "subpath": ".claude/skills/api-endpoint-design",
+    "mode": "tree",
+    "repoKey": "alongor666/daylyreport"
+  },
+  "resolved": {
+    "owner": "alongor666",
+    "repo": "daylyreport",
+    "branch": "main",
+    "subpath": ".claude/skills/api-endpoint-design"
+  }
+}

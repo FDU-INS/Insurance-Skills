@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 4,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Evaluates health insurance plan structures with actuarial value, network analysis, and cost projection. Use when analyzing health plans, comparing coverage, or projecting healthcare costs.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/finance/analyzing-health-insurance-plans",
+    "id": "casemark-skills-skills-finance-analyzing-health-insurance-plans-skill-md",
+    "name": "analyzing-health-insurance-plans",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-finance-analyzing-health-insurance-plans-skill-md",
+    "stars": 12,
+    "updatedAt": 1772680350,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/analyzing-health-insurance-plans",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/analyzing-health-insurance-plans"
+  }
+}

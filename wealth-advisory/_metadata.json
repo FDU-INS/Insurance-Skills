@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 10,
+    "_query": "insurance",
+    "author": "tmcga",
+    "description": "Wealth management and financial planning for HNW and UHNW clients. Activate when the user\nmentions wealth management, financial planning, retirement, estate planning, tax planning,\nGRAT, IDGT, trust, asset allocation, withdrawal rate, Monte Carlo simulation, goals-based\ninvesting, tax-loss harvesting, Roth conversion, insurance, annuity, mortgage strategy,\nconcentrated stock, family office, direct indexing, 529 plan, charitable giving, donor-advised\nfund, private foundation, or asks about personal finance strategy, inheritance, long-term\nfinancial planning, or UHNW advisory.",
+    "githubUrl": "https://github.com/tmcga/alpha-stack/tree/main/skills/wealth-advisory",
+    "id": "tmcga-alpha-stack-skills-wealth-advisory-skill-md",
+    "name": "wealth-advisory",
+    "skillUrl": "https://skillsmp.com/skills/tmcga-alpha-stack-skills-wealth-advisory-skill-md",
+    "stars": 2,
+    "updatedAt": 1774507200,
+    "owner": "tmcga",
+    "repo": "alpha-stack",
+    "branch": "main",
+    "subpath": "skills/wealth-advisory",
+    "mode": "tree",
+    "repoKey": "tmcga/alpha-stack"
+  },
+  "resolved": {
+    "owner": "tmcga",
+    "repo": "alpha-stack",
+    "branch": "main",
+    "subpath": "skills/wealth-advisory"
+  }
+}

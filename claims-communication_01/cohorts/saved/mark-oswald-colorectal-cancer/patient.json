@@ -1,0 +1,375 @@
+{
+  "patient": {
+    "mrn": "MRN00000058",
+    "name": {
+      "given_name": "Mark",
+      "family_name": "Oswald"
+    },
+    "birth_date": "1966-09-15",
+    "age": {
+      "years": 58
+    },
+    "gender": "M",
+    "address": {
+      "street_address": "742 Evergreen Terrace",
+      "city": "Springfield",
+      "state": "IL",
+      "postal_code": "62704"
+    },
+    "phone": "217-555-0148",
+    "email": "mark.oswald@email.com",
+    "emergency_contact": {
+      "name": "Sarah Oswald",
+      "relationship": "Spouse",
+      "phone": "217-555-0149"
+    },
+    "insurance": {
+      "payer_id": "BCBSIL",
+      "payer_name": "Blue Cross Blue Shield of Illinois",
+      "member_id": "XYZ123456789",
+      "group_number": "GRP00987",
+      "plan_type": "PPO",
+      "effective_date": "2024-01-01",
+      "benefit_year": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "cost_sharing": {
+        "individual_deductible": 1500.00,
+        "family_deductible": 3000.00,
+        "individual_oop_max": 6000.00,
+        "family_oop_max": 12000.00,
+        "coinsurance_in_network": 0.20,
+        "coinsurance_out_network": 0.40
+      }
+    },
+    "medical_history": {
+      "conditions": [
+        {
+          "code": "I10",
+          "description": "Essential hypertension",
+          "onset_date": "2018-03-15",
+          "status": "active"
+        },
+        {
+          "code": "E78.5",
+          "description": "Hyperlipidemia, unspecified",
+          "onset_date": "2019-06-20",
+          "status": "active"
+        }
+      ],
+      "surgical_history": [
+        {
+          "procedure": "Appendectomy",
+          "date": "1992-08-10"
+        }
+      ],
+      "family_history": [
+        {
+          "condition": "Colon cancer",
+          "relative": "Father",
+          "age_at_diagnosis": 62
+        },
+        {
+          "condition": "Type 2 diabetes",
+          "relative": "Mother",
+          "age_at_diagnosis": 55
+        }
+      ],
+      "social_history": {
+        "smoking_status": "former",
+        "pack_years": 10,
+        "quit_date": "2010-01-01",
+        "alcohol_use": "social",
+        "occupation": "Software Engineer"
+      }
+    },
+    "current_medications": [
+      {
+        "name": "Lisinopril",
+        "dose": "10 mg",
+        "frequency": "once daily",
+        "indication": "Hypertension"
+      },
+      {
+        "name": "Atorvastatin",
+        "dose": "20 mg",
+        "frequency": "once daily at bedtime",
+        "indication": "Hyperlipidemia"
+      }
+    ]
+  },
+  "screening_encounter": {
+    "encounter_id": "ENC20241015000001",
+    "encounter_type": "outpatient_procedure",
+    "encounter_date": "2024-10-15",
+    "facility": {
+      "name": "Springfield Gastroenterology Center",
+      "npi": "1234567891",
+      "tax_id": "36-7654321",
+      "address": {
+        "street_address": "2000 Medical Plaza Drive",
+        "city": "Springfield",
+        "state": "IL",
+        "postal_code": "62701"
+      }
+    },
+    "reason_for_visit": "Routine colorectal cancer screening - average risk, age 58, family history",
+    "procedure": {
+      "code": "45378",
+      "code_system": "CPT",
+      "description": "Colonoscopy, flexible; diagnostic",
+      "date": "2024-10-15",
+      "start_time": "08:30:00",
+      "end_time": "09:15:00",
+      "anesthesia": {
+        "type": "Moderate sedation",
+        "agents": ["Propofol", "Fentanyl"]
+      },
+      "bowel_prep": {
+        "quality": "Excellent",
+        "agent": "GoLYTELY"
+      }
+    },
+    "findings": {
+      "cecum_reached": true,
+      "withdrawal_time_minutes": 12,
+      "polyps_found": [
+        {
+          "location": "Ascending colon",
+          "size_mm": 8,
+          "morphology": "Sessile",
+          "removal_method": "Snare polypectomy",
+          "specimen_id": "SP20241015001"
+        },
+        {
+          "location": "Sigmoid colon",
+          "size_mm": 4,
+          "morphology": "Pedunculated",
+          "removal_method": "Cold snare",
+          "specimen_id": "SP20241015002"
+        }
+      ],
+      "other_findings": "Mild diverticulosis in sigmoid colon, no active diverticulitis"
+    },
+    "provider": {
+      "npi": "1122334455",
+      "name": "Dr. Michael Torres",
+      "specialty": "Gastroenterology"
+    }
+  },
+  "pathology_results": {
+    "report_date": "2024-10-18",
+    "specimens": [
+      {
+        "specimen_id": "SP20241015001",
+        "location": "Ascending colon polyp",
+        "gross_description": "Tan-pink polypoid tissue fragment, 8mm",
+        "microscopic_findings": "Tubulovillous adenoma with high-grade dysplasia",
+        "diagnosis": {
+          "code": "D12.2",
+          "description": "Benign neoplasm of ascending colon"
+        },
+        "margins": "Cannot be assessed (piecemeal removal)",
+        "recommendation": "Recommend surgical consultation due to high-grade dysplasia"
+      },
+      {
+        "specimen_id": "SP20241015002",
+        "location": "Sigmoid colon polyp",
+        "gross_description": "Tan polypoid tissue fragment, 4mm",
+        "microscopic_findings": "Tubular adenoma with low-grade dysplasia",
+        "diagnosis": {
+          "code": "D12.5",
+          "description": "Benign neoplasm of sigmoid colon"
+        },
+        "margins": "Clear",
+        "recommendation": "Surveillance colonoscopy in 3 years"
+      }
+    ],
+    "pathologist": {
+      "name": "Dr. Patricia Nguyen",
+      "npi": "2233445566"
+    }
+  },
+  "surgical_consultation": {
+    "encounter_id": "ENC20241025000001",
+    "encounter_date": "2024-10-25",
+    "encounter_type": "office_visit",
+    "facility": {
+      "name": "Springfield Surgical Associates",
+      "npi": "3344556677"
+    },
+    "provider": {
+      "npi": "4455667788",
+      "name": "Dr. James Richardson",
+      "specialty": "Colorectal Surgery"
+    },
+    "assessment": "58-year-old male with tubulovillous adenoma with high-grade dysplasia in ascending colon. Given incomplete excision margins and high-grade dysplasia, recommend right hemicolectomy to ensure complete removal and rule out invasive carcinoma.",
+    "plan": "Schedule laparoscopic right hemicolectomy. Pre-operative workup including CT abdomen/pelvis with contrast, CBC, CMP, CEA.",
+    "diagnoses": [
+      {
+        "code": "D12.2",
+        "description": "Benign neoplasm of ascending colon"
+      },
+      {
+        "code": "K63.5",
+        "description": "Polyp of colon"
+      }
+    ]
+  },
+  "preoperative_workup": {
+    "ct_scan": {
+      "order_date": "2024-10-25",
+      "performed_date": "2024-10-28",
+      "procedure_code": "74177",
+      "description": "CT abdomen and pelvis with contrast",
+      "findings": "No evidence of metastatic disease. No lymphadenopathy. Ascending colon wall appears slightly thickened at site of prior polypectomy. Liver, spleen, kidneys unremarkable. No ascites.",
+      "impression": "Post-polypectomy changes in ascending colon. No metastatic disease identified."
+    },
+    "labs": {
+      "collection_date": "2024-10-28",
+      "results": [
+        {"test": "CEA", "value": "2.1", "unit": "ng/mL", "reference_range": "0.0-3.0", "flag": "normal"},
+        {"test": "WBC", "value": "7.2", "unit": "K/uL", "reference_range": "4.5-11.0", "flag": "normal"},
+        {"test": "Hemoglobin", "value": "14.8", "unit": "g/dL", "reference_range": "13.5-17.5", "flag": "normal"},
+        {"test": "Platelet", "value": "245", "unit": "K/uL", "reference_range": "150-400", "flag": "normal"},
+        {"test": "Creatinine", "value": "1.0", "unit": "mg/dL", "reference_range": "0.7-1.3", "flag": "normal"},
+        {"test": "Glucose", "value": "98", "unit": "mg/dL", "reference_range": "70-100", "flag": "normal"}
+      ]
+    }
+  },
+  "surgical_encounter": {
+    "encounter_id": "ENC20241105000001",
+    "encounter_type": "inpatient",
+    "admission_datetime": "2024-11-05T06:00:00",
+    "discharge_datetime": "2024-11-08T11:00:00",
+    "length_of_stay_days": 3,
+    "facility": {
+      "name": "Springfield Memorial Hospital",
+      "npi": "1234567890",
+      "tax_id": "36-1234567"
+    },
+    "procedure": {
+      "code": "44204",
+      "code_system": "CPT",
+      "description": "Laparoscopic right hemicolectomy",
+      "date": "2024-11-05",
+      "start_time": "08:00:00",
+      "end_time": "11:30:00",
+      "surgeon": {
+        "npi": "4455667788",
+        "name": "Dr. James Richardson"
+      },
+      "assistant": {
+        "npi": "5566778899",
+        "name": "Dr. Emily Watson"
+      },
+      "anesthesiologist": {
+        "npi": "6677889900",
+        "name": "Dr. Robert Kim"
+      },
+      "operative_findings": "Ascending colon mobilized laparoscopically. Area of prior polypectomy identified. Ileocolic vessels ligated. Specimen extracted via periumbilical incision. Side-to-side ileocolic anastomosis performed. No complications.",
+      "estimated_blood_loss_ml": 75,
+      "specimens_sent": "Right colon with terminal ileum"
+    },
+    "diagnoses": [
+      {
+        "sequence": 1,
+        "code": "C18.2",
+        "description": "Malignant neoplasm of ascending colon",
+        "type": "principal",
+        "poa": "Y"
+      },
+      {
+        "sequence": 2,
+        "code": "I10",
+        "description": "Essential hypertension",
+        "type": "secondary",
+        "poa": "Y"
+      },
+      {
+        "sequence": 3,
+        "code": "E78.5",
+        "description": "Hyperlipidemia",
+        "type": "secondary",
+        "poa": "Y"
+      }
+    ],
+    "procedures_icd10pcs": [
+      {
+        "code": "0DBK4ZZ",
+        "description": "Excision of ascending colon, percutaneous endoscopic approach"
+      }
+    ],
+    "hospital_course": "Patient tolerated procedure well. Post-operative course uncomplicated. Advanced to regular diet POD2. Ambulating independently. Pain well-controlled with oral medications. Discharged home POD3 in stable condition.",
+    "discharge_disposition": "01",
+    "discharge_disposition_description": "Home"
+  },
+  "surgical_pathology": {
+    "report_date": "2024-11-08",
+    "specimen": "Right hemicolectomy",
+    "gross_description": "Right colon segment measuring 22 cm with attached terminal ileum (5 cm). Previous polypectomy site identified in ascending colon with surrounding induration.",
+    "microscopic_findings": "Moderately differentiated adenocarcinoma arising in tubulovillous adenoma. Tumor invades submucosa (pT1). No lymphovascular invasion. Perineural invasion absent. 0 of 18 lymph nodes positive for metastatic carcinoma. Proximal and distal margins negative. Radial margin negative.",
+    "staging": {
+      "pathologic_stage": "pT1N0M0",
+      "ajcc_stage": "Stage I",
+      "grade": "G2 - Moderately differentiated"
+    },
+    "molecular_markers": {
+      "msi_status": "MSS (Microsatellite Stable)",
+      "kras": "Wild type",
+      "braf": "Wild type"
+    },
+    "diagnosis": {
+      "code": "C18.2",
+      "description": "Adenocarcinoma of ascending colon, pT1N0M0, Stage I"
+    },
+    "recommendation": "Stage I colon cancer with clear margins. Surveillance recommended per NCCN guidelines. No adjuvant chemotherapy indicated for pT1N0 disease."
+  },
+  "oncology_followup": {
+    "encounter_id": "ENC20241120000001",
+    "encounter_date": "2024-11-20",
+    "encounter_type": "office_visit",
+    "provider": {
+      "npi": "7788990011",
+      "name": "Dr. Amanda Foster",
+      "specialty": "Medical Oncology"
+    },
+    "assessment": "58-year-old male with Stage I (pT1N0M0) adenocarcinoma of ascending colon, status post laparoscopic right hemicolectomy. Excellent prognosis with >95% 5-year survival. No adjuvant chemotherapy indicated.",
+    "surveillance_plan": [
+      "CEA every 3-6 months for 2 years, then every 6 months for 3 years",
+      "CT chest/abdomen/pelvis annually for 5 years",
+      "Colonoscopy in 1 year, then per findings"
+    ],
+    "diagnoses": [
+      {
+        "code": "Z85.038",
+        "description": "Personal history of malignant neoplasm of ascending colon"
+      }
+    ]
+  },
+  "accumulator_tracking": {
+    "as_of_date": "2024-11-08",
+    "benefit_year": "2024",
+    "individual_deductible": {
+      "limit": 1500.00,
+      "applied": 1500.00,
+      "remaining": 0.00
+    },
+    "family_deductible": {
+      "limit": 3000.00,
+      "applied": 2100.00,
+      "remaining": 900.00
+    },
+    "individual_oop_max": {
+      "limit": 6000.00,
+      "applied": 4250.00,
+      "remaining": 1750.00
+    },
+    "family_oop_max": {
+      "limit": 12000.00,
+      "applied": 5800.00,
+      "remaining": 6200.00
+    }
+  }
+}

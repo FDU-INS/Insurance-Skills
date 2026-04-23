@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 10,
+    "_query": "insurance",
+    "author": "djb258",
+    "description": "Neon PostgreSQL vault/archive configuration, schema, and operational patterns for the Sales Navigator hub (HUB-SALES-NAV-20260130). Use this skill whenever querying, migrating, debugging, or making data-layer decisions in the sales-navigator repo. Trigger on: Neon, PostgreSQL, Postgres, database, schema, sales_state, sales_factfinder, sales_insurance, sales_systems, sales_quotes, column_registry, migration, connection pooling, NEON_DATABASE_URL, pipeline tracking, prospect data, meeting data, CF D1, CF KV, Cloudflare Workers, or any reference to the sales data layer. Also trigger when discussing CRM intake, 4-meeting process state, quote approval, or PROMOTE_TO_CLIENT events. If the question touches relational data in this repo, this skill applies even if the user does not mention Neon by name.",
+    "githubUrl": "https://github.com/djb258/ctb-sales-navigator/tree/master/archive/v1-dirs/skills/sales-neon",
+    "id": "djb258-ctb-sales-navigator-archive-v1-dirs-skills-sales-neon-skill-md",
+    "name": "sales-neon",
+    "skillUrl": "https://skillsmp.com/skills/djb258-ctb-sales-navigator-archive-v1-dirs-skills-sales-neon-skill-md",
+    "stars": 0,
+    "updatedAt": 1775324593,
+    "owner": "djb258",
+    "repo": "ctb-sales-navigator",
+    "branch": "master",
+    "subpath": "archive/v1-dirs/skills/sales-neon",
+    "mode": "tree",
+    "repoKey": "djb258/ctb-sales-navigator"
+  },
+  "resolved": {
+    "owner": "djb258",
+    "repo": "ctb-sales-navigator",
+    "branch": "master",
+    "subpath": "archive/v1-dirs/skills/sales-neon"
+  }
+}

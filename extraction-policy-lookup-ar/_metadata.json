@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 11,
+    "_query": "policy",
+    "author": "ossarg",
+    "description": "Consulta sistemas internos de Libra para obtener el documento de póliza a partir de datos del asegurado o del vehículo",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/finance/analyzing-catastrophe-risk",
+    "id": "ossarg-ali-skills-extraction-policy-lookup-ar-skill-md",
+    "name": "extraction-policy-lookup-ar",
+    "skillUrl": "https://skillsmp.com/skills/ossarg-ali-skills-extraction-policy-lookup-ar-skill-md",
+    "stars": 0,
+    "updatedAt": 1772852573,
+    "is_insurance_related": "是",
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/analyzing-catastrophe-risk",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/analyzing-catastrophe-risk"
+  }
+}

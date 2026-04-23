@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 9,
+    "_query": "insurance",
+    "author": "yusufaltunbicak",
+    "description": "MCP skill for IGW (InsurGateway) error management — list, analyze, report, and manage insurance integration errors across test and production environments. Invoke whenever user asks about IGW errors, insurance gateway issues, success rates, or error reports.",
+    "githubUrl": "https://github.com/yusufaltunbicak/igw-error-management-mcp",
+    "id": "yusufaltunbicak-igw-error-management-mcp-skill-md",
+    "name": "igw-error-management",
+    "skillUrl": "https://skillsmp.com/skills/yusufaltunbicak-igw-error-management-mcp-skill-md",
+    "stars": 0,
+    "updatedAt": 1773353536,
+    "owner": "yusufaltunbicak",
+    "repo": "igw-error-management-mcp",
+    "branch": null,
+    "subpath": "",
+    "mode": "repo_root",
+    "repoKey": "yusufaltunbicak/igw-error-management-mcp"
+  },
+  "resolved": {
+    "owner": "yusufaltunbicak",
+    "repo": "igw-error-management-mcp",
+    "branch": "main",
+    "subpath": ""
+  }
+}

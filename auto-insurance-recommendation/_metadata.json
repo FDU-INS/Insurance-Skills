@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 3,
+    "_query": "insurance",
+    "author": "matayuuu",
+    "description": "顧客の年齢・年収・プロフィールに基づき、最適な自動車保険プランを提案する。",
+    "githubUrl": "https://github.com/matayuuu/MAF-Studio/tree/main/data/skills/auto_insurance_recommendation",
+    "id": "matayuuu-maf-studio-data-skills-auto-insurance-recommendation-skill-md",
+    "name": "auto-insurance-recommendation",
+    "skillUrl": "https://skillsmp.com/skills/matayuuu-maf-studio-data-skills-auto-insurance-recommendation-skill-md",
+    "stars": 3,
+    "updatedAt": 1775402078,
+    "owner": "matayuuu",
+    "repo": "MAF-Studio",
+    "branch": "main",
+    "subpath": "data/skills/auto_insurance_recommendation",
+    "mode": "tree",
+    "repoKey": "matayuuu/MAF-Studio"
+  },
+  "resolved": {
+    "owner": "matayuuu",
+    "repo": "MAF-Studio",
+    "branch": "main",
+    "subpath": "data/skills/auto_insurance_recommendation"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 8,
+    "_query": "insurance",
+    "author": "sahithisarvepalli",
+    "description": "Instructions for managing CI pipelines, GitHub Actions workflows, Airflow DAGs, and automation scripts in the insurance analytics project.",
+    "githubUrl": "https://github.com/sahithisarvepalli/insurance-analytics-project/tree/main/.claude/skills/automation-ci-helper",
+    "id": "sahithisarvepalli-insurance-analytics-project-claude-skills-automation-ci-helper-skill-md",
+    "name": "automation-ci-helper",
+    "skillUrl": "https://skillsmp.com/skills/sahithisarvepalli-insurance-analytics-project-claude-skills-automation-ci-helper-skill-md",
+    "stars": 0,
+    "updatedAt": 1775720130,
+    "owner": "sahithisarvepalli",
+    "repo": "insurance-analytics-project",
+    "branch": "main",
+    "subpath": ".claude/skills/automation-ci-helper",
+    "mode": "tree",
+    "repoKey": "sahithisarvepalli/insurance-analytics-project"
+  },
+  "resolved": {
+    "owner": "sahithisarvepalli",
+    "repo": "insurance-analytics-project",
+    "branch": "main",
+    "subpath": ".claude/skills/automation-ci-helper"
+  }
+}

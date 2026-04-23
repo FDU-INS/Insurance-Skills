@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 9,
+    "_query": "insurance",
+    "author": "ripid-today",
+    "description": "Personal finance skill suite for a mid-20s dual-income couple in Ho Chi Minh City. Covers budgeting, emergency fund building, investments, insurance, tax optimization, goal planning, and couple dynamics — all calibrated to Vietnam's financial ecosystem. Use when the user asks about budgeting, saving, investing, insurance, taxes, or financial goal planning — trigger phrases include \"review our budget\", \"how should we invest\", \"do we have enough insurance\", and \"plan for a home purchase\". Use even if the user only mentions one financial topic without asking for a full review.",
+    "githubUrl": "https://github.com/ripid-today/clarke/tree/main/.claude/skills/finance-toolkit",
+    "id": "ripid-today-clarke-claude-skills-finance-toolkit-skill-md",
+    "name": "finance-toolkit",
+    "skillUrl": "https://skillsmp.com/skills/ripid-today-clarke-claude-skills-finance-toolkit-skill-md",
+    "stars": 0,
+    "updatedAt": 1773426527,
+    "owner": "ripid-today",
+    "repo": "clarke",
+    "branch": "main",
+    "subpath": ".claude/skills/finance-toolkit",
+    "mode": "tree",
+    "repoKey": "ripid-today/clarke"
+  },
+  "resolved": {
+    "owner": "ripid-today",
+    "repo": "clarke",
+    "branch": "main",
+    "subpath": ".claude/skills/finance-toolkit"
+  }
+}

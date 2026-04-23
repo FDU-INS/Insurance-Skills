@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 11,
+    "_query": "insurance",
+    "author": "GoldenZero",
+    "description": "Analyze and explain the impact of regulatory rule changes on financial institution operations, risk management, and capital requirements. Use when interpreting new regulations, final rules, NPRMs, supervisory guidance, or assessing compliance implementation requirements for banking, capital markets, or insurance entities.",
+    "githubUrl": "https://github.com/GoldenZero/skills/tree/main/skills/regulatory-change-impact",
+    "id": "goldenzero-skills-skills-regulatory-change-impact-skill-md",
+    "name": "regulatory-change-impact",
+    "skillUrl": "https://skillsmp.com/skills/goldenzero-skills-skills-regulatory-change-impact-skill-md",
+    "stars": 1,
+    "updatedAt": 1772036770,
+    "owner": "GoldenZero",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/regulatory-change-impact",
+    "mode": "tree",
+    "repoKey": "GoldenZero/skills"
+  },
+  "resolved": {
+    "owner": "GoldenZero",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/regulatory-change-impact"
+  }
+}

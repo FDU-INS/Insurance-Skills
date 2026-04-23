@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 3,
+    "_query": "insurance",
+    "author": "matayuuu",
+    "description": "受取人情報を含む新規の生命保険契約を contracts.csv に登録する。",
+    "githubUrl": "https://github.com/matayuuu/MAF-Studio/tree/main/data/skills/life_insurance_contract_create",
+    "id": "matayuuu-maf-studio-data-skills-life-insurance-contract-create-skill-md",
+    "name": "life-insurance-contract-create",
+    "skillUrl": "https://skillsmp.com/skills/matayuuu-maf-studio-data-skills-life-insurance-contract-create-skill-md",
+    "stars": 3,
+    "updatedAt": 1775373590,
+    "owner": "matayuuu",
+    "repo": "MAF-Studio",
+    "branch": "main",
+    "subpath": "data/skills/life_insurance_contract_create",
+    "mode": "tree",
+    "repoKey": "matayuuu/MAF-Studio"
+  },
+  "resolved": {
+    "owner": "matayuuu",
+    "repo": "MAF-Studio",
+    "branch": "main",
+    "subpath": "data/skills/life_insurance_contract_create"
+  }
+}

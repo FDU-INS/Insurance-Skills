@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 8,
+    "_query": "insurance",
+    "author": "multiagents-fer",
+    "description": "Expert in used vehicle sales business - market dynamics, pricing strategies, financing, insurance, dealer operations, customer acquisition, inventory management, and automotive industry regulations in Mexico",
+    "githubUrl": "https://github.com/multiagents-fer/multiagents-projects/tree/main/skills/expert-used-car-business",
+    "id": "multiagents-fer-multiagents-projects-skills-expert-used-car-business-skill-md",
+    "name": "expert-used-car-business",
+    "skillUrl": "https://skillsmp.com/skills/multiagents-fer-multiagents-projects-skills-expert-used-car-business-skill-md",
+    "stars": 0,
+    "updatedAt": 1774371251,
+    "owner": "multiagents-fer",
+    "repo": "multiagents-projects",
+    "branch": "main",
+    "subpath": "skills/expert-used-car-business",
+    "mode": "tree",
+    "repoKey": "multiagents-fer/multiagents-projects"
+  },
+  "resolved": {
+    "owner": "multiagents-fer",
+    "repo": "multiagents-projects",
+    "branch": "main",
+    "subpath": "skills/expert-used-car-business"
+  }
+}

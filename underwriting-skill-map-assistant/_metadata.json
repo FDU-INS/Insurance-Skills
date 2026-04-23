@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "underwriting",
+    "author": "aifinlab",
+    "description": "当用户需要在一组核保相关 skills 中快速判断该使用哪个技能、多个技能如何衔接、某个任务更适合单项技能还是 workflow skill，以及不同技能的职责边界时使用本 skill。",
+    "githubUrl": "https://github.com/writer/skills/tree/main/skills/cost-driver-decomposition",
+    "id": "aifinlab-finclaw-skills-underwriting-skill-map-assistant-skill-md",
+    "name": "underwriting-skill-map-assistant",
+    "skillUrl": "https://skillsmp.com/skills/aifinlab-finclaw-skills-underwriting-skill-map-assistant-skill-md",
+    "stars": 119,
+    "updatedAt": 1773793812,
+    "is_insurance_related": "是",
+    "owner": "writer",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/cost-driver-decomposition",
+    "mode": "tree",
+    "repoKey": "writer/skills"
+  },
+  "resolved": {
+    "owner": "writer",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/cost-driver-decomposition"
+  }
+}

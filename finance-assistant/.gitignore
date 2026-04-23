@@ -1,0 +1,5 @@
+.taxde/
+.taxde_profile.json
+.taxde-updates/
+__pycache__/
+*.py[cod]

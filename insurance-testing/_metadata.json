@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "insurance",
+    "author": "lgonzalezrouco",
+    "description": "Detailed testing standards for persistence, service, and controller layers",
+    "githubUrl": "https://github.com/lgonzalezrouco/insurance/tree/development/.agents/skills/insurance-testing",
+    "id": "lgonzalezrouco-insurance-agents-skills-insurance-testing-skill-md",
+    "name": "insurance-testing",
+    "skillUrl": "https://skillsmp.com/skills/lgonzalezrouco-insurance-agents-skills-insurance-testing-skill-md",
+    "stars": 0,
+    "updatedAt": 1774741613,
+    "owner": "lgonzalezrouco",
+    "repo": "insurance",
+    "branch": "development",
+    "subpath": ".agents/skills/insurance-testing",
+    "mode": "tree",
+    "repoKey": "lgonzalezrouco/insurance"
+  },
+  "resolved": {
+    "owner": "lgonzalezrouco",
+    "repo": "insurance",
+    "branch": "development",
+    "subpath": ".agents/skills/insurance-testing"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 10,
+    "_query": "insurance",
+    "author": "tinh2",
+    "description": "Analyzes actuarial modeling systems for loss reserving accuracy, premium pricing methodology, mortality/morbidity tables, stochastic modeling, and capital adequacy per SOA and Solvency II standards.\nUSE THIS SKILL WHEN: - You need to review or audit actuarial models (reserving, pricing, capital) - Someone asks about loss triangle analysis or reserve adequacy - You are evaluating IBNR calculations, chain ladder methods, or Bornhuetter-Ferguson - A project involves insurance pricing, GLM rating models, or ratemaking - You need to assess Solvency II SCR calculations or RBC compliance - Someone mentions actuarial opinions, ASOP compliance, or SOA standards - You are reviewing stochastic models, ESG configurations, or DFA frameworks - A codebase uses actuarial libraries (chainladder, lifetables, ChainLadder R package)\nTRIGGER PHRASES: \"actuarial\", \"loss reserving\", \"IBNR\", \"chain ladder\", \"premium pricing\", \"mortality table\", \"Solvency II\", \"capital adequacy\", \"ratemaking\", \"GLM pricing\", \"risk-based capital\", \"re",
+    "githubUrl": "https://github.com/tinh2/skills-hub-registry/tree/main/analysis/actuarial-modeling",
+    "id": "tinh2-skills-hub-registry-analysis-actuarial-modeling-skill-md",
+    "name": "actuarial-modeling",
+    "skillUrl": "https://skillsmp.com/skills/tinh2-skills-hub-registry-analysis-actuarial-modeling-skill-md",
+    "stars": 1,
+    "updatedAt": 1773853578,
+    "owner": "tinh2",
+    "repo": "skills-hub-registry",
+    "branch": "main",
+    "subpath": "analysis/actuarial-modeling",
+    "mode": "tree",
+    "repoKey": "tinh2/skills-hub-registry"
+  },
+  "resolved": {
+    "owner": "tinh2",
+    "repo": "skills-hub-registry",
+    "branch": "main",
+    "subpath": "analysis/actuarial-modeling"
+  }
+}

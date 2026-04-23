@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 3,
+    "_query": "insurance",
+    "author": "Winbda",
+    "description": "Create travel insurance comparison guides.\nTRIGGERS - Use when user needs help with travel-insurance-guide related tasks.",
+    "githubUrl": "https://github.com/Winbda/claude-skills-collection/tree/master/skills/travel-insurance-guide",
+    "id": "winbda-claude-skills-collection-skills-travel-insurance-guide-skill-md",
+    "name": "travel-insurance-guide",
+    "skillUrl": "https://skillsmp.com/skills/winbda-claude-skills-collection-skills-travel-insurance-guide-skill-md",
+    "stars": 2,
+    "updatedAt": 1775416616,
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/travel-insurance-guide",
+    "mode": "tree",
+    "repoKey": "Winbda/claude-skills-collection"
+  },
+  "resolved": {
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/travel-insurance-guide"
+  }
+}

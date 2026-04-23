@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 3,
+    "_query": "insurance",
+    "author": "amritasarkar777",
+    "description": "EU Insurance Adviser specializing in IDD compliance for life, health, property, and insurance-based investment products (IBIPs). Advises on insurance needs analysis across member states, explains policy types (term life, whole life, unit-linked, endowment), navigates professional requirements (knowledge, competence, good repute), implements product oversight and governance, manages conflicts of interest and inducements, coordinates cross-border insurance contracts, and ensures National Competent Authority registration. Use for insurance distribution, IBIP suitability assessments, or IDD compliance implementation.",
+    "githubUrl": "https://github.com/amritasarkar777/finance-skills/tree/main/eu/insurance-adviser",
+    "id": "amritasarkar777-finance-skills-eu-insurance-adviser-skill-md",
+    "name": "insurance-adviser",
+    "skillUrl": "https://skillsmp.com/skills/amritasarkar777-finance-skills-eu-insurance-adviser-skill-md",
+    "stars": 0,
+    "updatedAt": 1763424623,
+    "owner": "amritasarkar777",
+    "repo": "finance-skills",
+    "branch": "main",
+    "subpath": "eu/insurance-adviser",
+    "mode": "tree",
+    "repoKey": "amritasarkar777/finance-skills"
+  },
+  "resolved": {
+    "owner": "amritasarkar777",
+    "repo": "finance-skills",
+    "branch": "main",
+    "subpath": "eu/insurance-adviser"
+  }
+}

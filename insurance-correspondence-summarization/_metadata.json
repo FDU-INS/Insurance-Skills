@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 2,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Produces structured summaries of insurance claims correspondence including coverage letters, reservation of rights (ROR), denial letters, and claim file documents. Extracts policy details, coverage positions, claims chronology, settlement posture, and liability exposure. Use when summarizing claim files, coverage disputes, ROR letters, denial letters, or multi-document insurance correspondence threads.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/legal/insurance-correspondence-summarization",
+    "id": "casemark-skills-skills-legal-insurance-correspondence-summarization-skill-md",
+    "name": "insurance-correspondence-summarization",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-legal-insurance-correspondence-summarization-skill-md",
+    "stars": 12,
+    "updatedAt": 1772500417,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/insurance-correspondence-summarization",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/insurance-correspondence-summarization"
+  }
+}

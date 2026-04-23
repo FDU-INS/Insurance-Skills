@@ -1,0 +1,40 @@
+---
+name: customer-profile-management
+description: 保险代理人客户档案管理工具 - 从 Excel、PDF、DOCX、PPTX 等多格式文档中提取客户保单信息，智能合并客户档案，支持自然语言查询客户资料。
+tags:
+  - insurance
+  - insurance-agent
+  - insurance-tools
+  - insurance-sales
+  - customer-management
+  - customer-relationship
+  - crm
+  - policy-management
+  - policy-tracking
+  - document-extraction
+  - document-management
+  - sales-tools
+  - insurance-software
+  - 中国保险
+  - 保险代理人
+  - 保单管理
+  - 客户管理
+  - 客户档案
+  - 客户资料整理
+  - 保单录入
+  - 客户查询
+  - 保险CRM
+  - 保险工具箱
+  - 代理人工具
+metadata:
+  openclaw:
+    os: ["darwin", "linux", "windows"]
+    requires:
+      config: ["api_key"]
+    python_version: "3.8+"
+    examples:
+      - "提取客户保单Excel文件"
+      - "查询张总的保单信息"
+      - "分析客户保障缺口"
+      - "生成客户保障报告"
+---

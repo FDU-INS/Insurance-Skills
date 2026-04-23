@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 11,
+    "_query": "insurance",
+    "author": "Dicklesworthstone",
+    "description": "Execute Guidewire primary workflow: Policy lifecycle management in PolicyCenter.\nUse when implementing quoting, binding, issuing, endorsing, or renewing policies.\nTrigger with phrases like \"policycenter workflow\", \"create policy\",\n\"bind submission\", \"issue policy\", \"policy endorsement\", \"quote insurance\".",
+    "githubUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/tree/main/tests/ext_conformance/artifacts/plugins-community/plugins/saas-packs/guidewire-pack/skills/guidewire-core-workflow-a",
+    "id": "dicklesworthstone-pi-agent-rust-tests-ext-conformance-artifacts-plugins-community-plugins-saas-packs-guidewire-pack-skills-guidewire-core-workflow-a-skill-md",
+    "name": "guidewire-core-workflow-a",
+    "skillUrl": "https://skillsmp.com/skills/dicklesworthstone-pi-agent-rust-tests-ext-conformance-artifacts-plugins-community-plugins-saas-packs-guidewire-pack-skills-guidewire-core-workflow-a-skill-md",
+    "stars": 724,
+    "updatedAt": 1770274565,
+    "owner": "Dicklesworthstone",
+    "repo": "pi_agent_rust",
+    "branch": "main",
+    "subpath": "tests/ext_conformance/artifacts/plugins-community/plugins/saas-packs/guidewire-pack/skills/guidewire-core-workflow-a",
+    "mode": "tree",
+    "repoKey": "Dicklesworthstone/pi_agent_rust"
+  },
+  "resolved": {
+    "owner": "Dicklesworthstone",
+    "repo": "pi_agent_rust",
+    "branch": "main",
+    "subpath": "tests/ext_conformance/artifacts/plugins-community/plugins/saas-packs/guidewire-pack/skills/guidewire-core-workflow-a"
+  }
+}

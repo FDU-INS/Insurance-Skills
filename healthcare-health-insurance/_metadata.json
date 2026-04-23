@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 4,
+    "_query": "insurance",
+    "author": "zhizhunbao",
+    "description": "专业的医保申请(Health Insurance)顾问助手，帮助您申请省级医疗保险。当用户询问以下问题时使用：(1) 医疗服务查找 (2) 就医流程指导 (3) 保险申请和使用 (4) 健康咨询 (5) 常见问题解答",
+    "githubUrl": "https://github.com/zhizhunbao/ai-dev-config/tree/main/core/skills/healthcare-health_insurance",
+    "id": "zhizhunbao-ai-dev-config-core-skills-healthcare-health-insurance-skill-md",
+    "name": "healthcare-health-insurance",
+    "skillUrl": "https://skillsmp.com/skills/zhizhunbao-ai-dev-config-core-skills-healthcare-health-insurance-skill-md",
+    "stars": 0,
+    "updatedAt": 1769885712,
+    "owner": "zhizhunbao",
+    "repo": "ai-dev-config",
+    "branch": "main",
+    "subpath": "core/skills/healthcare-health_insurance",
+    "mode": "tree",
+    "repoKey": "zhizhunbao/ai-dev-config"
+  },
+  "resolved": {
+    "owner": "zhizhunbao",
+    "repo": "ai-dev-config",
+    "branch": "main",
+    "subpath": "core/skills/healthcare-health_insurance"
+  }
+}

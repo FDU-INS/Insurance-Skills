@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 6,
+    "_query": "insurance",
+    "author": "Winbda",
+    "description": "Structure annual client review meetings for insurance.\nTRIGGERS - Use when user needs help with client-review-meeting related tasks.",
+    "githubUrl": "https://github.com/Winbda/claude-skills-collection/tree/master/skills/client-review-meeting",
+    "id": "winbda-claude-skills-collection-skills-client-review-meeting-skill-md",
+    "name": "client-review-meeting",
+    "skillUrl": "https://skillsmp.com/skills/winbda-claude-skills-collection-skills-client-review-meeting-skill-md",
+    "stars": 2,
+    "updatedAt": 1775416616,
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/client-review-meeting",
+    "mode": "tree",
+    "repoKey": "Winbda/claude-skills-collection"
+  },
+  "resolved": {
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/client-review-meeting"
+  }
+}

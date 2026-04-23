@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 7,
+    "_query": "insurance",
+    "author": "arisng",
+    "description": "Calculates Net Income, Personal Income Tax (PIT), and Social Insurance (BHXH) based on Vietnam's progressive tax brackets.",
+    "githubUrl": "https://github.com/arisng/github-copilot-fc/tree/main/skills/vn-payroll",
+    "id": "arisng-github-copilot-fc-skills-vn-payroll-skill-md",
+    "name": "vn-payroll",
+    "skillUrl": "https://skillsmp.com/skills/arisng-github-copilot-fc-skills-vn-payroll-skill-md",
+    "stars": 2,
+    "updatedAt": 1767170004,
+    "owner": "arisng",
+    "repo": "github-copilot-fc",
+    "branch": "main",
+    "subpath": "skills/vn-payroll",
+    "mode": "tree",
+    "repoKey": "arisng/github-copilot-fc"
+  },
+  "resolved": {
+    "owner": "arisng",
+    "repo": "github-copilot-fc",
+    "branch": "main",
+    "subpath": "skills/vn-payroll"
+  }
+}

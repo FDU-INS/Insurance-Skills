@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "claims",
+    "author": "majiayu000",
+    "description": "Claims Appeals agent for healthcare workflows.",
+    "githubUrl": "https://github.com/majiayu000/claude-skill-registry/tree/main/skills/data/healthsim-networksim",
+    "id": "majiayu000-claude-skill-registry-data-data-claims-appeals-skill-md",
+    "name": "claims-appeals",
+    "skillUrl": "https://skillsmp.com/skills/majiayu000-claude-skill-registry-data-data-claims-appeals-skill-md",
+    "stars": 3,
+    "updatedAt": 1770280794,
+    "is_insurance_related": "是",
+    "owner": "majiayu000",
+    "repo": "claude-skill-registry",
+    "branch": "main",
+    "subpath": "skills/data/healthsim-networksim",
+    "mode": "tree",
+    "repoKey": "majiayu000/claude-skill-registry"
+  },
+  "resolved": {
+    "owner": "majiayu000",
+    "repo": "claude-skill-registry",
+    "branch": "main",
+    "subpath": "skills/data/healthsim-networksim"
+  }
+}

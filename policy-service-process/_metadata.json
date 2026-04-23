@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 2,
+    "_query": "policy",
+    "author": "aifinlab",
+    "description": "当用户需要办理保单保全业务时使用此 skill。适用于信息变更、受益人变更、缴费方式变更、保单贷款、退保等保全业务指导。",
+    "githubUrl": "https://github.com/okwinds/skills-runtime-sdk/tree/main/examples/apps/policy_compliance_redactor_pro/skills/policy_reader",
+    "id": "aifinlab-finclaw-skills-policy-service-process-skill-md",
+    "name": "policy-service-process",
+    "skillUrl": "https://skillsmp.com/skills/aifinlab-finclaw-skills-policy-service-process-skill-md",
+    "stars": 125,
+    "updatedAt": 1773714707,
+    "is_insurance_related": "是",
+    "owner": "okwinds",
+    "repo": "skills-runtime-sdk",
+    "branch": "main",
+    "subpath": "examples/apps/policy_compliance_redactor_pro/skills/policy_reader",
+    "mode": "tree",
+    "repoKey": "okwinds/skills-runtime-sdk"
+  },
+  "resolved": {
+    "owner": "okwinds",
+    "repo": "skills-runtime-sdk",
+    "branch": "main",
+    "subpath": "examples/apps/policy_compliance_redactor_pro/skills/policy_reader"
+  }
+}

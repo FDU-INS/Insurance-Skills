@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 4,
+    "_query": "insurance",
+    "author": "alongor666",
+    "description": "加载并预处理保险保单周度数据，支持智能周期检测、多周数据加载、数据验证和清洗。在开始任何保险数据分析任务时使用。",
+    "githubUrl": "https://github.com/alongor666/weekly_report/tree/main/.claude/skills/loading-insurance-data",
+    "id": "alongor666-weekly-report-claude-skills-loading-insurance-data-skill-md",
+    "name": "loading-insurance-data",
+    "skillUrl": "https://skillsmp.com/skills/alongor666-weekly-report-claude-skills-loading-insurance-data-skill-md",
+    "stars": 0,
+    "updatedAt": 1762298304,
+    "owner": "alongor666",
+    "repo": "weekly_report",
+    "branch": "main",
+    "subpath": ".claude/skills/loading-insurance-data",
+    "mode": "tree",
+    "repoKey": "alongor666/weekly_report"
+  },
+  "resolved": {
+    "owner": "alongor666",
+    "repo": "weekly_report",
+    "branch": "main",
+    "subpath": ".claude/skills/loading-insurance-data"
+  }
+}

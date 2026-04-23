@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 3,
+    "_query": "policy",
+    "author": "aifinlab",
+    "description": "当用户需要咨询保单责任相关问题时使用此 skill。适用于责任条款解读、保障范围查询、免责条款解释等场景。",
+    "githubUrl": "https://github.com/babyworm/rtl-agent-team/tree/main/skills/verification-recheck-policy",
+    "id": "aifinlab-finclaw-skills-policy-liability-qa-skill-md",
+    "name": "policy-liability-qa",
+    "skillUrl": "https://skillsmp.com/skills/aifinlab-finclaw-skills-policy-liability-qa-skill-md",
+    "stars": 125,
+    "updatedAt": 1773714707,
+    "is_insurance_related": "是",
+    "owner": "babyworm",
+    "repo": "rtl-agent-team",
+    "branch": "main",
+    "subpath": "skills/verification-recheck-policy",
+    "mode": "tree",
+    "repoKey": "babyworm/rtl-agent-team"
+  },
+  "resolved": {
+    "owner": "babyworm",
+    "repo": "rtl-agent-team",
+    "branch": "main",
+    "subpath": "skills/verification-recheck-policy"
+  }
+}

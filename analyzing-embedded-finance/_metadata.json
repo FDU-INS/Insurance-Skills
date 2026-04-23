@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 9,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Evaluates embedded finance opportunities with distribution economics and regulatory framework analysis. Use when analyzing embedded finance, evaluating BaaS models, or assessing embedded lending/insurance.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/finance/analyzing-embedded-finance",
+    "id": "casemark-skills-skills-finance-analyzing-embedded-finance-skill-md",
+    "name": "analyzing-embedded-finance",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-finance-analyzing-embedded-finance-skill-md",
+    "stars": 12,
+    "updatedAt": 1772680350,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/analyzing-embedded-finance",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/analyzing-embedded-finance"
+  }
+}

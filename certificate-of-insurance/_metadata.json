@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 4,
+    "_query": "insurance",
+    "author": "Winbda",
+    "description": "Manage certificate of insurance requests and tracking.\nTRIGGERS - Use when user needs help with certificate-of-insurance related tasks.",
+    "githubUrl": "https://github.com/Winbda/claude-skills-collection/tree/master/skills/certificate-of-insurance",
+    "id": "winbda-claude-skills-collection-skills-certificate-of-insurance-skill-md",
+    "name": "certificate-of-insurance",
+    "skillUrl": "https://skillsmp.com/skills/winbda-claude-skills-collection-skills-certificate-of-insurance-skill-md",
+    "stars": 2,
+    "updatedAt": 1775416616,
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/certificate-of-insurance",
+    "mode": "tree",
+    "repoKey": "Winbda/claude-skills-collection"
+  },
+  "resolved": {
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/certificate-of-insurance"
+  }
+}

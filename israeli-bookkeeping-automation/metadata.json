@@ -1,0 +1,40 @@
+{
+  "author": "skills-il",
+  "version": "1.1.0",
+  "category": "accounting",
+  "tags": {
+    "he": [
+      "הנהלת-חשבונות",
+      "הנהלה-כפולה",
+      "פקודות-יומן",
+      "שכר",
+      "חשבונאות-ישראלית",
+      "אוטומציה"
+    ],
+    "en": [
+      "bookkeeping",
+      "double-entry",
+      "journal-entries",
+      "payroll",
+      "israeli-accounting",
+      "automation"
+    ]
+  },
+  "display_name": {
+    "he": "אוטומציה להנהלת חשבונות ישראלית",
+    "en": "Israeli Bookkeeping Automation"
+  },
+  "display_description": {
+    "he": "יצירת פקודות יומן בהנהלה כפולה לעסקאות ישראליות נפוצות, כולל שכר עם כל הרכיבים הסטטוטוריים (ביטוח לאומי, מס בריאות, פנסיה, קרן השתלמות, פיצויים), טיפול במע\"מ תשומות ועסקאות, פחת רכוש קבוע לפי שיעורי רשות המיסים, ורישום הכנסות. תומך בעוסק מורשה (הנהלה כפולה) ובעוסק פטור (הנהלה פשוטה) לפי מטקונת החשבונות הישראלית הסטנדרטית. אל תשתמשו להגשת דוחות מס, ביקורת דוחות כספיים או כתחליף לרואה חשבון.",
+    "en": "Generate proper double-entry journal entries (pkudat yoman) for common Israeli business transactions including payroll with all statutory components, VAT handling, asset depreciation, and revenue recognition. Use when you need to create accurate bookkeeping entries following the Israeli chart of accounts (matkonet heshbonot) standard numbering system. Supports both Osek Murshe (authorized dealer) double-entry and Osek Patur (exempt dealer) single-entry bookkeeping. Handles salary payments with income tax, bituach leumi, health insurance, pension, keren hishtalmut, and convalescence pay. Do NOT use for tax filing submissions, annual financial statement audits, or replacing a certified public accountant (roeh heshbon)."
+  },
+  "supported_agents": [
+    "claude-code",
+    "cursor",
+    "github-copilot",
+    "windsurf",
+    "opencode",
+    "codex",
+    "gemini-cli"
+  ]
+}

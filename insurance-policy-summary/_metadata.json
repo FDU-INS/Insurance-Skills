@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 2,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Produces structured, citation-backed summaries of U.S. insurance policies, endorsements, claims files, and coverage correspondence for coverage analysis and insurance litigation. Use when summarizing policies, declarations, claims files, reservation-of-rights letters, denial letters, or coverage disputes.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/legal/insurance-policy-summary",
+    "id": "casemark-skills-skills-legal-insurance-policy-summary-skill-md",
+    "name": "insurance-policy-summary",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-legal-insurance-policy-summary-skill-md",
+    "stars": 12,
+    "updatedAt": 1772500417,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/insurance-policy-summary",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/insurance-policy-summary"
+  }
+}

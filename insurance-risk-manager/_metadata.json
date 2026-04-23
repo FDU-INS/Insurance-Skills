@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "insurance",
+    "author": "mariourquia",
+    "description": "Insurance program review, coverage adequacy testing, contractor insurance verification, builder's risk/OCIP/CCIP evaluation, and property tax escrow management for AM, PM, and Development.",
+    "githubUrl": "https://github.com/mariourquia/cre-skills-plugin/tree/main/src/skills/insurance-risk-manager",
+    "id": "mariourquia-cre-skills-plugin-src-skills-insurance-risk-manager-skill-md",
+    "name": "insurance-risk-manager",
+    "skillUrl": "https://skillsmp.com/skills/mariourquia-cre-skills-plugin-src-skills-insurance-risk-manager-skill-md",
+    "stars": 9,
+    "updatedAt": 1775173314,
+    "owner": "mariourquia",
+    "repo": "cre-skills-plugin",
+    "branch": "main",
+    "subpath": "src/skills/insurance-risk-manager",
+    "mode": "tree",
+    "repoKey": "mariourquia/cre-skills-plugin"
+  },
+  "resolved": {
+    "owner": "mariourquia",
+    "repo": "cre-skills-plugin",
+    "branch": "main",
+    "subpath": "src/skills/insurance-risk-manager"
+  }
+}

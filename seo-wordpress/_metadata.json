@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 6,
+    "_query": "insurance",
+    "author": "kanji8210",
+    "description": "WordPress SEO specialist skill for the Travel Insurance Center-Kenya plugin.\nUse when asked to improve SEO, add meta tags, schema markup, Open Graph, structured data,\nsitemap integration, keyword optimisation, canonical URLs, or page speed for the plugin's\nfrontend pages and templates. Covers both on-page technical SEO (PHP/HTML output) and\ncontent-level recommendations.\nTrigger words: \"SEO\", \"meta tags\", \"schema\", \"structured data\", \"Open Graph\", \"sitemap\",\n\"canonical\", \"page speed\", \"rich snippets\", \"search ranking\", \"keyword\", \"seo skill\".",
+    "githubUrl": "https://github.com/kanji8210/maljani_travel_insurance_hub/tree/main/.agents/skills/seo-wordpress",
+    "id": "kanji8210-maljani-travel-insurance-hub-agents-skills-seo-wordpress-skill-md",
+    "name": "seo-wordpress",
+    "skillUrl": "https://skillsmp.com/skills/kanji8210-maljani-travel-insurance-hub-agents-skills-seo-wordpress-skill-md",
+    "stars": 0,
+    "updatedAt": 1774206324,
+    "owner": "kanji8210",
+    "repo": "maljani_travel_insurance_hub",
+    "branch": "main",
+    "subpath": ".agents/skills/seo-wordpress",
+    "mode": "tree",
+    "repoKey": "kanji8210/maljani_travel_insurance_hub"
+  },
+  "resolved": {
+    "owner": "kanji8210",
+    "repo": "maljani_travel_insurance_hub",
+    "branch": "main",
+    "subpath": ".agents/skills/seo-wordpress"
+  }
+}

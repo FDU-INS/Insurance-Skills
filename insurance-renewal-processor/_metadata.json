@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 2,
+    "_query": "insurance",
+    "author": "garethdaine",
+    "description": "Processes insurance renewal documentation for brokers and underwriters. Extracts policy details, compares renewal terms against expiring policies, identifies coverage gaps, and generates renewal summaries with premium comparisons and recommendation narratives.",
+    "githubUrl": "https://github.com/garethdaine/agent/tree/main/skill-library/skills/insurance-renewal-processor",
+    "id": "garethdaine-agent-skill-library-skills-insurance-renewal-processor-skill-md",
+    "name": "insurance-renewal-processor",
+    "skillUrl": "https://skillsmp.com/skills/garethdaine-agent-skill-library-skills-insurance-renewal-processor-skill-md",
+    "stars": 0,
+    "updatedAt": 1772848932,
+    "owner": "garethdaine",
+    "repo": "agent",
+    "branch": "main",
+    "subpath": "skill-library/skills/insurance-renewal-processor",
+    "mode": "tree",
+    "repoKey": "garethdaine/agent"
+  },
+  "resolved": {
+    "owner": "garethdaine",
+    "repo": "agent",
+    "branch": "main",
+    "subpath": "skill-library/skills/insurance-renewal-processor"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "underwriting",
+    "author": "nimag",
+    "description": "Create a new underwriting agent (assets, credit, collateral) following established patterns. Use when implementing new agents, extending the system with new document analysis capabilities, or understanding how agents work.",
+    "githubUrl": "https://github.com/aifinlab/FinClaw/tree/main/skills/claims-material-check-critical-illness-assistant",
+    "id": "nimag-fast-claude-skills-new-agent-skill-md",
+    "name": "new-agent",
+    "skillUrl": "https://skillsmp.com/skills/nimag-fast-claude-skills-new-agent-skill-md",
+    "stars": 0,
+    "updatedAt": 1766355140,
+    "is_insurance_related": "是",
+    "owner": "aifinlab",
+    "repo": "FinClaw",
+    "branch": "main",
+    "subpath": "skills/claims-material-check-critical-illness-assistant",
+    "mode": "tree",
+    "repoKey": "aifinlab/FinClaw"
+  },
+  "resolved": {
+    "owner": "aifinlab",
+    "repo": "FinClaw",
+    "branch": "main",
+    "subpath": "skills/claims-material-check-critical-illness-assistant"
+  }
+}

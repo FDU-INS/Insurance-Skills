@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 11,
+    "_query": "insurance",
+    "author": "45black",
+    "description": "Generate templated responses for common legal inquiries under English law (England & Wales). Covers DSARs (UK GDPR), disclosure/litigation holds (CPR), privacy inquiries, vendor questions, NDA requests, witness summons/legal process, and insurance notifications. Identifies when situations require individualised solicitor attention.",
+    "githubUrl": "https://github.com/45black/uk-legal-plugins/tree/main/skills/uk-legal-canned-responses",
+    "id": "45black-uk-legal-plugins-skills-uk-legal-canned-responses-skill-md",
+    "name": "uk-legal-canned-responses",
+    "skillUrl": "https://skillsmp.com/skills/45black-uk-legal-plugins-skills-uk-legal-canned-responses-skill-md",
+    "stars": 1,
+    "updatedAt": 1770902567,
+    "owner": "45black",
+    "repo": "uk-legal-plugins",
+    "branch": "main",
+    "subpath": "skills/uk-legal-canned-responses",
+    "mode": "tree",
+    "repoKey": "45black/uk-legal-plugins"
+  },
+  "resolved": {
+    "owner": "45black",
+    "repo": "uk-legal-plugins",
+    "branch": "main",
+    "subpath": "skills/uk-legal-canned-responses"
+  }
+}

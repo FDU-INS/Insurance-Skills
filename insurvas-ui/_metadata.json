@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 10,
+    "_query": "insurance",
+    "author": "waleedb-dev",
+    "description": "Expert-level Frontend UI generation based on the specific 'Insurvas' design system (Green theme). Enforces pixel-perfect consistency, spacing, card alignment, and micro-animations using React, Tailwind CSS, and shadcn/ui. Use when building UI components for the Insurvas insurance CRM, applying green theme styling, or implementing data-dense dashboards with forest green color palette.",
+    "githubUrl": "https://github.com/waleedb-dev/CRM-agent-portal/tree/main/.cursor/skills/insurvas-ui",
+    "id": "waleedb-dev-crm-agent-portal-cursor-skills-insurvas-ui-skill-md",
+    "name": "insurvas-ui",
+    "skillUrl": "https://skillsmp.com/skills/waleedb-dev-crm-agent-portal-cursor-skills-insurvas-ui-skill-md",
+    "stars": 0,
+    "updatedAt": 1775155304,
+    "owner": "waleedb-dev",
+    "repo": "CRM-agent-portal",
+    "branch": "main",
+    "subpath": ".cursor/skills/insurvas-ui",
+    "mode": "tree",
+    "repoKey": "waleedb-dev/CRM-agent-portal"
+  },
+  "resolved": {
+    "owner": "waleedb-dev",
+    "repo": "CRM-agent-portal",
+    "branch": "main",
+    "subpath": ".cursor/skills/insurvas-ui"
+  }
+}

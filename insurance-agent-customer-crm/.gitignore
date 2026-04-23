@@ -1,0 +1,10 @@
+.history/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.egg/
+test_output/
+test_*.py
+*.md.bak
+.DS_Store

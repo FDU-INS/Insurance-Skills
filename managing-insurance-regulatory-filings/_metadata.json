@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 3,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Structures statutory filing preparation with SAP differences, risk-based capital, and annual statement schedules. Use when preparing statutory filings, calculating RBC, or managing regulatory submissions.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/finance/managing-insurance-regulatory-filings",
+    "id": "casemark-skills-skills-finance-managing-insurance-regulatory-filings-skill-md",
+    "name": "managing-insurance-regulatory-filings",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-finance-managing-insurance-regulatory-filings-skill-md",
+    "stars": 12,
+    "updatedAt": 1772680350,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/managing-insurance-regulatory-filings",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/managing-insurance-regulatory-filings"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "actuarial",
+    "author": "Sequoia-Port",
+    "description": "CDC/CMS life expectancy actuarial table lookups for WCMSA calculations. Activates when tasks involve life expectancy, actuarial tables, life tables, WCMSA, Medicare Set-Asides, or age-based mortality data.",
+    "githubUrl": "https://github.com/majiayu000/claude-skill-registry-data/tree/main/data/claims-appeals",
+    "id": "sequoia-port-codes-skills-life-expectancy-skill-md",
+    "name": "life-expectancy",
+    "skillUrl": "https://skillsmp.com/skills/sequoia-port-codes-skills-life-expectancy-skill-md",
+    "stars": 7,
+    "updatedAt": 1774278834,
+    "is_insurance_related": "是",
+    "owner": "majiayu000",
+    "repo": "claude-skill-registry-data",
+    "branch": "main",
+    "subpath": "data/claims-appeals",
+    "mode": "tree",
+    "repoKey": "majiayu000/claude-skill-registry-data"
+  },
+  "resolved": {
+    "owner": "majiayu000",
+    "repo": "claude-skill-registry-data",
+    "branch": "main",
+    "subpath": "data/claims-appeals"
+  }
+}

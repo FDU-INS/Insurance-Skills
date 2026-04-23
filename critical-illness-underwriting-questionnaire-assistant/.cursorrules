@@ -1,0 +1,54 @@
+# GEO-INFER-RISK Module Development Rules
+
+## Module Overview
+
+GEO-INFER-RISK provides risk modeling and insurance for geospatial applications with hazard assessment.
+
+## Module-Specific Context
+
+**Purpose**: Provide risk assessment and insurance modeling capabilities  
+**Module Type**: Domain-Specific  
+**Status**: Alpha  
+**Dependencies**: SPACE, TIME, DATA  
+**Key Integrations**: GEO-INFER-BAYES, GEO-INFER-HEALTH
+
+## Core Development Principles
+
+This module extends the root framework rules (see `/.cursorrules`) with module-specific requirements:
+
+### Risk Implementation Requirements
+
+1. **Risk Models**: Implement real risk assessment models
+2. **Hazard Assessment**: Use real hazard assessment methods
+3. **Insurance Pricing**: Implement real insurance pricing models
+4. **Exposure Management**: Provide real exposure analysis
+5. **Uncertainty Quantification**: Use real uncertainty methods
+
+### Module-Specific NO MOCK Requirements
+
+- NEVER create placeholder risk models
+- NEVER skip uncertainty quantification
+- NEVER omit hazard validation
+- ALWAYS implement real risk algorithms
+- ALWAYS use proper risk data
+
+### Real Implementation Requirements
+
+- **Risk Models**: Implement real probabilistic risk models
+- **Hazard Assessment**: Use real hazard analysis methods
+- **Insurance Models**: Implement real actuarial models
+- **Exposure Analysis**: Use real exposure calculation methods
+- **Uncertainty**: Quantify real uncertainty with proper methods
+
+## Dependencies and Integration
+
+### Required Modules
+
+- **GEO-INFER-SPACE**: Spatial operations for risk mapping
+- **GEO-INFER-TIME**: Temporal analysis for risk trends
+- **GEO-INFER-DATA**: Data management for risk data
+
+---
+
+**Remember**: This module implements risk assessment for geospatial applications. Every implementation must use real risk models, proper uncertainty quantification, and comprehensive hazard analysis. No placeholders, no dummy risk - only real, working risk implementations.
+

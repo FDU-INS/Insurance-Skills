@@ -1,0 +1,27 @@
+version: 1
+skill:
+  name: Policy Clarifier
+  slug: policy-clarifier
+  category: docs
+  maturity: scaffold
+  description: Use when a policy exists but readers struggle to understand what it means in practice.
+  triggers:
+    - A policy document needs clearer language and action framing.
+    - Teams need help translating a policy into day-to-day implications.
+  expected_inputs:
+    - policy text
+    - audience
+    - common confusion points
+  expected_outputs:
+    - clarified policy draft
+    - operational guidance
+    - FAQ candidates
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

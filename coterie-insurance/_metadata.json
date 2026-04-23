@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 4,
+    "_query": "insurance",
+    "author": "membranedev",
+    "description": "Coterie Insurance integration. Manage data, records, and automate workflows. Use when the user wants to interact with Coterie Insurance data.",
+    "githubUrl": "https://github.com/membranedev/application-skills/tree/main/skills/coterie-insurance",
+    "id": "membranedev-application-skills-skills-coterie-insurance-skill-md",
+    "name": "coterie-insurance",
+    "skillUrl": "https://skillsmp.com/skills/membranedev-application-skills-skills-coterie-insurance-skill-md",
+    "stars": 23,
+    "updatedAt": 1772581526,
+    "owner": "membranedev",
+    "repo": "application-skills",
+    "branch": "main",
+    "subpath": "skills/coterie-insurance",
+    "mode": "tree",
+    "repoKey": "membranedev/application-skills"
+  },
+  "resolved": {
+    "owner": "membranedev",
+    "repo": "application-skills",
+    "branch": "main",
+    "subpath": "skills/coterie-insurance"
+  }
+}

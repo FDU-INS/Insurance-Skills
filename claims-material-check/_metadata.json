@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "claims",
+    "author": "aifinlab",
+    "description": "当用户需要检查理赔材料是否齐全时使用此 skill。适用于理赔申请前材料预审、缺失材料提醒、材料规范性检查等场景。",
+    "githubUrl": "https://github.com/devrelaicom/midnight-expert/tree/main/plugins/midnight-verify/skills/verify-correctness",
+    "id": "aifinlab-finclaw-skills-claims-material-check-skill-md",
+    "name": "claims-material-check",
+    "skillUrl": "https://skillsmp.com/skills/aifinlab-finclaw-skills-claims-material-check-skill-md",
+    "stars": 119,
+    "updatedAt": 1773714707,
+    "is_insurance_related": "是",
+    "owner": "devrelaicom",
+    "repo": "midnight-expert",
+    "branch": "main",
+    "subpath": "plugins/midnight-verify/skills/verify-correctness",
+    "mode": "tree",
+    "repoKey": "devrelaicom/midnight-expert"
+  },
+  "resolved": {
+    "owner": "devrelaicom",
+    "repo": "midnight-expert",
+    "branch": "main",
+    "subpath": "plugins/midnight-verify/skills/verify-correctness"
+  }
+}

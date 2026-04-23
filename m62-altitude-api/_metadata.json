@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 10,
+    "_query": "insurance",
+    "author": "m62ai",
+    "description": "Interact with the Altitude wealth management platform via its REST API. Query, create, update, and manage entities — individuals, households, accounts, trusts, insurance policies, liabilities, tangible assets, positions, documents, workflows, and more. Uses embedded OpenAPI documentation to discover the correct endpoints and schemas. Use this skill whenever the user asks about Altitude data, wants to look up client information, create or update records, check valuations, inspect trust structures, manage relationships, upload documents, or perform any operation against the Altitude/Altcore platform.",
+    "githubUrl": "https://github.com/m62ai/altitude-plugin-marketplace/tree/main/plugins/m62-altitude-api/skills/m62-altitude-api",
+    "id": "m62ai-altitude-plugin-marketplace-plugins-m62-altitude-api-skills-m62-altitude-api-skill-md",
+    "name": "m62-altitude-api",
+    "skillUrl": "https://skillsmp.com/skills/m62ai-altitude-plugin-marketplace-plugins-m62-altitude-api-skills-m62-altitude-api-skill-md",
+    "stars": 0,
+    "updatedAt": 1775509255,
+    "owner": "m62ai",
+    "repo": "altitude-plugin-marketplace",
+    "branch": "main",
+    "subpath": "plugins/m62-altitude-api/skills/m62-altitude-api",
+    "mode": "tree",
+    "repoKey": "m62ai/altitude-plugin-marketplace"
+  },
+  "resolved": {
+    "owner": "m62ai",
+    "repo": "altitude-plugin-marketplace",
+    "branch": "main",
+    "subpath": "plugins/m62-altitude-api/skills/m62-altitude-api"
+  }
+}

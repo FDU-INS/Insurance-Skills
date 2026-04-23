@@ -1,0 +1,232 @@
+{
+  "pharmacy_claims": [
+    {
+      "claim_id": "RX20241213000001",
+      "transaction_code": "B1",
+      "service_date": "2024-12-13",
+      "pharmacy": {
+        "name": "Shelbyville Family Pharmacy",
+        "npi": "1991234567",
+        "ncpdp": "9876543"
+      },
+      "patient": {
+        "name": "Billy Bob Williams",
+        "member_id": "1EG4TE5MK72",
+        "dob": "1959-03-22"
+      },
+      "prescriber": {
+        "name": "Dr. Angela Patel",
+        "npi": "2233445577"
+      },
+      "medication": {
+        "name": "Ticagrelor",
+        "brand_name": "Brilinta",
+        "ndc": "00186077728",
+        "rxnorm": "1116632",
+        "strength": "90 mg",
+        "form": "Tablet",
+        "quantity": 60,
+        "days_supply": 30,
+        "sig": "Take 1 tablet by mouth twice daily"
+      },
+      "pricing": {
+        "ingredient_cost": 425.00,
+        "dispensing_fee": 2.50,
+        "gross_amount_due": 427.50,
+        "usual_and_customary": 485.00
+      },
+      "adjudication": {
+        "status": "Paid",
+        "patient_pay": 47.00,
+        "plan_paid": 380.50,
+        "copay_tier": "3",
+        "formulary_status": "Preferred Brand"
+      }
+    },
+    {
+      "claim_id": "RX20241213000002",
+      "transaction_code": "B1",
+      "service_date": "2024-12-13",
+      "pharmacy": {
+        "name": "Shelbyville Family Pharmacy",
+        "npi": "1991234567",
+        "ncpdp": "9876543"
+      },
+      "patient": {
+        "name": "Billy Bob Williams",
+        "member_id": "1EG4TE5MK72",
+        "dob": "1959-03-22"
+      },
+      "prescriber": {
+        "name": "Dr. Angela Patel",
+        "npi": "2233445577"
+      },
+      "medication": {
+        "name": "Atorvastatin",
+        "brand_name": "Lipitor",
+        "ndc": "00071015523",
+        "rxnorm": "617312",
+        "strength": "80 mg",
+        "form": "Tablet",
+        "quantity": 30,
+        "days_supply": 30,
+        "sig": "Take 1 tablet by mouth at bedtime"
+      },
+      "pricing": {
+        "ingredient_cost": 12.50,
+        "dispensing_fee": 2.50,
+        "gross_amount_due": 15.00,
+        "usual_and_customary": 28.00
+      },
+      "adjudication": {
+        "status": "Paid",
+        "patient_pay": 0.00,
+        "plan_paid": 15.00,
+        "copay_tier": "1",
+        "formulary_status": "Generic"
+      }
+    },
+    {
+      "claim_id": "RX20241213000003",
+      "transaction_code": "B1",
+      "service_date": "2024-12-13",
+      "pharmacy": {
+        "name": "Shelbyville Family Pharmacy",
+        "npi": "1991234567",
+        "ncpdp": "9876543"
+      },
+      "patient": {
+        "name": "Billy Bob Williams",
+        "member_id": "1EG4TE5MK72",
+        "dob": "1959-03-22"
+      },
+      "prescriber": {
+        "name": "Dr. Angela Patel",
+        "npi": "2233445577"
+      },
+      "medication": {
+        "name": "Metoprolol Succinate ER",
+        "brand_name": "Toprol XL",
+        "ndc": "00781207201",
+        "rxnorm": "866511",
+        "strength": "100 mg",
+        "form": "Extended-release tablet",
+        "quantity": 30,
+        "days_supply": 30,
+        "sig": "Take 1 tablet by mouth once daily"
+      },
+      "pricing": {
+        "ingredient_cost": 18.00,
+        "dispensing_fee": 2.50,
+        "gross_amount_due": 20.50,
+        "usual_and_customary": 35.00
+      },
+      "adjudication": {
+        "status": "Paid",
+        "patient_pay": 0.00,
+        "plan_paid": 20.50,
+        "copay_tier": "1",
+        "formulary_status": "Generic"
+      }
+    },
+    {
+      "claim_id": "RX20241213000004",
+      "transaction_code": "B1",
+      "service_date": "2024-12-13",
+      "pharmacy": {
+        "name": "Shelbyville Family Pharmacy",
+        "npi": "1991234567",
+        "ncpdp": "9876543"
+      },
+      "patient": {
+        "name": "Billy Bob Williams",
+        "member_id": "1EG4TE5MK72",
+        "dob": "1959-03-22"
+      },
+      "prescriber": {
+        "name": "Dr. Angela Patel",
+        "npi": "2233445577"
+      },
+      "medication": {
+        "name": "Pantoprazole",
+        "brand_name": "Protonix",
+        "ndc": "00008084181",
+        "rxnorm": "261255",
+        "strength": "40 mg",
+        "form": "Delayed-release tablet",
+        "quantity": 30,
+        "days_supply": 30,
+        "sig": "Take 1 tablet by mouth once daily before breakfast"
+      },
+      "pricing": {
+        "ingredient_cost": 8.50,
+        "dispensing_fee": 2.50,
+        "gross_amount_due": 11.00,
+        "usual_and_customary": 22.00
+      },
+      "adjudication": {
+        "status": "Paid",
+        "patient_pay": 0.00,
+        "plan_paid": 11.00,
+        "copay_tier": "1",
+        "formulary_status": "Generic"
+      }
+    },
+    {
+      "claim_id": "RX20241213000005",
+      "transaction_code": "B1",
+      "service_date": "2024-12-13",
+      "pharmacy": {
+        "name": "Shelbyville Family Pharmacy",
+        "npi": "1991234567",
+        "ncpdp": "9876543"
+      },
+      "patient": {
+        "name": "Billy Bob Williams",
+        "member_id": "1EG4TE5MK72",
+        "dob": "1959-03-22"
+      },
+      "prescriber": {
+        "name": "Dr. Angela Patel",
+        "npi": "2233445577"
+      },
+      "medication": {
+        "name": "Nitroglycerin SL",
+        "brand_name": "Nitrostat",
+        "ndc": "00071041824",
+        "rxnorm": "198044",
+        "strength": "0.4 mg",
+        "form": "Sublingual tablet",
+        "quantity": 25,
+        "days_supply": 30,
+        "sig": "Place 1 tablet under tongue as needed for chest pain. May repeat every 5 minutes x 3 doses. Call 911 if not relieved."
+      },
+      "pricing": {
+        "ingredient_cost": 42.00,
+        "dispensing_fee": 2.50,
+        "gross_amount_due": 44.50,
+        "usual_and_customary": 65.00
+      },
+      "adjudication": {
+        "status": "Paid",
+        "patient_pay": 8.00,
+        "plan_paid": 36.50,
+        "copay_tier": "2",
+        "formulary_status": "Preferred Brand"
+      }
+    }
+  ],
+  "pharmacy_summary": {
+    "discharge_date": "2024-12-13",
+    "total_prescriptions": 5,
+    "total_ingredient_cost": 506.00,
+    "total_patient_pay": 55.00,
+    "total_plan_paid": 463.50,
+    "key_medications": [
+      "Ticagrelor (DAPT) - Critical: DO NOT DISCONTINUE without cardiology approval",
+      "Atorvastatin 80mg (High-intensity statin) - Post-ACS standard of care",
+      "Metoprolol 100mg (Beta-blocker) - Post-MI cardioprotection",
+      "Nitroglycerin SL (PRN) - Rescue for anginal symptoms"
+    ]
+  }
+}

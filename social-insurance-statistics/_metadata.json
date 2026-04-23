@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 4,
+    "_query": "insurance",
+    "author": "taivop",
+    "description": "Query Social Insurance Board statistical publications for benefits, social protection services, and caseload trends.",
+    "githubUrl": "https://github.com/taivop/marketplace/tree/master/skills/.curated/estonia-public-sources/sources/social-insurance-statistics",
+    "id": "taivop-marketplace-skills-curated-estonia-public-sources-sources-social-insurance-statistics-skill-md",
+    "name": "social-insurance-statistics",
+    "skillUrl": "https://skillsmp.com/skills/taivop-marketplace-skills-curated-estonia-public-sources-sources-social-insurance-statistics-skill-md",
+    "stars": 8,
+    "updatedAt": 1771961567,
+    "owner": "taivop",
+    "repo": "marketplace",
+    "branch": "master",
+    "subpath": "skills/.curated/estonia-public-sources/sources/social-insurance-statistics",
+    "mode": "tree",
+    "repoKey": "taivop/marketplace"
+  },
+  "resolved": {
+    "owner": "taivop",
+    "repo": "marketplace",
+    "branch": "master",
+    "subpath": "skills/.curated/estonia-public-sources/sources/social-insurance-statistics"
+  }
+}

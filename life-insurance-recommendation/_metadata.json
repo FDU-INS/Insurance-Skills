@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 3,
+    "_query": "insurance",
+    "author": "matayuuu",
+    "description": "顧客のライフステージ・年収・既存契約に基づき、最適な生命保険プランを提案する。",
+    "githubUrl": "https://github.com/matayuuu/MAF-Studio/tree/main/data/skills/life_insurance_recommendation",
+    "id": "matayuuu-maf-studio-data-skills-life-insurance-recommendation-skill-md",
+    "name": "life-insurance-recommendation",
+    "skillUrl": "https://skillsmp.com/skills/matayuuu-maf-studio-data-skills-life-insurance-recommendation-skill-md",
+    "stars": 3,
+    "updatedAt": 1775373590,
+    "owner": "matayuuu",
+    "repo": "MAF-Studio",
+    "branch": "main",
+    "subpath": "data/skills/life_insurance_recommendation",
+    "mode": "tree",
+    "repoKey": "matayuuu/MAF-Studio"
+  },
+  "resolved": {
+    "owner": "matayuuu",
+    "repo": "MAF-Studio",
+    "branch": "main",
+    "subpath": "data/skills/life_insurance_recommendation"
+  }
+}

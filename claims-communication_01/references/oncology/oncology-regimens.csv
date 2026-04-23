@@ -1,0 +1,49 @@
+regimen_name,cancer_type,drugs,cycle_length_days,typical_cycles,setting,intent,emetogenic_risk,gcsf_required
+AC,breast,doxorubicin+cyclophosphamide,21,4,outpatient,adjuvant,high,false
+AC-T,breast,doxorubicin+cyclophosphamide then paclitaxel,21,4+4,outpatient,adjuvant,high,true
+TC,breast,docetaxel+cyclophosphamide,21,4,outpatient,adjuvant,moderate,true
+TCH,breast_her2,docetaxel+carboplatin+trastuzumab,21,6,outpatient,adjuvant,moderate,true
+TCHP,breast_her2,docetaxel+carboplatin+trastuzumab+pertuzumab,21,6,outpatient,neoadjuvant,moderate,true
+ddAC-T,breast,dose_dense_doxorubicin+cyclophosphamide then paclitaxel,14,4+4,outpatient,adjuvant,high,true
+CMF,breast,cyclophosphamide+methotrexate+fluorouracil,28,6,outpatient,adjuvant,moderate,false
+Paclitaxel weekly,breast,paclitaxel,7,12,outpatient,adjuvant,low,false
+Capecitabine,breast,capecitabine,21,8,outpatient,adjuvant,low,false
+FOLFOX,colorectal,fluorouracil+leucovorin+oxaliplatin,14,12,outpatient,adjuvant,moderate,false
+mFOLFOX6,colorectal,modified_fluorouracil+leucovorin+oxaliplatin,14,12,outpatient,adjuvant,moderate,false
+FOLFIRI,colorectal,fluorouracil+leucovorin+irinotecan,14,varies,outpatient,palliative,moderate,false
+FOLFOXIRI,colorectal,fluorouracil+leucovorin+oxaliplatin+irinotecan,14,varies,outpatient,palliative,moderate,true
+CAPOX,colorectal,capecitabine+oxaliplatin,21,8,outpatient,adjuvant,moderate,false
+5FU-LV,colorectal,fluorouracil+leucovorin,14,12,outpatient,adjuvant,low,false
+Carboplatin-Paclitaxel,lung_nsclc,carboplatin+paclitaxel,21,4-6,outpatient,first_line,moderate,false
+Carboplatin-Pemetrexed,lung_nsclc_nonsquamous,carboplatin+pemetrexed,21,4,outpatient,first_line,moderate,false
+Carboplatin-Pemetrexed-Pembrolizumab,lung_nsclc_nonsquamous,carboplatin+pemetrexed+pembrolizumab,21,4,outpatient,first_line,moderate,false
+Cisplatin-Pemetrexed,lung_nsclc_nonsquamous,cisplatin+pemetrexed,21,4,outpatient,first_line,high,false
+Carboplatin-Paclitaxel-Pembrolizumab,lung_nsclc_squamous,carboplatin+paclitaxel+pembrolizumab,21,4,outpatient,first_line,moderate,false
+Cisplatin-Etoposide,lung_sclc,cisplatin+etoposide,21,4-6,outpatient,first_line,high,false
+Carboplatin-Etoposide,lung_sclc,carboplatin+etoposide,21,4-6,outpatient,first_line,moderate,false
+Carboplatin-Etoposide-Atezolizumab,lung_sclc,carboplatin+etoposide+atezolizumab,21,4,outpatient,first_line,moderate,false
+R-CHOP,lymphoma_dlbcl,rituximab+cyclophosphamide+doxorubicin+vincristine+prednisone,21,6,outpatient,curative,moderate,true
+ABVD,lymphoma_hodgkin,doxorubicin+bleomycin+vinblastine+dacarbazine,28,6,outpatient,curative,moderate,false
+R-EPOCH,lymphoma_dlbcl,rituximab+etoposide+prednisone+vincristine+cyclophosphamide+doxorubicin,21,6,outpatient,curative,moderate,true
+BEACOPP,lymphoma_hodgkin,bleomycin+etoposide+doxorubicin+cyclophosphamide+vincristine+procarbazine+prednisone,21,6-8,outpatient,curative,high,true
+R-CVP,lymphoma_indolent,rituximab+cyclophosphamide+vincristine+prednisone,21,6-8,outpatient,first_line,moderate,false
+BR,lymphoma_indolent,bendamustine+rituximab,28,6,outpatient,first_line,low,false
+FOLFIRINOX,pancreatic,fluorouracil+leucovorin+irinotecan+oxaliplatin,14,12,outpatient,first_line,moderate,true
+Gemcitabine-nab-Paclitaxel,pancreatic,gemcitabine+nab_paclitaxel,28,varies,outpatient,first_line,moderate,false
+Gemcitabine-Cisplatin,pancreatic_biliary,gemcitabine+cisplatin,21,8,outpatient,first_line,high,false
+Carboplatin-Paclitaxel,ovarian,carboplatin+paclitaxel,21,6,outpatient,first_line,moderate,false
+Carboplatin-Gemcitabine,ovarian,carboplatin+gemcitabine,21,6,outpatient,recurrent,moderate,false
+Carboplatin-Liposomal Doxorubicin,ovarian,carboplatin+liposomal_doxorubicin,28,6,outpatient,recurrent,moderate,false
+BEP,testicular,bleomycin+etoposide+cisplatin,21,3-4,outpatient,curative,high,false
+EP,testicular,etoposide+cisplatin,21,4,outpatient,curative,high,false
+VIP,testicular,etoposide+ifosfamide+cisplatin,21,4,outpatient,salvage,high,true
+Docetaxel,prostate,docetaxel+prednisone,21,10,outpatient,first_line,low,false
+Cabazitaxel,prostate,cabazitaxel+prednisone,21,10,outpatient,second_line,low,true
+Radium-223,prostate_bone_mets,radium_223,28,6,outpatient,palliative,minimal,false
+VRd,myeloma,bortezomib+lenalidomide+dexamethasone,21,varies,outpatient,induction,low,false
+RVd,myeloma,lenalidomide+bortezomib+dexamethasone,21,varies,outpatient,induction,low,false
+KRd,myeloma,carfilzomib+lenalidomide+dexamethasone,28,varies,outpatient,relapsed,low,false
+Daratumumab-VRd,myeloma,daratumumab+bortezomib+lenalidomide+dexamethasone,21,varies,outpatient,induction,low,false
+Hyper-CVAD,all,cyclophosphamide+vincristine+doxorubicin+dexamethasone,21,8,inpatient,curative,high,true
+7+3,aml,cytarabine+daunorubicin,varies,1-2,inpatient,induction,high,false
+HiDAC,aml,high_dose_cytarabine,28,3-4,inpatient,consolidation,moderate,false

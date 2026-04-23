@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 10,
+    "_query": "insurance",
+    "author": "alongor666",
+    "description": "AI-powered insights, UX copywriting standards, and user experience guidelines for vehicle insurance platform. Use when designing insight panels, writing user-facing copy, implementing status messages, creating onboarding flows, or improving accessibility. Covers tone standards, interactive patterns, error messages, and empty states.",
+    "githubUrl": "https://github.com/alongor666/daylyreport/tree/main/.claude/skills/_archive/ai-insights-and-ux-copy",
+    "id": "alongor666-daylyreport-claude-skills-archive-ai-insights-and-ux-copy-skill-md",
+    "name": "ai-insights-and-ux-copy",
+    "skillUrl": "https://skillsmp.com/skills/alongor666-daylyreport-claude-skills-archive-ai-insights-and-ux-copy-skill-md",
+    "stars": 0,
+    "updatedAt": 1762699512,
+    "owner": "alongor666",
+    "repo": "daylyreport",
+    "branch": "main",
+    "subpath": ".claude/skills/_archive/ai-insights-and-ux-copy",
+    "mode": "tree",
+    "repoKey": "alongor666/daylyreport"
+  },
+  "resolved": {
+    "owner": "alongor666",
+    "repo": "daylyreport",
+    "branch": "main",
+    "subpath": ".claude/skills/_archive/ai-insights-and-ux-copy"
+  }
+}

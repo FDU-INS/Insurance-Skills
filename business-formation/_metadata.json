@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 8,
+    "_query": "insurance",
+    "author": "ComputerConnection",
+    "description": "Guide founders through operational fundamentals — entity setup, co-founder agreements, IP assignment, banking, bookkeeping, taxes, insurance, and contractor agreements. Phase-based interactive guided process.",
+    "githubUrl": "https://github.com/ComputerConnection/z-combinator/tree/main/skills/business-formation",
+    "id": "computerconnection-z-combinator-skills-business-formation-skill-md",
+    "name": "business-formation",
+    "skillUrl": "https://skillsmp.com/skills/computerconnection-z-combinator-skills-business-formation-skill-md",
+    "stars": 0,
+    "updatedAt": 1774339780,
+    "owner": "ComputerConnection",
+    "repo": "z-combinator",
+    "branch": "main",
+    "subpath": "skills/business-formation",
+    "mode": "tree",
+    "repoKey": "ComputerConnection/z-combinator"
+  },
+  "resolved": {
+    "owner": "ComputerConnection",
+    "repo": "z-combinator",
+    "branch": "main",
+    "subpath": "skills/business-formation"
+  }
+}

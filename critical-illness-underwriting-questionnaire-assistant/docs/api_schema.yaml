@@ -1,0 +1,2145 @@
+openapi: 3.0.3
+info:
+  title: GEO-INFER-RISK API
+  description: |
+    Comprehensive geospatial risk analysis and catastrophe modeling API.
+
+    This API provides enterprise-grade tools for:
+    - Multi-hazard risk assessment and analysis
+    - Catastrophe modeling and event simulation
+    - Vulnerability and exposure modeling
+    - Insurance pricing and portfolio analysis
+    - Climate risk integration and adaptation planning
+    - Real-time risk monitoring and early warning
+    - Integration with other GEO-INFER modules
+
+    Key Features:
+    - Probabilistic risk assessment with uncertainty quantification
+    - Monte Carlo simulation for stochastic modeling
+    - Spatial analysis with H3 indexing and advanced geospatial operations
+    - Financial risk metrics (AAL, EP curves, PML, VaR, TVaR)
+    - Climate change scenario integration
+    - Real-time data processing and streaming analytics
+  version: 2.0.0
+  contact:
+    name: GEO-INFER-RISK Support
+    email: risk-support@geo-infer.org
+    url: https://geo-infer.org/support
+  license:
+    name: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  termsOfService: https://geo-infer.org/terms
+
+servers:
+  - url: https://api.geo-infer.org/risk/v2
+    description: Production server
+  - url: https://staging.api.geo-infer.org/risk/v2
+    description: Staging server
+  - url: http://localhost:8000/risk/v2
+    description: Development server
+
+security:
+  - ApiKeyAuth: []
+  - BearerAuth: []
+  - OAuth2:
+    - read:risk
+    - write:risk
+    - admin:risk
+
+tags:
+  - name: analysis
+    description: Core risk analysis and assessment operations
+  - name: hazards
+    description: Hazard modeling and event simulation
+  - name: vulnerability
+    description: Vulnerability assessment and damage modeling
+  - name: exposure
+    description: Exposure modeling and asset inventories
+  - name: catastrophe
+    description: Catastrophe modeling and portfolio analysis
+  - name: insurance
+    description: Insurance pricing and financial risk modeling
+  - name: climate
+    description: Climate risk integration and adaptation planning
+  - name: monitoring
+    description: Real-time risk monitoring and early warning
+  - name: portfolio
+    description: Portfolio management and aggregation
+  - name: models
+    description: Model management and configuration
+  - name: data
+    description: Data management and integration
+  - name: system
+    description: System management and health monitoring
+
+paths:
+  # Core Risk Analysis Endpoints
+  /analysis/risk-assessment:
+    post:
+      tags: [analysis]
+      summary: Run comprehensive risk assessment
+      description: |
+        Execute a comprehensive multi-hazard risk assessment with vulnerability and exposure analysis.
+
+        This endpoint orchestrates the complete risk analysis workflow including:
+        - Hazard modeling and event simulation
+        - Vulnerability assessment and damage calculation
+        - Exposure analysis and loss estimation
+        - Financial impact assessment
+        - Uncertainty quantification
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RiskAssessmentRequest'
+      responses:
+        '200':
+          description: Risk assessment completed successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RiskAssessmentResponse'
+        '202':
+          description: Risk assessment initiated (asynchronous processing)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AsyncJobResponse'
+        '400':
+          description: Invalid request parameters
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /analysis/portfolio-risk:
+    post:
+      tags: [analysis, portfolio]
+      summary: Analyze portfolio risk
+      description: |
+        Analyze risk across a portfolio of assets or locations.
+
+        Supports various aggregation levels and correlation modeling:
+        - Geographic aggregation (county, state, region)
+        - Asset type aggregation (residential, commercial, infrastructure)
+        - Multi-peril correlation analysis
+        - Portfolio optimization and diversification analysis
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PortfolioRiskRequest'
+      responses:
+        '200':
+          description: Portfolio risk analysis completed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PortfolioRiskResponse'
+
+  /analysis/stress-test:
+    post:
+      tags: [analysis]
+      summary: Conduct stress testing
+      description: |
+        Perform stress testing under extreme scenarios.
+
+        Supports various stress testing methodologies:
+        - Historical scenario replay
+        - Synthetic extreme events
+        - Climate change scenario testing
+        - Regulatory compliance testing (Solvency II, Basel III)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StressTestRequest'
+      responses:
+        '200':
+          description: Stress test completed successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StressTestResponse'
+
+  # Hazard Modeling Endpoints
+  /hazards/events/simulate:
+    post:
+      tags: [hazards]
+      summary: Simulate hazard events
+      description: |
+        Generate stochastic hazard events for specified peril types and regions.
+
+        Event generation methods:
+        - Monte Carlo simulation
+        - Historical event resampling
+        - Parametric event modeling
+        - Climate-adjusted event sets
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EventSimulationRequest'
+      responses:
+        '200':
+          description: Event simulation completed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EventSimulationResponse'
+
+  /hazards/maps/generate:
+    post:
+      tags: [hazards]
+      summary: Generate hazard maps
+      description: |
+        Generate hazard intensity maps for specified return periods and scenarios.
+
+        Map formats supported:
+        - Raster grids (GeoTIFF, NetCDF)
+        - Vector contours (GeoJSON, Shapefile)
+        - Statistical summaries (CSV, JSON)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/HazardMapRequest'
+      responses:
+        '200':
+          description: Hazard maps generated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HazardMapResponse'
+
+  # Vulnerability Assessment Endpoints
+  /vulnerability/curves/generate:
+    post:
+      tags: [vulnerability]
+      summary: Generate vulnerability curves
+      description: |
+        Generate vulnerability curves for specified asset types and hazard combinations.
+
+        Curve types supported:
+        - Damage ratio curves
+        - Loss ratio curves
+        - Fragility curves
+        - Custom vulnerability functions
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/VulnerabilityCurveRequest'
+      responses:
+        '200':
+          description: Vulnerability curves generated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VulnerabilityCurveResponse'
+
+  # Exposure Analysis Endpoints
+  /exposure/analyze:
+    post:
+      tags: [exposure]
+      summary: Analyze exposure data
+      description: |
+        Analyze exposure concentrations and values across geographic regions.
+
+        Analysis capabilities:
+        - Asset inventory analysis
+        - Value concentration mapping
+        - Exposure aggregation by administrative boundaries
+        - Time-variant exposure analysis (population movements)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ExposureAnalysisRequest'
+      responses:
+        '200':
+          description: Exposure analysis completed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ExposureAnalysisResponse'
+
+  # Insurance and Financial Analysis
+  /insurance/price:
+    post:
+      tags: [insurance]
+      summary: Calculate insurance pricing
+      description: |
+        Calculate technical and market insurance pricing for various coverage types.
+
+        Pricing methodologies:
+        - Technical pricing (actuarial)
+        - Risk-loaded pricing
+        - Market-adjusted pricing
+        - Experience-rated pricing
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/InsurancePricingRequest'
+      responses:
+        '200':
+          description: Insurance pricing calculated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InsurancePricingResponse'
+
+  # Climate Risk Integration
+  /climate/scenarios/analyze:
+    post:
+      tags: [climate]
+      summary: Analyze climate risk scenarios
+      description: |
+        Analyze risks under various climate change scenarios and time horizons.
+
+        Climate scenarios supported:
+        - RCP scenarios (RCP2.6, RCP4.5, RCP8.5)
+        - SSP scenarios (SSP1-1.9, SSP1-2.6, SSP2-4.5, SSP3-7.0, SSP5-8.5)
+        - Custom climate projections
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ClimateRiskRequest'
+      responses:
+        '200':
+          description: Climate risk analysis completed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ClimateRiskResponse'
+
+  # Real-time Monitoring
+  /monitoring/stream:
+    get:
+      tags: [monitoring]
+      summary: Stream real-time risk data
+      description: |
+        Stream real-time risk monitoring data and alerts.
+
+        Data streams available:
+        - Hazard monitoring (weather, seismic, etc.)
+        - Exposure monitoring (asset status, population movements)
+        - Loss monitoring (claims, damage assessments)
+        - Alert streams (threshold breaches, anomalies)
+      parameters:
+        - name: stream_type
+          in: query
+          required: true
+          schema:
+            type: string
+            enum: [hazards, exposure, losses, alerts]
+        - name: format
+          in: query
+          schema:
+            type: string
+            enum: [json, csv, geojson]
+            default: json
+      responses:
+        '200':
+          description: Real-time data stream
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RiskDataStream'
+
+  # Model Management
+  /models/status:
+    get:
+      tags: [models, system]
+      summary: Get model status
+      description: Check status and health of all risk models
+      responses:
+        '200':
+          description: Model status retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModelStatusResponse'
+
+  /models/calibrate:
+    post:
+      tags: [models]
+      summary: Calibrate risk models
+      description: |
+        Calibrate model parameters using historical data and validation metrics.
+
+        Calibration methods:
+        - Maximum likelihood estimation
+        - Bayesian inference
+        - Cross-validation optimization
+        - Ensemble model calibration
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ModelCalibrationRequest'
+      responses:
+        '200':
+          description: Model calibration completed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModelCalibrationResponse'
+
+  # Data Management
+  /data/upload:
+    post:
+      tags: [data]
+      summary: Upload risk data
+      description: |
+        Upload exposure, hazard, or vulnerability data for analysis.
+
+        Supported formats:
+        - CSV with geospatial coordinates
+        - GeoJSON for vector data
+        - GeoTIFF/NetCDF for raster data
+        - Shapefile for administrative boundaries
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/DataUploadRequest'
+      responses:
+        '201':
+          description: Data uploaded successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DataUploadResponse'
+
+  # Legacy endpoints (for backward compatibility)
+  /assessments:
+    get:
+      tags: [analysis]
+      summary: List risk assessments
+      description: Retrieve list of risk assessments (legacy endpoint)
+      parameters:
+        - name: project_id
+          in: query
+          schema:
+            type: string
+        - name: status
+          in: query
+          schema:
+            type: string
+            enum: [draft, in_progress, completed, approved]
+        - name: risk_level
+          in: query
+          schema:
+            type: string
+            enum: [low, medium, high, critical]
+      responses:
+        '200':
+          description: Risk assessments retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AssessmentListResponse'
+
+    post:
+      tags: [analysis]
+      summary: Create risk assessment
+      description: Create a new risk assessment (legacy endpoint)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AssessmentRequest'
+      responses:
+        '201':
+          description: Risk assessment created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AssessmentResponse'
+
+  /assessments/{assessment_id}:
+    get:
+      tags: [analysis]
+      summary: Get assessment details
+      description: Retrieve detailed information about a specific risk assessment (legacy endpoint)
+      parameters:
+        - name: assessment_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Assessment details retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AssessmentResponse'
+
+  /threats:
+    get:
+      tags: [threats]
+      summary: List threats
+      description: Retrieve list of identified threats
+      parameters:
+        - name: category
+          in: query
+          schema:
+            type: string
+            enum: [cyber, physical, operational, strategic, environmental]
+        - name: severity
+          in: query
+          schema:
+            type: string
+            enum: [low, medium, high, critical]
+        - name: status
+          in: query
+          schema:
+            type: string
+            enum: [active, mitigated, monitoring, resolved]
+      responses:
+        '200':
+          description: Threats retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ThreatListResponse'
+
+    post:
+      tags: [threats]
+      summary: Create threat
+      description: Create a new threat entry
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ThreatRequest'
+      responses:
+        '201':
+          description: Threat created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ThreatResponse'
+
+  /vulnerabilities:
+    get:
+      tags: [vulnerabilities]
+      summary: List vulnerabilities
+      description: Retrieve list of system vulnerabilities
+      parameters:
+        - name: system_id
+          in: query
+          schema:
+            type: string
+        - name: severity
+          in: query
+          schema:
+            type: string
+            enum: [low, medium, high, critical]
+        - name: status
+          in: query
+          schema:
+            type: string
+            enum: [open, in_progress, resolved, false_positive]
+      responses:
+        '200':
+          description: Vulnerabilities retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VulnerabilityListResponse'
+
+    post:
+      tags: [vulnerabilities]
+      summary: Create vulnerability
+      description: Create a new vulnerability entry
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/VulnerabilityRequest'
+      responses:
+        '201':
+          description: Vulnerability created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VulnerabilityResponse'
+
+  /mitigation/plans:
+    get:
+      tags: [mitigation]
+      summary: List mitigation plans
+      description: Retrieve list of risk mitigation plans
+      parameters:
+        - name: risk_id
+          in: query
+          schema:
+            type: string
+        - name: status
+          in: query
+          schema:
+            type: string
+            enum: [draft, approved, in_progress, completed]
+      responses:
+        '200':
+          description: Mitigation plans retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MitigationPlanListResponse'
+
+    post:
+      tags: [mitigation]
+      summary: Create mitigation plan
+      description: Create a new risk mitigation plan
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MitigationPlanRequest'
+      responses:
+        '201':
+          description: Mitigation plan created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MitigationPlanResponse'
+
+  /monitoring/dashboard:
+    get:
+      tags: [monitoring]
+      summary: Get risk monitoring dashboard
+      description: Retrieve risk monitoring dashboard data
+      responses:
+        '200':
+          description: Dashboard data retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RiskDashboardResponse'
+
+  /health:
+    get:
+      tags: [system]
+      summary: Health check
+      description: Check system health and status
+      responses:
+        '200':
+          description: System is healthy
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthResponse'
+
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+      description: API key for authentication
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: JWT token for authentication
+    OAuth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://auth.geo-infer.org/authorize
+          tokenUrl: https://auth.geo-infer.org/token
+          scopes:
+            read:risk: Read access to risk data
+            write:risk: Write access to risk data
+            admin:risk: Administrative access to risk systems
+
+  schemas:
+    # Core Risk Analysis Schemas
+    RiskAssessmentRequest:
+      type: object
+      required: [analysis_type, hazards, region]
+      properties:
+        analysis_type:
+          type: string
+          enum: [multi_hazard, single_hazard, portfolio, stress_test]
+        hazards:
+          type: array
+          items:
+            $ref: '#/components/schemas/HazardSpecification'
+        region:
+          $ref: '#/components/schemas/GeographicRegion'
+        vulnerability_models:
+          type: array
+          items:
+            $ref: '#/components/schemas/VulnerabilityModelSpec'
+        exposure_data:
+          $ref: '#/components/schemas/ExposureDataSpec'
+        analysis_parameters:
+          $ref: '#/components/schemas/AnalysisParameters'
+        output_formats:
+          type: array
+          items:
+            type: string
+            enum: [geojson, csv, shapefile, netcdf, json]
+        include_uncertainty:
+          type: boolean
+          default: true
+
+    RiskAssessmentResponse:
+      type: object
+      properties:
+        analysis_id:
+          type: string
+        status:
+          type: string
+          enum: [completed, running, failed, queued]
+        results:
+          $ref: '#/components/schemas/RiskAnalysisResults'
+        metadata:
+          $ref: '#/components/schemas/AnalysisMetadata'
+        created_at:
+          type: string
+          format: date-time
+        completed_at:
+          type: string
+          format: date-time
+
+    # Portfolio Analysis Schemas
+    PortfolioRiskRequest:
+      type: object
+      required: [portfolio_id, analysis_type]
+      properties:
+        portfolio_id:
+          type: string
+        analysis_type:
+          type: string
+          enum: [aggregation, correlation, optimization, diversification]
+        aggregation_level:
+          type: string
+          enum: [location, county, state, region, global]
+        correlation_model:
+          type: string
+          enum: [independent, spatial, temporal, copula]
+        risk_metrics:
+          type: array
+          items:
+            type: string
+            enum: [aal, oep, ep_curve, pml, var, tvar, std_dev]
+
+    PortfolioRiskResponse:
+      type: object
+      properties:
+        portfolio_id:
+          type: string
+        analysis_id:
+          type: string
+        aggregated_risk:
+          $ref: '#/components/schemas/PortfolioRiskMetrics'
+        by_asset_type:
+          type: object
+          additionalProperties:
+            $ref: '#/components/schemas/AssetTypeRiskMetrics'
+        by_hazard_type:
+          type: object
+          additionalProperties:
+            $ref: '#/components/schemas/HazardRiskMetrics'
+        correlation_matrix:
+          type: array
+          items:
+            type: array
+            items:
+              type: number
+
+    # Hazard Modeling Schemas
+    HazardSpecification:
+      type: object
+      required: [hazard_type]
+      properties:
+        hazard_type:
+          type: string
+          enum: [earthquake, flood, hurricane, wildfire, tornado, drought, landslide, tsunami]
+        return_periods:
+          type: array
+          items:
+            type: integer
+            minimum: 1
+            maximum: 10000
+        include_climate_change:
+          type: boolean
+          default: false
+        climate_scenario:
+          type: string
+          enum: [rcp2.6, rcp4.5, rcp8.5, ssp1-1.9, ssp1-2.6, ssp2-4.5, ssp3-7.0, ssp5-8.5]
+        intensity_measure:
+          type: string
+        parameters:
+          type: object
+          additionalProperties: true
+
+    EventSimulationRequest:
+      type: object
+      required: [hazard_types, region, num_events]
+      properties:
+        hazard_types:
+          type: array
+          items:
+            type: string
+            enum: [earthquake, flood, hurricane, wildfire, tornado, drought, landslide, tsunami]
+        region:
+          $ref: '#/components/schemas/GeographicRegion'
+        num_events:
+          type: integer
+          minimum: 100
+          maximum: 100000
+        simulation_method:
+          type: string
+          enum: [monte_carlo, historical, parametric, hybrid]
+        time_horizon:
+          type: integer
+          minimum: 1
+          maximum: 1000
+        include_climate_adjustment:
+          type: boolean
+          default: false
+
+    EventSimulationResponse:
+      type: object
+      properties:
+        simulation_id:
+          type: string
+        events:
+          type: array
+          items:
+            $ref: '#/components/schemas/HazardEvent'
+        summary_statistics:
+          $ref: '#/components/schemas/EventStatistics'
+        metadata:
+          $ref: '#/components/schemas/SimulationMetadata'
+
+    # Vulnerability Assessment Schemas
+    VulnerabilityModelSpec:
+      type: object
+      required: [model_type]
+      properties:
+        model_type:
+          type: string
+          enum: [building, infrastructure, population, business]
+        classification_scheme:
+          type: string
+          enum: [hazus, european, custom, gem, fema]
+        include_factors:
+          type: array
+          items:
+            type: string
+        uncertainty_method:
+          type: string
+          enum: [none, monte_carlo, bootstrap, bayesian]
+        parameters:
+          type: object
+          additionalProperties: true
+
+    VulnerabilityCurveRequest:
+      type: object
+      required: [asset_types, hazard_types]
+      properties:
+        asset_types:
+          type: array
+          items:
+            type: string
+        hazard_types:
+          type: array
+          items:
+            type: string
+        intensity_ranges:
+          type: object
+          additionalProperties:
+            type: object
+            properties:
+              min:
+                type: number
+              max:
+                type: number
+              steps:
+                type: integer
+        curve_format:
+          type: string
+          enum: [damage_ratio, loss_ratio, fragility]
+
+    VulnerabilityCurveResponse:
+      type: object
+      properties:
+        curves:
+          type: object
+          additionalProperties:
+            type: object
+            additionalProperties:
+              $ref: '#/components/schemas/VulnerabilityCurve'
+        metadata:
+          $ref: '#/components/schemas/CurveMetadata'
+
+    # Exposure Analysis Schemas
+    ExposureDataSpec:
+      type: object
+      properties:
+        data_sources:
+          type: array
+          items:
+            type: string
+        exposure_types:
+          type: array
+          items:
+            type: string
+            enum: [property, population, infrastructure, business]
+        aggregation_level:
+          type: string
+          enum: [building, block, census_tract, county, state, region]
+        include_time_variation:
+          type: boolean
+          default: false
+        time_scenarios:
+          type: array
+          items:
+            type: string
+            enum: [day, night, commute, weekend, holiday]
+
+    ExposureAnalysisRequest:
+      type: object
+      required: [region]
+      properties:
+        region:
+          $ref: '#/components/schemas/GeographicRegion'
+        exposure_types:
+          type: array
+          items:
+            type: string
+            enum: [property, population, infrastructure, business]
+        analysis_metrics:
+          type: array
+          items:
+            type: string
+            enum: [total_value, concentration, density, vulnerability]
+        spatial_resolution:
+          type: number
+          minimum: 0.001
+          maximum: 100.0
+
+    ExposureAnalysisResponse:
+      type: object
+      properties:
+        analysis_id:
+          type: string
+        exposure_summary:
+          $ref: '#/components/schemas/ExposureSummary'
+        spatial_analysis:
+          $ref: '#/components/schemas/SpatialExposureAnalysis'
+        temporal_analysis:
+          $ref: '#/components/schemas/TemporalExposureAnalysis'
+
+    # Insurance Analysis Schemas
+    InsurancePricingRequest:
+      type: object
+      required: [coverage_type, risk_profile]
+      properties:
+        coverage_type:
+          type: string
+          enum: [property, liability, catastrophe, business_interruption]
+        risk_profile:
+          $ref: '#/components/schemas/RiskProfile'
+        pricing_method:
+          type: string
+          enum: [technical, risk_loaded, market_adjusted, experience_rated]
+        include_expenses:
+          type: boolean
+          default: true
+        expense_ratio:
+          type: number
+          minimum: 0.0
+          maximum: 1.0
+        profit_loading:
+          type: number
+          minimum: 0.0
+          maximum: 1.0
+
+    InsurancePricingResponse:
+      type: object
+      properties:
+        pricing_id:
+          type: string
+        technical_premium:
+          type: number
+        loaded_premium:
+          type: number
+        market_premium:
+          type: number
+        risk_metrics:
+          $ref: '#/components/schemas/RiskMetrics'
+        breakdown:
+          $ref: '#/components/schemas/PricingBreakdown'
+
+    # Climate Risk Schemas
+    ClimateRiskRequest:
+      type: object
+      required: [baseline_year, target_years, scenarios]
+      properties:
+        baseline_year:
+          type: integer
+          minimum: 1950
+          maximum: 2025
+        target_years:
+          type: array
+          items:
+            type: integer
+            minimum: 2030
+            maximum: 2100
+        scenarios:
+          type: array
+          items:
+            type: string
+            enum: [rcp2.6, rcp4.5, rcp8.5, ssp1-1.9, ssp1-2.6, ssp2-4.5, ssp3-7.0, ssp5-8.5]
+        adaptation_measures:
+          type: array
+          items:
+            type: string
+        socioeconomic_factors:
+          $ref: '#/components/schemas/SocioeconomicFactors'
+
+    ClimateRiskResponse:
+      type: object
+      properties:
+        analysis_id:
+          type: string
+        baseline_risk:
+          $ref: '#/components/schemas/RiskAnalysisResults'
+        projected_risk:
+          type: object
+          additionalProperties:
+            $ref: '#/components/schemas/RiskAnalysisResults'
+        adaptation_analysis:
+          $ref: '#/components/schemas/AdaptationAnalysis'
+
+    # Model Management Schemas
+    ModelCalibrationRequest:
+      type: object
+      required: [model_types, calibration_data]
+      properties:
+        model_types:
+          type: array
+          items:
+            type: string
+            enum: [hazard, vulnerability, exposure, insurance]
+        calibration_data:
+          $ref: '#/components/schemas/CalibrationData'
+        method:
+          type: string
+          enum: [maximum_likelihood, bayesian, cross_validation, ensemble]
+        validation_metrics:
+          type: array
+          items:
+            type: string
+            enum: [mse, rmse, mae, r2, aic, bic]
+
+    ModelCalibrationResponse:
+      type: object
+      properties:
+        calibration_id:
+          type: string
+        calibrated_parameters:
+          type: object
+          additionalProperties: true
+        validation_scores:
+          type: object
+          additionalProperties:
+            type: number
+        model_performance:
+          $ref: '#/components/schemas/ModelPerformance'
+
+    # Data Management Schemas
+    DataUploadRequest:
+      type: object
+      required: [data_type, file]
+      properties:
+        data_type:
+          type: string
+          enum: [exposure, hazard, vulnerability, historical, administrative]
+        file:
+          type: string
+          format: binary
+        format:
+          type: string
+          enum: [csv, geojson, shapefile, geotiff, netcdf]
+        metadata:
+          type: object
+          additionalProperties: true
+        validation_rules:
+          type: object
+          additionalProperties: true
+
+    DataUploadResponse:
+      type: object
+      properties:
+        upload_id:
+          type: string
+        status:
+          type: string
+          enum: [success, validation_failed, processing_failed]
+        validation_results:
+          $ref: '#/components/schemas/ValidationResults'
+        data_summary:
+          $ref: '#/components/schemas/DataSummary'
+        processed_file:
+          type: string
+
+    # Supporting Data Models
+    GeographicRegion:
+      type: object
+      properties:
+        bounds:
+          type: object
+          properties:
+            min_lon:
+              type: number
+              minimum: -180
+              maximum: 180
+            max_lon:
+              type: number
+              minimum: -180
+              maximum: 180
+            min_lat:
+              type: number
+              minimum: -90
+              maximum: 90
+            max_lat:
+              type: number
+              minimum: -90
+              maximum: 90
+        polygon:
+          type: array
+          items:
+            type: array
+            items:
+              type: number
+        administrative_units:
+          type: array
+          items:
+            type: string
+
+    AnalysisParameters:
+      type: object
+      properties:
+        monte_carlo_iterations:
+          type: integer
+          minimum: 100
+          maximum: 100000
+          default: 1000
+        confidence_level:
+          type: number
+          minimum: 0.5
+          maximum: 0.99
+          default: 0.95
+        time_horizon:
+          type: integer
+          minimum: 1
+          maximum: 500
+          default: 50
+        spatial_resolution:
+          type: number
+          minimum: 0.001
+          maximum: 100.0
+        include_secondary_perils:
+          type: boolean
+          default: true
+        correlation_model:
+          type: string
+          enum: [independent, spatial, temporal, copula]
+
+    RiskAnalysisResults:
+      type: object
+      properties:
+        average_annual_loss:
+          type: number
+        exceedance_probability_curve:
+          $ref: '#/components/schemas/ExceedanceProbabilityCurve'
+        return_period_losses:
+          type: object
+          additionalProperties:
+            type: number
+        uncertainty_bounds:
+          $ref: '#/components/schemas/UncertaintyBounds'
+        by_hazard_type:
+          type: object
+          additionalProperties:
+            $ref: '#/components/schemas/HazardRiskResults'
+
+    HazardEvent:
+      type: object
+      properties:
+        event_id:
+          type: string
+        hazard_type:
+          type: string
+        timestamp:
+          type: string
+          format: date-time
+        location:
+          type: object
+          properties:
+            latitude:
+              type: number
+            longitude:
+              type: number
+            depth:
+              type: number
+        intensity:
+          type: number
+        footprint:
+          $ref: '#/components/schemas/HazardFootprint'
+        metadata:
+          type: object
+          additionalProperties: true
+
+    VulnerabilityCurve:
+      type: object
+      properties:
+        intensity_values:
+          type: array
+          items:
+            type: number
+        damage_ratios:
+          type: array
+          items:
+            type: number
+        curve_type:
+          type: string
+          enum: [damage_ratio, loss_ratio, fragility]
+        interpolation_method:
+          type: string
+          enum: [linear, log_linear, power]
+
+    ExposureSummary:
+      type: object
+      properties:
+        total_value:
+          type: number
+        asset_count:
+          type: integer
+        by_type:
+          type: object
+          additionalProperties:
+            type: object
+            properties:
+              count:
+                type: integer
+              value:
+                type: number
+        concentration_areas:
+          type: array
+          items:
+            $ref: '#/components/schemas/GeographicRegion'
+
+    RiskMetrics:
+      type: object
+      properties:
+        expected_loss:
+          type: number
+        value_at_risk:
+          type: number
+        tail_value_at_risk:
+          type: number
+        standard_deviation:
+          type: number
+        confidence_intervals:
+          type: object
+          additionalProperties:
+            type: number
+
+    ExceedanceProbabilityCurve:
+      type: object
+      properties:
+        return_periods:
+          type: array
+          items:
+            type: number
+        losses:
+          type: array
+          items:
+            type: number
+        exceedance_probabilities:
+          type: array
+          items:
+            type: number
+
+    UncertaintyBounds:
+      type: object
+      properties:
+        lower_bound:
+          type: number
+        upper_bound:
+          type: number
+        confidence_level:
+          type: number
+        method:
+          type: string
+
+    HazardRiskResults:
+      type: object
+      properties:
+        average_annual_loss:
+          type: number
+        event_count:
+          type: integer
+        max_loss:
+          type: number
+        risk_contribution:
+          type: number
+
+    RiskProfile:
+      type: object
+      properties:
+        location:
+          type: object
+          properties:
+            latitude:
+              type: number
+            longitude:
+              type: number
+        asset_value:
+          type: number
+        asset_type:
+          type: string
+        construction_type:
+          type: string
+        year_built:
+          type: integer
+        hazard_exposure:
+          type: object
+          additionalProperties:
+            type: number
+
+    PricingBreakdown:
+      type: object
+      properties:
+        pure_premium:
+          type: number
+        expense_loading:
+          type: number
+        profit_loading:
+          type: number
+        risk_loading:
+          type: number
+        total_premium:
+          type: number
+
+    SocioeconomicFactors:
+      type: object
+      properties:
+        population_growth:
+          type: number
+        economic_growth:
+          type: number
+        urbanization_rate:
+          type: number
+        infrastructure_development:
+          type: number
+
+    AdaptationAnalysis:
+      type: object
+      properties:
+        effectiveness_metrics:
+          type: object
+          additionalProperties:
+            type: number
+        cost_benefit_analysis:
+          $ref: '#/components/schemas/CostBenefitAnalysis'
+        implementation_timeline:
+          type: array
+          items:
+            $ref: '#/components/schemas/AdaptationMeasure'
+
+    HazardFootprint:
+      type: object
+      properties:
+        bounds:
+          $ref: '#/components/schemas/GeographicRegion'
+        intensity_grid:
+          type: array
+          items:
+            type: array
+            items:
+              type: number
+        resolution:
+          type: number
+
+    ValidationResults:
+      type: object
+      properties:
+        is_valid:
+          type: boolean
+        errors:
+          type: array
+          items:
+            type: string
+        warnings:
+          type: array
+          items:
+            type: string
+
+    DataSummary:
+      type: object
+      properties:
+        record_count:
+          type: integer
+        field_count:
+          type: integer
+        data_types:
+          type: object
+          additionalProperties:
+            type: string
+        spatial_bounds:
+          $ref: '#/components/schemas/GeographicRegion'
+        value_range:
+          type: object
+          properties:
+            min:
+              type: number
+            max:
+              type: number
+
+    ModelPerformance:
+      type: object
+      properties:
+        training_score:
+          type: number
+        validation_score:
+          type: number
+        test_score:
+          type: number
+        cross_validation_scores:
+          type: array
+          items:
+            type: number
+
+    CalibrationData:
+      type: object
+      properties:
+        historical_events:
+          type: array
+          items:
+            $ref: '#/components/schemas/HazardEvent'
+        validation_metrics:
+          type: array
+          items:
+            type: string
+
+    # Legacy schemas (for backward compatibility)
+    AssessmentRequest:
+      type: object
+      required: [name, scope, methodology]
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+        scope:
+          type: object
+          additionalProperties: true
+        methodology:
+          type: string
+          enum: [qualitative, quantitative, hybrid]
+        project_id:
+          type: string
+        assessor:
+          type: string
+        stakeholders:
+          type: array
+          items:
+            type: string
+        timeline:
+          type: object
+          properties:
+            start_date:
+              type: string
+              format: date
+            end_date:
+              type: string
+              format: date
+
+    # Missing schema definitions that are referenced in the API
+    AnalysisMetadata:
+      type: object
+      properties:
+        created_by:
+          type: string
+        model_versions:
+          type: object
+          additionalProperties:
+            type: string
+        processing_time:
+          type: number
+        data_sources:
+          type: array
+          items:
+            type: string
+
+    PortfolioRiskMetrics:
+      type: object
+      properties:
+        total_aal:
+          type: number
+        diversified_aal:
+          type: number
+        concentration_ratio:
+          type: number
+        risk_contribution:
+          type: object
+          additionalProperties:
+            type: number
+
+    AssetTypeRiskMetrics:
+      type: object
+      properties:
+        average_annual_loss:
+          type: number
+        value_at_risk:
+          type: number
+        exposure_value:
+          type: number
+        risk_density:
+          type: number
+
+    HazardRiskMetrics:
+      type: object
+      properties:
+        average_annual_loss:
+          type: number
+        event_probability:
+          type: number
+        max_loss:
+          type: number
+        risk_score:
+          type: number
+
+    EventStatistics:
+      type: object
+      properties:
+        total_events:
+          type: integer
+        mean_intensity:
+          type: number
+        max_intensity:
+          type: number
+        spatial_distribution:
+          $ref: '#/components/schemas/GeographicRegion'
+
+    SimulationMetadata:
+      type: object
+      properties:
+        simulation_method:
+          type: string
+        random_seed:
+          type: integer
+        convergence_criteria:
+          type: string
+        validation_metrics:
+          type: object
+          additionalProperties:
+            type: number
+
+    CurveMetadata:
+      type: object
+      properties:
+        data_sources:
+          type: array
+          items:
+            type: string
+        calibration_method:
+          type: string
+        uncertainty_bounds:
+          type: object
+          additionalProperties:
+            type: number
+
+    SpatialExposureAnalysis:
+      type: object
+      properties:
+        concentration_map:
+          $ref: '#/components/schemas/GeographicRegion'
+        density_analysis:
+          type: object
+          additionalProperties:
+            type: number
+        accessibility_metrics:
+          type: object
+          additionalProperties:
+            type: number
+
+    TemporalExposureAnalysis:
+      type: object
+      properties:
+        time_series_data:
+          type: array
+          items:
+            type: object
+            properties:
+              timestamp:
+                type: string
+                format: date-time
+              exposure_value:
+                type: number
+        seasonal_patterns:
+          type: object
+          additionalProperties:
+            type: number
+        peak_exposure_times:
+          type: array
+          items:
+            type: string
+            format: date-time
+
+    StressTestRequest:
+      type: object
+      required: [scenario_type, portfolio_id]
+      properties:
+        scenario_type:
+          type: string
+          enum: [historical, synthetic, climate, regulatory]
+        portfolio_id:
+          type: string
+        severity_level:
+          type: string
+          enum: [moderate, severe, extreme]
+        time_horizon:
+          type: integer
+          minimum: 1
+          maximum: 100
+
+    StressTestResponse:
+      type: object
+      properties:
+        stress_test_id:
+          type: string
+        baseline_metrics:
+          $ref: '#/components/schemas/RiskMetrics'
+        stressed_metrics:
+          $ref: '#/components/schemas/RiskMetrics'
+        impact_analysis:
+          type: object
+          additionalProperties:
+            type: number
+
+    HazardMapRequest:
+      type: object
+      required: [hazard_types, region, return_periods]
+      properties:
+        hazard_types:
+          type: array
+          items:
+            type: string
+        region:
+          $ref: '#/components/schemas/GeographicRegion'
+        return_periods:
+          type: array
+          items:
+            type: integer
+        output_format:
+          type: string
+          enum: [geotiff, netcdf, geojson, shapefile]
+        spatial_resolution:
+          type: number
+
+    HazardMapResponse:
+      type: object
+      properties:
+        map_id:
+          type: string
+        maps:
+          type: array
+          items:
+            $ref: '#/components/schemas/HazardMap'
+        download_url:
+          type: string
+
+    HazardMap:
+      type: object
+      properties:
+        hazard_type:
+          type: string
+        return_period:
+          type: integer
+        bounds:
+          $ref: '#/components/schemas/GeographicRegion'
+        file_url:
+          type: string
+        metadata:
+          type: object
+          additionalProperties: true
+
+    AsyncJobResponse:
+      type: object
+      properties:
+        job_id:
+          type: string
+        status:
+          type: string
+          enum: [queued, running, completed, failed]
+        progress:
+          type: number
+          minimum: 0
+          maximum: 100
+        estimated_completion:
+          type: string
+          format: date-time
+        result_url:
+          type: string
+
+    RiskDataStream:
+      type: object
+      properties:
+        stream_id:
+          type: string
+        data_type:
+          type: string
+        events:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+        timestamp:
+          type: string
+          format: date-time
+
+    ModelStatusResponse:
+      type: object
+      properties:
+        overall_status:
+          type: string
+          enum: [healthy, degraded, unhealthy]
+        model_statuses:
+          type: object
+          additionalProperties:
+            type: object
+            properties:
+              status:
+                type: string
+              version:
+                type: string
+              last_updated:
+                type: string
+                format: date-time
+
+    CostBenefitAnalysis:
+      type: object
+      properties:
+        net_present_value:
+          type: number
+        benefit_cost_ratio:
+          type: number
+        payback_period:
+          type: number
+        internal_rate_of_return:
+          type: number
+
+    AdaptationMeasure:
+      type: object
+      properties:
+        measure_type:
+          type: string
+        implementation_cost:
+          type: number
+        effectiveness_score:
+          type: number
+        timeline:
+          type: string
+
+    ErrorResponse:
+      type: object
+      properties:
+        error_code:
+          type: string
+        message:
+          type: string
+        details:
+          type: object
+          additionalProperties: true
+        request_id:
+          type: string
+
+    # Legacy schemas (for backward compatibility)
+    AssessmentResponse:
+      type: object
+      properties:
+        assessment_id:
+          type: string
+        name:
+          type: string
+        description:
+          type: string
+        scope:
+          type: object
+          additionalProperties: true
+        methodology:
+          type: string
+          enum: [qualitative, quantitative, hybrid]
+        status:
+          type: string
+          enum: [draft, in_progress, completed, approved]
+        risk_level:
+          type: string
+          enum: [low, medium, high, critical]
+        project_id:
+          type: string
+        assessor:
+          type: string
+        stakeholders:
+          type: array
+          items:
+            type: string
+        timeline:
+          type: object
+          additionalProperties: true
+        risks_identified:
+          type: integer
+        high_risks:
+          type: integer
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+
+    AssessmentListResponse:
+      type: object
+      properties:
+        assessments:
+          type: array
+          items:
+            $ref: '#/components/schemas/AssessmentResponse'
+        total_count:
+          type: integer
+
+    ThreatRequest:
+      type: object
+      required: [name, category, description]
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+        category:
+          type: string
+          enum: [cyber, physical, operational, strategic, environmental]
+        severity:
+          type: string
+          enum: [low, medium, high, critical]
+        likelihood:
+          type: string
+          enum: [very_low, low, medium, high, very_high]
+        impact:
+          type: string
+          enum: [negligible, minor, moderate, major, catastrophic]
+        source:
+          type: string
+        indicators:
+          type: array
+          items:
+            type: string
+        affected_assets:
+          type: array
+          items:
+            type: string
+
+    ThreatResponse:
+      type: object
+      properties:
+        threat_id:
+          type: string
+        name:
+          type: string
+        description:
+          type: string
+        category:
+          type: string
+        severity:
+          type: string
+        likelihood:
+          type: string
+        impact:
+          type: string
+        risk_score:
+          type: number
+        status:
+          type: string
+          enum: [active, mitigated, monitoring, resolved]
+        source:
+          type: string
+        indicators:
+          type: array
+          items:
+            type: string
+        affected_assets:
+          type: array
+          items:
+            type: string
+        first_detected:
+          type: string
+          format: date-time
+        last_updated:
+          type: string
+          format: date-time
+
+    ThreatListResponse:
+      type: object
+      properties:
+        threats:
+          type: array
+          items:
+            $ref: '#/components/schemas/ThreatResponse'
+        total_count:
+          type: integer
+
+    VulnerabilityRequest:
+      type: object
+      required: [title, description, severity]
+      properties:
+        title:
+          type: string
+        description:
+          type: string
+        severity:
+          type: string
+          enum: [low, medium, high, critical]
+        cvss_score:
+          type: number
+          minimum: 0
+          maximum: 10
+        cve_id:
+          type: string
+        system_id:
+          type: string
+        component:
+          type: string
+        exploit_available:
+          type: boolean
+        patch_available:
+          type: boolean
+        discovery_method:
+          type: string
+          enum: [scan, manual, reported, automated]
+
+    VulnerabilityResponse:
+      type: object
+      properties:
+        vulnerability_id:
+          type: string
+        title:
+          type: string
+        description:
+          type: string
+        severity:
+          type: string
+        cvss_score:
+          type: number
+        cve_id:
+          type: string
+        status:
+          type: string
+          enum: [open, in_progress, resolved, false_positive]
+        system_id:
+          type: string
+        component:
+          type: string
+        exploit_available:
+          type: boolean
+        patch_available:
+          type: boolean
+        discovery_method:
+          type: string
+        discovered_at:
+          type: string
+          format: date-time
+        resolved_at:
+          type: string
+          format: date-time
+
+    VulnerabilityListResponse:
+      type: object
+      properties:
+        vulnerabilities:
+          type: array
+          items:
+            $ref: '#/components/schemas/VulnerabilityResponse'
+        total_count:
+          type: integer
+
+    MitigationPlanRequest:
+      type: object
+      required: [name, risk_id, strategies]
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+        risk_id:
+          type: string
+        strategies:
+          type: array
+          items:
+            $ref: '#/components/schemas/MitigationStrategy'
+        priority:
+          type: string
+          enum: [low, medium, high, urgent]
+        budget:
+          type: number
+        timeline:
+          type: object
+          properties:
+            start_date:
+              type: string
+              format: date
+            target_completion:
+              type: string
+              format: date
+        responsible_party:
+          type: string
+
+    MitigationStrategy:
+      type: object
+      properties:
+        strategy_type:
+          type: string
+          enum: [avoid, mitigate, transfer, accept]
+        actions:
+          type: array
+          items:
+            type: string
+        resources_required:
+          type: array
+          items:
+            type: string
+        expected_effectiveness:
+          type: string
+          enum: [low, medium, high]
+        cost_estimate:
+          type: number
+
+    MitigationPlanResponse:
+      type: object
+      properties:
+        plan_id:
+          type: string
+        name:
+          type: string
+        description:
+          type: string
+        risk_id:
+          type: string
+        status:
+          type: string
+          enum: [draft, approved, in_progress, completed]
+        strategies:
+          type: array
+          items:
+            $ref: '#/components/schemas/MitigationStrategy'
+        priority:
+          type: string
+        budget:
+          type: number
+        timeline:
+          type: object
+          additionalProperties: true
+        responsible_party:
+          type: string
+        progress:
+          type: number
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+
+    MitigationPlanListResponse:
+      type: object
+      properties:
+        plans:
+          type: array
+          items:
+            $ref: '#/components/schemas/MitigationPlanResponse'
+        total_count:
+          type: integer
+
+    RiskDashboardResponse:
+      type: object
+      properties:
+        overall_risk_level:
+          type: string
+          enum: [low, medium, high, critical]
+        total_risks:
+          type: integer
+        risks_by_level:
+          type: object
+          properties:
+            critical:
+              type: integer
+            high:
+              type: integer
+            medium:
+              type: integer
+            low:
+              type: integer
+        active_threats:
+          type: integer
+        open_vulnerabilities:
+          type: integer
+        mitigation_plans_active:
+          type: integer
+        trend_data:
+          type: object
+          additionalProperties: true
+        recent_activities:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+
+    HealthResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          enum: [healthy, degraded, unhealthy]
+        version:
+          type: string
+        timestamp:
+          type: string
+          format: date-time
+
+    Error:
+      type: object
+      properties:
+        error:
+          type: string
+        message:
+          type: string
+

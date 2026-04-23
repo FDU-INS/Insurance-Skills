@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 2,
+    "_query": "insurance",
+    "author": "langcare",
+    "description": "Retrieves and analyzes FHIR Coverage and Organization resources to produce a structured insurance summary with\ncoordination of benefits analysis. Use when user asks to \"check insurance\", \"coverage details\", \"verify coverage\",\n\"insurance summary\", \"what plan is the patient on\", \"primary vs secondary insurance\", or \"coverage status\".\nDo NOT use for clinical data, demographics beyond insurance, or billing claim submission.",
+    "githubUrl": "https://github.com/langcare/langcare-mcp-fhir/tree/main/skills/core/patient-data-summary/insurance-coverage-summary",
+    "id": "langcare-langcare-mcp-fhir-skills-core-patient-data-summary-insurance-coverage-summary-skill-md",
+    "name": "insurance-coverage-summary",
+    "skillUrl": "https://skillsmp.com/skills/langcare-langcare-mcp-fhir-skills-core-patient-data-summary-insurance-coverage-summary-skill-md",
+    "stars": 25,
+    "updatedAt": 1770530695,
+    "owner": "langcare",
+    "repo": "langcare-mcp-fhir",
+    "branch": "main",
+    "subpath": "skills/core/patient-data-summary/insurance-coverage-summary",
+    "mode": "tree",
+    "repoKey": "langcare/langcare-mcp-fhir"
+  },
+  "resolved": {
+    "owner": "langcare",
+    "repo": "langcare-mcp-fhir",
+    "branch": "main",
+    "subpath": "skills/core/patient-data-summary/insurance-coverage-summary"
+  }
+}

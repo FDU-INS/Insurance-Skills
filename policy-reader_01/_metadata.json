@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 2,
+    "_query": "policy",
+    "author": "openclaw",
+    "description": "Reference tool for business — covers intro, quickstart, patterns and more. Quick lookup for Policy Reader concepts, best practices, and implementation patterns.",
+    "githubUrl": "https://github.com/diegosouzapw/awesome-omni-skill/tree/main/skills/data-ai/policypulse-development-pankajydv07",
+    "id": "openclaw-skills-skills-bytesagain3-policy-reader-skill-md",
+    "name": "policy-reader",
+    "skillUrl": "https://skillsmp.com/skills/openclaw-skills-skills-bytesagain3-policy-reader-skill-md",
+    "stars": 4094,
+    "updatedAt": 1774360966,
+    "is_insurance_related": "是",
+    "owner": "diegosouzapw",
+    "repo": "awesome-omni-skill",
+    "branch": "main",
+    "subpath": "skills/data-ai/policypulse-development-pankajydv07",
+    "mode": "tree",
+    "repoKey": "diegosouzapw/awesome-omni-skill"
+  },
+  "resolved": {
+    "owner": "diegosouzapw",
+    "repo": "awesome-omni-skill",
+    "branch": "main",
+    "subpath": "skills/data-ai/policypulse-development-pankajydv07"
+  }
+}

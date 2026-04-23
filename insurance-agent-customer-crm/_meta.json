@@ -1,0 +1,35 @@
+{
+  "ownerId": "",
+  "slug": "customer-profile-management",
+  "version": "1.0.3",
+  "description": "帮助保险代理人将pdf、Excel、Word、PPT等各类客户资料转化为个人客户信息资料库，方便小龙虾调用和使用，回答下列问题：\"帮我为下个月生日的客户撰写个性化的生日祝福\"、\"帮我为每个保单客户撰写一份个性化的理财活动邀约\"，等等。",
+  "publishedAt": 1775366400000,
+  "namespace": "ryanbihai",
+  "changelog": "v1.0.3: 修复 SKILL.md YAML frontmatter 格式问题，确保 description 被 ClawHub 正确解析",
+  "tags": [
+    "保险代理人",
+    "客户档案",
+    "客户管理",
+    "保单管理",
+    "保单录入",
+    "客户查询",
+    "保险CRM",
+    "insurance",
+    "insurance-agent",
+    "customer-management",
+    "policy-management",
+    "document-extraction"
+  ],
+  "security": {
+    "user_consent_required": false,
+    "config_paths_read": [],
+    "runtime_deps": [
+      "python:pandas",
+      "python:openpyxl",
+      "python:python-docx",
+      "python:python-pptx",
+      "python:pdfplumber",
+      "python:requests"
+    ]
+  }
+}

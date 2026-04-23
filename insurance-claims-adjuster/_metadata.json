@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 2,
+    "_query": "insurance",
+    "author": "majiayu000",
+    "description": "---",
+    "githubUrl": "https://github.com/majiayu000/claude-skill-registry/tree/main/skills/data/insurance-claims-adjuster",
+    "id": "majiayu000-claude-skill-registry-skills-data-insurance-claims-adjuster-skill-md",
+    "name": "insurance-claims-adjuster",
+    "skillUrl": "https://skillsmp.com/skills/majiayu000-claude-skill-registry-skills-data-insurance-claims-adjuster-skill-md",
+    "stars": 194,
+    "updatedAt": 1769094000,
+    "owner": "majiayu000",
+    "repo": "claude-skill-registry",
+    "branch": "main",
+    "subpath": "skills/data/insurance-claims-adjuster",
+    "mode": "tree",
+    "repoKey": "majiayu000/claude-skill-registry"
+  },
+  "resolved": {
+    "owner": "majiayu000",
+    "repo": "claude-skill-registry",
+    "branch": "main",
+    "subpath": "skills/data/insurance-claims-adjuster"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 9,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Drafts a compliant Commercial Invoice for Export satisfying customs, banking (L/C), logistics, and insurance requirements. Enforces Incoterms 2020, HS tariff classification, country-of-origin determination, export control referencing, and certification language. Use when preparing export invoices for customs authorities, freight forwarders, banks, or insurance underwriters.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/legal/commercial-invoice-for-export",
+    "id": "casemark-skills-skills-legal-commercial-invoice-for-export-skill-md",
+    "name": "commercial-invoice-for-export",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-legal-commercial-invoice-for-export-skill-md",
+    "stars": 12,
+    "updatedAt": 1772500417,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/commercial-invoice-for-export",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/commercial-invoice-for-export"
+  }
+}

@@ -1,0 +1,72 @@
+# CompliCore Connect Apps — Environment Variables Template
+# Copy to .env and fill in values for the connectors you need.
+# Never commit secrets to version control.
+
+# ─── PMS Providers ────────────────────────────────────────
+# Guesty (OAuth)
+GUESTY_CLIENT_ID=
+GUESTY_CLIENT_SECRET=
+
+# Hostaway (API Key)
+HOSTAWAY_API_KEY=
+HOSTAWAY_ACCOUNT_ID=
+
+# Lodgify (API Key)
+LODGIFY_API_KEY=
+
+# Beds24 (API Key)
+BEDS24_PROP_KEY=
+BEDS24_API_KEY=
+
+# Hostfully (OAuth)
+HOSTFULLY_CLIENT_ID=
+HOSTFULLY_CLIENT_SECRET=
+
+# ─── OTA Channels ────────────────────────────────────────
+# Airbnb (OAuth)
+AIRBNB_CLIENT_ID=
+AIRBNB_CLIENT_SECRET=
+
+# VRBO (API Key)
+VRBO_API_KEY=
+VRBO_ADVERTISER_ID=
+
+# Booking.com (API Key)
+BOOKINGCOM_API_KEY=
+BOOKINGCOM_HOTEL_ID=
+
+# ─── Payment Processors ──────────────────────────────────
+# Stripe (API Key)
+STRIPE_SECRET_KEY=
+STRIPE_PUBLISHABLE_KEY=
+STRIPE_WEBHOOK_SECRET=
+
+# PayPal (OAuth)
+PAYPAL_CLIENT_ID=
+PAYPAL_CLIENT_SECRET=
+
+# ─── Smart Locks ─────────────────────────────────────────
+# August (OAuth)
+AUGUST_CLIENT_ID=
+AUGUST_CLIENT_SECRET=
+
+# Schlage (API Key)
+SCHLAGE_API_KEY=
+
+# Yale (OAuth)
+YALE_CLIENT_ID=
+YALE_CLIENT_SECRET=
+
+# ─── Accounting ──────────────────────────────────────────
+# QuickBooks Online (OAuth)
+QUICKBOOKS_CLIENT_ID=
+QUICKBOOKS_CLIENT_SECRET=
+
+# Xero (OAuth)
+XERO_CLIENT_ID=
+XERO_CLIENT_SECRET=
+
+# ─── Insurance ───────────────────────────────────────────
+# Superhog (API Key)
+SUPERHOG_API_KEY=
+SUPERHOG_HOST_ID=

@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 10,
+    "_query": "insurance",
+    "author": "revfactory",
+    "description": "project risk managementversus riskidentification, probability·impactassessment, responsestrategyestablish, monitoringplan, statusreport agent team to Korean creation Full pipeline. 'risk management', 'risk etc.recorddepartment', 'risk managementversus', 'risk register', 'risk matrix', 'risk assessment', 'risk response', 'project risk management', 'risk monitoring', 'risk report', 'EMV analysis', 'risk ' etc. project risk management before skill usage. However, insurance total, risk(VaR/CVaR), actualtime risk dashboard whensystem building, ERM(beforecompany risk management) annual is outside this skill's scope.",
+    "githubUrl": "https://github.com/revfactory/harness-100/tree/main/en/88-risk-register/.claude/skills/risk-register",
+    "id": "revfactory-harness-100-en-88-risk-register-claude-skills-risk-register-skill-md",
+    "name": "risk-register",
+    "skillUrl": "https://skillsmp.com/skills/revfactory-harness-100-en-88-risk-register-claude-skills-risk-register-skill-md",
+    "stars": 556,
+    "updatedAt": 1774219315,
+    "owner": "revfactory",
+    "repo": "harness-100",
+    "branch": "main",
+    "subpath": "en/88-risk-register/.claude/skills/risk-register",
+    "mode": "tree",
+    "repoKey": "revfactory/harness-100"
+  },
+  "resolved": {
+    "owner": "revfactory",
+    "repo": "harness-100",
+    "branch": "main",
+    "subpath": "en/88-risk-register/.claude/skills/risk-register"
+  }
+}

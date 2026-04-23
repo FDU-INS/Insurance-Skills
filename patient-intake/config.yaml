@@ -1,0 +1,21 @@
+llm:
+  model: gemini/gemini-2.5-flash
+  temperature: 0.0
+  max_tokens: 4096
+  api_key_env: GEMINI_API_KEY
+
+apps:
+  - name: sop-bench
+    description: SOP-Bench patient intake tools
+    transport: stdio
+    command:
+      - uv
+      - --directory
+      - /Users/haldar/repos/gh/proceda
+      - run
+      - python
+      - benchmarks/sop_bench/mcp_bridge.py
+      - --domain
+      - patient_intake
+      - --data-dir
+      - /Users/haldar/repos/3p/sop-bench/src/amazon_sop_bench/benchmarks/data

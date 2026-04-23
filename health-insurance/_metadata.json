@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 3,
+    "_query": "insurance",
+    "author": "LJT-520",
+    "description": "Compare health insurance plans, estimate total yearly costs, and choose coverage that fits medical usage, prescriptions, and financial risk.",
+    "githubUrl": "https://github.com/LJT-520/openClaw-backup/tree/master/skills/ivangdavila/health-insurance",
+    "id": "ljt-520-openclaw-backup-skills-ivangdavila-health-insurance-skill-md",
+    "name": "health-insurance",
+    "skillUrl": "https://skillsmp.com/skills/ljt-520-openclaw-backup-skills-ivangdavila-health-insurance-skill-md",
+    "stars": 1,
+    "updatedAt": 1773374685,
+    "owner": "LJT-520",
+    "repo": "openClaw-backup",
+    "branch": "master",
+    "subpath": "skills/ivangdavila/health-insurance",
+    "mode": "tree",
+    "repoKey": "LJT-520/openClaw-backup"
+  },
+  "resolved": {
+    "owner": "LJT-520",
+    "repo": "openClaw-backup",
+    "branch": "master",
+    "subpath": "skills/ivangdavila/health-insurance"
+  }
+}

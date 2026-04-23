@@ -1,0 +1,4 @@
+interface:
+  display_name: "Eco Link Claims To Observations"
+  short_description: "Propose claim-observation evidence links"
+  default_prompt: "Use $eco-link-claims-to-observations to read claim-side and observation-side evidence objects, score support, contradiction, or contextual links between them, persist the link artifact, and return provenance-aware handoff refs with rule traces."

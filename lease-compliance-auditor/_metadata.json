@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 7,
+    "_query": "insurance",
+    "author": "reggiechan74",
+    "description": "Expert in lease compliance monitoring and obligation tracking. Use when auditing insurance requirements, verifying environmental compliance, checking use clause adherence, or monitoring covenant compliance. Key terms include insurance audit, CGL requirements, environmental compliance, use clause violations, covenant breach, notice requirements, cure periods",
+    "githubUrl": "https://github.com/reggiechan74/vp-real-estate/tree/main/.claude/skills/lease-compliance-auditor",
+    "id": "reggiechan74-vp-real-estate-claude-skills-lease-compliance-auditor-skill-md",
+    "name": "lease-compliance-auditor",
+    "skillUrl": "https://skillsmp.com/skills/reggiechan74-vp-real-estate-claude-skills-lease-compliance-auditor-skill-md",
+    "stars": 12,
+    "updatedAt": 1763076887,
+    "owner": "reggiechan74",
+    "repo": "vp-real-estate",
+    "branch": "main",
+    "subpath": ".claude/skills/lease-compliance-auditor",
+    "mode": "tree",
+    "repoKey": "reggiechan74/vp-real-estate"
+  },
+  "resolved": {
+    "owner": "reggiechan74",
+    "repo": "vp-real-estate",
+    "branch": "main",
+    "subpath": ".claude/skills/lease-compliance-auditor"
+  }
+}

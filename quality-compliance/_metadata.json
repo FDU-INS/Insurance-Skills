@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 17,
+    "_query": "compliance",
+    "author": "AeyeOps",
+    "description": "Contains verified SQMS No. 1 eight-component implementation checklists, Florida DBPR CPE/licensure rules (61H1-33, Chapter 473), and E&O claim-trigger analysis with loss prevention protocols. National standards (SQMS, NASBA, AICPA) plus Florida as the reference state jurisdiction. Quality management, peer review, CPE tracking, state board compliance, professional liability, independence monitoring, engagement inspection. Consult when designing or evaluating a firm QM system, preparing for peer review under SQMS, tracking CPE hours or verifying renewal compliance, managing multi-state practice privilege, resolving independence threats, building corrective action plans, screening clients for liability risk, or reviewing E&O coverage adequacy.",
+    "githubUrl": "https://github.com/Winbda/claude-skills-collection/tree/master/skills/underwriting-checklist",
+    "id": "aeyeops-aeo-basis-plugin-marketplace-plugins-firm-operations-skills-quality-compliance-skill-md",
+    "name": "quality-compliance",
+    "skillUrl": "https://skillsmp.com/skills/aeyeops-aeo-basis-plugin-marketplace-plugins-firm-operations-skills-quality-compliance-skill-md",
+    "stars": 0,
+    "updatedAt": 1773831587,
+    "is_insurance_related": "是",
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/underwriting-checklist",
+    "mode": "tree",
+    "repoKey": "Winbda/claude-skills-collection"
+  },
+  "resolved": {
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/underwriting-checklist"
+  }
+}

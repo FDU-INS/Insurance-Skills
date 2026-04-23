@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 7,
+    "_query": "insurance",
+    "author": "alongor666",
+    "description": "Diagnose and debug issues in the vehicle insurance data analysis platform. Use when user encounters errors, data not refreshing, filters not working, charts not displaying, API failures, or performance issues. Provides quick diagnostic checklists and proven troubleshooting steps specific to this Vue 3 + Flask + Pandas stack.",
+    "githubUrl": "https://github.com/alongor666/daylyreport/tree/main/.claude/skills/testing-and-debugging",
+    "id": "alongor666-daylyreport-claude-skills-testing-and-debugging-skill-md",
+    "name": "testing-and-debugging",
+    "skillUrl": "https://skillsmp.com/skills/alongor666-daylyreport-claude-skills-testing-and-debugging-skill-md",
+    "stars": 0,
+    "updatedAt": 1762677552,
+    "owner": "alongor666",
+    "repo": "daylyreport",
+    "branch": "main",
+    "subpath": ".claude/skills/testing-and-debugging",
+    "mode": "tree",
+    "repoKey": "alongor666/daylyreport"
+  },
+  "resolved": {
+    "owner": "alongor666",
+    "repo": "daylyreport",
+    "branch": "main",
+    "subpath": ".claude/skills/testing-and-debugging"
+  }
+}

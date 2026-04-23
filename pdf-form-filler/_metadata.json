@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 11,
+    "_query": "insurance",
+    "author": "cdeistopened",
+    "description": "Use this skill whenever the user wants to fill out a PDF form, analyze PDF form fields, troubleshoot form field mapping, verify field identification accuracy, or export a filled PDF. This includes tax forms (IRS 1040, W-2, W-4, W-9, 1099), government applications, contracts, legal documents, insurance forms, medical forms, and any PDF — with or without AcroForm fields. Also triggers when the user reports wrong field mapping (\"it put 1f into 1d\"), vision analysis failures, wants to improve field extraction accuracy, or needs to fill a flat/non-fillable PDF via annotations. If the user mentions a fillable PDF, asks to populate form fields, or wants to write text onto a flat PDF form, use this skill.",
+    "githubUrl": "https://github.com/cdeistopened/skill-stack/tree/main/public/skills/pdf-form-filler",
+    "id": "cdeistopened-skill-stack-public-skills-pdf-form-filler-skill-md",
+    "name": "pdf-form-filler",
+    "skillUrl": "https://skillsmp.com/skills/cdeistopened-skill-stack-public-skills-pdf-form-filler-skill-md",
+    "stars": 8,
+    "updatedAt": 1773047203,
+    "owner": "cdeistopened",
+    "repo": "skill-stack",
+    "branch": "main",
+    "subpath": "public/skills/pdf-form-filler",
+    "mode": "tree",
+    "repoKey": "cdeistopened/skill-stack"
+  },
+  "resolved": {
+    "owner": "cdeistopened",
+    "repo": "skill-stack",
+    "branch": "main",
+    "subpath": "public/skills/pdf-form-filler"
+  }
+}

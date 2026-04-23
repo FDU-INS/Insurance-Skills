@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "actuarial",
+    "author": "writer",
+    "description": "Decompose and explain healthcare cost growth into contributing factors including utilization changes, unit price shifts, case mix evolution, and population changes. Use when analyzing PMPM cost trends, explaining cost variance to leadership, preparing actuarial summaries, or identifying cost reduction opportunities.",
+    "githubUrl": "https://github.com/hirokazu-kobayashi-koba-hiro/idp-server/tree/main/.claude/skills/spec-custom-claims",
+    "id": "writer-skills-skills-cost-driver-decomposition-skill-md",
+    "name": "cost-driver-decomposition",
+    "skillUrl": "https://skillsmp.com/skills/writer-skills-skills-cost-driver-decomposition-skill-md",
+    "stars": 3,
+    "updatedAt": 1772446788,
+    "is_insurance_related": "是",
+    "owner": "hirokazu-kobayashi-koba-hiro",
+    "repo": "idp-server",
+    "branch": "main",
+    "subpath": ".claude/skills/spec-custom-claims",
+    "mode": "tree",
+    "repoKey": "hirokazu-kobayashi-koba-hiro/idp-server"
+  },
+  "resolved": {
+    "owner": "hirokazu-kobayashi-koba-hiro",
+    "repo": "idp-server",
+    "branch": "main",
+    "subpath": ".claude/skills/spec-custom-claims"
+  }
+}

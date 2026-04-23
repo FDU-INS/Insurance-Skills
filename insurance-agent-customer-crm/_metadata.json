@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "insurance",
+    "author": "ryanbihai",
+    "description": "帮助保险代理人将pdf、Excel、Word、PPT等各类客户资料转化为个人客户信息资料库，方便小龙虾调用和使用，回答下列问题：\"帮我为下个月生日的客户撰写个性化的生日祝福\"、\"帮我为每个保单客户撰写一份个性化的理财活动邀约\"，等等。",
+    "githubUrl": "https://github.com/ryanbihai/customer-profile-management",
+    "id": "ryanbihai-customer-profile-management-skill-md",
+    "name": "insurance-agent-customer-crm",
+    "skillUrl": "https://skillsmp.com/skills/ryanbihai-customer-profile-management-skill-md",
+    "stars": 0,
+    "updatedAt": 1775468569,
+    "owner": "ryanbihai",
+    "repo": "customer-profile-management",
+    "branch": null,
+    "subpath": "",
+    "mode": "repo_root",
+    "repoKey": "ryanbihai/customer-profile-management"
+  },
+  "resolved": {
+    "owner": "ryanbihai",
+    "repo": "customer-profile-management",
+    "branch": "main",
+    "subpath": ""
+  }
+}

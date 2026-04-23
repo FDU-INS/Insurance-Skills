@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 8,
+    "_query": "insurance",
+    "author": "dabrewskie",
+    "description": "S3 Operations — Life logistics and admin staff for Tory Owens. Handles recurring tasks, document management, VA tracking, Guard administration, vehicle management, insurance, subscriptions, and any admin that falls through the cracks. Triggers on: \"Admin check\", \"VA update\", \"Guard admin\", \"Documents\", \"Insurance\", \"Subscriptions\", \"Recurring tasks\", \"Life admin\", \"What needs to get done\", \"Admin sweep\", \"What am I forgetting\".",
+    "githubUrl": "https://github.com/dabrewskie/owens-lifeos/tree/main/skills/_archive/life-admin",
+    "id": "dabrewskie-owens-lifeos-skills-archive-life-admin-skill-md",
+    "name": "life-admin",
+    "skillUrl": "https://skillsmp.com/skills/dabrewskie-owens-lifeos-skills-archive-life-admin-skill-md",
+    "stars": 0,
+    "updatedAt": 1774009271,
+    "owner": "dabrewskie",
+    "repo": "owens-lifeos",
+    "branch": "main",
+    "subpath": "skills/_archive/life-admin",
+    "mode": "tree",
+    "repoKey": "dabrewskie/owens-lifeos"
+  },
+  "resolved": {
+    "owner": "dabrewskie",
+    "repo": "owens-lifeos",
+    "branch": "main",
+    "subpath": "skills/_archive/life-admin"
+  }
+}

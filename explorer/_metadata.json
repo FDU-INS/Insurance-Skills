@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 10,
+    "_query": "insurance",
+    "author": "usecaselab",
+    "description": "Explore 122 Ethereum use case ideas from the Use Case Lab database. Use when the user asks about Ethereum use cases, wants to brainstorm product ideas, needs to research what's being built in a specific domain, or wants to find real-world examples of Ethereum applications. Covers 16 domains: AI, business operations, civil society, commerce, environment, finance, food & agriculture, government, health, identity, insurance, logistics & trade, media, real estate, science, and utilities. Each idea includes a problem statement, solution sketch, why Ethereum is needed, real project examples, and research resources.",
+    "githubUrl": "https://github.com/usecaselab/explorer/tree/main/public",
+    "id": "usecaselab-explorer-public-skill-md",
+    "name": "explorer",
+    "skillUrl": "https://skillsmp.com/skills/usecaselab-explorer-public-skill-md",
+    "stars": 0,
+    "updatedAt": 1774463028,
+    "owner": "usecaselab",
+    "repo": "explorer",
+    "branch": "main",
+    "subpath": "public",
+    "mode": "tree",
+    "repoKey": "usecaselab/explorer"
+  },
+  "resolved": {
+    "owner": "usecaselab",
+    "repo": "explorer",
+    "branch": "main",
+    "subpath": "public"
+  }
+}

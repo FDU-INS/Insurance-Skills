@@ -1,0 +1,35 @@
+document_type,section_name,section_loinc,requirement,notes
+CCD,Problems,11450-4,SHALL,Required for all CCDs
+CCD,Medications,10160-0,SHALL,Required for all CCDs
+CCD,Allergies,48765-2,SHALL,Required for all CCDs
+CCD,Results,30954-2,SHOULD,Recommended
+CCD,Vital Signs,8716-3,SHOULD,Recommended
+CCD,Procedures,47519-4,MAY,Optional
+CCD,Immunizations,11369-6,MAY,Optional
+CCD,Plan of Treatment,18776-5,MAY,Optional
+CCD,Encounters,46240-8,MAY,Optional
+CCD,Social History,29762-2,MAY,Optional
+Discharge Summary,Problems,11450-4,SHALL,Required
+Discharge Summary,Medications,10160-0,SHALL,Required
+Discharge Summary,Allergies,48765-2,SHALL,Required
+Discharge Summary,Hospital Course,8648-8,SHALL,Discharge-specific narrative
+Discharge Summary,Discharge Instructions,8653-8,SHALL,Discharge-specific instructions
+Discharge Summary,Results,30954-2,SHOULD,Recommended
+Discharge Summary,Procedures,47519-4,SHOULD,Recommended
+Discharge Summary,Vital Signs,8716-3,SHOULD,Recommended
+Discharge Summary,Plan of Treatment,18776-5,SHOULD,Follow-up care plan
+Referral Note,Reason for Referral,42349-1,SHALL,Referral-specific required section
+Referral Note,Problems,11450-4,SHALL,Required
+Referral Note,Medications,10160-0,SHALL,Required
+Referral Note,Allergies,48765-2,SHOULD,Recommended
+Referral Note,Results,30954-2,SHOULD,Recommended
+Referral Note,Vital Signs,8716-3,MAY,Optional
+Referral Note,Procedures,47519-4,MAY,Relevant history
+Transfer Summary,Problems,11450-4,SHALL,Required
+Transfer Summary,Medications,10160-0,SHALL,Required
+Transfer Summary,Allergies,48765-2,SHALL,Required
+Transfer Summary,Plan of Treatment,18776-5,SHALL,Transfer-specific care plan
+Transfer Summary,Results,30954-2,SHOULD,Recommended
+Transfer Summary,Vital Signs,8716-3,SHOULD,Current status
+Transfer Summary,Procedures,47519-4,SHOULD,Relevant procedures
+Transfer Summary,Encounters,46240-8,SHOULD,Recent encounters

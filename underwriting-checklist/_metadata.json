@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "underwriting",
+    "author": "Winbda",
+    "description": "Create underwriting checklists for risk assessment and approval.\nTRIGGERS - Use when user needs help with underwriting-checklist related tasks.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/finance/managing-underwriting-analysis",
+    "id": "winbda-claude-skills-collection-skills-underwriting-checklist-skill-md",
+    "name": "underwriting-checklist",
+    "skillUrl": "https://skillsmp.com/skills/winbda-claude-skills-collection-skills-underwriting-checklist-skill-md",
+    "stars": 2,
+    "updatedAt": 1775416616,
+    "is_insurance_related": "是",
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/managing-underwriting-analysis",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/managing-underwriting-analysis"
+  }
+}

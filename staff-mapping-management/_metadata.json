@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 7,
+    "_query": "insurance",
+    "author": "alongor666",
+    "description": "Manage staff-institution mapping table for vehicle insurance platform. Use when updating mapping files, resolving name conflicts, converting Excel to JSON, or checking mapping coverage. Mentions \"update mapping\", \"staff conflicts\", \"mapping table\", or \"institution assignment\".",
+    "githubUrl": "https://github.com/alongor666/daylyreport/tree/main/.claude/skills/staff-mapping-management",
+    "id": "alongor666-daylyreport-claude-skills-staff-mapping-management-skill-md",
+    "name": "staff-mapping-management",
+    "skillUrl": "https://skillsmp.com/skills/alongor666-daylyreport-claude-skills-staff-mapping-management-skill-md",
+    "stars": 0,
+    "updatedAt": 1762699512,
+    "owner": "alongor666",
+    "repo": "daylyreport",
+    "branch": "main",
+    "subpath": ".claude/skills/staff-mapping-management",
+    "mode": "tree",
+    "repoKey": "alongor666/daylyreport"
+  },
+  "resolved": {
+    "owner": "alongor666",
+    "repo": "daylyreport",
+    "branch": "main",
+    "subpath": ".claude/skills/staff-mapping-management"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 8,
+    "_query": "insurance",
+    "author": "openclaw",
+    "description": "Automatically detect and de-identify PII (Personal Identifiable Information) and PHI (Protected Health Information) from clinical/medical text to ensure HIPAA compliance. Trigger when processing medical records, patient data, clinical notes, insurance information, or any healthcare-related text containing potential patient identifiers.",
+    "githubUrl": "https://github.com/openclaw/skills/tree/main/skills/aipoch-ai/hipaa-compliance-auditor",
+    "id": "openclaw-skills-skills-aipoch-ai-hipaa-compliance-auditor-skill-md",
+    "name": "hipaa-compliance-auditor",
+    "skillUrl": "https://skillsmp.com/skills/openclaw-skills-skills-aipoch-ai-hipaa-compliance-auditor-skill-md",
+    "stars": 4094,
+    "updatedAt": 1774921082,
+    "owner": "openclaw",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/aipoch-ai/hipaa-compliance-auditor",
+    "mode": "tree",
+    "repoKey": "openclaw/skills"
+  },
+  "resolved": {
+    "owner": "openclaw",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/aipoch-ai/hipaa-compliance-auditor"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 3,
+    "_query": "insurance",
+    "author": "yvinodreddy",
+    "description": "Analyzes and compares health insurance plans (individual vs group), calculates costs, verifies networks, and generates formatted comparison reports for decision-making",
+    "githubUrl": "https://github.com/yvinodreddy/Codebase/tree/main/claude-test/html/insurance-plan-analyzer-skill",
+    "id": "yvinodreddy-codebase-claude-test-html-insurance-plan-analyzer-skill-skill-md",
+    "name": "insurance-plan-analyzer",
+    "skillUrl": "https://skillsmp.com/skills/yvinodreddy-codebase-claude-test-html-insurance-plan-analyzer-skill-skill-md",
+    "stars": 0,
+    "updatedAt": 1763268712,
+    "owner": "yvinodreddy",
+    "repo": "Codebase",
+    "branch": "main",
+    "subpath": "claude-test/html/insurance-plan-analyzer-skill",
+    "mode": "tree",
+    "repoKey": "yvinodreddy/Codebase"
+  },
+  "resolved": {
+    "owner": "yvinodreddy",
+    "repo": "Codebase",
+    "branch": "main",
+    "subpath": "claude-test/html/insurance-plan-analyzer-skill"
+  }
+}

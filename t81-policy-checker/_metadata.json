@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 6,
+    "_query": "policy",
+    "author": "t81dev",
+    "description": "Check Axion policy compliance for T81 operations and decisions",
+    "githubUrl": "https://github.com/muhammadilham1998-crypto/actuary-skills/tree/main/skills/reserving-actuary",
+    "id": "t81dev-t81-foundation-skills-policy-checker-skill-md",
+    "name": "t81-policy-checker",
+    "skillUrl": "https://skillsmp.com/skills/t81dev-t81-foundation-skills-policy-checker-skill-md",
+    "stars": 2,
+    "updatedAt": 1775332246,
+    "is_insurance_related": "是",
+    "owner": "muhammadilham1998-crypto",
+    "repo": "actuary-skills",
+    "branch": "main",
+    "subpath": "skills/reserving-actuary",
+    "mode": "tree",
+    "repoKey": "muhammadilham1998-crypto/actuary-skills"
+  },
+  "resolved": {
+    "owner": "muhammadilham1998-crypto",
+    "repo": "actuary-skills",
+    "branch": "main",
+    "subpath": "skills/reserving-actuary"
+  }
+}

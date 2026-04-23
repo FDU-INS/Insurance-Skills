@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "underwriting",
+    "author": "CaseMark",
+    "description": "Structures underwriting evaluation with risk assessment, pricing analysis, and terms documentation. Use when evaluating underwriting risk, analyzing pricing adequacy, or documenting underwriting decisions.",
+    "githubUrl": "https://github.com/aifinlab/FinClaw/tree/main/skills/claims-clause-locator-assistant",
+    "id": "casemark-skills-skills-finance-managing-underwriting-analysis-skill-md",
+    "name": "managing-underwriting-analysis",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-finance-managing-underwriting-analysis-skill-md",
+    "stars": 12,
+    "updatedAt": 1772680350,
+    "is_insurance_related": "是",
+    "owner": "aifinlab",
+    "repo": "FinClaw",
+    "branch": "main",
+    "subpath": "skills/claims-clause-locator-assistant",
+    "mode": "tree",
+    "repoKey": "aifinlab/FinClaw"
+  },
+  "resolved": {
+    "owner": "aifinlab",
+    "repo": "FinClaw",
+    "branch": "main",
+    "subpath": "skills/claims-clause-locator-assistant"
+  }
+}

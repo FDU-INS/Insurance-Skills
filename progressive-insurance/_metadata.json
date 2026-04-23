@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 3,
+    "_query": "insurance",
+    "author": "theneoai",
+    "description": "Expert skill for Progressive Insurance",
+    "githubUrl": "https://github.com/theneoai/awesome-skills/tree/main/skills/finance/progressive",
+    "id": "theneoai-awesome-skills-skills-finance-progressive-skill-md",
+    "name": "progressive-insurance",
+    "skillUrl": "https://skillsmp.com/skills/theneoai-awesome-skills-skills-finance-progressive-skill-md",
+    "stars": 39,
+    "updatedAt": 1774671280,
+    "owner": "theneoai",
+    "repo": "awesome-skills",
+    "branch": "main",
+    "subpath": "skills/finance/progressive",
+    "mode": "tree",
+    "repoKey": "theneoai/awesome-skills"
+  },
+  "resolved": {
+    "owner": "theneoai",
+    "repo": "awesome-skills",
+    "branch": "main",
+    "subpath": "skills/finance/progressive"
+  }
+}

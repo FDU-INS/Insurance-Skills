@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 11,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Drafts U.S. commercial real estate owner-developer agreements covering scope, entitlements, schedule, pricing (fixed, GMP, cost-plus), change orders, payment and retainage, insurance, indemnity, IP, confidentiality, termination, and disputes. Use when user mentions \"development agreement\", \"owner-developer agreement\", \"project development contract\", \"real estate development\", \"GMP\", \"cost-plus\", \"milestones\", or \"change orders\".",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/legal/development-agreement",
+    "id": "casemark-skills-skills-legal-development-agreement-skill-md",
+    "name": "development-agreement",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-legal-development-agreement-skill-md",
+    "stars": 12,
+    "updatedAt": 1772500417,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/development-agreement",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/development-agreement"
+  }
+}

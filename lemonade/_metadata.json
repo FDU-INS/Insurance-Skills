@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 5,
+    "_query": "insurance",
+    "author": "majiayu000",
+    "description": "AI-powered insurance for renters, homeowners, pet, and life coverage.",
+    "githubUrl": "https://github.com/majiayu000/claude-skill-registry-data/tree/main/data/lemonade",
+    "id": "majiayu000-claude-skill-registry-data-data-lemonade-skill-md",
+    "name": "lemonade",
+    "skillUrl": "https://skillsmp.com/skills/majiayu000-claude-skill-registry-data-data-lemonade-skill-md",
+    "stars": 4,
+    "updatedAt": 1770280794,
+    "owner": "majiayu000",
+    "repo": "claude-skill-registry-data",
+    "branch": "main",
+    "subpath": "data/lemonade",
+    "mode": "tree",
+    "repoKey": "majiayu000/claude-skill-registry-data"
+  },
+  "resolved": {
+    "owner": "majiayu000",
+    "repo": "claude-skill-registry-data",
+    "branch": "main",
+    "subpath": "data/lemonade"
+  }
+}

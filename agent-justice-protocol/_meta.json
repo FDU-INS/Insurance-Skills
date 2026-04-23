@@ -1,0 +1,17 @@
+{
+  "owner": "alexfleetcommander",
+  "slug": "agent-justice-protocol",
+  "displayName": "Agent Justice Protocol",
+  "latest": {
+    "version": "0.1.1",
+    "publishedAt": 1775353786392,
+    "commit": "https://github.com/openclaw/skills/commit/50ed133ec377e40cf5c25cae2c1e5e38e073bdb5"
+  },
+  "history": [
+    {
+      "version": "0.1.0",
+      "publishedAt": 1775089021193,
+      "commit": "https://github.com/openclaw/skills/commit/6a3d9d590f1cb070725f627bb7632b8abd20aee2"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 8,
+    "_query": "insurance",
+    "author": "laudoluxDev",
+    "description": "Access 174+ AI-powered skills for travel agents, travel advisors, and tour operators. Use when: user asks about trip itineraries, client bookings, travel insurance, supplier management, package pricing, destination research, client communications, or any travel agency administration task.",
+    "githubUrl": "https://github.com/laudoluxDev/lawtasksai-api/tree/main/loader/travelagent",
+    "id": "laudoluxdev-lawtasksai-api-loader-travelagent-skill-md",
+    "name": "travelagenttasksai",
+    "skillUrl": "https://skillsmp.com/skills/laudoluxdev-lawtasksai-api-loader-travelagent-skill-md",
+    "stars": 0,
+    "updatedAt": 1775102562,
+    "owner": "laudoluxDev",
+    "repo": "lawtasksai-api",
+    "branch": "main",
+    "subpath": "loader/travelagent",
+    "mode": "tree",
+    "repoKey": "laudoluxDev/lawtasksai-api"
+  },
+  "resolved": {
+    "owner": "laudoluxDev",
+    "repo": "lawtasksai-api",
+    "branch": "main",
+    "subpath": "loader/travelagent"
+  }
+}

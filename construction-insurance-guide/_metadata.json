@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 3,
+    "_query": "insurance",
+    "author": "Winbda",
+    "description": "Guide construction insurance.\nTRIGGERS - Use when user needs help with construction-insurance-guide related tasks.",
+    "githubUrl": "https://github.com/Winbda/claude-skills-collection/tree/master/skills/construction-insurance-guide",
+    "id": "winbda-claude-skills-collection-skills-construction-insurance-guide-skill-md",
+    "name": "construction-insurance-guide",
+    "skillUrl": "https://skillsmp.com/skills/winbda-claude-skills-collection-skills-construction-insurance-guide-skill-md",
+    "stars": 2,
+    "updatedAt": 1775416616,
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/construction-insurance-guide",
+    "mode": "tree",
+    "repoKey": "Winbda/claude-skills-collection"
+  },
+  "resolved": {
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/construction-insurance-guide"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 11,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Drafts a U.S. Consulting Services Agreement covering scope, compensation (hourly, fixed, retainer, hybrid), independent contractor classification, IP ownership, confidentiality, indemnification, liability caps, insurance, and dispute resolution. Use when drafting consulting contracts, professional services agreements, or independent contractor agreements.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/legal/consulting-services-agreement",
+    "id": "casemark-skills-skills-legal-consulting-services-agreement-skill-md",
+    "name": "consulting-services-agreement",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-legal-consulting-services-agreement-skill-md",
+    "stars": 12,
+    "updatedAt": 1772504418,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/consulting-services-agreement",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/consulting-services-agreement"
+  }
+}

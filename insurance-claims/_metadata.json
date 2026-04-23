@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 2,
+    "_query": "insurance",
+    "author": "ona-health-app",
+    "description": "Use this skill for insurance-claims operations with Stedi whenever the user asks to submit claims, validate claim payloads, check claim status, retrieve/interpret 277CA or 835 responses, troubleshoot payer/provider enrollment requirements, or build deterministic claims workflows. Trigger this skill even if the user does not say \"Stedi\" explicitly but mentions 837/835/277CA/ERA, payer IDs, claim rejection codes, claim resubmission, COB, or healthcare clearinghouse automation.",
+    "githubUrl": "https://github.com/ona-health-app/agent-skills/tree/main/insurance-claims-workspace/skill-snapshot-head",
+    "id": "ona-health-app-agent-skills-insurance-claims-workspace-skill-snapshot-head-skill-md",
+    "name": "insurance-claims",
+    "skillUrl": "https://skillsmp.com/skills/ona-health-app-agent-skills-insurance-claims-workspace-skill-snapshot-head-skill-md",
+    "stars": 0,
+    "updatedAt": 1773529358,
+    "owner": "ona-health-app",
+    "repo": "agent-skills",
+    "branch": "main",
+    "subpath": "insurance-claims-workspace/skill-snapshot-head",
+    "mode": "tree",
+    "repoKey": "ona-health-app/agent-skills"
+  },
+  "resolved": {
+    "owner": "ona-health-app",
+    "repo": "agent-skills",
+    "branch": "main",
+    "subpath": "insurance-claims-workspace/skill-snapshot-head"
+  }
+}

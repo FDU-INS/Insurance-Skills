@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 4,
+    "_query": "insurance",
+    "author": "Winbda",
+    "description": "Plan continuing education for insurance professionals.\nTRIGGERS - Use when user needs help with continuing-ed-insurance related tasks.",
+    "githubUrl": "https://github.com/Winbda/claude-skills-collection/tree/master/skills/continuing-ed-insurance",
+    "id": "winbda-claude-skills-collection-skills-continuing-ed-insurance-skill-md",
+    "name": "continuing-ed-insurance",
+    "skillUrl": "https://skillsmp.com/skills/winbda-claude-skills-collection-skills-continuing-ed-insurance-skill-md",
+    "stars": 2,
+    "updatedAt": 1775416616,
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/continuing-ed-insurance",
+    "mode": "tree",
+    "repoKey": "Winbda/claude-skills-collection"
+  },
+  "resolved": {
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/continuing-ed-insurance"
+  }
+}

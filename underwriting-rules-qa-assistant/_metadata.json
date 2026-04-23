@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "underwriting",
+    "author": "aifinlab",
+    "description": "当用户需要围绕保险核保规则、承保边界、常见判断口径、资料要求、补件逻辑和流程规范进行规则查询、口径解释和结构化问答，并基于规则文件、产品手册、内部口径或具体问题提炼可执行答复时使用本 skill。",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/finance/analyzing-loss-reserves",
+    "id": "aifinlab-finclaw-skills-underwriting-rules-qa-assistant-skill-md",
+    "name": "underwriting-rules-qa-assistant",
+    "skillUrl": "https://skillsmp.com/skills/aifinlab-finclaw-skills-underwriting-rules-qa-assistant-skill-md",
+    "stars": 119,
+    "updatedAt": 1773793812,
+    "is_insurance_related": "是",
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/analyzing-loss-reserves",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/analyzing-loss-reserves"
+  }
+}

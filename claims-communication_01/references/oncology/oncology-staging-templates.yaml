@@ -1,0 +1,481 @@
+# Oncology Staging Templates
+# Reference data for cancer staging systems and biomarkers
+# Based on AJCC 8th Edition and disease-specific guidelines
+
+breast_cancer:
+  staging_system: AJCC_8th_TNM
+  biomarkers:
+    required:
+      - name: ER (estrogen receptor)
+        method: IHC
+        positive_threshold: ">=1%"
+        reporting: percentage
+      - name: PR (progesterone receptor)
+        method: IHC
+        positive_threshold: ">=1%"
+        reporting: percentage
+      - name: HER2 (ERBB2)
+        method: IHC_then_FISH
+        scoring:
+          "0": negative
+          "1+": negative
+          "2+": equivocal_reflex_FISH
+          "3+": positive
+      - name: Ki-67
+        method: IHC
+        low_threshold: "<15%"
+        high_threshold: ">=30%"
+        reporting: percentage
+    optional:
+      - name: BRCA1/2
+        method: germline_sequencing
+        indications: "family_history triple_negative young_age"
+      - name: Oncotype DX
+        method: gene_expression
+        indications: "ER+ HER2- node_negative"
+        score_ranges:
+          low: 0-25
+          high: 26-100
+  molecular_subtypes:
+    luminal_a:
+      definition: "ER+/PR+/HER2-/Ki67_low"
+      typical_treatment: "hormonal_therapy_alone"
+      prognosis: best
+    luminal_b_her2_negative:
+      definition: "ER+/PR_low_or_negative/HER2-/Ki67_high"
+      typical_treatment: "chemotherapy_plus_hormonal"
+      prognosis: intermediate
+    luminal_b_her2_positive:
+      definition: "ER+/HER2+"
+      typical_treatment: "chemotherapy_plus_her2_targeted_plus_hormonal"
+      prognosis: intermediate
+    her2_enriched:
+      definition: "ER-/PR-/HER2+"
+      typical_treatment: "chemotherapy_plus_her2_targeted"
+      prognosis: improved_with_targeted
+    triple_negative:
+      definition: "ER-/PR-/HER2-"
+      typical_treatment: "chemotherapy_immunotherapy"
+      prognosis: poorest
+  t_staging:
+    Tis: "Carcinoma in situ (DCIS, LCIS, Paget without invasion)"
+    T1mi: "Microinvasion <=1mm"
+    T1a: ">1mm but <=5mm"
+    T1b: ">5mm but <=10mm"
+    T1c: ">10mm but <=20mm"
+    T2: ">20mm but <=50mm"
+    T3: ">50mm"
+    T4a: "Extension to chest wall"
+    T4b: "Ulceration, satellite skin nodules, or skin edema"
+    T4c: "Both T4a and T4b"
+    T4d: "Inflammatory breast cancer"
+  n_staging:
+    N0: "No regional node metastasis"
+    N1mi: "Micrometastases >0.2mm but <=2mm"
+    N1: "1-3 axillary nodes"
+    N2a: "4-9 axillary nodes"
+    N2b: "Internal mammary nodes (clinically detected)"
+    N3a: ">=10 axillary nodes or infraclavicular"
+    N3b: "Axillary + internal mammary (clinically detected)"
+    N3c: "Supraclavicular nodes"
+  m_staging:
+    M0: "No distant metastasis"
+    M1: "Distant metastasis present"
+  stage_mapping:
+    stage_0: "Tis N0 M0"
+    stage_IA: "T1 N0 M0"
+    stage_IB: "T0-1 N1mi M0"
+    stage_IIA: "T0-1 N1 M0 OR T2 N0 M0"
+    stage_IIB: "T2 N1 M0 OR T3 N0 M0"
+    stage_IIIA: "T0-2 N2 M0 OR T3 N1-2 M0"
+    stage_IIIB: "T4 N0-2 M0"
+    stage_IIIC: "Any_T N3 M0"
+    stage_IV: "Any_T Any_N M1"
+  common_metastatic_sites:
+    - bone
+    - liver
+    - lung
+    - brain
+    - distant_lymph_nodes
+
+lung_cancer_nsclc:
+  staging_system: AJCC_8th_TNM
+  biomarkers:
+    required:
+      - name: PD-L1 expression
+        method: IHC
+        clone: "22C3 or SP263"
+        reporting: "TPS (tumor proportion score)"
+        thresholds:
+          negative: "<1%"
+          low: "1-49%"
+          high: ">=50%"
+    molecular_testing:
+      - name: EGFR mutation
+        method: NGS_or_PCR
+        actionable_mutations:
+          - "exon 19 deletion"
+          - "L858R (exon 21)"
+          - "T790M (resistance)"
+          - "exon 20 insertion"
+        targeted_therapy: osimertinib
+      - name: ALK rearrangement
+        method: FISH_or_IHC_or_NGS
+        targeted_therapy: alectinib
+      - name: ROS1 rearrangement
+        method: FISH_or_NGS
+        targeted_therapy: crizotinib
+      - name: KRAS G12C
+        method: NGS
+        targeted_therapy: sotorasib
+      - name: BRAF V600E
+        method: NGS
+        targeted_therapy: dabrafenib_trametinib
+      - name: MET exon 14 skipping
+        method: NGS
+        targeted_therapy: capmatinib
+      - name: RET rearrangement
+        method: NGS
+        targeted_therapy: selpercatinib
+      - name: NTRK fusion
+        method: NGS
+        targeted_therapy: larotrectinib
+  histologic_subtypes:
+    - adenocarcinoma
+    - squamous_cell_carcinoma
+    - large_cell_carcinoma
+    - adenosquamous_carcinoma
+    - sarcomatoid_carcinoma
+  t_staging:
+    Tis: "Carcinoma in situ"
+    T1mi: "Minimally invasive adenocarcinoma"
+    T1a: "<=1cm"
+    T1b: ">1cm but <=2cm"
+    T1c: ">2cm but <=3cm"
+    T2a: ">3cm but <=4cm"
+    T2b: ">4cm but <=5cm"
+    T3: ">5cm but <=7cm OR invasion of chest wall/pericardium/phrenic nerve OR separate nodule in same lobe"
+    T4: ">7cm OR invasion of mediastinum/heart/great vessels/trachea/esophagus/vertebra/carina OR separate nodule in different ipsilateral lobe"
+  n_staging:
+    N0: "No regional node metastasis"
+    N1: "Ipsilateral peribronchial/hilar nodes"
+    N2: "Ipsilateral mediastinal/subcarinal nodes"
+    N3: "Contralateral mediastinal/hilar OR scalene/supraclavicular nodes"
+  m_staging:
+    M0: "No distant metastasis"
+    M1a: "Contralateral lung nodule OR pleural/pericardial effusion"
+    M1b: "Single extrathoracic metastasis"
+    M1c: "Multiple extrathoracic metastases"
+  stage_mapping:
+    stage_IA1: "T1a N0 M0"
+    stage_IA2: "T1b N0 M0"
+    stage_IA3: "T1c N0 M0"
+    stage_IB: "T2a N0 M0"
+    stage_IIA: "T2b N0 M0"
+    stage_IIB: "T1-2 N1 M0 OR T3 N0 M0"
+    stage_IIIA: "T1-2 N2 M0 OR T3 N1 M0 OR T4 N0-1 M0"
+    stage_IIIB: "T1-2 N3 M0 OR T3-4 N2 M0"
+    stage_IIIC: "T3-4 N3 M0"
+    stage_IVA: "Any_T Any_N M1a OR M1b"
+    stage_IVB: "Any_T Any_N M1c"
+  common_metastatic_sites:
+    - brain
+    - bone
+    - liver
+    - adrenal
+    - contralateral_lung
+
+lung_cancer_sclc:
+  staging_system: Limited_vs_Extensive
+  alternative_staging: AJCC_TNM_for_surgery_candidates
+  stage_definitions:
+    limited_stage:
+      definition: "Confined to one hemithorax and regional lymph nodes that can be encompassed in a tolerable radiation field"
+      includes: "ipsilateral supraclavicular nodes"
+      treatment_intent: curative
+      typical_treatment: "concurrent chemoradiation"
+    extensive_stage:
+      definition: "Disease beyond limited stage"
+      includes: "contralateral lung, distant metastases, malignant effusion"
+      treatment_intent: palliative
+      typical_treatment: "chemotherapy plus immunotherapy"
+  biomarkers:
+    - name: PD-L1
+      method: IHC
+      clinical_utility: "predictive for immunotherapy benefit"
+  common_metastatic_sites:
+    - brain
+    - liver
+    - bone
+    - adrenal
+  prophylactic_cranial_irradiation:
+    indication: "response to initial therapy"
+    reduces_brain_mets: true
+
+colorectal_cancer:
+  staging_system: AJCC_8th_TNM
+  biomarkers:
+    required:
+      - name: MSI/MMR status
+        methods:
+          - IHC_for_MMR_proteins: "MLH1, MSH2, MSH6, PMS2"
+          - PCR_for_MSI: "MSI-H vs MSS"
+        clinical_utility: "prognostic, predictive for immunotherapy"
+      - name: KRAS mutation
+        method: NGS
+        codons_tested: "12, 13, 61, 117, 146"
+        clinical_utility: "predictive for anti-EGFR therapy"
+      - name: NRAS mutation
+        method: NGS
+        codons_tested: "12, 13, 61"
+        clinical_utility: "predictive for anti-EGFR therapy"
+      - name: BRAF V600E
+        method: IHC_or_NGS
+        clinical_utility: "prognostic, targeted therapy"
+    optional:
+      - name: HER2 amplification
+        method: IHC_then_FISH
+        clinical_utility: "targeted therapy in RAS wild-type"
+  histologic_subtypes:
+    - adenocarcinoma_NOS
+    - mucinous_adenocarcinoma
+    - signet_ring_cell_carcinoma
+    - medullary_carcinoma
+    - adenosquamous_carcinoma
+  t_staging:
+    Tis: "Carcinoma in situ, intramucosal"
+    T1: "Invades submucosa"
+    T2: "Invades muscularis propria"
+    T3: "Invades pericolorectal tissues"
+    T4a: "Penetrates visceral peritoneum"
+    T4b: "Invades or adherent to other organs/structures"
+  n_staging:
+    N0: "No regional node metastasis"
+    N1a: "1 positive node"
+    N1b: "2-3 positive nodes"
+    N1c: "Tumor deposits without regional nodes"
+    N2a: "4-6 positive nodes"
+    N2b: ">=7 positive nodes"
+  m_staging:
+    M0: "No distant metastasis"
+    M1a: "Metastasis to one site without peritoneal involvement"
+    M1b: "Metastasis to two or more sites without peritoneal involvement"
+    M1c: "Peritoneal metastasis with or without other sites"
+  stage_mapping:
+    stage_0: "Tis N0 M0"
+    stage_I: "T1-2 N0 M0"
+    stage_IIA: "T3 N0 M0"
+    stage_IIB: "T4a N0 M0"
+    stage_IIC: "T4b N0 M0"
+    stage_IIIA: "T1-2 N1/N1c M0 OR T1 N2a M0"
+    stage_IIIB: "T3-4a N1/N1c M0 OR T2-3 N2a M0 OR T1-2 N2b M0"
+    stage_IIIC: "T4a N2a M0 OR T3-4a N2b M0 OR T4b N1-2 M0"
+    stage_IVA: "Any_T Any_N M1a"
+    stage_IVB: "Any_T Any_N M1b"
+    stage_IVC: "Any_T Any_N M1c"
+  common_metastatic_sites:
+    - liver
+    - lung
+    - peritoneum
+    - distant_lymph_nodes
+
+prostate_cancer:
+  staging_system: AJCC_8th_TNM
+  risk_stratification: NCCN_Risk_Groups
+  biomarkers:
+    - name: PSA
+      type: serum_marker
+      normal: "<4 ng/mL"
+      clinical_utility: "diagnosis, staging, monitoring"
+    - name: Gleason Score
+      method: histopathology
+      grading_system: ISUP_Grade_Groups
+      grade_groups:
+        grade_group_1: "Gleason 3+3=6"
+        grade_group_2: "Gleason 3+4=7"
+        grade_group_3: "Gleason 4+3=7"
+        grade_group_4: "Gleason 8 (4+4, 3+5, 5+3)"
+        grade_group_5: "Gleason 9-10"
+    - name: BRCA1/2
+      method: germline_sequencing
+      clinical_utility: "PARP inhibitor eligibility"
+    - name: HRD genes
+      method: NGS
+      clinical_utility: "PARP inhibitor eligibility"
+  t_staging:
+    T1a: "Incidental finding <=5% of tissue"
+    T1b: "Incidental finding >5% of tissue"
+    T1c: "Identified by needle biopsy (elevated PSA)"
+    T2a: "Involves <=half of one lobe"
+    T2b: "Involves >half of one lobe"
+    T2c: "Involves both lobes"
+    T3a: "Extracapsular extension"
+    T3b: "Seminal vesicle invasion"
+    T4: "Invasion of bladder, rectum, external sphincter, levator muscles, pelvic wall"
+  n_staging:
+    N0: "No regional node metastasis"
+    N1: "Regional node metastasis"
+  m_staging:
+    M0: "No distant metastasis"
+    M1a: "Nonregional lymph nodes"
+    M1b: "Bone metastasis"
+    M1c: "Other site metastasis"
+  nccn_risk_groups:
+    very_low:
+      criteria: "T1c AND Gleason <=6 AND PSA <10 AND <3 positive cores AND <=50% cancer in any core"
+      treatment: "active_surveillance preferred"
+    low:
+      criteria: "T1-2a AND Gleason <=6 AND PSA <10"
+      treatment: "active_surveillance OR definitive_therapy"
+    favorable_intermediate:
+      criteria: "1 intermediate risk factor AND <50% positive cores AND Gleason 3+4"
+      treatment: "definitive_therapy"
+    unfavorable_intermediate:
+      criteria: "2-3 intermediate risk factors OR Gleason 4+3 OR >=50% positive cores"
+      treatment: "definitive_therapy"
+    high:
+      criteria: "T3a OR Gleason 8 OR PSA >20"
+      treatment: "definitive_therapy with ADT"
+    very_high:
+      criteria: "T3b-4 OR Gleason 9-10 OR >4 cores Gleason 8-10"
+      treatment: "definitive_therapy with ADT"
+  common_metastatic_sites:
+    - bone (most common)
+    - pelvic_lymph_nodes
+    - retroperitoneal_lymph_nodes
+    - liver
+    - lung
+
+lymphoma_hodgkin:
+  staging_system: Ann_Arbor_Lugano
+  biomarkers:
+    - name: CD30
+      method: IHC
+      expected: positive
+      therapeutic_target: "brentuximab vedotin"
+    - name: PD-L1
+      method: IHC
+      clinical_utility: "checkpoint inhibitor eligibility"
+  histologic_subtypes:
+    classical:
+      - nodular_sclerosis: "most common, 70%"
+      - mixed_cellularity: "second most common"
+      - lymphocyte_rich: "good prognosis"
+      - lymphocyte_depleted: "rare, aggressive"
+    nodular_lymphocyte_predominant:
+      - distinct_entity: "CD20+ CD30- unlike classical"
+  stage_definitions:
+    stage_I: "Single lymph node region or single extralymphatic site (IE)"
+    stage_II: "Two or more lymph node regions on same side of diaphragm"
+    stage_III: "Lymph node regions on both sides of diaphragm"
+    stage_IV: "Diffuse extralymphatic organ involvement (liver, bone marrow, lung)"
+  modifiers:
+    A: "No B symptoms"
+    B: "B symptoms present (fever >38C, night sweats, >10% weight loss)"
+    E: "Extranodal extension from nodal disease"
+    S: "Splenic involvement"
+    X: "Bulky disease (>10 cm or >1/3 thoracic diameter)"
+  prognostic_scores:
+    IPS_for_advanced:
+      factors:
+        - "Male sex"
+        - "Age >=45"
+        - "Stage IV"
+        - "Hemoglobin <10.5"
+        - "WBC >=15,000"
+        - "Lymphocytes <600 or <8%"
+        - "Albumin <4"
+
+lymphoma_dlbcl:
+  staging_system: Ann_Arbor_Lugano
+  biomarkers:
+    required:
+      - name: CD20
+        method: IHC
+        expected: positive
+        therapeutic_target: rituximab
+      - name: Cell of Origin
+        method: IHC_Hans_algorithm_or_GEP
+        subtypes:
+          GCB: "germinal center B-cell, better prognosis"
+          non_GCB: "activated B-cell like, worse prognosis"
+      - name: MYC/BCL2/BCL6 rearrangements
+        method: FISH
+        clinical_utility: "double/triple hit identification"
+      - name: Ki-67
+        method: IHC
+        clinical_utility: "proliferation index"
+    optional:
+      - name: EBV
+        method: "EBER ISH"
+        clinical_utility: "EBV-positive DLBCL identification"
+  high_grade_variants:
+    double_hit:
+      definition: "MYC + BCL2 rearrangements"
+      treatment: "intensive chemotherapy (DA-EPOCH-R)"
+    triple_hit:
+      definition: "MYC + BCL2 + BCL6 rearrangements"
+      treatment: "intensive chemotherapy"
+  prognostic_scores:
+    IPI:
+      factors:
+        - "Age >60"
+        - "Elevated LDH"
+        - "ECOG >=2"
+        - "Stage III-IV"
+        - ">1 extranodal site"
+      risk_groups:
+        low: "0-1 factors"
+        low_intermediate: "2 factors"
+        high_intermediate: "3 factors"
+        high: "4-5 factors"
+
+multiple_myeloma:
+  staging_system: Revised_ISS
+  biomarkers:
+    diagnostic:
+      - name: M-protein (SPEP)
+        method: serum_protein_electrophoresis
+        clinical_utility: "diagnosis, monitoring"
+      - name: Free Light Chains
+        method: serum_assay
+        clinical_utility: "diagnosis, monitoring, prognosis"
+      - name: Bone Marrow Plasma Cells
+        method: biopsy
+        diagnostic_threshold: ">=10%"
+    prognostic:
+      - name: Beta-2 Microglobulin
+        method: serum
+        clinical_utility: "staging"
+      - name: Albumin
+        method: serum
+        clinical_utility: "staging"
+      - name: LDH
+        method: serum
+        clinical_utility: "staging"
+    cytogenetics:
+      high_risk:
+        - "del(17p)"
+        - "t(4;14)"
+        - "t(14;16)"
+        - "gain 1q"
+      standard_risk:
+        - "t(11;14)"
+        - "t(6;14)"
+        - "hyperdiploidy"
+  r_iss_staging:
+    stage_I:
+      criteria: "Beta-2M <3.5 AND Albumin >=3.5 AND Standard risk cytogenetics AND Normal LDH"
+      median_survival: "Not reached"
+    stage_II:
+      criteria: "Not stage I or III"
+      median_survival: "83 months"
+    stage_III:
+      criteria: "Beta-2M >=5.5 AND (High risk cytogenetics OR Elevated LDH)"
+      median_survival: "43 months"
+  response_criteria:
+    sCR: "Stringent complete response"
+    CR: "Complete response - negative immunofixation"
+    VGPR: "Very good partial response - M-protein detectable by immunofixation only"
+    PR: "Partial response - >=50% reduction in M-protein"
+    MRD: "Minimal residual disease assessment"

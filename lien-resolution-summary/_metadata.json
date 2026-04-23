@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 9,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Generates a structured internal lien resolution summary for personal injury settlement cases. Triggers when resolving liens post-settlement, preparing settlement distribution statements, or auditing lien payoffs across health insurance subrogation, Medicare/Medicaid, hospital liens, workers' comp, and ERISA plans.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/legal/lien-resolution-summary",
+    "id": "casemark-skills-skills-legal-lien-resolution-summary-skill-md",
+    "name": "lien-resolution-summary",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-legal-lien-resolution-summary-skill-md",
+    "stars": 12,
+    "updatedAt": 1772500417,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/lien-resolution-summary",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/lien-resolution-summary"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 8,
+    "_query": "insurance",
+    "author": "gohabdillah",
+    "description": "Comprehensive pre-trip verification: visa requirements, transit rules, passport validity, vaccination/insurance requirements, travel advisories, neighborhood safety, strikes/protests, and health requirements. Combines Agent 7 (Visa & Documents) and Safety & Alerts into one pre-departure checklist. Use 2-4 weeks before travel.",
+    "githubUrl": "https://github.com/gohabdillah/openclaw-workspace/tree/master/skills/pre-trip-checker",
+    "id": "gohabdillah-openclaw-workspace-skills-pre-trip-checker-skill-md",
+    "name": "pre-trip-checker",
+    "skillUrl": "https://skillsmp.com/skills/gohabdillah-openclaw-workspace-skills-pre-trip-checker-skill-md",
+    "stars": 0,
+    "updatedAt": 1774968689,
+    "owner": "gohabdillah",
+    "repo": "openclaw-workspace",
+    "branch": "master",
+    "subpath": "skills/pre-trip-checker",
+    "mode": "tree",
+    "repoKey": "gohabdillah/openclaw-workspace"
+  },
+  "resolved": {
+    "owner": "gohabdillah",
+    "repo": "openclaw-workspace",
+    "branch": "master",
+    "subpath": "skills/pre-trip-checker"
+  }
+}

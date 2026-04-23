@@ -1,0 +1,16 @@
+{
+  "person": {
+    "person_id": "PER-20251226-001",
+    "ssn": "555-12-3456",
+    "given_name": "Bob",
+    "family_name": "Thompson",
+    "date_of_birth": "1978-04-22",
+    "gender": "M",
+    "address_line1": "1847 Oak Street",
+    "city": "Madison",
+    "state": "WI",
+    "postal_code": "53703",
+    "phone": "608-555-0192",
+    "email": "bob.thompson@email.com"
+  }
+}

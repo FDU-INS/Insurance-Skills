@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 7,
+    "_query": "insurance",
+    "author": "skills-il",
+    "description": "Calculate Israeli payroll including income tax, Bituach Leumi (National Insurance), health tax, pension contributions, and net salary. Use when user asks to calculate salary, \"tlush maskoret\", payroll deductions, \"bruto to neto\", employer cost, tax credits (nekudot zikui), or needs help understanding Israeli payslip items. Covers employees, freelancers (atzmai), and employer cost calculations. Do NOT use for US, UK, or other countries' payroll calculations.",
+    "githubUrl": "https://github.com/skills-il/tax-and-finance/tree/master/israeli-payroll-calculator",
+    "id": "skills-il-tax-and-finance-israeli-payroll-calculator-skill-md",
+    "name": "israeli-payroll-calculator",
+    "skillUrl": "https://skillsmp.com/skills/skills-il-tax-and-finance-israeli-payroll-calculator-skill-md",
+    "stars": 13,
+    "updatedAt": 1774578865,
+    "owner": "skills-il",
+    "repo": "tax-and-finance",
+    "branch": "master",
+    "subpath": "israeli-payroll-calculator",
+    "mode": "tree",
+    "repoKey": "skills-il/tax-and-finance"
+  },
+  "resolved": {
+    "owner": "skills-il",
+    "repo": "tax-and-finance",
+    "branch": "master",
+    "subpath": "israeli-payroll-calculator"
+  }
+}

@@ -1,0 +1,20 @@
+MSH|^~\&|HEALTHSIM|SPRINGFIELD_MEMORIAL|EMR|MAIN_CAMPUS|20241213110000||ADT^A03|MSG20241213001|P|2.5|||AL|NE|
+EVN|A03|20241213110000||||20241213110000|
+PID|1||MRN00000072^^^SPRINGFIELD_MEMORIAL^MR||WILLIAMS^BILLY BOB||19590322|M|||1847 RURAL ROUTE 5^^SHELBYVILLE^IL^62565^USA||2175558823||||||
+NK1|1|WILLIAMS^BETTY SUE|SPO|1847 RURAL ROUTE 5^^SHELBYVILLE^IL^62565^USA|2175558824||EC|
+PV1|1|I|CARDSTEP^602^A^^^SPRINGFIELD||||2233445577^PATEL^ANGELA^DR||CAR|||||A|||CAR||ENC20241210000001|||||||||||||||||01||20241210021500|20241213110000|||||
+PV2|||^NSTEMI s/p PCI with DES to LCx|||||||||2|||||||||||||||||||||||
+DG1|1||I21.4^Non-ST elevation myocardial infarction^I10|||F|
+DG1|2||I25.10^Atherosclerotic heart disease of native coronary artery^I10|||F|
+DG1|3||I50.9^Heart failure, unspecified^I10|||F|
+DG1|4||I10^Essential hypertension^I10|||F|
+DG1|5||E11.9^Type 2 diabetes mellitus^I10|||F|
+DG1|6||E78.5^Hyperlipidemia^I10|||F|
+DG1|7||N18.3^Chronic kidney disease, stage 3^I10|||F|
+DG1|8||F17.210^Nicotine dependence, cigarettes^I10|||F|
+DG1|9||E66.9^Obesity, unspecified^I10|||F|
+PR1|1||92928^Percutaneous coronary intervention with stent^CPT|20241210083000||2233445577^PATEL^ANGELA^DR|
+PR1|2||93458^Left heart catheterization with coronary angiography^CPT|20241210083000||2233445577^PATEL^ANGELA^DR|
+AL1|1|DA|PENICILLIN|MOD|Rash|
+IN1|1|MCR^Medicare|MEDICARE|Medicare Part A/B|||||||||20240101|20241231|||01|WILLIAMS^BILLY BOB|SEL|19590322|1847 RURAL ROUTE 5^^SHELBYVILLE^IL^62565^USA|||||||||||||||||1EG4TE5MK72|
+IN2|1|AARP^AARP Medigap|AARP_MEDIGAP|AARP Medicare Supplement Plan F||||AARP001||||20240101|20241231|||||||||||||||||||||||||||MGF98765432|

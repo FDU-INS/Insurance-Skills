@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 11,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Drafts a Master Service Agreement for upstream oilfield services (Operator-Contractor). Covers knock-for-knock indemnification, anti-indemnity statute compliance (TX, LA, WY, NM), work order framework, HSE, insurance minimums, and IP/data ownership. Use when drafting oilfield MSAs, drilling service agreements, well service contracts, or upstream operator-contractor master agreements.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/legal/oilfield-msa",
+    "id": "casemark-skills-skills-legal-oilfield-msa-skill-md",
+    "name": "oilfield-msa",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-legal-oilfield-msa-skill-md",
+    "stars": 12,
+    "updatedAt": 1772500417,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/oilfield-msa",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/oilfield-msa"
+  }
+}

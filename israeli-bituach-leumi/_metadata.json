@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 5,
+    "_query": "insurance",
+    "author": "skills-il",
+    "description": "Navigate Israeli National Insurance (Bituach Leumi) benefits, eligibility, and contributions. Use when user asks about \"bituach leumi\", national insurance, retirement pension (kiztavat zikna), unemployment (dmei avtala), maternity leave (dmei leida), child allowance (kiztavat yeladim), disability benefits, work injury, reserve duty compensation, or NI contributions. Covers all 15+ Bituach Leumi programs. Do NOT use for private insurance or health fund (kupat cholim) questions.",
+    "githubUrl": "https://github.com/skills-il/government-services/tree/master/israeli-bituach-leumi",
+    "id": "skills-il-government-services-israeli-bituach-leumi-skill-md",
+    "name": "israeli-bituach-leumi",
+    "skillUrl": "https://skillsmp.com/skills/skills-il-government-services-israeli-bituach-leumi-skill-md",
+    "stars": 5,
+    "updatedAt": 1776034344,
+    "owner": "skills-il",
+    "repo": "government-services",
+    "branch": "master",
+    "subpath": "israeli-bituach-leumi",
+    "mode": "tree",
+    "repoKey": "skills-il/government-services"
+  },
+  "resolved": {
+    "owner": "skills-il",
+    "repo": "government-services",
+    "branch": "master",
+    "subpath": "israeli-bituach-leumi"
+  }
+}

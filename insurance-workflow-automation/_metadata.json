@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "insurance",
+    "author": "Winbda",
+    "description": "Automate insurance workflows.\nTRIGGERS - Use when user needs help with insurance-workflow-automation related tasks.",
+    "githubUrl": "https://github.com/Winbda/claude-skills-collection/tree/master/skills/insurance-workflow-automation",
+    "id": "winbda-claude-skills-collection-skills-insurance-workflow-automation-skill-md",
+    "name": "insurance-workflow-automation",
+    "skillUrl": "https://skillsmp.com/skills/winbda-claude-skills-collection-skills-insurance-workflow-automation-skill-md",
+    "stars": 2,
+    "updatedAt": 1775416616,
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/insurance-workflow-automation",
+    "mode": "tree",
+    "repoKey": "Winbda/claude-skills-collection"
+  },
+  "resolved": {
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/insurance-workflow-automation"
+  }
+}

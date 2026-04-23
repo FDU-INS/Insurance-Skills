@@ -1,0 +1,91 @@
+generic_name,brand_name,drug_class,route,common_indications,requires_premedication,emetogenic_risk,myelosuppressive
+paclitaxel,Taxol,taxane,IV,breast lung ovarian,true,low,true
+docetaxel,Taxotere,taxane,IV,breast lung prostate head_neck,true,low,true
+nab-paclitaxel,Abraxane,taxane,IV,breast lung pancreatic,false,low,true
+carboplatin,Paraplatin,platinum,IV,lung ovarian breast,false,moderate,true
+cisplatin,Platinol,platinum,IV,lung testicular bladder head_neck,true,high,true
+oxaliplatin,Eloxatin,platinum,IV,colorectal gastric,false,moderate,true
+doxorubicin,Adriamycin,anthracycline,IV,breast lymphoma sarcoma,false,high,true
+liposomal doxorubicin,Doxil,anthracycline,IV,ovarian breast kaposi,false,moderate,true
+epirubicin,Ellence,anthracycline,IV,breast,false,high,true
+daunorubicin,Cerubidine,anthracycline,IV,leukemia,false,high,true
+cyclophosphamide,Cytoxan,alkylating,IV/PO,breast lymphoma,false,moderate,true
+ifosfamide,Ifex,alkylating,IV,sarcoma testicular lymphoma,true,moderate,true
+temozolomide,Temodar,alkylating,PO,brain melanoma,false,moderate,true
+fluorouracil,5-FU,antimetabolite,IV,colorectal breast head_neck,false,low,true
+capecitabine,Xeloda,antimetabolite,PO,colorectal breast,false,low,true
+gemcitabine,Gemzar,antimetabolite,IV,pancreatic lung bladder,false,moderate,true
+pemetrexed,Alimta,antimetabolite,IV,lung mesothelioma,true,low,true
+methotrexate,Trexall,antimetabolite,IV/PO,breast lymphoma sarcoma,false,low,true
+cytarabine,Ara-C,antimetabolite,IV,leukemia lymphoma,false,moderate,true
+etoposide,VP-16,topoisomerase_inhibitor,IV/PO,lung testicular lymphoma,false,low,true
+irinotecan,Camptosar,topoisomerase_inhibitor,IV,colorectal,true,moderate,true
+topotecan,Hycamtin,topoisomerase_inhibitor,IV,ovarian lung,false,low,true
+vincristine,Oncovin,vinca_alkaloid,IV,lymphoma leukemia,false,minimal,false
+vinblastine,Velban,vinca_alkaloid,IV,lymphoma testicular,false,minimal,true
+vinorelbine,Navelbine,vinca_alkaloid,IV,lung breast,false,minimal,true
+bleomycin,Blenoxane,antitumor_antibiotic,IV,lymphoma testicular,true,minimal,false
+pembrolizumab,Keytruda,checkpoint_inhibitor,IV,lung melanoma bladder head_neck msi_high,false,minimal,false
+nivolumab,Opdivo,checkpoint_inhibitor,IV,lung melanoma renal bladder,false,minimal,false
+atezolizumab,Tecentriq,checkpoint_inhibitor,IV,lung bladder breast,false,minimal,false
+durvalumab,Imfinzi,checkpoint_inhibitor,IV,lung bladder,false,minimal,false
+ipilimumab,Yervoy,checkpoint_inhibitor,IV,melanoma renal,false,minimal,false
+trastuzumab,Herceptin,monoclonal_antibody,IV,breast_her2 gastric_her2,false,minimal,false
+pertuzumab,Perjeta,monoclonal_antibody,IV,breast_her2,false,minimal,false
+trastuzumab deruxtecan,Enhertu,antibody_drug_conjugate,IV,breast_her2 gastric_her2,true,moderate,true
+bevacizumab,Avastin,monoclonal_antibody,IV,colorectal lung ovarian,false,minimal,false
+cetuximab,Erbitux,monoclonal_antibody,IV,colorectal head_neck,true,minimal,false
+panitumumab,Vectibix,monoclonal_antibody,IV,colorectal,false,minimal,false
+rituximab,Rituxan,monoclonal_antibody,IV,lymphoma cll,true,minimal,false
+obinutuzumab,Gazyva,monoclonal_antibody,IV,cll lymphoma,true,minimal,false
+daratumumab,Darzalex,monoclonal_antibody,IV,myeloma,true,minimal,false
+osimertinib,Tagrisso,tyrosine_kinase_inhibitor,PO,lung_egfr,false,minimal,false
+erlotinib,Tarceva,tyrosine_kinase_inhibitor,PO,lung_egfr pancreatic,false,minimal,false
+gefitinib,Iressa,tyrosine_kinase_inhibitor,PO,lung_egfr,false,minimal,false
+alectinib,Alecensa,tyrosine_kinase_inhibitor,PO,lung_alk,false,minimal,false
+crizotinib,Xalkori,tyrosine_kinase_inhibitor,PO,lung_alk lung_ros1,false,minimal,false
+imatinib,Gleevec,tyrosine_kinase_inhibitor,PO,cml gist,false,minimal,true
+dasatinib,Sprycel,tyrosine_kinase_inhibitor,PO,cml all,false,minimal,true
+sotorasib,Lumakras,kras_inhibitor,PO,lung_kras_g12c,false,minimal,false
+palbociclib,Ibrance,cdk4_6_inhibitor,PO,breast_er_positive,false,minimal,true
+ribociclib,Kisqali,cdk4_6_inhibitor,PO,breast_er_positive,false,minimal,true
+abemaciclib,Verzenio,cdk4_6_inhibitor,PO,breast_er_positive,false,minimal,true
+olaparib,Lynparza,parp_inhibitor,PO,ovarian_brca breast_brca pancreatic_brca,false,minimal,true
+niraparib,Zejula,parp_inhibitor,PO,ovarian,false,minimal,true
+dabrafenib,Tafinlar,braf_inhibitor,PO,melanoma_braf lung_braf,false,minimal,false
+trametinib,Mekinist,mek_inhibitor,PO,melanoma_braf lung_braf,false,minimal,false
+vemurafenib,Zelboraf,braf_inhibitor,PO,melanoma_braf,false,minimal,false
+lenalidomide,Revlimid,immunomodulator,PO,myeloma lymphoma,false,minimal,true
+pomalidomide,Pomalyst,immunomodulator,PO,myeloma,false,minimal,true
+bortezomib,Velcade,proteasome_inhibitor,IV/SC,myeloma lymphoma,false,minimal,true
+carfilzomib,Kyprolis,proteasome_inhibitor,IV,myeloma,true,minimal,true
+tamoxifen,Nolvadex,serm,PO,breast_er_positive,false,minimal,false
+letrozole,Femara,aromatase_inhibitor,PO,breast_er_positive,false,minimal,false
+anastrozole,Arimidex,aromatase_inhibitor,PO,breast_er_positive,false,minimal,false
+exemestane,Aromasin,aromatase_inhibitor,PO,breast_er_positive,false,minimal,false
+fulvestrant,Faslodex,serd,IM,breast_er_positive,false,minimal,false
+enzalutamide,Xtandi,antiandrogen,PO,prostate,false,minimal,false
+abiraterone,Zytiga,cyp17_inhibitor,PO,prostate,false,minimal,false
+apalutamide,Erleada,antiandrogen,PO,prostate,false,minimal,false
+darolutamide,Nubeqa,antiandrogen,PO,prostate,false,minimal,false
+leuprolide,Lupron,gnrh_agonist,IM/SC,prostate breast,false,minimal,false
+goserelin,Zoladex,gnrh_agonist,SC,prostate breast,false,minimal,false
+degarelix,Firmagon,gnrh_antagonist,SC,prostate,false,minimal,false
+ondansetron,Zofran,antiemetic_5ht3,IV/PO,supportive,false,na,false
+granisetron,Kytril,antiemetic_5ht3,IV/PO,supportive,false,na,false
+palonosetron,Aloxi,antiemetic_5ht3,IV,supportive,false,na,false
+aprepitant,Emend,antiemetic_nk1,PO,supportive,false,na,false
+fosaprepitant,Emend IV,antiemetic_nk1,IV,supportive,false,na,false
+rolapitant,Varubi,antiemetic_nk1,PO,supportive,false,na,false
+prochlorperazine,Compazine,antiemetic_dopamine,IV/PO,supportive,false,na,false
+metoclopramide,Reglan,antiemetic_dopamine,IV/PO,supportive,false,na,false
+olanzapine,Zyprexa,antiemetic_atypical,PO,supportive,false,na,false
+dexamethasone,Decadron,corticosteroid,IV/PO,supportive premedication,false,na,false
+filgrastim,Neupogen,growth_factor_gcsf,SC,supportive,false,na,false
+pegfilgrastim,Neulasta,growth_factor_gcsf,SC,supportive,false,na,false
+sargramostim,Leukine,growth_factor_gmcsf,SC/IV,supportive,false,na,false
+epoetin alfa,Procrit,growth_factor_epo,SC,supportive,false,na,false
+darbepoetin,Aranesp,growth_factor_epo,SC,supportive,false,na,false
+zoledronic acid,Zometa,bisphosphonate,IV,bone_mets hypercalcemia,false,na,false
+denosumab,Xgeva,rankl_inhibitor,SC,bone_mets,false,na,false
+pamidronate,Aredia,bisphosphonate,IV,bone_mets hypercalcemia myeloma,false,na,false

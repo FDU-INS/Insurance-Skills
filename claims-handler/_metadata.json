@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "claims",
+    "author": "Winbda",
+    "description": "Design claims handling workflows with documentation and timelines.\nTRIGGERS - Use when user needs help with claims-handler related tasks.",
+    "githubUrl": "https://github.com/Joshua-Eisenhart/Codex-Ratchet/tree/main/system_v4/skills/ratchet-reduce",
+    "id": "winbda-claude-skills-collection-skills-claims-handler-skill-md",
+    "name": "claims-handler",
+    "skillUrl": "https://skillsmp.com/skills/winbda-claude-skills-collection-skills-claims-handler-skill-md",
+    "stars": 2,
+    "updatedAt": 1775416616,
+    "is_insurance_related": "是",
+    "owner": "Joshua-Eisenhart",
+    "repo": "Codex-Ratchet",
+    "branch": "main",
+    "subpath": "system_v4/skills/ratchet-reduce",
+    "mode": "tree",
+    "repoKey": "Joshua-Eisenhart/Codex-Ratchet"
+  },
+  "resolved": {
+    "owner": "Joshua-Eisenhart",
+    "repo": "Codex-Ratchet",
+    "branch": "main",
+    "subpath": "system_v4/skills/ratchet-reduce"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 8,
+    "_query": "coverage",
+    "author": "ossarg",
+    "description": "Genera carta de rechazo de cobertura fundada en Ley 17.418 y póliza, con control de plazo art. 56 y evaluación de riesgo de daño punitivo",
+    "githubUrl": "https://github.com/Snowflake-Labs/cortex-ai-function-studio-skill/tree/main/demos/policy-conditioned-routing",
+    "id": "ossarg-ali-skills-drafting-coverage-denial-ar-skill-md",
+    "name": "drafting-coverage-denial-ar",
+    "skillUrl": "https://skillsmp.com/skills/ossarg-ali-skills-drafting-coverage-denial-ar-skill-md",
+    "stars": 0,
+    "updatedAt": 1772829707,
+    "is_insurance_related": "是",
+    "owner": "Snowflake-Labs",
+    "repo": "cortex-ai-function-studio-skill",
+    "branch": "main",
+    "subpath": "demos/policy-conditioned-routing",
+    "mode": "tree",
+    "repoKey": "Snowflake-Labs/cortex-ai-function-studio-skill"
+  },
+  "resolved": {
+    "owner": "Snowflake-Labs",
+    "repo": "cortex-ai-function-studio-skill",
+    "branch": "main",
+    "subpath": "demos/policy-conditioned-routing"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 10,
+    "_query": "insurance",
+    "author": "ramyatrouny",
+    "description": "Use when answering questions about IFRS standards, IAS standards, IASB, financial reporting, revenue recognition, lease accounting, impairment, financial instruments, expected credit loss, ECL, consolidation, business combinations, fair value measurement, first-time adoption, deferred tax, provisions, insurance contracts, journal entries, disclosure requirements, IFRS compliance checks, audit support, GAAP differences, goodwill, or transitioning from local GAAP to IFRS.",
+    "githubUrl": "https://github.com/ramyatrouny/ifrs-skill/tree/main/ifrs",
+    "id": "ramyatrouny-ifrs-skill-ifrs-skill-md",
+    "name": "ifrs",
+    "skillUrl": "https://skillsmp.com/skills/ramyatrouny-ifrs-skill-ifrs-skill-md",
+    "stars": 10,
+    "updatedAt": 1774808392,
+    "owner": "ramyatrouny",
+    "repo": "ifrs-skill",
+    "branch": "main",
+    "subpath": "ifrs",
+    "mode": "tree",
+    "repoKey": "ramyatrouny/ifrs-skill"
+  },
+  "resolved": {
+    "owner": "ramyatrouny",
+    "repo": "ifrs-skill",
+    "branch": "main",
+    "subpath": "ifrs"
+  }
+}

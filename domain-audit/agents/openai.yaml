@@ -1,0 +1,12 @@
+interface:
+  display_name: "Domain Audit"
+  short_description: "Manual domain-pack review for HR, legal, marketing, sales, and real estate."
+  brand_color: "#9333ea"
+policy:
+  allow_implicit_invocation: true
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "controlkeel"
+      description: "ControlKeel MCP server"
+

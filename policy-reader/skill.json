@@ -1,0 +1,29 @@
+{
+  "slug": "policy-clarifier",
+  "category": "docs",
+  "maturity": "scaffold",
+  "summary": "Clarify a policy or internal guideline into a more readable, operationally useful document.",
+  "triggers": [
+    "A policy document needs clearer language and action framing.",
+    "Teams need help translating a policy into day-to-day implications."
+  ],
+  "expected_inputs": [
+    "policy text",
+    "audience",
+    "common confusion points"
+  ],
+  "expected_outputs": [
+    "clarified policy draft",
+    "operational guidance",
+    "FAQ candidates"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "docs",
+    "policy",
+    "clarity"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "insurer",
+    "author": "Adsy42",
+    "description": "Searches across all matters by client, employer, insurer, claim type, stage, flags, or document type. Use when Mandy says 'find', 'search', 'which matters have', 'all matters with', 'show me cases where', or asks for filtered views of her caseload.",
+    "githubUrl": "https://github.com/aifinlab/FinClaw/tree/main/skills/underwriting-questionnaire-secondary-review-assistant",
+    "id": "adsy42-karlos-legal-assistant-claude-skills-search-matters-skill-md",
+    "name": "search-matters",
+    "skillUrl": "https://skillsmp.com/skills/adsy42-karlos-legal-assistant-claude-skills-search-matters-skill-md",
+    "stars": 0,
+    "updatedAt": 1774766801,
+    "is_insurance_related": "是",
+    "owner": "aifinlab",
+    "repo": "FinClaw",
+    "branch": "main",
+    "subpath": "skills/underwriting-questionnaire-secondary-review-assistant",
+    "mode": "tree",
+    "repoKey": "aifinlab/FinClaw"
+  },
+  "resolved": {
+    "owner": "aifinlab",
+    "repo": "FinClaw",
+    "branch": "main",
+    "subpath": "skills/underwriting-questionnaire-secondary-review-assistant"
+  }
+}

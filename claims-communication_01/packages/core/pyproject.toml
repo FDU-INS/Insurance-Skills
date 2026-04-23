@@ -1,0 +1,112 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "healthsim-core"
+version = "1.0.0"
+description = "Shared foundation for HealthSim product family - skills, formats, references, and core Python"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Mark Oswald"}
+]
+keywords = ["simulation", "synthetic-data", "data-generation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "faker>=18.0.0",
+    "pydantic>=2.0.0",
+    "pyyaml>=6.0.0",
+    "python-dateutil>=2.8.0",
+    "duckdb>=1.0.0,<1.5.2",
+    "pandas>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "pytest-asyncio>=0.21.0",
+    "mypy>=1.0.0",
+    "ruff>=0.1.0",
+    "black>=23.0.0",
+    "pre-commit>=3.0.0",
+]
+mcp-server = [
+    "mcp>=1.0.0",
+]
+# Product packages for unified_generate integration tests
+products = [
+    "membersim",
+    "patientsim",
+    "rxmembersim",
+    "trialsim",
+]
+databricks = [
+    "databricks-sql-connector>=3.0.0",
+]
+snowflake = [
+    "snowflake-connector-python>=3.0.0",
+]
+all-writers = [
+    "databricks-sql-connector>=3.0.0",
+    "snowflake-connector-python>=3.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/mark64oswald/healthsim-workspace"
+Documentation = "https://github.com/mark64oswald/healthsim-workspace#readme"
+Repository = "https://github.com/mark64oswald/healthsim-workspace"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/healthsim"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-v --tb=short"
+asyncio_mode = "auto"
+markers = [
+    "integration: marks tests as integration tests (require real database)",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # Pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "UP",  # pyupgrade
+]
+ignore = []
+
+[tool.black]
+line-length = 100
+target-version = ["py310", "py311", "py312"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_ignores = true
+strict = true
+plugins = ["pydantic.mypy"]
+
+[[tool.mypy.overrides]]
+module = "faker.*"
+ignore_missing_imports = true

@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 8,
+    "_query": "insurance",
+    "author": "laudoluxDev",
+    "description": "Access 170+ AI-powered skills for dentists and dental office administrators. Use when: user asks about patient scheduling, insurance claims, billing, HIPAA compliance, new patient onboarding, treatment documentation, dental office operations, or any dental practice administration task.",
+    "githubUrl": "https://github.com/laudoluxDev/lawtasksai-api/tree/main/loader/dentist",
+    "id": "laudoluxdev-lawtasksai-api-loader-dentist-skill-md",
+    "name": "dentisttasksai",
+    "skillUrl": "https://skillsmp.com/skills/laudoluxdev-lawtasksai-api-loader-dentist-skill-md",
+    "stars": 0,
+    "updatedAt": 1775102562,
+    "owner": "laudoluxDev",
+    "repo": "lawtasksai-api",
+    "branch": "main",
+    "subpath": "loader/dentist",
+    "mode": "tree",
+    "repoKey": "laudoluxDev/lawtasksai-api"
+  },
+  "resolved": {
+    "owner": "laudoluxDev",
+    "repo": "lawtasksai-api",
+    "branch": "main",
+    "subpath": "loader/dentist"
+  }
+}

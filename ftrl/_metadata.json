@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 6,
+    "_query": "insurance",
+    "author": "navikt",
+    "description": "Expert knowledge of Folketrygdloven (National Insurance Act) processing in melosys-api.\nUse when: (1) Understanding FTRL bestemmelser (§2-5 to §2-13),\n(2) Debugging yrkesaktiv/ikke-yrkesaktiv/pensjonist processing flows,\n(3) Understanding trygdedekning options and combinations,\n(4) Investigating vilkår for each bestemmelse,\n(5) Understanding medlemskapsperiode generation logic,\n(6) Debugging frivillig vs pliktig membership determination.",
+    "githubUrl": "https://github.com/navikt/melosys-api/tree/master/.agent/skills/ftrl",
+    "id": "navikt-melosys-api-agent-skills-ftrl-skill-md",
+    "name": "ftrl",
+    "skillUrl": "https://skillsmp.com/skills/navikt-melosys-api-agent-skills-ftrl-skill-md",
+    "stars": 1,
+    "updatedAt": 1774011002,
+    "owner": "navikt",
+    "repo": "melosys-api",
+    "branch": "master",
+    "subpath": ".agent/skills/ftrl",
+    "mode": "tree",
+    "repoKey": "navikt/melosys-api"
+  },
+  "resolved": {
+    "owner": "navikt",
+    "repo": "melosys-api",
+    "branch": "master",
+    "subpath": ".agent/skills/ftrl"
+  }
+}

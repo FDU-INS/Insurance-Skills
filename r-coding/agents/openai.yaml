@@ -1,0 +1,4 @@
+interface:
+  display_name: "Claim Source Auditor"
+  short_description: "Map claims to sources and mark what is verified, conflicting, or unsourced"
+  default_prompt: "Use $claim-source-auditor to verify each claim against the supplied source files and return a source map with exact statuses and citations."

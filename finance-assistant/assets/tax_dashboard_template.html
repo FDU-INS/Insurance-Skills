@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TaxDE Dashboard</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;padding:24px;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f7f4;color:#182018}
+.wrap{max-width:760px;margin:0 auto}
+.card{background:#fff;border:1px solid #d8e3d5;border-radius:20px;padding:22px;margin-bottom:16px;box-shadow:0 10px 30px rgba(0,0,0,.04)}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#5d715c;margin-bottom:8px}
+.hero{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.amount{font-size:52px;line-height:1;font-weight:800;color:#0f8a43;letter-spacing:-0.04em}
+.sub{margin-top:8px;font-size:14px;color:#5b655a}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:#edf6ec;color:#0f6c36;font-size:13px;font-weight:700}
+.bar{height:8px;border-radius:999px;background:#e7eee4;overflow:hidden;margin-top:10px}
+.fill{height:100%;background:linear-gradient(90deg,#0f8a43,#67c77b)}
+.grid{display:grid;grid-template-columns:1.4fr .9fr;gap:16px}
+.line{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid #edf1eb}
+.line:last-child{border-bottom:none;padding-bottom:0}
+.line:first-child{padding-top:0}
+.label{font-size:14px;font-weight:700}
+.meta{font-size:12px;color:#627060;margin-top:4px}
+.value{font-size:15px;font-weight:800;color:#0f8a43;white-space:nowrap}
+.callout{background:linear-gradient(145deg,#eef8ef,#f8fcf8);border:1px solid #cfe7d1}
+.tips{display:grid;gap:10px}
+.tip{padding:12px 14px;border-radius:14px;background:#fff;border:1px solid #d8e3d5;font-size:14px;line-height:1.5}
+.deadline{display:flex;align-items:center;gap:14px}
+.days{min-width:70px;height:70px;border-radius:18px;background:linear-gradient(145deg,#0f8a43,#67c77b);display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff}
+.days strong{font-size:28px;line-height:1}
+.days span{font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+@media (max-width:720px){
+  body{padding:16px}
+  .grid{grid-template-columns:1fr}
+  .amount{font-size:40px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <section class="card">
+    <div class="eyebrow">Tax Year [YEAR]</div>
+    <div class="hero">
+      <div>
+        <div class="amount">EUR [REFUND_AMOUNT]</div>
+        <div class="sub">Estimated refund or primary tax impact based on the current profile.</div>
+      </div>
+      <div class="pill">Confidence [CONFIDENCE_PCT]%</div>
+    </div>
+    <div class="bar"><div class="fill" style="width:[CONFIDENCE_PCT]%"></div></div>
+  </section>
+
+  <div class="grid">
+    <section class="card">
+      <div class="eyebrow">Deduction Breakdown</div>
+      [DEDUCTION_ROWS]
+      <div class="line">
+        <div>
+          <div class="label">Werbungskosten total</div>
+          <div class="meta">Compared against the Arbeitnehmer-Pauschbetrag.</div>
+        </div>
+        <div class="value">EUR [WERBUNGSKOSTEN_TOTAL]</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="eyebrow">Next Deadline</div>
+      <div class="deadline">
+        <div class="days">
+          <strong>[DAYS_LEFT]</strong>
+          <span>days</span>
+        </div>
+        <div>
+          <div class="label">[DEADLINE_LABEL]</div>
+          <div class="meta">[DEADLINE_DATE]</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="card callout">
+    <div class="eyebrow">Next Best Actions</div>
+    <div class="tips">
+      <div class="tip">[TIP_1]</div>
+      <div class="tip">[TIP_2]</div>
+      <div class="tip">[TIP_3]</div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

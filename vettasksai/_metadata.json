@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 8,
+    "_query": "insurance",
+    "author": "laudoluxDev",
+    "description": "Access 80+ AI-powered skills for veterinarians and veterinary practice staff. Use when: user asks about patient records, appointment scheduling, clinical documentation, billing and insurance, pharmacy and prescriptions, compliance, client communication, or any veterinary practice administration task.",
+    "githubUrl": "https://github.com/laudoluxDev/lawtasksai-api/tree/main/loader/vet",
+    "id": "laudoluxdev-lawtasksai-api-loader-vet-skill-md",
+    "name": "vettasksai",
+    "skillUrl": "https://skillsmp.com/skills/laudoluxdev-lawtasksai-api-loader-vet-skill-md",
+    "stars": 0,
+    "updatedAt": 1775102562,
+    "owner": "laudoluxDev",
+    "repo": "lawtasksai-api",
+    "branch": "main",
+    "subpath": "loader/vet",
+    "mode": "tree",
+    "repoKey": "laudoluxDev/lawtasksai-api"
+  },
+  "resolved": {
+    "owner": "laudoluxDev",
+    "repo": "lawtasksai-api",
+    "branch": "main",
+    "subpath": "loader/vet"
+  }
+}

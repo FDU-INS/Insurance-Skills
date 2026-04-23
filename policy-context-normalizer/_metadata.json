@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 2,
+    "_query": "policy",
+    "author": "RevPalSFDC",
+    "description": "Normalize policy-enforcement context inputs into stable schemas before routing and rule evaluation.",
+    "githubUrl": "https://github.com/openclaw/skills/tree/main/skills/52yuanchangxing/policy-application-checker",
+    "id": "revpalsfdc-opspal-commercial-plugins-opspal-core-skills-policy-context-normalizer-skill-md",
+    "name": "policy-context-normalizer",
+    "skillUrl": "https://skillsmp.com/skills/revpalsfdc-opspal-commercial-plugins-opspal-core-skills-policy-context-normalizer-skill-md",
+    "stars": 0,
+    "updatedAt": 1776169003,
+    "is_insurance_related": "是",
+    "owner": "openclaw",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/52yuanchangxing/policy-application-checker",
+    "mode": "tree",
+    "repoKey": "openclaw/skills"
+  },
+  "resolved": {
+    "owner": "openclaw",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/52yuanchangxing/policy-application-checker"
+  }
+}

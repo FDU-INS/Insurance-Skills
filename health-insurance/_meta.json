@@ -1,0 +1,11 @@
+{
+  "owner": "ivangdavila",
+  "slug": "health-insurance",
+  "displayName": "Health Insurance",
+  "latest": {
+    "version": "1.0.0",
+    "publishedAt": 1772359446864,
+    "commit": "https://github.com/openclaw/skills/commit/665ef57cf7f9f220170d29f84aedd278f5ba41d9"
+  },
+  "history": []
+}

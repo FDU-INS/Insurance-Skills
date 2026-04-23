@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 7,
+    "_query": "insurance",
+    "author": "alongor666",
+    "description": "Deploy and operate the vehicle insurance data analysis platform. Use when user asks about local development setup, production deployment, server configuration, build process, service management, or troubleshooting deployment issues. Focuses on the project's actual simple deployment model using start_server.sh, not complex enterprise setups.",
+    "githubUrl": "https://github.com/alongor666/daylyreport/tree/main/.claude/skills/deployment-and-ops",
+    "id": "alongor666-daylyreport-claude-skills-deployment-and-ops-skill-md",
+    "name": "deployment-and-ops",
+    "skillUrl": "https://skillsmp.com/skills/alongor666-daylyreport-claude-skills-deployment-and-ops-skill-md",
+    "stars": 0,
+    "updatedAt": 1762677552,
+    "owner": "alongor666",
+    "repo": "daylyreport",
+    "branch": "main",
+    "subpath": ".claude/skills/deployment-and-ops",
+    "mode": "tree",
+    "repoKey": "alongor666/daylyreport"
+  },
+  "resolved": {
+    "owner": "alongor666",
+    "repo": "daylyreport",
+    "branch": "main",
+    "subpath": ".claude/skills/deployment-and-ops"
+  }
+}

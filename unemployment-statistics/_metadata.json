@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 5,
+    "_query": "insurance",
+    "author": "taivop",
+    "description": "Query Estonian Unemployment Insurance Fund statistics and studies for labor-market, unemployment, and employment-service indicators.",
+    "githubUrl": "https://github.com/taivop/marketplace/tree/master/skills/.curated/estonia-public-sources/sources/unemployment-statistics",
+    "id": "taivop-marketplace-skills-curated-estonia-public-sources-sources-unemployment-statistics-skill-md",
+    "name": "unemployment-statistics",
+    "skillUrl": "https://skillsmp.com/skills/taivop-marketplace-skills-curated-estonia-public-sources-sources-unemployment-statistics-skill-md",
+    "stars": 8,
+    "updatedAt": 1771961567,
+    "owner": "taivop",
+    "repo": "marketplace",
+    "branch": "master",
+    "subpath": "skills/.curated/estonia-public-sources/sources/unemployment-statistics",
+    "mode": "tree",
+    "repoKey": "taivop/marketplace"
+  },
+  "resolved": {
+    "owner": "taivop",
+    "repo": "marketplace",
+    "branch": "master",
+    "subpath": "skills/.curated/estonia-public-sources/sources/unemployment-statistics"
+  }
+}

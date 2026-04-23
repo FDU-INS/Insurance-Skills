@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 11,
+    "_query": "insurance",
+    "author": "vm0-ai",
+    "description": "Build, manage, and generate standardized response templates for recurring legal inquiries. Activate when handling data subject access requests (DSARs), litigation hold notices, NDA workflows, vendor contract questions, subpoena responses, privacy policy inquiries, insurance claim notifications, or when creating and maintaining a library of reusable legal response templates with proper escalation safeguards.",
+    "githubUrl": "https://github.com/vm0-ai/vm0-skills/tree/main/reply-templates",
+    "id": "vm0-ai-vm0-skills-reply-templates-skill-md",
+    "name": "reply-templates",
+    "skillUrl": "https://skillsmp.com/skills/vm0-ai-vm0-skills-reply-templates-skill-md",
+    "stars": 53,
+    "updatedAt": 1773393133,
+    "owner": "vm0-ai",
+    "repo": "vm0-skills",
+    "branch": "main",
+    "subpath": "reply-templates",
+    "mode": "tree",
+    "repoKey": "vm0-ai/vm0-skills"
+  },
+  "resolved": {
+    "owner": "vm0-ai",
+    "repo": "vm0-skills",
+    "branch": "main",
+    "subpath": "reply-templates"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 10,
+    "_query": "insurance",
+    "author": "sanada123",
+    "description": "The non-code stuff that kills startups. Company registration, contracts (NDA, SOW, freelancer), accounting basics, tax calendars, legal entity selection, IP protection, insurance, compliance (GDPR, Israeli privacy law), domain/trademark basics, and vendor management. Covers Israel, US, and UAE jurisdictions. Use when discussing legal setup, contracts, accounting, compliance, insurance, IP, trademarks, or any operational/legal founder question. Triggers on: \"register company\", \"NDA\", \"contract\", \"accountant\", \"legal\", \"GDPR\", \"privacy policy\", \"trademark\", \"insurance\", \"עוסק מורשה\", \"חברה בע\"מ\", \"LLC\", \"free zone\", הקמת חברה, חוזה, עורך דין.",
+    "githubUrl": "https://github.com/sanada123/openclaw-skills/tree/main/startup-ops",
+    "id": "sanada123-openclaw-skills-startup-ops-skill-md",
+    "name": "startup-ops",
+    "skillUrl": "https://skillsmp.com/skills/sanada123-openclaw-skills-startup-ops-skill-md",
+    "stars": 2,
+    "updatedAt": 1774975065,
+    "owner": "sanada123",
+    "repo": "openclaw-skills",
+    "branch": "main",
+    "subpath": "startup-ops",
+    "mode": "tree",
+    "repoKey": "sanada123/openclaw-skills"
+  },
+  "resolved": {
+    "owner": "sanada123",
+    "repo": "openclaw-skills",
+    "branch": "main",
+    "subpath": "startup-ops"
+  }
+}

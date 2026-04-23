@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 9,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Evaluates environmental liability exposure with remediation cost estimation, regulatory compliance requirements, and insurance coverage assessment. Use when analyzing environmental liabilities, estimating cleanup costs, or assessing environmental risk.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/capital/conducting-environmental-remediation-analysis",
+    "id": "casemark-skills-skills-capital-conducting-environmental-remediation-analysis-skill-md",
+    "name": "conducting-environmental-remediation-analysis",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-capital-conducting-environmental-remediation-analysis-skill-md",
+    "stars": 12,
+    "updatedAt": 1772680350,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/capital/conducting-environmental-remediation-analysis",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/capital/conducting-environmental-remediation-analysis"
+  }
+}

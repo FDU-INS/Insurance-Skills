@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 5,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Evaluates P&C insurance lines with market cycle analysis, loss cost trending, and competitive assessment. Use when analyzing P&C markets, tracking insurance cycles, or evaluating line profitability.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/finance/analyzing-property-casualty-lines",
+    "id": "casemark-skills-skills-finance-analyzing-property-casualty-lines-skill-md",
+    "name": "analyzing-property-casualty-lines",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-finance-analyzing-property-casualty-lines-skill-md",
+    "stars": 12,
+    "updatedAt": 1772680350,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/analyzing-property-casualty-lines",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/analyzing-property-casualty-lines"
+  }
+}

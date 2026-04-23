@@ -1,0 +1,120 @@
+================================================================================
+        HEALTH INSURANCE COMPARISON ANALYSIS
+          [COMPANY NAME] - [DATE]
+================================================================================
+
+EXECUTIVE SUMMARY
+================================================================================
+[1-paragraph summary of situation and clear recommendation]
+
+KEY FINDING: [Main conclusion - which option is best and why]
+
+EMPLOYEE INFORMATION
+================================================================================
+Employee:       [Name]
+DOB:            [Date] (Age XX)
+Status:         [Visa status or citizen]
+Spouse:         [Name], DOB: [Date] (Age XX, Status)
+Child 1:        [Name], DOB: [Date] (Age XX, Status)
+Child 2:        [Name], DOB: [Date] (Age XX, Status)
+Location:       [City, State ZIP]
+Annual Income:  $[Amount]
+
+Current Plan:   [Carrier] [Plan Type] - $[XXX]/month (ending [Date])
+
+
+================================================================================
+OPTION 1: [PLAN NAME] ⭐ RECOMMENDED
+================================================================================
+
+Plan:           [Carrier] [Plan Type]
+Monthly Premium: $[XXX]
+Company Pays:   $[XXX] ([XX]%)
+Employee Pays:  $[XXX] ([XX]%)
+
+COVERAGE DETAILS:
+    Deductible:             $[XXX] individual / $[XXX] family
+    Out-of-Pocket Maximum:  $[XXX] individual / $[XXX] family
+    Primary Care Copay:     $[XX]
+    Specialist Copay:       $[XX]
+    Coinsurance:            XX/XX
+    Plan Type:              [PPO/EPO/HMO]
+
+ANNUAL COST: $[XXX]/year
+
+PROS:
+✓ [Benefit 1]
+✓ [Benefit 2]
+✓ [Benefit 3]
+
+CONS:
+✗ [Drawback 1]
+✗ [Drawback 2]
+
+
+================================================================================
+OPTION 2: [PLAN NAME]
+================================================================================
+
+[Same format as Option 1]
+
+
+================================================================================
+COST COMPARISON TABLE
+================================================================================
+
+Plan                    Monthly    Company    Employee   Annual
+                        Premium    Pays       Pays       Cost
+--------------------------------------------------------------------------------
+[Plan 1]               $X,XXX     $XXX       $X,XXX     $XX,XXX
+[Plan 2]               $X,XXX     $XXX       $X,XXX     $XX,XXX
+[Plan 3]               $X,XXX     $XXX       $X,XXX     $XX,XXX
+
+
+ANNUAL SAVINGS COMPARISON:
+--------------------------------------------------------------------------------
+vs. Current Plan:
+    [Option 1]:     [SAVES/COSTS] $X,XXX per year
+    [Option 2]:     [SAVES/COSTS] $X,XXX per year
+
+vs. Most Expensive Option:
+    [Best Option]:  SAVES $X,XXX per year
+
+
+================================================================================
+IMPORTANT CONSIDERATIONS
+================================================================================
+
+1. DOCTOR NETWORK STATUS
+2. VISA CONSIDERATIONS
+3. TAX BENEFITS
+4. SUBSIDY ELIGIBILITY
+
+
+================================================================================
+RECOMMENDATION
+================================================================================
+
+CHOOSE: [Plan Name]
+REASON: [1-2 sentence explanation]
+
+STEPS TO IMPLEMENT:
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+
+
+================================================================================
+CONTACTS FOR NEXT STEPS
+================================================================================
+
+[Agent Name]:
+Phone: XXX-XXX-XXXX
+Email: email@example.com
+
+
+================================================================================
+Document prepared: [Date]
+For: [Your Name], [Company]
+Re: Health Insurance Options for [Employee Name]
+================================================================================

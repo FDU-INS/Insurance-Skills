@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "claims",
+    "author": "philippfrenzel",
+    "description": "Schadenfall-Guide und Entscheidungslogik. Leitet Schritt fuer Schritt durch jeden Schadenfall (Unfall, Krankheit, Haftpflicht, Hausrat, Auto, Rechtsschutz, Todesfall, Invaliditaet). Liefert Self-Service-Checklisten, klaert wann und wie melden, welche Nachweise noetig sind, und wie Fristen und Kommunikation laufen. Schweizer Kontext als Standard. Triggert bei Fragen zu Schadenfall, Schadenmeldung, Unfall melden, Versicherung melden, was tun bei Schaden, Schadenformular, Versicherungsfall, Schadenanspruch, Frist versaeumt, Versicherung zahlt nicht, Leistungsablehnung, Einsprache, Schadenregulierung.",
+    "githubUrl": "https://github.com/adiman9/mnemos/tree/main/core/skills/pipeline",
+    "id": "philippfrenzel-claims-guide-skills-skill-md",
+    "name": "claims-guide",
+    "skillUrl": "https://skillsmp.com/skills/philippfrenzel-claims-guide-skills-skill-md",
+    "stars": 0,
+    "updatedAt": 1771600288,
+    "is_insurance_related": "是",
+    "owner": "adiman9",
+    "repo": "mnemos",
+    "branch": "main",
+    "subpath": "core/skills/pipeline",
+    "mode": "tree",
+    "repoKey": "adiman9/mnemos"
+  },
+  "resolved": {
+    "owner": "adiman9",
+    "repo": "mnemos",
+    "branch": "main",
+    "subpath": "core/skills/pipeline"
+  }
+}

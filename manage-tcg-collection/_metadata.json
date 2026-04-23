@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 11,
+    "_query": "insurance",
+    "author": "pjt222",
+    "description": "Organize, track, and value a trading card game collection. Covers inventory methods, storage best practices, grade-based valuation, want-list management, and collection analytics for Pokemon, MTG, Flesh and Blood, and Kayou cards. Use when starting a new collection and setting up inventory tracking, cataloging an existing collection that has grown beyond casual knowledge, valuing a collection for insurance or sale, or deciding which cards to submit for professional grading based on value potential.",
+    "githubUrl": "https://github.com/pjt222/agent-almanac/tree/main/skills/manage-tcg-collection",
+    "id": "pjt222-agent-almanac-skills-manage-tcg-collection-skill-md",
+    "name": "manage-tcg-collection",
+    "skillUrl": "https://skillsmp.com/skills/pjt222-agent-almanac-skills-manage-tcg-collection-skill-md",
+    "stars": 9,
+    "updatedAt": 1771519918,
+    "owner": "pjt222",
+    "repo": "agent-almanac",
+    "branch": "main",
+    "subpath": "skills/manage-tcg-collection",
+    "mode": "tree",
+    "repoKey": "pjt222/agent-almanac"
+  },
+  "resolved": {
+    "owner": "pjt222",
+    "repo": "agent-almanac",
+    "branch": "main",
+    "subpath": "skills/manage-tcg-collection"
+  }
+}

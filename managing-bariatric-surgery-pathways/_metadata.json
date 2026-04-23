@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 6,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Structures bariatric surgery evaluation with insurance requirements, preoperative optimization, and post-surgical nutrition protocols. Use when evaluating bariatric candidates, documenting insurance criteria, or managing post-bariatric care.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/med/managing-bariatric-surgery-pathways",
+    "id": "casemark-skills-skills-med-managing-bariatric-surgery-pathways-skill-md",
+    "name": "managing-bariatric-surgery-pathways",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-med-managing-bariatric-surgery-pathways-skill-md",
+    "stars": 12,
+    "updatedAt": 1772679741,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/med/managing-bariatric-surgery-pathways",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/med/managing-bariatric-surgery-pathways"
+  }
+}

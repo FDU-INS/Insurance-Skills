@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 11,
+    "_query": "insurance",
+    "author": "jhubert",
+    "description": "Read, extract text, fill forms, and overlay text on PDF files using pdftk and pdfjs-dist. Use when working with PDFs — extracting content, filling fillable form fields, or adding text to non-fillable PDFs via coordinate-based overlays. Handles insurance forms, applications, contracts, and any PDF document processing.",
+    "githubUrl": "https://github.com/jhubert/steward/tree/main/skills/pdf",
+    "id": "jhubert-steward-skills-pdf-skill-md",
+    "name": "pdf",
+    "skillUrl": "https://skillsmp.com/skills/jhubert-steward-skills-pdf-skill-md",
+    "stars": 0,
+    "updatedAt": 1771257856,
+    "owner": "jhubert",
+    "repo": "steward",
+    "branch": "main",
+    "subpath": "skills/pdf",
+    "mode": "tree",
+    "repoKey": "jhubert/steward"
+  },
+  "resolved": {
+    "owner": "jhubert",
+    "repo": "steward",
+    "branch": "main",
+    "subpath": "skills/pdf"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 9,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Drafts enforceable U.S. subcontractor agreements governing general contractor/subcontractor relationships for construction and service projects. Covers scope of work, payment and retainage, insurance and bonding, indemnification, schedule compliance, termination, and dispute resolution with state-specific compliance. Use when drafting subcontracts, subcontractor agreements, construction service agreements, or contractor engagement documents.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/legal/subcontractor-agreement",
+    "id": "casemark-skills-skills-legal-subcontractor-agreement-skill-md",
+    "name": "subcontractor-agreement",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-legal-subcontractor-agreement-skill-md",
+    "stars": 12,
+    "updatedAt": 1772500417,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/subcontractor-agreement",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/legal/subcontractor-agreement"
+  }
+}

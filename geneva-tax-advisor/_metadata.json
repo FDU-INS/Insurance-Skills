@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 8,
+    "_query": "insurance",
+    "author": "openclaw",
+    "description": "Guide taxpayers through filing Geneva (Switzerland) tax returns with GeTax. Covers salary, professional expenses (forfaitaire vs effectifs), pillar 3a/3b, health insurance, medical expenses, securities (DA-1/RSI), foreign property, bank accounts, debts, crypto, and dual-income couples. Use when filing via GeTax, optimizing ICC/IFD deductions, declaring foreign property or income, handling DA-1 reclaims, or navigating Geneva cantonal tax rules.",
+    "githubUrl": "https://github.com/openclaw/skills/tree/main/skills/calsoufi/geneva-tax-advisor",
+    "id": "openclaw-skills-skills-calsoufi-geneva-tax-advisor-skill-md",
+    "name": "geneva-tax-advisor",
+    "skillUrl": "https://skillsmp.com/skills/openclaw-skills-skills-calsoufi-geneva-tax-advisor-skill-md",
+    "stars": 4094,
+    "updatedAt": 1775482789,
+    "owner": "openclaw",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/calsoufi/geneva-tax-advisor",
+    "mode": "tree",
+    "repoKey": "openclaw/skills"
+  },
+  "resolved": {
+    "owner": "openclaw",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/calsoufi/geneva-tax-advisor"
+  }
+}

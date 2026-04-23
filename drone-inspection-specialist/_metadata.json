@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 11,
+    "_query": "insurance",
+    "author": "majiayu000",
+    "description": "Advanced CV for infrastructure inspection including forest fire detection, wildfire precondition assessment, roof inspection, hail damage analysis, thermal imaging, and 3D Gaussian Splatting reconstruction. Expert in multi-modal detection, insurance risk modeling, and reinsurance data pipelines. Activate on \"fire detection\", \"wildfire risk\", \"roof inspection\", \"hail damage\", \"thermal analysis\", \"Gaussian Splatting\", \"3DGS\", \"insurance inspection\", \"defensible space\", \"property assessment\", \"catastrophe modeling\", \"NDVI\", \"fuel load\". NOT for general drone flight control, SLAM, path planning, or sensor fusion (use drone-cv-expert), GPU shader development (use metal-shader-expert), or generic object detection without inspection context (use clip-aware-embeddings).",
+    "githubUrl": "https://github.com/majiayu000/claude-skill-registry-data/tree/main/data/drone-inspection-specialist",
+    "id": "majiayu000-claude-skill-registry-data-data-drone-inspection-specialist-skill-md",
+    "name": "drone-inspection-specialist",
+    "skillUrl": "https://skillsmp.com/skills/majiayu000-claude-skill-registry-data-data-drone-inspection-specialist-skill-md",
+    "stars": 4,
+    "updatedAt": 1770280794,
+    "owner": "majiayu000",
+    "repo": "claude-skill-registry-data",
+    "branch": "main",
+    "subpath": "data/drone-inspection-specialist",
+    "mode": "tree",
+    "repoKey": "majiayu000/claude-skill-registry-data"
+  },
+  "resolved": {
+    "owner": "majiayu000",
+    "repo": "claude-skill-registry-data",
+    "branch": "main",
+    "subpath": "data/drone-inspection-specialist"
+  }
+}

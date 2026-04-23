@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 7,
+    "_query": "insurance",
+    "author": "kalta-ai",
+    "description": "Perform a loss reserve analysis on P&C insurance loss development triangles. Use this skill whenever the user uploads loss triangles (paid or incurred), Schedule P data, or asks about reserve adequacy, reserve sufficiency, IBNR estimation, loss development analysis, loss reserve review, or ultimate loss projections. Also trigger when the user mentions chain ladder, Bornhuetter-Ferguson, Cape Cod, loss development factors, tail factors, or actuarial reserving methods. This skill reads triangles from Excel or CSV, runs multiple standard actuarial methods, diagnoses unusual patterns, and produces a formatted Excel report with exhibits. Even if the user just says 'check my reserves', 'run development on this triangle', or 'analyze my loss reserves', use this skill.",
+    "githubUrl": "https://github.com/kalta-ai/actuarial-skills/tree/main/loss-reserve-analysis",
+    "id": "kalta-ai-actuarial-skills-loss-reserve-analysis-skill-md",
+    "name": "loss-reserve-analysis",
+    "skillUrl": "https://skillsmp.com/skills/kalta-ai-actuarial-skills-loss-reserve-analysis-skill-md",
+    "stars": 7,
+    "updatedAt": 1773856520,
+    "owner": "kalta-ai",
+    "repo": "actuarial-skills",
+    "branch": "main",
+    "subpath": "loss-reserve-analysis",
+    "mode": "tree",
+    "repoKey": "kalta-ai/actuarial-skills"
+  },
+  "resolved": {
+    "owner": "kalta-ai",
+    "repo": "actuarial-skills",
+    "branch": "main",
+    "subpath": "loss-reserve-analysis"
+  }
+}

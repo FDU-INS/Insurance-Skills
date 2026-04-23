@@ -1,0 +1,331 @@
+{
+  "enrollmentTransaction": {
+    "transactionId": "ENR-2025-0001847",
+    "transactionDate": "2025-01-01",
+    "transactionType": "INITIAL_ENROLLMENT",
+    "effectiveDate": "2025-01-01",
+    "source": "OPEN_ENROLLMENT",
+    "lastModified": "2025-03-15",
+    "modificationHistory": [
+      {
+        "date": "2025-03-15",
+        "type": "PCP_CHANGE",
+        "transactionId": "ENR-2025-0001848",
+        "description": "PCP change for all family members",
+        "effectiveDate": "2025-04-01"
+      }
+    ]
+  },
+  "healthPlan": {
+    "payerId": "60054",
+    "payerName": "Aetna",
+    "planId": "AET-PPO-PLAT-2025",
+    "planName": "Aetna Platinum PPO",
+    "planType": "PPO",
+    "metalLevel": "PLATINUM",
+    "groupNumber": "847291",
+    "groupName": "Individual & Family Plans",
+    "networkId": "AETNA-OPEN-ACCESS",
+    "coverageType": "FAMILY",
+    "planYear": 2025
+  },
+  "benefits": {
+    "deductible": {
+      "individual": 250,
+      "family": 500
+    },
+    "outOfPocketMax": {
+      "individual": 2500,
+      "family": 5000
+    },
+    "coinsurance": {
+      "inNetwork": 10,
+      "outOfNetwork": 30
+    },
+    "copays": {
+      "primaryCare": 20,
+      "specialist": 40,
+      "urgentCare": 50,
+      "emergencyRoom": 150,
+      "genericRx": 10,
+      "preferredBrandRx": 35,
+      "nonPreferredBrandRx": 70,
+      "specialtyRx": 150
+    },
+    "preventiveCare": "COVERED_100_PERCENT",
+    "pediatricDental": "INCLUDED",
+    "pediatricVision": "INCLUDED"
+  },
+  "subscriber": {
+    "memberId": "AET847291001",
+    "relationshipCode": "18",
+    "relationship": "SELF",
+    "firstName": "Mark",
+    "lastName": "Oswald",
+    "dateOfBirth": "1975-06-15",
+    "gender": "M",
+    "ssn": "XXX-XX-4521",
+    "address": {
+      "line1": "1234 Oak Street",
+      "city": "San Francisco",
+      "state": "CA",
+      "zipCode": "94102"
+    },
+    "phone": "415-555-0147",
+    "email": "mark.oswald@email.com",
+    "employmentStatus": "ACTIVE",
+    "primaryCareProvider": {
+      "npi": "1255468245",
+      "name": "Dr. Joshua Bamberger",
+      "credential": "MD",
+      "specialty": "Family Medicine",
+      "practiceName": "UCSF Family Medicine - Tenderloin",
+      "phone": "415-353-5095",
+      "address": {
+        "line1": "234 Eddy Street",
+        "city": "San Francisco",
+        "state": "CA",
+        "zipCode": "94102"
+      },
+      "effectiveDate": "2025-04-01",
+      "previousProvider": {
+        "npi": "1234567890",
+        "name": "Dr. Nasrin Arbabi",
+        "endDate": "2025-03-31"
+      }
+    }
+  },
+  "dependents": [
+    {
+      "memberId": "AET847291002",
+      "relationshipCode": "01",
+      "relationship": "SPOUSE",
+      "firstName": "Karen",
+      "lastName": "Oswald",
+      "dateOfBirth": "1977-03-22",
+      "gender": "F",
+      "ssn": "XXX-XX-7834",
+      "primaryCareProvider": {
+        "npi": "1255468245",
+        "name": "Dr. Joshua Bamberger",
+        "credential": "MD",
+        "specialty": "Family Medicine",
+        "practiceName": "UCSF Family Medicine - Tenderloin",
+        "phone": "415-353-5095",
+        "effectiveDate": "2025-04-01",
+        "previousProvider": {
+          "npi": "1234567890",
+          "name": "Dr. Nasrin Arbabi",
+          "endDate": "2025-03-31"
+        }
+      }
+    },
+    {
+      "memberId": "AET847291003",
+      "relationshipCode": "19",
+      "relationship": "CHILD",
+      "firstName": "Gracie",
+      "lastName": "Oswald",
+      "dateOfBirth": "2010-08-03",
+      "gender": "F",
+      "ssn": "XXX-XX-9012",
+      "schoolStatus": "FULL_TIME_STUDENT",
+      "primaryCareProvider": {
+        "npi": "1891038006",
+        "name": "Dr. Julianne Burns",
+        "credential": "MD",
+        "specialty": "Pediatrics",
+        "practiceName": "Sutter Health CPMC Pediatrics",
+        "phone": "628-336-2220",
+        "address": {
+          "line1": "1100 Van Ness Avenue",
+          "floor": "7th Floor",
+          "city": "San Francisco",
+          "state": "CA",
+          "zipCode": "94109"
+        },
+        "effectiveDate": "2025-04-01",
+        "previousProvider": {
+          "npi": "1987654321",
+          "name": "Dr. Michael Torres",
+          "endDate": "2025-03-31"
+        }
+      }
+    },
+    {
+      "memberId": "AET847291004",
+      "relationshipCode": "19",
+      "relationship": "CHILD",
+      "firstName": "Emmy",
+      "lastName": "Oswald",
+      "dateOfBirth": "2014-11-18",
+      "gender": "F",
+      "ssn": "XXX-XX-3456",
+      "schoolStatus": "FULL_TIME_STUDENT",
+      "primaryCareProvider": {
+        "npi": "1891038006",
+        "name": "Dr. Julianne Burns",
+        "credential": "MD",
+        "specialty": "Pediatrics",
+        "practiceName": "Sutter Health CPMC Pediatrics",
+        "phone": "628-336-2220",
+        "address": {
+          "line1": "1100 Van Ness Avenue",
+          "floor": "7th Floor",
+          "city": "San Francisco",
+          "state": "CA",
+          "zipCode": "94109"
+        },
+        "effectiveDate": "2025-04-01",
+        "previousProvider": {
+          "npi": "1987654321",
+          "name": "Dr. Michael Torres",
+          "endDate": "2025-03-31"
+        }
+      }
+    },
+    {
+      "memberId": "AET847291005",
+      "relationshipCode": "19",
+      "relationship": "CHILD",
+      "firstName": "Miles",
+      "lastName": "Oswald",
+      "dateOfBirth": "2020-04-12",
+      "gender": "M",
+      "ssn": "XXX-XX-7890",
+      "primaryCareProvider": {
+        "npi": "1891038006",
+        "name": "Dr. Julianne Burns",
+        "credential": "MD",
+        "specialty": "Pediatrics",
+        "practiceName": "Sutter Health CPMC Pediatrics",
+        "phone": "628-336-2220",
+        "address": {
+          "line1": "1100 Van Ness Avenue",
+          "floor": "7th Floor",
+          "city": "San Francisco",
+          "state": "CA",
+          "zipCode": "94109"
+        },
+        "effectiveDate": "2025-04-01",
+        "previousProvider": {
+          "npi": "1987654321",
+          "name": "Dr. Michael Torres",
+          "endDate": "2025-03-31"
+        }
+      }
+    }
+  ],
+  "premium": {
+    "totalMonthly": 1875.00,
+    "subscriberPortion": 624.00,
+    "spousePortion": 523.50,
+    "childPortion": 727.50,
+    "employerContribution": 0,
+    "subsidyAmount": 0,
+    "paymentMethod": "ACH",
+    "billingFrequency": "MONTHLY",
+    "notes": "Children under 26 covered. Pediatric dental and vision included per ACA."
+  },
+  "coverage": {
+    "medicalCoverage": true,
+    "dentalCoverage": false,
+    "visionCoverage": false,
+    "prescriptionCoverage": true,
+    "mentalHealthCoverage": true,
+    "substanceAbuseCoverage": true,
+    "pediatricDentalCoverage": true,
+    "pediatricVisionCoverage": true
+  },
+  "idCards": {
+    "subscriber": {
+      "memberId": "AET847291001",
+      "groupNumber": "847291",
+      "rxBin": "004336",
+      "rxPcn": "ADV",
+      "rxGroup": "RX4521"
+    },
+    "dependents": [
+      {
+        "memberId": "AET847291002",
+        "name": "Karen Oswald",
+        "groupNumber": "847291",
+        "rxBin": "004336",
+        "rxPcn": "ADV",
+        "rxGroup": "RX4521"
+      },
+      {
+        "memberId": "AET847291003",
+        "name": "Gracie Oswald",
+        "groupNumber": "847291",
+        "rxBin": "004336",
+        "rxPcn": "ADV",
+        "rxGroup": "RX4521"
+      },
+      {
+        "memberId": "AET847291004",
+        "name": "Emmy Oswald",
+        "groupNumber": "847291",
+        "rxBin": "004336",
+        "rxPcn": "ADV",
+        "rxGroup": "RX4521"
+      },
+      {
+        "memberId": "AET847291005",
+        "name": "Miles Oswald",
+        "groupNumber": "847291",
+        "rxBin": "004336",
+        "rxPcn": "ADV",
+        "rxGroup": "RX4521"
+      }
+    ]
+  },
+  "accumulators": {
+    "planYear": 2025,
+    "asOfDate": "2025-03-08",
+    "family": {
+      "deductible": {
+        "limit": 500,
+        "applied": 0,
+        "remaining": 500
+      },
+      "outOfPocketMax": {
+        "limit": 5000,
+        "applied": 121.30,
+        "remaining": 4878.70
+      }
+    },
+    "members": [
+      {
+        "memberId": "AET847291001",
+        "name": "Mark Oswald",
+        "deductible": { "limit": 250, "applied": 0, "remaining": 250 },
+        "outOfPocketMax": { "limit": 2500, "applied": 60.30, "remaining": 2439.70 }
+      },
+      {
+        "memberId": "AET847291002",
+        "name": "Karen Oswald",
+        "deductible": { "limit": 250, "applied": 0, "remaining": 250 },
+        "outOfPocketMax": { "limit": 2500, "applied": 0, "remaining": 2500 }
+      },
+      {
+        "memberId": "AET847291003",
+        "name": "Gracie Oswald",
+        "deductible": { "limit": 250, "applied": 0, "remaining": 250 },
+        "outOfPocketMax": { "limit": 2500, "applied": 0, "remaining": 2500 }
+      },
+      {
+        "memberId": "AET847291004",
+        "name": "Emmy Oswald",
+        "deductible": { "limit": 250, "applied": 0, "remaining": 250 },
+        "outOfPocketMax": { "limit": 2500, "applied": 61.00, "remaining": 2439.00 }
+      },
+      {
+        "memberId": "AET847291005",
+        "name": "Miles Oswald",
+        "deductible": { "limit": 250, "applied": 0, "remaining": 250 },
+        "outOfPocketMax": { "limit": 2500, "applied": 0, "remaining": 2500 }
+      }
+    ]
+  }
+}

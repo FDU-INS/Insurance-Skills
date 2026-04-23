@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 9,
+    "_query": "insurance",
+    "author": "fall-development-rob",
+    "description": "Transforms Claude into a CFA-level financial analyst for specialty finance, regulatory compliance, and industry-specific analysis. Use when performing private credit pricing, insurance reserving, FP&A variance analysis, wealth planning, restructuring recovery analysis, real estate valuation, venture capital analysis, ESG assessment, regulatory capital analysis (Basel III), compliance reporting (MiFID II, GIPS), credit derivatives (CDS, CVA), convertible bond analysis, lease accounting (ASC 842/IFRS 16), pension funding/LDI, sovereign risk assessment, real option valuation, equity research (SOTP, target price), commodity spread trading, treasury operations, PPP infrastructure modelling, onshore fund structuring, offshore fund structuring, transfer pricing analysis (BEPS, Pillar Two), tax treaty optimisation, FATCA/CRS compliance, economic substance analysis, regulatory reporting (AIFMD, Form PF), AML/KYC compliance, crypto/DeFi analysis, municipal bond analysis, structured products, trade finance, fund of fund",
+    "githubUrl": "https://github.com/fall-development-rob/corp_finance/tree/main/.claude/skills/corp-finance-analyst-regulatory",
+    "id": "fall-development-rob-corp-finance-claude-skills-corp-finance-analyst-regulatory-skill-md",
+    "name": "financial-analyst-specialty-regulatory",
+    "skillUrl": "https://skillsmp.com/skills/fall-development-rob-corp-finance-claude-skills-corp-finance-analyst-regulatory-skill-md",
+    "stars": 2,
+    "updatedAt": 1770912082,
+    "owner": "fall-development-rob",
+    "repo": "corp_finance",
+    "branch": "main",
+    "subpath": ".claude/skills/corp-finance-analyst-regulatory",
+    "mode": "tree",
+    "repoKey": "fall-development-rob/corp_finance"
+  },
+  "resolved": {
+    "owner": "fall-development-rob",
+    "repo": "corp_finance",
+    "branch": "main",
+    "subpath": ".claude/skills/corp-finance-analyst-regulatory"
+  }
+}

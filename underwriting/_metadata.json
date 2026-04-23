@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 4,
+    "_query": "insurance",
+    "author": "provectus",
+    "description": "Insurance underwriting domain knowledge for building automated submission processing systems. Covers submission-to-bind lifecycle, document extraction patterns, compliance gates (sanctions, licensing, clearance), human-in-the-loop design for regulated financial services, confidence calibration for extracted fields, operating mode progression (manual to automated), and evidence traceability requirements. Use when designing or implementing underwriting pipelines, extraction agents, compliance workflows, HITL review systems, or decision package assembly for insurance or MGA operations.",
+    "githubUrl": "https://github.com/provectus/awos-recruitment/tree/main/registry/skills/underwriting",
+    "id": "provectus-awos-recruitment-registry-skills-underwriting-skill-md",
+    "name": "underwriting",
+    "skillUrl": "https://skillsmp.com/skills/provectus-awos-recruitment-registry-skills-underwriting-skill-md",
+    "stars": 10,
+    "updatedAt": 1773077103,
+    "owner": "provectus",
+    "repo": "awos-recruitment",
+    "branch": "main",
+    "subpath": "registry/skills/underwriting",
+    "mode": "tree",
+    "repoKey": "provectus/awos-recruitment"
+  },
+  "resolved": {
+    "owner": "provectus",
+    "repo": "awos-recruitment",
+    "branch": "main",
+    "subpath": "registry/skills/underwriting"
+  }
+}

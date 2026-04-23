@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 7,
+    "_query": "insurance",
+    "author": "skills-il",
+    "description": "Navigate the Israeli pension and savings system including pension funds (keren pensia), manager's insurance (bituach menahalim), training funds (keren hishtalmut), and retirement planning. Use when user asks about Israeli pension, \"pensia\", \"keren hishtalmut\", retirement savings, \"bituach menahalim\", pension contributions, or tax benefits from savings. Uninformed pension decisions cost hundreds of thousands of NIS over a lifetime. Covers mandatory pension, voluntary savings, and withdrawal rules. Do NOT provide specific investment recommendations or fund performance comparisons.",
+    "githubUrl": "https://github.com/skills-il/tax-and-finance/tree/master/israeli-pension-advisor",
+    "id": "skills-il-tax-and-finance-israeli-pension-advisor-skill-md",
+    "name": "israeli-pension-advisor",
+    "skillUrl": "https://skillsmp.com/skills/skills-il-tax-and-finance-israeli-pension-advisor-skill-md",
+    "stars": 13,
+    "updatedAt": 1775636968,
+    "owner": "skills-il",
+    "repo": "tax-and-finance",
+    "branch": "master",
+    "subpath": "israeli-pension-advisor",
+    "mode": "tree",
+    "repoKey": "skills-il/tax-and-finance"
+  },
+  "resolved": {
+    "owner": "skills-il",
+    "repo": "tax-and-finance",
+    "branch": "master",
+    "subpath": "israeli-pension-advisor"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 3,
+    "_query": "coverage",
+    "author": "majiayu000",
+    "description": "Coverage policy - 90% requirement and exclusion rules",
+    "githubUrl": "https://github.com/aifinlab/FinClaw/tree/main/skills/death-coverage-scope-judgment-assistant",
+    "id": "majiayu000-claude-skill-registry-data-data-coverage-skill-md",
+    "name": "coverage",
+    "skillUrl": "https://skillsmp.com/skills/majiayu000-claude-skill-registry-data-data-coverage-skill-md",
+    "stars": 4,
+    "updatedAt": 1770280794,
+    "is_insurance_related": "是",
+    "owner": "aifinlab",
+    "repo": "FinClaw",
+    "branch": "main",
+    "subpath": "skills/death-coverage-scope-judgment-assistant",
+    "mode": "tree",
+    "repoKey": "aifinlab/FinClaw"
+  },
+  "resolved": {
+    "owner": "aifinlab",
+    "repo": "FinClaw",
+    "branch": "main",
+    "subpath": "skills/death-coverage-scope-judgment-assistant"
+  }
+}

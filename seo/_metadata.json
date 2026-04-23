@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 6,
+    "_query": "insurance",
+    "author": "Hecpac",
+    "description": "SEO analysis and optimization for TC Insurance. Sub-commands: audit, onpage, analytics, content, local, ai, full, report.",
+    "githubUrl": "https://github.com/Hecpac/TCinsurance/tree/main/.claude/skills/seo",
+    "id": "hecpac-tcinsurance-claude-skills-seo-skill-md",
+    "name": "seo",
+    "skillUrl": "https://skillsmp.com/skills/hecpac-tcinsurance-claude-skills-seo-skill-md",
+    "stars": 0,
+    "updatedAt": 1774816540,
+    "owner": "Hecpac",
+    "repo": "TCinsurance",
+    "branch": "main",
+    "subpath": ".claude/skills/seo",
+    "mode": "tree",
+    "repoKey": "Hecpac/TCinsurance"
+  },
+  "resolved": {
+    "owner": "Hecpac",
+    "repo": "TCinsurance",
+    "branch": "main",
+    "subpath": ".claude/skills/seo"
+  }
+}

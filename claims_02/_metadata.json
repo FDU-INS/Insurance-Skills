@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "claims",
+    "author": "cogni-work",
+    "description": "Manage claim verification lifecycle — submit, verify, review dashboard, inspect, and resolve claims.\nUse this skill whenever the user mentions claims, fact-checking, source verification, checking\nwhether statements match their cited sources, reviewing deviations, or anything related to\ntracking the accuracy of sourced statements. Also use it when another plugin submits claims\nfor verification (e.g., after a research or portfolio workflow produces sourced assertions).\nEven if the user doesn't say \"claims\" explicitly — if they're asking about verifying facts\nagainst sources, checking citations, finding outdated or mismatched data in cited references,\nor reviewing what's been flagged, this skill handles it.",
+    "githubUrl": "https://github.com/theneoai/awesome-skills/tree/main/skills/healthcare/unitedhealth/unitedhealth-engineer",
+    "id": "cogni-work-cogni-claims-skills-claims-skill-md",
+    "name": "claims",
+    "skillUrl": "https://skillsmp.com/skills/cogni-work-cogni-claims-skills-claims-skill-md",
+    "stars": 1,
+    "updatedAt": 1772688722,
+    "is_insurance_related": "是",
+    "owner": "theneoai",
+    "repo": "awesome-skills",
+    "branch": "main",
+    "subpath": "skills/healthcare/unitedhealth/unitedhealth-engineer",
+    "mode": "tree",
+    "repoKey": "theneoai/awesome-skills"
+  },
+  "resolved": {
+    "owner": "theneoai",
+    "repo": "awesome-skills",
+    "branch": "main",
+    "subpath": "skills/healthcare/unitedhealth/unitedhealth-engineer"
+  }
+}

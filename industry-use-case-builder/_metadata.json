@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 10,
+    "_query": "insurance",
+    "author": "AdobeDocs",
+    "description": "Guide creation of new industry use cases for the Adobe Experience Platform blueprints repository. Use this skill when adding a new use case to an industry vertical (retail, automotive, healthcare, financial services, insurance, media & entertainment, telecommunications, travel & hospitality, B2B), when the user wants to add business scenarios to industry pages, or when updating the use case catalog. Handles the full workflow: gathering use case details, assessing maturity level, generating content, updating the industry overview page and use case catalog, and invoking the use-case-icon-generator skill for icon creation.",
+    "githubUrl": "https://github.com/AdobeDocs/blueprints-learn.en/tree/main/.claude/skills/industry-use-case-builder",
+    "id": "adobedocs-blueprints-learn-en-claude-skills-industry-use-case-builder-skill-md",
+    "name": "industry-use-case-builder",
+    "skillUrl": "https://skillsmp.com/skills/adobedocs-blueprints-learn-en-claude-skills-industry-use-case-builder-skill-md",
+    "stars": 1,
+    "updatedAt": 1773977091,
+    "owner": "AdobeDocs",
+    "repo": "blueprints-learn.en",
+    "branch": "main",
+    "subpath": ".claude/skills/industry-use-case-builder",
+    "mode": "tree",
+    "repoKey": "AdobeDocs/blueprints-learn.en"
+  },
+  "resolved": {
+    "owner": "AdobeDocs",
+    "repo": "blueprints-learn.en",
+    "branch": "main",
+    "subpath": ".claude/skills/industry-use-case-builder"
+  }
+}

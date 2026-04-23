@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 5,
+    "_query": "policy",
+    "author": "pankajydv07",
+    "description": "AI-powered synthetic population simulator with clean architecture, Python type safety, and professional dashboard design patterns",
+    "githubUrl": "https://github.com/joshuadshipman/Texastotalloss/tree/main/.agent/skills/ttl-daily-marketing-review-agent",
+    "id": "pankajydv07-policypulse-skill-md",
+    "name": "policypulse-development",
+    "skillUrl": "https://skillsmp.com/skills/pankajydv07-policypulse-skill-md",
+    "stars": 0,
+    "updatedAt": 1769888017,
+    "is_insurance_related": "是",
+    "owner": "joshuadshipman",
+    "repo": "Texastotalloss",
+    "branch": "main",
+    "subpath": ".agent/skills/ttl-daily-marketing-review-agent",
+    "mode": "tree",
+    "repoKey": "joshuadshipman/Texastotalloss"
+  },
+  "resolved": {
+    "owner": "joshuadshipman",
+    "repo": "Texastotalloss",
+    "branch": "main",
+    "subpath": ".agent/skills/ttl-daily-marketing-review-agent"
+  }
+}

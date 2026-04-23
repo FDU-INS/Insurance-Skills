@@ -1,0 +1,11 @@
+{
+  "owner": "aiwithabidi",
+  "slug": "easypost",
+  "displayName": "Easypost",
+  "latest": {
+    "version": "1.0.0",
+    "publishedAt": 1772585545334,
+    "commit": "https://github.com/openclaw/skills/commit/15db68b23882461ff5c52187921e3ca3c4c397b9"
+  },
+  "history": []
+}

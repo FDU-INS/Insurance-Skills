@@ -1,0 +1,6 @@
+# GEO
+-INFER-RISK Examples This directory contains working examples demonstrating the capabilities of the GEO-INFER-RISK module. ## Available
+ Examples ### Basi
+c
+ Risk Assessment (`basic_risk_assessment.py`) Demonstrates fundamental risk assessment capabilities: - Risk engine initialization - Hazard modeling - Vulnerability assessment - Exposure analysis - Risk calculation **What you'll learn:** - How to initialize the risk engine - Exposure data management - Hazard and vulnerability modeling - Multi-module integration for risk analysis **Prerequisites:** - Python 3.9+ - GEO-INFER-RISK module installed - Required dependencies: `geopandas`, `shapely`, `pandas`, `numpy` **Usage:** ```bash cd GEO-INFER-RISK python examples/basic_risk_assessment.py ``` ## Integration
+ Examples GEO-INFER-RISK integrates seamlessly with other GEO-INFER modules: - **SPACE + RISK**: Spatial risk mapping - **TIME + RISK**: Temporal risk dynamics - **AI + RISK**: Machine learning risk models - **BAYES + RISK**: Bayesian risk inference - **MATH + RISK**: Statistical risk methods - **HEALTH + RISK**: Health risk assessment - **ECON + RISK**: Economic risk analysis See `GEO-INFER-EXAMPLES` for cross-module integration examples. 

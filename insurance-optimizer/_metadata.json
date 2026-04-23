@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 2,
+    "_query": "insurance",
+    "author": "Amarbharati-07",
+    "description": "Review insurance coverage and find opportunities to optimize premiums and reduce gaps.",
+    "githubUrl": "https://github.com/Amarbharati-07/cms1/tree/main/.local/secondary_skills/insurance-optimizer",
+    "id": "amarbharati-07-cms1-local-secondary-skills-insurance-optimizer-skill-md",
+    "name": "insurance-optimizer",
+    "skillUrl": "https://skillsmp.com/skills/amarbharati-07-cms1-local-secondary-skills-insurance-optimizer-skill-md",
+    "stars": 0,
+    "updatedAt": 1773233874,
+    "owner": "Amarbharati-07",
+    "repo": "cms1",
+    "branch": "main",
+    "subpath": ".local/secondary_skills/insurance-optimizer",
+    "mode": "tree",
+    "repoKey": "Amarbharati-07/cms1"
+  },
+  "resolved": {
+    "owner": "Amarbharati-07",
+    "repo": "cms1",
+    "branch": "main",
+    "subpath": ".local/secondary_skills/insurance-optimizer"
+  }
+}

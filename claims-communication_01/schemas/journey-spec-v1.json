@@ -1,0 +1,175 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://healthsim.io/schemas/journey-spec-v1.json",
+  "title": "HealthSim Journey Specification",
+  "description": "Schema for Journey Builder output specifications",
+  "type": "object",
+  "required": ["journey"],
+  "properties": {
+    "template": {
+      "type": "object",
+      "description": "Optional template metadata",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "version": { "type": "string" },
+        "duration": { "type": "string" },
+        "category": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "journey": {
+      "type": "object",
+      "required": ["phases"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "name": { "type": "string" },
+        "version": { "type": "string", "default": "1.0" },
+        "duration": { "type": "string" },
+        "start_trigger": { "type": "string" },
+        
+        "phases": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/phase" },
+          "minItems": 1
+        },
+        
+        "branching_rules": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/branchingRule" }
+        },
+        
+        "quality_measures": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/definitions/qualityMeasure" }
+        },
+        
+        "cross_product": {
+          "type": "object",
+          "properties": {
+            "patientsim": { "$ref": "#/definitions/productOutput" },
+            "membersim": { "$ref": "#/definitions/productOutput" },
+            "rxmembersim": { "$ref": "#/definitions/productOutput" },
+            "trialsim": { "$ref": "#/definitions/productOutput" }
+          }
+        }
+      }
+    }
+  },
+  
+  "definitions": {
+    "phase": {
+      "type": "object",
+      "required": ["name", "events"],
+      "properties": {
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "duration": { "type": "string" },
+        "events": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/event" }
+        }
+      }
+    },
+    
+    "event": {
+      "type": "object",
+      "required": ["type", "timing"],
+      "properties": {
+        "id": { "type": "string" },
+        "type": {
+          "type": "string",
+          "enum": ["encounter", "observation", "prescription", "procedure", "referral", "admission", "discharge", "administrative", "outreach", "engagement"]
+        },
+        "timing": { "$ref": "#/definitions/timing" },
+        "condition": { "type": "string" },
+        "recurrence": { "$ref": "#/definitions/recurrence" },
+        "details": { "type": "object" }
+      }
+    },
+    
+    "timing": {
+      "type": "object",
+      "properties": {
+        "day": { "type": "integer" },
+        "week": { "type": "integer" },
+        "month": { "type": "integer" },
+        "hour": { "type": "integer", "minimum": 0, "maximum": 23 },
+        "time": { "type": "string", "pattern": "^([01]?[0-9]|2[0-3]):[0-5][0-9]$" },
+        "after": { "type": "string" },
+        "before": { "type": "string" },
+        "variance": { "type": "integer", "minimum": 0 },
+        "variance_pct": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    
+    "recurrence": {
+      "oneOf": [
+        { "type": "string", "enum": ["daily", "weekly", "monthly", "quarterly", "annually"] },
+        {
+          "type": "object",
+          "properties": {
+            "every": { "type": "integer", "minimum": 1 },
+            "unit": { "type": "string", "enum": ["days", "weeks", "months"] },
+            "count": { "type": "integer", "minimum": 1 },
+            "duration": { "type": "string" },
+            "frequency": { "type": "string" }
+          }
+        }
+      ]
+    },
+    
+    "branchingRule": {
+      "type": "object",
+      "required": ["condition", "action"],
+      "properties": {
+        "id": { "type": "string" },
+        "condition": { "type": "string" },
+        "probability": { "type": "number", "minimum": 0, "maximum": 1 },
+        "timing": { "type": "string" },
+        "action": { "type": "string" },
+        "branch": { "type": "string" },
+        "events": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/event" }
+        },
+        "options": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "value": {},
+              "weight": { "type": "number", "minimum": 0, "maximum": 1 }
+            }
+          }
+        }
+      }
+    },
+    
+    "qualityMeasure": {
+      "type": "object",
+      "properties": {
+        "description": { "type": "string" },
+        "target": { "type": "number" },
+        "baseline": { "type": "number" },
+        "hedis": { "type": "string" },
+        "by_day": { "type": "integer" }
+      }
+    },
+    
+    "productOutput": {
+      "type": "object",
+      "properties": {
+        "entities": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "formats": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "conditional": { "type": "string" }
+      }
+    }
+  }
+}

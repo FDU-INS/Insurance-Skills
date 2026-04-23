@@ -1,0 +1,29 @@
+# PolicyPulse Dependencies
+# Reference: TECH_STACK.md
+
+# Web Framework
+streamlit>=1.28.0
+
+# LLM Provider
+google-generativeai>=0.3.0
+
+# ML Framework
+scikit-learn>=1.3.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Visualization
+plotly>=5.18.0
+
+# Model Persistence
+joblib>=1.3.0
+
+# Environment Management
+python-dotenv>=1.0.0
+
+# Development Dependencies
+pytest>=7.4.0
+pytest-cov>=4.1.0
+mypy>=1.5.0

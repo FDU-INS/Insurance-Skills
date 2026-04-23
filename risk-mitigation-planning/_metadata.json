@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 8,
+    "_query": "insurance",
+    "author": "a5c-ai",
+    "description": "Develop comprehensive risk management plans for collections and cultural venues including disaster preparedness, security protocols, and insurance coordination",
+    "githubUrl": "https://github.com/a5c-ai/babysitter/tree/main/library/specializations/domains/social-sciences-humanities/arts-culture/skills/risk-mitigation-planning",
+    "id": "a5c-ai-babysitter-library-specializations-domains-social-sciences-humanities-arts-culture-skills-risk-mitigation-planning-skill-md",
+    "name": "risk-mitigation-planning",
+    "skillUrl": "https://skillsmp.com/skills/a5c-ai-babysitter-library-specializations-domains-social-sciences-humanities-arts-culture-skills-risk-mitigation-planning-skill-md",
+    "stars": 553,
+    "updatedAt": 1774454871,
+    "owner": "a5c-ai",
+    "repo": "babysitter",
+    "branch": "main",
+    "subpath": "library/specializations/domains/social-sciences-humanities/arts-culture/skills/risk-mitigation-planning",
+    "mode": "tree",
+    "repoKey": "a5c-ai/babysitter"
+  },
+  "resolved": {
+    "owner": "a5c-ai",
+    "repo": "babysitter",
+    "branch": "main",
+    "subpath": "library/specializations/domains/social-sciences-humanities/arts-culture/skills/risk-mitigation-planning"
+  }
+}

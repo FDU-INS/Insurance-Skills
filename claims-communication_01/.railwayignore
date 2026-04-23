@@ -1,0 +1,30 @@
+# Railway upload ignore — prevent large files from being uploaded
+# The MCP server connects to MotherDuck, no local DB needed
+*.duckdb
+*.duckdb-wal
+*.duckdb-tmp
+
+# Same exclusions as .dockerignore
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+*.egg-info/
+skills/
+cohorts/
+docs/
+demos/
+references/
+schemas/
+formats/
+build-prompts/
+.idea/
+.vscode/
+.DS_Store
+.env
+.env.local

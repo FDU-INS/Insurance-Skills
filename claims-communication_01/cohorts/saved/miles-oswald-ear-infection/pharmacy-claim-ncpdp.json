@@ -1,0 +1,135 @@
+{
+  "transaction_header": {
+    "bin": "610014",
+    "version": "D0",
+    "transaction_code": "B1",
+    "pcn": "BCBSRX",
+    "transaction_count": "1",
+    "service_provider_id_qualifier": "01",
+    "service_provider_id": "1881234567",
+    "date_of_service": "20241218",
+    "software_vendor_id": "HEALTHSIM"
+  },
+  "patient_segment": {
+    "segment_id": "01",
+    "patient_id_qualifier": "01",
+    "patient_id": "XYZ123456789",
+    "date_of_birth": "20200412",
+    "patient_gender_code": "1",
+    "patient_first_name": "MILES",
+    "patient_last_name": "OSWALD",
+    "patient_street_address": "742 EVERGREEN TERRACE",
+    "patient_city": "SPRINGFIELD",
+    "patient_state": "IL",
+    "patient_zip": "627040000",
+    "patient_relationship_code": "3"
+  },
+  "insurance_segment": {
+    "segment_id": "04",
+    "cardholder_id": "XYZ123456789",
+    "cardholder_first_name": "MARK",
+    "cardholder_last_name": "OSWALD",
+    "group_id": "GRP00987",
+    "person_code": "003",
+    "patient_relationship_code": "3",
+    "plan_id": "BCBSIL"
+  },
+  "claim_segment": {
+    "segment_id": "07",
+    "rx_service_reference_qualifier": "1",
+    "rx_service_reference_number": "RX20241218001",
+    "product_service_id_qualifier": "03",
+    "product_service_id": "00093415701",
+    "quantity_dispensed": "150.000",
+    "fill_number": "00",
+    "days_supply": "010",
+    "compound_code": "1",
+    "daw_code": "0",
+    "date_prescription_written": "20241218",
+    "number_of_refills_authorized": "00",
+    "prescription_origin_code": "1",
+    "submission_clarification_code": "00",
+    "other_coverage_code": "0",
+    "level_of_service": "0",
+    "prior_authorization_type_code": "0"
+  },
+  "prescriber_segment": {
+    "segment_id": "03",
+    "prescriber_id_qualifier": "01",
+    "prescriber_id": "9876543210",
+    "prescriber_last_name": "CHEN",
+    "prescriber_first_name": "SARAH",
+    "prescriber_phone_number": "2175551234"
+  },
+  "pricing_segment": {
+    "segment_id": "11",
+    "ingredient_cost_submitted": "0001250",
+    "dispensing_fee_submitted": "000200",
+    "usual_and_customary_charge": "0001850",
+    "gross_amount_due": "0001450",
+    "basis_of_cost_determination": "01"
+  },
+  "drug_info": {
+    "drug_name": "Amoxicillin Oral Suspension 400mg/5mL",
+    "generic_name": "AMOXICILLIN",
+    "ndc": "00093-4157-01",
+    "rxnorm": "308182",
+    "strength": "400mg/5mL",
+    "dosage_form": "Oral Suspension",
+    "route": "Oral",
+    "therapeutic_class": "Aminopenicillins",
+    "sig": "Take 5mL (400mg) by mouth twice daily for 10 days"
+  },
+  "pharmacy_info": {
+    "pharmacy_name": "Springfield Family Pharmacy",
+    "pharmacy_npi": "1881234567",
+    "pharmacy_ncpdp": "1234567",
+    "pharmacy_address": {
+      "street": "456 Main Street",
+      "city": "Springfield",
+      "state": "IL",
+      "zip": "62701"
+    },
+    "pharmacy_phone": "217-555-7890"
+  },
+  "response": {
+    "response_status": "P",
+    "authorization_number": "AUTH20241218001234",
+    "message": "CLAIM PAID",
+    "pricing": {
+      "patient_pay_amount": "0001000",
+      "ingredient_cost_paid": "0001150",
+      "dispensing_fee_paid": "000175",
+      "total_amount_paid": "000325",
+      "copay_amount": "001000",
+      "deductible_amount": "000000",
+      "coinsurance_amount": "000000",
+      "amount_applied_to_periodic_deductible": "000000"
+    },
+    "dur_response": []
+  },
+  "claim_summary": {
+    "claim_id": "RX20241218000001",
+    "service_date": "2024-12-18",
+    "drug_name": "Amoxicillin 400mg/5mL Suspension",
+    "quantity": "150 mL",
+    "days_supply": 10,
+    "charges": {
+      "ingredient_cost": 12.50,
+      "dispensing_fee": 2.00,
+      "gross_amount_due": 14.50,
+      "usual_and_customary": 18.50
+    },
+    "adjudication": {
+      "status": "Paid",
+      "patient_pay": 10.00,
+      "plan_pay": 3.25,
+      "copay": 10.00,
+      "deductible_applied": 0.00,
+      "coinsurance": 0.00
+    },
+    "prescriber": "Dr. Sarah Chen, NPI: 9876543210",
+    "pharmacy": "Springfield Family Pharmacy",
+    "diagnosis": "H66.91 - Acute otitis media, right ear"
+  }
+}

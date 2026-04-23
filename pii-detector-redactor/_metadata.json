@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 9,
+    "_query": "insurance",
+    "author": "garethdaine",
+    "description": "Detects and redacts personally identifiable information from documents and agent outputs. Identifies names, addresses, email addresses, phone numbers, national insurance numbers, passport details, bank account numbers, and other PII categories with configurable redaction styles and audit logging for GDPR compliance.",
+    "githubUrl": "https://github.com/garethdaine/agent/tree/main/skill-library/skills/pii-detector-redactor",
+    "id": "garethdaine-agent-skill-library-skills-pii-detector-redactor-skill-md",
+    "name": "pii-detector-redactor",
+    "skillUrl": "https://skillsmp.com/skills/garethdaine-agent-skill-library-skills-pii-detector-redactor-skill-md",
+    "stars": 0,
+    "updatedAt": 1772848932,
+    "owner": "garethdaine",
+    "repo": "agent",
+    "branch": "main",
+    "subpath": "skill-library/skills/pii-detector-redactor",
+    "mode": "tree",
+    "repoKey": "garethdaine/agent"
+  },
+  "resolved": {
+    "owner": "garethdaine",
+    "repo": "agent",
+    "branch": "main",
+    "subpath": "skill-library/skills/pii-detector-redactor"
+  }
+}

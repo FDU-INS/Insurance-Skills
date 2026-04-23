@@ -1,0 +1,565 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GEO-INFER-RISK Configuration Schema",
+  "description": "Comprehensive configuration schema for GEO-INFER-RISK module",
+  "type": "object",
+  "properties": {
+    "general": {
+      "type": "object",
+      "properties": {
+        "log_level": {
+          "type": "string",
+          "enum": ["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"],
+          "default": "INFO"
+        },
+        "output_directory": {
+          "type": "string",
+          "default": "./outputs"
+        },
+        "cache_directory": {
+          "type": "string",
+          "default": "./cache"
+        },
+        "enable_caching": {
+          "type": "boolean",
+          "default": true
+        },
+        "parallel_processing": {
+          "type": "boolean",
+          "default": true
+        },
+        "num_workers": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 32,
+          "default": 4
+        },
+        "random_seed": {
+          "type": "integer",
+          "default": 42
+        }
+      },
+      "required": ["log_level", "output_directory"],
+      "additionalProperties": false
+    },
+    "risk_model": {
+      "type": "object",
+      "properties": {
+        "confidence_level": {
+          "type": "number",
+          "minimum": 0.5,
+          "maximum": 0.99,
+          "default": 0.95
+        },
+        "time_horizon": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 500,
+          "default": 50
+        },
+        "spatial_resolution": {
+          "type": "number",
+          "minimum": 0.001,
+          "maximum": 100.0,
+          "default": 1.0
+        },
+        "monte_carlo_iterations": {
+          "type": "integer",
+          "minimum": 100,
+          "maximum": 100000,
+          "default": 1000
+        },
+        "include_secondary_perils": {
+          "type": "boolean",
+          "default": true
+        },
+        "correlation_model": {
+          "type": "string",
+          "enum": ["independent", "spatial", "temporal", "copula"],
+          "default": "spatial"
+        }
+      },
+      "required": ["confidence_level", "time_horizon", "monte_carlo_iterations"],
+      "additionalProperties": false
+    },
+    "hazards": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z_][a-zA-Z0-9_]*$": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "default": false
+            },
+            "type": {
+              "type": "string"
+            },
+            "return_periods": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 10000
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "data_source": {
+              "type": "string"
+            },
+            "include_climate_change": {
+              "type": "boolean",
+              "default": false
+            },
+            "climate_scenario": {
+              "type": "string",
+              "enum": ["rcp2.6", "rcp4.5", "rcp8.5", "ssp1-1.9", "ssp1-2.6", "ssp2-4.5", "ssp3-7.0", "ssp5-8.5"]
+            },
+            "parameters": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          },
+          "required": ["enabled", "type"],
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "vulnerability": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z_][a-zA-Z0-9_]*$": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "default": false
+            },
+            "classification_scheme": {
+              "type": "string",
+              "enum": ["hazus", "european", "custom", "gem"]
+            },
+            "include_factors": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "uncertainty_method": {
+              "type": "string",
+              "enum": ["none", "monte_carlo", "simple", "bootstrap"],
+              "default": "none"
+            },
+            "data_source": {
+              "type": "string"
+            },
+            "parameters": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          },
+          "required": ["enabled", "classification_scheme"],
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "exposure": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z_][a-zA-Z0-9_]*$": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "default": false
+            },
+            "data_sources": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "value_type": {
+              "type": "string",
+              "enum": ["replacement_cost", "market_value", "depreciated_value", "custom"]
+            },
+            "aggregation_level": {
+              "type": "string",
+              "enum": ["asset", "building", "block", "census_tract", "county", "state"]
+            },
+            "include_contents": {
+              "type": "boolean",
+              "default": false
+            },
+            "time_of_day_scenarios": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "parameters": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          },
+          "required": ["enabled", "data_sources", "value_type", "aggregation_level"],
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "insurance": {
+      "type": "object",
+      "properties": {
+        "pricing": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "default": false
+            },
+            "methods": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["technical_price", "risk_loaded", "market_adjusted", "experience_rated"]
+              }
+            },
+            "include_expenses": {
+              "type": "boolean",
+              "default": true
+            },
+            "expense_ratio": {
+              "type": "number",
+              "minimum": 0.0,
+              "maximum": 1.0,
+              "default": 0.25
+            },
+            "profit_loading": {
+              "type": "number",
+              "minimum": 0.0,
+              "maximum": 1.0,
+              "default": 0.15
+            }
+          },
+          "required": ["enabled", "methods"],
+          "additionalProperties": false
+        },
+        "claims": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "default": false
+            },
+            "frequency_severity_method": {
+              "type": "boolean",
+              "default": true
+            },
+            "claims_inflation": {
+              "type": "number",
+              "minimum": 0.0,
+              "maximum": 0.2,
+              "default": 0.03
+            },
+            "claims_development": {
+              "type": "boolean",
+              "default": true
+            },
+            "development_years": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 20,
+              "default": 10
+            }
+          },
+          "required": ["enabled"],
+          "additionalProperties": false
+        },
+        "policy": {
+          "type": "object",
+          "properties": {
+            "deductible_types": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["flat", "percentage", "franchise"]
+              }
+            },
+            "default_deductible": {
+              "type": "number",
+              "minimum": 0.0,
+              "maximum": 1.0,
+              "default": 0.02
+            },
+            "limit_types": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["flat", "percentage", "blanket"]
+              }
+            },
+            "default_limit": {
+              "type": "number",
+              "minimum": 0,
+              "default": 1000000
+            },
+            "apply_sublimits": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          "required": ["deductible_types", "default_deductible", "limit_types", "default_limit"],
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "catastrophe": {
+      "type": "object",
+      "properties": {
+        "event_generation": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "default": false
+            },
+            "method": {
+              "type": "string",
+              "enum": ["monte_carlo", "historical", "hybrid", "parametric"]
+            },
+            "catalog_size": {
+              "type": "integer",
+              "minimum": 100,
+              "maximum": 100000,
+              "default": 10000
+            },
+            "years_simulated": {
+              "type": "integer",
+              "minimum": 100,
+              "maximum": 1000000,
+              "default": 50000
+            },
+            "historical_catalog": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          "required": ["enabled", "method", "catalog_size", "years_simulated"],
+          "additionalProperties": false
+        },
+        "correlation": {
+          "type": "object",
+          "properties": {
+            "spatial_correlation": {
+              "type": "boolean",
+              "default": true
+            },
+            "temporal_correlation": {
+              "type": "boolean",
+              "default": true
+            },
+            "peril_correlation": {
+              "type": "boolean",
+              "default": true
+            },
+            "correlation_method": {
+              "type": "string",
+              "enum": ["copula", "factor_model", "empirical", "vine"]
+            }
+          },
+          "required": ["spatial_correlation", "temporal_correlation", "peril_correlation", "correlation_method"],
+          "additionalProperties": false
+        },
+        "financial": {
+          "type": "object",
+          "properties": {
+            "apply_policy_terms": {
+              "type": "boolean",
+              "default": true
+            },
+            "apply_reinsurance": {
+              "type": "boolean",
+              "default": true
+            },
+            "reinsurance_structures": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["quota_share", "excess_of_loss", "cat_xl", "stop_loss", "aggregate_xl"]
+              }
+            },
+            "aggregation_levels": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["location", "county", "state", "portfolio", "global"]
+              }
+            }
+          },
+          "required": ["apply_policy_terms", "apply_reinsurance", "reinsurance_structures", "aggregation_levels"],
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "output": {
+      "type": "object",
+      "properties": {
+        "formats": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["geojson", "csv", "shapefile", "netcdf", "parquet", "json", "excel"]
+          }
+        },
+        "metrics": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["aal", "oep", "ep_curve", "return_period_losses", "pml", "tvar", "var", "std_dev", "percentiles"]
+          }
+        },
+        "exceedance_probabilities": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 0.0001,
+            "maximum": 1.0
+          }
+        },
+        "include_uncertainty": {
+          "type": "boolean",
+          "default": true
+        },
+        "uncertainty_metrics": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["mean", "median", "mode", "stdev", "percentile_5", "percentile_95", "confidence_interval"]
+          }
+        },
+        "spatial_aggregation": {
+          "type": "string",
+          "enum": ["none", "grid", "administrative", "watershed", "custom"]
+        },
+        "temporal_aggregation": {
+          "type": "string",
+          "enum": ["none", "annual", "monthly", "daily", "event"]
+        }
+      },
+      "required": ["formats", "metrics"],
+      "additionalProperties": false
+    },
+    "integrations": {
+      "type": "object",
+      "properties": {
+        "geo_infer_space": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "default": true
+            },
+            "spatial_indexing": {
+              "type": "string",
+              "enum": ["h3", "geohash", "quadtree", "s2"]
+            },
+            "resolution": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 15
+            },
+            "analytics_backend": {
+              "type": "string",
+              "enum": ["srai", "spatial", "geopandas", "custom"]
+            }
+          },
+          "required": ["enabled", "spatial_indexing", "resolution"],
+          "additionalProperties": false
+        },
+        "geo_infer_time": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "default": true
+            },
+            "temporal_resolution": {
+              "type": "string",
+              "enum": ["hourly", "daily", "weekly", "monthly", "yearly", "event"]
+            },
+            "include_seasonality": {
+              "type": "boolean",
+              "default": true
+            },
+            "time_series_analysis": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          "required": ["enabled", "temporal_resolution"],
+          "additionalProperties": false
+        },
+        "geo_infer_ai": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "default": false
+            },
+            "models": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["damage_classification", "claims_prediction", "risk_scoring", "anomaly_detection", "pattern_recognition"]
+              }
+            },
+            "training_data": {
+              "type": "string"
+            },
+            "inference_backend": {
+              "type": "string",
+              "enum": ["tensorflow", "pytorch", "scikit_learn", "xgboost"]
+            }
+          },
+          "required": ["enabled", "models"],
+          "additionalProperties": false
+        },
+        "geo_infer_math": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "default": true
+            },
+            "statistical_methods": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["extreme_value_theory", "copulas", "monte_carlo", "bootstrap", "bayesian_inference"]
+              }
+            },
+            "numerical_precision": {
+              "type": "string",
+              "enum": ["single", "double", "extended"]
+            },
+            "optimization_method": {
+              "type": "string",
+              "enum": ["gradient_descent", "newton_raphson", "simulated_annealing", "genetic_algorithm"]
+            }
+          },
+          "required": ["enabled", "statistical_methods"],
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["general", "risk_model", "hazards", "vulnerability", "exposure", "output", "integrations"],
+  "additionalProperties": false
+}

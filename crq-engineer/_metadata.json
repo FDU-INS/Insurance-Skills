@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 11,
+    "_query": "insurance",
+    "author": "Muath2000",
+    "description": "Cyber Risk Quantification engineer for CyberRadar. Implements FAIR (Factor Analysis of Information Risk) methodology, Monte Carlo simulation for loss distribution modeling, financial impact quantification in multi-currency (SAR, USD, EUR, GBP), loss exceedance curves, risk treatment ROI calculation, insurance premium optimization, and board-ready financial risk reporting. Transforms qualitative risk assessments into monetary terms for executive decision-making. Triggers on: CRQ, FAIR, Monte Carlo, financial impact, loss modeling, risk quantification, cyber insurance, risk treatment ROI, financial risk.",
+    "githubUrl": "https://github.com/Muath2000/TradeStation/tree/main/.claude/skills/crq-engineer",
+    "id": "muath2000-tradestation-claude-skills-crq-engineer-skill-md",
+    "name": "crq-engineer",
+    "skillUrl": "https://skillsmp.com/skills/muath2000-tradestation-claude-skills-crq-engineer-skill-md",
+    "stars": 0,
+    "updatedAt": 1771781395,
+    "owner": "Muath2000",
+    "repo": "TradeStation",
+    "branch": "main",
+    "subpath": ".claude/skills/crq-engineer",
+    "mode": "tree",
+    "repoKey": "Muath2000/TradeStation"
+  },
+  "resolved": {
+    "owner": "Muath2000",
+    "repo": "TradeStation",
+    "branch": "main",
+    "subpath": ".claude/skills/crq-engineer"
+  }
+}

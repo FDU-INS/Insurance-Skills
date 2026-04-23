@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 5,
+    "_query": "insurance",
+    "author": "Winbda",
+    "description": "Guide D&O insurance selection and coverage analysis.\nTRIGGERS - Use when user needs help with directors-officers-guide related tasks.",
+    "githubUrl": "https://github.com/Winbda/claude-skills-collection/tree/master/skills/directors-officers-guide",
+    "id": "winbda-claude-skills-collection-skills-directors-officers-guide-skill-md",
+    "name": "directors-officers-guide",
+    "skillUrl": "https://skillsmp.com/skills/winbda-claude-skills-collection-skills-directors-officers-guide-skill-md",
+    "stars": 2,
+    "updatedAt": 1775416616,
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/directors-officers-guide",
+    "mode": "tree",
+    "repoKey": "Winbda/claude-skills-collection"
+  },
+  "resolved": {
+    "owner": "Winbda",
+    "repo": "claude-skills-collection",
+    "branch": "master",
+    "subpath": "skills/directors-officers-guide"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "csv_row": {
+    "_page": 1,
+    "_query": "claims",
+    "author": "SzafirSzafirek",
+    "description": "Walidacja claims - co wolno a czego nie wolno mówić w copy",
+    "githubUrl": "https://github.com/mark64oswald/healthsim-workspace/tree/main/skills/membersim",
+    "id": "szafirszafirek-opencode-repo-root-kropka-opencode-skills-claims-policy-check-skill-md",
+    "name": "claims-policy-check",
+    "skillUrl": "https://skillsmp.com/skills/szafirszafirek-opencode-repo-root-kropka-opencode-skills-claims-policy-check-skill-md",
+    "stars": 0,
+    "updatedAt": 1775595705,
+    "is_insurance_related": "是",
+    "owner": "mark64oswald",
+    "repo": "healthsim-workspace",
+    "branch": "main",
+    "subpath": "skills/membersim",
+    "mode": "tree",
+    "repoKey": "mark64oswald/healthsim-workspace"
+  },
+  "resolved": {
+    "owner": "mark64oswald",
+    "repo": "healthsim-workspace",
+    "branch": "main",
+    "subpath": "skills/membersim"
+  }
+}

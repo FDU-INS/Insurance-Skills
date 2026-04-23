@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 2,
+    "_query": "insurance",
+    "author": "aifinlab",
+    "description": "保险行业对比分析工具。对比国内外保险市场、中外保险公司、不同险种发展。接入AkShare开源保险行业数据，支持实时数据获取和自动更新。适用于国际化研究、竞争分析。",
+    "githubUrl": "https://github.com/aifinlab/FinClaw/tree/main/skillsChoice/insurance-suite/insurance-sector-comparison",
+    "id": "aifinlab-finclaw-skillschoice-insurance-suite-insurance-sector-comparison-skill-md",
+    "name": "insurance-sector-comparison",
+    "skillUrl": "https://skillsmp.com/skills/aifinlab-finclaw-skillschoice-insurance-suite-insurance-sector-comparison-skill-md",
+    "stars": 125,
+    "updatedAt": 1774406870,
+    "owner": "aifinlab",
+    "repo": "FinClaw",
+    "branch": "main",
+    "subpath": "skillsChoice/insurance-suite/insurance-sector-comparison",
+    "mode": "tree",
+    "repoKey": "aifinlab/FinClaw"
+  },
+  "resolved": {
+    "owner": "aifinlab",
+    "repo": "FinClaw",
+    "branch": "main",
+    "subpath": "skillsChoice/insurance-suite/insurance-sector-comparison"
+  }
+}

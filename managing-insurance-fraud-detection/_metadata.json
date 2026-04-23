@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 3,
+    "_query": "insurance",
+    "author": "CaseMark",
+    "description": "Structures insurance fraud detection with red flag identification, investigation protocols, and SIU referral documentation. Use when detecting insurance fraud, investigating suspicious claims, or documenting fraud indicators.",
+    "githubUrl": "https://github.com/CaseMark/skills/tree/main/skills/finance/managing-insurance-fraud-detection",
+    "id": "casemark-skills-skills-finance-managing-insurance-fraud-detection-skill-md",
+    "name": "managing-insurance-fraud-detection",
+    "skillUrl": "https://skillsmp.com/skills/casemark-skills-skills-finance-managing-insurance-fraud-detection-skill-md",
+    "stars": 12,
+    "updatedAt": 1772680350,
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/managing-insurance-fraud-detection",
+    "mode": "tree",
+    "repoKey": "CaseMark/skills"
+  },
+  "resolved": {
+    "owner": "CaseMark",
+    "repo": "skills",
+    "branch": "main",
+    "subpath": "skills/finance/managing-insurance-fraud-detection"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "csv_row": {
+    "_page": 2,
+    "_query": "insurance",
+    "author": "dvcrn",
+    "description": "保险方案顾问。险种推荐、产品对比、保费计算、理赔指南、定期寿险、健康险方案。Insurance advisor with recommendation, comparison, premium calculation, claim guide, term life, health insurance. Use when you need insurance advisor capabilities. Triggers on: insurance advisor.",
+    "githubUrl": "https://github.com/dvcrn/openclaw-skills-marketplace/tree/main/plugins/ckchzh--insurance-advisor/skills/insurance-advisor",
+    "id": "dvcrn-openclaw-skills-marketplace-plugins-ckchzh-insurance-advisor-skills-insurance-advisor-skill-md",
+    "name": "insurance-advisor",
+    "skillUrl": "https://skillsmp.com/skills/dvcrn-openclaw-skills-marketplace-plugins-ckchzh-insurance-advisor-skills-insurance-advisor-skill-md",
+    "stars": 2,
+    "updatedAt": 1773565995,
+    "owner": "dvcrn",
+    "repo": "openclaw-skills-marketplace",
+    "branch": "main",
+    "subpath": "plugins/ckchzh--insurance-advisor/skills/insurance-advisor",
+    "mode": "tree",
+    "repoKey": "dvcrn/openclaw-skills-marketplace"
+  },
+  "resolved": {
+    "owner": "dvcrn",
+    "repo": "openclaw-skills-marketplace",
+    "branch": "main",
+    "subpath": "plugins/ckchzh--insurance-advisor/skills/insurance-advisor"
+  }
+}
