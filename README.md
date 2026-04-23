@@ -1,4 +1,4 @@
-> 📖 English version: [README.md](README_EN.md)
+> 📖 English version: [README_EN.md](README_EN.md)
 <div align="center">
   <img src="ins-skill-logo.png" alt="Insurance-Skills Logo" width="500">
 
