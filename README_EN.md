@@ -1,3 +1,5 @@
+> 📖 Chinese version: [README_中文.md](README.md)
+> 
 <div align="center">
   <img src="ins-skill-logo.png" alt="Team Logo" width="500">
 
@@ -23,7 +25,7 @@
 
 </div>
 
-> 📖 Chinese version: [README_中文.md](README.md)
+
 
 ## Project Overview
 
