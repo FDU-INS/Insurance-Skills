@@ -23,7 +23,7 @@
 
 </div>
 
----
+> 📖 Chinese version: [README_中文.md](README.md)
 
 ## Project Overview
 
