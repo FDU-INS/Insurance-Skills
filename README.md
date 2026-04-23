@@ -17,6 +17,7 @@
 
 <p>
   聚焦保险领域 Skill 的汇聚、组织、评估与复用，致力于构建面向保险智能化应用的开放能力底座与方法支撑体系。
+  平台体验地址：`https://skills.fduinsurance.com`
 </p>
 
 <!-- <img src="assets/logo.png" alt="Insurance-Skills Logo" width="180"> -->
