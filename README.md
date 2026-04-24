@@ -90,8 +90,7 @@ flowchart LR
 <p align="center">
   <img src="HomePage.png" alt="Insurance-Skills 平台主页" width="600">
 </p>
-
-
+---
 
 ## 项目背景
 
