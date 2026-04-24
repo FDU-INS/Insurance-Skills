@@ -1,6 +1,6 @@
 📖 [English version](README_EN.md) · [中文文档](README.md)
 <div align="center">
-  <img src="ins-skill-logo.png" alt="Insurance-Skills Logo" width="500">
+  <img src="ins-skill-logo.png" alt="Insurance-Skills Logo" width="600">
 
 ### 面向保险场景的开源 Skill 基础设施平台
 
@@ -35,6 +35,12 @@
 在大模型与智能体技术加速进入产业场景的背景下，保险行业正面临从“模型可用”走向“业务可落地”的关键阶段。相较于一般场景，保险业务具有**链条长、规则强、术语密、风险高、流程复杂**等特征，通用模型往往难以稳定胜任条款解读、核保辅助、理赔支持、客服问答、合规校验等高专业度任务。Skill 因而成为连接通用模型能力与垂直业务场景的重要中介层。
 
 **Insurance-Skills** 希望通过平台化、开源化、标准化的方式，将保险领域分散的能力沉淀为更易发现、更易理解、更易比较、更易复用的 Skill 资产，推动保险行业从零散试点走向系统化能力建设。
+
+### 🌐 平台主页展示
+
+<p align="center">
+  <img src="HomePage.png" alt="Insurance-Skills 平台主页" width="600">
+</p>
 
 
 
@@ -177,6 +183,13 @@ Insurance-Skills 的质量评估并不依赖单一主观判断，而是综合考
 
 这一评测体系不仅用于给出分数，更强调 Skill 的**可比较性、可复核性、可解释性与可集成性**。它既帮助平台内 Skill 建立更清晰的质量认知，也有助于推动保险行业逐步形成面向场景化 Skill 的统一评价共识。
 
+---
+
+### ⚙️ 平台功能展示
+
+<p align="center">
+  <img src="Functions.png" alt="Insurance-Skills 平台功能展示" width="600">
+</p>
 
 ## 路线图
 
@@ -202,5 +215,5 @@ Insurance-Skills 的质量评估并不依赖单一主观判断，而是综合考
 **填写问卷：** 
 
 <p align="center">
-  <img src="Guarding Tomorrow.png" alt="Guarding Tomorrow" width="500">
+  <img src="Guarding Tomorrow.png" alt="Guarding Tomorrow" width="600">
 </p>
