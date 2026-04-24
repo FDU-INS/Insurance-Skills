@@ -85,58 +85,103 @@ flowchart LR
     B --> E[流程自动化]
     B --> F[知识服务]
     B --> G[业务智能化]
-### 🌐 平台主页展示
 
-<p align="center">
-  <img src="HomePage.png" alt="Insurance-Skills 平台主页" width="600">
-</p>
 ---
 
-## 项目背景
+<div align="center">
 
-当前，保险 Agent 建设仍面临若干共性问题：
+## 🌐 平台主页展示
 
-- **找不到合适的保险场景 Skill**：高质量、可复用、贴近业务的保险 Skill 仍较为稀缺。
-- **不知道保险 Skill 应该如何设计和沉淀**：许多场景缺乏统一描述方式和沉淀范式。
-- **难以比较同类 Skill 的优劣**：不同 Skill 在命名、边界、输入输出、依赖条件和说明质量上差异较大。
-- **找到 Skill 后仍难以真正用起来**：缺乏统一入口、标准化展示和低门槛集成方式。
+<img src="HomePage.png" alt="Insurance-Skills 平台主页" width="720">
 
-Insurance-Skills 正是为此建立，我们旨在为保险场景构建一个兼顾**能力组织、质量评价与集成复用**的基础设施平台。
+<br>
 
+<p>
+  <img src="https://img.shields.io/badge/Homepage-Insurance--Skills-0A84FF?style=for-the-badge&logo=github" />
+  <img src="https://img.shields.io/badge/Scenario-Agent%20%7C%20Copilot%20%7C%20Automation-2F54EB?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Domain-Insurance%20AI-1677FF?style=for-the-badge" />
+</p>
 
+</div>
 
-## 平台定位
+---
 
-Insurance-Skills 是一个围绕保险智能化应用构建的**领域能力基础设施平台**。
+## 🧭 项目背景
 
-它主要承担三类角色：
+当前，保险 Agent 建设正在从概念验证走向真实业务落地，但在保险场景中，Skill 的发现、设计、评价与复用仍然存在明显断点。
 
-| 定位层次 | 说明 |
-| --- | --- |
-| 领域能力汇聚平台 | 多渠道持续收集、整理并沉淀保险领域相关 Skill |
-| 领域能力评价平台 | 建立统一的多维度评测框架，提升 Skill 可比性与选型效率 |
-| 领域能力基础设施平台 | 为保险 Agent、Copilot、流程自动化与业务系统接入提供能力底座 |
+<table>
+  <tr>
+    <td width="25%" align="center">
+      <h3>🔍</h3>
+      <b>Skill 难发现</b>
+      <br>
+      <sub>高质量、可复用、贴近业务的保险 Skill 仍然稀缺</sub>
+    </td>
+    <td width="25%" align="center">
+      <h3>🧩</h3>
+      <b>设计难统一</b>
+      <br>
+      <sub>许多保险场景缺乏统一描述方式与沉淀范式</sub>
+    </td>
+    <td width="25%" align="center">
+      <h3>📊</h3>
+      <b>质量难比较</b>
+      <br>
+      <sub>同类 Skill 在边界、输入输出、依赖条件与说明质量上差异较大</sub>
+    </td>
+    <td width="25%" align="center">
+      <h3>🔌</h3>
+      <b>集成难落地</b>
+      <br>
+      <sub>缺乏统一入口、标准化展示与低门槛接入方式</sub>
+    </td>
+  </tr>
+</table>
 
+**Insurance-Skills** 正是围绕这些问题而建立。我们希望为保险场景构建一个兼顾 **能力组织、质量评价与工程复用** 的基础设施平台，让保险 Skill 从零散工具走向系统化资产。
 
+---
 
-## 典型应用场景
+## 🏗️ 平台定位
 
-Insurance-Skills 当前聚焦但不限于以下保险业务场景：
+**Insurance-Skills** 是一个面向保险智能化应用的领域能力基础设施平台。它不仅是 Skill 的展示入口，也是保险行业能力沉淀、能力评价与能力复用的统一底座。
 
-| 场景类别 | 典型任务 |
-| --- | --- |
-| 产品咨询 | 产品介绍、责任说明、条款解读、投保问答 |
-| 保单服务 | 保单查询、续保提醒、保全办理、批改说明 |
-| 核保支持 | 健康告知解释、风险问答、材料核验、核保辅助 |
-| 理赔服务 | 理赔报案、材料准备、进度查询、赔付说明 |
-| 客服支持 | FAQ、标准话术、流程引导、坐席辅助 |
-| 营销与推荐 | 客户触达、需求匹配、产品推荐、转化支持 |
-| 合规与风控 | 规则校验、异常识别、流程合规、权限控制 |
-| 运营支持 | 日常运营辅助、流程协同、数据整理 |
-| 培训与知识问答 | 制度解释、业务培训、流程说明、知识服务 |
+<table>
+  <tr>
+    <td width="33%" align="center">
+      <h3>📦</h3>
+      <b>领域能力汇聚平台</b>
+      <br><br>
+      <sub>多渠道持续收集、整理并沉淀保险领域相关 Skill，形成可发现、可检索、可复用的能力资产库</sub>
+    </td>
+    <td width="33%" align="center">
+      <h3>📈</h3>
+      <b>领域能力评价平台</b>
+      <br><br>
+      <sub>建立统一的多维度评测框架，提升 Skill 的可比性、可解释性与选型效率</sub>
+    </td>
+    <td width="33%" align="center">
+      <h3>⚙️</h3>
+      <b>领域能力基础设施平台</b>
+      <br><br>
+      <sub>为保险 Agent、Copilot、流程自动化与业务系统提供标准化能力底座</sub>
+    </td>
+  </tr>
+</table>
 
-这些场景共同构成了保险业务流程中可被 Skill 化、模块化与平台化组织的核心能力空间。
+<div align="center">
 
+```mermaid
+flowchart LR
+    A[保险业务场景] --> B[Skill 结构化沉淀]
+    B --> C[多维质量评测]
+    C --> D[标准化展示与检索]
+    D --> E[Agent / Copilot / 自动化系统接入]
+
+Insurance-Skills 当前聚焦保险业务流程中最具 Skill 化潜力的核心场景，覆盖从产品咨询、核保理赔到合规风控和运营支持的完整能力空间。
+
+<table> <tr> <td align="center" width="20%"> <h3>🛡️</h3> <b>产品咨询</b> <br> <sub>产品介绍<br>责任说明<br>条款解读<br>投保问答</sub> </td> <td align="center" width="20%"> <h3>📄</h3> <b>保单服务</b> <br> <sub>保单查询<br>续保提醒<br>保全办理<br>批改说明</sub> </td> <td align="center" width="20%"> <h3>🧬</h3> <b>核保支持</b> <br> <sub>健康告知解释<br>风险问答<br>材料核验<br>核保辅助</sub> </td> <td align="center" width="20%"> <h3>🧾</h3> <b>理赔服务</b> <br> <sub>理赔报案<br>材料准备<br>进度查询<br>赔付说明</sub> </td> <td align="center" width="20%"> <h3>🎧</h3> <b>客服支持</b> <br> <sub>FAQ<br>标准话术<br>流程引导<br>坐席辅助</sub> </td> </tr> <tr> <td align="center" width="20%"> <h3>🎯</h3> <b>营销与推荐</b> <br> <sub>客户触达<br>需求匹配<br>产品推荐<br>转化支持</sub> </td> <td align="center" width="20%"> <h3>⚖️</h3> <b>合规与风控</b> <br> <sub>规则校验<br>异常识别<br>流程合规<br>权限控制</sub> </td> <td align="center" width="20%"> <h3>📊</h3> <b>运营支持</b> <br> <sub>日常运营辅助<br>流程协同<br>数据整理<br>任务追踪</sub> </td> <td align="center" width="20%"> <h3>🎓</h3> <b>培训与知识问答</b> <br> <sub>制度解释<br>业务培训<br>流程说明<br>知识服务</sub> </td> <td align="center" width="20%"> <h3>🤖</h3> <b>Agent 能力编排</b> <br> <sub>工具调用<br>任务拆解<br>流程执行<br>结果校验</sub> </td> </tr> </table>
 
 ## 平台核心亮点
 
