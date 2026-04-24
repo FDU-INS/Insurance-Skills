@@ -366,33 +366,22 @@ Insurance-Skills builds platform capabilities around the discovery, understandin
 
 ## 🛣️ Roadmap
 
-Insurance-Skills will continue to iterate around insurance agent development. In the future, the platform will focus on advancing the dynamic collection and updating of insurance Skills, improving in-depth evaluation standards for insurance Skills, exploring methods for building agents in insurance scenarios, and further conducting research on trustworthy applications, safety governance, and ecosystem collaboration for insurance agents.
+**Insurance-Skills will continue to iterate around insurance agent development.** In the future, the platform will focus on advancing the dynamic collection and updating of insurance Skills, improving in-depth evaluation standards for insurance Skills, exploring methods for building agents in insurance scenarios, and further conducting research on trustworthy applications, safety governance, and ecosystem collaboration for insurance agents.
 
 We hope that the platform will not only serve as a Skill display library, but also gradually evolve into an open infrastructure for insurance agent capability development, quality governance, and industry collaboration.
 
 ---
 
-## 🌟 Team Vision
+## 📫 Contact Us
 
 Rooted in the disciplines of insurance and risk management, we focus on the innovative integration and application of frontier technologies such as large language models, multi-agent systems, and trustworthy artificial intelligence in insurance and risk management.
 
-The team is committed to bridging disciplinary problems, model methods, and industry scenarios, and to conducting interdisciplinary research with theoretical depth, methodological advancement, and practical interpretability. Guided by real problems in insurance and risk management, we hope to promote the transition of frontier model technologies from usable to trustworthy, interpretable, and implementable, producing research outcomes that both serve academic innovation and respond to the practical needs of China’s insurance industry.
+We are committed to bridging disciplinary problems, model methods, and industry scenarios, and to conducting interdisciplinary research with theoretical depth, methodological advancement, and practical interpretability. Guided by real problems in insurance and risk management, we hope to promote the transition of frontier model technologies from usable to trustworthy, interpretable, and implementable, producing research outcomes that both serve academic innovation and respond to the practical needs of China’s insurance industry.
 
 We will continue to build a research platform that integrates model development capabilities, disciplinary insight, and industrial transformation capabilities, becoming an important connector among insurance academic research, intelligent technology innovation, and industry application practice.
 
----
+**We welcome the following types of exchanges and collaborations**:
 
-## 🤝 Co-building the Ecosystem
-
-Insurance-Skills welcomes insurance companies, developers, researchers, and industry partners to participate in its development.
-
-We look forward to working with more partners to explore the design paradigms, quality evaluation, safety governance, Agent integration, and ecosystem collaboration of Skills in insurance scenarios, promoting the evolution of insurance agent capabilities from scattered experience toward standardization, engineering implementation, and trustworthiness.
-
----
-
-## 📫 Contact Us
-
-We welcome the following types of exchanges and collaborations:
 - Co-building insurance scenario Skills
 - Joint research on Skill tag systems and evaluation frameworks
 - Validation of insurance Agent / Copilot scenarios
@@ -416,6 +405,7 @@ We welcome the following types of exchanges and collaborations:
 **Insurance-Skills**
 
 Building reusable, evaluable and trustworthy Skills for insurance agents.
-
 </div>
+
+
 
