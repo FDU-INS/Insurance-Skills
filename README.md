@@ -63,19 +63,19 @@
 
 <table>
   <tr>
-    <td width="33%" align="center">
+    <td width="33%" align="center" style="border: none; padding: 16px;">
       <h3>📦</h3>
       <b>领域能力汇聚平台</b>
       <br><br>
       <sub>多渠道持续收集、整理并沉淀保险领域相关 Skill，形成可发现、可检索、可复用的能力资产库</sub>
     </td>
-    <td width="33%" align="center">
+    <td width="33%" align="center" style="border: none; padding: 16px;">
       <h3>📈</h3>
       <b>领域能力评价平台</b>
       <br><br>
       <sub>建立统一的多维度评测框架，提升 Skill 的可比性、可解释性与选型效率</sub>
     </td>
-    <td width="33%" align="center">
+   <td width="33%" align="center" style="border: none; padding: 16px;">
       <h3>⚙️</h3>
       <b>领域能力基础设施平台</b>
       <br><br>
@@ -94,63 +94,61 @@ Insurance-Skills 当前聚焦保险业务流程中最具 Skill 化潜力的核�
 
 <table>
   <tr>
-    <td align="center" width="20%">
+    <td align="center" width="10%">
       <h3>🛡️</h3>
       <b>产品咨询</b>
       <br>
       <sub>产品介绍<br>责任说明<br>条款解读<br>投保问答</sub>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="10%">
       <h3>📄</h3>
       <b>保单服务</b>
       <br>
       <sub>保单查询<br>续保提醒<br>保全办理<br>批改说明</sub>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="10%">
       <h3>🧬</h3>
       <b>核保支持</b>
       <br>
       <sub>健康告知解释<br>风险问答<br>材料核验<br>核保辅助</sub>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="10%">
       <h3>🧾</h3>
       <b>理赔服务</b>
       <br>
       <sub>理赔报案<br>材料准备<br>进度查询<br>赔付说明</sub>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="10%">
       <h3>🎧</h3>
       <b>客服支持</b>
       <br>
       <sub>FAQ<br>标准话术<br>流程引导<br>坐席辅助</sub>
     </td>
-  </tr>
-  <tr>
-    <td align="center" width="20%">
+    <td align="center" width="10%">
       <h3>🎯</h3>
       <b>营销与推荐</b>
       <br>
       <sub>客户触达<br>需求匹配<br>产品推荐<br>转化支持</sub>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="10%">
       <h3>⚖️</h3>
       <b>合规与风控</b>
       <br>
       <sub>规则校验<br>异常识别<br>流程合规<br>权限控制</sub>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="10%">
       <h3>📊</h3>
       <b>运营支持</b>
       <br>
-      <sub>日常运营辅助<br>流程协同<br>数据整理<br>任务追踪</sub>
+      <sub>日常运营<br>流程协同<br>数据整理<br>任务追踪</sub>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="10%">
       <h3>🎓</h3>
       <b>培训与知识问答</b>
       <br>
       <sub>制度解释<br>业务培训<br>流程说明<br>知识服务</sub>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="10%">
       <h3>🤖</h3>
       <b>Agent 能力编排</b>
       <br>
@@ -169,25 +167,25 @@ Insurance-Skills 面向保险智能体建设，提供一套可发现、可比较
   <tr>
     <td width="25%" align="center">
       <h3>🔭</h3>
-      <b>Skill Discovery</b>
+      <b>Skill收集</b>
       <br><br>
       <sub>多渠道持续收集保险场景 Skill，覆盖咨询、核保、理赔、客服、风控、运营等高频业务环节</sub>
     </td>
     <td width="25%" align="center">
       <h3>⚡</h3>
-      <b>Fast Retrieval</b>
+      <b>快速检索</b>
       <br><br>
       <sub>基于场景、标签、功能方向和质量特征进行快速检索，降低 Skill 查找与理解成本</sub>
     </td>
     <td width="25%" align="center">
       <h3>🧩</h3>
-      <b>Integration Ready</b>
+      <b>良好集成</b>
       <br><br>
       <sub>围绕使用方式、输入输出、依赖条件和风险边界进行标准化描述，便于接入保险 Agent 流程</sub>
     </td>
     <td width="25%" align="center">
       <h3>📊</h3>
-      <b>Quality Evaluation</b>
+      <b>质量评估</b>
       <br><br>
       <sub>建立多维度 Skill 评测体系，支持横向比较、质量筛选、持续治理和版本迭代</sub>
     </td>
