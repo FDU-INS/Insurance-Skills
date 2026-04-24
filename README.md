@@ -21,7 +21,7 @@
 </p>
 
 <p>
-  聚焦保险领域 Skill 的汇聚、组织、评估与复用，致力于构建面向保险智能体应用的开放能力底座。
+  **聚焦保险领域 Skill 的汇聚、组织、评估与复用，致力于构建面向保险智能体应用的开放能力底座。**
 </p>
 </div>
 
@@ -32,6 +32,10 @@
 
 ### 面向保险场景的开源 Skill 基础设施平台
 
+
+
+**Insurance-Skills** 是由 **复旦大学许闲教授团队** 发起的面向保险场景的开源 Skill 基础设施平台。项目聚焦保险领域 Skill 的 **系统汇聚**、**结构化组织**、**多维评测** 与 **工程化复用**，旨在将保险行业中分散、隐性的业务能力沉淀为可发现、可理解、可比较、可调用、可复用的标准化 Skill 资产。
+
 <div align="center">
 
 <p>
@@ -40,17 +44,6 @@
   <img src="https://img.shields.io/badge/status-Open%20Source-brightgreen" />
   <img src="https://img.shields.io/badge/scenario-Agent%20%7C%20Copilot%20%7C%20Automation-orange" />
 </p>
-</div>
-
-**Insurance-Skills** 是由 **复旦大学许闲教授团队** 发起的面向保险场景的开源 Skill 基础设施平台。项目聚焦保险领域 Skill 的 **系统汇聚**、**结构化组织**、**多维评测** 与 **工程化复用**，旨在将保险行业中分散、隐性的业务能力沉淀为可发现、可理解、可比较、可调用、可复用的标准化 Skill 资产。
-
-<div align="center">
-<p>
-  <img src="https://img.shields.io/badge/Homepage-Insurance--Skills-0A84FF?style=for-the-badge&logo=github" />
-  <img src="https://img.shields.io/badge/Scenario-Agent%20%7C%20Copilot%20%7C%20Automation-2F54EB?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Domain-Insurance%20AI-1677FF?style=for-the-badge" />
-</p>
-
 </div>
 
 ---
