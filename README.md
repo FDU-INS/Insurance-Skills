@@ -228,86 +228,128 @@ Insurance-Skills 当前聚焦保险业务流程中最具 Skill 化潜力的核�
 
 ---
 
-## ✨ 平台核心亮点
+## ✨ 核心亮点
 
-### 🔭 多渠道汇聚与持续更新
+Insurance-Skills 面向保险智能体建设，提供一套可发现、可比较、可评测、可集成的领域 Skill 基础设施。平台将分散在不同来源、不同业务场景中的保险能力沉淀为结构化资产，帮助团队更快完成能力选型、方案验证与工程落地。
 
-保险业务场景具有高度细分特征。不同险种、流程节点、组织角色和应用系统，对 Skill 的能力边界、输入输出、执行方式和安全要求都存在明显差异。
-
-Insurance-Skills 通过多渠道持续收集、整理和更新保险相关 Skill，逐步构建覆盖保险全流程的 Skill 能力地图。平台目前已围绕多个高频业务环节启动 Skill 收集与结构化整理，覆盖方向包括保险产品咨询、保单服务、核保支持、理赔服务、客服助手、营销推荐、合规风控、运营支持、培训问答等典型场景。
-
-随着平台持续迭代，Insurance-Skills 将进一步完善标签体系、场景分类体系和 Skill 元数据规范，提升 Skill 库的覆盖广度、更新效率与可检索性。
-
----
-
-### ⚡ 快速检索与结构化展示
-
-随着保险 Skill 数量不断增长，来源不断扩展，如何快速定位合适能力，并清晰理解其适用场景、能力边界和使用条件，成为保险智能体建设中的关键问题。
-
-Insurance-Skills 提供统一的 Skill 检索入口和标准化展示方式，帮助用户围绕业务场景、功能方向、标签分类和质量特征快速查找相关 Skill。每个 Skill 均围绕功能说明、适用场景、使用方式、依赖条件、输入输出和风险提示等信息进行结构化呈现。
-
-相比在分散渠道中逐一搜索、筛选和理解不同 Skill，平台通过统一组织与结构化表达，显著降低了信息获取成本和方案选型成本。
-
----
-
-### 🧩 一站式集成导向
-
-在保险 Agent 建设中，找到 Skill 只是第一步。真正的难点往往在于如何理解 Skill、比较 Skill、验证 Skill，并最终将其接入既有业务流程。
-
-Insurance-Skills 不仅关注 Skill 的展示与收录，也关注从发现 Skill 到使用 Skill 的完整链路。平台围绕检索、查看、对比、选择、集成和复用等关键步骤组织能力，尽可能降低保险公司、技术团队和产品团队从概念验证走向可用版本的实施门槛。
-
-对于保险公司数字化团队而言，这意味着可以在统一平台中更高效地完成能力选型、方案验证和工程集成，加快保险智能体项目落地。
-
----
-
-### 📊 多维度测评体系
-
-面对同一保险场景，往往存在多个 Skill 方案。传统方式下，团队很难快速判断某个 Skill 是否成熟、是否安全、是否适合当前业务流程，也难以横向比较同类 Skill 的质量差异。
-
-Insurance-Skills 建立了面向保险 Skill 的多维度评测机制，从表达质量、信息覆盖、执行可行性、长期维护性和安全控制能力等方面进行系统评价。
-
-平台重点回答三个核心问题。
-
-某个 Skill 是否适合当前业务场景。
-
-同类 Skill 之间哪一个更加成熟、稳定和可控。
-
-哪些 Skill 更适合优先进入保险智能体建设的候选池。
+<table>
+  <tr>
+    <td width="25%" align="center">
+      <h3>🔭</h3>
+      <b>Skill Discovery</b>
+      <br><br>
+      <sub>多渠道持续收集保险场景 Skill，覆盖咨询、核保、理赔、客服、风控、运营等高频业务环节</sub>
+    </td>
+    <td width="25%" align="center">
+      <h3>⚡</h3>
+      <b>Fast Retrieval</b>
+      <br><br>
+      <sub>基于场景、标签、功能方向和质量特征进行快速检索，降低 Skill 查找与理解成本</sub>
+    </td>
+    <td width="25%" align="center">
+      <h3>🧩</h3>
+      <b>Integration Ready</b>
+      <br><br>
+      <sub>围绕使用方式、输入输出、依赖条件和风险边界进行标准化描述，便于接入保险 Agent 流程</sub>
+    </td>
+    <td width="25%" align="center">
+      <h3>📊</h3>
+      <b>Quality Evaluation</b>
+      <br><br>
+      <sub>建立多维度 Skill 评测体系，支持横向比较、质量筛选、持续治理和版本迭代</sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
-## 🧠 Skill 质量评测框架
+## 🧠 评分框架
 
-Insurance-Skills 的评测框架综合考察 Skill 在文档表达、信息完整性、执行可行性、长期维护能力和风险控制能力等方面的表现。我们希望通过标准化评测，使 Skill 不仅能够被收录，也能够被比较、被筛选、被改进和被持续治理。
+Insurance-Skills 不只收录 Skill，也关注 Skill 是否真正可用、可控、可维护。平台通过统一评测框架，对每个 Skill 的文档质量、执行路径、工程复现能力和安全边界进行系统评价。
 
-### 一级评价维度
+<table>
+  <tr>
+    <th align="center">维度</th>
+    <th align="center">标识</th>
+    <th align="center">评测重点</th>
+  </tr>
+  <tr>
+    <td align="center"><b>清晰度</b></td>
+    <td align="center"><code>clarity</code></td>
+    <td>名称、结构、描述和示例是否清楚易懂</td>
+  </tr>
+  <tr>
+    <td align="center"><b>完整度</b></td>
+    <td align="center"><code>completeness</code></td>
+    <td>字段、章节、依赖条件和证据信息是否充分</td>
+  </tr>
+  <tr>
+    <td align="center"><b>可操作性</b></td>
+    <td align="center"><code>operability</code></td>
+    <td>是否能够依据文档完成执行、验证和复现</td>
+  </tr>
+  <tr>
+    <td align="center"><b>可维护性</b></td>
+    <td align="center"><code>maintainability</code></td>
+    <td>是否便于版本管理、模块复用和长期更新</td>
+  </tr>
+  <tr>
+    <td align="center"><b>安全性</b></td>
+    <td align="center"><code>security</code></td>
+    <td>是否明确控制凭证、数据、权限和破坏性操作风险</td>
+  </tr>
+</table>
 
-| 评价维度 | 英文标识 | 核心含义 |
-| --- | --- | --- |
-| 清晰度 | clarity | 衡量 Skill 文档是否表达清楚，结构是否易于理解 |
-| 完整度 | completeness | 衡量 Skill 是否覆盖关键字段、章节、依赖条件和证据信息 |
-| 可操作性 | operability | 衡量用户是否能够依据文档直接执行、验证和复现结果 |
-| 可维护性 | maintainability | 衡量 Skill 是否便于版本跟踪、持续更新和长期维护 |
-| 安全性 | security | 衡量凭证、数据、权限、影响范围和破坏性操作的风险控制能力 |
+---
 
-### 二级评价准则
+## 📈 评分等级
 
-| 一级维度 | 二级准则 |
-| --- | --- |
-| 清晰度 | 命名质量、结构质量、描述质量、示例清晰度 |
-| 完整度 | 字段覆盖、证据覆盖、章节覆盖、依赖完整性 |
-| 可操作性 | 搭建难易、执行清晰、异常指引、可复现性 |
-| 可维护性 | 版本跟踪、模块化程度、抗过时能力、文档健康度 |
-| 安全性 | 凭证安全、数据暴露风险、影响范围控制、破坏性控制 |
+<table>
+  <tr>
+    <th align="center">Score</th>
+    <th align="center">Status</th>
+    <th align="center">Recommendation</th>
+  </tr>
+  <tr>
+    <td align="center"><b>0–3</b></td>
+    <td align="center">Weak</td>
+    <td>信息缺失明显，不建议直接用于生产环境</td>
+  </tr>
+  <tr>
+    <td align="center"><b>4–6</b></td>
+    <td align="center">Usable</td>
+    <td>可在受控范围试用，但需要补充边界和复现说明</td>
+  </tr>
+  <tr>
+    <td align="center"><b>7–8</b></td>
+    <td align="center">Reliable</td>
+    <td>结构清晰，路径明确，可用于常规业务场景</td>
+  </tr>
+  <tr>
+    <td align="center"><b>9–10</b></td>
+    <td align="center">Excellent</td>
+    <td>文档完善，执行稳定，可作为模板或基线 Skill</td>
+  </tr>
+</table>
 
-### 分值区间解释
+---
 
-| 分数区间 | 质量状态 | 使用建议 | 常见表现 |
-| --- | --- | --- | --- |
-| 0–3 | 基础薄弱 | 不建议直接用于生产场景 | 信息缺失较多，步骤不可执行，风险提示不足 |
-| 4–6 | 可用但存在明显缺口 | 可在受控范围内试用 | 能理解部分流程，但复现稳定性和边界说明不足 |
-| 7–8 | 质量较好 | 可用于常规场景 | 结构较清晰，执行路径明确，风险控制基本充分 |
-| 9–10 | 高质量 | 可作为模板或基线 Skill | 文档完善，执行稳定，依赖清楚，安全控制较好 |
+## 🎯 我们能做的
+
+<table>
+  <tr>
+    <td align="center"><b>Find</b></td>
+    <td>当前业务场景下有哪些可用的保险 Skill</td>
+  </tr>
+  <tr>
+    <td align="center"><b>Compare</b></td>
+    <td>同类 Skill 中哪一个更成熟、更稳定、更可控</td>
+  </tr>
+  <tr>
+    <td align="center"><b>Build</b></td>
+    <td>哪些 Skill 适合进入保险智能体建设的候选池</td>
+  </tr>
+</table>
 
 ---
 
