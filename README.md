@@ -32,6 +32,8 @@
 
 ### 面向保险场景的开源 Skill 基础设施平台
 
+<div align="center">
+
 <p>
   <img src="https://img.shields.io/badge/domain-Insurance-blue" />
   <img src="https://img.shields.io/badge/focus-Skill%20Infrastructure-6f42c1" />
@@ -51,7 +53,25 @@
 
 ---
 
-## 🧩 为什么需要 Insurance-Skills
+## 🌐 平台主页展示
+
+<div align="center">
+
+<img src="HomePage.png" alt="Insurance-Skills 平台主页" width="720">
+
+<br><br>
+
+<p>
+  <img src="https://img.shields.io/badge/Homepage-Insurance--Skills-0A84FF?style=for-the-badge&logo=github" />
+  <img src="https://img.shields.io/badge/Scenario-Agent%20%7C%20Copilot%20%7C%20Automation-2F54EB?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Domain-Insurance%20AI-1677FF?style=for-the-badge" />
+</p>
+
+</div>
+
+---
+
+## 🧭 项目背景
 
 随着大模型与智能体技术快速进入产业场景，保险行业正在从 **模型可用** 走向 **业务可落地**。
 
@@ -68,45 +88,6 @@
 这使得通用大模型在面对保险业务时，往往难以稳定完成条款解读、核保辅助、理赔支持、客服问答、合规校验等高专业度任务。
 
 因此，**Skill 成为连接通用模型能力与保险业务场景的关键中介层**。
-
----
-
-## 🛠️ 平台定位
-
-Insurance-Skills 希望通过 **平台化**、**开源化**、**标准化** 的方式，构建面向保险行业的 Skill 基础设施。
-
-<div align="center">
-
-```mermaid
-flowchart LR
-    A[通用大模型] --> B[保险 Skill 层]
-    B --> C[保险 Agent]
-    B --> D[业务 Copilot]
-    B --> E[流程自动化]
-    B --> F[知识服务]
-    B --> G[业务智能化]
-
----
-
-<div align="center">
-
-## 🌐 平台主页展示
-
-<img src="HomePage.png" alt="Insurance-Skills 平台主页" width="720">
-
-<br>
-
-<p>
-  <img src="https://img.shields.io/badge/Homepage-Insurance--Skills-0A84FF?style=for-the-badge&logo=github" />
-  <img src="https://img.shields.io/badge/Scenario-Agent%20%7C%20Copilot%20%7C%20Automation-2F54EB?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Domain-Insurance%20AI-1677FF?style=for-the-badge" />
-</p>
-
-</div>
-
----
-
-## 🧭 项目背景
 
 当前，保险 Agent 建设正在从概念验证走向真实业务落地，但在保险场景中，Skill 的发现、设计、评价与复用仍然存在明显断点。
 
@@ -174,14 +155,102 @@ flowchart LR
 
 ```mermaid
 flowchart LR
+    A[通用大模型] --> B[保险 Skill 层]
+    B --> C[保险 Agent]
+    B --> D[业务 Copilot]
+    B --> E[流程自动化]
+    B --> F[知识服务]
+    B --> G[业务智能化]
+```
+
+</div>
+
+<div align="center">
+
+```mermaid
+flowchart LR
     A[保险业务场景] --> B[Skill 结构化沉淀]
     B --> C[多维质量评测]
     C --> D[标准化展示与检索]
     D --> E[Agent / Copilot / 自动化系统接入]
+```
+
+</div>
+
+---
+
+## 🧩 覆盖场景
 
 Insurance-Skills 当前聚焦保险业务流程中最具 Skill 化潜力的核心场景，覆盖从产品咨询、核保理赔到合规风控和运营支持的完整能力空间。
 
-<table> <tr> <td align="center" width="20%"> <h3>🛡️</h3> <b>产品咨询</b> <br> <sub>产品介绍<br>责任说明<br>条款解读<br>投保问答</sub> </td> <td align="center" width="20%"> <h3>📄</h3> <b>保单服务</b> <br> <sub>保单查询<br>续保提醒<br>保全办理<br>批改说明</sub> </td> <td align="center" width="20%"> <h3>🧬</h3> <b>核保支持</b> <br> <sub>健康告知解释<br>风险问答<br>材料核验<br>核保辅助</sub> </td> <td align="center" width="20%"> <h3>🧾</h3> <b>理赔服务</b> <br> <sub>理赔报案<br>材料准备<br>进度查询<br>赔付说明</sub> </td> <td align="center" width="20%"> <h3>🎧</h3> <b>客服支持</b> <br> <sub>FAQ<br>标准话术<br>流程引导<br>坐席辅助</sub> </td> </tr> <tr> <td align="center" width="20%"> <h3>🎯</h3> <b>营销与推荐</b> <br> <sub>客户触达<br>需求匹配<br>产品推荐<br>转化支持</sub> </td> <td align="center" width="20%"> <h3>⚖️</h3> <b>合规与风控</b> <br> <sub>规则校验<br>异常识别<br>流程合规<br>权限控制</sub> </td> <td align="center" width="20%"> <h3>📊</h3> <b>运营支持</b> <br> <sub>日常运营辅助<br>流程协同<br>数据整理<br>任务追踪</sub> </td> <td align="center" width="20%"> <h3>🎓</h3> <b>培训与知识问答</b> <br> <sub>制度解释<br>业务培训<br>流程说明<br>知识服务</sub> </td> <td align="center" width="20%"> <h3>🤖</h3> <b>Agent 能力编排</b> <br> <sub>工具调用<br>任务拆解<br>流程执行<br>结果校验</sub> </td> </tr> </table>
+<table>
+  <tr>
+    <td align="center" width="20%">
+      <h3>🛡️</h3>
+      <b>产品咨询</b>
+      <br>
+      <sub>产品介绍<br>责任说明<br>条款解读<br>投保问答</sub>
+    </td>
+    <td align="center" width="20%">
+      <h3>📄</h3>
+      <b>保单服务</b>
+      <br>
+      <sub>保单查询<br>续保提醒<br>保全办理<br>批改说明</sub>
+    </td>
+    <td align="center" width="20%">
+      <h3>🧬</h3>
+      <b>核保支持</b>
+      <br>
+      <sub>健康告知解释<br>风险问答<br>材料核验<br>核保辅助</sub>
+    </td>
+    <td align="center" width="20%">
+      <h3>🧾</h3>
+      <b>理赔服务</b>
+      <br>
+      <sub>理赔报案<br>材料准备<br>进度查询<br>赔付说明</sub>
+    </td>
+    <td align="center" width="20%">
+      <h3>🎧</h3>
+      <b>客服支持</b>
+      <br>
+      <sub>FAQ<br>标准话术<br>流程引导<br>坐席辅助</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="20%">
+      <h3>🎯</h3>
+      <b>营销与推荐</b>
+      <br>
+      <sub>客户触达<br>需求匹配<br>产品推荐<br>转化支持</sub>
+    </td>
+    <td align="center" width="20%">
+      <h3>⚖️</h3>
+      <b>合规与风控</b>
+      <br>
+      <sub>规则校验<br>异常识别<br>流程合规<br>权限控制</sub>
+    </td>
+    <td align="center" width="20%">
+      <h3>📊</h3>
+      <b>运营支持</b>
+      <br>
+      <sub>日常运营辅助<br>流程协同<br>数据整理<br>任务追踪</sub>
+    </td>
+    <td align="center" width="20%">
+      <h3>🎓</h3>
+      <b>培训与知识问答</b>
+      <br>
+      <sub>制度解释<br>业务培训<br>流程说明<br>知识服务</sub>
+    </td>
+    <td align="center" width="20%">
+      <h3>🤖</h3>
+      <b>Agent 能力编排</b>
+      <br>
+      <sub>工具调用<br>任务拆解<br>流程执行<br>结果校验</sub>
+    </td>
+  </tr>
+</table>
+
+---
 
 ## 平台核心亮点
 
