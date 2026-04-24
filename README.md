@@ -1,9 +1,8 @@
-📖 [English Version](README_EN.md) · [中文文档](README.md)
-
+📖 [English version](README_EN.md) · [中文文档](README.md)
 <div align="center">
   <img src="ins-skill-logo.png" alt="Insurance-Skills Logo" width="600">
 
-### Open-Source Skill Infrastructure Platform for Insurance Scenarios
+### 面向保险场景的开源 Skill 基础设施平台
 
 <p>
   <a href="LICENSE">
@@ -12,247 +11,209 @@
   <a href="#">
     <img src="https://img.shields.io/badge/Version-1.0.0-orange.svg" alt="Version">
   </a>
-  <a href="#Project-Background">
+  <a href="#项目背景">
     <img src="https://img.shields.io/badge/Domain-Insurance-blueviolet.svg" alt="Domain">
   </a>
 </p>
 
+<p>
+  <a href="https://skills.fduinsurance.com">🌐平台体验地址</a>
+</p>
 
 <p>
-  Focused on aggregating, organizing, evaluating, and reusing insurance-domain Skills, committed to building an open capability foundation for insurance intelligent agent applications.
+  聚焦保险领域 Skill 的汇聚、组织、评估与复用，致力于构建面向保险智能体应用的开放能力底座。
 </p>
 </div>
 
----
 
-## Project Overview
 
-**Insurance-Skills** is an open-source Skill infrastructure platform for insurance scenarios initiated by the team of Professor :contentReference[oaicite:0]{index=0} at :contentReference[oaicite:1]{index=1}. The platform focuses on the **systematic aggregation, structured organization, multidimensional evaluation, and engineering reuse** of insurance-domain Skills.
 
-The project serves insurance companies, insurtech firms, distribution institutions, researchers, and developers, supporting a wide range of applications such as insurance Agents, Copilots, workflow automation, knowledge services, and business intelligence.
+## 项目简介
 
-As large language models and intelligent agent technologies rapidly enter industrial scenarios, the insurance industry is reaching a critical stage of moving from “models that work” to “solutions that create real business value.” Compared with general-purpose domains, insurance operations are characterized by **long process chains, strict rules, dense terminology, high risk exposure, and complex workflows**.
+**Insurance-Skills** 是由**复旦大学许闲教授团队**发起的面向保险场景的开源 Skill 基础设施平台，聚焦保险领域 Skill 的**系统汇聚、结构化组织、多维评测与工程化复用**。项目面向保险公司、保险科技企业、渠道机构、研究者与开发者，服务于保险 Agent、Copilot、流程自动化、知识服务与业务智能化等多类应用方向。
 
-Generic models often struggle to reliably handle highly specialized tasks such as policy interpretation, underwriting assistance, claims support, customer service Q&A, and compliance validation. Therefore, Skills become an essential intermediary layer connecting general-purpose model capabilities with vertical business scenarios.
+在大模型与智能体技术加速进入产业场景的背景下，保险行业正面临从“模型可用”走向“业务可落地”的关键阶段。相较于一般场景，保险业务具有**链条长、规则强、术语密、风险高、流程复杂**等特征，通用模型往往难以稳定胜任条款解读、核保辅助、理赔支持、客服问答、合规校验等高专业度任务。Skill 因而成为连接通用模型能力与垂直业务场景的重要中介层。
 
-**Insurance-Skills** aims to transform fragmented insurance capabilities into Skill assets that are easier to discover, understand, compare, and reuse through a platformized, open-source, and standardized approach, helping the insurance industry move from isolated pilots toward systematic capability building.
+**Insurance-Skills** 希望通过平台化、开源化、标准化的方式，将保险领域分散的能力沉淀为更易发现、更易理解、更易比较、更易复用的 Skill 资产，推动保险行业从零散试点走向系统化能力建设。
 
+### 🌐 平台主页展示
 
+<p align="center">
+  <img src="HomePage.png" alt="Insurance-Skills 平台主页" width="600">
+</p>
 
-## Project Background
 
-At present, insurance Agent development still faces several common challenges:
 
-- **Difficulty finding suitable insurance scenario Skills**: High-quality, reusable, business-oriented Skills remain scarce.
-- **Lack of guidance on Skill design and accumulation**: Many scenarios lack unified description methods and best practices.
-- **Difficulty comparing similar Skills**: Different Skills vary significantly in naming, boundaries, input/output formats, dependency conditions, and documentation quality.
-- **Difficulty putting Skills into practice after discovery**: There is still a lack of unified access points, standardized presentation, and low-threshold integration methods.
+## 项目背景
 
-Against this backdrop, **Insurance-Skills** was proposed to build an infrastructure platform for insurance scenarios that balances **capability organization, quality evaluation, and integration reuse**.
+当前，保险 Agent 建设仍面临若干共性问题：
 
----
+- **找不到合适的保险场景 Skill**：高质量、可复用、贴近业务的保险 Skill 仍较为稀缺。
+- **不知道保险 Skill 应该如何设计和沉淀**：许多场景缺乏统一描述方式和沉淀范式。
+- **难以比较同类 Skill 的优劣**：不同 Skill 在命名、边界、输入输出、依赖条件和说明质量上差异较大。
+- **找到 Skill 后仍难以真正用起来**：缺乏统一入口、标准化展示和低门槛集成方式。
 
-## Platform Positioning
+Insurance-Skills 正是在这一背景下提出，旨在为保险场景构建一个兼顾**能力组织、质量评价与集成复用**的基础设施平台。
 
-Insurance-Skills is not merely a Skill list or case repository. It is a **domain capability infrastructure platform** built for insurance intelligent applications.
 
-It primarily plays three roles:
 
-| Positioning Layer | Description |
-|---|---|
-| Domain Capability Aggregation Platform | Continuously collects, organizes, and accumulates insurance-related Skills from multiple channels |
-| Domain Capability Evaluation Platform | Establishes a unified multidimensional evaluation framework to improve comparability and selection efficiency |
-| Domain Capability Infrastructure Platform | Provides a capability foundation for insurance Agents, Copilots, workflow automation, and business system integration |
+## 平台定位
 
----
+Insurance-Skills 并不只是一个 Skill 列表或案例仓库，而是一个围绕保险智能化应用构建的**领域能力基础设施平台**。
 
-## Typical Application Scenarios
+它主要承担三类角色：
 
-Insurance-Skills currently focuses on, but is not limited to, the following insurance business scenarios:
+| 定位层次 | 说明 |
+| --- | --- |
+| 领域能力汇聚平台 | 多渠道持续收集、整理并沉淀保险领域相关 Skill |
+| 领域能力评价平台 | 建立统一的多维度评测框架，提升 Skill 可比性与选型效率 |
+| 领域能力基础设施平台 | 为保险 Agent、Copilot、流程自动化与业务系统接入提供能力底座 |
 
-| Scenario Category | Typical Tasks |
-|---|---|
-| Product Consultation | Product introduction, coverage explanation, clause interpretation, purchase Q&A |
-| Policy Services | Policy inquiry, renewal reminders, endorsements, policy changes |
-| Underwriting Support | Health disclosure explanation, risk Q&A, document verification, underwriting assistance |
-| Claims Services | Claims reporting, material preparation, progress inquiry, payout explanation |
-| Customer Service Support | FAQ, standard scripts, process guidance, agent assistance |
-| Marketing & Recommendation | Customer outreach, needs matching, product recommendation, conversion support |
-| Compliance & Risk Control | Rule validation, anomaly detection, process compliance, permission control |
-| Operations Support | Daily operational assistance, workflow collaboration, data organization |
-| Training & Knowledge Q&A | Policy explanation, business training, process guidance, knowledge services |
 
-These scenarios collectively form the core capability space within insurance workflows that can be modularized, Skill-ized, and platformized.
 
----
+## 典型应用场景
 
-## Core Platform Highlights
+Insurance-Skills 当前聚焦但不限于以下保险业务场景：
 
-### 1. Multi-Channel Aggregation and Continuous Updates
+| 场景类别 | 典型任务 |
+| --- | --- |
+| 产品咨询 | 产品介绍、责任说明、条款解读、投保问答 |
+| 保单服务 | 保单查询、续保提醒、保全办理、批改说明 |
+| 核保支持 | 健康告知解释、风险问答、材料核验、核保辅助 |
+| 理赔服务 | 理赔报案、材料准备、进度查询、赔付说明 |
+| 客服支持 | FAQ、标准话术、流程引导、坐席辅助 |
+| 营销与推荐 | 客户触达、需求匹配、产品推荐、转化支持 |
+| 合规与风控 | 规则校验、异常识别、流程合规、权限控制 |
+| 运营支持 | 日常运营辅助、流程协同、数据整理 |
+| 培训与知识问答 | 制度解释、业务培训、流程说明、知识服务 |
 
-Insurance business scenarios are highly segmented, and demand for Skills varies significantly across product lines, workflow stages, and organizational roles.
+这些场景共同构成了保险业务流程中可被 Skill 化、模块化与平台化组织的核心能力空间。
 
-Insurance-Skills continuously collects and organizes insurance-related Skills through multiple channels while expanding coverage to build a more complete and up-to-date insurance Skill capability map.
 
-Current collection priorities include:
+## 平台核心亮点
 
-- Insurance product consultation  
-- Policy services  
-- Underwriting support  
-- Claims services  
-- Customer service assistants  
-- Marketing and recommendation  
-- Compliance and risk control  
-- Operations support  
-- Training and knowledge Q&A  
+### 1. 多渠道汇聚与持续更新
 
-As the platform evolves, Insurance-Skills will further improve its tagging system and scenario taxonomy to enhance update efficiency and coverage breadth.
+保险业务场景高度细分，不同险种、流程节点和组织角色对 Skill 的需求差异显著。Insurance-Skills 通过多渠道持续收集和整理保险相关 Skill，并不断扩充覆盖范围，努力构建一份更完整、更具时效性的保险 Skill 能力地图。
 
----
+目前，平台已围绕多个高频保险业务环节启动 Skill 收集与整理工作，覆盖方向包括但不限于：
 
-### 2. Fast Search and Structured Presentation
+- 保险产品咨询
+- 保单服务
+- 核保支持
+- 理赔服务
+- 客服助手
+- 营销与推荐
+- 合规与风控
+- 运营支持
+- 培训与知识问答
 
-As the number of insurance Skills and their sources continue to grow, a key challenge is how to quickly identify suitable capabilities and clearly understand their applicable scenarios and limitations.
+随着平台持续迭代，Insurance-Skills 将进一步完善标签体系与场景分类体系，提升 Skill 库的更新效率与覆盖广度。
 
-To address this need, Insurance-Skills provides a unified search portal and standardized presentation methods, enabling users to more efficiently discover, identify, understand, and preliminarily select Skills.
+### 2. 快速检索与结构化展示
 
-Users can search relevant Skills based on business scenarios, functional directions, and tag categories, and further review:
+面对数量不断增长、来源不断扩展的保险 Skill，如何快速找到合适能力并清晰理解其适用场景与边界，是保险智能体建设中的关键问题。
 
-- Functional descriptions  
-- Applicable scenarios  
-- Usage methods  
-- Related feature information  
+围绕这一需求，Insurance-Skills 提供统一检索入口和标准化展示方式，帮助用户更高效地完成 Skill 的查找、识别、理解与初步选型。用户可基于业务场景、功能方向和标签分类快速检索相关 Skill，并进一步查看其功能说明、适用场景、使用方式及相关特征信息。
 
-Compared with manually screening Skills across fragmented channels, the platform significantly reduces information acquisition costs through structured presentation.
+相较于在分散渠道中逐一筛选和理解不同 Skill，平台通过结构化呈现显著降低了信息获取成本。
 
----
+### 3. 一站式集成导向，降低使用门槛
 
-### 3. One-Stop Integration Orientation with Lower Adoption Barriers
+在保险 Agent 建设中，“找到 Skill”只是第一步，真正的难点往往在于如何将 Skill 接入现有流程并投入使用。
 
-In insurance Agent development, “finding a Skill” is only the first step. The real challenge often lies in integrating Skills into existing processes and deploying them effectively.
+为此，Insurance-Skills 不仅关注 Skill 的展示与收录，也关注从“发现 Skill”到“接入 Skill”的实际过程，支持围绕 Skill 的检索、查看、对比、选择、集成与使用等关键步骤开展能力建设，尽可能降低从“找到 Skill”到“真正用起来”的门槛。
 
-Therefore, Insurance-Skills focuses not only on Skill display and inclusion, but also on the practical journey from “discovering Skills” to “integrating Skills.”
+对于保险公司数字化团队、产品团队和技术团队而言，这意味着可以在统一平台中更高效地完成选型、验证与集成，加快保险智能体项目从概念验证走向可用版本。
 
-It supports capability building around key stages such as:
+### 4. 多维度测评体系，提升 Skill 可比性
 
-- Search  
-- Review  
-- Comparison  
-- Selection  
-- Integration  
-- Usage  
+面对同一保险场景，往往会存在多个 Skill 方案。传统做法下，团队很难快速判断哪个更适合自己、哪个更成熟、哪个风险更可控。
 
-This minimizes the barriers between finding a Skill and actually putting it into production use.
+为此，Insurance-Skills 建立了面向保险 Skill 的多维度评测机制，从以下五个维度对 Skill 进行评价与打分：
 
-For insurance companies’ digital, product, and technical teams, this means more efficient selection, validation, and integration in a unified platform, accelerating intelligent agent projects from proof-of-concept to usable production versions.
+- **清晰度（clarity）**
+- **完整度（completeness）**
+- **可操作性（operability）**
+- **可维护性（maintainability）**
+- **安全性（security）**
 
----
+该评测框架旨在帮助用户回答三个关键问题：
 
-### 4. Multidimensional Evaluation System to Improve Skill Comparability
+1. 某个 Skill 是否适合当前业务场景？
+2. 同类 Skill 之间谁更优？
+3. 哪些 Skill 更适合优先进入候选池？
 
-For the same insurance scenario, multiple Skill solutions often exist. Traditionally, teams find it difficult to quickly determine:
 
-- Which one best fits their scenario  
-- Which one is more mature  
-- Which one has more controllable risks  
 
-To solve this, Insurance-Skills establishes a multidimensional evaluation mechanism based on five dimensions:
+## Skill 评测框架
 
-- **Clarity**
-- **Completeness**
-- **Operability**
-- **Maintainability**
-- **Security**
+Insurance-Skills 的质量评估并不依赖单一主观判断，而是综合考察 Skill 在表达质量、信息覆盖、执行可行性、长期维护性与风险控制能力等多个方面的表现。
 
-This framework helps users answer three key questions:
+### 一级评价维度
 
-1. Is a Skill suitable for the current business scenario?  
-2. Which Skill performs better among similar options?  
-3. Which Skills should be prioritized for the candidate pool?  
+| 维度 | 含义 |
+| --- | --- |
+| 清晰度（clarity） | 衡量 Skill 文档是否表达清楚、结构是否易于理解 |
+| 完整度（completeness） | 衡量 Skill 是否覆盖关键字段、章节与依赖信息 |
+| 可操作性（operability） | 衡量用户是否能够依据文档直接执行并复现结果 |
+| 可维护性（maintainability） | 衡量 Skill 是否便于版本跟踪、持续更新与长期维护 |
+| 安全性（security） | 衡量凭证、数据、影响范围与破坏性操作的风险控制能力 |
 
----
+### 二级评价准则
 
-## Skill Evaluation Framework
+| 一级维度 | 二级准则 |
+| --- | --- |
+| 清晰度 | 命名质量、结构质量、描述质量、示例清晰度 |
+| 完整度 | 字段覆盖、证据覆盖、章节覆盖、依赖完整性 |
+| 可操作性 | 搭建难易、执行清晰、异常指引、可复现性 |
+| 可维护性 | 版本跟踪、模块化程度、抗过时能力、文档健康度 |
+| 安全性 | 凭证安全、数据暴露风险、影响范围控制、破坏性控制 |
 
-Insurance-Skills quality assessment does not rely on a single subjective judgment. Instead, it comprehensively evaluates performance across expression quality, information coverage, execution feasibility, long-term maintainability, and risk control capability.
+### 分值区间解释
 
-### Primary Evaluation Dimensions
+| 分数区间 | 中文解释 | 使用建议 | 常见状态 |
+| --- | --- | --- | --- |
+| 0–3 | 基础薄弱 | 不建议直接用于生产场景 | 信息缺失较多，步骤不可执行 |
+| 4–6 | 可用但存在明显缺口 | 可在受控范围内试用 | 能理解部分流程，但复现稳定性不足 |
+| 7–8 | 质量较好 | 可用于常规场景 | 结构较清晰，执行路径较明确 |
+| 9–10 | 高质量 | 可作为模板或基线 Skill | 文档完善，风险控制较好 |
 
-| Dimension | Meaning |
-|---|---|
-| Clarity | Whether the Skill documentation is clearly expressed and easy to understand |
-| Completeness | Whether key fields, sections, and dependency information are covered |
-| Operability | Whether users can directly execute and reproduce results based on documentation |
-| Maintainability | Whether version tracking, updates, and long-term maintenance are convenient |
-| Security | Risk control capability regarding credentials, data exposure, operational scope, and destructive actions |
+### 方法论意义
 
-### Secondary Evaluation Criteria
-
-| Primary Dimension | Secondary Criteria |
-|---|---|
-| Clarity | Naming quality, structural quality, description quality, example clarity |
-| Completeness | Field coverage, evidence coverage, section coverage, dependency integrity |
-| Operability | Ease of setup, execution clarity, exception guidance, reproducibility |
-| Maintainability | Version tracking, modularity, anti-obsolescence capability, documentation health |
-| Security | Credential security, data exposure risk, impact scope control, destructive-operation control |
-
-### Score Range Interpretation
-
-| Score Range | Interpretation | Recommendation | Typical Status |
-|---|---|---|---|
-| 0–3 | Weak foundation | Not recommended for production use | Significant missing information, non-executable steps |
-| 4–6 | Usable but with clear gaps | Suitable for controlled trials | Partial process understanding, unstable reproducibility |
-| 7–8 | Good quality | Suitable for regular scenarios | Clear structure, relatively explicit execution path |
-| 9–10 | High quality | Can serve as template or baseline Skill | Complete documentation, strong risk control |
-
-### Methodological Significance
-
-This evaluation system is not only designed to generate scores, but also emphasizes the **comparability, auditability, interpretability, and integrability** of Skills.
-
-It helps establish clearer quality cognition for Skills within the platform while promoting a unified industry-wide evaluation consensus for scenario-oriented Skills.
-
-
-
-## Roadmap
-
-### 🚧 Continuous Iteration and Optimization Ahead
-
-- Dynamic collection and updating of insurance Skills  
-- Advanced insurance Skill evaluation standards  
-- Construction and application of insurance scenario intelligent agents  
-- Research on trustworthy deployment of insurance intelligent agents  
+这一评测体系不仅用于给出分数，更强调 Skill 的**可比较性、可复核性、可解释性与可集成性**。它既帮助平台内 Skill 建立更清晰的质量认知，也有助于推动保险行业逐步形成面向场景化 Skill 的统一评价共识。
 
 ---
 
-## Team Vision
+### ⚙️ 平台功能展示
 
-The team of Professor :contentReference[oaicite:2]{index=2} at :contentReference[oaicite:3]{index=3} is rooted in the disciplines of insurance and risk management, focusing on the innovative integration and application of frontier AI technologies such as large language models and multi-agent systems within insurance and risk management.
+<p align="center">
+  <img src="Functions.png" alt="Insurance-Skills 平台功能展示" width="600">
+</p>
 
-The team is committed to connecting disciplinary problems, model methodologies, and industry scenarios, conducting interdisciplinary research with theoretical depth, methodological sophistication, and practical explanatory power.
+## 路线图
 
-Driven by real problems in insurance and risk management, the team aims to promote frontier model technologies from **usable** to **trustworthy, interpretable, and deployable**, producing outcomes that serve both academic innovation and the practical needs of China’s insurance industry.
+### 🚧未来我们将持续迭代与优化
+- 保险 Skill 动态收集更新
+- 保险 Skill 深度测评标准
+- 保险场景智能体建设与应用
+- 保险智能体可信应用研究
 
-In the long run, the team will continue building a research platform that combines:
 
-- Model development capability  
-- Disciplinary insight capability  
-- Industrial transformation capability  
+## 团队愿景
 
-and become an important connector among insurance academic research, intelligent technology innovation, and industry practice.
+复旦大学许闲教授团队立足保险与风险管理学科，聚焦大语言模型、多智能体系统等前沿人工智能技术在保险与风险管理中的创新结合与应用。团队致力于打通学科问题、模型方法与行业场景之间的连接，开展具有理论深度、方法先进性和现实解释力的交叉研究。
 
----
+团队希望以保险与风险管理中的真实问题为牵引，推动前沿模型技术**从“可用”走向“可信、可解释、可落地”**，形成既服务学术创新、又回应中国保险行业实践需求的研究成果。长期来看，团队将持续建设兼具模型研发能力、学科洞察能力和产业转化能力的研究平台，成为保险学术研究、智能技术创新与行业应用实践之间的重要连接者。
 
-## 📫 Contact Us
+## 📫联系我们
 
-We welcome more insurance companies, developers, and partners to participate through multiple collaboration channels, jointly promoting intelligent agent and Skill capability development in insurance scenarios.
+我们欢迎更多保险公司、开发者、合作伙伴通过多种方式参与共建，推动保险场景下的智能体、Skill能力建设。也欢迎感兴趣的研究者加入团队，共同探索保险领域智能体Skill在场景设计、质量评估、安全治理与生态协同方面的关键问题。
 
-Researchers interested in joining the team are also welcome to collaborate in exploring key issues in:
+**联系邮箱：**   [insurance (at) fudan (dot) edu (dot) cn](mailto:insurance@fudan.edu.cn)
 
-- Scenario design  
-- Quality evaluation  
-- Security governance  
-- Ecosystem collaboration  
+**填写问卷：** 
 
-for insurance intelligent agent Skills.
-
-**Email:** [insurance (at) fudan (dot) edu (dot) cn](mailto:insurance@fudan.edu.cn)
+<p align="center">
+  <img src="Guarding Tomorrow.png" alt="Guarding Tomorrow" width="600">
+</p>
