@@ -197,6 +197,10 @@ Insurance-Skills 的质量评估并不依赖单一主观判断，而是综合考
 
 我们欢迎更多保险公司、开发者、合作伙伴通过多种方式参与共建，推动保险场景下的智能体、Skill能力建设。也欢迎感兴趣的研究者加入团队，共同探索保险领域智能体Skill在场景设计、质量评估、安全治理与生态协同方面的关键问题。
 
-**联系邮箱:** 📧 [insurance (at) fudan (dot) edu (dot) cn](mailto:insurance@fudan.edu.cn)
+**联系邮箱：**   [insurance (at) fudan (dot) edu (dot) cn](mailto:insurance@fudan.edu.cn)
 
-**填写问卷:** 像finclaw一样，弄个问卷链接
+**填写问卷：** 
+
+<p align="center">
+  <img src="Guarding Tomorrow.png" alt="Guarding Tomorrow" width="500">
+</p>
