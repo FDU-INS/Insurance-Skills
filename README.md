@@ -17,7 +17,7 @@
 </p>
 
 <p>
-  <a href="https://xsafeclaw.ai">🌐平台体验地址</a>
+  <a href="https://skills.fduinsurance.com">🌐平台体验地址</a>
 </p>
 
 <p>
