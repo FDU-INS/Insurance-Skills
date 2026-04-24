@@ -44,24 +44,11 @@
 
 </div>
 
----
-
-## 🚀 Project Overview
-
 **Insurance-Skills** is an open-source Skill infrastructure platform for insurance scenarios, initiated by **Professor Xu Xian’s team at Fudan University**.
 
 The project focuses on the **systematic aggregation**, **structured organization**, **multi-dimensional evaluation**, and **engineering reuse** of Skills in the insurance domain. It aims to transform the dispersed and implicit business capabilities within the insurance industry into standardized Skill assets that are discoverable, understandable, comparable, callable, and reusable.
 
----
-
-## 🌐 Platform Homepage Display
-
 <div align="center">
-
-<img src="HomePage.png" alt="Insurance-Skills Platform Homepage" width="720">
-
-<br><br>
-
 <p>
   <img src="https://img.shields.io/badge/Homepage-Insurance--Skills-0A84FF?style=for-the-badge&logo=github" />
   <img src="https://img.shields.io/badge/Scenario-Agent%20%7C%20Copilot%20%7C%20Automation-2F54EB?style=for-the-badge" />
@@ -72,58 +59,7 @@ The project focuses on the **systematic aggregation**, **structured organization
 
 ---
 
-## 🧭 Project Background
 
-As large models and agent technologies rapidly enter industrial scenarios, the insurance industry is moving from **model availability** toward **business-level implementation**.
-
-However, insurance business is not a general question-answering scenario. It has significant industry-specific complexity.
-
-<div align="center">
-
-| 🔗 Long Chain | 📜 Strong Rules | 🧠 Dense Terminology | ⚠️ High Risk | 🏗️ Complex Processes |
-|:--:|:--:|:--:|:--:|:--:|
-| Multi-party Collaboration | Strong Regulatory Constraints | Intensive Professional Semantics | High Compliance Requirements | Multi-step Decision-making |
-
-</div>
-
-This makes it difficult for general-purpose large models to stably perform highly specialized tasks in insurance, such as policy clause interpretation, underwriting assistance, claims support, customer service Q&A, and compliance verification.
-
-Therefore, **Skill becomes the key intermediary layer connecting general model capabilities with insurance business scenarios**.
-
-At present, insurance Agent development is moving from proof of concept to real business implementation. However, in insurance scenarios, there are still clear gaps in the discovery, design, evaluation, and reuse of Skills.
-
-<table>
-  <tr>
-    <td width="25%" align="center">
-      <h3>🔍</h3>
-      <b>Skills Are Hard to Discover</b>
-      <br>
-      <sub>High-quality, reusable, and business-oriented insurance Skills remain scarce</sub>
-    </td>
-    <td width="25%" align="center">
-      <h3>🧩</h3>
-      <b>Design Is Hard to Standardize</b>
-      <br>
-      <sub>Many insurance scenarios lack unified description methods and accumulation paradigms</sub>
-    </td>
-    <td width="25%" align="center">
-      <h3>📊</h3>
-      <b>Quality Is Hard to Compare</b>
-      <br>
-      <sub>Similar Skills vary greatly in boundaries, inputs and outputs, dependencies, and documentation quality</sub>
-    </td>
-    <td width="25%" align="center">
-      <h3>🔌</h3>
-      <b>Integration Is Hard to Implement</b>
-      <br>
-      <sub>There is a lack of unified entry points, standardized presentation, and low-threshold integration methods</sub>
-    </td>
-  </tr>
-</table>
-
-**Insurance-Skills** was established precisely around these issues. We hope to build an infrastructure platform for insurance scenarios that integrates **capability organization, quality evaluation, and engineering reuse**, enabling insurance Skills to evolve from scattered tools into systematic assets.
-
----
 
 ## 🏗️ Platform Positioning
 
