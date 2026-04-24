@@ -1,4 +1,4 @@
-> 📖 English version: [README_EN.md](README_EN.md)
+📖 [English version](README_EN.md) · [中文文档](README.md)
 <div align="center">
   <img src="ins-skill-logo.png" alt="Insurance-Skills Logo" width="500">
 
@@ -17,7 +17,7 @@
 </p>
 
 <p>
-  平台体验地址：https://skills.fduinsurance.com
+  <a href="https://xsafeclaw.ai">🌐平台体验地址</a>
 </p>
 
 <p>
