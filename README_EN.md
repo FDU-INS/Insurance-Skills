@@ -22,7 +22,8 @@
 </p>
 
 <p>
-  Focusing on the aggregation, organization, evaluation, and reuse of Skills in the insurance domain, the platform is committed to building an open capability foundation for insurance agent applications.
+
+_**Focusing on the aggregation, organization, evaluation, and reuse of Skills in the insurance domain, the platform is committed to building an open capability foundation for insurance agent applications.**_
 </p>
 </div>
 
@@ -33,6 +34,12 @@
 
 ### An Open-Source Skill Infrastructure Platform for Insurance Scenarios
 
+
+
+**Insurance-Skills** is an open-source Skill infrastructure platform for insurance scenarios, initiated by **Professor Xu Xian’s team at Fudan University**.
+
+The project focuses on the **systematic aggregation**, **structured organization**, **multi-dimensional evaluation**, and **engineering reuse** of Skills in the insurance domain. It aims to transform the dispersed and implicit business capabilities within the insurance industry into standardized Skill assets that are discoverable, understandable, comparable, callable, and reusable.
+
 <div align="center">
 
 <p>
@@ -40,19 +47,6 @@
   <img src="https://img.shields.io/badge/focus-Skill%20Infrastructure-6f42c1" />
   <img src="https://img.shields.io/badge/status-Open%20Source-brightgreen" />
   <img src="https://img.shields.io/badge/scenario-Agent%20%7C%20Copilot%20%7C%20Automation-orange" />
-</p>
-
-</div>
-
-**Insurance-Skills** is an open-source Skill infrastructure platform for insurance scenarios, initiated by **Professor Xu Xian’s team at Fudan University**.
-
-The project focuses on the **systematic aggregation**, **structured organization**, **multi-dimensional evaluation**, and **engineering reuse** of Skills in the insurance domain. It aims to transform the dispersed and implicit business capabilities within the insurance industry into standardized Skill assets that are discoverable, understandable, comparable, callable, and reusable.
-
-<div align="center">
-<p>
-  <img src="https://img.shields.io/badge/Homepage-Insurance--Skills-0A84FF?style=for-the-badge&logo=github" />
-  <img src="https://img.shields.io/badge/Scenario-Agent%20%7C%20Copilot%20%7C%20Automation-2F54EB?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Domain-Insurance%20AI-1677FF?style=for-the-badge" />
 </p>
 
 </div>
@@ -314,13 +308,13 @@ We are committed to bridging disciplinary problems, model methods, and industry 
 
 We will continue to build a research platform that integrates model development capabilities, disciplinary insight, and industrial transformation capabilities, becoming an important connector among insurance academic research, intelligent technology innovation, and industry application practice.
 
-**We welcome the following types of exchanges and collaborations**:
+_**We welcome the following types of exchanges and collaborations**:_
 
-- Co-building insurance scenario Skills
-- Joint research on Skill tag systems and evaluation frameworks
-- Validation of insurance Agent / Copilot scenarios
-- Joint research among universities, institutions, and industry
-- Project demonstrations, methodology sharing, and case exchanges
+- _Co-building insurance scenario Skills_
+- _Joint research on Skill tag systems and evaluation frameworks_
+- _Validation of insurance Agent / Copilot scenarios_
+- _Joint research among universities, institutions, and industry_
+- _Project demonstrations, methodology sharing, and case exchanges_
 
 **Contact Email**
 
