@@ -40,27 +40,11 @@
   <img src="https://img.shields.io/badge/status-Open%20Source-brightgreen" />
   <img src="https://img.shields.io/badge/scenario-Agent%20%7C%20Copilot%20%7C%20Automation-orange" />
 </p>
-
 </div>
 
----
-
-## 🚀 项目概览
-
-**Insurance-Skills** 是由 **复旦大学许闲教授团队** 发起的面向保险场景的开源 Skill 基础设施平台。
-
-项目聚焦保险领域 Skill 的 **系统汇聚**、**结构化组织**、**多维评测** 与 **工程化复用**，旨在将保险行业中分散、隐性的业务能力沉淀为可发现、可理解、可比较、可调用、可复用的标准化 Skill 资产。
-
----
-
-## 🌐 平台主页展示
+**Insurance-Skills** 是由 **复旦大学许闲教授团队** 发起的面向保险场景的开源 Skill 基础设施平台。项目聚焦保险领域 Skill 的 **系统汇聚**、**结构化组织**、**多维评测** 与 **工程化复用**，旨在将保险行业中分散、隐性的业务能力沉淀为可发现、可理解、可比较、可调用、可复用的标准化 Skill 资产。
 
 <div align="center">
-
-<img src="HomePage.png" alt="Insurance-Skills 平台主页" width="720">
-
-<br><br>
-
 <p>
   <img src="https://img.shields.io/badge/Homepage-Insurance--Skills-0A84FF?style=for-the-badge&logo=github" />
   <img src="https://img.shields.io/badge/Scenario-Agent%20%7C%20Copilot%20%7C%20Automation-2F54EB?style=for-the-badge" />
@@ -71,58 +55,7 @@
 
 ---
 
-## 🧭 项目背景
 
-随着大模型与智能体技术快速进入产业场景，保险行业正在从 **模型可用** 走向 **业务可落地**。
-
-然而，保险业务并不是通用问答场景。它具有明显的行业复杂性。
-
-<div align="center">
-
-| 🔗 链条长 | 📜 规则强 | 🧠 术语密 | ⚠️ 风险高 | 🏗️ 流程复杂 |
-|:--:|:--:|:--:|:--:|:--:|
-| 多主体协同 | 强监管约束 | 专业语义密集 | 高合规要求 | 多环节决策 |
-
-</div>
-
-这使得通用大模型在面对保险业务时，往往难以稳定完成条款解读、核保辅助、理赔支持、客服问答、合规校验等高专业度任务。
-
-因此，**Skill 成为连接通用模型能力与保险业务场景的关键中介层**。
-
-当前，保险 Agent 建设正在从概念验证走向真实业务落地，但在保险场景中，Skill 的发现、设计、评价与复用仍然存在明显断点。
-
-<table>
-  <tr>
-    <td width="25%" align="center">
-      <h3>🔍</h3>
-      <b>Skill 难发现</b>
-      <br>
-      <sub>高质量、可复用、贴近业务的保险 Skill 仍然稀缺</sub>
-    </td>
-    <td width="25%" align="center">
-      <h3>🧩</h3>
-      <b>设计难统一</b>
-      <br>
-      <sub>许多保险场景缺乏统一描述方式与沉淀范式</sub>
-    </td>
-    <td width="25%" align="center">
-      <h3>📊</h3>
-      <b>质量难比较</b>
-      <br>
-      <sub>同类 Skill 在边界、输入输出、依赖条件与说明质量上差异较大</sub>
-    </td>
-    <td width="25%" align="center">
-      <h3>🔌</h3>
-      <b>集成难落地</b>
-      <br>
-      <sub>缺乏统一入口、标准化展示与低门槛接入方式</sub>
-    </td>
-  </tr>
-</table>
-
-**Insurance-Skills** 正是围绕这些问题而建立。我们希望为保险场景构建一个兼顾 **能力组织、质量评价与工程复用** 的基础设施平台，让保险 Skill 从零散工具走向系统化资产。
-
----
 
 ## 🏗️ 平台定位
 
