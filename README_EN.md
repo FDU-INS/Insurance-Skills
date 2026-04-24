@@ -98,63 +98,61 @@ Insurance-Skills currently focuses on core scenarios in insurance business proce
 
 <table>
   <tr>
-    <td align="center" width="20%">
+    <td align="center" width="10%">
       <h3>🛡️</h3>
       <b>Product Consultation</b>
       <br>
       <sub>Product Introduction<br>Liability Explanation<br>Policy Clause Interpretation<br>Insurance Application Q&A</sub>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="10%">
       <h3>📄</h3>
       <b>Policy Services</b>
       <br>
       <sub>Policy Inquiry<br>Renewal Reminder<br>Policy Servicing<br>Endorsement Explanation</sub>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="10%">
       <h3>🧬</h3>
       <b>Underwriting Support</b>
       <br>
       <sub>Health Disclosure Explanation<br>Risk Q&A<br>Material Verification<br>Underwriting Assistance</sub>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="10%">
       <h3>🧾</h3>
       <b>Claims Services</b>
       <br>
       <sub>Claim Reporting<br>Material Preparation<br>Progress Inquiry<br>Payment Explanation</sub>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="10%">
       <h3>🎧</h3>
       <b>Customer Service Support</b>
       <br>
       <sub>FAQ<br>Standard Scripts<br>Process Guidance<br>Agent Assistance</sub>
     </td>
-  </tr>
-  <tr>
-    <td align="center" width="20%">
+    <td align="center" width="10%">
       <h3>🎯</h3>
       <b>Marketing and Recommendation</b>
       <br>
       <sub>Customer Outreach<br>Demand Matching<br>Product Recommendation<br>Conversion Support</sub>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="10%">
       <h3>⚖️</h3>
       <b>Compliance and Risk Control</b>
       <br>
       <sub>Rule Verification<br>Anomaly Identification<br>Process Compliance<br>Permission Control</sub>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="10%">
       <h3>📊</h3>
       <b>Operational Support</b>
       <br>
       <sub>Daily Operation Assistance<br>Process Collaboration<br>Data Organization<br>Task Tracking</sub>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="10%">
       <h3>🎓</h3>
       <b>Training and Knowledge Q&A</b>
       <br>
       <sub>Policy Explanation<br>Business Training<br>Process Description<br>Knowledge Services</sub>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="10%">
       <h3>🤖</h3>
       <b>Agent Capability Orchestration</b>
       <br>
