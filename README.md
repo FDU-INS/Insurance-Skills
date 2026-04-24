@@ -151,30 +151,6 @@
   </tr>
 </table>
 
-<div align="center">
-
-```mermaid
-flowchart LR
-    A[通用大模型] --> B[保险 Skill 层]
-    B --> C[保险 Agent]
-    B --> D[业务 Copilot]
-    B --> E[流程自动化]
-    B --> F[知识服务]
-    B --> G[业务智能化]
-```
-
-</div>
-
-<div align="center">
-
-```mermaid
-flowchart LR
-    A[保险业务场景] --> B[Skill 结构化沉淀]
-    B --> C[多维质量评测]
-    C --> D[标准化展示与检索]
-    D --> E[Agent / Copilot / 自动化系统接入]
-```
-
 </div>
 
 ---
