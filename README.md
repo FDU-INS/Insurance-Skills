@@ -61,7 +61,6 @@
 
 </div>
 
----
 
 ## 🧩 覆盖场景
 
@@ -132,7 +131,7 @@ Insurance-Skills 当前聚焦保险业务流程中最具 Skill 化潜力的核�
   </tr>
 </table>
 
----
+
 
 ## ✨ 核心亮点
 
@@ -167,7 +166,7 @@ Insurance-Skills 面向保险智能体建设，提供一套可发现、可比较
   </tr>
 </table>
 
----
+
 
 ## 🧠 评分框架
 
@@ -206,7 +205,6 @@ Insurance-Skills 不只收录 Skill，也关注 Skill 是否真正可用、可�
   </tr>
 </table>
 
----
 
 ## 📈 评分等级
 
@@ -238,7 +236,7 @@ Insurance-Skills 不只收录 Skill，也关注 Skill 是否真正可用、可�
   </tr>
 </table>
 
----
+
 
 
 ## ⚙️ 平台功能展示
@@ -249,13 +247,12 @@ Insurance-Skills 围绕 Skill 的发现、理解、评测和复用构建平台�
   <img src="asset/Functions.png" alt="Insurance-Skills 平台功能展示" width="700">
 </p>
 
----
 
 ## 🛣️ 路线图
 
 我们希望平台不仅是一个 Skill 展示库，也能够逐步演化为保险智能体能力建设、质量治理和行业协作的开放基础设施。Insurance-Skills 将围绕保险智能体建设持续迭代，未来将重点推进保险 Skill 的动态收集与更新，完善保险 Skill 深度测评标准，探索保险场景智能体建设应用，并进一步开展保险智能体可信应用、安全治理和生态协同研究。
 
----
+
 
 ## 🌐 关于我们
 
@@ -267,7 +264,7 @@ Insurance-Skills 围绕 Skill 的发现、理解、评测和复用构建平台�
 
 我们将持续建设兼具模型研发能力、学科洞察能力和产业转化能力的研究平台，成为保险学术研究、智能技术创新与行业应用实践之间的重要连接者。
 
----
+
 
 ## 🤝 欢迎交流与合作
 
@@ -283,7 +280,7 @@ Insurance-Skills 围绕 Skill 的发现、理解、评测和复用构建平台�
   <img src="asset/Guarding Tomorrow.png" alt="Guarding Tomorrow" width="600">
 </p>
 
----
+
 
 <div align="center">
 
