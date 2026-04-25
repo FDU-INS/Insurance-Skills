@@ -275,7 +275,7 @@ Insurance-Skills 围绕 Skill 的发现、理解、评测和复用构建平台�
 
 同时，我们期待开展更深入的沟通、合作与探索。如果你对保险科技、保险场景智能体应用、可信 AI 评估、行业应用验证或相关交叉研究感兴趣，欢迎与我们联系。我们也欢迎对本方向有长期兴趣的同学、研究者加入我们，共同推动保险科技的创新与落地应用。
 
-**联系邮箱：** [insurance@fudan.edu.cn](mailto:insurance@fudan.edu.cn)
+**联系邮箱：** [insurance(at)fudan(dot)edu(dot)cn](mailto:insurance@fudan.edu.cn)
 
 **填写问卷：**
 
