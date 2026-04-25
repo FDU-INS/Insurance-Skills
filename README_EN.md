@@ -1,7 +1,7 @@
 > 📖 Chinese version: [README_中文.md](README.md)
 > 
 <div align="center">
-  <img src="ins-skill-logo.png" alt="Team Logo" width="500">
+  <img src="asset/ins-skill-logo.png" alt="Team Logo" width="500">
 
 ### An Open-Source Skill Infrastructure Platform for Insurance Scenarios
 
