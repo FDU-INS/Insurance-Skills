@@ -31,8 +31,11 @@
 
 ## 🔍 什么是Insurance-Skills？
 
-**Insurance-Skills** 是由 **复旦大学许闲教授团队** 发起的面向保险场景的开源 Skill 基础设施平台。项目聚焦保险领域 Skill 的 **系统汇聚**、**结构化组织**、**多维评测** 与 **工程化复用**，旨在将保险行业中分散、隐性的业务能力沉淀为可发现、可理解、可比较、可调用、可复用的标准化 Skill 资产。
+<div align="center">
+  <img src="asset/HomePage.png" alt="Fudan-Insurance Logo" width="150">
+</div>
 
+**Insurance-Skills** 是由 **复旦大学许闲教授团队** 发起的面向保险场景的开源 Skill 基础设施平台。项目聚焦保险领域 Skill 的 **系统汇聚**、**结构化组织**、**多维评测** 与 **工程化复用**，旨在将保险行业中分散、隐性的业务能力沉淀为可发现、可理解、可比较、可调用、可复用的标准化 Skill 资产。
 
 **Insurance-Skills** 不仅是 Skill 的展示入口，也是保险行业能力沉淀、能力评价与能力复用的统一底座。
 
