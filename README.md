@@ -2,7 +2,7 @@
 <div align="center">
   <img src="asset/ins-skill-logo.png" alt="Insurance-Skills Logo" width="600">
 
-### 面向保险场景的开源 Skill 基础设施平台
+## 面向保险场景的开源 Skill 基础设施平台
 
 <p>
   <a href="LICENSE">
