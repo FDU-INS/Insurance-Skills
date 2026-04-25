@@ -1,6 +1,6 @@
 📖 [English version](README_EN.md) · [中文文档](README.md)
 <div align="center">
-  <img src="ins-skill-logo.png" alt="Insurance-Skills Logo" width="600">
+  <img src="asset/ins-skill-logo.png" alt="Insurance-Skills Logo" width="600">
 
 ### 面向保险场景的开源 Skill 基础设施平台
 
@@ -21,7 +21,7 @@
 </p>
 
 <p>
-  **聚焦保险领域 Skill 的汇聚、组织、评估与复用，致力于构建面向保险智能体应用的开放能力底座。**
+  聚焦保险领域 Skill 的汇聚、组织、评估与复用，致力于构建面向保险智能体应用的开放能力底座。
 </p>
 </div>
 
@@ -280,7 +280,7 @@ Insurance-Skills 不只收录 Skill，也关注 Skill 是否真正可用、可�
 ## ⚙️ 平台功能展示
 
 <p align="center">
-  <img src="Functions.png" alt="Insurance-Skills 平台功能展示" width="700">
+  <img src="asset/Functions.png" alt="Insurance-Skills 平台功能展示" width="700">
 </p>
 
 Insurance-Skills 围绕 Skill 的发现、理解、评测和复用构建平台能力。用户可以通过统一入口浏览不同保险场景下的 Skill，查看结构化说明与质量评分，并据此开展能力筛选、方案比较和集成验证。
@@ -299,7 +299,7 @@ Insurance-Skills 将围绕保险智能体建设持续迭代。未来平台将重
 ## 📫 联系我们
 
 <div align="center">
-  <img src="fudan-ins-logo.png" alt="Fudan-Insurance Logo" width="150">
+  <img src="asset/fudan-ins-logo.png" alt="Fudan-Insurance Logo" width="150">
 </div>
 
 我们立足保险与风险管理学科，聚焦大语言模型、多智能体系统、可信人工智能等前沿技术在保险与风险管理中的创新结合与应用。
@@ -322,7 +322,7 @@ Insurance-Skills 将围绕保险智能体建设持续迭代。未来平台将重
 **填写问卷**
 
 <p align="center">
-  <img src="Guarding Tomorrow.png" alt="Guarding Tomorrow" width="600">
+  <img src="asset/Guarding Tomorrow.png" alt="Guarding Tomorrow" width="600">
 </p>
 
 ---
