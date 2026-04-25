@@ -35,9 +35,7 @@
   <img src="asset/HomePage.png" alt="Fudan-Insurance Logo" width="600">
 </div>
 
-**Insurance-Skills** 是由 **复旦大学许闲教授团队** 发起的面向保险场景的开源 Skill 基础设施平台。项目聚焦保险领域 Skill 的 **系统汇聚**、**结构化组织**、**多维评测** 与 **工程化复用**，旨在将保险行业中分散、隐性的业务能力沉淀为可发现、可理解、可比较、可调用、可复用的标准化 Skill 资产。
-
-**Insurance-Skills** 不仅是 Skill 的展示入口，也是保险行业能力沉淀、能力评价与能力复用的统一底座。
+**Insurance-Skills** 是由 **复旦大学许闲教授团队** 发起的面向保险场景的开源 Skill 基础设施平台。项目聚焦保险领域 Skill 的 **系统汇聚**、**结构化组织**、**多维评测** 与 **工程化复用**，旨在将保险行业中分散、隐性的业务能力沉淀为可发现、可理解、可比较、可调用、可复用的标准化 Skill 资产。**Insurance-Skills** 不仅是 Skill 的展示入口，也是保险行业能力沉淀、能力评价与能力复用的统一底座。
 
 <table>
   <tr>
@@ -64,67 +62,78 @@
 
 </div>
 
-
 ## 🧩 覆盖场景
 
 Insurance-Skills 当前聚焦保险业务流程中最具 Skill 化潜力的核心场景，覆盖从产品咨询、核保理赔到合规风控和运营支持的完整能力空间。
 
 <table width="100%">
   <tr>
-    <td align="center" valign="top" width="20%" style="min-width: 160px;">
+    <td width="20%" align="center" valign="top">
       <h3>🛡️</h3>
-      <b>产品咨询</b><br>
-      <sub>产品介绍<br>责任说明<br>条款解读<br>投保问答</sub>
+      <b>产品咨询</b>
+      <br><br>
+      产品介绍<br>责任说明<br>条款解读<br>投保问答
     </td>
-    <td align="center" valign="top" width="20%" style="min-width: 160px;">
+    <td width="20%" align="center" valign="top">
       <h3>📄</h3>
-      <b>保单服务</b><br>
-      <sub>保单查询<br>续保提醒<br>保全办理<br>批改说明</sub>
+      <b>保单服务</b>
+      <br><br>
+      保单查询<br>续保提醒<br>保全办理<br>批改说明
     </td>
-    <td align="center" valign="top" width="20%" style="min-width: 160px;">
+    <td width="20%" align="center" valign="top">
       <h3>🧬</h3>
-      <b>核保支持</b><br>
-      <sub>健康告知解释<br>风险问答<br>材料核验<br>核保辅助</sub>
+      <b>核保支持</b>
+      <br><br>
+      告知解释<br>风险问答<br>材料核验<br>核保辅助
     </td>
-    <td align="center" valign="top" width="20%" style="min-width: 160px;">
+    <td width="20%" align="center" valign="top">
       <h3>🧾</h3>
-      <b>理赔服务</b><br>
-      <sub>理赔报案<br>材料准备<br>进度查询<br>赔付说明</sub>
+      <b>理赔服务</b>
+      <br><br>
+      理赔报案<br>材料准备<br>进度查询<br>赔付说明
     </td>
-    <td align="center" valign="top" width="20%" style="min-width: 160px;">
+    <td width="20%" align="center" valign="top">
       <h3>🎧</h3>
-      <b>客服支持</b><br>
-      <sub>FAQ<br>标准话术<br>流程引导<br>坐席辅助</sub>
+      <b>客服支持</b>
+      <br><br>
+      FAQ<br>标准话术<br>流程引导<br>坐席辅助
     </td>
   </tr>
   <tr>
-    <td align="center" valign="top" width="20%" style="min-width: 160px;">
+    <td width="20%" align="center" valign="top">
       <h3>🎯</h3>
-      <b>营销推荐</b><br>
-      <sub>客户触达<br>需求匹配<br>产品推荐<br>转化支持</sub>
+      <b>营销推荐</b>
+      <br><br>
+      客户触达<br>需求匹配<br>产品推荐<br>转化支持
     </td>
-    <td align="center" valign="top" width="20%" style="min-width: 160px;">
+    <td width="20%" align="center" valign="top">
       <h3>⚖️</h3>
-      <b>合规风控</b><br>
-      <sub>规则校验<br>异常识别<br>流程合规<br>权限控制</sub>
+      <b>合规风控</b>
+      <br><br>
+      规则校验<br>异常识别<br>流程合规<br>权限控制
     </td>
-    <td align="center" valign="top" width="20%" style="min-width: 160px;">
+    <td width="20%" align="center" valign="top">
       <h3>📊</h3>
-      <b>运营支持</b><br>
-      <sub>日常运营<br>流程协同<br>数据整理<br>任务追踪</sub>
+      <b>运营支持</b>
+      <br><br>
+      日常运营<br>流程协同<br>数据整理<br>任务追踪
     </td>
-    <td align="center" valign="top" width="20%" style="min-width: 160px;">
+    <td width="20%" align="center" valign="top">
       <h3>🎓</h3>
-      <b>知识问答</b><br>
-      <sub>制度解释<br>业务培训<br>流程说明<br>知识服务</sub>
+      <b>知识问答</b>
+      <br><br>
+      制度解释<br>业务培训<br>流程说明<br>知识服务
     </td>
-    <td align="center" valign="top" width="20%" style="min-width: 160px;">
+    <td width="20%" align="center" valign="top">
       <h3>🤖</h3>
-      <b>能力编排</b><br>
-      <sub>工具调用<br>任务拆解<br>流程执行<br>结果校验</sub>
+      <b>能力编排</b>
+      <br><br>
+      工具调用<br>任务拆解<br>流程执行<br>结果校验
     </td>
   </tr>
 </table>
+
+
 
 
 ## ✨ 核心亮点
