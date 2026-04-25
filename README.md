@@ -11,7 +11,7 @@
   <a href="#">
     <img src="https://img.shields.io/badge/Version-1.0.0-orange.svg" alt="Version">
   </a>
-  <a href="#项目背景">
+  <a href="#">
     <img src="https://img.shields.io/badge/Domain-Insurance-blueviolet.svg" alt="Domain">
   </a>
 </p>
@@ -27,32 +27,14 @@
 
 
 
+---
 
-# 🛡️ Insurance-Skills
-
-### 面向保险场景的开源 Skill 基础设施平台
-
-
+### 🔍 什么是Insurance-Skills？
 
 **Insurance-Skills** 是由 **复旦大学许闲教授团队** 发起的面向保险场景的开源 Skill 基础设施平台。项目聚焦保险领域 Skill 的 **系统汇聚**、**结构化组织**、**多维评测** 与 **工程化复用**，旨在将保险行业中分散、隐性的业务能力沉淀为可发现、可理解、可比较、可调用、可复用的标准化 Skill 资产。
 
-<div align="center">
 
-<p>
-  <img src="https://img.shields.io/badge/domain-Insurance-blue" />
-  <img src="https://img.shields.io/badge/focus-Skill%20Infrastructure-6f42c1" />
-  <img src="https://img.shields.io/badge/status-Open%20Source-brightgreen" />
-  <img src="https://img.shields.io/badge/scenario-Agent%20%7C%20Copilot%20%7C%20Automation-orange" />
-</p>
-</div>
-
----
-
-
-
-## 🏗️ 平台定位
-
-**Insurance-Skills** 是一个面向保险智能化应用的领域能力基础设施平台。它不仅是 Skill 的展示入口，也是保险行业能力沉淀、能力评价与能力复用的统一底座。
+**Insurance-Skills** 不仅是 Skill 的展示入口，也是保险行业能力沉淀、能力评价与能力复用的统一底座。
 
 <table>
   <tr>
@@ -258,68 +240,44 @@ Insurance-Skills 不只收录 Skill，也关注 Skill 是否真正可用、可�
 
 ---
 
-## 🎯 我们能做的
-
-<table>
-  <tr>
-    <td align="center"><b>Find</b></td>
-    <td>当前业务场景下有哪些可用的保险 Skill</td>
-  </tr>
-  <tr>
-    <td align="center"><b>Compare</b></td>
-    <td>同类 Skill 中哪一个更成熟、更稳定、更可控</td>
-  </tr>
-  <tr>
-    <td align="center"><b>Build</b></td>
-    <td>哪些 Skill 适合进入保险智能体建设的候选池</td>
-  </tr>
-</table>
-
----
 
 ## ⚙️ 平台功能展示
+
+Insurance-Skills 围绕 Skill 的发现、理解、评测和复用构建平台能力。用户可以通过统一入口浏览不同保险场景下的 Skill，查看结构化说明与质量评分，并据此开展能力筛选、方案比较和集成验证。
 
 <p align="center">
   <img src="asset/Functions.png" alt="Insurance-Skills 平台功能展示" width="700">
 </p>
 
-Insurance-Skills 围绕 Skill 的发现、理解、评测和复用构建平台能力。用户可以通过统一入口浏览不同保险场景下的 Skill，查看结构化说明与质量评分，并据此开展能力筛选、方案比较和集成验证。
-
 ---
 
 ## 🛣️ 路线图
 
-Insurance-Skills 将围绕保险智能体建设持续迭代。未来平台将重点推进保险 Skill 的动态收集与更新，完善保险 Skill 深度测评标准，探索保险场景智能体建设方法，并进一步开展保险智能体可信应用、安全治理和生态协同研究。
-
-我们希望平台不仅是一个 Skill 展示库，也能够逐步演化为保险智能体能力建设、质量治理和行业协作的开放基础设施。
+我们希望平台不仅是一个 Skill 展示库，也能够逐步演化为保险智能体能力建设、质量治理和行业协作的开放基础设施。Insurance-Skills 将围绕保险智能体建设持续迭代，未来将重点推进保险 Skill 的动态收集与更新，完善保险 Skill 深度测评标准，探索保险场景智能体建设应用，并进一步开展保险智能体可信应用、安全治理和生态协同研究。
 
 ---
 
-
-## 📫 联系我们
+## 🌐 关于我们
 
 <div align="center">
   <img src="asset/fudan-ins-logo.png" alt="Fudan-Insurance Logo" width="150">
 </div>
 
-我们立足保险与风险管理学科，聚焦大语言模型、多智能体系统、可信人工智能等前沿技术在保险与风险管理中的创新结合与应用。
-
-团队致力于打通学科问题、模型方法与行业场景之间的连接，开展具有理论深度、方法先进性和现实解释力的交叉研究。我们希望以保险与风险管理中的真实问题为牵引，推动前沿模型技术从可用走向可信、可解释、可落地，形成既服务学术创新，又回应中国保险行业实践需求的研究成果。
+复旦大学许闲教授团队长期立足风险管理与保险学科，聚焦大语言模型、多智能体系统、可信人工智能等前沿技术在金融、保险领域中的跨学科创新结合与应用。团队致力于打通学科问题、模型方法与行业场景之间的连接，开展具有理论深度、方法先进性和现实解释力的交叉研究。我们希望以风险管理与保险中的真实问题为牵引，推动前沿模型技术从可用走向可信、可解释、可落地，形成既服务学术创新，又回应中国保险行业实践需求的研究成果。
 
 我们将持续建设兼具模型研发能力、学科洞察能力和产业转化能力的研究平台，成为保险学术研究、智能技术创新与行业应用实践之间的重要连接者。
 
-**我们欢迎以下类型的交流与合作：**
-- 共同建设保险场景 Skill
-- 联合开展 Skill 标签体系与评估框架研究
-- 开展保险 Agent / Copilot 场景验证
-- 推动高校、机构与行业之间的联合研究
-- 开展项目展示、方法论分享与案例交流
+---
 
-**联系邮箱**
+## 🤝 欢迎交流与合作
 
-[insurance@fudan.edu.cn](mailto:insurance@fudan.edu.cn)
+欢迎大家对本项目提出优化建议、反馈使用体验，并参与相关能力的共建与完善。
 
-**填写问卷**
+同时，我们期待开展更深入的沟通、合作与探索。如果你对保险科技、保险场景智能体应用、可信 AI 评估、行业应用验证或相关交叉研究感兴趣，欢迎与我们联系。我们也欢迎对本方向有长期兴趣的同学、研究者加入我们，共同推动保险科技的创新与落地应用。
+
+**联系邮箱：** [insurance@fudan.edu.cn](mailto:insurance@fudan.edu.cn)
+
+**填写问卷：**
 
 <p align="center">
   <img src="asset/Guarding Tomorrow.png" alt="Guarding Tomorrow" width="600">
