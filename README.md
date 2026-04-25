@@ -175,38 +175,9 @@ Insurance-Skills 面向保险智能体建设，提供一套可发现、可比较
 
 Insurance-Skills 不只收录 Skill，也关注 Skill 是否真正可用、可控、可维护。平台通过统一评测框架，对每个 Skill 的文档质量、执行路径、工程复现能力和安全边界进行系统评价。
 
-<table>
-  <tr>
-    <th align="center">维度</th>
-    <th align="center">标识</th>
-    <th align="center">评测重点</th>
-  </tr>
-  <tr>
-    <td align="center"><b>清晰度</b></td>
-    <td align="center"><code>clarity</code></td>
-    <td>名称、结构、描述和示例是否清楚易懂</td>
-  </tr>
-  <tr>
-    <td align="center"><b>完整度</b></td>
-    <td align="center"><code>completeness</code></td>
-    <td>字段、章节、依赖条件和证据信息是否充分</td>
-  </tr>
-  <tr>
-    <td align="center"><b>可操作性</b></td>
-    <td align="center"><code>operability</code></td>
-    <td>是否能够依据文档完成执行、验证和复现</td>
-  </tr>
-  <tr>
-    <td align="center"><b>可维护性</b></td>
-    <td align="center"><code>maintainability</code></td>
-    <td>是否便于版本管理、模块复用和长期更新</td>
-  </tr>
-  <tr>
-    <td align="center"><b>安全性</b></td>
-    <td align="center"><code>security</code></td>
-    <td>是否明确控制凭证、数据、权限和破坏性操作风险</td>
-  </tr>
-</table>
+<p align="center">
+  <img src="asset/Evaluation Framework.png" alt="Evaluation Framework" width="600">
+</p>
 
 
 ## 📈 评分等级
