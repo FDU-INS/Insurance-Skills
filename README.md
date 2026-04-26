@@ -184,38 +184,6 @@ Insurance-Skills 不只收录 Skill，也关注 Skill 是否真正可用、可�
   <img src="asset/assessment example.png" alt="example" width="420">
 </p>
 
-## 📈 评分等级
-
-<table>
-  <tr>
-    <th align="center">Score</th>
-    <th align="center">Status</th>
-    <th align="center">Recommendation</th>
-  </tr>
-  <tr>
-    <td align="center"><b>0–3</b></td>
-    <td align="center">Weak</td>
-    <td>信息缺失明显，不建议直接用于生产环境</td>
-  </tr>
-  <tr>
-    <td align="center"><b>4–6</b></td>
-    <td align="center">Usable</td>
-    <td>可在受控范围试用，但需要补充边界和复现说明</td>
-  </tr>
-  <tr>
-    <td align="center"><b>7–8</b></td>
-    <td align="center">Reliable</td>
-    <td>结构清晰，路径明确，可用于常规业务场景</td>
-  </tr>
-  <tr>
-    <td align="center"><b>9–10</b></td>
-    <td align="center">Excellent</td>
-    <td>文档完善，执行稳定，可作为模板或基线 Skill</td>
-  </tr>
-</table>
-
-
-
 
 ## ⚙️ 平台功能展示
 
