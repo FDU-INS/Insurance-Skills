@@ -176,7 +176,7 @@ Insurance-Skills 面向保险智能体建设，提供一套可发现、可比较
 
 ## 🧠 评分框架
 
-Insurance-Skills 不只收录 Skill，也关注 Skill 是否真正可用、可控、可维护。平台通过统一评测框架，对每个 Skill 的文档质量、执行路径、工程复现能力和安全边界进行系统评价。
+Insurance-Skills 不只收录 Skill，也关注 Skill 是否真正可用、可控、可维护。我们构建了一套面向保险场景的Skill评估框架。框架从清晰度、完整度、可操作性、可维护性和安全性五个维度对样本进行规则化质量评估，并通过九个完整覆盖保险数据、业务安全的标签进行规则化风险评估。
 
 <p align="center">
   <img src="asset/Evaluation Framework.png" alt="Evaluation Framework" width="600">
