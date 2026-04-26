@@ -189,9 +189,7 @@ Insurance-Skills provides a set of domain Skill infrastructure for insurance age
 Insurance-Skills not only includes Skills, but also focuses on whether Skills are truly usable, controllable, and maintainable. We have built a Skill evaluation framework for insurance scenarios. The framework conducts rule-based quality evaluation of samples across five dimensions: clarity, completeness, operability, maintainability, and security. It also conducts rule-based risk evaluation through nine labels that comprehensively cover insurance data and business security.
 
 <p align="center">
-  <img src="asset/Evaluation Framework.png" alt="Evaluation Framework" width="400">
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="asset/assessment example.png" alt="example" width="400">
+  <img src="asset/evaluation.png" alt="Evaluation" width="800">
 </p>
 
 
