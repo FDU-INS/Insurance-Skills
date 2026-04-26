@@ -199,8 +199,22 @@ Insurance-Skills 不只收录 Skill，也关注 Skill 是否真正可用、可�
 
 Insurance-Skills 围绕 Skill 的发现、理解、评测和复用构建平台能力。用户可以通过统一入口浏览不同保险场景下的 Skill，查看结构化说明与质量评分，并据此开展能力筛选、方案比较和集成验证。
 
+### 首页检索
+
 <p align="center">
-  <img src="asset/Functions.png" alt="Insurance-Skills 平台功能展示" width="700">
+  <img src="asset/search.gif" alt="Insurance-Skills 首页检索功能展示" width="700">
+</p>
+
+### 专题分类
+
+<p align="center">
+  <img src="asset/category.gif" alt="Insurance-Skills 专题分类功能展示" width="700">
+</p>
+
+### Skill 详情
+
+<p align="center">
+  <img src="asset/details.gif" alt="Insurance-Skills 专题分类功能展示" width="700">
 </p>
 
 
