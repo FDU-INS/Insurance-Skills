@@ -35,15 +35,16 @@
   <img src="asset/HomePage.png" alt="Fudan-Insurance Logo" width="600">
 </div>
 
-**Insurance-Skills** 是由 **复旦大学许闲教授团队** 发起的面向保险场景的开源 Skill 基础设施平台。项目聚焦保险领域 Skill 的 **系统汇聚**、**结构化组织**、**多维评测** 与 **工程化复用**，旨在将保险行业中分散、隐性的业务能力沉淀为可发现、可理解、可比较、可调用、可复用的标准化 Skill 资产。**Insurance-Skills** 不仅是 Skill 的展示入口，也是保险行业能力沉淀、能力评价与能力复用的统一底座。
+**Insurance-Skills** 是由 **复旦大学许闲教授团队** 发起的面向保险场景的开源 Skill 基础设施平台。项目聚焦保险领域 Skill 的**系统汇聚**、**结构化组织**、**多维评测**与**工程化复用**，旨在将保险行业中分散、隐性的业务能力沉淀为可发现、可理解、可比较、可调用、可复用的标准化 Skill 资产。**Insurance-Skills** 不仅是 Skill 的展示入口，也是保险行业能力沉淀、能力评价与能力复用的统一底座。
 
+<div align="center">
 <table>
   <tr>
     <td width="33%" align="center" style="border: none; padding: 16px;">
       <h3>📦</h3>
       <b>领域能力汇聚平台</b>
       <br><br>
-      <sub>多渠道持续收集、整理并沉淀保险领域相关 Skill，形成可发现、可检索、可复用的能力资产库</sub>
+      <sub>多渠道持续收集、整理并沉淀保险领域 Skill，形成可发现、可检索、可复用的能力资产库</sub>
     </td>
     <td width="33%" align="center" style="border: none; padding: 16px;">
       <h3>📈</h3>
@@ -65,6 +66,8 @@
 ## 🧩 覆盖场景
 
 Insurance-Skills 聚焦保险业务流程中最具 Skill 化潜力的核心场景，覆盖从产品咨询、核保理赔到合规风控和运营支持的完整能力空间。
+
+<div align="center">
 
 <table width="100%">
   <tr>
@@ -132,7 +135,7 @@ Insurance-Skills 聚焦保险业务流程中最具 Skill 化潜力的核心场�
     </td>
   </tr>
 </table>
-
+</div>
 
 
 
