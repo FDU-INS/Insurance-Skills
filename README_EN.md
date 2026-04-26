@@ -1,7 +1,6 @@
-> 📖 Chinese version: [README_中文.md](README.md)
-> 
+📖 [English version](README_EN.md) · [中文文档](README.md)
 <div align="center">
-  <img src="asset/ins-skill-logo.png" alt="Team Logo" width="500">
+  <img src="asset/ins-skill-logo.png" alt="Insurance-Skills Logo" width="600">
 
 ### An Open-Source Skill Infrastructure Platform for Insurance Scenarios
 
@@ -12,328 +11,251 @@
   <a href="#">
     <img src="https://img.shields.io/badge/Version-1.0.0-orange.svg" alt="Version">
   </a>
-  <a href="#项目背景">
+  <a href="#">
     <img src="https://img.shields.io/badge/Domain-Insurance-blueviolet.svg" alt="Domain">
   </a>
 </p>
 
 <p>
-  <a href="https://skills.fduinsurance.com">🌐 Platform Experience URL</a>
-</p>
-
-<p>
-
-_**Focusing on the aggregation, organization, evaluation, and reuse of Skills in the insurance domain, the platform is committed to building an open capability foundation for insurance agent applications.**_
-</p>
-</div>
-
-
-
-
-# 🛡️ Insurance-Skills
-
-### An Open-Source Skill Infrastructure Platform for Insurance Scenarios
-
-
-
-**Insurance-Skills** is an open-source Skill infrastructure platform for insurance scenarios, initiated by **Professor Xu Xian’s team at Fudan University**.
-
-The project focuses on the **systematic aggregation**, **structured organization**, **multi-dimensional evaluation**, and **engineering reuse** of Skills in the insurance domain. It aims to transform the dispersed and implicit business capabilities within the insurance industry into standardized Skill assets that are discoverable, understandable, comparable, callable, and reusable.
-
-<div align="center">
-
-<p>
-  <img src="https://img.shields.io/badge/domain-Insurance-blue" />
-  <img src="https://img.shields.io/badge/focus-Skill%20Infrastructure-6f42c1" />
-  <img src="https://img.shields.io/badge/status-Open%20Source-brightgreen" />
-  <img src="https://img.shields.io/badge/scenario-Agent%20%7C%20Copilot%20%7C%20Automation-orange" />
+  <a href="https://skills.fduinsurance.com">🌐 Platform URL</a>
 </p>
 
 </div>
+
+> Recently, concepts such as “Lobster”, agents, and Skills have continued to gain momentum, rapidly moving from technical communities into broader industrial discussions. More and more people are beginning to realize that being able to chat is not real competence for large models. Being able to underwrite, handle claims, and resolve customer service challenges is the true “hard currency” of insurance AI. As an agent’s “professional skill package”, a Skill encapsulates scenario-specific capabilities such as underwriting rules, claims processes, and customer service scripts into plug-and-play modules, thereby enabling agents to truly enter insurance business operations.
+>
+> In actual implementation, however, the industry commonly faces four major challenges:
+> 
+> Scarcity: there are too few high-quality Skills that truly fit insurance scenarios;
+> 
+> Difficulty: it is unclear how scenario-based Skills should be designed and accumulated;
+> 
+> Disorder: Skills of the same category vary greatly in quality, making it difficult to quickly judge their merits;
+> 
+> Slowness: even when usable capabilities are found, there is still a lack of unified and low-threshold integration methods.
+>
+> **Insurance-Skills** was created precisely to solve these problems. It focuses on the aggregation, organization, evaluation, and reuse of Skills in the insurance domain, and is committed to building an open capability foundation for insurance agent applications.
+
 
 ---
 
+## 🔍 What Is Insurance-Skills?
 
+<div align="center">
+  <img src="asset/HomePage.png" alt="Fudan-Insurance Logo" width="600">
+</div>
 
-## 🏗️ Platform Positioning
+**Insurance-Skills** is an open-source Skill infrastructure platform for insurance scenarios initiated by **Professor Xian Xu’s team at Fudan University**. The project focuses on the **systematic aggregation**, **structured organization**, **multi-dimensional evaluation**, and **engineering-oriented reuse** of Skills in the insurance domain. It aims to transform the scattered and implicit business capabilities in the insurance industry into standardized Skill assets that are discoverable, understandable, comparable, callable, and reusable. **Insurance-Skills** is not only an entry point for displaying Skills, but also a unified foundation for capability accumulation, capability evaluation, and capability reuse in the insurance industry.
 
-**Insurance-Skills** is a domain capability infrastructure platform for intelligent insurance applications. It is not only an entry point for displaying Skills, but also a unified foundation for capability accumulation, capability evaluation, and capability reuse in the insurance industry.
-
+<div align="center">
 <table>
   <tr>
-    <td width="33%" align="center">
+    <td width="33%" align="center" style="border: none; padding: 16px;">
       <h3>📦</h3>
       <b>Domain Capability Aggregation Platform</b>
       <br><br>
-      <sub>Continuously collects, organizes, and accumulates insurance-related Skills through multiple channels, forming a discoverable, searchable, and reusable capability asset library</sub>
+      <sub>Continuously collect, organize, and accumulate insurance-domain Skills through multiple channels, forming a discoverable, searchable, and reusable capability asset repository</sub>
     </td>
-    <td width="33%" align="center">
+    <td width="33%" align="center" style="border: none; padding: 16px;">
       <h3>📈</h3>
       <b>Domain Capability Evaluation Platform</b>
       <br><br>
-      <sub>Establishes a unified multi-dimensional evaluation framework to improve the comparability, interpretability, and selection efficiency of Skills</sub>
+      <sub>Establish a unified multi-dimensional evaluation framework to improve the comparability, interpretability, and selection efficiency of Skills</sub>
     </td>
-    <td width="33%" align="center">
+   <td width="33%" align="center" style="border: none; padding: 16px;">
       <h3>⚙️</h3>
       <b>Domain Capability Infrastructure Platform</b>
       <br><br>
-      <sub>Provides a standardized capability foundation for insurance Agents, Copilots, process automation, and business systems</sub>
+      <sub>Provide a standardized capability foundation for insurance Agents, Copilots, process automation, and business systems</sub>
     </td>
   </tr>
 </table>
 
 </div>
 
----
-
 ## 🧩 Covered Scenarios
 
-Insurance-Skills currently focuses on core scenarios in insurance business processes with the greatest potential for Skill-based implementation. It covers a complete capability space ranging from product consultation, underwriting and claims, to compliance risk control and operational support.
+Insurance-Skills focuses on the core scenarios in insurance business processes with the greatest potential for Skillization, covering the full capability space from product consultation, underwriting and claims, to compliance risk control and operational support.
 
-<table>
+<div align="center">
+
+<table width="100%">
   <tr>
-    <td align="center" width="10%">
+    <td width="20%" align="center" valign="top">
       <h3>🛡️</h3>
       <b>Product Consultation</b>
-      <br>
-      <sub>Product Introduction<br>Liability Explanation<br>Policy Clause Interpretation<br>Insurance Application Q&A</sub>
+      <br><br>
+      Product Introduction<br>Coverage Explanation<br>Clause Interpretation<br>Insurance Application Q&A
     </td>
-    <td align="center" width="10%">
+    <td width="20%" align="center" valign="top">
       <h3>📄</h3>
       <b>Policy Services</b>
-      <br>
-      <sub>Policy Inquiry<br>Renewal Reminder<br>Policy Servicing<br>Endorsement Explanation</sub>
+      <br><br>
+      Policy Inquiry<br>Renewal Reminder<br>Policy Maintenance<br>Endorsement Explanation
     </td>
-    <td align="center" width="10%">
+    <td width="20%" align="center" valign="top">
       <h3>🧬</h3>
       <b>Underwriting Support</b>
-      <br>
-      <sub>Health Disclosure Explanation<br>Risk Q&A<br>Material Verification<br>Underwriting Assistance</sub>
+      <br><br>
+      Disclosure Explanation<br>Risk Q&A<br>Material Verification<br>Underwriting Assistance
     </td>
-    <td align="center" width="10%">
+    <td width="20%" align="center" valign="top">
       <h3>🧾</h3>
       <b>Claims Services</b>
-      <br>
-      <sub>Claim Reporting<br>Material Preparation<br>Progress Inquiry<br>Payment Explanation</sub>
+      <br><br>
+      Claim Reporting<br>Material Preparation<br>Progress Inquiry<br>Payment Explanation
     </td>
-    <td align="center" width="10%">
+    <td width="20%" align="center" valign="top">
       <h3>🎧</h3>
       <b>Customer Service Support</b>
-      <br>
-      <sub>FAQ<br>Standard Scripts<br>Process Guidance<br>Agent Assistance</sub>
+      <br><br>
+      FAQ<br>Standard Scripts<br>Process Guidance<br>Agent Assistance
     </td>
-    <td align="center" width="10%">
+  </tr>
+  <tr>
+    <td width="20%" align="center" valign="top">
       <h3>🎯</h3>
-      <b>Marketing and Recommendation</b>
-      <br>
-      <sub>Customer Outreach<br>Demand Matching<br>Product Recommendation<br>Conversion Support</sub>
+      <b>Marketing Recommendation</b>
+      <br><br>
+      Customer Outreach<br>Needs Matching<br>Product Recommendation<br>Conversion Support
     </td>
-    <td align="center" width="10%">
+    <td width="20%" align="center" valign="top">
       <h3>⚖️</h3>
-      <b>Compliance and Risk Control</b>
-      <br>
-      <sub>Rule Verification<br>Anomaly Identification<br>Process Compliance<br>Permission Control</sub>
+      <b>Compliance Risk Control</b>
+      <br><br>
+      Rule Verification<br>Anomaly Detection<br>Process Compliance<br>Permission Control
     </td>
-    <td align="center" width="10%">
+    <td width="20%" align="center" valign="top">
       <h3>📊</h3>
       <b>Operational Support</b>
-      <br>
-      <sub>Daily Operation Assistance<br>Process Collaboration<br>Data Organization<br>Task Tracking</sub>
+      <br><br>
+      Daily Operations<br>Process Collaboration<br>Data Organization<br>Task Tracking
     </td>
-    <td align="center" width="10%">
+    <td width="20%" align="center" valign="top">
       <h3>🎓</h3>
-      <b>Training and Knowledge Q&A</b>
-      <br>
-      <sub>Policy Explanation<br>Business Training<br>Process Description<br>Knowledge Services</sub>
+      <b>Knowledge Q&A</b>
+      <br><br>
+      Policy Explanation<br>Business Training<br>Process Explanation<br>Knowledge Services
     </td>
-    <td align="center" width="10%">
+    <td width="20%" align="center" valign="top">
       <h3>🤖</h3>
-      <b>Agent Capability Orchestration</b>
-      <br>
-      <sub>Tool Invocation<br>Task Decomposition<br>Process Execution<br>Result Verification</sub>
+      <b>Capability Orchestration</b>
+      <br><br>
+      Tool Invocation<br>Task Decomposition<br>Process Execution<br>Result Verification
     </td>
   </tr>
 </table>
+</div>
 
----
+
 
 ## ✨ Core Highlights
 
-Insurance-Skills provides a domain Skill infrastructure for insurance agent development that is discoverable, comparable, evaluable, and integrable. The platform transforms insurance capabilities dispersed across different sources and business scenarios into structured assets, helping teams complete capability selection, solution validation, and engineering implementation more efficiently.
+Insurance-Skills provides a set of domain Skill infrastructure for insurance agent development that is discoverable, comparable, evaluable, and integrable. The platform turns insurance capabilities scattered across different sources and business scenarios into structured assets, helping teams complete capability selection, solution validation, and engineering implementation more quickly.
 
 <table>
   <tr>
     <td width="25%" align="center">
       <h3>🔭</h3>
-      <b>Skill Discovery</b>
+      <b>Skill Collection</b>
       <br><br>
-      <sub>Continuously collects insurance scenario Skills through multiple channels, covering high-frequency business processes such as consultation, underwriting, claims, customer service, risk control, and operations</sub>
+      <sub>Continuously collect Skills for insurance scenarios through multiple channels, covering high-frequency business segments such as consultation, underwriting, claims, customer service, risk control, and operations</sub>
     </td>
     <td width="25%" align="center">
       <h3>⚡</h3>
-      <b>Fast Retrieval</b>
+      <b>Fast Search</b>
       <br><br>
-      <sub>Supports fast retrieval based on scenarios, tags, functional directions, and quality features, reducing the cost of finding and understanding Skills</sub>
+      <sub>Enable fast search based on scenarios, tags, functional directions, and quality characteristics, reducing the cost of finding and understanding Skills</sub>
     </td>
     <td width="25%" align="center">
       <h3>🧩</h3>
-      <b>Integration Ready</b>
+      <b>Seamless Integration</b>
       <br><br>
-      <sub>Provides standardized descriptions around usage methods, inputs and outputs, dependencies, and risk boundaries, facilitating integration into insurance Agent workflows</sub>
+      <sub>Provide standardized descriptions around usage methods, inputs and outputs, dependency conditions, and risk boundaries, making it easier to connect to insurance Agent workflows</sub>
     </td>
     <td width="25%" align="center">
       <h3>📊</h3>
       <b>Quality Evaluation</b>
       <br><br>
-      <sub>Establishes a multi-dimensional Skill evaluation system to support horizontal comparison, quality screening, continuous governance, and version iteration</sub>
+      <sub>Establish a multi-dimensional Skill evaluation system to support horizontal comparison, quality screening, continuous governance, and version iteration</sub>
     </td>
   </tr>
 </table>
 
----
+
 
 ## 🧠 Scoring Framework
 
-Insurance-Skills not only includes Skills, but also focuses on whether Skills are truly usable, controllable, and maintainable. Through a unified evaluation framework, the platform systematically evaluates each Skill’s documentation quality, execution path, engineering reproducibility, and safety boundaries.
-
-<table>
-  <tr>
-    <th align="center">Dimension</th>
-    <th align="center">Identifier</th>
-    <th align="center">Evaluation Focus</th>
-  </tr>
-  <tr>
-    <td align="center"><b>Clarity</b></td>
-    <td align="center"><code>clarity</code></td>
-    <td>Whether the name, structure, description, and examples are clear and easy to understand</td>
-  </tr>
-  <tr>
-    <td align="center"><b>Completeness</b></td>
-    <td align="center"><code>completeness</code></td>
-    <td>Whether fields, sections, dependencies, and evidence information are sufficient</td>
-  </tr>
-  <tr>
-    <td align="center"><b>Operability</b></td>
-    <td align="center"><code>operability</code></td>
-    <td>Whether execution, verification, and reproduction can be completed based on the documentation</td>
-  </tr>
-  <tr>
-    <td align="center"><b>Maintainability</b></td>
-    <td align="center"><code>maintainability</code></td>
-    <td>Whether it facilitates version management, module reuse, and long-term updates</td>
-  </tr>
-  <tr>
-    <td align="center"><b>Security</b></td>
-    <td align="center"><code>security</code></td>
-    <td>Whether risks related to credentials, data, permissions, and destructive operations are clearly controlled</td>
-  </tr>
-</table>
-
----
-
-## 📈 Scoring Levels
-
-<table>
-  <tr>
-    <th align="center">Score</th>
-    <th align="center">Status</th>
-    <th align="center">Recommendation</th>
-  </tr>
-  <tr>
-    <td align="center"><b>0–3</b></td>
-    <td align="center">Weak</td>
-    <td>Information is significantly missing, and direct use in production environments is not recommended</td>
-  </tr>
-  <tr>
-    <td align="center"><b>4–6</b></td>
-    <td align="center">Usable</td>
-    <td>Can be tested within a controlled scope, but boundaries and reproduction instructions need to be supplemented</td>
-  </tr>
-  <tr>
-    <td align="center"><b>7–8</b></td>
-    <td align="center">Reliable</td>
-    <td>The structure is clear and the path is explicit, making it suitable for regular business scenarios</td>
-  </tr>
-  <tr>
-    <td align="center"><b>9–10</b></td>
-    <td align="center">Excellent</td>
-    <td>The documentation is complete and execution is stable, making it suitable as a template or baseline Skill</td>
-  </tr>
-</table>
-
----
-
-## 🎯 What We Can Do
-
-<table>
-  <tr>
-    <td align="center"><b>Find</b></td>
-    <td>Identify which insurance Skills are available for the current business scenario</td>
-  </tr>
-  <tr>
-    <td align="center"><b>Compare</b></td>
-    <td>Determine which Skill among similar Skills is more mature, more stable, and more controllable</td>
-  </tr>
-  <tr>
-    <td align="center"><b>Build</b></td>
-    <td>Identify which Skills are suitable for inclusion in the candidate pool for insurance agent development</td>
-  </tr>
-</table>
-
----
-
-## ⚙️ Platform Function Display
+Insurance-Skills not only includes Skills, but also focuses on whether Skills are truly usable, controllable, and maintainable. We have built a Skill evaluation framework for insurance scenarios. The framework conducts rule-based quality evaluation of samples across five dimensions: clarity, completeness, operability, maintainability, and security. It also conducts rule-based risk evaluation through nine labels that comprehensively cover insurance data and business security.
 
 <p align="center">
-  <img src="Functions.png" alt="Insurance-Skills Platform Function Display" width="700">
+  <img src="asset/Evaluation Framework.png" alt="Evaluation Framework" width="400">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="asset/assessment example.png" alt="example" width="400">
 </p>
 
-Insurance-Skills builds platform capabilities around the discovery, understanding, evaluation, and reuse of Skills. Users can browse Skills across different insurance scenarios through a unified entry point, view structured descriptions and quality scores, and use them to conduct capability screening, solution comparison, and integration validation.
 
----
+## ⚙️ Platform Feature Showcase
+
+Insurance-Skills builds platform capabilities around Skill discovery, understanding, evaluation, and reuse. Users can browse Skills under different insurance scenarios through a unified entry point, view structured descriptions and quality scores, and accordingly carry out capability screening, solution comparison, and integration validation.
+
+### Homepage Search
+
+<p align="center">
+  <img src="asset/search.gif" alt="Insurance-Skills Homepage Search Feature Showcase" width="700">
+</p>
+
+### Topic Categories
+
+<p align="center">
+  <img src="asset/category.gif" alt="Insurance-Skills Topic Category Feature Showcase" width="700">
+</p>
+
+### Skill Details
+
+<p align="center">
+  <img src="asset/details.gif" alt="Insurance-Skills Topic Category Feature Showcase" width="700">
+</p>
+
 
 ## 🛣️ Roadmap
 
-**Insurance-Skills will continue to iterate around insurance agent development.** In the future, the platform will focus on advancing the dynamic collection and updating of insurance Skills, improving in-depth evaluation standards for insurance Skills, exploring methods for building agents in insurance scenarios, and further conducting research on trustworthy applications, safety governance, and ecosystem collaboration for insurance agents.
+We hope the platform will not only be a Skill showcase repository, but will also gradually evolve into an open infrastructure for insurance agent capability development, quality governance, and industry collaboration. Insurance-Skills will continue to iterate around insurance agent development. In the future, it will focus on promoting the dynamic collection and updating of insurance Skills, improving in-depth evaluation standards for insurance Skills, exploring applications for insurance-scenario agent development, and further conducting research on trusted applications, security governance, and ecosystem collaboration for insurance agents.
 
-We hope that the platform will not only serve as a Skill display library, but also gradually evolve into an open infrastructure for insurance agent capability development, quality governance, and industry collaboration.
 
----
 
-## 📫 Contact Us
+## 🌐 About Us
 
-Rooted in the disciplines of insurance and risk management, we focus on the innovative integration and application of frontier technologies such as large language models, multi-agent systems, and trustworthy artificial intelligence in insurance and risk management.
+<div align="center">
+  <img src="asset/fudan-ins-logo.png" alt="Fudan-Insurance Logo" width="150">
+</div>
 
-We are committed to bridging disciplinary problems, model methods, and industry scenarios, and to conducting interdisciplinary research with theoretical depth, methodological advancement, and practical interpretability. Guided by real problems in insurance and risk management, we hope to promote the transition of frontier model technologies from usable to trustworthy, interpretable, and implementable, producing research outcomes that both serve academic innovation and respond to the practical needs of China’s insurance industry.
+Professor Xian Xu’s team at Fudan University has long been rooted in the disciplines of risk management and insurance, focusing on interdisciplinary innovation and applications that combine frontier technologies such as large language models, multi-agent systems, and trustworthy artificial intelligence with the fields of finance and insurance. The team is committed to connecting disciplinary problems, model methodologies, and industry scenarios, and to conducting interdisciplinary research with theoretical depth, methodological advancement, and real-world explanatory power. We hope to use real problems in risk management and insurance as the driving force to promote frontier model technologies from usability toward trustworthiness, interpretability, and deployability, forming research outcomes that both serve academic innovation and respond to the practical needs of China’s insurance industry.
 
-We will continue to build a research platform that integrates model development capabilities, disciplinary insight, and industrial transformation capabilities, becoming an important connector among insurance academic research, intelligent technology innovation, and industry application practice.
+We will continue to build a research platform that integrates model research and development capabilities, disciplinary insight, and industrial transformation capabilities, becoming an important connector between insurance academic research, intelligent technology innovation, and industry application practice.
 
-_**We welcome the following types of exchanges and collaborations**:_
 
-- _Co-building insurance scenario Skills_
-- _Joint research on Skill tag systems and evaluation frameworks_
-- _Validation of insurance Agent / Copilot scenarios_
-- _Joint research among universities, institutions, and industry_
-- _Project demonstrations, methodology sharing, and case exchanges_
 
-**Contact Email**
+## 🤝 Welcome to Exchange and Collaborate
 
-[insurance@fudan.edu.cn](mailto:insurance@fudan.edu.cn)
+We welcome everyone to provide suggestions for optimizing this project, give feedback on usage experience, and participate in the joint development and improvement of related capabilities.
 
-**Fill Out the Questionnaire**
+At the same time, we look forward to deeper communication, cooperation, and exploration. If you are interested in insurtech, insurance-scenario agent applications, trustworthy AI evaluation, industry application validation, or related interdisciplinary research, please feel free to contact us. We also welcome students and researchers with long-term interest in this direction to join us and jointly promote the innovation and practical implementation of insurtech.
+
+**Contact Email:** [insurance(at)fudan(dot)edu(dot)cn](mailto:insurance@fudan.edu.cn)
+
+**Fill Out the Questionnaire:**
 
 <p align="center">
-  <img src="Guarding Tomorrow.png" alt="Guarding Tomorrow" width="600">
+  <img src="asset/Guarding Tomorrow.png" alt="Guarding Tomorrow" width="600">
 </p>
 
----
+
 
 <div align="center">
 
 **Insurance-Skills**
 
 Building reusable, evaluable and trustworthy Skills for insurance agents.
+
 </div>
-
-
-
