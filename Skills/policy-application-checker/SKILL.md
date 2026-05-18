@@ -1,54 +1,78 @@
 ---
-name: aippt-policy-briefing
-description: >
-  Route new policy briefing, policy update, regulatory update deck, regulatory change deck,
-  compliance change summary, legal update deck, or legal/product policy presentation requests here
-  before generic AIPPT. Use this whenever the user wants a new policy interpretation deck with
-  timelines, impacts, risks, and recommended actions. Do not use this scene pack for email memos,
-  FAQ-only outputs, compliance copy polishing, or non-deck legal writing.
+name: policy-application-checker
+description: "Read policies, application requirements, and forms, then turn them into"
 ---
 
-# Policy Briefing
+# Policy & Application Checker
 
-Use this scene pack before the generic workflow when the request is a new policy or compliance deck.
+## Purpose
 
-## Route when
+Read policies, application requirements, and forms, then turn them into a completeness checklist, risk list, and submission plan.
 
-- policy update / policy briefing / regulatory update
-- compliance change or legal update deck
-- policy interpretation deck with timelines, impacts, and actions
+## Trigger phrases
 
-## Defaults
+- 检查材料是否齐全
+- application checklist
+- 读政策做清单
+- submission readiness
+- requirements checklist
 
-- Audience bias: legal, compliance, policy, product stakeholders
-- Page budget: 8-14 pages, default 10
-- Style preset: `business`
-- Delivery default: `prompt_bundle_only`
-- Story arc: `anchor -> proof -> bridge -> proof -> closing`
+## Ask for these inputs
 
-## Required sections
+- policy text or form
+- deadline
+- applicant profile
+- required attachments
+- known blockers
 
-- policy change summary
-- timeline
-- impact analysis
-- risk matrix
-- recommended actions
+## Workflow
 
-## Evidence bias
+1. Extract mandatory requirements, deadlines, and conditional branches.
+2. Transform them into a checklist with evidence slots.
+3. Flag ambiguous wording and missing proof.
+4. Sequence tasks into a submission plan backward from the deadline.
+5. Never assume a requirement is satisfied without evidence.
 
-- primary regulatory sources first
-- every time-sensitive rule should show explicit dates
+## Output contract
 
-## Review bias
+- completeness checklist
+- risk list
+- submission timeline
+- evidence tracker
 
-- prioritize `citation_visibility`, `readability`, `hierarchy`
+## Files in this skill
 
-## Near misses
+- Script: `{baseDir}/scripts/checklist_builder.py`
+- Resource: `{baseDir}/resources/checklist_template.md`
 
-- memo / FAQ / email-only outputs -> route away from this scene pack
-- compliance onboarding or classroom training decks -> prefer teaching-deck
-- copy-polish requests with no deck deliverable -> route away from this scene pack
+## Operating rules
 
-## Outline starter
+- Be concrete and action-oriented.
+- Prefer preview / draft / simulation mode before destructive changes.
+- If information is missing, ask only for the minimum needed to proceed.
+- Never fabricate metrics, legal certainty, receipts, credentials, or evidence.
+- Keep assumptions explicit.
 
-Read `references/outline-starter.md` for the default policy sequence before resuming the main AIPPT stages.
+## Suggested prompts
+
+- 检查材料是否齐全
+- application checklist
+- 读政策做清单
+
+## Use of script and resources
+
+Use the bundled script when it helps the user produce a structured file, manifest, CSV, or first-pass draft.
+Use the resource file as the default schema, checklist, or preset when the user does not provide one.
+
+## Boundaries
+
+- This skill supports planning, structuring, and first-pass artifacts.
+- It should not claim that files were modified, messages were sent, or legal/financial decisions were finalized unless the user actually performed those actions.
+
+
+## Compatibility notes
+
+- Directory-based AgentSkills/OpenClaw skill.
+- Runtime dependency declared through `metadata.openclaw.requires`.
+- Helper script is local and auditable: `scripts/checklist_builder.py`.
+- Bundled resource is local and referenced by the instructions: `resources/checklist_template.md`.

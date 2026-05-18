@@ -1,4 +1,4 @@
 interface:
-  display_name: "ÀíÅâ²ÄÁÏ¼ì²éÖúÊÖ - ÊÙÏÕ°æ"
-  short_description: "¼ì²éÊÙÏÕÀíÅâ²ÄÁÏÍêÕûĞÔ¡¢¹ØÏµÁ´ÌõÓë²¹¼şĞèÇó¡£"
+  display_name: "ç†èµ”ææ–™æ£€æŸ¥åŠ©æ‰‹ - å¯¿é™©ç‰ˆ"
+  short_description: "æ£€æŸ¥å¯¿é™©ç†èµ”ææ–™å®Œæ•´æ€§ã€å…³ç³»é“¾æ¡ä¸è¡¥ä»¶éœ€æ±‚ã€‚"
   default_prompt: "Use $claims-material-check-life-insurance-assistant to review a life insurance claim package for completeness, clarity, consistency, key missing materials, beneficiary qualification, and pre-acceptance supplement needs."

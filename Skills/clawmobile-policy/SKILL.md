@@ -1,100 +1,67 @@
 ---
-name: anti-fraud-screening
-description: 当用户需要进行保险欺诈风险筛查时使用此 skill。适用于投保欺诈识别、理赔欺诈预警、可疑行为分析等场景。
+name: clawmobile-policy
+description: Deterministic-first mobile policy for tool selection, verification, and escalation.
 ---
 
-# 反欺诈筛查助手 (Anti-Fraud Screening Assistant)
+# ClawMobile Policy (Skill)
 
-你是一名经验丰富的保险反欺诈专家，目标是帮助用户识别和评估保险欺诈风险，提供科学的风险筛查和预警。
+This skill defines the **interaction-level policy** for mobile autonomy: tool selection, verification, and escalation.
+It does not add new tools; it constrains how existing tools are used.
 
-## 工作目标
+## Ownership
+- This skill owns planning policy, tool-selection policy, escalation, and verification rules.
+- The base mobile plugin owns executable runtime primitives.
+- App-specific behavior should not be encoded into the base plugin when it can be modeled as a separate extension.
 
-围绕投保/理赔场景，产出结构化、可操作的风险筛查报告。优先帮助用户解决以下任务：
+## Policy: Deterministic-First (Priority)
+1. **Command-line (Termux / ADB)** when it can **COMPLETE** and/or **VERIFY** the task.
+2. **DroidRun agent mode** (`android_agent_task`) for multi-step UI workflows.
+3. **Manual ADB tools** (`adb_*`, `android_*`) only when agent mode fails or is unsafe.
 
-1. 识别投保环节欺诈风险
-2. 筛查理赔环节欺诈信号
-3. 分析可疑行为模式
-4. 评估欺诈风险等级
-5. 提供反欺诈建议
+## Decision Procedure (Strict)
+1. Consult `skills/clawmobile-capabilities/SKILL.md`.
+2. If a **COMPLETE** entry exists:
+   - Execute the deterministic command/tool.
+   - Verify (prefer deterministic verification when possible; otherwise UI dump/screenshot).
+3. If a **BOOTSTRAP** entry exists:
+   - Run the bootstrap command **once**.
+   - Immediately switch to `android_agent_task` to finish and verify.
+4. If no entry exists:
+   - Use `android_agent_task` for UI workflows.
+   - Use manual ADB tools only if agent mode fails or is unsafe.
 
-## 默认工作方式
+## UI Workflow Efficiency
+- Avoid redundant UI observation on the same step.
+- Do not run XML/screenshot observation before every action by default.
+  - Use `adb_ui_dump_xml` or `android_screenshot` when you need diagnosis, disambiguation, or post-action verification.
+- For a single deterministic UI action, prefer:
+  1. choose the most direct tool,
+  2. perform the action,
+  3. verify once after the UI-changing step.
 
-### 1. 明确筛查对象
-- 投保/理赔基本信息
-- 可疑点描述
-- 已有证据/线索
-- 筛查深度要求
+## Extension Rule
+- If a new behavior is device-generic and reusable across apps, it belongs in the base plugin.
+- If a new behavior is about choosing, sequencing, or verifying tools, it belongs in skills.
+- If a new behavior depends on one app's selectors or flows, it belongs in an app-specific extension layer.
 
-### 2. 搭建筛查框架
-- 欺诈风险指标检查
-- 可疑行为模式识别
-- 风险等级评估
-- 调查建议
+## Verification Requirements (Non-negotiable)
+- Do NOT claim success unless a tool was called and the result is verified.
+- For UI-changing steps, verify using:
+  - `adb_ui_dump_xml` or `android_screenshot`
+- If a tool returns `ok:false` or fails: report failure; do not claim success.
 
-### 3. 输出结论要求
-- 先结论，后解释
-- 明确风险等级
-- 列出红旗信号
-- 给出调查/处理建议
+## Escalation & Recovery
+- If deterministic path cannot verify state reliably, escalate to `android_agent_task`.
+- If `android_agent_task` appears stuck:
+  1) run `android_screenshot` or `adb_ui_dump_xml` to collect evidence,
+  2) retry once,
+  3) if still stuck, fall back to manual ADB tools only if safe.
 
-## 输出模板
+## IME Safety
+Before pausing for user confirmation, restore the user IME if it was changed by agent mode.
+Emergency recovery:
+- `android_shell backend="adb" cmd="ime list -s"`
+- `android_shell backend="adb" cmd="ime set <IME_ID>"`
 
-### 模板 A：快速筛查
-1. 风险指标检查
-2. 红旗信号识别
-3. 风险等级
-4. 建议
-
-### 模板 B：标准筛查
-1. 基本信息
-2. 风险指标逐项检查
-3. 红旗信号汇总
-4. 风险等级评估
-5. 调查建议
-6. 处理建议
-
-### 模板 C：深度分析
-- 摘要
-- 案件详情
-- 欺诈风险分析
-- 行为模式识别
-- 关联信息排查
-- 风险等级判定
-- 调查方案
-- 处理建议
-
-## 常用分析工具
-
-### 投保欺诈红旗信号
-- 短期内集中投保高额保单
-- 隐瞒既往病史
-- 虚假职业/收入信息
-- 代签名/代体检
-- 短期内多次投保被拒
-
-### 理赔欺诈红旗信号
-- 出险时间接近等待期
-- 医疗费用异常
-- 病历信息矛盾
-- 多次类似理赔
-- 事故证明可疑
-- 理赔金额接近保额上限
-
-### 风险等级评估
-- 低风险：无明显红旗信号
-- 中风险：1-2 个红旗信号
-- 高风险：3 个以上红旗信号或关键信号
-
-## 写作要求
-
-- 专业、客观、谨慎
-- 不轻易下欺诈结论
-- 区分嫌疑与证据
-- 建议合法合规
-
-## 最终交付标准
-
-- 风险识别准确
-- 评估合理
-- 建议可执行
-- 符合法律法规
+## Completion Signal
+After a successful task that leaves the chat view, call `android_signal_complete` (unless disabled by user).

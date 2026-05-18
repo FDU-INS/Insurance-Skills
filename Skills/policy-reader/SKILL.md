@@ -1,54 +1,35 @@
 ---
-name: Policy Clarifier
-description: Use when a policy exists but readers struggle to understand what it means in practice.
+name: "policy-reader"
+version: "4.0.1"
+description: "Reference tool for business — covers intro, quickstart, patterns and more. Quick lookup for Policy Reader concepts, best practices, and implementation patterns."
+author: "BytesAgain"
+homepage: "https://bytesagain.com"
+source: "https://github.com/bytesagain/ai-skills"
+tags: [policy,reader, reference]
+category: "business"
 ---
 
-# Policy Clarifier
+# Policy Reader
 
-## Summary
+Reference tool for business — covers intro, quickstart, patterns and more. Quick lookup for Policy Reader concepts, best practices, and implementation patterns. No API keys or credentials required.
 
-Clarify a policy or internal guideline into a more readable, operationally useful document.
+## Commands
 
-## When To Use
+| Command | Description |
+|---------|-------------|
+| `intro` | intro reference |
+| `quickstart` | quickstart reference |
+| `patterns` | patterns reference |
+| `debugging` | debugging reference |
+| `performance` | performance reference |
+| `security` | security reference |
+| `migration` | migration reference |
+| `cheatsheet` | cheatsheet reference |
 
-- A policy document needs clearer language and action framing.
-- You need a clarified policy document with definitions, practical guidance, and open question flags instead of unstructured notes.
-- The workflow repeats often enough to justify a reusable asset.
+## Output Format
 
-## Avoid When
+All commands output plain-text reference documentation via heredoc. No external API calls, no credentials needed, no network access.
 
-- The product behavior itself is still changing faster than the docs could stabilize.
-- There is no source material to document or clarify yet.
+---
 
-## Inputs
-
-- policy text
-- audience
-- common confusion points
-
-## Output Contract
-
-- clarified policy draft
-- operational guidance
-- FAQ candidates
-
-## Workflow
-
-1. Confirm the decision context, audience, and missing inputs.
-2. Build a clarified policy document with definitions, practical guidance, and open question flags using the available evidence and constraints.
-3. Separate facts from assumptions and make confidence explicit.
-4. Finish with next actions, open questions, or escalation notes.
-
-## Deliverable Shape
-
-A clarified policy document with definitions, practical guidance, and open question flags
-
-## Guardrails
-
-- Do not invent facts that are not present in the supplied materials.
-- Make uncertainty explicit when inputs are incomplete or contradictory.
-- Keep the output structured enough that another operator can reuse it.
-
-## Maturity Note
-
-This Skill is part of the seeded breadth layer. It is intentionally lighter than the developed and flagship tiers.
+*Powered by BytesAgain | bytesagain.com | hello@bytesagain.com*

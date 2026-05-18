@@ -1,128 +1,101 @@
 ---
-name: islamic-finance-router
-description: >
-  Routes Islamic finance queries to the correct product skill and jurisdiction
-  overlay. Activate for any query involving Islamic banking, AAOIFI, Shariah-
-  compliant finance, sukuk, takaful, murabaha, ijarah, musharaka, mudaraba,
-  salam, istisna'a, zakat, or Shariah screening. Covers 20 jurisdictions
-  across 3 accounting regimes (AAOIFI-primary, IFRS with Islamic guidance,
-  local standards).
+name: review-policy
+description: "Review policy drafts for clarity, completeness, cross-policy consistency, and regulatory accuracy before approval"
+license: MIT
+allowed-tools: Read
+metadata:
+  author: "redline-team"
+  version: "1.0.0"
+  category: "compliance"
+  risk_tier: "high"
 ---
 
-## PURPOSE
+# Review Policy
 
-This is the top-level routing controller for the Islamic Finance Plugin.
-It determines which product skill and which jurisdiction overlay to load
-before generating any Islamic finance accounting output.
-It does NOT contain accounting rules itself. It routes to the files that do.
+## Purpose
 
-## ROUTING PROTOCOL — EXECUTE BEFORE ANY OUTPUT
+Independently review a policy draft to verify quality, consistency with other organizational policies, and correctness of regulatory references. This skill is executed by the **reviewer** agent (checker role) and must never be performed by the same agent that drafted the policy.
 
-### Step 1: Identify the Jurisdiction
+## Inputs
 
-Read the user query for jurisdiction signals:
+- **Draft policy path**: path to the updated policy file
+- **Original policy path**: path to the previous version (or same path if reviewing in-place changes)
+- **Change summary**: the change summary produced by the draft-policy skill
 
-- Country name (Bahrain, Malaysia, UAE, Saudi Arabia, UK, Pakistan, Nigeria, etc.)
-- Currency (BHD, MYR, AED, SAR, GBP, PKR, NGN)
-- Regulator name (CBB, BNM, CBUAE, SAMA, PRA/FCA, SBP, CBN)
-- Standard reference (AAOIFI FAS, MFRS, IFRS as adopted in KSA, TFRS)
+## Instructions
 
-**If no jurisdiction is identifiable: ASK before proceeding.**
-Do NOT assume a default jurisdiction. Do NOT assume IFRS.
+1. **Read the draft policy** from the specified path.
 
-### Step 2: Identify the Product
+2. **Read ALL other policies** in the `policies/` directory. This is essential for cross-policy consistency checking.
 
-Map query terms to product skills:
+3. **Evaluate the draft on five dimensions:**
 
-| Query Terms                                                             | Route To                       |
-| ----------------------------------------------------------------------- | ------------------------------ |
-| murabaha, cost-plus, deferred sale, commodity murabaha, tawarruq, FAS 2 | murabaha skill                 |
-| ijarah, IMB, lease, ijarah muntahia bittamleek, FAS 8, FAS 32           | ijarah-imb skill               |
-| diminishing musharaka, DM, home finance, co-ownership                   | musharaka-dm skill             |
-| mudaraba, investment account, IAH, PER, IRR, FAS 3                      | mudaraba skill                 |
-| musharaka, joint venture, partnership, FAS 4                            | musharaka-full skill           |
-| sukuk issuer, sukuk issuance, sukuk structuring, SPV                    | sukuk-issuer skill             |
-| sukuk investor, sukuk holding, sukuk classification, SPPI               | sukuk-investor skill           |
-| salam, forward purchase, advance payment commodity, FAS 7               | salam skill                    |
-| istisna'a, construction finance, manufacturing contract, FAS 10         | istisna-a skill                |
-| takaful, Islamic insurance, wakala model, participants fund             | takaful-ifrs17 skill           |
-| zakat, zakatable, nisab, ZATCA, sadaqah, purification                   | zakat-global skill             |
-| shariah screen, halal stocks, prohibited sectors, PSX screen            | shariah-screening-global skill |
+### Dimension 1: Clarity
+- Is the language unambiguous? Could a non-expert employee follow the policy?
+- Are responsibilities clearly assigned to specific roles (not "the team" or "management")?
+- Are processes actionable with concrete steps, not just aspirational statements?
+- Are terms defined where they might be ambiguous?
 
-### Step 3: Load the Jurisdiction Overlay
+### Dimension 2: Completeness
+- Do the changes address every gap identified in the change summary?
+- Are there any REDLINE comments referencing requirements that aren't fully addressed?
+- Are there placeholder decisions (`[DECISION REQUIRED]`) that need human input before the policy is complete?
 
-| Jurisdiction                      | Load Overlay                     |
-| --------------------------------- | -------------------------------- |
-| Bahrain                           | jurisdictions/bahrain-aaoifi.md  |
-| Qatar                             | jurisdictions/qatar-aaoifi.md    |
-| Malaysia                          | jurisdictions/malaysia-mfrs.md   |
-| Indonesia                         | jurisdictions/indonesia-psak.md  |
-| Saudi Arabia, KSA                 | jurisdictions/saudi-ifrs.md      |
-| UAE, Dubai, Abu Dhabi, DIFC, ADGM | jurisdictions/uae-ifrs.md        |
-| Kuwait                            | jurisdictions/kuwait-ifrs.md     |
-| Oman                              | jurisdictions/oman-ifrs.md       |
-| Pakistan                          | jurisdictions/pakistan-ifrs.md   |
-| UK, United Kingdom                | jurisdictions/uk-ifrs.md         |
-| Nigeria                           | jurisdictions/nigeria-ifrs.md    |
-| Turkey                            | jurisdictions/turkey-tfrs.md     |
-| GCC cross-border, multi-GCC       | jurisdictions/gcc-crossborder.md |
+### Dimension 3: Consistency with Other Policies
+- Does any new language contradict existing policies in the `policies/` directory?
+- Common contradiction areas:
+  - BYOD rules in acceptable-use vs. device restrictions in access-control
+  - Retention periods in data-privacy vs. deletion timelines in other policies
+  - Incident reporting timelines across different policies
+  - Access control requirements that conflict between policies
+- If a contradiction is found, flag it with both policy references and the specific conflicting statements.
 
-### Step 4: Apply Rules in Order
+### Dimension 4: Regulatory Accuracy
+- Are regulation citations correct? (e.g., does the text attributed to "GDPR Article 22" actually reflect what Article 22 says?)
+- Read the relevant `knowledge/frameworks/` requirements to verify claims
+- Are regulatory requirements accurately represented — not weakened or overstated?
 
-1. Apply product skill rules first (accounting mechanics)
-2. Apply jurisdiction overlay modifications (labels, presentation, disclosure)
-3. Confirm governing standard in response header before output
+### Dimension 5: Structural Integrity
+- Does the new content follow the existing document's formatting and numbering?
+- Are REDLINE comments properly placed on all new/changed sections?
+- Is the table of contents / section numbering still consistent?
 
-## UNIVERSAL RULES — APPLY IN ALL JURISDICTIONS
+4. **Produce a review decision:**
 
-### Prohibited Terms — NEVER USE in any Islamic finance output
-
-- "interest income" → use jurisdiction-appropriate income label
-- "interest expense" → use "profit distributed to IAH" or "financing cost"
-- "loans and advances" → in AAOIFI jurisdictions use "financing receivables"
-- "net interest margin (NIM)" → use "net financing margin"
-- "interest rate" → use "profit rate" or "effective profit rate"
-
-### Mandatory Shariah Compliance Escalation
-
-Flag for SSB review when:
-
-- A new product structure not previously covered by an existing fatwa
-- A transaction where Shariah structural requirements may not have been met
-- A non-Shariah income item that must be treated as charity (sadaqah)
-- Any transaction involving interest-based conventional instruments proposed as Islamic finance
-
-### The Fundamental Limitation
-
-This agent automates execution, schedule generation, journal entries,
-disclosure drafting, and regulatory reporting. It does NOT make Shariah
-compliance judgments. Shariah permissibility determinations are the exclusive
-function of qualified Shariah scholars on the institution's SSB.
-
-## RESPONSE FORMAT
-
-Every Islamic finance accounting output must begin with:
+## Output Format
 
 ```
-GOVERNING FRAMEWORK: [e.g., AAOIFI FAS 2 — Bahrain]
-PRODUCT: [e.g., Murabaha]
-JURISDICTION: [e.g., Bahrain — CBB Rulebook applies]
+## Policy Review: [Policy Name]
+
+**Reviewed by**: reviewer (checker role)
+**Date**: [date]
+**Decision**: APPROVED / APPROVED WITH COMMENTS / REJECTED
+
+### Scores
+
+| Dimension | Score | Notes |
+|-----------|-------|-------|
+| Clarity | PASS / NEEDS WORK | [brief note] |
+| Completeness | PASS / NEEDS WORK | [brief note] |
+| Cross-Policy Consistency | PASS / CONFLICT FOUND | [brief note] |
+| Regulatory Accuracy | PASS / INACCURACY FOUND | [brief note] |
+| Structural Integrity | PASS / NEEDS WORK | [brief note] |
+
+### Findings
+
+[List each finding with line/section reference]
+
+### Contradictions Found
+
+[If any, list the specific conflicting statements across policies]
+
+### Decision Rationale
+
+[Why approved or rejected — specific reasons]
 ```
 
-## Jurisdiction Overlays
+## Decision Rules
 
-When a jurisdiction is identified, load the appropriate overlay:
-
-- [Bahrain (AAOIFI)](references/jurisdictions/bahrain-aaoifi.md)
-- [Qatar (AAOIFI)](references/jurisdictions/qatar-aaoifi.md)
-- [Malaysia (MFRS)](references/jurisdictions/malaysia-mfrs.md)
-- [Saudi Arabia (IFRS)](references/jurisdictions/saudi-ifrs.md)
-- [UAE (IFRS)](references/jurisdictions/uae-ifrs.md)
-- [UK (IFRS)](references/jurisdictions/uk-ifrs.md)
-- [Kuwait (IFRS)](references/jurisdictions/kuwait-ifrs.md)
-- [Oman (IFRS)](references/jurisdictions/oman-ifrs.md)
-- [Pakistan (IFRS)](references/jurisdictions/pakistan-ifrs.md)
-- [Indonesia (PSAK)](references/jurisdictions/indonesia-psak.md)
-- [Nigeria (IFRS)](references/jurisdictions/nigeria-ifrs.md)
-- [Turkey (TFRS)](references/jurisdictions/turkey-tfrs.md)
-- [GCC Cross-Border](references/jurisdictions/gcc-crossborder.md)
+- **APPROVED**: All dimensions PASS, no contradictions, no inaccuracies
+- **APPROVED WITH COMMENTS**: Minor issues that don't affect compliance (formatting, clarity improvements). Comments should be addressed but are not blocking.
+- **REJECTED**: Any regulatory inaccuracy, any cross-policy contradiction, any gap from the change summary not addressed, or any critical clarity issue that could lead to misinterpretation

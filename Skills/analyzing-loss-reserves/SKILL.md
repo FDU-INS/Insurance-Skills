@@ -1,130 +1,100 @@
 ---
-name: high-risk-claims-warning-assistant
-description: 当用户需要识别保险理赔案件是否属于高风险案件、分析案件中有哪些重点风险信号、判断是否存在高赔付高争议高投诉高时效高复杂度或高欺诈风险、输出高风险案件预警报告或为理赔审核、复核、调查和管理提供重点案件筛查支持时使用本 skill。适用于分析保单信息、理赔申请信息、案件事实、医疗材料、事故材料、历史行为、处理记录、沟通备注、投诉工单、调查线索、风险规则、预警标签和历史风险库信息，并形成结构化风险等级、触发依据、待核实事项和处置建议。
+name: analyzing-loss-reserves
+language: en
+description: Evaluates loss reserve adequacy with development triangle analysis and actuarial methods. Use when analyzing reserves, interpreting loss triangles, or assessing reserve adequacy.
+tags:
+  - analysis
+  - insurance
+metadata:
+  author: casemark
+  practice_areas:
+    - Insurance
+    - Actuarial Science
+    - Reinsurance
+  document_types:
+    - Analysis Report
+  skill_modes:
+    - Analysis
 ---
+# Analyzing Loss Reserves
 
-# 高风险案件预警助手
+Evaluates loss reserve adequacy using development triangle analysis, actuarial projection methods, and benchmark comparisons to determine whether carried reserves are reasonable, deficient, or redundant.
 
-你是“高风险案件预警助手”。
+## When To Use
 
-围绕“前置识别高风险案件并输出预警意见”开展分析，重点整理案件事实、风险信号、风险等级、风险类型、待核实事项和处置建议，帮助理赔、复核、调查、客服支持和管理人员提升重点案件前置识别能力和分级处置效率。
+- Reviewing an insurer's or reinsurer's Statement of Actuarial Opinion and supporting exhibits
+- Assessing reserve adequacy during due diligence for M&A, commutation, or loss portfolio transfer
+- Interpreting loss development triangles provided in Schedule P, statutory filings, or internal actuarial reports
+- Comparing carried reserves against independent point estimates or range estimates
+- Evaluating reserve changes period-over-period (favorable/adverse development) and their drivers
+- Supporting reinsurance treaty pricing or reserve credit analysis
 
-只做高风险案件预警、风险信号梳理和处置建议支持，不替代理赔、复核、调查、法务或管理岗位作出正式欺诈认定、拒赔决定或问责结论。
+## Inputs To Gather
 
-## 核心目标
+- **Loss development triangles**: Paid and incurred triangles by accident year (or underwriting year/report year), ideally at 12-month intervals; note whether triangles are cumulative or incremental
+- **Earned premium and exposure data**: By corresponding year and line of business
+- **Carried reserve balances**: Case reserves, IBNR, and total by accident year and LOB
+- **Actuarial report or opinion**: Including selected methods, assumptions, selected loss development factors (LDFs), and tail factors
+- **Line of business and claim type**: Workers' comp, general liability, professional liability, auto, property, etc. — development patterns vary dramatically
+- **Benchmark data**: Industry LDFs from sources such as AM Best, ISO/Verisk, or NAIC Schedule P industry aggregates [VERIFY: confirm which benchmark source is available and appropriate for the line]
+- **Prior analyses**: Previous reserve studies or external auditor findings for trend comparison
 
-- 整理案件基本信息：案件号、产品名称、险种类型、案件类型、角色、案件来源、当前状态。
-- 识别预警目标：明确本次需要识别的是哪些高风险因素，以及当前覆盖的风险范围。
-- 提取案件关键信息：归纳出险事实、就诊或事故经过、理赔金额、材料提交情况、处理进度、客户沟通状态和历史处理情况等核心信息。
-- 识别风险信号：关注高赔付、高争议、高投诉、高复杂度、高时效压力、高欺诈嫌疑、高合规风险和高舆情风险信号。
-- 判断风险等级：按风险强弱进行分级，例如低风险、中风险、高风险、极高风险。
-- 归类风险类型：按赔付风险、欺诈风险、争议风险、投诉风险、时效风险、合规风险、舆情风险等维度分类。
-- 梳理触发依据：将案件事实、材料特征、行为模式、流程节点和历史记录与各类风险信号逐项对应。
-- 输出标准预警结论：说明是否属于高风险案件、主要风险类型、是否建议升级处理，以及后续复核、调查、沟通或时效管理建议。
+## Workflow
 
-## 与现有技能的关系
+1. **Validate triangle integrity**
+   - Confirm triangles are on a consistent basis (paid vs. incurred, cumulative vs. incremental)
+   - Check that the latest diagonal ties to the balance sheet carried amounts
+   - Identify any triangle adjustments (large-loss caps, commutation removals, currency conversions) and note their impact
 
-- `claims-exclusion-identification-assistant`：适用于免责识别，不以综合风险分级和分流处置为核心。
-- `coverage-scope-judgment` 及其场景化子技能：适用于责任判断，不以案件管理风险预警为核心。
-- `anti-fraud-screening`：适用于更偏反欺诈筛查，不覆盖完整的高赔付、高投诉、高时效和高复杂度风险分层。
-- 本技能：适用于跨风险维度做理赔重点案件预警、分级和处置建议输出。
+2. **Calculate age-to-age development factors**
+   - Compute link ratios for each development period across all accident years
+   - Examine simple average, volume-weighted average, and medial (excluding high/low) selections
+   - Identify accident years with unusually high or low factors — flag potential large-loss distortion, reserve strengthening, or claim settlement pattern changes
 
-## 适用边界
+3. **Apply standard actuarial projection methods**
+   - **Chain Ladder (Development)**: Apply selected LDFs to the latest cumulative values; most reliable for mature, stable lines
+   - **Bornhuetter-Ferguson (BF)**: Blend development projection with an a priori expected loss ratio; preferred for immature accident years or volatile lines
+   - **Cape Cod (Stanard-Buhlmann)**: Use exposure-weighted expected losses; useful when loss ratios are expected to be stable across years
+   - **Frequency-Severity**: Where claim count and average severity data are available, project separately; valuable for lines with known count trends
+   - Select tail factors for development beyond the triangle's observed maturity [VERIFY: tail factor assumptions are highly judgment-dependent — confirm basis and reasonableness]
 
-以下情况优先使用本技能：
-- 用户要识别案件是否属于高风险案件。
-- 用户要分析案件中有哪些重点风险信号。
-- 用户要判断是否存在高赔付、高争议、高投诉或高欺诈风险。
-- 用户要输出高风险预警报告，或为案件分流、升级和调查提供预警依据。
+4. **Develop ultimate loss estimates and ranges**
+   - Produce point estimates from each method by accident year
+   - Weight or select among methods based on data credibility, line characteristics, and maturity
+   - Construct a reasonable range (e.g., low/central/high) reflecting parameter uncertainty
+   - Compare to the company's carried reserves — quantify redundancy or deficiency by accident year and in total
 
-以下情况不按本技能直接处理，应提示这是更细分的问题：
-- 需要直接判断责任是否成立或是否赔付。
-- 需要做正式欺诈认定、法务意见或诉讼分析。
-- 需要做赔付金额计算或理算测算。
-- 只做案件摘要、客服进度说明或时间线梳理。
-- 只做条款定位或材料完整性检查，不涉及案件风险分级。
+5. **Analyze reserve development trends**
+   - Track prior-year development (favorable or adverse) over multiple calendar periods
+   - Identify whether development is concentrated in specific accident years or lines
+   - Assess whether development patterns indicate systematic under- or over-reserving
+   - Consider external drivers: legal environment changes, inflation, claim handling practice shifts
 
-## 工作流程
+6. **Benchmark and stress test**
+   - Compare company LDFs and ultimate loss ratios to industry benchmarks for the same line and maturity
+   - Test sensitivity to alternative tail factors, LDF selections, and expected loss ratio assumptions
+   - Quantify the reserve impact of plausible adverse scenarios (e.g., social inflation, latent exposure emergence)
 
-### 1. 识别预警边界
+## Output
 
-- 先确认案件号、产品或险种、案件类型、关键时间、当前状态、资料来源和用户关注重点。
-- 明确当前重点识别的是赔付风险、欺诈风险、争议风险、投诉风险、时效风险、复杂度风险、合规风险还是舆情风险。
-- 如果案件信息、金额信息或历史记录不清，继续基于已知信息分析，但明确写出识别边界和缺失项。
+Structure the analysis report as follows:
 
-### 2. 提取案件关键信息
+- **Executive Summary**: Overall reserve adequacy conclusion (adequate / likely deficient / likely redundant), magnitude of estimated surplus or shortfall, key risk factors
+- **Data and Scope**: Lines of business, accident years, triangle basis, and any data limitations
+- **Development Factor Analysis**: Table of age-to-age factors with selected factors and basis for selection; highlight anomalies
+- **Ultimate Loss Projections**: Table by accident year showing results from each method, selected ultimates, and comparison to carried reserves
+- **Reserve Adequacy Assessment**: Quantified redundancy/deficiency by year and total; confidence range; discussion of key judgment areas
+- **Development History**: Summary of favorable/adverse development trends and their implications
+- **Sensitivity Analysis**: Impact of alternative assumptions on the adequacy conclusion
+- **Limitations and Caveats**: Data gaps, areas of high uncertainty, reliance on third-party information
 
-- 优先提取出险或发病经过、就诊、住院、治疗、事故处理、理赔金额、材料提交与处理进度、客户沟通、争议或投诉情况、历史相关记录。
-- 对事实只保留与风险预警直接相关的信息，不机械复述全部病历、工单或系统流水。
-- 如不同材料中的金额、时间、经过、处理状态或行为特征不一致，并列呈现并标注“待核实”或“记录冲突”。
+## Quality Checks
 
-### 3. 识别风险信号并归类
-
-- 按 [references/risk-signal-framework.md](references/risk-signal-framework.md) 从高赔付、高争议、高投诉、高欺诈、高时效、高复杂度、高合规和高舆情八类风险中识别关键信号。
-- 按 [references/risk-classification-guide.md](references/risk-classification-guide.md) 区分“已确认风险信号”“初步可疑信号”“待核实风险点”“仅为流程压力信号”。
-- 对多类风险并行出现的案件，要分别列示，不合并成单一风险判断。
-
-### 4. 评估风险等级与处置优先级
-
-- 按 [references/risk-level-guidance.md](references/risk-level-guidance.md) 判断总体风险等级和各维度风险等级。
-- 说明影响最大的核心风险、主要触发依据和是否需要立即关注或优先处理。
-- 对只能提示风险、不能直接定性的事项，用“存在风险但尚未确认”或“需进一步核实”表述。
-
-### 5. 输出预警结论与建议
-
-- 按 [references/output-schema.md](references/output-schema.md) 的顺序输出结构化预警结果。
-- 结尾给出是否建议转人工复核、调查、反欺诈核查、重点时效跟踪、高级客服跟进或管理层关注。
-- 不把初步预警直接写成正式欺诈、投诉或拒赔结论。
-
-## 输出要求
-
-写作时遵循以下规则：
-
-- 先摘要，后展开。
-- 使用中文，保持专业、清晰、审慎、可解释。
-- 不逐条堆砌病历、工单、调查记录或系统备注。
-- 对每个重要预警判断尽量说明依据类别，例如“基于理赔金额”“基于处理时效”“基于投诉记录”“基于调查线索”。
-- 对已确认风险、初步风险和待核实风险分层展示，避免混淆。
-- 结论存在不确定性时，明确说明判断边界，不写成最终认定。
-- 当材料有限时，宁可保守预警，也不要过度上纲。
-
-## 输入处理原则
-
-- 可处理理赔系统案件记录、报案信息、门诊或住院病历、诊断证明、手术记录、出院小结、医疗发票与费用清单、身故证明、事故认定书、公安证明、调查记录、沟通备注、投诉工单、客服或审核备注、OCR 文本、PDF 文档和截图转写内容。
-- 可处理理赔申请金额、历史理赔记录、多次报案、多次补件、多次投诉、重复就诊、异常住院、异常费用、异常联系人、处理超时、争议升级、媒体关注、舆情关注、调查或复核标签、风险规则和历史风险库信息。
-- 如用户只提供部分材料，也先基于可确认信息形成初步预警，并明确缺失项。
-- 如用户指定“简版”或“详细版”，只调整展开深度，不改变风险分层和边界表达。
-- 如用户特别关注某类风险、风险等级、触发依据、处置建议或升级提示，优先展开对应部分。
-
-## 推荐资源
-
-- [references/output-schema.md](references/output-schema.md)：默认输出结构
-- [references/risk-signal-framework.md](references/risk-signal-framework.md)：风险信号分类框架
-- [references/risk-classification-guide.md](references/risk-classification-guide.md)：已确认、初步、待核实和流程压力信号区分规则
-- [references/risk-level-guidance.md](references/risk-level-guidance.md)：风险等级和处置优先级指引
-- [references/label-guidance.md](references/label-guidance.md)：标准化预警标签输出建议
-- [assets/high-risk-claims-warning-template.md](assets/high-risk-claims-warning-template.md)：可直接复用的预警报告模板
-- [assets/high-risk-claims-warning-intake-example.json](assets/high-risk-claims-warning-intake-example.json)：示例输入
-
-## 异常处理
-
-- 原始案件信息不足时，明确说明“原始案件信息不足，无法完整形成高风险案件预警报告”。
-- 案件信息缺失、风险维度不清或关键判断条件不足时，明确说明“当前信息不足，以下仅基于已知信息做初步预警”。
-- 案件记录存在大量缺失、噪音、重复或关键事实不清时，说明“部分内容存在记录不清，以下为可确认信息基础上的初步预警”。
-- 关键背景缺失时，明确列出缺失项，例如险种、案件类型、金额、当前状态、历史记录或风险标签信息。
-- 不同材料中的金额、时间、事故经过、处理状态或客户行为不一致时，在“争议点与待核实事项”中单列提示。
-- 案件仍在处理中时，不得将初步预警写成正式认定结论。
-- 存在高争议、高投诉、高舆情或高敏感因素时，明确提示升级建议。
-
-## 成功标准
-
-输出应让理赔、复核、调查、客服管理或运营人员能快速回答：
-
-- 这个案件是否属于高风险案件。
-- 当前最主要的风险类型是什么。
-- 哪些信号触发了风险预警。
-- 这些风险信号的强度有多高。
-- 哪些风险已经比较明确，哪些还需要核实。
-- 当前是否需要升级处理、调查、复核或重点跟踪。
-- 是否存在高投诉、高争议、高赔付、高欺诈或高时效压力。
-- 客户沟通和案件管理上有哪些重点注意事项。
+- Confirm all triangle arithmetic is internally consistent (incremental values sum to cumulative; latest diagonal matches reported data)
+- Verify that selected LDFs fall within a reasonable range relative to historical averages and industry benchmarks — outlier selections require explicit justification
+- Ensure BF and Cape Cod a priori loss ratios are sourced and documented, not assumed without basis
+- Check that tail factors are reasonable for the line's claim closure characteristics [VERIFY: long-tail lines like workers' comp or environmental liability may need tails extending 20+ years]
+- Confirm the analysis addresses both paid and incurred bases — significant divergence between paid and incurred projections should be explained
+- Validate that large losses or one-time events are identified and their treatment (capped, excluded, separately developed) is clearly stated
+- Ensure the adequacy conclusion accounts for discount effects if reserves are on a present-value basis [VERIFY: confirm whether reserves are discounted and the applicable discount rate/standard]
+- Flag any areas where actuarial judgment materially drives the result and a qualified actuary should review

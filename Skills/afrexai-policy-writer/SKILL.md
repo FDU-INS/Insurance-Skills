@@ -1,101 +1,75 @@
 ---
-name: review-policy
-description: "Review policy drafts for clarity, completeness, cross-policy consistency, and regulatory accuracy before approval"
-license: MIT
-allowed-tools: Read
-metadata:
-  author: "redline-team"
-  version: "1.0.0"
-  category: "compliance"
-  risk_tier: "high"
+name: afrexai-policy-writer
+description: "Policy Writer"
 ---
 
-# Review Policy
+# Policy Writer
 
-## Purpose
+Generate professional internal policies for any business function — HR, IT, finance, compliance, data privacy, acceptable use, and more.
 
-Independently review a policy draft to verify quality, consistency with other organizational policies, and correctness of regulatory references. This skill is executed by the **reviewer** agent (checker role) and must never be performed by the same agent that drafted the policy.
+## Usage
 
-## Inputs
+Tell your agent what policy you need:
+- "Write an acceptable use policy for our SaaS platform"
+- "Create a data retention policy for GDPR compliance"
+- "Draft a remote work policy for a 50-person company"
 
-- **Draft policy path**: path to the updated policy file
-- **Original policy path**: path to the previous version (or same path if reviewing in-place changes)
-- **Change summary**: the change summary produced by the draft-policy skill
+## What You Get
 
-## Instructions
+1. **Executive summary** — what the policy covers and why it exists
+2. **Scope** — who it applies to
+3. **Policy statements** — clear, enforceable rules
+4. **Procedures** — step-by-step implementation
+5. **Compliance references** — relevant regulations (GDPR, SOC2, HIPAA, etc.)
+6. **Review schedule** — when to update
 
-1. **Read the draft policy** from the specified path.
+## Prompt
 
-2. **Read ALL other policies** in the `policies/` directory. This is essential for cross-policy consistency checking.
-
-3. **Evaluate the draft on five dimensions:**
-
-### Dimension 1: Clarity
-- Is the language unambiguous? Could a non-expert employee follow the policy?
-- Are responsibilities clearly assigned to specific roles (not "the team" or "management")?
-- Are processes actionable with concrete steps, not just aspirational statements?
-- Are terms defined where they might be ambiguous?
-
-### Dimension 2: Completeness
-- Do the changes address every gap identified in the change summary?
-- Are there any REDLINE comments referencing requirements that aren't fully addressed?
-- Are there placeholder decisions (`[DECISION REQUIRED]`) that need human input before the policy is complete?
-
-### Dimension 3: Consistency with Other Policies
-- Does any new language contradict existing policies in the `policies/` directory?
-- Common contradiction areas:
-  - BYOD rules in acceptable-use vs. device restrictions in access-control
-  - Retention periods in data-privacy vs. deletion timelines in other policies
-  - Incident reporting timelines across different policies
-  - Access control requirements that conflict between policies
-- If a contradiction is found, flag it with both policy references and the specific conflicting statements.
-
-### Dimension 4: Regulatory Accuracy
-- Are regulation citations correct? (e.g., does the text attributed to "GDPR Article 22" actually reflect what Article 22 says?)
-- Read the relevant `knowledge/frameworks/` requirements to verify claims
-- Are regulatory requirements accurately represented — not weakened or overstated?
-
-### Dimension 5: Structural Integrity
-- Does the new content follow the existing document's formatting and numbering?
-- Are REDLINE comments properly placed on all new/changed sections?
-- Is the table of contents / section numbering still consistent?
-
-4. **Produce a review decision:**
-
-## Output Format
+When the user asks for a policy document, generate a complete, professional policy using this structure:
 
 ```
-## Policy Review: [Policy Name]
+# [Policy Name]
 
-**Reviewed by**: reviewer (checker role)
-**Date**: [date]
-**Decision**: APPROVED / APPROVED WITH COMMENTS / REJECTED
+**Effective Date:** [Today's date]
+**Version:** 1.0
+**Owner:** [Department]
+**Review Cycle:** Annual
 
-### Scores
+## 1. Purpose
+[Why this policy exists — 2-3 sentences]
 
-| Dimension | Score | Notes |
-|-----------|-------|-------|
-| Clarity | PASS / NEEDS WORK | [brief note] |
-| Completeness | PASS / NEEDS WORK | [brief note] |
-| Cross-Policy Consistency | PASS / CONFLICT FOUND | [brief note] |
-| Regulatory Accuracy | PASS / INACCURACY FOUND | [brief note] |
-| Structural Integrity | PASS / NEEDS WORK | [brief note] |
+## 2. Scope
+[Who and what this covers]
 
-### Findings
+## 3. Definitions
+[Key terms used in the policy]
 
-[List each finding with line/section reference]
+## 4. Policy Statements
+[Numbered, clear rules — the meat of the document]
 
-### Contradictions Found
+## 5. Procedures
+[Step-by-step implementation guidance]
 
-[If any, list the specific conflicting statements across policies]
+## 6. Compliance & Legal References
+[Relevant regulations, standards, frameworks]
 
-### Decision Rationale
+## 7. Enforcement
+[What happens when the policy is violated]
 
-[Why approved or rejected — specific reasons]
+## 8. Review & Updates
+[How often reviewed, who approves changes]
 ```
 
-## Decision Rules
+Adjust formality and detail based on company size. Startup = lean and practical. Enterprise = comprehensive with approval workflows.
 
-- **APPROVED**: All dimensions PASS, no contradictions, no inaccuracies
-- **APPROVED WITH COMMENTS**: Minor issues that don't affect compliance (formatting, clarity improvements). Comments should be addressed but are not blocking.
-- **REJECTED**: Any regulatory inaccuracy, any cross-policy contradiction, any gap from the change summary not addressed, or any critical clarity issue that could lead to misinterpretation
+## Tips
+
+- Pair with industry-specific context packs for regulation-aware policies
+- Stack multiple policies into an employee handbook
+- Use for ISO 27001, SOC2, GDPR documentation prep
+
+## More Tools
+
+- [AI Agent Context Packs](https://afrexai-cto.github.io/context-packs/) — industry-specific agent configs ($47/pack)
+- [AI Revenue Leak Calculator](https://afrexai-cto.github.io/ai-revenue-calculator/) — find where manual processes cost you money
+- [Agent Setup Wizard](https://afrexai-cto.github.io/agent-setup/) — configure your AI agent in minutes

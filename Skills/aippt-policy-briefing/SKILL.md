@@ -1,32 +1,54 @@
 ---
-name: ttl-marketing-report-agent
-description: Generate comprehensive marketing reports, calculating ROI, CPA, and other key financial and performance metrics for Texas Total Loss.
-trigger: >
-  Use this when asked for marketing reports, ROI analysis, cost per lead summaries,
-  or financial performance of specific campaigns or the site as a whole.
+name: aippt-policy-briefing
+description: >
+  Route new policy briefing, policy update, regulatory update deck, regulatory change deck,
+  compliance change summary, legal update deck, or legal/product policy presentation requests here
+  before generic AIPPT. Use this whenever the user wants a new policy interpretation deck with
+  timelines, impacts, risks, and recommended actions. Do not use this scene pack for email memos,
+  FAQ-only outputs, compliance copy polishing, or non-deck legal writing.
 ---
 
-# Goal
-Provide accurate, data-driven financial and performance reports to guide marketing investment decisions.
+# Policy Briefing
 
-# Instructions
-1. **Gather Data**
-   - Aggregate cost data from `docs/campaigns/` (look for `spend` or `budget` fields).
-   - Aggregate conversion/lead data from `docs/marketing-insights.md` or `data/analytics/`.
-   - If available, pull revenue/case-value data from Supabase or manual logs.
-2. **Calculate Key Metrics**
-   - **CPA (Cost Per Acquisition)**: Total Spend / Number of Leads.
-   - **ROI (Return on Investment)**: (Total Revenue - Total Spend) / Total Spend.
-   - **Conversion Rate**: Total Leads / Total Traffic.
-3. **Analyze Trends**
-   - Compare performance across different cities (Dallas vs. Houston vs. San Antonio).
-   - Identify high-performing vs. low-performing channels (Organic, Paid, Email).
-4. **Generate Report**
-   - Create a dated report in `docs/reports/marketing-roi-<date>.md`.
-   - Use tables and concise summaries for easy reading.
-5. **Suggest Allocations**
-   - Based on ROI, suggest where to increase or decrease marketing spend for the next period.
+Use this scene pack before the generic workflow when the request is a new policy or compliance deck.
 
-# Constraints
-- Clearly label "estimates" vs. "verified data".
-- Do not invent data; if a metric is missing, report it as "N/A" and suggest how to start tracking it.
+## Route when
+
+- policy update / policy briefing / regulatory update
+- compliance change or legal update deck
+- policy interpretation deck with timelines, impacts, and actions
+
+## Defaults
+
+- Audience bias: legal, compliance, policy, product stakeholders
+- Page budget: 8-14 pages, default 10
+- Style preset: `business`
+- Delivery default: `prompt_bundle_only`
+- Story arc: `anchor -> proof -> bridge -> proof -> closing`
+
+## Required sections
+
+- policy change summary
+- timeline
+- impact analysis
+- risk matrix
+- recommended actions
+
+## Evidence bias
+
+- primary regulatory sources first
+- every time-sensitive rule should show explicit dates
+
+## Review bias
+
+- prioritize `citation_visibility`, `readability`, `hierarchy`
+
+## Near misses
+
+- memo / FAQ / email-only outputs -> route away from this scene pack
+- compliance onboarding or classroom training decks -> prefer teaching-deck
+- copy-polish requests with no deck deliverable -> route away from this scene pack
+
+## Outline starter
+
+Read `references/outline-starter.md` for the default policy sequence before resuming the main AIPPT stages.

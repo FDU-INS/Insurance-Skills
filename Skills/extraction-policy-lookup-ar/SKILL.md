@@ -1,92 +1,76 @@
 ---
-name: analyzing-catastrophe-risk
-language: en
-description: Structures catastrophe risk assessment with model output interpretation and accumulation monitoring. Use when analyzing cat risk, interpreting cat model results, or managing cat exposure.
-tags:
-  - analysis
-  - insurance
-  - risk
-metadata:
-  author: casemark
-  practice_areas:
-    - Insurance
-    - Actuarial Science
-    - Reinsurance
-  document_types:
-    - Analysis Report
-  skill_modes:
-    - Analysis
+name: extraction-policy-lookup-ar
+description: Consulta sistemas internos de Libra para obtener el documento de póliza a partir de datos del asegurado o del vehículo
+status: stub — integración técnica pendiente de definición con Juan Mazzochi
 ---
-# Analyzing Catastrophe Risk
 
-Structures catastrophe risk assessment with model output interpretation and accumulation monitoring.
+# Consulta de Póliza en Sistemas Internos (Policy Lookup AR)
 
-## When To Use
+Recupera el documento de póliza desde los sistemas internos de Libra Seguros usando los datos identificatorios disponibles: número de póliza, dominio del vehículo, datos del asegurado o tomador.
 
-- Evaluating portfolio exposure to natural catastrophe perils (hurricane, earthquake, flood, wildfire, severe convective storm)
-- Interpreting output from vendor cat models (AIR, RMS, CoreLogic) for underwriting or reinsurance placement decisions
-- Monitoring aggregate accumulations against defined tolerance limits or PML thresholds
-- Preparing cat risk reports for reinsurance renewals, rating agency reviews, or board risk committees
-- Assessing adequacy of cat reinsurance programs relative to modeled loss distributions
+Este skill es una capa de integración — no analiza la póliza. El análisis lo hace `extraction-policy-summary-ar` sobre el documento que este skill devuelve.
 
-## Inputs To Gather
+## Contexto
 
-- **Exposure data**: SOV (statement of values) or policy-level TIV schedules with geocoded locations, construction type, occupancy, year built, and number of stories
-- **Cat model output**: EP (exceedance probability) curves, AEP/OEP tables, AAL (average annual loss), standard deviation, and event loss tables from one or more vendor models
-- **Accumulation data**: Current aggregate exposures by peril, geography (CRESTA zone, county, state), and line of business
-- **Reinsurance structure**: Treaty terms including attachment points, limits, co-participation, reinstatement provisions, and cascading layers
-- **Risk appetite parameters**: Board-approved PML tolerances (e.g., 1-in-100 OEP net of reinsurance ≤ X% of surplus), concentration limits by zone
-- **Historical loss experience**: Prior catastrophe claims data by event, including gross/ceded/net splits
+- **Agente:** Mike (Extraction Agent)
+- **Se activa cuando:** `poliza_path = null` y hay datos identificatorios disponibles en el output de `extraction-claim-summary-ar`
+- **Output:** path al documento de póliza recuperado (para pasar a `extraction-policy-summary-ar`), o `null` con motivo si no se encuentra
 
-## Workflow
+## Campos de búsqueda (orden de prioridad)
 
-1. **Validate exposure data quality**
-   - Check geocoding hit rates — flag portfolios with >5% county-level or worse resolution
-   - Confirm TIV completeness: replacement cost vs. actual cash value, inclusion of business interruption and extra expense
-   - Identify secondary modifiers: roof type, cladding, roof-to-wall connection [VERIFY against model-specific vulnerability requirements]
-   - Reconcile SOV totals against in-force premium system
+1. `numero_poliza` — el más directo; extraído de la demanda por `extraction-claim-summary-ar`
+2. `vehiculo.dominio` — dominio del vehículo asegurado (ej: AQX769)
+3. `asegurado.dni` o `asegurado.cuit` — datos del tomador/asegurado
+4. `asegurado.nombre` + `vehiculo.marca_modelo` — búsqueda combinada como fallback
 
-2. **Run and interpret cat model output**
-   - Compare results across available vendor models (AIR Touchstone, RMS RiskLink/Intelligent Risk Platform, CoreLogic) — note model vintage and version
-   - Extract key metrics at required return periods: AAL, 1-in-50, 1-in-100, 1-in-250 OEP and AEP, both gross and net of reinsurance
-   - Decompose losses by peril, sub-peril (e.g., wind vs. storm surge for hurricane), and geography
-   - Evaluate demand surge, loss amplification, and secondary uncertainty assumptions
-   - Identify tail risk: review coefficient of variation and shape of EP curve beyond 1-in-250
+## Input
 
-3. **Assess accumulation exposure**
-   - Map aggregate TIV by CRESTA zone, county, and custom-defined accumulation zones
-   - Compare current accumulations against tolerance limits — highlight breaches or near-breaches
-   - Evaluate clash potential across lines (property, auto physical damage, workers' comp from single event)
-   - Test for concentration risk: percentage of total portfolio TIV within hurricane/earthquake wind speed or shaking intensity contours
-
-4. **Evaluate reinsurance program adequacy**
-   - Model net loss position after applying treaty structure layer by layer
-   - Stress-test against historical benchmark events (e.g., Andrew, Katrina, Northridge, Joplin) and synthetic scenarios
-   - Calculate expected recoveries, reinstatement costs, and residual net exposure above program exhaustion
-   - Assess cost-efficiency: rate-on-line, payback period, ROL index relative to modeled expected loss [VERIFY current market benchmarks]
-
-5. **Compile risk assessment report**
-   - Summarize key findings with quantified metrics (not qualitative generalities)
-   - Present modeled results in tabular and graphical format (EP curves, geographic heat maps, waterfall charts showing gross-to-net)
-   - Highlight model divergence where vendor outputs differ materially (>15% at key return periods)
-   - State all material assumptions: demand surge on/off, storm surge inclusion, fire-following earthquake, secondary uncertainty treatment
-   - Recommend actions: reinsurance restructuring, underwriting restrictions by zone, data quality remediation
+```json
+{
+  "numero_poliza": "string | null",
+  "vehiculo": {
+    "dominio": "string | null",
+    "marca": "string | null",
+    "modelo": "string | null"
+  },
+  "asegurado": {
+    "nombre": "string | null",
+    "dni": "string | null",
+    "cuit": "string | null"
+  },
+  "fecha_siniestro": "ISO date — para verificar vigencia de la póliza a esa fecha"
+}
+```
 
 ## Output
 
-- **Executive summary**: Portfolio AAL, key return period PMLs (gross/net), accumulation status vs. limits, and top 3 risk concerns
-- **Detailed EP curve analysis**: Tabular AEP and OEP results at standard return periods with year-over-year comparison
-- **Accumulation dashboard**: Geographic concentration by peril zone with breach/headroom indicators
-- **Reinsurance adequacy assessment**: Program performance under modeled and historical scenarios, coverage gap analysis
-- **Model comparison matrix**: Side-by-side vendor results with commentary on drivers of divergence
-- **Recommendations**: Prioritized action items with estimated risk reduction impact
+```json
+{
+  "found": true | false,
+  "poliza_path": "ruta al documento recuperado | null",
+  "numero_poliza": "string | null",
+  "vigente_a_fecha_siniestro": true | false | null,
+  "motivo_no_encontrado": "string | null",
+  "confidence": "high | medium | low"
+}
+```
 
-## Quality Checks
+## TODO — Integración técnica (pendiente con Juan Mazzochi)
 
-- Confirm EP curve results are monotonically increasing (higher return period = higher loss) — non-monotonic results indicate data or modeling errors
-- Verify AAL × multiplier reasonableness against market loss cost benchmarks [VERIFY against current industry loss ratios by peril/region]
-- Cross-check net results against reinsurance treaty terms — ensure attachment, limit, and co-participation are correctly modeled
-- Validate that all material perils are included (do not overlook flood in hurricane zones or fire-following in earthquake zones)
-- Ensure exposure data vintage matches the effective period under analysis — stale SOVs produce misleading results
-- Confirm that model settings (e.g., near-term vs. long-term hurricane view, warm SST assumptions) align with the company's stated risk philosophy
-- Flag any use of flat rates or judgment-based overrides to modeled output — document rationale
+Los siguientes puntos deben definirse antes de implementar este skill:
+
+- [ ] ¿Sistema de origen? (API REST / base de datos directa / sistema de gestión de pólizas)
+- [ ] ¿Endpoint o query? (URL, método, autenticación)
+- [ ] ¿Formato de respuesta del sistema? (JSON / XML / PDF / otro)
+- [ ] ¿Credenciales de acceso? (API key / OAuth / usuario-contraseña)
+- [ ] ¿El sistema devuelve el documento de póliza completo o solo datos estructurados?
+- [ ] ¿Qué hacer si hay múltiples pólizas para el mismo vehículo/asegurado? (tomar la vigente a la fecha del siniestro)
+- [ ] ¿El sistema tiene entorno de staging para pruebas?
+
+Ver: `docs/policy-lookup-integration.md`
+
+## Reglas
+
+- Si `found = false`: no bloquear el pipeline. Continuar con `policy_summary = null` y marcar como pendiente en la entrega al abogado.
+- Si `vigente_a_fecha_siniestro = false`: marcar como señal de atención crítica y escalar a Ali antes de continuar. Posible defensa de falta de cobertura por póliza no vigente al momento del siniestro.
+- Si `found = true` pero `confidence = low` (ej: match solo por nombre sin DNI): registrar ambigüedad y marcar para revisión humana.

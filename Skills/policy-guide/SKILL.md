@@ -1,76 +1,52 @@
 ---
-name: extraction-policy-lookup-ar
-description: Consulta sistemas internos de Libra para obtener el documento de póliza a partir de datos del asegurado o del vehículo
-status: stub — integración técnica pendiente de definición con Juan Mazzochi
+name: policy-guide
+description: Update the combined policy-writing guide page and keep linked routes, metadata, tests, and docs in sync.
 ---
 
-# Consulta de Póliza en Sistemas Internos (Policy Lookup AR)
+# Policy Guide Updates
 
-Recupera el documento de póliza desde los sistemas internos de Libra Seguros usando los datos identificatorios disponibles: número de póliza, dominio del vehículo, datos del asegurado o tomador.
+Use this skill when changing legal-policy guidance content in the app.
 
-Este skill es una capa de integración — no analiza la póliza. El análisis lo hace `extraction-policy-summary-ar` sobre el documento que este skill devuelve.
+## Goal
 
-## Contexto
+Maintain one shared page that explains how to author real Terms of Service and Privacy Policy documents for a production deployment.
 
-- **Agente:** Mike (Extraction Agent)
-- **Se activa cuando:** `poliza_path = null` y hay datos identificatorios disponibles en el output de `extraction-claim-summary-ar`
-- **Output:** path al documento de póliza recuperado (para pasar a `extraction-policy-summary-ar`), o `null` con motivo si no se encuentra
+## Files To Update
 
-## Campos de búsqueda (orden de prioridad)
+### 1) `src/client/pages/Policies.tsx`
 
-1. `numero_poliza` — el más directo; extraído de la demanda por `extraction-claim-summary-ar`
-2. `vehiculo.dominio` — dominio del vehículo asegurado (ej: AQX769)
-3. `asegurado.dni` o `asegurado.cuit` — datos del tomador/asegurado
-4. `asegurado.nombre` + `vehiculo.marca_modelo` — búsqueda combinada como fallback
+- Update instructional content and section structure.
+- Keep the page implementation focused on guidance, not fake legal copy.
+- Keep `PageMeta` title/description aligned to content changes.
 
-## Input
+### 2) Routing and links
 
-```json
-{
-  "numero_poliza": "string | null",
-  "vehiculo": {
-    "dominio": "string | null",
-    "marca": "string | null",
-    "modelo": "string | null"
-  },
-  "asegurado": {
-    "nombre": "string | null",
-    "dni": "string | null",
-    "cuit": "string | null"
-  },
-  "fecha_siniestro": "ISO date — para verificar vigencia de la póliza a esa fecha"
-}
-```
+- `src/client/App.tsx` — Ensure `/policies` route renders the guide.
+- `src/client/ui/layout/footer.tsx` — Keep footer link pointing to `/policies`.
+- If legacy URLs are retained (`/privacy`, `/terms`), verify they redirect to `/policies`.
 
-## Output
+### 3) Locale files
 
-```json
-{
-  "found": true | false,
-  "poliza_path": "ruta al documento recuperado | null",
-  "numero_poliza": "string | null",
-  "vigente_a_fecha_siniestro": true | false | null,
-  "motivo_no_encontrado": "string | null",
-  "confidence": "high | medium | low"
-}
-```
+- If visible labels change, update all locale JSON files in `src/client/locales/`.
 
-## TODO — Integración técnica (pendiente con Juan Mazzochi)
+### 4) Sitemap and SEO tests
 
-Los siguientes puntos deben definirse antes de implementar este skill:
+- `src/server/controllers/sitemap.ts` — Ensure sitemap references `/policies`.
+- `cypress/e2e/seo/page-meta.cy.ts` — Keep metadata assertions in sync.
 
-- [ ] ¿Sistema de origen? (API REST / base de datos directa / sistema de gestión de pólizas)
-- [ ] ¿Endpoint o query? (URL, método, autenticación)
-- [ ] ¿Formato de respuesta del sistema? (JSON / XML / PDF / otro)
-- [ ] ¿Credenciales de acceso? (API key / OAuth / usuario-contraseña)
-- [ ] ¿El sistema devuelve el documento de póliza completo o solo datos estructurados?
-- [ ] ¿Qué hacer si hay múltiples pólizas para el mismo vehículo/asegurado? (tomar la vigente a la fecha del siniestro)
-- [ ] ¿El sistema tiene entorno de staging para pruebas?
+### 5) Changelog
 
-Ver: `docs/policy-lookup-integration.md`
+- Add an `Unreleased` entry for major policy-guide updates.
 
-## Reglas
+## Validation Checklist
 
-- Si `found = false`: no bloquear el pipeline. Continuar con `policy_summary = null` y marcar como pendiente en la entrega al abogado.
-- Si `vigente_a_fecha_siniestro = false`: marcar como señal de atención crítica y escalar a Ali antes de continuar. Posible defensa de falta de cobertura por póliza no vigente al momento del siniestro.
-- Si `found = true` pero `confidence = low` (ej: match solo por nombre sin DNI): registrar ambigüedad y marcar para revisión humana.
+- Run `npm run lint`
+- Run `npm run type-check`
+- Run `npm run test:e2e -- --spec cypress/e2e/seo/page-meta.cy.ts`
+- Verify footer link and legacy routes resolve to `/policies`
+
+## Done Criteria
+
+- App contains one policy guidance page (`/policies`).
+- Footer and sitemap point to the combined page.
+- Metadata + E2E coverage reflect the updated content.

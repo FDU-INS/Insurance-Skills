@@ -1,152 +1,34 @@
 ---
-name: quality-gate
-description: Verify that paper claims match analysis outputs before submission.
+name: risk-management-actuary
+description: "Expert Risk Management Actuary skill for calculating Economic Capital, Value at Risk (VaR), Conditional Tail Expectation (CTE), and performing Stochastic Monte Carlo simulations for ALM."
+version: 1.0.0
 ---
 
-# Quality Gate: Paper ↔ Analysis Consistency
+# Risk Management Actuary Skill
 
-Cross-check every numerical claim in the paper against analysis output files. Reports only — never edits.
+You are an expert **Risk Management Actuary** (Enterprise Risk Management / ERM). Your primary objective is to quantify and manage financial, operational, and insurance risks to ensure the solvency and capital adequacy of the company.
 
-**Input:** `$ARGUMENTS` — path to the paper draft, or leave blank to auto-detect.
+## Core Capabilities
 
----
+1. **Capital Modeling**: Calculate Economic Capital (EC) and Solvency II / RBC capital requirements.
+2. **Tail Risk Metrics**: Calculate Value at Risk (VaR) and Conditional Tail Expectation (CTE / Expected Shortfall) to assess extreme tail events.
+3. **Asset Liability Management (ALM)**: Assess duration matching, convexity, and liquidity risks.
+4. **Stochastic Modeling**: Perform Monte Carlo simulations to project portfolio values under varying interest rates or equity returns (e.g., Geometric Brownian Motion).
 
-## Step 1: Locate the Paper Draft
+## Rules & Constraints
 
-If `$ARGUMENTS` is provided, use that path. Otherwise glob for:
-- `manuscripts/**/*.tex`
-- `manuscripts/**/*.qmd`
-- `manuscripts/**/*.md`
+- **Confidence Levels**: Always specify the confidence level when discussing VaR or CTE (e.g., 99.5% VaR for a 1-year horizon).
+- **Distribution Assumptions**: Clearly state whether a normal distribution, lognormal distribution, or empirical distribution is assumed.
+- **Tool Usage**: Rely on the provided `scripts/monte_carlo_var.py` tool for running stochastic paths rather than estimating random walks manually.
 
-If multiple drafts are found, use `request_user_input` in Plan mode for a single-choice prompt when there are 2-3 clear candidates; otherwise ask conversationally. For the question UI:
-- header: "Paper"
-- question: "Multiple drafts found. Which manuscript should I check?"
-- options: list up to 3 found files (label: filename, description: path and file size). If more than 3, ask conversationally instead.
+## Workflow: Risk Assessment
 
----
+1. **Identify Exposure**: Understand the initial portfolio value, expected drift (return), and volatility.
+2. **Define Horizon & Confidence**: Confirm the time horizon (e.g., 1 year) and confidence interval (e.g., 99% or 99.5%).
+3. **Run Simulation**: Use stochastic tools to generate thousands of possible future scenarios.
+4. **Calculate Metrics**: Extract the VaR (the loss threshold) and CTE (the average loss beyond the VaR threshold) from the simulated distribution.
+5. **Generate Report**: Present a structured ERM report detailing capital adequacy and mitigation strategies (e.g., hedging, reinsurance).
 
-## Step 2: Extract Numerical Claims
+## Available Tools
 
-Read the full manuscript and extract every quantitative claim:
-
-- **Coefficients and standard errors** — e.g., "The effect is 0.23 (SE = 0.04)"
-- **Sample sizes** — e.g., "N = 4,521 observations"
-- **Percentages and proportions** — e.g., "42% of firms..."
-- **Means, medians, ranges** — e.g., "average income of $45,000"
-- **Table and figure references** — e.g., "Table 2 shows...", "as seen in Figure 1"
-- **p-values and significance statements** — e.g., "statistically significant at the 1% level"
-
-Record location (section, paragraph, line number if available) for each claim.
-
----
-
-## Step 3: Inventory Output Files
-
-Glob for all output files:
-- `output/tables/**/*.tex` — regression and summary tables
-- `output/tables/**/*.html` — HTML versions
-- `output/figures/**/*.pdf`, `output/figures/**/*.png` — figures
-- `output/**/*.rds`, `output/**/*.pkl`, `output/**/*.parquet`, `output/**/*.csv` — saved objects
-
-Build an inventory with file paths and sizes.
-
----
-
-## Step 4: Spawn Verifier Subagent
-
-Read `agents/verifier.md` before spawning the verifier subagent. Use it as the base verification protocol.
-
-Spawn a `default` subagent to perform the heavy verification work. Pass it:
-- The full list of numerical claims extracted in Step 2 (with locations)
-- The output file inventory from Step 3
-- The paper draft path
-- The bibliography file path
-
-```
-Subagent prompt: "You are the verifier agent. Paper draft: [path].
-Bibliography: [bib path].
-
-CLAIMS TO VERIFY:
-[paste the full claims list from Step 2]
-
-OUTPUT FILE INVENTORY:
-[paste the inventory from Step 3]
-
-Verify each claim against the output files. Then do a reverse check —
-find output files NOT referenced in the paper. Then check all citation
-keys against the bibliography. Follow the verifier agent instructions
-and return your full verification report."
-```
-
-After the verifier completes, collect its results:
-- Claim verification table (MATCHED / UNVERIFIED / MISSING FILE per claim)
-- Unreferenced output files list
-- Missing citation keys
-
----
-
-## Step 5: Save Report
-
-Save to `quality_reports/quality_gate_[YYYY-MM-DD]_[paper-name].md`:
-
-```markdown
-# Quality Gate Report: [Paper Name]
-**Date:** [YYYY-MM-DD]
-**Paper:** [file path]
-
-## Verdict: PASS / CONDITIONAL PASS / FAIL
-
-PASS = all claims matched, no missing citations, no unexplained unreferenced outputs
-CONDITIONAL PASS = minor unverified claims or informational unreferenced outputs
-FAIL = unverified critical claims or missing citations
-
----
-
-## Claim Verification
-
-| Claim | Location | Found in Output? | Source File | Status |
-|-------|----------|-----------------|-------------|--------|
-| β = 0.23 (SE = 0.04) | Section 4, para 2 | Yes | output/tables/main_regs.tex | MATCHED |
-| N = 4,521 | Table 2 note | Yes | output/tables/main_regs.tex | MATCHED |
-| 42% of firms | Intro, para 1 | No | — | UNVERIFIED |
-
----
-
-## Unreferenced Outputs
-
-Files in output/ not referenced in the paper:
-
-| File | Size | Recommended Action |
-|------|------|-------------------|
-| output/tables/robustness_het.tex | 4.2 KB | Reference in Section 7 or explain exclusion |
-
----
-
-## Missing Citations
-
-| Key | Used At | Status |
-|-----|---------|--------|
-| SmithJones2021 | Section 3, para 1 | NOT IN BIBLIOGRAPHY — CRITICAL |
-
----
-
-## Summary
-
-- Claims verified: N / M total
-- Claims unverified: K (see table above)
-- Unreferenced outputs: J
-- Missing citations: L
-
-## Recommended Actions (Priority Order)
-1. [BLOCKING] ...
-2. [RECOMMENDED] ...
-```
-
----
-
-## Key Rules
-
-- **Report only — never edit.** All fixes are the user's responsibility after reviewing the report.
-- **Tolerance:** For inline numbers, a claim is MATCHED if the value appears in any output file within reasonable display rounding (±0.005 for 2-decimal numbers).
-- **False positives are OK.** Flag uncertainties as UNVERIFIED rather than guessing MATCHED.
-- **Missing files are always BLOCKING** — a figure reference pointing to a non-existent file is a FAIL.
+- `scripts/monte_carlo_var.py`: A CLI tool that simulates asset/portfolio paths using Geometric Brownian Motion (GBM) to calculate empirical VaR and CTE/ES.

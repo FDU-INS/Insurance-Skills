@@ -1,362 +1,170 @@
 ---
-name: policy-conditioned-routing-demo
-description: "Interactive demo: Build a policy-conditioned support ticket routing AI function using hand-curated gold-labeled data, then evaluate and optimize cheaper models via GEPA optimization."
-parent_skill: demos
+name: drafting-coverage-denial-ar
+description: Genera carta de rechazo de cobertura fundada en Ley 17.418 y póliza, con control de plazo art. 56 y evaluación de riesgo de daño punitivo
 ---
-<!-- Copyright (c) 2026 Snowflake Inc. All rights reserved.
-     Licensed under the Snowflake Skills License. See LICENSE file. -->
 
-# Policy-Conditioned Support Ticket Routing Demo
+# Rechazo de Cobertura (Coverage Denial / Tender Letter Denial AR)
 
-Build an AI function that routes support tickets using company-specific policy context, then optimize cheaper models via GEPA optimization to match or beat a strong baseline.
+Genera comunicación formal de rechazo de cobertura, fundada en cláusulas contractuales y normativa legal. Incluye control del plazo del art. 56 Ley 17.418 y evaluación de riesgo de impugnación y daño punitivo.
 
-## Overview
+Este skill responde la pregunta: **¿cómo se comunica formalmente el rechazo de cobertura, y cuáles son los riesgos de hacerlo?**
 
-This demo walks you through:
-1. Loading a labeled dataset with company routing policies
-2. Creating a policy-aware routing AI function
-3. Evaluating baseline accuracy across multiple models
-4. Optimizing cheap models via GEPA optimization to close the accuracy gap
-5. Comparing before/after results
+No decide si hay cobertura (eso lo hizo `coverage-opinion-ar`). Este skill se activa cuando `coverage-opinion-ar` emitió dictamen NO_COBERTURA o COBERTURA_PARCIAL y la decisión interna es rechazar.
 
-Correct routing requires interpreting company-specific policy language written in internal vocabulary — models must generalize policy semantics rather than rely on keyword matching.
+## Contexto
 
-**Estimated time:** 20-40 minutes
+- **Agente**: Drafting Agent
 
-## Workflow
+## Inputs requeridos
 
-### Step 1: Introduction
+| Input | Skill fuente | Qué aporta |
+|-------|-------------|------------|
+| Dictamen de cobertura | `triage-coverage-opinion-ar` | Dictamen NO_COBERTURA, exclusiones analizadas, fundamentos, riesgo de condena |
+| Datos del caso | `extraction-claim-summary-ar` | Datos del siniestro, asegurado, fechas |
+| Datos de la póliza | `extraction-policy-summary-ar` | Cláusulas citadas, exclusiones textuales |
 
-Explain to user:
-```
-Welcome to the Policy-Conditioned Routing Demo!
+## Instrucciones
 
-This demo uses a hard benchmark where correct routing depends on reading
-company-specific policy text written in unfamiliar internal vocabulary.
+Sos un asistente legal especializado en redacción de comunicaciones de rechazo de cobertura para una aseguradora argentina.
 
-Route labels:
-- billing
-- account_access
-- bug_or_outage
-- feature_request
-- refund_or_cancel
-- security_or_abuse
+### Contexto operativo
 
-The dataset includes 4 companies, each with unique routing policies.
-Most tickets have a "default" label that gets overridden by company
-policy — a model that ignores policy context will score poorly.
+Cuando la aseguradora determina que un siniestro no está cubierto, debe comunicar el rechazo al asegurado de manera fundada. Esta comunicación tiene consecuencias legales graves: un rechazo mal fundado puede generar daño punitivo (art. 52 bis Ley 24.240), y un rechazo tardío puede ser interpretado como aceptación tácita (art. 56 Ley 17.418).
 
-Objects created: all prefixed with DEMO_ for easy cleanup.
-```
+### PASO PREVIO OBLIGATORIO: Control del plazo del art. 56
 
-### Step 2: Setup - Choose Location
+**Antes de redactar el rechazo, verificá el plazo del art. 56 Ley 17.418.**
 
-Ask user:
-```
-Where would you like to create the demo objects?
+El asegurador debe pronunciarse dentro de los 30 días de recibida la denuncia del siniestro junto con los comprobantes necesarios. Si el plazo venció sin pronunciamiento:
 
-Database: [e.g., TEMP]
-Schema: [e.g., PUBLIC]
+- **Plazo vigente**: proceder con la redacción del rechazo.
+- **Plazo vencido**: ALERTA CRITICA. El silencio del asegurador se interpreta como aceptación del siniestro. Señalar que el rechazo tiene altísima probabilidad de ser impugnado exitosamente. Recomendar evaluación por el abogado antes de enviar. No proceder automáticamente.
+- **Plazo indeterminado**: si no consta la fecha de denuncia, señalar como dato faltante crítico. No redactar sin esta verificación.
 
-All objects will be prefixed with DEMO_ for easy cleanup.
-```
+Datos necesarios:
+- Fecha de denuncia del siniestro (de `claim-summary-ar` campo `fecha_denuncia`)
+- Fecha de recepción de comprobantes (si consta en el expediente de siniestro)
+- Fecha actual
 
-Store the database and schema for use throughout the demo.
+### Estructura de la carta de rechazo
 
-### Step 3: Load Seed Data
+1. **Datos**: destinatario, póliza, siniestro, fecha
+2. **Antecedentes**: breve relato del siniestro denunciado (fáctico, sin calificaciones jurídicas innecesarias)
+3. **Fundamentos del rechazo**:
+   - Citar cláusulas de póliza específicas (de `policy-summary-ar`, texto exacto)
+   - Citar artículos de Ley 17.418 (de `coverage-opinion-ar`)
+   - Desarrollar por qué aplica cada fundamento al caso concreto
+4. **Decisión formal**: texto del rechazo, claro y categórico
+5. **Derechos del asegurado**: información sobre vías de impugnación (SSN, vía judicial)
 
-Explain to user:
-```
-I'll load the hand-curated gold-labeled dataset. This creates:
+### Fundamentos típicos de rechazo (solo incluir los que surjan de `coverage-opinion-ar`)
 
-1. A company routing policy table (4 companies with unique policies)
-2. A 24-row holdout set for evaluation (21 override rows)
-3. A 96-row training set for optimization (84 override rows)
+- **Caducidad** (art. 47 Ley 17.418): incumplimiento de cargas del asegurado
+- **Falta de denuncia en término** (art. 46): no denunciar dentro de 3 días
+- **Exclusión contractual**: cláusula específica de la póliza
+- **Culpa grave** (art. 70): conducta gravemente negligente del asegurado
+- **Agravación de riesgo** (arts. 37-45): cambio no comunicado en las condiciones
+- **Fuera de vigencia**: póliza no vigente al momento del siniestro
 
-The data is pre-split — no train/test splitting needed.
-```
+### Método de notificación
 
-**⚠️ STOP**: Wait for user confirmation before loading data.
+El rechazo de cobertura DEBE notificarse por un medio fehaciente que permita acreditar la recepción:
 
-**Load** `create_support_ticket_v6_dataset.sql.j2` and render it as a Jinja2 template with `database` and `schema` set to the user's chosen values, then execute the resulting SQL. This creates and populates the policy, holdout, and training tables.
+- **Carta documento**: método preferido. Texto limitado a ~3000 caracteres.
+- **Telegrama colacionado**: alternativa, más breve.
+- **Notificación notarial**: para casos complejos o de alto monto.
 
-Verify creation:
-```sql
-SELECT 'policy' AS TBL, COUNT(*) AS ROWS
-FROM {database}.{schema}.DEMO_COMPANY_ROUTING_POLICY_V6
-UNION ALL
-SELECT 'holdout', COUNT(*)
-FROM {database}.{schema}.DEMO_TICKETS_HARD_GOLD_V6_SMALL
-UNION ALL
-SELECT 'train', COUNT(*)
-FROM {database}.{schema}.DEMO_TICKETS_POLICY_TRAIN_V6_LARGE;
-```
+Indicar en el output el método recomendado. Si el texto excede el espacio de una carta documento, preparar versión resumida para la carta y versión completa como nota adjunta.
 
-Expected: policy=4, holdout=24, train=96.
+## Output esperado
 
-Also verify zero subject overlap between train and holdout:
-```sql
-SELECT COUNT(*) AS EXACT_SUBJECT_OVERLAP_COUNT
-FROM {database}.{schema}.DEMO_TICKETS_POLICY_TRAIN_V6_LARGE t
-JOIN {database}.{schema}.DEMO_TICKETS_HARD_GOLD_V6_SMALL h
-    ON t.SUBJECT = h.SUBJECT;
-```
+### Control de plazo art. 56
 
-Expected: 0.
+| Campo | Tipo | Descripción |
+|-------|------|-------------|
+| fecha_denuncia | string o null | Fecha de denuncia del siniestro |
+| fecha_comprobantes | string o null | Fecha de recepción de comprobantes |
+| plazo_art56_dias_transcurridos | int o null | Días transcurridos desde denuncia/comprobantes |
+| plazo_art56_estado | string | vigente / vencido / indeterminado |
+| alerta_plazo | string o null | Alerta si el plazo venció o está por vencer |
 
-### Step 4: Create the Routing AI Function
-
-Present the function configuration:
-```
-Now I'll create a policy-aware routing function.
-
-Function name: DEMO_ROUTE_TICKET
-Default model: gemini-2.5-flash-lite
-
-Inputs:
-  SUBJECT, BODY, CUSTOMER_TIER, COMPANY_NAME,
-  POLICY_PROFILE, POLICY_TEXT, ENTITLEMENT_TEXT
-
-Output: route (string)
-```
-
-**⚠️ STOP**: Wait for user confirmation or modifications before creating the function.
-
-**Load** `create/SKILL.md` and follow it from **Step 7 onward**, passing:
-- `database`, `schema`
-- `function_name`: `DEMO_ROUTE_TICKET`
-- `function_intention`: `Route policy-aware support tickets using company context.`
-- `model`: `gemini-2.5-flash-lite`
-- `inputs`: `[{"name": "SUBJECT", "sql_type": "VARCHAR"}, {"name": "BODY", "sql_type": "VARCHAR"}, {"name": "CUSTOMER_TIER", "sql_type": "VARCHAR"}, {"name": "COMPANY_NAME", "sql_type": "VARCHAR"}, {"name": "POLICY_PROFILE", "sql_type": "VARCHAR"}, {"name": "POLICY_TEXT", "sql_type": "VARCHAR"}, {"name": "ENTITLEMENT_TEXT", "sql_type": "VARCHAR"}]`
-- `outputs`: `[{"name": "route", "json_type": "string", "description": "Support ticket route"}]`
-- `system_prompt`: `You are a support ticket router. Given a ticket subject, body, customer tier, company name, policy profile, company policy text, and entitlement notes, classify it into exactly one category: billing, account_access, bug_or_outage, feature_request, refund_or_cancel, or security_or_abuse. The company policy is written in internal handling language rather than the route labels themselves. Infer the best route from the ticket and company policy, and only use company context when it changes the default interpretation. Return only the label in the route field.`
-- `user_prompt_template`: `Subject: {SUBJECT}\nBody: {BODY}\nCustomer tier: {CUSTOMER_TIER}\nCompany name: {COMPANY_NAME}\nPolicy profile: {POLICY_PROFILE}\nCompany policy: {POLICY_TEXT}\nEntitlement notes: {ENTITLEMENT_TEXT}`
-
-Return here after the smoke test succeeds.
-
-### Step 5: Prepare Evaluation Table
-
-Create the eval table from the holdout set, renaming the gold label column to `EXPECTED_OUTPUT`:
-```sql
-CREATE OR REPLACE TABLE {database}.{schema}.DEMO_TICKETS_EVAL AS
-SELECT
-    CASE_ID, CASE_GROUP, SUBJECT, BODY, CUSTOMER_TIER,
-    COMPANY_NAME, POLICY_PROFILE, POLICY_TEXT, ENTITLEMENT_TEXT,
-    DEFAULT_LABEL,
-    GOLD_LABEL_V6_SMALL AS EXPECTED_OUTPUT,
-    RULE_FAMILY, POLICY_EFFECT, REQUIRES_POLICY_CONTEXT,
-    CURATION_NOTE, CURATED_AT
-FROM {database}.{schema}.DEMO_TICKETS_HARD_GOLD_V6_SMALL
-ORDER BY CASE_ID;
-```
-
-Verify:
-```sql
-SELECT COUNT(*) AS ROWS, COUNT_IF(REQUIRES_POLICY_CONTEXT) AS OVERRIDE_ROWS
-FROM {database}.{schema}.DEMO_TICKETS_EVAL;
-```
-
-Expected: 24 rows, 21 overrides.
-
-### Step 6: Evaluate Baselines
-
-Present to user:
-```
-We'll evaluate the routing function across multiple models on the
-24-row holdout set. This establishes baselines before optimization.
-
-Default comparison models:
-- claude-sonnet-4-5 (strong reference)
-- claude-haiku-4-5
-- gemini-2.5-flash
-- gemini-2.5-flash-lite
-- llama3.1-8b
-- mistral-7b
-```
-
-**⚠️ STOP**: Confirm the model list with the user before running.
-
-If one of these models is unavailable, remove it from the list or **load** `references/model_selection.md` to choose substitutes.
-
-Create the results table:
-```sql
-CREATE OR REPLACE TABLE {database}.{schema}.DEMO_ROUTE_TICKET_BASELINE_RESULTS (
-    MODEL_NAME VARCHAR, ROW_COUNT NUMBER, CORRECT NUMBER, ACCURACY NUMBER(10, 4)
-);
-```
-
-**Create a per-model UDF for each model**, then run evaluation. The model and system prompt are baked into each function body — we create a separate function per model using `create_udf.py`, reusing the same configuration from Step 4 but with a different `model` and `function_name`.
-
-**Do not confirm with the user before creating each UDF** — the user already confirmed the model list above.
-
-For each model, derive a function suffix from the model name (replace `-` and `.` with `_`, uppercase). For example, `claude-sonnet-4-5` → `DEMO_ROUTE_TICKET__CLAUDE_SONNET_4_5`.
-
-For **each model**, create the function:
-```bash
-PYTHONPATH=<SKILL_DIRECTORY>/src uv run --project <SKILL_DIRECTORY> python <SKILL_DIRECTORY>/src/create_udf.py \
-    --execute --connection <CONNECTION_NAME> \
-    --database {database} \
-    --schema {schema} \
-    --function-name "DEMO_ROUTE_TICKET__{model_suffix}" \
-    --function-intention 'Route policy-aware support tickets using company context.' \
-    --model {model_name} \
-    --system-prompt '<same system_prompt from Step 4>' \
-    --user-prompt-template 'Subject: {SUBJECT}\nBody: {BODY}\nCustomer tier: {CUSTOMER_TIER}\nCompany name: {COMPANY_NAME}\nPolicy profile: {POLICY_PROFILE}\nCompany policy: {POLICY_TEXT}\nEntitlement notes: {ENTITLEMENT_TEXT}' \
-    --inputs '[{"name": "SUBJECT", "sql_type": "VARCHAR"}, {"name": "BODY", "sql_type": "VARCHAR"}, {"name": "CUSTOMER_TIER", "sql_type": "VARCHAR"}, {"name": "COMPANY_NAME", "sql_type": "VARCHAR"}, {"name": "POLICY_PROFILE", "sql_type": "VARCHAR"}, {"name": "POLICY_TEXT", "sql_type": "VARCHAR"}, {"name": "ENTITLEMENT_TEXT", "sql_type": "VARCHAR"}]' \
-    --outputs '[{"name": "route", "json_type": "string", "description": "Support ticket route"}]'
-```
-
-After all UDFs are created, run eval queries **in parallel** — one per model:
-```sql
-INSERT INTO {database}.{schema}.DEMO_ROUTE_TICKET_BASELINE_RESULTS
-WITH preds AS (
-    SELECT
-        EXPECTED_OUTPUT,
-        {database}.{schema}.DEMO_ROUTE_TICKET__{model_suffix}(
-            SUBJECT, BODY, CUSTOMER_TIER, COMPANY_NAME,
-            POLICY_PROFILE, POLICY_TEXT, ENTITLEMENT_TEXT
-        ) AS PREDICTED
-    FROM {database}.{schema}.DEMO_TICKETS_EVAL
-)
-SELECT
-    '{model_name}', COUNT(*), COUNT_IF(PREDICTED = EXPECTED_OUTPUT),
-    ROUND(COUNT_IF(PREDICTED = EXPECTED_OUTPUT) / COUNT(*), 4)
-FROM preds;
-```
-
-After all results are collected, **drop the per-model UDFs**:
-```sql
-DROP FUNCTION IF EXISTS {database}.{schema}.DEMO_ROUTE_TICKET__{model_suffix}(VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR);
-```
-
-Show the baseline leaderboard:
-```sql
-SELECT MODEL_NAME, ROUND(ACCURACY * 100, 1) AS ACCURACY_PCT
-FROM {database}.{schema}.DEMO_ROUTE_TICKET_BASELINE_RESULTS
-ORDER BY ACCURACY DESC;
-```
-
-Highlight that cheap models typically score well below the strong reference on this hard benchmark because the policy vocabulary is unfamiliar.
-
-### Step 7: Optimize Functions
-
-Present the optimization configuration:
-```
-Now we'll optimize the cheap models using GEPA optimization.
-The optimizer evolves the function body through multiple generations,
-testing variations against the 96-row training set.
-
-Default cheap models:
-- llama3.1-8b
-- mistral-7b
-- gemini-2.5-flash
-- gemini-2.5-flash-lite
-- claude-haiku-4-5
-
-Auto budget: demo (~5 minutes)
-Experiment: DEMO_ROUTE_TICKET_OPT_EXP
-```
-
-**⚠️ STOP**: Wait for user confirmation or modifications before starting optimization.
-
-**Load** `optimize/SKILL.md` and follow it from **Step 6 onward**, passing:
-- `function_name`: `{database}.{schema}.DEMO_ROUTE_TICKET`
-- `training_table`: `{database}.{schema}.DEMO_TICKETS_POLICY_TRAIN_V6_LARGE`
-- `test_table`: `{database}.{schema}.DEMO_TICKETS_EVAL`
-- `input_columns`: `['SUBJECT', 'BODY', 'CUSTOMER_TIER', 'COMPANY_NAME', 'POLICY_PROFILE', 'POLICY_TEXT', 'ENTITLEMENT_TEXT']`
-- `label_column`: `EXPECTED_OUTPUT`
-- `metric`: `exact_match`
-- `models`: the confirmed cheap-model list
-- `reflection_model`: `claude-sonnet-4-5`
-- `auto_budget`: `demo`
-- `experiment_name`: `{database}.{schema}.DEMO_ROUTE_TICKET_OPT_EXP`
-
-Return here after optimization results are presented.
-
-### Step 8: Summarize Results
-
-**8.1.** Join baseline results from `DEMO_ROUTE_TICKET_BASELINE_RESULTS` with the best optimized score per model from `DEMO_ROUTE_TICKET_OPT_EXP`. Show each model's baseline accuracy, optimized accuracy, gain, and whether it meets or exceeds the strong reference (`claude-sonnet-4-5`) baseline. The strong reference itself was not optimized — include it as the reference row.
-
-**8.2.** Calculate relative cost using the Pareto filter script (`src/filter_pareto.py`). Include all models: optimized cheap models at their best optimized score and `claude-sonnet-4-5` at its baseline score. Use the system prompt character length for `--prompt-chars` and average expected output length from the eval table for `--avg-output-chars`. Use the strong reference baseline as `--seed-score`. Present the Pareto-optimal table to the user.
-
-**8.3.** Summarize key findings:
-- Which model gained the most accuracy from GEPA optimization.
-- If any optimized cheap model beats or matches the strong reference, call it out along with its relative cost — better quality at lower cost.
-- If `claude-sonnet-4-5` is dominated on the Pareto frontier (a cheaper model has equal or higher score), note that the strong model is no longer the best option at any price point.
-- If no cheap model beats the strong reference, note the remaining gap and suggest heavier optimization budgets or different models.
-
-### Step 9: Cleanup
-
-Ask user:
-```
-The Policy-Conditioned Routing demo is complete!
-
-Would you like to clean up the demo objects?
-
-This will drop:
-- {database}.{schema}.DEMO_COMPANY_ROUTING_POLICY_V6
-- {database}.{schema}.DEMO_TICKETS_HARD_GOLD_V6_SMALL
-- {database}.{schema}.DEMO_TICKETS_POLICY_TRAIN_V6_LARGE
-- {database}.{schema}.DEMO_TICKETS_EVAL
-- {database}.{schema}.DEMO_ROUTE_TICKET
-- {database}.{schema}.DEMO_ROUTE_TICKET_BASELINE_RESULTS
-- {database}.{schema}.DEMO_ROUTE_TICKET_OPT_EXP
-```
-
-**⚠️ STOP**: Wait for user confirmation before cleanup.
-
-If yes, execute:
-```sql
-DROP TABLE IF EXISTS {database}.{schema}.DEMO_COMPANY_ROUTING_POLICY_V6;
-DROP TABLE IF EXISTS {database}.{schema}.DEMO_TICKETS_HARD_GOLD_V6_SMALL;
-DROP TABLE IF EXISTS {database}.{schema}.DEMO_TICKETS_POLICY_TRAIN_V6_LARGE;
-DROP TABLE IF EXISTS {database}.{schema}.DEMO_TICKETS_EVAL;
-DROP FUNCTION IF EXISTS {database}.{schema}.DEMO_ROUTE_TICKET(VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR);
-DROP TABLE IF EXISTS {database}.{schema}.DEMO_ROUTE_TICKET_BASELINE_RESULTS;
-DROP EXPERIMENT IF EXISTS {database}.{schema}.DEMO_ROUTE_TICKET_OPT_EXP;
-```
-
-### Step 10: Next Steps
-
-Explain to user:
-```
-You completed a policy-conditioned routing workflow:
-
-1. Loaded labeled data with unfamiliar company routing policies
-2. Built a policy-aware routing function
-3. Measured baselines — cheap models scored well below the strong
-   reference because the policy vocabulary is intentionally unfamiliar
-4. Optimized cheap models via GEPA optimization
-5. Compared cost and quality side-by-side
-
-Key takeaways:
-
-  Accuracy: GEPA optimization recovered large accuracy gains on
-  cheap models. On hard tasks where baselines are low, the room for
-  improvement is biggest.
-
-  Cost: The Pareto frontier shows which models offer the best
-  quality-per-dollar. When an optimized cheap model matches or beats
-  the strong reference, switching to it saves cost with no quality
-  penalty.
-
-  When to use GEPA optimization: Whenever baseline accuracy on
-  your task is disappointing, especially with cheaper models.
-  Optimization can close the gap without changing models or data.
-```
-
-## Key Cautions
-
-- Gold labels are authored for this specific policy vocabulary. They represent ground truth, not pseudo-labels.
-- The v6 policy vocabulary is intentionally unfamiliar. Models that memorize standard routing keywords will underperform.
-- The holdout set is small (24 rows). Each row counts for ~4.2% of accuracy.
-
-## Stopping Points
-
-- ✋ Step 1: After introduction
-- ✋ Step 2: After choosing database and schema
-- ✋ Step 3: Before loading seed data
-- ✋ Step 4: Before creating the routing function
-- ✋ Step 6: Before running baseline evaluations
-- ✋ Step 7: Before optimization
-- ✋ Step 9: Before cleanup
+### Datos de la comunicación
+
+| Campo | Tipo | Descripción |
+|-------|------|-------------|
+| destinatario | string | Nombre del asegurado/tomador/beneficiario |
+| referencia_poliza | string | Número de póliza |
+| referencia_siniestro | string | Número de siniestro |
+| fecha | string | Fecha de la comunicación |
+| metodo_notificacion | string | carta_documento / telegrama / notificacion_notarial |
+
+### Cuerpo
+
+| Campo | Tipo | Descripción |
+|-------|------|-------------|
+| sintesis_rechazo | string | Resumen en 2-3 líneas del motivo |
+| antecedentes | string | Breve relato de la denuncia |
+| clausulas_citadas | lista de objetos | Cláusulas citadas con texto exacto de `policy-summary-ar` |
+| clausulas_citadas[].clausula | string | Identificación de la cláusula |
+| clausulas_citadas[].texto_exacto | string | Texto tal como aparece en la póliza |
+| decision | string | Texto formal del rechazo |
+| derechos_asegurado | string | Derechos del asegurado (SSN, vía judicial) |
+
+### Fundamentos del rechazo (lista)
+
+| Campo | Tipo | Descripción |
+|-------|------|-------------|
+| tipo | string | caducidad / exclusion_contractual / falta_denuncia / agravacion_riesgo / culpa_grave / fuera_vigencia / otro |
+| fundamento_legal | string | Artículo de Ley 17.418 |
+| fundamento_contractual | string | Cláusula de póliza (texto exacto) |
+| desarrollo | string | Explicación de por qué aplica |
+| fuente_triage | string | Referencia al análisis de `coverage-opinion-ar` que sustenta este fundamento |
+
+### Evaluación de riesgo
+
+| Campo | Tipo | Descripción |
+|-------|------|-------------|
+| riesgo_impugnacion | string | alto / medio / bajo |
+| riesgo_daño_punitivo | string | alto / medio / bajo / no_aplica |
+| motivo_riesgo_punitivo | string o null | Por qué hay riesgo de daño punitivo (ej: rechazo tardío, fundamento débil, conducta del asegurador) |
+| riesgo_si_rechazo_falla | string | Consecuencias si el rechazo es impugnado exitosamente (de `coverage-opinion-ar`) |
+| recomendacion | string | Enviar / revisar_antes_de_enviar / no_enviar_escalar |
+
+### Metadata
+
+| Campo | Tipo | Descripción |
+|-------|------|-------------|
+| secciones_requieren_revision | lista de strings | Secciones para revisión |
+| version_carta_documento | string o null | Versión resumida si el texto excede el espacio |
+| overall_confidence | ConfidenceLevel | high / medium / low |
+
+## Normativa de referencia
+
+- **Ley 17.418** (colección RAG: `ley_seguros`):
+  - Art. 46: denuncia de siniestro, plazo de 3 días
+  - Art. 47: caducidad por incumplimiento de cargas
+  - Art. 56: pronunciamiento del asegurador (30 días), silencio como aceptación
+  - Art. 70: culpa grave del asegurado
+  - Arts. 37-45: agravación del riesgo
+- **Ley 24.240** (referencia):
+  - Art. 52 bis: daño punitivo por conducta abusiva del proveedor
+  - Art. 37: cláusulas abusivas
+- **CCC** (referencia):
+  - Art. 1094: interpretación pro-consumidor
+
+## Umbrales de confianza
+
+- **Confidence threshold**: 0.8 (umbral alto — consecuencias legales del rechazo)
+- **Escalation threshold**: 0.6 (debajo → halt)
+
+## Reglas
+
+- Respondé en español formal.
+- SIEMPRE verificá el plazo del art. 56 antes de redactar. Si el plazo venció, el output debe reflejar que el rechazo tiene riesgo crítico.
+- El rechazo debe estar FUNDADO en cláusulas concretas y normas específicas. No uses lenguaje ambiguo — el rechazo debe ser claro y categórico.
+- Citá el texto exacto de las cláusulas de póliza (de `policy-summary-ar`), no paráfrasis. Un rechazo que parafrasea la cláusula en vez de citarla es más vulnerable a impugnación.
+- Incluí siempre información sobre derechos del asegurado (SSN, vía judicial). Omitirlos es un argumento en contra de la aseguradora.
+- Evaluá el riesgo de daño punitivo (art. 52 bis Ley 24.240) en todo rechazo. Factores de riesgo: fundamento débil, plazo art. 56 vencido o al límite, rechazo genérico sin citar cláusulas específicas, patrón de rechazos similares.
+- Marcá secciones que requieren revisión por abogado.
+- Indicá el método de notificación recomendado. Si el texto es largo, preparar versión carta documento.
+- No redactes el rechazo si `coverage-opinion-ar` dio dictamen COBERTURA o INDETERMINADO. Si se pide redactar un rechazo cuando el dictamen no lo sustenta, señalá la incongruencia y escalá.

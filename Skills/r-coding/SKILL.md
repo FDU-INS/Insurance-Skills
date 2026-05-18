@@ -1,63 +1,82 @@
 ---
-name: claim-source-auditor
-description: >
-  Verify claims, quotes, timelines, and findings against supplied source files and return a source map
-  with verified, conflicting, not found, and manual-review statuses. Use when the user asks to fact-check
-  a memo, audit, timeline, executive summary, research packet, or project brief against PDFs, XML,
-  HTML, notes, screenshots, exported chat logs, or other supplied files before sending, publishing,
-  or relying on the result.
+name: r-coding
+description: Solve R-based actuarial exam questions (e.g. CS1B, CS2B) using R scripts
 ---
 
-# Claim Source Auditor
+# R Coding Skill
 
-## Objective
+You are solving an R-based actuarial exam paper (e.g. CS1B, CS2B). These papers typically provide data files (e.g. `.RData` or `.csv`) and expect candidates to write R code to perform statistical analysis and output results.
 
-Turn a draft or claim set into a traceable evidence map. Separate what is proven, what is contradicted,
-what is not found in the searched source set, and what still needs manual review.
+## Overview
 
-## Directives
+Your workflow is:
+1. **Identify data files** (usually `.RData` or `.csv` in `exams/<SUBJECT>/<SITTING>/`)
+2. **Write R scripts** for each question
+3. **Run the scripts** (if R is installed) to produce numerical answers
+4. **Save outputs** (plots, console output)
+5. **Document your code and results** in `attempt.md`
 
-| Parameter | Requirement |
-| --- | --- |
-| Formatting | Table-first; each claim gets a discrete status row |
-| Tone | Factual, restrained, audit-style |
-| Scope | Verification only; do not rewrite the whole narrative unless the verification results require targeted remediation |
-| Grounding | Every `verified` or `conflicting` result must trace to a named file, source location, or quoted passage |
-| Defaults | Use the fixed status taxonomy and keep unsourced claims unresolved rather than downgraded into speculation |
-| Fallback | If search or extraction is partial, return the searched scope, likely matches, and manual-review flags instead of overstating certainty |
-| Triggering | Use for source mapping, quote verification, claim checking, contradiction audits, and pre-release fact review |
-| Restrictions | Do not treat absence as falsity without naming the searched scope; do not paraphrase a quote as verified unless the exact wording or a faithful equivalent is present |
+## Step 1 — Identify Data
 
-## Workflow
+Check the exam directory `exams/<SUBJECT>/<SITTING>/` for data files.
+- `.RData`: Load using `load("path/to/file.RData")`
+- `.csv`: Load using `read.csv("path/to/file.csv")`
+- `.txt`: Load using `read.table("path/to/file.txt")`
 
-1. Define the audit scope: claims list, searched sources, and whether exact quotes are required.
-2. Break compound paragraphs into individual claims.
-3. Search the provided source set for exact wording first, then faithful supporting context.
-4. Assign one status per claim: `verified`, `verified in broader bundle`, `conflicting`, `not found in searched sources`, or `manual review needed`.
-5. Cite the exact source location when available.
-6. Separate remediation notes from evidence status so unsupported claims are easy to fix or remove.
+## Step 2 — Write R Scripts
 
-## Resources
+For each question, write a **standalone R script** that:
+1. Loads the data
+2. Performs the required analysis (summary stats, GLMs, time series, etc.)
+3. Prints the results
+4. Saves any required plots to `results/<MODEL>/<SUBJECT>/<SITTING>/`
 
-| Resource | Create When | Notes |
-| --- | --- | --- |
-| `scripts/` | A claim-extraction or source-map helper exists | Optional |
-| `references/` | A source hierarchy or record legend is needed | Useful for large evidence sets |
-| `assets/` | A reusable audit table template is needed | Optional |
-| `agents/openai.yaml` | The skill should appear cleanly in the UI | Keep the UI prompt focused on verification |
+### Template for an R script
 
-Preferred status meanings:
+```r
+# ── Load Data ───────────────────────────────────────────────────
+# Adjust path as needed - use absolute paths or relative to execution dict
+load("exams/<SUBJECT>/<SITTING>/data.RData")
 
-- `verified`: supported in the exact searched packet
-- `verified in broader bundle`: supported locally, but outside the narrow packet under review
-- `conflicting`: the source materially contradicts the draft claim
-- `not found in searched sources`: not located in the named search scope
-- `manual review needed`: likely present, but extraction, image content, or ambiguity blocks automatic confirmation
+# ── Perform Analysis ────────────────────────────────────────────
+# Example: Linear Model
+model <- lm(Y ~ X, data = my_data)
+summary(model)
 
-## Validation
+# Example: Plotting
+png("results/<MODEL>/<SUBJECT>/<SITTING>/q1_plot.png")
+plot(model)
+dev.off()
 
-1. Verify that every claim row names the searched source scope.
-2. Verify that every `verified` or `conflicting` row includes a concrete citation or file reference.
-3. Verify that every `not found` row distinguishes source absence from search limitation.
-4. Remove blended statuses and duplicated claims.
-5. Run `scripts/quick_validate.py <path/to/skill-folder>` before delivery.
+# ── Print Results ───────────────────────────────────────────────
+print(summary(model))
+# Print specific values if needed
+cat("Adj R-squared:", summary(model)$adj.r.squared, "\n")
+```
+
+## Step 3 — Run Scripts
+
+Run the script using `Rscript` and capture the output:
+
+```bash
+Rscript results/<MODEL>/<SUBJECT>/<SITTING>/q1_solution.R > results/<MODEL>/<SUBJECT>/<SITTING>/q1_output.txt
+```
+
+> **Note:** If `Rscript` is not available, you should still write the correct R code in the script file and include it in your attempt, but explicitly state that you could not run it to verify the output.
+
+## Step 4 — Document in attempt.md
+
+In `attempt.md`:
+1. **Show the R code** used.
+2. **Paste the output** (from the text file or your own analysis if unable to run).
+3. **Embed plots** using markdown image syntax: `![Q1 Plot](q1_plot.png)`.
+4. **Interpret the results** as required by the question (e.g. "The p-value is < 0.05, so we reject H0...").
+
+## Common R Tasks for Actuarial Exams
+
+- **Linear Regression:** `lm(y ~ x)`
+- **GLMs:** `glm(y ~ x, family = poisson)`
+- **Time Series:** `arima(x, order = c(1,0,1))`
+- **Survival Analysis:** `survfit(Surv(time, event) ~ 1)`
+- **Bootstrap:** Use `sample()`
+- **Simulation:** `rnorm()`, `rpois()`, etc.

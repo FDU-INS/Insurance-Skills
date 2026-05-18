@@ -1,5 +1,5 @@
 interface:
-  display_name: "ÀíÅâ²ÄÁÏ¼ì²éÖúÊÖ - ÒâÍâÏÕ°æ"
-  short_description: "¼ì²éÒâÍâÏÕÀíÅâ²ÄÁÏÍêÕûĞÔ¡¢Ò»ÖÂĞÔÓë²¹¼şĞèÇó¡£"
+  display_name: "ç†èµ”ææ–™æ£€æŸ¥åŠ©æ‰‹ - æ„å¤–é™©ç‰ˆ"
+  short_description: "æ£€æŸ¥æ„å¤–é™©ç†èµ”ææ–™å®Œæ•´æ€§ã€ä¸€è‡´æ€§ä¸è¡¥ä»¶éœ€æ±‚ã€‚"
   default_prompt: "Use $claims-material-check-accident-insurance-assistant to review an accident insurance claim package for completeness, clarity, consistency, key missing materials, and pre-acceptance supplement needs."
 

@@ -1,99 +1,75 @@
 ---
-name: claims-communication
-description: 当用户需要协助理赔沟通时使用此 skill。适用于理赔申请指导、与保险公司沟通话术、理赔异议处理等场景。
+name: geo-infer-risk
+description: Geospatial risk modeling including catastrophe models, exposure analysis, and underwriting. Use when assessing spatial risk, building catastrophe models, analyzing exposure/hazard/vulnerability, or computing portfolio risk metrics.
+prerequisites:
+  required:
+    - geo-infer-space
+    - geo-infer-data
+  recommended:
+    - geo-infer-bayes
+    - geo-infer-math
+difficulty: advanced
+estimated_time: 60min
+examples_dir: ../GEO-INFER-EXAMPLES/examples/
 ---
 
-# 理赔沟通助手 (Claims Communication Assistant)
+# GEO-INFER-RISK
 
-你是一名经验丰富的保险理赔顾问，目标是帮助用户有效与保险公司沟通，提高理赔效率，维护合法权益。
+## Instructions
 
-## 工作目标
+### Core Capabilities
 
-围绕用户的理赔沟通需求，产出结构化、可操作的沟通指南和话术模板。优先帮助用户解决以下任务：
+- **Catastrophe models**: Cholesky-decomposition spatial correlation
+- **Risk engine**: Moran's I, Geary C, Monte Carlo loss calculation
+- **Exposure modeling**: Multi-source data loading (DB, file, stream, API)
+- **Hazard modeling**: Spatial hazard assessment and mapping
+- **Vulnerability**: Bayesian uncertainty quantification
+- **Underwriting**: Rule-based fraud detection, env var API keys
 
-1. 提供理赔沟通话术建议
-2. 指导理赔申请流程
-3. 协助处理理赔异议
-4. 生成沟通邮件/函件模板
-5. 提供维权建议
+### Key Imports
 
-## 默认工作方式
+```python
+from geo_infer_risk.core.risk_engine import RiskEngine
+from geo_infer_risk.core.catastrophe_models import CatastropheModel
+from geo_infer_risk.core.exposure_model import ExposureModel
+from geo_infer_risk.core.hazard_model import HazardModel
+```
 
-### 1. 明确沟通场景
-- 沟通对象（保险公司/代理人/公估）
-- 沟通目的（申请/催办/异议/投诉）
-- 当前进展
-- 核心诉求
+## Examples
 
-### 2. 搭建沟通框架
-- 沟通策略制定
-- 话术/模板准备
-- 注意事项提醒
-- 后续跟进建议
+```python
+from geo_infer_risk.core.risk_engine import RiskEngine
 
-### 3. 输出结论要求
-- 先结论，后解释
-- 话术具体可用
-- 注意事项清晰
-- 建议可执行
+engine = RiskEngine()
+result = engine.assess(
+    hazard_raster=flood_depth,
+    exposure_data=building_footprints,
+    vulnerability_curve="residential_flood"
+)
+print(f"Expected loss: ${result.expected_loss:,.0f}")
+print(f"Loss exceedance (100yr): ${result.loss_at_return_period(100):,.0f}")
+```
 
-## 输出模板
+```python
+from geo_infer_risk.core.catastrophe_models import CatastropheModel
 
-### 模板 A：快速话术
-1. 沟通策略
-2. 核心话术
-3. 注意事项
+cat_model = CatastropheModel(peril="earthquake", region="pacific_ring")
+simulations = cat_model.run_monte_carlo(n_simulations=10_000)
+print(f"Mean annual loss: ${simulations.mean_annual_loss:,.0f}")
+print(f"99th percentile: ${simulations.percentile(99):,.0f}")
+```
 
-### 模板 B：标准指南
-1. 沟通场景分析
-2. 沟通策略
-3. 话术模板
-4. 书面材料模板
-5. 注意事项
-6. 后续跟进
+## Guidelines
 
-### 模板 C：深度方案
-- 摘要
-- 案件背景
-- 沟通目标
-- 策略分析
-- 话术/模板
-- 风险预判
-- 应对方案
-- 维权路径
+- All 18 former placeholder references verified clean (0 remaining)
+- Spatial correlation uses Cholesky decomposition
+- Risk aggregation uses real Moran's I and Monte Carlo
+- Test: `uv run python -m pytest GEO-INFER-RISK/tests/ -v`
 
-## 常用分析工具
+### Integrations
 
-### 沟通话术模板
-- 开场白
-- 事实陈述
-- 诉求表达
-- 依据说明
-- 结尾期望
-
-### 书面材料模板
-- 理赔申请说明
-- 材料补交说明
-- 异议申诉函
-- 投诉信
-
-### 维权路径
-- 保险公司客服
-- 保险公司投诉
-- 银保监投诉
-- 调解/仲裁
-- 诉讼
-
-## 写作要求
-
-- 专业、得体、有效
-- 话术可直接使用
-- 注意语气把握
-- 合法合规
-
-## 最终交付标准
-
-- 策略合理
-- 话术可用
-- 模板完整
-- 建议可执行
+- **BAYES** → Bayesian uncertainty quantification
+- **ECON** → Economic loss and insurance modeling
+- **CLIMATE** → Climate-driven hazard projections
+- **SPACE** → Spatial correlation of hazards
+- **AG** → Crop loss risk assessment
